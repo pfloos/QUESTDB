@@ -1,6 +1,6 @@
-# 🚀 QUESTDB: Highly-Accurate Excitation Energies Database
+# 🚀 QUESTDB: a Database of Highly-Accurate Excitation Energies
 
-Welcome to the **QUEST Database** repository!
+Welcome to the **QUESTDB** repository!
 
 The QUESTDB (QUantum Excited STate DataBase), or QUEST database, is a **comprehensive and curated collection of highly-accurate excitation energies, oscillator strengths, dipole moments**, and related excited-state properties for a wide variety of molecules, radicals, and transition metal complexes.  
 Its primary goal is to provide **reliable reference data** for benchmarking and validating theoretical methods in computational chemistry, such as time-dependent DFT (TD-DFT), coupled-cluster, and multireference methods.
