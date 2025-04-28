@@ -81,15 +81,15 @@ The QUESTDB project is maintained by a collaboration between:
 
 Key QUESTDB publications:
 
-- [**Reference energies for double excitations: improvement & extension**](https://doi.org/10.1021/acs.jctc.4c00410)
+- [**Reference energies for double excitations: improvement & extension**](https://doi.org/10.1021/acs.jctc.4c00410)  
   F. Kossoski, M. Boggio-Pasqua, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **20**, 5655 (2024).
 
-- [**Reference vertical excitation energies for transition metal compounds**](https://doi.org/10.1021/acs.jctc.3c01080)
+- [**Reference vertical excitation energies for transition metal compounds**](https://doi.org/10.1021/acs.jctc.3c01080)  
   D. Jacquemin, F. Kossoski, F. Gam, M. Boggio-Pasqua, and P. F. Loos,  
   *J. Chem. Theory Comput.* **19**, 8782 (2023).
 
-- [**A mountaineering strategy to excited states: revising reference values with EOM-CC4**](https://doi.org/10.1021/acs.jctc.2c00416) 
+- [**A mountaineering strategy to excited states: revising reference values with EOM-CC4**](https://doi.org/10.1021/acs.jctc.2c00416)  
   P. F. Loos, F. Lipparini, D. A. Matthews, A. Blondel, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **18**, 4418 (2022).
 
