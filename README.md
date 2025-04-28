@@ -81,7 +81,7 @@ The QUESTDB project is maintained by a collaboration between:
 
 Key QUESTDB publications:
 
-- [**Reference energies for double excitations: improvement & extension**](https://doi.org/10.1021/acs.jctc.4c00410)  
+- [**Reference energies for double excitations: improvement & extension**](https://doi.org/10.1021/acs.jctc.4c00410)
   F. Kossoski, M. Boggio-Pasqua, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **20**, 5655 (2024).
 
