@@ -2,11 +2,11 @@
 
 Welcome to the **QUEST Database** repository!
 
-The QUEST (QUantum Excitation STandards) database is a **comprehensive and curated collection of highly-accurate excitation energies, oscillator strengths, dipole moments**, and related excited-state properties for a wide variety of molecules, radicals, and transition metal complexes.  
+The QUESTDB (QUantum Excited STate DataBase), or QUEST database, is a **comprehensive and curated collection of highly-accurate excitation energies, oscillator strengths, dipole moments**, and related excited-state properties for a wide variety of molecules, radicals, and transition metal complexes.  
 Its primary goal is to provide **reliable reference data** for benchmarking and validating theoretical methods in computational chemistry, such as time-dependent DFT (TD-DFT), coupled-cluster, and multireference methods.
 
 **Key Features of QUESTDB:**
-- **High accuracy:** Data are obtained from best-in-class electronic structure methods, including FCI, CC3, CCSDT, CCSDTQ, EOM-CC4, and selected multireference methods like CASPT2/3 and NEVPT2.
+- **High accuracy:** Data are obtained from best-in-class electronic structure methods, including FCI, CC3, CCSDT, CCSDTQ, CC4, and selected multireference methods like CASPT2/3 and NEVPT2.
 - **Wide coverage:** Small organic molecules, medium-sized compounds, radicals, charged species, and transition metal complexes are included.
 - **Double and Charge-Transfer Excitations:** Special focus on notoriously challenging cases such as **double excitations** and **intramolecular charge-transfer states**.
 - **Revised and updated:** The database is continuously improved and extended based on new high-level calculations and critical evaluations.
