@@ -1,20 +1,27 @@
 # QUESTDB
 
-Information related to the QUEST database of excitation energies.
+This repository contains information related to the QUEST database of excitation energies:
+molecular structures, vertical excitation energies, oscillator strengths, etc.
+These informations are gathered in various xls files to ease manipulations.
 
 ## Contributors
 
-* Denis Jacquemin
-* Pierre-Francois Loos
-* Martial Boggio-Pasqua
-* Fabris Kossoski
-* Filippo Lipparini
-* Anthony Scemama
-* Mickael Veril
-* Yann Damour
-* Antoine Marie
+* [Denis Jacquemin](https://www.univ-nantes.fr/denis-jacquemin-1) (Nantes)
+* [Pierre-François Loos](https://pfloos.github.io/WEB_LOOS) (Toulouse)
+* [Martial Boggio-Pasqua](https://www.lcpq.ups-tlse.fr/spip.php?rubrique313&lang=fr) (Toulouse)
+* [Fábris Kossoski](https://kossoski.github.io) (Toulouse)
+* [Filippo Lipparini](https://people.unipi.it/filippo_lipparini) (Pisa)
+* [Anthony Scemama](https://scemama.github.io)
+* [Aymeric Blondel](https://www.univ-nantes.fr/aymeric-blondel) (Nantes)
+* [Mickael Véril](https://mveril.github.io) (Toulouse)
+* [Yann Damour](https://ydrnan.github.io/damour) (Toulouse)
+* [Antoine Marie](https://antoine-marie.github.io) (Toulouse)
 
 ## Main References
+
+* Reference energies for double excitations: improvement & extension,
+F. Kossoski, M. Boggio-Pasqua, P. F. Loos, and D. Jacquemin, 
+J. Chem. Theory Comput. 20, 5655 (2024).
 
 * Reference vertical excitation energies for transition metal compounds,
 D. Jacquemin, F. Kossoski, F. Gam, M. Boggio-Pasqua, and P. F. Loos.
@@ -63,6 +70,10 @@ J. Chem. Theory Comput. 14, 4360 (2018).
 
 
 ## Other References
+
+* Excited-state absorption: Reference oscillator strengths, wavefunction and TD-DFT benchmarks,
+J. Širůček, B. Le Guennic, Y. Damour, P. F. Loos, and D. Jacquemin,
+J. Chem. Theory Comput. (in press).
 
 * Heptazine, cyclazine, and related compounds: chemically-accurate estimates of the inverted singlet-triplet gap,
 P. F. Loos, F. Lipparini, and D. Jacquemin.
