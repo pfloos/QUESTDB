@@ -1,11 +1,22 @@
-# TeX Molecular Structures
+# 📄 TeX Molecular Structures
 
-This directory contains the Cartesian coordinates of all molecules included in the QUEST database, compiled in LaTeX format.
+Welcome to the **TeX Molecular Structures** directory of the QUEST database!
 
-- `quest_structures.tex`: A LaTeX source file listing all molecular geometries.
-- `quest_structures.pdf`: A human-readable PDF document generated from the LaTeX source.
+This folder provides the **Cartesian coordinates** of all molecules, compiled in a format suitable for documentation, sharing, and citation.
 
-**Note:**  
-All geometries are expressed in **atomic units (bohr)**.
+## 📂 Contents
 
-These files are intended for convenient visualization, documentation, and citation purposes.
+- `quest_structures.tex` — LaTeX source file containing the full list of molecular geometries.
+- `quest_structures.pdf` — Human-readable PDF generated from the LaTeX source for easy viewing.
+
+## ⚡ Important Information
+
+> **Units:**  
+> All Cartesian coordinates are expressed in **atomic units (bohr)**.
+
+## 🎯 Purpose
+
+These files are designed to support:
+- **Convenient visualization** of all molecular structures
+- **Documentation** and **archiving** of benchmark geometries
+- **Accurate citation** of reference structures in scientific publications
