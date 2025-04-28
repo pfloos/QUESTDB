@@ -138,7 +138,7 @@ Key QUESTDB publications:
   *J. Chem. Theory Comput.* (in press).
 
 - [**Reference CC3 excitation energies for organic chromophores: benchmarking TD-DFT, BSE/GW and wave function methods**](https://doi.org/10.1021/acs.jctc.4c00906)  
-  I. Knysh, F. Lipparini, I. Duchemin, X. Blase, P. F. Loos, and D. Jacquemin,
+  I. Knysh, F. Lipparini, I. Duchemin, X. Blase, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **20**, 8152 (2024).
 
 - [**Heptazine, cyclazine, and related compounds: chemically-accurate estimates of the inverted singlet-triplet gap**](https://doi.org/10.1021/acs.jpclett.3c03042)  
