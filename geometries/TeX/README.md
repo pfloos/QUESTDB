@@ -6,8 +6,8 @@ This folder provides the **Cartesian coordinates** of all molecules, compiled in
 
 ## 📂 Contents
 
-- `quest_structures.tex` — LaTeX source file containing the full list of molecular geometries.
-- `quest_structures.pdf` — Human-readable PDF generated from the LaTeX source for easy viewing.
+- `Geometries.tex` — LaTeX source file containing the full list of molecular geometries.
+- `Geometries.pdf` — Human-readable PDF generated from the LaTeX source for easy viewing.
 
 ## ⚡ Important Information
 
