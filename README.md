@@ -54,7 +54,6 @@ This repository provides:
 - **Molecular Structures**
 - **Vertical Excitation Energies**
 - **Oscillator Strengths**
-- **Dipole Moments**
 
 Data is structured in `.xls` files for ease of use.
 
@@ -69,7 +68,7 @@ The QUESTDB project is maintained by a collaboration between:
 - [Martial Boggio-Pasqua](https://www.lcpq.ups-tlse.fr/spip.php?rubrique313&lang=fr) (Toulouse)
 - [Fábris Kossoski](https://kossoski.github.io) (Toulouse)
 - [Filippo Lipparini](https://people.unipi.it/filippo_lipparini) (Pisa)
-- [Anthony Scemama](https://scemama.github.io)
+- [Anthony Scemama](https://scemama.github.io) (Toulouse)
 - [Aymeric Blondel](https://www.univ-nantes.fr/aymeric-blondel) (Nantes)
 - [Mickael Véril](https://mveril.github.io) (Toulouse)
 - [Yann Damour](https://ydrnan.github.io/damour) (Toulouse)
@@ -118,7 +117,7 @@ Key QUESTDB publications:
 ## 🗂️ Data Structure
 
 - **Molecular Structures:**  
-  `.xyz` or `.mol` formats
+  `.xyz` or `.TeX` formats
 
 - **Excitation Energies and Oscillator Strengths:**  
   `.xls` spreadsheets
