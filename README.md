@@ -54,6 +54,7 @@ This repository provides:
 - **Molecular Structures**
 - **Vertical Excitation Energies**
 - **Oscillator Strengths**
+- **Many Other Properties**
 
 Data is structured in `.xls` files for ease of use.
 
@@ -183,7 +184,7 @@ Key QUESTDB publications:
 - **Molecular Structures:**  
   `.xyz` or `.TeX` formats
 
-- **Excitation Energies and Oscillator Strengths:**  
+- **Excitation Energies, Oscillator Strengths and Other Properties:**  
   `.xls` spreadsheets
 
 - **Additional Metadata:**  
@@ -199,6 +200,6 @@ Key QUESTDB publications:
   </a>
 </p>
 
-This work is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **European Research Council (ERC)** under the **EU Horizon 2020** research and innovation program (Grant Agreement No. **863481**).
+This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **European Research Council (ERC)** under the **EU Horizon 2020** research and innovation program (Grant Agreement No. **863481**).
 
 ---
