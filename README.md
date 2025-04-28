@@ -101,7 +101,7 @@ Key QUESTDB publications:
   P. F. Loos, M. Comin, X. Blase, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **17**, 3666 (2021).
 
-- [**QUESTDB: a database of highly-accurate excitation energies for the electronic structure community**](https://doi.org/10.1002/wcms.1517)
+- [**QUESTDB: a database of highly-accurate excitation energies for the electronic structure community**](https://doi.org/10.1002/wcms.1517)  
   M. Véril, A. Scemama, M. Caffarel, F. Lipparini, M. Boggio-Pasqua, D. Jacquemin, and P. F. Loos,  
   *WIREs Comput. Mol. Sci.* **11**, e1517 (2021).
 
@@ -137,7 +137,7 @@ Key QUESTDB publications:
   J. Širůček, B. Le Guennic, Y. Damour, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* (in press).
 
-- [**Reference CC3 excitation energies for organic chromophores: benchmarking TD-DFT, BSE/GW and wave function methods**](https://doi.org/10.1021/acs.jctc.4c00906)
+- [**Reference CC3 excitation energies for organic chromophores: benchmarking TD-DFT, BSE/GW and wave function methods**](https://doi.org/10.1021/acs.jctc.4c00906)  
   I. Knysh, F. Lipparini, I. Duchemin, X. Blase, P. F. Loos, and D. Jacquemin,
   *J. Chem. Theory Comput.* **20**, 8152 (2024).
 
