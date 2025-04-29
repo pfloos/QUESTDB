@@ -184,7 +184,7 @@ Key QUESTDB publications:
 
 ---
 
-## Extension to charged excitations
+## 🔋 Extension to charged excitations
 
 The QUEST database also contains charged excitations, mainly ionization potentials (IPs) at the moment.
 Here is the short description of the **charged** excited states:
