@@ -13,6 +13,7 @@
 - [📂 Repository Contents](#-repository-contents)
 - [👥 Contributors](#-contributors)
 - [📚 Main References](#-main-references)
+- [📖 Other References](#-other-references)
 - [🔋 Extension to charged excitations](#-extension-to-charged-excitations)
 - [🗂️ Data Structure](#️-data-structure)
 - [💰 Funding](#-funding)
