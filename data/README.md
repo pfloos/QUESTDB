@@ -7,6 +7,8 @@ It provides highly detailed information for each excited state, including both p
 
 ## 📋 Available Information
 
+To assist users in identifying excited states using their preferred methodology, the QUEST database provides %T₁, oscillator strength f, $\langle r^2 \rangle$, and dominant MO contributions for all excited states, computed with reasonably high levels of theory. Additionally, $\langle S^2 \rangle$ values are provided for doublet and quartet states, along with the dominant MO combinations.
+
 - **Molecular Size**: Number of non-hydrogen atoms.
 - **Group**: Size group (e.g., `35` for systems with 3–5 non-hydrogen atoms).
 - **Symmetry Label**: Symmetry of the excited state.
