@@ -183,6 +183,25 @@ Key QUESTDB publications:
 
 ---
 
+## Extension to charged excitations
+
+The QUEST database also contains charged excitations, mainly ionization potentials (IPs) at the moment.
+Here is the short description of the **charged** excited states:
+
+- Inner and Outer Valence IPs and satellite transitions:
+[**Reference energies for valence ionizations and satellite transitions**](https://doi.org/10.1021/acs.jctc.4c00216)  
+A. Marie and P. F. Loos,  
+*J. Chem. Theory Comput.* **20**, 4751 (2024).
+
+- Valence double IPs (DIPs) and double core holes (DCHs):
+[**Anomalous propagators and the particle-particle channel: Bethe-Salpeter equation**](https://doi.org/10.1063/5.0250155)  
+A. Marie, P. Romaniello, X. Blase, and P. F. Loos,  
+*J. Chem. Phys.* **162**, 134105 (2025).
+
+- Core IPs (coming soon)
+  
+---
+
 ## 🗂️ Data Structure
 
 - **Molecular Structures:**  
