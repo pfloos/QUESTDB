@@ -53,18 +53,23 @@ It provides highly detailed information for each excited state, including both p
   `SOS-ADC(2)[TM]`, `SOS-CC2`, `SCS-CC2`, `SOS-ADC(2)[QC]`, `ADC(2)`, `ADC(3)`, `ADC(2.5)`,  
   `CASSCF`, `CASPT2`, `CASPT2 (No IPEA)`, `CASPT3`, `CASPT3 (No IPEA)`, `SC-NEVPT2`, and `PC-NEVPT2`.
 
+Dedicated files for subsets (see below) also include:
+- Additional computational methods and basis sets
+- Molecular orbitals involved in transitions
+- Extra annotations for complex cases.
+
 ---
 
 ## 📂 Files in This Directory
 
-| Filename             | Description |
-|----------------------|-------------|
-| **`QUEST-All.xlsx`**  | Full dataset including all molecular systems. |
-| **`QUEST-Chromo.xlsx`** | Subset focused on chromophores. |
-| **`QUEST-DNA.xlsx`**  | Subset focused on DNA building blocks. |
-| **`QUEST-Radicals.xlsx`** | Subset focused on radical species. |
-| **`QUEST-TM.xlsx`**   | Subset focused on transition metal complexes. |
-| **`QUEST-Main.xlsx`** | Detailed per-system dataset with: <br> - Additional computational methods and basis sets <br> - Molecular orbitals involved in transitions <br> - Extra annotations for complex cases. |
+| Filename              | Description |
+|-----------------------|-------------|
+| **`QUEST-All.xlsx`**   | Contains all the information listed above for each transition. Each subset described below is presented in a dedicated tab. |
+| **`QUEST-Main.xlsx`**  | Includes all results for relatively compact closed-shell molecules, typically containing 1 to 10 non-hydrogen atoms. |
+| **`QUEST-Rad.xlsx`**   | A significant extension of our dataset for small organic and inorganic radicals, now including additional compounds, excited states, and a series of quartet excited states. |
+| **`QUEST-Chrom.xlsx`** | Covers excited states of large closed-shell organic chromophores with 10 to 16 non-hydrogen atoms, such as azobenzene, BODIPY, and naphthalimide. |
+| **`QUEST-DNA.xlsx`**   | Presents previously unpublished data for five nucleobases: adenine, cytosine, guanine, thymine, and uracil. |
+| **`QUEST-TM.xlsx`**    | Contains results for 11 diatomic molecules featuring one transition metal (Cu, Sc, Ti, or Zn), covering both closed-shell and open-shell cases. |
 
 ---
 
