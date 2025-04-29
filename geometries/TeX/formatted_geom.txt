@@ -19,19 +19,19 @@ H   -1.66061256            2.48420530           -2.53995285
 H    1.66061256           -2.48420530           -2.53995285
 H   -1.66061256           -2.48420530           -2.53995285   
 
-Acetylene 74-86-2 CC3(Full)/aug-cc-pVTZ Ground state
+Acetylene_1 74-86-2 CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000            1.14048351
 C    0.00000000            0.00000000           -1.14048351
 H    0.00000000            0.00000000            3.14009043
 H    0.00000000            0.00000000           -3.14009043
 
-Acetylene 74-86-2 CC3(Full)/aug-cc-pVTZ Trans excited state (singlet Au state in the C2h point group)
+Acetylene_2 74-86-2 CC3(Full)/aug-cc-pVTZ Trans excited state (singlet Au state in the C2h point group)
 C    1.29567779            0.00000000           -0.01846047
 C   -1.29567779            0.00000000            0.01846047
 H    2.41938674            0.00000000            1.70881682 
 H   -2.41938674            0.00000000           -1.70881682
 
-Acetylene 74-86-2 CC3(Full)/aug-cc-pVTZ Cis excited state (singlet A2 state in the C2v point group)
+Acetylene_3 74-86-2 CC3(Full)/aug-cc-pVTZ Cis excited state (singlet A2 state in the C2v point group)
 C    0.00000000            1.26834508           -0.11726146
 C    0.00000000           -1.26834508           -0.11726146
 H    0.00000000            2.67282325            1.39629264
@@ -202,11 +202,11 @@ BF 13768-60-0 (Boron fluoride) CC3(Full)/aug-cc-pVTZ
 B    0.00000000            0.00000000            0.00000000
 F    0.00000000            0.00000000            2.39729626
 
-BH 13766-26-2 (Boron hydride or borane) CC3(Full)/aug-cc-pVTZ Ground state
+BH_1 13766-26-2 (Boron hydride or borane) CC3(Full)/aug-cc-pVTZ Ground state
 B    0.00000000            0.00000000            0.00000000
 H    0.00000000            0.00000000            2.31089693
 
-BH 13766-26-2 (Boron hydride or borane) CC3(Full)/aug-cc-pVTZ Excited state
+BH_2 13766-26-2 (Boron hydride or borane) CC3(Full)/aug-cc-pVTZ Excited state
 B    0.00000000            0.00000000            0.00000000
 H    0.00000000            0.00000000            2.27596436
 
@@ -302,14 +302,14 @@ O    2.09779397            0.38347786            0.00000000
 H   -3.86593284           -0.61908241            0.00000000
 H   -1.98533536            2.49983926            0.00000000
 
-Cyanoacetylene 1070-71-9 CC3(Full)/aug-cc-pVTZ Ground state
+Cyanoacetylene_1 1070-71-9 CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000           -3.59120182
 C    0.00000000            0.00000000           -1.30693904
 C    0.00000000            0.00000000            1.28880240
 N    0.00000000            0.00000000            3.48692211
 H    0.00000000            0.00000000           -5.59619886
 
-Cyanoacetylene 1070-71-9 CC3(Full)/aug-cc-pVTZ Lowest excited state
+Cyanoacetylene_2 1070-71-9 CC3(Full)/aug-cc-pVTZ Lowest excited state
 C    1.99411175            0.00000000            2.81781077
 C   -0.07304269            0.00000000            1.33125774
 C   -0.63630126            0.00000000           -1.14556678
@@ -323,13 +323,13 @@ N    0.64170259            0.00000000            3.48820325
 O    0.50833684            0.00000000           -3.00337867
 H   -2.97202213            0.00000000           -1.42565674
 
-Cyanogen 460-19-5 (Ethanedinitrile) CC3(Full)/aug-cc-pVTZ Ground state
+Cyanogen_1 460-19-5 (Ethanedinitrile) CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000            1.30401924
 C    0.00000000            0.00000000           -1.30401924
 N    0.00000000            0.00000000            3.49784121
 N    0.00000000            0.00000000           -3.49784121
 
-Cyanogen 460-19-5 (Ethanedinitrile) CC3(Full)/aug-cc-pVTZ Excited state
+Cyanogen_2 460-19-5 (Ethanedinitrile) CC3(Full)/aug-cc-pVTZ Excited state
 C    0.00000000            0.00000000            1.22784115
 C    0.00000000            0.00000000           -1.22784115
 N    0.00000000            0.00000000            3.56462559
@@ -430,14 +430,14 @@ H    0.00000000           -1.75890895           -1.28616479
 N    1.16058100            0.00000000            2.27183007
 N   -1.16058100            0.00000000            2.27183007
 
-Diazomethane 334-88-3 CC3(Full)/aug-cc-pVTZ Ground state
+Diazomethane_1 334-88-3 CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000           -2.30830005
 N    0.00000000            0.00000000            0.14457890
 N    0.00000000            0.00000000            2.29923216
 H    0.00000000            1.79875201           -3.24272317
 H    0.00000000           -1.79875201           -3.24272317
 
-Diazomethane 334-88-3 CC3(Full)/aug-cc-pVTZ Excited state
+Diazomethane_2 334-88-3 CC3(Full)/aug-cc-pVTZ Excited state
 C    1.80206107            0.00000000           -1.03389466
 N   -0.01743713            0.00000000            0.84742344
 N   -2.25203764            0.00000000            0.54034983  
@@ -451,7 +451,7 @@ F    0.00000000           -2.06077297           -1.57706828
 N    1.20382241            0.00000000            2.20566821
 N   -1.20382241            0.00000000            2.20566821
 
-Dimethylaminobenzonitrile 1197-19-9 (4-(Dimethylamino)benzonitrile) CCSD(T)(FC)/cc-pVTZ Planar
+Dimethylaminobenzonitrile_1 1197-19-9 (4-(Dimethylamino)benzonitrile) CCSD(T)(FC)/cc-pVTZ Planar
 C    0.00000000            0.00000000           -1.96083197
 C    2.27891314            0.00000000           -0.58294740
 C   -2.27891314            0.00000000           -0.58294740
@@ -474,7 +474,7 @@ H    3.49551175            1.67111709           -5.47003452
 H   -3.49551175            1.67111709           -5.47003452
 H   -3.49551175           -1.67111709           -5.47003452
 
-Dimethylaminobenzonitrile 1197-19-9 (4-(Dimethylamino)benzonitrile) CCSD(T)(FC)/cc-pVT Twisted
+Dimethylaminobenzonitrile_2 1197-19-9 (4-(Dimethylamino)benzonitrile) CCSD(T)(FC)/cc-pVT Twisted
 C    0.00000000            0.00000000           -1.92629020
 C    2.27225178            0.00000000           -0.58317962
 C   -2.27225178            0.00000000           -0.58317962
@@ -545,13 +545,13 @@ H    4.04329770            0.00000000            3.28356917
 H   -4.04329770            0.00000000            3.28356917
 H    0.00000000            0.00000000            5.62589878
 
-Formaldehyde 50-00-0 CC3(Full)/aug-cc-pVTZ Ground state
+Formaldehyde_1 50-00-0 CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000           -1.13947666
 O    0.00000000            0.00000000            1.14402883
 H    0.00000000            1.76627623           -2.23398653
 H    0.00000000           -1.76627623           -2.23398653
 
-Formaldehyde 50-00-0 CC3(Full)/aug-cc-pVTZ Excited state
+Formaldehyde_2 50-00-0 CC3(Full)/aug-cc-pVTZ Excited state
 C   -0.09942705            0.00000000            1.27071070
 O    0.01987299            0.00000000           -1.23280536
 H    0.42778855            1.76729629            2.18470884
@@ -700,14 +700,14 @@ H   -1.66026992            2.48337908           -2.55086178
 H    1.66026992           -2.48337908           -2.55086178
 H   -1.66026992           -2.48337908           -2.55086178
 
-Ketene 463-51-4 (Ethenone) CC3(Full)/aug-cc-pVTZ Ground state
+Ketene_1 463-51-4 (Ethenone) CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000           -2.44810151
 C    0.00000000            0.00000000            0.03498545
 O    0.00000000            0.00000000            2.23663914
 H    0.00000000            1.77432079           -3.43705988
 H    0.00000000           -1.77432079           -3.43705988
 
-Ketene 463-51-4 (Ethenone) CC3(Full)/aug-cc-pVTZ Excited state
+Ketene_2 463-51-4 (Ethenone) CC3(Full)/aug-cc-pVTZ Excited state
 C    2.04306304            0.00000000           -0.93056721
 C    0.00400918            0.00000000            0.83531393
 O   -2.23710378            0.00000000            0.46984584
@@ -821,7 +821,7 @@ H    3.49498309            1.67118066           -6.21739275
 H   -3.49498309            1.67118066           -6.21739275
 H   -3.49498309           -1.67118066           -6.21739275
 
-Nitropyridine N-oxide 1124-33-0 (4-Nitropyridine N-oxide) CCSD(T)(FC)/cc-pVTZ
+Nitropyridine_N-oxide 1124-33-0 (4-Nitropyridine N-oxide) CCSD(T)(FC)/cc-pVTZ
 C    0.00000000            0.00000000           -1.21738204
 C    2.26825255            0.00000000            0.09038008
 C   -2.26825255            0.00000000            0.09038008
@@ -837,7 +837,7 @@ H   -4.03491913            0.00000000           -0.90939267
 H    3.88274506            0.00000000            3.86446617
 H   -3.88274506            0.00000000            3.86446617
 
-Nitrosomethane 865-40-7 CC3(Full)/aug-cc-pVTZ Ground state
+Nitrosomethane_1 865-40-7 CC3(Full)/aug-cc-pVTZ Ground state
 C   -1.78426612            0.00000000           -1.07224050
 N   -0.00541753            0.00000000            1.08060391
 O    2.18814985            0.00000000            0.43452135
@@ -845,7 +845,7 @@ H   -0.77343975            0.00000000           -2.86415606
 H   -2.97471478            1.66801808           -0.86424584
 H   -2.97471478           -1.66801808           -0.86424584
 
-Nitrosomethane 865-40-7 CC3(Full)/aug-cc-pVTZ Excited state
+Nitrosomethane_2 865-40-7 CC3(Full)/aug-cc-pVTZ Excited state
 C    1.86306273            0.00000000           -1.06035094
 N    0.00638693            0.00000000            1.02546010
 O   -2.26923072            0.00000000            0.47699489
@@ -897,7 +897,7 @@ O    2.24825627           -2.40855549            0.00000000
 F   -2.78737061           -1.74488227            0.00000000
 F    2.78737061            1.74488227            0.00000000
 
-Pentalene 250-25-9 CC3(FC)/cc-pVTZ
+Pentalene_1 250-25-9 CC3(FC)/cc-pVTZ
 C   -0.07378347            1.37547375            0.00000000
 C    0.07378347           -1.37547375            0.00000000
 C    2.30364735            2.30974227            0.00000000
@@ -913,7 +913,7 @@ H   -6.11180520           -0.29622071            0.00000000
 H    3.52044397           -3.95397547            0.00000000
 H   -3.52044397            3.95397547            0.00000000
 
-Pentalene 250-25-9 CC3(FC)/cc-pVTZ [D2h constrained]
+Pentalene_2 250-25-9 CC3(FC)/cc-pVTZ [D2h constrained]
 C    0.00000000           -1.32183553            0.00000000 
 C    4.12643396            0.00000000            0.00000000 
 C    0.00000000            1.32183553            0.00000000 
@@ -958,7 +958,7 @@ H    4.04319440            0.00000000            3.17158878
 H   -4.04319440            0.00000000            3.17158878
 H    0.00000000            0.00000000            5.58190673
 
-Phenyl-pyrrole 635-90-5  (N-Phenylpyrrole) CCSD(T)(FC)/cc-pVTZ Planar
+Phenyl-pyrrole_1 635-90-5  (N-Phenylpyrrole) CCSD(T)(FC)/cc-pVTZ Planar
 C    0.00000000            0.00000000            0.78511855
 C    2.26951425            0.00000000            2.12513335
 C   -2.26951425            0.00000000            2.12513335
@@ -980,7 +980,7 @@ H   -3.97993856            0.00000000           -2.63372956
 H    2.56993408            0.00000000           -7.49221560
 H   -2.56993408            0.00000000           -7.49221560
 
-Phenyl-pyrrole 635-90-5  (N-Phenylpyrrole) CCSD(T)(FC)/cc-pVTZ Twisted
+Phenyl-pyrrole_2 635-90-5  (N-Phenylpyrrole) CCSD(T)(FC)/cc-pVTZ Twisted
 C    0.00000000            0.00000000            0.80351712
 C    2.28073444            0.00000000            2.10816686
 C   -2.28073444            0.00000000            2.10816686
@@ -1265,13 +1265,13 @@ H    5.06950243            0.00000000            1.00139499
 H    0.96616458            0.00000000           -3.11935314
 H    0.87110201            0.00000000            2.71756937
 
-Thioformaldehyde 865-36-1 (Methanethial) CC3(Full)/aug-cc-pVTZ Ground state
+Thioformaldehyde_1 865-36-1 (Methanethial) CC3(Full)/aug-cc-pVTZ Ground state
 C    0.00000000            0.00000000           -2.08677304
 S    0.00000000            0.00000000            0.97251194
 H    0.00000000            1.73657773           -3.17013507
 H    0.00000000           -1.73657773           -3.17013507
 
-Thioformaldehyde 865-36-1 (Methanethial) CC3(Full)/aug-cc-pVTZ Excited state
+Thioformaldehyde_2 865-36-1 (Methanethial) CC3(Full)/aug-cc-pVTZ Excited state
 C    0.00000000            0.00000000           -2.20256705
 S    0.00000000            0.00000000            1.02717172
 H    0.00000000            1.76634191           -3.21909384
@@ -1349,7 +1349,7 @@ H    0.00000000            4.06036949            0.67000051
 H    0.00000000           -4.06036949            0.67000051  
 H    0.00000000            2.41059890           -2.41263791  
 
-BeF 13597-96-1 U-CCSD(T)(FC)/aug-cc-pVTZ [Only F's 1s frozen]
+BeF 13597-96-1 U-CCSD(T)(FC)/aug-cc-pVTZ [Only F 1s frozen]
 Be   0.00000000            0.00000000           -1.77936990   
 F    0.00000000            0.00000000            0.79083149   
 
@@ -1741,7 +1741,7 @@ H    0.00000000            6.02612802           -3.47918663
 H    0.00000000            0.00000000            6.95837327
 H    0.00000000           -6.02612802           -3.47918663
 
-Indacene 267-21-0 (s-Indacene) CCSD(T)(FC)/cc-pVTZ
+Indacene_1 267-21-0 (s-Indacene) CCSD(T)(FC)/cc-pVTZ
 C   -0.12187409            2.72754035            0.00000000
 C    0.12187409           -2.72754035            0.00000000
 C   -2.28967444            1.35454483            0.00000000
@@ -1763,7 +1763,7 @@ H   -5.28839356           -4.17123105            0.00000000
 H    8.39157765            0.14300626            0.00000000
 H   -8.39157765           -0.14300626            0.00000000
 
-Indacene 267-21-0 (s-Indacene) CCSD(T)(FC)/cc-pVTZ [D2h constrained]
+Indacene_2 267-21-0 (s-Indacene) CCSD(T)(FC)/cc-pVTZ [D2h constrained]
 C    0.00000000            2.70634052            0.00000000
 C    0.00000000           -2.70634052            0.00000000
 C   -2.25358383            1.35345832            0.00000000
