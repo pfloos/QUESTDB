@@ -50,7 +50,7 @@ QUESTDB supports researchers to:
 
 We aim to catalyze the development of predictive models capable of generating new insights into excited-state behavior. 
 Our long-term vision is to position the QUEST database as a foundational database for the future of neural networks in this field. 
-The aim is to position the present database not just as a resource, but as a key enabler of the next generation of AI-driven scientific research, where deep learning and related technologies will play an increasingly vital role in advancing the frontiers of ES research.
+The aim is to position the present database not just as a resource, but as a key enabler of the next generation of AI-driven scientific research, where deep learning and related technologies will play an increasingly vital role in advancing the frontiers of excited-state research.
 
 ---
 
