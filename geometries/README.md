@@ -11,18 +11,11 @@ This directory provides the **molecular structures** used in QUESTDB in two conv
 - 📚 **TeX Format** (`TeX/`)  
   Contains a `.tex` source file along with its compiled `.pdf`, presenting the **Cartesian coordinates** of all molecules in a **clean, citable format**.  
   Ideal for inclusion in scientific articles and reports.
+  All Cartesian coordinates are expressed in **atomic units (bohr)**.
 
 - 🧪 **XYZ Format** (`xyz/`)  
   Includes individual `.xyz` files for **each molecule**, ready for **direct input** into computational chemistry software (e.g., Gaussian, ORCA, Q-Chem).
-
----
-
-## 📏 Units
-
-> All Cartesian coordinates are expressed in **atomic units (bohr)**.
-
-Please **convert to Ångströms** if needed, by applying the standard conversion factor:  
-**1 bohr ≈ 0.529177 Å**.
+All Cartesian coordinates are expressed in **Angstrom**.
 
 ---
 
