@@ -12,7 +12,7 @@ This folder provides the **Cartesian coordinates** for each molecule in the **st
 ## ⚡ Important Information
 
 > **Units:**  
-> All geometries are expressed in **atomic units (bohr)**.
+> All geometries are expressed in **Angstrom**.
 > We provide the Chemical Abstracts Service Registry Number (CASRN) for each system, a unique numerical identifier assigned to every chemical substance described in the open scientific literature.
 > The level of theory used to optimize each geometry is also provided (FC stands for frozen core).
 
