@@ -75,7 +75,7 @@ Dedicated files for subsets (see below) also include:
 
 ## 🧠 Notes
 
-- All data use **atomic units** unless otherwise specified.
+- All data use **atomic units** unless otherwise specified. Notably, excitation energies are in eV.
 - The database is continuously expanded and refined following the "mountaineering strategy" for reaching high-accuracy benchmarks.
 
 ---
