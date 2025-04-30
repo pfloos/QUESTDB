@@ -69,7 +69,7 @@ Data is structured in `.xls` files for ease of use.
 *S, T, D, and Q refer to singlet, triplet, doublet, and quartet states, respectively.  
 GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and fluorescence, respectively.*
 
-| Subset       | Compounds Total | Nature            | Transitions Total | (Safe) | 1–2 atoms | 3–5 | 6–9 | 10–16 | S   | T   | D   | Q   | Valence (ππ*/nπ*)            | Rydberg | GD  | PD  | CT  | FL |
+| Subset       | Compounds Total | Nature            | Transitions Total | Safe | 1–2 atoms | 3–5 | 6–9 | 10–16 | S   | T   | D   | Q   | Valence (ππ*/nπ*)            | Rydberg | GD  | PD  | CT  | FL |
 |--------------|------------------|--------------------|--------------------|--------|-----------|-----|-----|--------|-----|-----|-----|-----|-------------------------------|---------|-----|-----|-----|----|
 | **main**     | 117              | Org. & Inorg.      | 927                | 837    | 129       | 318 | 338 | 142    | 582 | 345 |     |     | 659 (386 ππ*/207 nπ*)        | 259     | 28  | 21  | 28  | 10 |
 | **rad**      | 33               | Open-shell         | 281                | xxx    | 201       | 80  |     |        |     |     | 217 | 64  | 162                           | 82      | 13  | 21  |     |    |
