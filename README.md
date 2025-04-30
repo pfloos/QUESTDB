@@ -64,6 +64,25 @@ This repository provides:
 
 Data is structured in `.xls` files for ease of use.
 
+### Table: TBEs of VTEs Included in the QUEST Subsets and Full Database by ES Types
+
+*S, T, D, and Q refer to singlet, triplet, doublet, and quartet states, respectively.  
+GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and fluorescence, respectively.*
+
+| Subset       | Compounds Total | Nature            | Transitions Total | (Safe) | 1–2 atoms | 3–5 | 6–9 | 10–16 | S   | T   | D   | Q   | Valence (ππ*/nπ*)            | Rydberg | GD  | PD  | CT  | FL |
+|--------------|------------------|--------------------|--------------------|--------|-----------|-----|-----|--------|-----|-----|-----|-----|-------------------------------|---------|-----|-----|-----|----|
+| **main**     | 117              | Org. & Inorg.      | 927                | 837    | 129       | 318 | 338 | 142    | 582 | 345 |     |     | 659 (386 ππ*/207 nπ*)        | 259     | 28  | 21  | 28  | 10 |
+| **rad**      | 33               | Open-shell         | 281                | xxx    | 201       | 80  |     |        |     |     | 217 | 64  | 162                           | 82      | 13  | 21  |     |    |
+| **chrom**    | 18               | Org. Chromo.       | 158                | ~135¹  |           |     |     | 158    | 86  | 72  |     |     | 149 (40 ππ*/103 nπ*)         | 9       |     | 7   |     |    |
+| **dna**      | 5                | Nucleobases        | 56                 | ~51¹   |           |     | 33  | 23     | 35  | 21  |     |     | 40 (25 ππ*/16 nπ*)           | 16      |     |     |     |    |
+| **tm**       | 11               | Trans. metal diat. | 67                 | 46     | 67        |     |     |        | 28  | 23  | 16  |     |                               |         | 4   |     |     |    |
+| **QUEST**    | 184              |                    | 1489               | ~xxx   | 397       | 398 | 371 | 323    | 731 | 461 | 233 | 64  | 1010                          | 366     | 45  | 49  | 28  | 10 |
+
+---
+
+¹ *Since we do not provide safe/unsafe flags for these series (see text), these values correspond to the number of ESs having %T₁ > 85%.*  
+*a These four size categories are denoted tiny, small, medium, and large in the following.*
+
 ---
 
 ## 👥 Contributors
