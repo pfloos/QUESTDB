@@ -64,10 +64,10 @@ This repository provides:
 
 Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` directory).
 
-📌 **See the accompanying paper:**
+**📌 See the accompanying paper:**  
 [**The QUEST database of highly-accurate excitation energies**]()  
   P.F Loos, M. Boggio-Pasqua,A. Blondel, F. Lipparini, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* (submitted).
+  *J. Chem. Theory Comput.* (submitted).  
 
 ---
 
