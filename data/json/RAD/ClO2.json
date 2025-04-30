@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 81.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
@@ -23,14 +22,13 @@
     "RO-CC3": 2.997
   },
   {
-    "NaN": 82.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.989,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -46,7 +44,6 @@
     "RO-CC3": 3.02
   },
   {
-    "NaN": 83.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
@@ -69,14 +66,13 @@
     "RO-CC3": 3.31
   },
   {
-    "NaN": 84.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
     "D/Q": 2,
     "V/R": "M",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 4.4799999999999995,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -92,7 +88,6 @@
     "RO-CC3": 4.492
   },
   {
-    "NaN": 85.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
@@ -115,7 +110,6 @@
     "RO-CC3": 5.416
   },
   {
-    "NaN": 86.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
@@ -138,7 +132,6 @@
     "RO-CC3": 7.177
   },
   {
-    "NaN": 87.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
@@ -161,7 +154,6 @@
     "RO-CC3": 6.427
   },
   {
-    "NaN": 88.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
@@ -184,7 +176,6 @@
     "RO-CC3": 6.509
   },
   {
-    "NaN": 89.0,
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,

@@ -1,13 +1,12 @@
 [
   {
-    "NaN": 192.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
     "State": "^2A\"",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 1.15,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -25,7 +24,6 @@
     "RO-CC3": 1.151
   },
   {
-    "NaN": 193.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -50,7 +48,6 @@
     "RO-CC3": 2.747
   },
   {
-    "NaN": 194.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -75,7 +72,6 @@
     "RO-CC3": 4.594
   },
   {
-    "NaN": 195.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -100,7 +96,6 @@
     "RO-CC3": 4.88
   },
   {
-    "NaN": 196.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -125,7 +120,6 @@
     "RO-CC3": 5.387
   },
   {
-    "NaN": 197.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -150,7 +144,6 @@
     "RO-CC3": 5.504
   },
   {
-    "NaN": 198.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -175,7 +168,6 @@
     "RO-CC3": 5.806
   },
   {
-    "NaN": 199.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -200,7 +192,6 @@
     "RO-CC3": 6.131
   },
   {
-    "NaN": 200.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -225,7 +216,6 @@
     "RO-CC3": 5.314
   },
   {
-    "NaN": 201.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -250,7 +240,6 @@
     "RO-CC3": 5.916
   },
   {
-    "NaN": 202.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,
@@ -275,7 +264,6 @@
     "RO-CC3": 6.052
   },
   {
-    "NaN": 203.0,
     "Molecule": "H2PS",
     "Size": 2,
     "Group": 12,

@@ -1,13 +1,12 @@
 [
   {
-    "NaN": 178.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
     "State": "^2A\"",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.823,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -25,7 +24,6 @@
     "RO-CC3": 2.832
   },
   {
-    "NaN": 179.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -50,7 +48,6 @@
     "RO-CC3": 4.231
   },
   {
-    "NaN": 180.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -75,7 +72,6 @@
     "RO-CC3": 4.777
   },
   {
-    "NaN": 181.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -100,7 +96,6 @@
     "RO-CC3": 5.604
   },
   {
-    "NaN": 182.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -125,7 +120,6 @@
     "RO-CC3": 5.711
   },
   {
-    "NaN": 183.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -150,7 +144,6 @@
     "RO-CC3": 6.191
   },
   {
-    "NaN": 184.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -175,7 +168,6 @@
     "RO-CC3": 6.777
   },
   {
-    "NaN": 185.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -200,7 +192,6 @@
     "RO-CC3": 6.777
   },
   {
-    "NaN": 186.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -225,7 +216,6 @@
     "RO-CC3": 6.939
   },
   {
-    "NaN": 187.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -250,7 +240,6 @@
     "RO-CC3": 6.995
   },
   {
-    "NaN": 188.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -275,7 +264,6 @@
     "RO-CC3": 7.096
   },
   {
-    "NaN": 189.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -300,7 +288,6 @@
     "RO-CC3": 6.409
   },
   {
-    "NaN": 190.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,
@@ -325,7 +312,6 @@
     "RO-CC3": 7.455
   },
   {
-    "NaN": 191.0,
     "Molecule": "H2PO",
     "Size": 2,
     "Group": 12,

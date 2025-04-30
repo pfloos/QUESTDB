@@ -1,0 +1,18 @@
+[
+  {
+    "Molecule": "Larger",
+    "Size": 23.0,
+    "State": "Rydberg",
+    "S/T": 16.0,
+    "V/R": ">85%",
+    "Type": 51.0
+  },
+  {
+    "Molecule": "Larger",
+    "Size": NaN,
+    "State": NaN,
+    "S/T": NaN,
+    "V/R": NaN,
+    "Type": NaN
+  }
+]

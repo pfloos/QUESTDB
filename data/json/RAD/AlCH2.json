@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 1.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -14,7 +13,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 0.95,
     "Corr. Method": "CCSDT",
-    "NaN": " ",
     "U-ADC(2)": 1.29,
     "RO-ADC(2)": 1.14,
     "U-ADC(3)": 0.913,
@@ -34,7 +32,6 @@
     "CASPT3": 0.948
   },
   {
-    "NaN": 2.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -48,7 +45,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 2.373,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": NaN,
     "RO-ADC(2)": NaN,
     "U-ADC(3)": 1.664,
@@ -68,7 +64,6 @@
     "CASPT3": 2.28
   },
   {
-    "NaN": 3.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -82,7 +77,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 3.41,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": NaN,
     "RO-ADC(2)": NaN,
     "U-ADC(3)": 3.079,
@@ -102,7 +96,6 @@
     "CASPT3": 3.563
   },
   {
-    "NaN": 4.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -116,7 +109,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 3.549,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 3.616,
     "RO-ADC(2)": 3.62,
     "U-ADC(3)": 3.371,
@@ -136,7 +128,6 @@
     "CASPT3": 3.605
   },
   {
-    "NaN": 5.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -148,9 +139,8 @@
     "TBE/AVTZ": 3.987,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVTZ - CCSDTQ/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "TBE/AVQZ": 4,
+    "TBE/AVQZ": 4.0,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 4.729,
     "RO-ADC(2)": 4.549,
     "U-ADC(3)": 3.865,
@@ -165,12 +155,11 @@
     "CASPT2 (No IPEA)": 3.776,
     "CASPT2": 3.996,
     "SC-NEVPT2": 4.04,
-    "PC-NEVPT2": 4,
+    "PC-NEVPT2": 4.0,
     "CASPT3 (No IPEA)": 3.985,
     "CASPT3": 4.036
   },
   {
-    "NaN": 6.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -184,7 +173,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 4.542,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": NaN,
     "RO-ADC(2)": NaN,
     "U-ADC(3)": 4.497,
@@ -204,7 +192,6 @@
     "CASPT3": 4.634
   },
   {
-    "NaN": 7.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -218,7 +205,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 4.568,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 4.642,
     "RO-ADC(2)": 4.598,
     "U-ADC(3)": 4.436,
@@ -238,7 +224,6 @@
     "CASPT3": 4.817
   },
   {
-    "NaN": 8.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -252,7 +237,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 4.806,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 5.297,
     "RO-ADC(2)": 5.176,
     "U-ADC(3)": NaN,
@@ -272,7 +256,6 @@
     "CASPT3": 5.06
   },
   {
-    "NaN": 9.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -286,7 +269,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 5.171,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": NaN,
     "RO-ADC(2)": NaN,
     "U-ADC(3)": NaN,
@@ -306,7 +288,6 @@
     "CASPT3": 5.227
   },
   {
-    "NaN": 10.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -320,7 +301,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 5.473,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 5.451,
     "RO-ADC(2)": 5.446,
     "U-ADC(3)": NaN,
@@ -340,7 +320,6 @@
     "CASPT3": 5.625
   },
   {
-    "NaN": 11.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -354,7 +333,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 5.573,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 5.596,
     "RO-ADC(2)": 5.576,
     "U-ADC(3)": NaN,
@@ -374,7 +352,6 @@
     "CASPT3": 5.509
   },
   {
-    "NaN": 12.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -388,7 +365,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 2.096,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 2.029,
     "RO-ADC(2)": 2.027,
     "U-ADC(3)": 2.059,
@@ -408,7 +384,6 @@
     "CASPT3": 2.01
   },
   {
-    "NaN": 13.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -422,7 +397,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 2.582,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 2.901,
     "RO-ADC(2)": 2.861,
     "U-ADC(3)": 2.223,
@@ -442,7 +416,6 @@
     "CASPT3": 2.563
   },
   {
-    "NaN": 14.0,
     "Molecule": "AlCH2",
     "Size": 2,
     "Group": 12,
@@ -456,7 +429,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 4.712,
     "Corr. Method": "CCSDT",
-    "NaN": NaN,
     "U-ADC(2)": 4.882,
     "RO-ADC(2)": 4.873,
     "U-ADC(3)": NaN,

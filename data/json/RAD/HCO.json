@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 155.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -25,7 +24,6 @@
     "RO-CC3": 2.108
   },
   {
-    "NaN": 156.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -50,7 +48,6 @@
     "RO-CC3": 5.436
   },
   {
-    "NaN": 157.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -75,7 +72,6 @@
     "RO-CC3": 6.187
   },
   {
-    "NaN": 158.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -100,7 +96,6 @@
     "RO-CC3": 6.355
   },
   {
-    "NaN": 159.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -125,7 +120,6 @@
     "RO-CC3": 6.893
   },
   {
-    "NaN": 160.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -150,7 +144,6 @@
     "RO-CC3": 6.924
   },
   {
-    "NaN": 161.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -175,7 +168,6 @@
     "RO-CC3": 7.132
   },
   {
-    "NaN": 162.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -200,7 +192,6 @@
     "RO-CC3": 7.84
   },
   {
-    "NaN": 163.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -225,7 +216,6 @@
     "RO-CC3": 6.581
   },
   {
-    "NaN": 164.0,
     "Molecule": "HCO",
     "Size": 2,
     "Group": 12,
@@ -240,7 +230,7 @@
     "Corr. Method": "CC3",
     "U-ADC(2)": 7.378,
     "RO-ADC(2)": 7.275,
-    "U-ADC(3)": 6,
+    "U-ADC(3)": 6.0,
     "RO-ADC(3)": 7.2,
     "U-CC2": 7.587,
     "RO-CC2": 7.556,

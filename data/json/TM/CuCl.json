@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 1.0,
     "Molecule": "CuCl",
     "State": "^1Sigma^+",
     "S/D/T": 1,
@@ -18,7 +17,6 @@
     "PC-NEVPT2": 3.03
   },
   {
-    "NaN": 2.0,
     "Molecule": "CuCl",
     "State": "^1Pi",
     "S/D/T": 1,
@@ -36,7 +34,6 @@
     "PC-NEVPT2": 3.015
   },
   {
-    "NaN": 3.0,
     "Molecule": "CuCl",
     "State": "^1Delta",
     "S/D/T": 1,
@@ -54,7 +51,6 @@
     "PC-NEVPT2": 3.454
   },
   {
-    "NaN": 4.0,
     "Molecule": "CuCl",
     "State": "^3Sigma^+",
     "S/D/T": 3,
@@ -72,7 +68,6 @@
     "PC-NEVPT2": 2.578
   },
   {
-    "NaN": 5.0,
     "Molecule": "CuCl",
     "State": "^3Pi",
     "S/D/T": 3,
@@ -90,7 +85,6 @@
     "PC-NEVPT2": 2.818
   },
   {
-    "NaN": 6.0,
     "Molecule": "CuCl",
     "State": "^3Delta",
     "S/D/T": 3,

@@ -1,9 +1,8 @@
 [
   {
-    "NaN": 62.0,
     "Molecule": "ZnS",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "S/D/T": 1.0,
     "Type": "3p4s",
     "TBE/AVTZ": 0.8140000000000001,
     "Method": "exFCI/AVTZ",
@@ -18,13 +17,12 @@
     "PC-NEVPT2": 0.724
   },
   {
-    "NaN": 63.0,
     "Molecule": "ZnS",
     "State": "^1Sigma^+",
-    "S/D/T": 1,
+    "S/D/T": 1.0,
     "Type": "si4s",
     "TBE/AVTZ": 3.641,
-    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "N",
     " ": " ",
     "CC3": 3.651,
@@ -36,13 +34,12 @@
     "PC-NEVPT2": 3.915
   },
   {
-    "NaN": 64.0,
     "Molecule": "ZnS",
     "State": "^1Delta",
-    "S/D/T": 1,
+    "S/D/T": 1.0,
     "Type": "3p4s",
     "TBE/AVTZ": 4.229,
-    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 4.225,
@@ -54,13 +51,12 @@
     "PC-NEVPT2": 4.216
   },
   {
-    "NaN": 65.0,
     "Molecule": "ZnS",
     "State": "^1Sigma^-",
-    "S/D/T": 1,
+    "S/D/T": 1.0,
     "Type": "3p4s",
     "TBE/AVTZ": 4.282,
-    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 4.252,
@@ -72,10 +68,9 @@
     "PC-NEVPT2": 4.258
   },
   {
-    "NaN": 66.0,
     "Molecule": "ZnS",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "S/D/T": 3.0,
     "Type": "3p4s",
     "TBE/AVTZ": 0.546,
     "Method": "CCSDT/AVTZ",
@@ -90,10 +85,9 @@
     "PC-NEVPT2": 0.524
   },
   {
-    "NaN": 67.0,
     "Molecule": "ZnS",
     "State": "^3Sigma^+",
-    "S/D/T": 3,
+    "S/D/T": 3.0,
     "Type": "si4s",
     "TBE/AVTZ": 2.306,
     "Method": "CCSDT/AVTZ",
@@ -108,7 +102,6 @@
     "PC-NEVPT2": 2.306
   },
   {
-    "NaN": NaN,
     "Molecule": "ZnS",
     "State": NaN,
     "S/D/T": NaN,

@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 76.0,
     "Molecule": "CH3",
     "Size": 1,
     "Group": 12,
@@ -32,7 +31,6 @@
     "CASPT3": 5.879
   },
   {
-    "NaN": 77.0,
     "Molecule": "CH3",
     "Size": 1,
     "Group": 12,
@@ -64,7 +62,6 @@
     "CASPT3": 7.083
   },
   {
-    "NaN": 78.0,
     "Molecule": "CH3",
     "Size": 1,
     "Group": 12,
@@ -96,7 +93,6 @@
     "CASPT3": 7.129
   },
   {
-    "NaN": 79.0,
     "Molecule": "CH3",
     "Size": 1,
     "Group": 12,
@@ -128,7 +124,6 @@
     "CASPT3": 7.641
   },
   {
-    "NaN": 80.0,
     "Molecule": "CH3",
     "Size": 1,
     "Group": 12,

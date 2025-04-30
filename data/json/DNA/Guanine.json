@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 25.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -30,7 +29,6 @@
     "ADC(2.5)": 4.942
   },
   {
-    "NaN": 26.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -60,7 +58,6 @@
     "ADC(2.5)": 4.9745
   },
   {
-    "NaN": 27.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -90,7 +87,6 @@
     "ADC(2.5)": 5.3435
   },
   {
-    "NaN": 28.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -99,7 +95,7 @@
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 88.6,
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 5.524,
     "Method": "CCSDT/6-31+G(d) + [CC3/AVTZ - CC3/6-31+G(d)]",
     " ": " ",
@@ -120,7 +116,6 @@
     "ADC(2.5)": 5.545999999999999
   },
   {
-    "NaN": 29.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -150,7 +145,6 @@
     "ADC(2.5)": 5.4445
   },
   {
-    "NaN": 30.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -180,7 +174,6 @@
     "ADC(2.5)": 4.1505
   },
   {
-    "NaN": 31.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -210,7 +203,6 @@
     "ADC(2.5)": 4.330500000000001
   },
   {
-    "NaN": 32.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -240,7 +232,6 @@
     "ADC(2.5)": 4.8965
   },
   {
-    "NaN": 33.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -270,7 +261,6 @@
     "ADC(2.5)": 5.3125
   },
   {
-    "NaN": 34.0,
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
@@ -278,7 +268,7 @@
     "S/T": 3,
     "V/R": "R",
     "Type": NaN,
-    "%T1 [CC3/AVDZ]": 97,
+    "%T1 [CC3/AVDZ]": 97.0,
     "f [LR-CCSD/AVTZ]": NaN,
     "TBE/AVTZ": 5.396,
     "Method": "CC3/AVDZ + [CCSD/AVTZ - CCSD/AVDZ]",

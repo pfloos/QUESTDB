@@ -1,12 +1,11 @@
 [
   {
-    "NaN": 56.0,
     "Molecule": "ZnO",
     "State": "^1Pi",
     "S/D/T": 1,
     "Type": "2p4s",
     "TBE/AVTZ": 0.791,
-    "Method": "exFCI/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "exFCI/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 0.835,
@@ -18,13 +17,12 @@
     "PC-NEVPT2": 0.557
   },
   {
-    "NaN": 57.0,
     "Molecule": "ZnO",
     "State": "^1Sigma^+",
     "S/D/T": 1,
     "Type": "si4s",
     "TBE/AVTZ": 3.423,
-    "Method": "exFCI/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "exFCI/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 3.26,
@@ -36,13 +34,12 @@
     "PC-NEVPT2": 3.718
   },
   {
-    "NaN": 58.0,
     "Molecule": "ZnO",
     "State": "^1Delta",
     "S/D/T": 1,
     "Type": "2p4s",
     "TBE/AVTZ": 4.645,
-    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "N",
     " ": " ",
     "CC3": 4.352,
@@ -54,13 +51,12 @@
     "PC-NEVPT2": 4.413
   },
   {
-    "NaN": 59.0,
     "Molecule": "ZnO",
     "State": "^1Sigma^-",
     "S/D/T": 1,
     "Type": "2p4s",
     "TBE/AVTZ": 4.688,
-    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ \u2013 CC4/AVDZ]",
+    "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "N",
     " ": " ",
     "CC3": 4.401,
@@ -72,13 +68,12 @@
     "PC-NEVPT2": 4.587
   },
   {
-    "NaN": 60.0,
     "Molecule": "ZnO",
     "State": "^3Pi",
     "S/D/T": 3,
     "Type": "2p4s",
     "TBE/AVTZ": 0.542,
-    "Method": "exFCI/AVDZ + [CCSDT/AVTZ \u2013 CCSDT/AVDZ]",
+    "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 0.5740000000000001,
@@ -90,13 +85,12 @@
     "PC-NEVPT2": 0.358
   },
   {
-    "NaN": 61.0,
     "Molecule": "ZnO",
     "State": "^3Sigma^+",
     "S/D/T": 3,
     "Type": "si4s",
     "TBE/AVTZ": 1.791,
-    "Method": "exFCI/AVDZ + [CCSDT/AVTZ \u2013 CCSDT/AVDZ]",
+    "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 1.88,

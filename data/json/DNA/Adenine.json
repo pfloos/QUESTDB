@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 1.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -30,7 +29,6 @@
     "ADC(2.5)": 5.2059999999999995
   },
   {
-    "NaN": 2.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -38,7 +36,7 @@
     "S/T": 1,
     "V/R": "V",
     "Type": "ppi",
-    "%T1 [CC3/AVDZ]": 89,
+    "%T1 [CC3/AVDZ]": 89.0,
     "f [LR-CCSD/AVTZ]": 0.263,
     "TBE/AVTZ": 5.304,
     "Method": "CCSDT/6-31+G(d) + [CC3/AVTZ - CC3/6-31+G(d)]",
@@ -60,7 +58,6 @@
     "ADC(2.5)": 5.2235
   },
   {
-    "NaN": 3.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -90,7 +87,6 @@
     "ADC(2.5)": 5.35
   },
   {
-    "NaN": 4.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -120,7 +116,6 @@
     "ADC(2.5)": 5.542999999999999
   },
   {
-    "NaN": 5.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -150,7 +145,6 @@
     "ADC(2.5)": 5.9165
   },
   {
-    "NaN": 6.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -180,7 +174,6 @@
     "ADC(2.5)": 5.882
   },
   {
-    "NaN": 7.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -210,7 +203,6 @@
     "ADC(2.5)": 6.392
   },
   {
-    "NaN": 8.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -240,7 +232,6 @@
     "ADC(2.5)": 6.4665
   },
   {
-    "NaN": 9.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -270,7 +261,6 @@
     "ADC(2.5)": 6.622999999999999
   },
   {
-    "NaN": 10.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -300,7 +290,6 @@
     "ADC(2.5)": 3.915
   },
   {
-    "NaN": 11.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -308,7 +297,7 @@
     "S/T": 3,
     "V/R": "V",
     "Type": "ppi",
-    "%T1 [CC3/AVDZ]": 97,
+    "%T1 [CC3/AVDZ]": 97.0,
     "f [LR-CCSD/AVTZ]": NaN,
     "TBE/AVTZ": 4.867000000000001,
     "Method": "CC3/AVDZ + [CCSD/AVTZ - CCSD/AVDZ]",
@@ -330,7 +319,6 @@
     "ADC(2.5)": 4.823
   },
   {
-    "NaN": 12.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
@@ -360,7 +348,6 @@
     "ADC(2.5)": 5.16
   },
   {
-    "NaN": 13.0,
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,

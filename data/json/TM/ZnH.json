@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 51.0,
     "Molecule": "ZnH",
     "State": "^2Pi",
     "S/D/T": 2,
@@ -14,13 +13,12 @@
     "CASPT2 (No IPEA)": 2.838
   },
   {
-    "NaN": 52.0,
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
     "S/D/T": 2,
     "Type": "si4s",
     "TBE/AVTZ": 4.482,
-    "Method": "exFCI/AVDZ + [CCSDT/AVTZ \u2013 CCSDT/AVDZ]",
+    "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     "CC3": 4.499,
     "CCSDT": 4.478,
@@ -28,7 +26,6 @@
     "CASPT2 (No IPEA)": 4.397
   },
   {
-    "NaN": 53.0,
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
     "S/D/T": 2,
@@ -42,13 +39,12 @@
     "CASPT2 (No IPEA)": 5.089
   },
   {
-    "NaN": 54.0,
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
     "S/D/T": 2,
     "Type": "4s5p",
     "TBE/AVTZ": 5.663,
-    "Method": "exFCI/AVDZ + [CCSDT/AVTZ \u2013 CCSDT/AVDZ]",
+    "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     "CC3": 5.691,
     "CCSDT": 5.647,
@@ -56,7 +52,6 @@
     "CASPT2 (No IPEA)": 5.548
   },
   {
-    "NaN": 55.0,
     "Molecule": "ZnH",
     "State": "^2Pi",
     "S/D/T": 2,

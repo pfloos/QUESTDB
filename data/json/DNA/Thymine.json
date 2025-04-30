@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 35.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -9,7 +8,7 @@
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 86.8,
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 4.98,
     "Method": "CCSDT/6-31+G(d) + [CC3/AVTZ - CC3/6-31+G(d)]",
     " ": " ",
@@ -30,7 +29,6 @@
     "ADC(2.5)": 5.026
   },
   {
-    "NaN": 36.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -60,7 +58,6 @@
     "ADC(2.5)": 5.246
   },
   {
-    "NaN": 37.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -90,7 +87,6 @@
     "ADC(2.5)": 5.764
   },
   {
-    "NaN": 38.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -120,7 +116,6 @@
     "ADC(2.5)": 6.429
   },
   {
-    "NaN": 39.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -128,8 +123,8 @@
     "S/T": 1,
     "V/R": "V",
     "Type": "npi",
-    "%T1 [CC3/AVDZ]": 88,
-    "f [LR-CCSD/AVTZ]": 0,
+    "%T1 [CC3/AVDZ]": 88.0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 6.405,
     "Method": "CCSDT/6-31+G(d) + [CC3/AVTZ - CC3/6-31+G(d)]",
     " ": " ",
@@ -150,7 +145,6 @@
     "ADC(2.5)": 6.469
   },
   {
-    "NaN": 40.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -180,7 +174,6 @@
     "ADC(2.5)": 6.536
   },
   {
-    "NaN": 41.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -210,7 +203,6 @@
     "ADC(2.5)": 6.639
   },
   {
-    "NaN": 42.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -219,7 +211,7 @@
     "V/R": "R",
     "Type": NaN,
     "%T1 [CC3/AVDZ]": 92.4,
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 6.743,
     "Method": "CCSDT/6-31+G(d) + [CC3/AVTZ - CC3/6-31+G(d)]",
     " ": " ",
@@ -240,7 +232,6 @@
     "ADC(2.5)": 6.694
   },
   {
-    "NaN": 43.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -270,7 +261,6 @@
     "ADC(2.5)": 3.703
   },
   {
-    "NaN": 44.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -293,14 +283,13 @@
     "CC3": NaN,
     "SOS-ADC(2) [TM]": 4.937,
     "SOS-CC2": 5.121,
-    "SCS-CC2": 5,
+    "SCS-CC2": 5.0,
     "SOS-ADC(2) [QC]": 4.701,
     "ADC(2)": 4.525,
     "ADC(3)": 5.073,
     "ADC(2.5)": 4.799
   },
   {
-    "NaN": 45.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,
@@ -330,7 +319,6 @@
     "ADC(2.5)": 5.386
   },
   {
-    "NaN": 46.0,
     "Molecule": "Thymine",
     "Size": 9,
     "Group": 69,

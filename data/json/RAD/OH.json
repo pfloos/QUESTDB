@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 256.0,
     "Molecule": "OH",
     "Size": 1,
     "Group": 12,
@@ -26,7 +25,6 @@
     "RO-CC3": 4.125
   },
   {
-    "NaN": 257.0,
     "Molecule": "OH",
     "Size": 1,
     "Group": 12,
@@ -52,7 +50,6 @@
     "RO-CC3": 8.174
   },
   {
-    "NaN": 258.0,
     "Molecule": "OH",
     "Size": 1,
     "Group": 12,
@@ -78,7 +75,6 @@
     "RO-CC3": 10.3985
   },
   {
-    "NaN": 259.0,
     "Molecule": "OH",
     "Size": 1,
     "Group": 12,

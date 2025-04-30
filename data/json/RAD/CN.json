@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 90.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -33,7 +32,6 @@
     "CASPT3": 1.355
   },
   {
-    "NaN": 91.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -66,7 +64,6 @@
     "CASPT3": 3.248
   },
   {
-    "NaN": 92.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -74,7 +71,7 @@
     "D/Q": 2,
     "V/R": "V",
     "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 7.882,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -99,7 +96,6 @@
     "CASPT3": 7.957
   },
   {
-    "NaN": 93.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -132,7 +128,6 @@
     "CASPT3": 8.476
   },
   {
-    "NaN": 94.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -165,7 +160,6 @@
     "CASPT3": 8.626
   },
   {
-    "NaN": 95.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -198,7 +192,6 @@
     "CASPT3": 8.756
   },
   {
-    "NaN": 96.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -231,7 +224,6 @@
     "CASPT3": 6.075
   },
   {
-    "NaN": 97.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,
@@ -264,7 +256,6 @@
     "CASPT3": 7.161
   },
   {
-    "NaN": 98.0,
     "Molecule": "CN",
     "Size": 2,
     "Group": 12,

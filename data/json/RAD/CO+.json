@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 106.0,
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
@@ -32,7 +31,6 @@
     "CASPT3": 7.359
   },
   {
-    "NaN": 107.0,
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
@@ -64,7 +62,6 @@
     "CASPT3": 3.312
   },
   {
-    "NaN": 108.0,
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
@@ -96,7 +93,6 @@
     "CASPT3": 5.873
   },
   {
-    "NaN": 109.0,
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
@@ -128,7 +124,6 @@
     "CASPT3": 9.328
   },
   {
-    "NaN": 110.0,
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
@@ -160,7 +155,6 @@
     "CASPT3": 7.284
   },
   {
-    "NaN": 111.0,
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,

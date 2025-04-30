@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 26.0,
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
@@ -25,7 +24,6 @@
     "RO-CC3": 4.144
   },
   {
-    "NaN": 27.0,
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
@@ -50,7 +48,6 @@
     "RO-CC3": 6.191
   },
   {
-    "NaN": 28.0,
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
@@ -75,7 +72,6 @@
     "RO-CC3": 6.288
   },
   {
-    "NaN": 29.0,
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
@@ -100,7 +96,6 @@
     "RO-CC3": 7.113
   },
   {
-    "NaN": 30.0,
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,

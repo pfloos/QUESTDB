@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 51.0,
     "Molecule": "BO2",
     "Size": 3,
     "Group": 35,
@@ -32,7 +31,6 @@
     "CASPT3": 2.336
   },
   {
-    "NaN": 52.0,
     "Molecule": "BO2",
     "Size": 3,
     "Group": 35,
@@ -64,7 +62,6 @@
     "CASPT3": 3.068
   },
   {
-    "NaN": 53.0,
     "Molecule": "BO2",
     "Size": 3,
     "Group": 35,

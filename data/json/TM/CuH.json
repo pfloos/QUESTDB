@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 15.0,
     "Molecule": "CuH",
     "State": "^1Sigma^+",
     "S/D/T": 1,
@@ -17,7 +16,6 @@
     "CASPT2 (No IPEA)": 3.067
   },
   {
-    "NaN": 16.0,
     "Molecule": "CuH",
     "State": "^1Delta",
     "S/D/T": 1,
@@ -34,7 +32,6 @@
     "CASPT2 (No IPEA)": 3.642
   },
   {
-    "NaN": 17.0,
     "Molecule": "CuH",
     "State": "^1Pi",
     "S/D/T": 1,
@@ -51,7 +48,6 @@
     "CASPT2 (No IPEA)": 3.652
   },
   {
-    "NaN": 18.0,
     "Molecule": "CuH",
     "State": "^1Pi",
     "S/D/T": 1,
@@ -68,7 +64,6 @@
     "CASPT2 (No IPEA)": 5.26
   },
   {
-    "NaN": 19.0,
     "Molecule": "CuH",
     "State": "^1Sigma^+",
     "S/D/T": 1,
@@ -85,13 +80,12 @@
     "CASPT2 (No IPEA)": 5.932
   },
   {
-    "NaN": 20.0,
     "Molecule": "CuH",
     "State": "^3Sigma^+",
     "S/D/T": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 2.55,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 2.626,
@@ -102,13 +96,12 @@
     "CASPT2 (No IPEA)": 2.507
   },
   {
-    "NaN": 21.0,
     "Molecule": "CuH",
     "State": "^3Pi",
     "S/D/T": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 3.582,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 3.508,
@@ -119,7 +112,6 @@
     "CASPT2 (No IPEA)": 3.428
   },
   {
-    "NaN": 22.0,
     "Molecule": "CuH",
     "State": "^3Delta",
     "S/D/T": 3,
@@ -136,7 +128,6 @@
     "CASPT2 (No IPEA)": 3.509
   },
   {
-    "NaN": 23.0,
     "Molecule": "CuH",
     "State": "^3Pi",
     "S/D/T": 3,

@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 32.0,
     "Molecule": "ScH",
     "State": "^1Delta",
     "S/D/T": 1,
@@ -18,7 +17,6 @@
     "PC-NEVPT2": 0.535
   },
   {
-    "NaN": 33.0,
     "Molecule": "ScH",
     "State": "^1Pi",
     "S/D/T": 1,
@@ -36,7 +34,6 @@
     "PC-NEVPT2": 0.769
   },
   {
-    "NaN": 34.0,
     "Molecule": "ScH",
     "State": "^1Sigma^+",
     "S/D/T": 1,
@@ -54,7 +51,6 @@
     "PC-NEVPT2": 1.983
   },
   {
-    "NaN": 35.0,
     "Molecule": "ScH",
     "State": "^1Pi",
     "S/D/T": 1,
@@ -72,7 +68,6 @@
     "PC-NEVPT2": 2.149
   },
   {
-    "NaN": 36.0,
     "Molecule": "ScH",
     "State": "^3Delta",
     "S/D/T": 3,
@@ -90,7 +85,6 @@
     "PC-NEVPT2": 0.295
   },
   {
-    "NaN": 37.0,
     "Molecule": "ScH",
     "State": "^3Pi",
     "S/D/T": 3,
@@ -108,7 +102,6 @@
     "PC-NEVPT2": 0.523
   },
   {
-    "NaN": 38.0,
     "Molecule": "ScH",
     "State": "^3Sigma^+",
     "S/D/T": 3,
@@ -126,7 +119,6 @@
     "PC-NEVPT2": 0.8270000000000001
   },
   {
-    "NaN": 39.0,
     "Molecule": "ScH",
     "State": "^3Pi",
     "S/D/T": 3,

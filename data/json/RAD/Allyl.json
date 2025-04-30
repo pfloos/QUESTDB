@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 15.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -11,7 +10,6 @@
     "TBE/AVTZ": 3.418,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 4.338,
     "RO-ADC(2)": 3.154,
     "U-ADC(3)": 3.384,
@@ -31,7 +29,6 @@
     "CASPT3": 3.422
   },
   {
-    "NaN": 16.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -42,7 +39,6 @@
     "TBE/AVTZ": 4.950000000000001,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 5.32,
     "RO-ADC(2)": 4.627,
     "U-ADC(3)": 5.04,
@@ -62,7 +58,6 @@
     "CASPT3": 5.001
   },
   {
-    "NaN": 17.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -73,7 +68,6 @@
     "TBE/AVTZ": 5.503,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 5.874,
     "RO-ADC(2)": 5.167,
     "U-ADC(3)": 5.598,
@@ -93,7 +87,6 @@
     "CASPT3": 5.499
   },
   {
-    "NaN": 18.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -104,7 +97,6 @@
     "TBE/AVTZ": 5.604000000000001,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 5.932,
     "RO-ADC(2)": 5.259,
     "U-ADC(3)": 5.698,
@@ -124,7 +116,6 @@
     "CASPT3": 5.665
   },
   {
-    "NaN": 19.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -135,7 +126,6 @@
     "TBE/AVTZ": 5.734999999999999,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 5.932,
     "RO-ADC(2)": 5.46,
     "U-ADC(3)": 5.666,
@@ -155,7 +145,6 @@
     "CASPT3": 6.004
   },
   {
-    "NaN": 20.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -166,7 +155,6 @@
     "TBE/AVTZ": 6.245,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 6.815,
     "RO-ADC(2)": 6.116,
     "U-ADC(3)": 6.437,
@@ -186,7 +174,6 @@
     "CASPT3": 6.525
   },
   {
-    "NaN": 21.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -197,7 +184,6 @@
     "TBE/AVTZ": 6.4209999999999985,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 6.722,
     "RO-ADC(2)": 6.027,
     "U-ADC(3)": 6.529,
@@ -217,18 +203,16 @@
     "CASPT3": 6.435
   },
   {
-    "NaN": 22.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
     "D/Q": 2,
     "V/R": "R",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 6.493000000000001,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 6.833,
     "RO-ADC(2)": 6.149,
     "U-ADC(3)": 6.612,
@@ -248,7 +232,6 @@
     "CASPT3": 6.55
   },
   {
-    "NaN": 23.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -259,7 +242,6 @@
     "TBE/AVTZ": 6.537999999999999,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 6.817,
     "RO-ADC(2)": 6.351,
     "U-ADC(3)": 6.54,
@@ -279,7 +261,6 @@
     "CASPT3": 6.944
   },
   {
-    "NaN": 24.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -290,11 +271,10 @@
     "TBE/AVTZ": 6.561,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 7.05,
     "RO-ADC(2)": 6.377,
     "U-ADC(3)": 6.702,
-    "RO-ADC(3)": 6,
+    "RO-ADC(3)": 6.0,
     "U-CC2": 6.889,
     "RO-CC2": 6.629,
     "U-CCSD": 6.792,
@@ -310,7 +290,6 @@
     "CASPT3": 6.807
   },
   {
-    "NaN": 25.0,
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
@@ -321,7 +300,6 @@
     "TBE/AVTZ": 6.0120000000000005,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
-    "NaN": " ",
     "U-ADC(2)": 7.12,
     "RO-ADC(2)": 6.8,
     "U-ADC(3)": 5.478,

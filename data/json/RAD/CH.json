@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 54.0,
     "Molecule": "CH",
     "Size": 1,
     "Group": 12,
@@ -26,7 +25,6 @@
     "RO-CC3": 3.097
   },
   {
-    "NaN": 55.0,
     "Molecule": "CH",
     "Size": 1,
     "Group": 12,
@@ -52,7 +50,6 @@
     "RO-CC3": 3.546
   },
   {
-    "NaN": 56.0,
     "Molecule": "CH",
     "Size": 1,
     "Group": 12,
@@ -78,7 +75,6 @@
     "RO-CC3": 4.404
   },
   {
-    "NaN": 57.0,
     "Molecule": "CH",
     "Size": 1,
     "Group": 12,
@@ -104,7 +100,6 @@
     "RO-CC3": 6.497
   },
   {
-    "NaN": 58.0,
     "Molecule": "CH",
     "Size": 1,
     "Group": 12,
@@ -130,7 +125,6 @@
     "RO-CC3": 0.855
   },
   {
-    "NaN": 59.0,
     "Molecule": "CH",
     "Size": 1,
     "Group": 12,

@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 70.0,
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
@@ -32,14 +31,13 @@
     "CASPT3": 3.853
   },
   {
-    "NaN": 71.0,
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
     "State": "^2A_1",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 5.227,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVTZ - CCSDTQ/6-31+G(d)] ",
     "Safe ? (~50 meV)": "Y",
@@ -64,7 +62,6 @@
     "CASPT3": 5.233
   },
   {
-    "NaN": 72.0,
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
@@ -96,7 +93,6 @@
     "CASPT3": 5.77
   },
   {
-    "NaN": 73.0,
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
@@ -128,7 +124,6 @@
     "CASPT3": 6.495
   },
   {
-    "NaN": 74.0,
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
@@ -160,7 +155,6 @@
     "CASPT3": 6.89
   },
   {
-    "NaN": 75.0,
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,

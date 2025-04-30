@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 123.0,
     "Molecule": "F2BO",
     "Size": 4,
     "Group": 35,
@@ -23,14 +22,13 @@
     "RO-CC3": 0.71
   },
   {
-    "NaN": 124.0,
     "Molecule": "F2BO",
     "Size": 4,
     "Group": 35,
     "State": "^2A_1",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": 0,
+    "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.772,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
@@ -46,7 +44,6 @@
     "RO-CC3": 2.785
   },
   {
-    "NaN": 125.0,
     "Molecule": "F2BO",
     "Size": 4,
     "Group": 35,
@@ -69,7 +66,6 @@
     "RO-CC3": 6.554
   },
   {
-    "NaN": 126.0,
     "Molecule": "F2BO",
     "Size": 4,
     "Group": 35,
@@ -92,7 +88,6 @@
     "RO-CC3": 6.972
   },
   {
-    "NaN": 127.0,
     "Molecule": "F2BO",
     "Size": 4,
     "Group": 35,

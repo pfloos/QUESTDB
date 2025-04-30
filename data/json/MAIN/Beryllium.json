@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 134.0,
     "Molecule": "Beryllium",
     "Size": 1,
     "Group": 12,
@@ -15,7 +14,6 @@
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 7.106,
     "Corr. Method": "FCI",
-    "NaN": " ",
     "CCSDT-3": 7.157,
     "CC3": 7.158,
     "CCSDT": 7.152,

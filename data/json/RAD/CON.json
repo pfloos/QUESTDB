@@ -1,6 +1,5 @@
 [
   {
-    "NaN": 112.0,
     "Molecule": "CON",
     "Size": 3,
     "Group": 35,
@@ -33,7 +32,6 @@
     "CASPT3": 9.176
   },
   {
-    "NaN": 113.0,
     "Molecule": "CON",
     "Size": 3,
     "Group": 35,
@@ -66,7 +64,6 @@
     "CASPT3": 3.808
   },
   {
-    "NaN": 114.0,
     "Molecule": "CON",
     "Size": 3,
     "Group": 35,
@@ -99,7 +96,6 @@
     "CASPT3": 4.331
   },
   {
-    "NaN": 115.0,
     "Molecule": "CON",
     "Size": 3,
     "Group": 35,

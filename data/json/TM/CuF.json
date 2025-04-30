@@ -1,12 +1,11 @@
 [
   {
-    "NaN": 7.0,
     "Molecule": "CuF",
     "State": "^1Sigma^+",
     "S/D/T": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 2.572,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 2.596,
@@ -16,13 +15,12 @@
     "CASPT2 (No IPEA)": 2.477
   },
   {
-    "NaN": 8.0,
     "Molecule": "CuF",
     "State": "^1Pi",
     "S/D/T": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 2.793,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 2.6710000000000003,
@@ -32,13 +30,12 @@
     "CASPT2 (No IPEA)": 2.658
   },
   {
-    "NaN": 9.0,
     "Molecule": "CuF",
     "State": "^1Delta",
     "S/D/T": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 3.316,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "N",
     " ": " ",
     "CC3": 3.245,
@@ -48,7 +45,6 @@
     "CASPT2 (No IPEA)": 3.045
   },
   {
-    "NaN": 10.0,
     "Molecule": "CuF",
     "State": "^1Pi",
     "S/D/T": 1,
@@ -64,13 +60,12 @@
     "CASPT2 (No IPEA)": 6.021
   },
   {
-    "NaN": 11.0,
     "Molecule": "CuF",
     "State": "^3Sigma^+",
     "S/D/T": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 2.063,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 2.158,
@@ -80,13 +75,12 @@
     "CASPT2 (No IPEA)": 1.933
   },
   {
-    "NaN": 12.0,
     "Molecule": "CuF",
     "State": "^3Pi",
     "S/D/T": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 2.471,
-    "Method": "exFCI/AVDZ + [CASPT2/AVTZ \u2013 CASPT2/AVDZ]",
+    "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     " ": " ",
     "CC3": 2.439,
@@ -96,7 +90,6 @@
     "CASPT2 (No IPEA)": 2.355
   },
   {
-    "NaN": 13.0,
     "Molecule": "CuF",
     "State": "^3Delta",
     "S/D/T": 3,
@@ -112,7 +105,6 @@
     "CASPT2 (No IPEA)": 2.791
   },
   {
-    "NaN": 14.0,
     "Molecule": "CuF",
     "State": "^3Pi",
     "S/D/T": 3,
