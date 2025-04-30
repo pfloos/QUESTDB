@@ -58,7 +58,7 @@ To assist users in identifying excited states using their preferred methodology,
 Dedicated files for subsets (see below) also include:
 - Additional computational methods and basis sets.
 - Molecular orbitals involved in transitions.
-- Spatial extent of the electron cloud $\angle r^2 \rangle$.
+- Spatial extent of the electron cloud $\langle r^2 \rangle$.
 - Extra annotations for complex cases.
 
 ---
