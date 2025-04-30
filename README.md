@@ -64,20 +64,6 @@ This repository provides:
 
 Data is structured in `.xls` files for ease of use.
 
-Here is an overview of the QUEST database:
-
-| Subset       | Compounds Total | Nature            | Transitions Total | Safe | 1–2 atoms | 3–5 atoms | 6–9 atoms | 10–16 atoms | S   | T   | D   | Q   | Valence | Rydberg | GD  | PD  | CT  | FL |
-|--------------|------------------|--------------------|--------------------|--------|-----------|-----|-----|--------|-----|-----|-----|-----|-------------------------------|---------|-----|-----|-----|----|
-| **Main**     | 117              | Organic & Inorg.      | 927                | 837    | 129       | 318 | 338 | 142    | 582 | 345 |     |     | 659       | 259     | 28  | 21  | 28  | 10 |
-| **Rad**      | 33               | Open-shell         | 281                | xxx    | 201       | 80  |     |        |     |     | 217 | 64  | 162       | 82      | 13  | 21  |     |    |
-| **Chrom**    | 18               | Org. Chromophore       | 158                | ~135  |           |     |     | 158    | 86  | 72  |     |     | 149    | 9       |     | 7   |     |    |
-| **DNA**      | 5                | Nucleobases        | 56                 | ~51   |           |     | 33  | 23     | 35  | 21  |     |     | 40         | 16      |     |     |     |    |
-| **TM**       | 11               | Transition metal diatomics | 67                 | 46     | 67        |     |     |        | 28  | 23  | 16  |     |   |         | 4   |     |     |    |
-| **QUEST**    | 184              |                    | 1489               | ~xxx   | 397       | 398 | 371 | 323    | 731 | 461 | 233 | 64  | 1010      | 366     | 45  | 49  | 28  | 10 |
-
-*S, T, D, and Q refer to singlet, triplet, doublet, and quartet states, respectively.  
-GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and fluorescence, respectively.*
-
 ---
 
 ## 👥 Contributors
