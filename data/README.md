@@ -39,7 +39,7 @@ To assist users in identifying excited states using their preferred methodology,
   - **wCT** — Weak charge-transfer excitation
   - **sCT** — Strong charge-transfer excitation
 - **%T₁ (Single Excitation Character)**:  
-  Percentage of single excitation computed at the **CC3/aug-cc-pVTZ** level.
+  Percentage of single excitations involved in the transition computed at the **CC3/aug-cc-pVTZ** level.
 - **Oscillator Strength (_f_)**:  
   Computed at the **LR-CC3/aug-cc-pVTZ** level.
 - **Theoretical Best Estimates (TBEs)**:
@@ -56,8 +56,9 @@ To assist users in identifying excited states using their preferred methodology,
   `CASSCF`, `CASPT2`, `CASPT2 (No IPEA)`, `CASPT3`, `CASPT3 (No IPEA)`, `SC-NEVPT2`, and `PC-NEVPT2`.
 
 Dedicated files for subsets (see below) also include:
-- Additional computational methods and basis sets
-- Molecular orbitals involved in transitions
+- Additional computational methods and basis sets.
+- Molecular orbitals involved in transitions.
+- Spatial extent of the electron cloud $\angle r^2 \rangle$.
 - Extra annotations for complex cases.
 
 ---
