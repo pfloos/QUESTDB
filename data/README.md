@@ -40,6 +40,7 @@ To assist users in identifying excited states using their preferred methodology,
   - **sCT** — Strong charge-transfer excitation
 - **%T₁ (Single Excitation Character)**:  
   Percentage of single excitations involved in the transition computed at the **CC3/aug-cc-pVTZ** level.
+  **GD** are characterized by %T₁ < 50% (often close to 0%) and **PD** corresponds to states where %T₁ is in the range 60%-80%.
 - **Oscillator Strength (_f_)**:  
   Computed at the **LR-CC3/aug-cc-pVTZ** level.
 - **Theoretical Best Estimates (TBEs)**:
@@ -59,6 +60,7 @@ Dedicated files for subsets (see below) also include:
 - Additional computational methods and basis sets.
 - Molecular orbitals involved in transitions.
 - Spatial extent of the electron cloud $\langle r^2 \rangle$.
+- Expeectation value of the spin operator $\langle \hat{S}^2 \rangle$ for radicals.
 - Extra annotations for complex cases.
 
 ---
