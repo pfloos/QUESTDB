@@ -33,11 +33,11 @@ To assist users in identifying excited states using their preferred methodology,
   - **dou** — Double excitations  
   - **n.d.** — Not determined
 - **Special Features of the Transition**:
-  - **FL** — Fluorescence transition
-  - **PD** — Partial double excitation
-  - **GD** — Genuine double excitation
-  - **wCT** — Weak charge-transfer excitation
-  - **sCT** — Strong charge-transfer excitation
+  - **FL** — Fluorescence transition (computed at the S₁ optimized geometry).
+  - **PD** — Partial double excitation.
+  - **GD** — Genuine double excitation.
+  - **wCT** — Weak charge-transfer excitation.
+  - **sCT** — Strong charge-transfer excitation.
 - **%T₁ (Single Excitation Character)**:  
   Percentage of single excitations involved in the transition computed at the **CC3/aug-cc-pVTZ** level.
   **GD** are characterized by %T₁ < 50% (often close to 0%) and **PD** corresponds to states where %T₁ is in the range 60%-80%.
