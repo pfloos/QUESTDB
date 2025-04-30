@@ -34,8 +34,8 @@ To assist users in identifying excited states using their preferred methodology,
   - **n.d.** — Not determined
 - **Special Features of the Transition**:
   - **FL** — Fluorescence transition
-  - **pd** — Partial double excitation
-  - **gd** — Genuine double excitation
+  - **PD** — Partial double excitation
+  - **GD** — Genuine double excitation
   - **wCT** — Weak charge-transfer excitation
   - **sCT** — Strong charge-transfer excitation
 - **%T₁ (Single Excitation Character)**:  
