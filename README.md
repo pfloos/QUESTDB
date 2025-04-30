@@ -64,10 +64,7 @@ This repository provides:
 
 Data is structured in `.xls` files for ease of use.
 
-### Table: TBEs of VTEs Included in the QUEST Subsets and Full Database by ES Types
-
-*S, T, D, and Q refer to singlet, triplet, doublet, and quartet states, respectively.  
-GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and fluorescence, respectively.*
+Here is an overview of the QUEST database:
 
 | Subset       | Compounds Total | Nature            | Transitions Total | Safe | 1–2 atoms | 3–5 atoms | 6–9 atoms | 10–16 atoms | S   | T   | D   | Q   | Valence | Rydberg | GD  | PD  | CT  | FL |
 |--------------|------------------|--------------------|--------------------|--------|-----------|-----|-----|--------|-----|-----|-----|-----|-------------------------------|---------|-----|-----|-----|----|
@@ -77,6 +74,9 @@ GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and f
 | **DNA**      | 5                | Nucleobases        | 56                 | ~51   |           |     | 33  | 23     | 35  | 21  |     |     | 40         | 16      |     |     |     |    |
 | **TM**       | 11               | Transition metal diatomics | 67                 | 46     | 67        |     |     |        | 28  | 23  | 16  |     |   |         | 4   |     |     |    |
 | **QUEST**    | 184              |                    | 1489               | ~xxx   | 397       | 398 | 371 | 323    | 731 | 461 | 233 | 64  | 1010      | 366     | 45  | 49  | 28  | 10 |
+
+*S, T, D, and Q refer to singlet, triplet, doublet, and quartet states, respectively.  
+GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and fluorescence, respectively.*
 
 ---
 
