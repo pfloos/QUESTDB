@@ -22,7 +22,7 @@ Welcome, and thank you for your interest in contributing to **QUESTDB** — an o
 1. **Fork the repository** to your GitHub account.
 2. Clone your forked copy locally:
    ```bash
-   git clone https://github.com/your-username/QUESTDB.git
+   git clone https://github.com/pfloos/QUESTDB.git
    ```
 3. Create a new branch:
    ```bash
@@ -37,10 +37,8 @@ Welcome, and thank you for your interest in contributing to **QUESTDB** — an o
 
 - 📦 Add new molecule entries or quantum chemistry datasets  
 - 🐛 Fix bugs in data processing or scripts  
-- 🧪 Add or improve test coverage  
 - 📚 Improve documentation or fix typos  
-- 🌐 Translate documentation (future feature)  
-- 💡 Propose new benchmark protocols  
+- 💡 Propose new benchmark data  
 
 ---
 
@@ -49,7 +47,6 @@ Welcome, and thank you for your interest in contributing to **QUESTDB** — an o
 - Write **clean, readable** Python (PEP8 preferred).
 - Place new scripts in `scripts/` or `tools/` folders as appropriate.
 - Add **docstrings** to all functions and modules.
-- Include **unit tests** where applicable (in the `tests/` directory).
 - Use relative imports and avoid hardcoding paths.
 
 ---
@@ -63,7 +60,7 @@ If you're contributing new benchmark data:
   - Method and basis set
   - Source/reference (DOI, paper)
 - Prefer CSV or JSON formats for raw data.
-- Follow the folder structure under `data/` and `benchmarks/`.
+- Follow the folder structure.
 
 ---
 
@@ -97,7 +94,7 @@ More detailed explanation (optional).
 
 ## 🐞 Reporting Issues
 
-Please use the [Issues](https://github.com/your-org/QUESTDB/issues) tab for:
+Please use the [Issues](https://github.com/pfloos/QUESTDB/issues) tab for:
 
 - Bug reports  
 - Feature requests  
