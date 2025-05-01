@@ -68,7 +68,6 @@
     "State": "^1\\Sigma_g^+",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": NaN,
     "TBE/AVTZ": 3.82,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
     "Safe ? (~50 meV)": "Y",

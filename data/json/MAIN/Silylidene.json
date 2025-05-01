@@ -8,7 +8,6 @@
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.0,
-    "f [LR-CC3/AVTZ]": NaN,
     "TBE/AVTZ": 2.118,
     "Method": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVTZ - CCSDTQ/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",

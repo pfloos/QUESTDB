@@ -6,8 +6,6 @@
     "State": "^2B_2",
     "D/Q": 2,
     "V/R": "V",
-    "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": NaN,
     "TBE/AVTZ": 1.999,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
     "Safe ? (~50 meV)": "Y"
@@ -32,7 +30,6 @@
     "State": "^2A_1",
     "D/Q": 2,
     "V/R": "V",
-    "Special ?": NaN,
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.508,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
@@ -45,11 +42,7 @@
     "State": "^2B_2",
     "D/Q": 2,
     "V/R": "V",
-    "Special ?": "pd",
-    "f [LR-CCSD/AVTZ]": NaN,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "Special ?": "pd"
   },
   {
     "Molecule": "Nitromethyl",
@@ -58,7 +51,6 @@
     "State": "^2B_1",
     "D/Q": 2,
     "V/R": "V",
-    "Special ?": NaN,
     "f [LR-CCSD/AVTZ]": 0.077,
     "TBE/AVTZ": 5.293,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
@@ -72,10 +64,7 @@
     "D/Q": 2,
     "V/R": "V",
     "Special ?": "pd",
-    "f [LR-CCSD/AVTZ]": 0.001,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "f [LR-CCSD/AVTZ]": 0.001
   },
   {
     "Molecule": "Nitromethyl",
@@ -84,11 +73,7 @@
     "State": "^2A_2",
     "D/Q": 2,
     "V/R": "V",
-    "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": 0.181,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "f [LR-CCSD/AVTZ]": 0.181
   },
   {
     "Molecule": "Nitromethyl",
@@ -97,11 +82,7 @@
     "State": "^2B_2",
     "D/Q": 2,
     "V/R": "V",
-    "Special ?": "pd",
-    "f [LR-CCSD/AVTZ]": NaN,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "Special ?": "pd"
   },
   {
     "Molecule": "Nitromethyl",
@@ -110,11 +91,7 @@
     "State": "^2A_1",
     "D/Q": 2,
     "V/R": "R",
-    "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": 0.017,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "f [LR-CCSD/AVTZ]": 0.017
   },
   {
     "Molecule": "Nitromethyl",
@@ -123,8 +100,6 @@
     "State": "^4A_2",
     "D/Q": 4,
     "V/R": "V",
-    "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": NaN,
     "TBE/AVTZ": 4.34,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
     "Safe ? (~50 meV)": "N"
@@ -135,12 +110,7 @@
     "Group": 35,
     "State": "^4B_2",
     "D/Q": 4,
-    "V/R": "V",
-    "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": NaN,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "V/R": "V"
   },
   {
     "Molecule": "Nitromethyl",
@@ -148,11 +118,6 @@
     "Group": 35,
     "State": "^4A_1",
     "D/Q": 4,
-    "V/R": "V",
-    "Special ?": NaN,
-    "f [LR-CCSD/AVTZ]": NaN,
-    "TBE/AVTZ": NaN,
-    "Method (all in RO)": NaN,
-    "Safe ? (~50 meV)": NaN
+    "V/R": "V"
   }
 ]

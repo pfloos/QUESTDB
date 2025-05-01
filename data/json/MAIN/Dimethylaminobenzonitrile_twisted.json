@@ -8,7 +8,6 @@
     "V/R": "V",
     "Type": "npi",
     "Special ?": "sCT",
-    "f [LR-CC3/AVTZ]": NaN,
     "TBE/AVTZ": 4.117,
     "Method": "CCSDT/6-31+G(d) + [CCSDT-3/AVTZ - CCSDT-3/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",

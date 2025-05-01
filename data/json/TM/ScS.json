@@ -57,7 +57,6 @@
     "Safe ? (~50 meV)": "Y",
     "CC3": 2.185,
     "CCSDT": 2.063,
-    "CCSDTQ": NaN,
     "CASPT2": 2.215,
     "CASPT2 (No IPEA)": 2.2800000000000002,
     "SC-NEVPT2": 2.362,

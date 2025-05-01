@@ -6,7 +6,6 @@
     "State": "^2B_1",
     "D/Q": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": NaN,
     "TBE/AVTZ": 0.6990000000000001,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
