@@ -150,7 +150,7 @@ Key QUESTDB publications:
 
 ## 📖 Other References
 
-- [**Excited-state absorption: Reference oscillator strengths, wavefunction and TD-DFT benchmarks**](https://doi.org/10.1021/acs.jctc.5c00159)
+- [**Excited-state absorption: Reference oscillator strengths, wavefunction and TD-DFT benchmarks**](https://doi.org/10.1021/acs.jctc.5c00159)  
   J. Širůček, B. Le Guennic, Y. Damour, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* (in press).
 
