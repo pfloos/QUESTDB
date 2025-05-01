@@ -66,8 +66,8 @@ Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` 
 
 **📌 See the accompanying paper:**  
 [**The QUEST database of highly-accurate excitation energies**]()  
-  P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* (submitted).  
+P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
+*J. Chem. Theory Comput.* (submitted).  
 
 ---
 
@@ -89,6 +89,20 @@ The QUESTDB project is maintained by a collaboration between:
 ---
 
 ## 📚 Main References
+
+Review articles on the QUEST database:
+
+- [**The QUEST database of highly-accurate excitation energies**]()  
+  P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
+  *J. Chem. Theory Comput.* (submitted).  
+
+- [**QUESTDB: a database of highly-accurate excitation energies for the electronic structure community**](https://doi.org/10.1002/wcms.1517)  
+  M. Véril, A. Scemama, M. Caffarel, F. Lipparini, M. Boggio-Pasqua, D. Jacquemin, and P. F. Loos,  
+  *WIREs Comput. Mol. Sci.* **11**, e1517 (2021).
+
+- [**The quest for highly accurate excitation energies: a computational perspective**](https://dx.doi.org/10.1021/acs.jpclett.0c00014)  
+  P. F. Loos, A. Scemama, and D. Jacquemin,  
+  *J. Phys. Chem. Lett.* **11**, 2374 (2020).
 
 Key QUESTDB publications:
 
@@ -112,10 +126,6 @@ Key QUESTDB publications:
   P. F. Loos, M. Comin, X. Blase, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **17**, 3666 (2021).
 
-- [**QUESTDB: a database of highly-accurate excitation energies for the electronic structure community**](https://doi.org/10.1002/wcms.1517)  
-  M. Véril, A. Scemama, M. Caffarel, F. Lipparini, M. Boggio-Pasqua, D. Jacquemin, and P. F. Loos,  
-  *WIREs Comput. Mol. Sci.* **11**, e1517 (2021).
-
 - [**A mountaineering strategy to excited states: highly-accurate oscillator strengths and dipole moments of small molecules**](https://dx.doi.org/10.1021/acs.jctc.0c01111)  
   A. Chrayteh, A. Blondel, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **17**, 416 (2021).
@@ -123,10 +133,6 @@ Key QUESTDB publications:
 - [**A mountaineering strategy to excited states: highly-accurate energies and benchmarks for exotic molecules and radicals**](https://dx.doi.org/10.1021/acs.jctc.0c00227)  
   P. F. Loos, A. Scemama, M. Boggio-Pasqua, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **16**, 3720 (2020).
-
-- [**The quest for highly accurate excitation energies: a computational perspective**](https://dx.doi.org/10.1021/acs.jpclett.0c00014)  
-  P. F. Loos, A. Scemama, and D. Jacquemin,  
-  *J. Phys. Chem. Lett.* **11**, 2374 (2020).
 
 - [**A mountaineering strategy to excited states: highly-accurate energies and benchmarks for medium size molecules**](https://dx.doi.org/10.1021/acs.jctc.9b01216)  
   P. F. Loos, F. Lipparini, M. Boggio-Pasqua, A. Scemama, and D. Jacquemin,  
@@ -144,7 +150,7 @@ Key QUESTDB publications:
 
 ## 📖 Other References
 
-- **Excited-state absorption: Reference oscillator strengths, wavefunction and TD-DFT benchmarks**  
+- [**Excited-state absorption: Reference oscillator strengths, wavefunction and TD-DFT benchmarks**](https://doi.org/10.1021/acs.jctc.5c00159)
   J. Širůček, B. Le Guennic, Y. Damour, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* (in press).
 
@@ -175,10 +181,6 @@ Key QUESTDB publications:
 - [**Benchmarking TD-DFT and wave function methods for oscillator strengths and excited-state dipole moments**](https://dx.doi.org/10.1021/acs.jctc.0c01228)  
   R. Sarkar, M. Boggio-Pasqua, P. F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **17**, 1106 (2021).
-
-- [**Accurate full configuration interaction correlation energy estimates for five- and six-membered rings**](https://doi.org/10.1063/5.0065314)  
-  Y. Damour, M. Véril, F. Kossoski, M. Caffarel, D. Jacquemin, A. Scemama, and P. F. Loos,  
-  *J. Chem. Phys.* **155**, 134104 (2021).
 
 - [**How accurate are EOM-CC4 vertical excitation energies?**](https://doi.org/10.1063/5.0055994)  
   P. F. Loos, D. A. Matthews, F. Lipparini, and D. Jacquemin,  
