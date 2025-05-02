@@ -106,7 +106,7 @@ Include details, logs, and reproduction steps when applicable.
 
 ## 🤝 Community Standards
 
-This project follows a [Code of Conduct](./CODE_OF_CONDUCT.md). Please be respectful and inclusive in all interactions. We welcome contributors of all backgrounds and experience levels.
+Please be respectful and inclusive in all interactions. We welcome contributors of all backgrounds and experience levels.
 
 ---
 
