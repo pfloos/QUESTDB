@@ -6,6 +6,10 @@
 
 ---
 
+<img src="logo_quest.png"  width="250">
+
+---
+
 ## 📚 Table of Contents
 
 - [✨ Key Features](#-key-features)
