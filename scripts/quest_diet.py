@@ -40,9 +40,9 @@ def load_data(json_dir: str, filters: dict) -> List[Dict]:
                     continue
                 if filters.get("safe_only", True) and d.get("Safe ? (~50 meV)") != "Y":
                     continue
-                if filters.get("only_singlet") and d.get("S/T") != "S":
+                if filters.get("only_singlet") and d.get("S/T") != 1:
                     continue
-                if filters.get("only_triplet") and d.get("S/T") != "T":
+                if filters.get("only_triplet") and d.get("S/T") != 3:
                     continue
                 if filters.get("only_valence") and d.get("V/R") != "V":
                     continue
@@ -240,16 +240,16 @@ if __name__ == "__main__":
     parser.add_argument("--size", type=int, required=True, help="Target subset size")
     parser.add_argument("--optimize-params", action="store_true", help="Use Optuna to optimize GA parameters")
 
-    parser.add_argument("--only-singlet", action="store_true")
-    parser.add_argument("--only-triplet", action="store_true")
-    parser.add_argument("--only-valence", action="store_true")
-    parser.add_argument("--only-rydberg", action="store_true")
-    parser.add_argument("--only-ppi", action="store_true")
-    parser.add_argument("--only-npi", action="store_true")
-    parser.add_argument("--min-size", type=int, default=0)
-    parser.add_argument("--max-size", type=int, default=1_000)
-    parser.add_argument("--allow-gd", action="store_true")
-    parser.add_argument("--no-safe-filter", dest="safe_only", action="store_false")
+    parser.add_argument("--only-singlet", action="store_true", help="Only include singlet transitions")
+    parser.add_argument("--only-triplet", action="store_true", help="Only include triplet transitions")
+    parser.add_argument("--only-valence", action="store_true", help="Only include valence transitions")
+    parser.add_argument("--only-rydberg", action="store_true", help="Only include Rydberg transitions")
+    parser.add_argument("--only-ppi", action="store_true", help="Only include π→π* transitions")
+    parser.add_argument("--only-npi", action="store_true", help="Only include n→π* transitions")
+    parser.add_argument("--min-size", type=int, default=0, help="Minimum molecule size")
+    parser.add_argument("--max-size", type=int, default=1_000, help="Maximum molecule size")
+    parser.add_argument("--allow-gd", action="store_true", help="Allow genuine double excitations")
+    parser.add_argument("--allow-unsafe", dest="safe_only", action="store_false", help="Allow unsafe transitions")
 
     args = parser.parse_args()
     filters = {
