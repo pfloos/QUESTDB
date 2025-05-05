@@ -81,7 +81,8 @@ def analyze_directory_with_plots(json_dir: str, filters: dict, print_graphs: boo
             method_errors.setdefault(method, []).append(error)
 
     # Create the results table
-    table = Table(title="Excitation Energy Error Statistics by Method", header_style="bold magenta", box=box.HEAVY)
+    console.print(f"\n📊 Excitation Energy Error Statistics (in eV) by Method:\n")
+    table = Table(show_header=True, header_style="bold magenta", box=box.HEAVY)
     table.add_column("Method", style="cyan")
     table.add_column("#", justify="right")
     table.add_column("MSE (eV)", justify="right")
