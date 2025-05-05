@@ -165,13 +165,13 @@ def save_results(subset: List[Dict], output_json):
     console.print(f"\n✅ Saved {len(subset)}-entry subset to [bold green]{output_json}[/]")
 
 def compare_stats(name: str, subset_stats, full_stats):
-    console.print(f"\n📊 Statistics for subset: [bold cyan]{name}[/]\n")
-    table = Table(show_header=True, header_style="bold magenta", box=box.SIMPLE_HEAVY)
+    console.print(f"\n📊 Statistics (in eV) for subset: [bold cyan]{name}[/]\n")
+    table = Table(show_header=True, header_style="bold magenta", box=box.HEAVY)
     table.add_column("Method", justify="left")
-    table.add_column("MAE (subset / full)", justify="center")
-    table.add_column("MSE (subset / full)", justify="center")
-    table.add_column("RMSE (subset / full)", justify="center")
-    table.add_column("Count (subset / full)", justify="center")
+    table.add_column("MAE (sub/full)", justify="center")
+    table.add_column("MSE (sub/full)", justify="center")
+    table.add_column("RMSE (sub/full)", justify="center")
+    table.add_column("# (sub/full)", justify="center")
 
     for method in sorted(full_stats):
         fs = full_stats[method]
@@ -197,7 +197,7 @@ def compare_stats(name: str, subset_stats, full_stats):
 
 # === Main ===
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Optimize subsets of excitation energies.")
+    parser = argparse.ArgumentParser(description="QUEST diet: subsets of excitations with same statistics!")
     parser.add_argument("json_dir", help="Path to directory containing .json files")
     parser.add_argument("--size", type=int, required=True, help="Target subset size")
 
@@ -234,5 +234,5 @@ if __name__ == "__main__":
     console.print(f"📂 Loaded {len(data)} total excitations from {args.json_dir}", style="green")
 
     subset, subset_stats, full_stats = genetic_algorithm(data, target_size=args.size, filters=filters)
-    save_results(subset, f"subset_{args.size}.json")
+    save_results(subset, f"diet_subset_{args.size}.json")
     compare_stats(f"{args.size} Excitations", subset_stats, full_stats)
