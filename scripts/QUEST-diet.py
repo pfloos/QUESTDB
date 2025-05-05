@@ -5,6 +5,9 @@ import argparse
 import numpy as np
 from collections import defaultdict
 from typing import List, Dict
+from rich.console import Console
+from rich.table import Table
+from rich import box
 
 # === Config ===
 POPULATION_SIZE = 100
@@ -17,6 +20,8 @@ SKIP_KEYS = {
     "TBE (unc.)", "Special ?", "Safe ? (~50 meV)", "TBE/AVQZ", "Molecule", "State", "Method",
     "Corr. Method", "%T1 [CC3/AVTZ]", "f [LR-CC3/AVTZ]", "Size", "S/T", "Group", "TBE/AVTZ"
 }
+
+console = Console()
 
 def load_data(json_dir: str, filters: dict) -> List[Dict]:
     entries = []
@@ -38,9 +43,9 @@ def load_data(json_dir: str, filters: dict) -> List[Dict]:
                     continue
                 if filters.get("only_rydberg") and d.get("V/R") != "R":
                     continue
-                if filters.get("only_ppi") and d.get("Type") != "ππ*":
+                if filters.get("only_ppi") and d.get("Type") != "ppi":
                     continue
-                if filters.get("only_npi") and d.get("Type") != "nπ*":
+                if filters.get("only_npi") and d.get("Type") != "npi":
                     continue
                 if "Size" in d:
                     if d["Size"] < filters.get("min_size", 0) or d["Size"] > filters.get("max_size", 1000):
@@ -116,26 +121,39 @@ def mutate(subset, pool, size):
             new_subset[idx] = replacement
     return new_subset
 
+from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, TimeElapsedColumn
+
 def genetic_algorithm(entries: List[Dict], target_size: int, filters: dict):
-    print(f"\n🔧 Optimizing subset of {target_size} excitations...")
+    console.print(f"\n🔧 Optimizing subset of {target_size} excitations...", style="bold yellow")
     if not entries:
-        print("❌ No data available after filtering. Please adjust your filters.")
+        console.print("❌ No data available after filtering. Please adjust your filters.", style="bold red")
         exit(1)
     full_stats = compute_stats(entries)
     population = [random.sample(entries, target_size) for _ in range(POPULATION_SIZE)]
     fitnesses = [compute_fitness(ind, full_stats) for ind in population]
 
-    for gen in range(GENERATIONS):
-        new_population = []
-        for _ in range(POPULATION_SIZE):
-            p1 = tournament_selection(population, fitnesses)
-            p2 = tournament_selection(population, fitnesses)
-            child = crossover(p1, p2, target_size)
-            child = mutate(child, entries, target_size)
-            new_population.append(child)
-        population = new_population
-        fitnesses = [compute_fitness(ind, full_stats) for ind in population]
-        print(f"  Gen {gen+1:3d}/{GENERATIONS}, Best fitness: {min(fitnesses):.6f}")
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(),
+        TextColumn("[green]{task.completed}/{task.total}"),
+        TimeElapsedColumn(),
+        console=console
+    ) as progress:
+        task = progress.add_task("[cyan]Running generations...", total=GENERATIONS)
+
+        for gen in range(GENERATIONS):
+            new_population = []
+            for _ in range(POPULATION_SIZE):
+                p1 = tournament_selection(population, fitnesses)
+                p2 = tournament_selection(population, fitnesses)
+                child = crossover(p1, p2, target_size)
+                child = mutate(child, entries, target_size)
+                new_population.append(child)
+            population = new_population
+            fitnesses = [compute_fitness(ind, full_stats) for ind in population]
+            best_fitness = min(fitnesses)
+            progress.update(task, advance=1, description=f"[cyan]Gen {gen+1}/{GENERATIONS} [Best fitness: {best_fitness:.6f}]")
 
     best_subset = population[np.argmin(fitnesses)]
     return best_subset, compute_stats(best_subset), full_stats
@@ -144,23 +162,38 @@ def save_results(subset: List[Dict], output_json):
     result = [e["full"] for e in subset]
     with open(output_json, "w") as f:
         json.dump(result, f, indent=2)
-    print(f"✅ Saved {len(subset)}-entry subset to {output_json}")
+    console.print(f"\n✅ Saved {len(subset)}-entry subset to [bold green]{output_json}[/]")
 
 def compare_stats(name: str, subset_stats, full_stats):
-    print(f"\n📊 Statistics for subset: {name}")
-    header = f"{'Method':15s} | {'MAE':^23s} | {'MSE':^23s} | {'RMSE':^23s} | {'N':^13s}"
-    divider = "-" * len(header)
-    print(header)
-    print(divider)
+    console.print(f"\n📊 Statistics for subset: [bold cyan]{name}[/]\n")
+    table = Table(show_header=True, header_style="bold magenta", box=box.SIMPLE_HEAVY)
+    table.add_column("Method", justify="left")
+    table.add_column("MAE (subset / full)", justify="center")
+    table.add_column("MSE (subset / full)", justify="center")
+    table.add_column("RMSE (subset / full)", justify="center")
+    table.add_column("Count (subset / full)", justify="center")
+
     for method in sorted(full_stats):
         fs = full_stats[method]
         ss = subset_stats.get(method, {"MAE": 0, "MSE": 0, "RMSE": 0, "Count": 0})
-        print(f"{method:15s} | "
-              f"{ss['MAE']:.4f} / {fs['MAE']:.4f}".center(23) + " | "
-              f"{ss['MSE']:.4f} / {fs['MSE']:.4f}".center(23) + " | "
-              f"{ss['RMSE']:.4f} / {fs['RMSE']:.4f}".center(23) + " | "
-              f"{ss['Count']:4d} / {fs['Count']:4d}".center(13))
-    print(divider)
+
+        def color(val, ref):
+            if abs(val - ref) < 0.005:
+                return "bold green"
+            elif abs(val - ref) > 0.05:
+                return "bold red"
+            else:
+                return "white"
+
+        table.add_row(
+            method,
+            f"[{color(ss['MAE'], fs['MAE'])}]{ss['MAE']:.4f} / {fs['MAE']:.4f}[/{color(ss['MAE'], fs['MAE'])}]",
+            f"[{color(ss['MSE'], fs['MSE'])}]{ss['MSE']:.4f} / {fs['MSE']:.4f}[/{color(ss['MSE'], fs['MSE'])}]",
+            f"[{color(ss['RMSE'], fs['RMSE'])}]{ss['RMSE']:.4f} / {fs['RMSE']:.4f}[/{color(ss['RMSE'], fs['RMSE'])}]",
+            f"{ss['Count']} / {fs['Count']}"
+        )
+
+    console.print(table)
 
 # === Main ===
 if __name__ == "__main__":
@@ -194,11 +227,11 @@ if __name__ == "__main__":
     }
 
     if not os.path.isdir(args.json_dir):
-        print(f"❌ Error: '{args.json_dir}' is not a valid directory.")
+        console.print(f"❌ Error: '{args.json_dir}' is not a valid directory.", style="bold red")
         exit(1)
 
     data = load_data(args.json_dir, filters)
-    print(f"📂 Loaded {len(data)} total excitations from {args.json_dir}")
+    console.print(f"📂 Loaded {len(data)} total excitations from {args.json_dir}", style="green")
 
     subset, subset_stats, full_stats = genetic_algorithm(data, target_size=args.size, filters=filters)
     save_results(subset, f"subset_{args.size}.json")
