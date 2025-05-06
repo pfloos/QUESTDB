@@ -105,30 +105,92 @@ def tournament_selection(population, fitnesses, tournament_size):
     winners.sort(key=lambda x: x[1])
     return winners[0][0]
 
-def crossover(parent1, parent2, size):
+
+def crossover(parent1, parent2, size, max_molecules=None):
     combined = []
     seen = set()
-    for item in parent1 + parent2:
-        key = (item["file"], item["index"])
-        if key not in seen:
-            seen.add(key)
-            combined.append(item)
+
+    # If we have a molecule limit, we need to ensure we don't exceed it
+    if max_molecules is not None:
+        # Get all unique molecules from both parents
+        parent1_molecules = {e["full"]["Molecule"] for e in parent1}
+        parent2_molecules = {e["full"]["Molecule"] for e in parent2}
+        all_molecules = parent1_molecules.union(parent2_molecules)
+
+        # If combining would exceed the limit, we need to restrict
+        if len(all_molecules) > max_molecules:
+            # Choose which parent's molecules to keep
+            if random.random() < 0.5:
+                keep_molecules = parent1_molecules
+            else:
+                keep_molecules = parent2_molecules
+
+            # Only include entries from the chosen molecules
+            for item in parent1 + parent2:
+                if item["full"]["Molecule"] in keep_molecules:
+                    key = (item["file"], item["index"])
+                    if key not in seen:
+                        seen.add(key)
+                        combined.append(item)
+        else:
+            # Normal crossover if we're under the limit
+            for item in parent1 + parent2:
+                key = (item["file"], item["index"])
+                if key not in seen:
+                    seen.add(key)
+                    combined.append(item)
+    else:
+        # Original behavior if no molecule limit
+        for item in parent1 + parent2:
+            key = (item["file"], item["index"])
+            if key not in seen:
+                seen.add(key)
+                combined.append(item)
+
     random.shuffle(combined)
     return combined[:size]
 
-def mutate(subset, pool, size, mutation_rate):
+def mutate(subset, pool, size, mutation_rate, max_molecules=None):
     new_subset = subset.copy()
     if random.random() < mutation_rate:
         idx = random.randrange(len(new_subset))
         replacement = random.choice(pool)
+
+        # Check if we're limiting molecules
+        if max_molecules is not None:
+            current_molecules = {e["full"]["Molecule"] for e in new_subset}
+            new_molecule = replacement["full"]["Molecule"]
+
+            # If adding this molecule would exceed our limit and it's a new molecule
+            if new_molecule not in current_molecules and len(current_molecules) >= max_molecules:
+                # Only allow replacements from existing molecules
+                valid_replacements = [e for e in pool if e["full"]["Molecule"] in current_molecules]
+                if valid_replacements:
+                    replacement = random.choice(valid_replacements)
+
         replacement_key = (replacement["file"], replacement["index"])
         if replacement_key not in [(e["file"], e["index"]) for e in new_subset]:
             new_subset[idx] = replacement
     return new_subset
 
-def genetic_algorithm(entries: List[Dict], target_size: int, filters: dict, generations, pop_size, mutation_rate, tournament_size):
+def genetic_algorithm(entries: List[Dict], target_size: int, filters: dict, generations, pop_size, mutation_rate, tournament_size, max_molecules=None):
     full_stats = compute_stats(entries)
-    population = [random.sample(entries, target_size) for _ in range(pop_size)]
+
+    # Create initial population respecting molecule limit if specified
+    if max_molecules is not None:
+        population = []
+        for _ in range(pop_size):
+            # Get all unique molecules
+            all_molecules = list({e["full"]["Molecule"] for e in entries})
+            # Select random subset of molecules
+            selected_molecules = random.sample(all_molecules, min(max_molecules, len(all_molecules)))
+            # Get entries only from selected molecules
+            molecule_entries = [e for e in entries if e["full"]["Molecule"] in selected_molecules]
+            # Create individual from these entries
+            population.append(random.sample(molecule_entries, min(target_size, len(molecule_entries))))
+    else:
+        population = [random.sample(entries, target_size) for _ in range(pop_size)]
+
     fitnesses = [compute_fitness(ind, full_stats) for ind in population]
 
     with Progress(
@@ -143,22 +205,24 @@ def genetic_algorithm(entries: List[Dict], target_size: int, filters: dict, gene
             for _ in range(pop_size):
                 p1 = tournament_selection(population, fitnesses, tournament_size)
                 p2 = tournament_selection(population, fitnesses, tournament_size)
-                child = crossover(p1, p2, target_size)
-                child = mutate(child, entries, target_size, mutation_rate)
+                child = crossover(p1, p2, target_size, max_molecules)  # Updated call
+                child = mutate(child, entries, target_size, mutation_rate, max_molecules)
                 new_population.append(child)
             population = new_population
             fitnesses = [compute_fitness(ind, full_stats) for ind in population]
             best_fitness = min(fitnesses)
-            progress.update(task, advance=1, description=f"[cyan]Gen {gen+1}/{generations} [Best fitness: {best_fitness:.6f}]")
+            progress.update(task, advance=1,
+                          description=f"[cyan]Gen {gen+1}/{generations} [Best: {best_fitness:.6f}]")
 
-    best_subset = population[np.argmin(fitnesses)]
-    return best_subset, compute_stats(best_subset), full_stats, best_fitness
+    best_idx = np.argmin(fitnesses)
+    return population[best_idx], compute_stats(population[best_idx]), full_stats, fitnesses[best_idx]
 
 def save_results(subset: List[Dict], output_json):
     result = [e["full"] for e in subset]
     with open(output_json, "w") as f:
         json.dump(result, f, indent=2)
-    console.print(f"\n✅ Saved {len(subset)}-entry subset to [bold green]{output_json}[/]")
+    molecules_used = len({e["Molecule"] for e in result})
+    console.print(f"\n✅ Saved {len(subset)}-entry subset using {molecules_used} molecules to [bold green]{output_json}[/]")
 
 def compare_stats(name: str, subset_stats, full_stats):
     console.print(f"\n📊 Statistics (in eV) for subset: [bold cyan]{name}[/]\n")
@@ -250,6 +314,7 @@ if __name__ == "__main__":
     parser.add_argument("--max-size", type=int, default=1_000, help="Maximum molecule size")
     parser.add_argument("--allow-gd", action="store_true", help="Allow genuine double excitations")
     parser.add_argument("--allow-unsafe", dest="safe_only", action="store_false", help="Allow unsafe transitions")
+    parser.add_argument("--max-molecules", type=int, default=None, help="Maximum number of distinct molecules to include in subset")
 
     args = parser.parse_args()
     filters = {
@@ -289,7 +354,8 @@ if __name__ == "__main__":
         generations=DEFAULT_GENERATIONS,
         pop_size=pop_size,
         mutation_rate=mutation_rate,
-        tournament_size=tournament_size
+        tournament_size=tournament_size,
+        max_molecules=args.max_molecules  
     )
     save_results(subset, f"diet_subset_{args.size}.json")
     compare_stats(f"{args.size} Excitations", subset_stats, full_stats)
