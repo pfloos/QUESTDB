@@ -1,4 +1,3 @@
-
 import os
 import json
 import random
@@ -22,8 +21,9 @@ DEFAULT_TOURNAMENT_SIZE = 5
 CATEGORY_KEYS = ["S/T", "V/R", "Type"]
 REFERENCE_KEY = "TBE/AVTZ"
 SKIP_KEYS = {
-    "TBE (unc.)", "Special ?", "Safe ? (~50 meV)", "TBE/AVQZ", "Molecule", "State", "Method",
-    "Corr. Method", "%T1 [CC3/AVTZ]", "f [LR-CC3/AVTZ]", "Size", "S/T", "Group", "TBE/AVTZ"
+    "CASSCF", "CASPT2", "CASPT3", "SC-NEVPT2", "PC-NEVPT2",
+    "Special ?", "Safe ? (~50 meV)", "TBE/AVQZ", "Molecule", "State", "Method",
+    "Corr. Method", "%T1 [CC3/AVTZ]", "f [LR-CC3/AVTZ]", "Size", "S/T", "V/R", "Group", "TBE/AVTZ"
 }
 
 console = Console()
