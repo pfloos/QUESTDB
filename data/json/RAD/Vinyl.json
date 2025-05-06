@@ -1,10 +1,10 @@
 [
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A\"",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.001,
     "TBE/AVTZ": 3.2849999999999993,
@@ -25,10 +25,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A\"",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.002,
     "TBE/AVTZ": 4.7059999999999995,
@@ -49,10 +49,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A'",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "V",
     "Special ?": "gd",
     "f [LR-CCSD/AVTZ]": "n.d.",
@@ -66,10 +66,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A'",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.006,
     "TBE/AVTZ": 6.199000000000001,
@@ -90,10 +90,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A'",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.013,
     "TBE/AVTZ": 6.776999999999998,
@@ -114,10 +114,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A'",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.069,
     "TBE/AVTZ": 7.0390000000000015,
@@ -138,10 +138,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A'",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.01,
     "TBE/AVTZ": 7.471,
@@ -160,10 +160,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A\"",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.038,
     "TBE/AVTZ": 7.564999999999999,
@@ -181,10 +181,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^2A\"",
-    "D/Q": 2.0,
+    "D/Q": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.021,
     "TBE/AVTZ": 7.583999999999997,
@@ -203,10 +203,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^4A'",
-    "D/Q": 4.0,
+    "D/Q": 4,
     "V/R": "V",
     "TBE/AVTZ": 4.547,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -226,10 +226,10 @@
   },
   {
     "Molecule": "Vinyl",
-    "Size": 2.0,
-    "Group": 12.0,
+    "Size": 2,
+    "Group": 12,
     "State": "^4A\"",
-    "D/Q": 4.0,
+    "D/Q": 4,
     "V/R": "R",
     "TBE/AVTZ": 7.400999999999999,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -246,50 +246,5 @@
     "RO-CCSD": 7.524,
     "U-CC3": 7.46,
     "RO-CC3": 7.455
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "Doublet",
-    "D/Q": 217.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "Quartet",
-    "D/Q": 64.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "Valence",
-    "D/Q": 162.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "Rydberg",
-    "D/Q": 82.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "Mixed",
-    "D/Q": 37.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "GD",
-    "D/Q": 13.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "PD",
-    "D/Q": 21.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "1-2 non-H atoms",
-    "D/Q": 201.0
-  },
-  {
-    "Molecule": "Vinyl",
-    "State": "3-5 non-H  atoms",
-    "D/Q": 80.0
   }
 ]

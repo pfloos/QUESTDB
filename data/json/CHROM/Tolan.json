@@ -452,47 +452,5 @@
     "BSE/evGW@PBE0": 3.369882,
     "BSE/evGW@CAM-B3LYP": 3.462947,
     "BSE/evGW@HF": 4.553189
-  },
-  {
-    "Molecule": "Tolan",
-    "State": "Singlet",
-    "S/T": 86,
-    "V/R": "npi",
-    "Type": 40,
-    "Special ?": "pd",
-    "%T1 [CC3/AVDZ]": 7.0
-  },
-  {
-    "Molecule": "Tolan",
-    "State": "Triplet",
-    "S/T": 72,
-    "V/R": "pipi",
-    "Type": 103
-  },
-  {
-    "Molecule": "Tolan",
-    "State": "Valence",
-    "S/T": 149
-  },
-  {
-    "Molecule": "Tolan",
-    "State": "Rydberg",
-    "S/T": 9,
-    "V/R": ">85%",
-    "Type": 135
-  },
-  {
-    "Molecule": "Tolan",
-    "State": "Total",
-    "S/T": 158
-  },
-  {
-    "Molecule": "Tolan",
-    "Size": "SV",
-    "Group": "SR",
-    "State": "SM",
-    "S/T": "TV",
-    "V/R": "TR",
-    "Type": "TM"
   }
 ]
