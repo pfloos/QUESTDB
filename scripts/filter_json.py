@@ -52,63 +52,59 @@ def filter_excitations(
     with open(output_file, 'w') as f:
         json.dump(filtered, f, indent=2)
 
-    with open(output_file, 'w') as f:
-        json.dump(filtered, f, indent=2)
+    # ✅ Summary panel
+    console.rule("[bold cyan]🎯 Filter Results Summary")
+    console.print(
+        Panel.fit(
+            f"[bold green]✔ Filtered excitations saved to[/] [yellow]{output_file}[/]",
+            border_style="green",
+            title="✅ [bold]Output",
+        )
+    )
 
-    # Summary panel
-    console.print(Panel.fit(f"[bold green]✔ Filtered excitations saved to[/] [yellow]{output_file}[/]", border_style="green"))
+    summary = Table(title="📊 Filtering Summary", box=box.SIMPLE_HEAVY)
+    summary.add_column("Metric", style="bold cyan")
+    summary.add_column("Value", style="bold magenta", justify="right")
 
-    summary = Table(title="Filtering Summary", box=box.SIMPLE_HEAVY)
-    summary.add_column("Metric", style="cyan", no_wrap=True)
-    summary.add_column("Value", style="magenta")
+    summary.add_row("🔢 Total entries", str(total))
+    summary.add_row("🔍 Filtered entries", str(len(filtered)))
+    summary.add_row("📉 Remaining (%)", f"{100 * len(filtered) / total:.1f}%" if total else "N/A")
 
-    summary.add_row("Total entries", str(total))
-    summary.add_row("Filtered entries", str(len(filtered)))
-    summary.add_row("Remaining (%)", f"{100 * len(filtered) / total:.1f}%" if total else "N/A")
+    distinct_molecules = len(set(entry.get("Molecule", "unknown") for entry in filtered))
+    summary.add_row("🧪 Distinct molecules", str(distinct_molecules))
 
-    # ➕ New: Distinct molecule count
-    unique_molecules = len(set(entry["Molecule"] for entry in filtered))
-    summary.add_row("Distinct molecules", str(unique_molecules))
-
-    if spin: summary.add_row("Spin", f"{'Singlet' if spin == 1 else 'Triplet'}")
-    if vr: summary.add_row("V/R", "Valence" if vr == "V" else "Rydberg")
-    if safe: summary.add_row("Safe", "Yes" if safe == "Y" else "No")
-    if groups: summary.add_row("Groups", ", ".join(map(str, groups)))
-    if types: summary.add_row("Types", ", ".join(types))
-    if exclude_gd: summary.add_row("Exclude GD", "Yes")
-    if min_size: summary.add_row("Min Size", str(min_size))
-    if max_size: summary.add_row("Max Size", str(max_size))
+    if spin: summary.add_row("🌀 Spin", f"{'Singlet' if spin == 1 else 'Triplet'}")
+    if vr: summary.add_row("🧭 V/R", "Valence" if vr == "V" else "Rydberg")
+    if safe: summary.add_row("🔐 Safe", "Yes" if safe == "Y" else "No")
+    if groups: summary.add_row("🧬 Groups", ", ".join(map(str, groups)))
+    if types: summary.add_row("🎯 Types", ", ".join(types))
+    if exclude_gd: summary.add_row("🚫 Exclude GD", "Yes")
+    if min_size: summary.add_row("📏 Min Size", str(min_size))
+    if max_size: summary.add_row("📏 Max Size", str(max_size))
 
     console.print(summary)
 
-    # Breakdown by Group
-    group_counts = Counter(entry.get("Group") for entry in filtered)
-    if group_counts:
-        table_group = Table(title="Breakdown by Group", box=box.MINIMAL_DOUBLE_HEAD)
-        table_group.add_column("Group", style="cyan")
-        table_group.add_column("Count", justify="right", style="magenta")
-        for group, count in sorted(group_counts.items()):
-            table_group.add_row(str(group), str(count))
-        console.print(table_group)
+    def print_breakdown(title, counter, icon):
+        if counter:
+            table = Table(title=f"{icon} {title}", box=box.MINIMAL_DOUBLE_HEAD)
+            table.add_column("Category", style="cyan")
+            table.add_column("Count", justify="right", style="magenta")
+            for key, count in sorted(counter.items()):
+                table.add_row(str(key), str(count))
+            console.print(table)
 
-    # Breakdown by Type
-    type_counts = Counter(entry.get("Type") for entry in filtered)
-    if type_counts:
-        table_type = Table(title="Breakdown by Type", box=box.MINIMAL_DOUBLE_HEAD)
-        table_type.add_column("Type", style="cyan")
-        table_type.add_column("Count", justify="right", style="magenta")
-        for typ, count in sorted(type_counts.items()):
-            table_type.add_row(str(typ), str(count))
-        console.print(table_type)
+    print_breakdown("Breakdown by Group", Counter(entry.get("Group") for entry in filtered), "🧬")
+    print_breakdown("Breakdown by Type", Counter(entry.get("Type") for entry in filtered), "🎯")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="✨ Fancy filter for QUEST excitations.")
     parser.add_argument("input_file", help="Path to input JSON file")
     parser.add_argument("output_file", help="Path to output JSON file")
-    parser.add_argument("--spin", type=int, choices=[1, 3], help="1=singlet, 3=triplet")
-    parser.add_argument("--vr", choices=["V", "R"], help="'V' for valence, 'R' for Rydberg")
+    parser.add_argument("--spin", type=int, choices=[1, 3], help="1 for singlet, 3 for triplet")
+    parser.add_argument("--nature", choices=["V", "R"], help="'V' for valence, 'R' for Rydberg")
     parser.add_argument("--safe", choices=["Y", "N"], help="'Y' = safe, 'N' = unsafe")
-    parser.add_argument("--group", type=parse_int_list, help="Comma-separated list of Group numbers")
+    parser.add_argument("--group", type=parse_int_list, help="Comma-separated list of Group numbers (12, 35, 69, 1016)")
     parser.add_argument("--type", type=parse_list, help="Comma-separated list of excitation types (e.g., npi,ppi,n3s)")
     parser.add_argument("--exclude-gd", action="store_true", help="Exclude genuine double excitations (Type == 'GD')")
     parser.add_argument("--min-size", type=int, help="Minimum molecule size to include")
@@ -120,7 +116,7 @@ if __name__ == "__main__":
         input_file=args.input_file,
         output_file=args.output_file,
         spin=args.spin,
-        vr=args.vr,
+        vr=args.nature,
         safe=args.safe,
         groups=args.group,
         types=args.type,

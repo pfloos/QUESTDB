@@ -8,6 +8,8 @@ from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 from rich.padding import Padding
+from rich.rule import Rule
+from rich.text import Text
 
 console = Console()
 
@@ -41,58 +43,71 @@ def analyze_data(data: List[dict]) -> dict:
         unique_molecules.add(molecule)
 
         if multiplicity_value == 1:
-            multiplicity = "singlet"
+            multiplicity = "Singlet"
         elif multiplicity_value == 3:
-            multiplicity = "triplet"
+            multiplicity = "Triplet"
         else:
-            multiplicity = "unknown"
+            multiplicity = "Unknown"
 
         if vr_value == "V":
-            vr_category = "valence"
+            vr_category = "Valence"
         elif vr_value == "R":
-            vr_category = "rydberg"
+            vr_category = "Rydberg"
         else:
-            vr_category = "unknown"
+            vr_category = "Unknown"
 
         stats["multiplicity"][multiplicity] += 1
         stats["type"][transition_type or "unknown"] += 1
         stats["v_r"][vr_category] += 1
         stats["group"][group] += 1
-        stats["safe"]["unsafe" if safe_flag == "N" else "safe"] += 1
+        stats["safe"]["Unsafe" if safe_flag == "N" else "Safe"] += 1
 
     stats["meta"]["distinct_molecules"] = len(unique_molecules)
+    stats["meta"]["total_excitations"] = len(data)
     return stats
 
 
 def print_stats(stats: dict):
-    console.rule("[bold cyan]🔍 Excitation Set Analysis Summary")
+    console.print(Rule("[bold cyan]🔍 Excitation Set Analysis"))
 
-    summary_panel = Panel.fit(
-        f"[bold yellow]🧪 Distinct Molecules:[/bold yellow] {stats['meta']['distinct_molecules']}\n"
-        f"[bold red]⚠️ Unsafe Excitations:[/bold red] {stats['safe'].get('unsafe', 0)}\n"
-        f"[bold green]✅ Safe Excitations:[/bold green] {stats['safe'].get('safe', 0)}",
-        title="📊 [bold]Summary",
-        border_style="cyan",
-        padding=(1, 2),
+    total = stats["meta"]["total_excitations"]
+    safe = stats["safe"].get("Safe", 0)
+    unsafe = stats["safe"].get("Unsafe", 0)
+    molecules = stats["meta"]["distinct_molecules"]
+
+    summary = Panel.fit(
+        f"[bold white]Total excitations:[/] [cyan]{total}[/]\n"
+        f"[bold green]✅ Safe:[/] {safe}    [bold red]⚠️ Unsafe:[/] {unsafe}\n"
+        f"[bold yellow]🔬 Distinct molecules:[/] {molecules}",
+        title="📊 [bold magenta]Summary",
+        border_style="bright_blue",
+        padding=(1, 3),
     )
-    console.print(summary_panel)
+    console.print(summary)
 
     def print_table(title: str, category: str, labels=None, icon="📌"):
-        table = Table(title=f"{icon} [bold]{title}[/bold]", header_style="bold magenta")
-        table.add_column(category.capitalize(), style="bold white")
+        table = Table(title=f"{icon} {title}", header_style="bold white", title_style="bold magenta")
+        table.add_column("Category", style="bold cyan")
         table.add_column("Count", justify="right", style="bold green")
 
         items = stats[category].items()
         if labels:
             items = [(label, stats[category].get(label, 0)) for label in labels]
-        for key, count in items:
+
+        # Filter out zero rows
+        items = [(k, v) for k, v in items if v > 0]
+        if not items:
+            return
+
+        for key, count in sorted(items, key=lambda x: x[0].lower()):
             table.add_row(key.capitalize(), str(count))
+
         console.print(Padding(table, (1, 2)))
 
-    print_table("By Multiplicity", "multiplicity", labels=["singlet", "triplet", "unknown"], icon="🌀")
-    print_table("By Transition Type", "type", icon="🎯")
-    print_table("By Valence/Rydberg", "v_r", labels=["valence", "rydberg", "unknown"], icon="🧭")
-    print_table("By Group", "group", icon="🧬")
+    print_table("Multiplicity Distribution", "multiplicity", labels=["Singlet", "Triplet", "Unknown"], icon="🌀")
+    print_table("Transition Types", "type", icon="🎯")
+    print_table("Valence vs. Rydberg", "v_r", labels=["Valence", "Rydberg", "Unknown"], icon="🧭")
+    print_table("Group Index Distribution", "group", icon="🧬")
 
 
 def main():
