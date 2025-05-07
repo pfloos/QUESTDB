@@ -3,42 +3,29 @@ import os
 import json
 import re
 import unicodedata
+import argparse
+from pathlib import Path
 
-# -------- CONFIGURATION --------
-excel_file = "xlsx/QUEST-All.xlsx"  # Your Excel file
-output_base_dir = "json"  # Output folder
-# --------------------------------
-
-# Load all sheets
-xls = pd.ExcelFile(excel_file)
-sheet_names = xls.sheet_names
-
-# Ensure output base directory exists
-os.makedirs(output_base_dir, exist_ok=True)
-
-# Helper: Replace special unicode characters with common equivalents
 def clean_text(text):
+    """Replace problematic Unicode characters and normalize."""
     if not isinstance(text, str):
         return text
     replacements = {
-        '\u2013': '-',    # en dash
-        '\u2014': '-',    # em dash
-        '\u2018': "'",    # left single quote
-        '\u2019': "'",    # right single quote
-        '\u201c': '"',    # left double quote
-        '\u201d': '"',    # right double quote
-        '\xa0': ' ',      # non-breaking space
+        '\u2013': '-', '\u2014': '-',
+        '\u2018': "'", '\u2019': "'",
+        '\u201c': '"', '\u201d': '"',
+        '\xa0': ' ',
     }
     for bad, good in replacements.items():
         text = text.replace(bad, good)
     return unicodedata.normalize('NFKC', text)
 
-# Helper: Sanitize filenames
 def sanitize_filename(name):
+    """Make string safe for filenames."""
     return re.sub(r'[^\w\-_.]', '_', str(name).strip())
 
-# Helper: Drop duplicate column names, keeping only the first
 def deduplicate_columns(df):
+    """Remove duplicate column names (keep only first)."""
     seen = set()
     new_cols = []
     for col in df.columns:
@@ -46,41 +33,70 @@ def deduplicate_columns(df):
             new_cols.append(col)
             seen.add(col)
         else:
-            new_cols.append(None)  # Mark duplicates for removal
+            new_cols.append(None)
     df.columns = new_cols
-    df = df.loc[:, df.columns.notnull()]
-    return df
+    return df.loc[:, df.columns.notnull()]
 
-# Main loop over all sheets
-for sheet in sheet_names:
-    df = xls.parse(sheet)
+def process_excel_file(excel_path, output_dir, skip_sheets=None, only_sheets=None):
+    xls = pd.ExcelFile(excel_path)
+    sheet_names = xls.sheet_names
 
-    # Clean header row
-    df.columns = [clean_text(col) for col in df.iloc[0]]
-    df = df[1:].copy()
+    os.makedirs(output_dir, exist_ok=True)
+    total_written = 0
 
-    if "Molecule" not in df.columns:
-        print(f"Skipping sheet '{sheet}' – no 'Molecule' column found.")
-        continue
+    for sheet in sheet_names:
+        if skip_sheets and sheet in skip_sheets:
+            print(f"⏭ Skipping sheet: {sheet}")
+            continue
+        if only_sheets and sheet not in only_sheets:
+            continue
 
-    # Deduplicate columns
-    df = deduplicate_columns(df)
+        print(f"📄 Processing sheet: {sheet}")
+        df = xls.parse(sheet)
 
-    # Clean molecule names and forward-fill
-    df["Molecule"] = df["Molecule"].apply(clean_text).ffill()
+        # Clean and prepare header
+        df.columns = [clean_text(col) for col in df.iloc[0]]
+        df = df[1:].copy()
 
-    # Output folder per sheet
-    sheet_dir = os.path.join(output_base_dir, sheet)
-    os.makedirs(sheet_dir, exist_ok=True)
+        if "Molecule" not in df.columns:
+            print(f"⚠️  Skipping sheet '{sheet}' – no 'Molecule' column found.")
+            continue
 
-    # Group and write JSON
-    for molecule, group in df.groupby("Molecule"):
-        molecule_name = sanitize_filename(molecule)
-        clean_group = group.dropna(axis=1, how='all').applymap(clean_text)
-        records = clean_group.to_dict(orient="records")
+        df = deduplicate_columns(df)
+        df["Molecule"] = df["Molecule"].apply(clean_text).ffill()
 
-        output_path = os.path.join(sheet_dir, f"{molecule_name}.json")
-        with open(output_path, "w") as f:
-            json.dump(records, f, indent=2)
+        sheet_dir = Path(output_dir) / sheet
+        sheet_dir.mkdir(parents=True, exist_ok=True)
 
-print("✅ Done! JSON files saved in:", output_base_dir)
+        for molecule, group in df.groupby("Molecule"):
+            molecule_name = sanitize_filename(molecule)
+            clean_group = group.dropna(axis=1, how='all').applymap(clean_text)
+            records = clean_group.to_dict(orient="records")
+
+            output_path = sheet_dir / f"{molecule_name}.json"
+            with open(output_path, "w") as f:
+                json.dump(records, f, indent=2)
+
+            print(f"  ✅ Saved: {output_path.name}")
+            total_written += 1
+
+    print(f"\n🎉 Done! {total_written} JSON files written to: {output_dir}")
+
+def main():
+    parser = argparse.ArgumentParser(description="Convert Excel sheets to per-molecule JSON files.")
+    parser.add_argument("--excel-file", required=True, help="Path to Excel file (e.g., QUEST-All.xlsx)")
+    parser.add_argument("--output-dir", default="json", help="Directory to save JSON files (default: ./json)")
+    parser.add_argument("--skip-sheets", nargs="+", help="Sheets to skip")
+    parser.add_argument("--only-sheets", nargs="+", help="Only process these sheets (overrides skip)")
+
+    args = parser.parse_args()
+
+    process_excel_file(
+        excel_path=args.excel_file,
+        output_dir=args.output_dir,
+        skip_sheets=args.skip_sheets,
+        only_sheets=args.only_sheets
+    )
+
+if __name__ == "__main__":
+    main()
