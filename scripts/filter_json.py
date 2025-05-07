@@ -71,7 +71,7 @@ def filter_excitations(
         json.dump(filtered, f, indent=2)
 
     # ✅ Summary panel
-    console.rule("[bold cyan]🎯 Filter Results Summary")
+    # console.rule("[bold cyan]🎯 Filter Results Summary")
     console.print(
         Panel.fit(
             f"[bold green]✔ Filtered excitations saved to[/] [yellow]{output_file}[/]",
@@ -80,7 +80,7 @@ def filter_excitations(
         )
     )
 
-    summary = Table(title="📊 Filtering Summary", box=box.SIMPLE_HEAVY)
+    summary = Table(title="📊 Filtering Summary", box=box.HEAVY)
     summary.add_column("Metric", style="bold cyan")
     summary.add_column("Value", style="bold magenta", justify="right")
 
@@ -104,7 +104,7 @@ def filter_excitations(
 
     def print_breakdown(title, counter, icon):
         if counter:
-            table = Table(title=f"{icon} {title}", box=box.MINIMAL_DOUBLE_HEAD)
+            table = Table(title=f"{icon} {title}", box=box.HEAVY)
             table.add_column("Category", style="cyan")
             table.add_column("Count", justify="right", style="magenta")
             for key, count in sorted(counter.items()):
