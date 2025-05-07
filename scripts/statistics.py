@@ -105,6 +105,8 @@ def analyze_directory_with_plots(json_dir: str, filters: dict, print_graphs: boo
 
         # Plot error distribution if the option is enabled
         if print_graphs:
+            output_dir = "plots"
+            os.makedirs(output_dir, exist_ok=True)
             plt.figure(figsize=(6, 4))
             plt.hist(errors, bins=20, color='skyblue', edgecolor='black')
             plt.title(f'Error Distribution: {method}')
@@ -112,7 +114,10 @@ def analyze_directory_with_plots(json_dir: str, filters: dict, print_graphs: boo
             plt.ylabel('Count')
             plt.axvline(0, color='black', linestyle='--')
             plt.tight_layout()
-            plt.show()
+            filename = os.path.join(output_dir, f"{method.replace('/', '_')}_error_distribution.png")
+            plt.savefig(filename, dpi=150)
+            plt.close()
+            console.print(f"📈 Saved plot: [green]{filename}[/]")
 
     # Print table
     console.print(table)
@@ -134,9 +139,7 @@ if __name__ == "__main__":
     parser.add_argument("--only-rydberg", action="store_true", help="Only include Rydberg transitions")
     parser.add_argument("--only-ppi", action="store_true", help="Only include π→π* transitions")
     parser.add_argument("--only-npi", action="store_true", help="Only include n→π* transitions")
-    parser.add_argument("--allow-gd", action="store_true", help="Allow genuine double excitations")
     parser.add_argument("--allow-unsafe", dest="safe_only", action="store_false", help="Allow unsafe transitions")
-    parser.add_argument("--save-results", action="store_true", help="Save filtered results to a JSON file")
     parser.add_argument("--print-graphs", action="store_true", help="Print error distribution graphs")
 
     args = parser.parse_args()
@@ -151,7 +154,6 @@ if __name__ == "__main__":
         "only_npi": args.only_npi,
         "min_size": args.min_size,
         "max_size": args.max_size,
-        "allow_gd": args.allow_gd,
     }
 
     if not os.path.isdir(args.json_dir):
@@ -160,5 +162,3 @@ if __name__ == "__main__":
 
     analyze_directory_with_plots(args.json_dir, filters, args.print_graphs)
 
-    if args.save_results:
-        save_results([], "filtered_results.json")  # Specify appropriate subset if needed

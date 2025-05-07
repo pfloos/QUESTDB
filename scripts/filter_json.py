@@ -1,4 +1,5 @@
 import json
+import os
 import argparse
 from collections import Counter
 from rich.console import Console
@@ -20,8 +21,25 @@ def filter_excitations(
     groups=None, types=None, exclude_gd=False,
     min_size=None, max_size=None
 ):
-    with open(input_file, 'r') as f:
-        data = json.load(f)
+    data = []
+    if os.path.isdir(input_file):
+        for filename in os.listdir(input_file):
+            if filename.endswith(".json"):
+                with open(os.path.join(input_file, filename), "r") as f:
+                    chunk = json.load(f)
+                    if isinstance(chunk, list):
+                        data.extend(chunk)
+                    else:
+                        raise ValueError(f"File {filename} does not contain a list.")
+    elif os.path.isfile(input_file) and input_file.endswith(".json"):
+        with open(input_file, "r") as f:
+            chunk = json.load(f)
+            if isinstance(chunk, list):
+                data = chunk
+            else:
+                raise ValueError("Expected a list of excitations in the JSON file.")
+    else:
+        raise ValueError(f"{input_file} is not a valid file or directory.")
 
     if not isinstance(data, list):
         raise ValueError("Expected a list of excitations in the JSON file.")
@@ -39,7 +57,7 @@ def filter_excitations(
             return False
         if types is not None and entry.get("Type") not in types:
             return False
-        if exclude_gd and entry.get("Type") == "GD":
+        if exclude_gd and entry.get("Special ?") == "gd":
             return False
         if min_size is not None and entry.get("Size") < min_size:
             return False
@@ -99,14 +117,14 @@ def filter_excitations(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="✨ Fancy filter for QUEST excitations.")
-    parser.add_argument("input_file", help="Path to input JSON file")
+    parser.add_argument("input_file", help="Path to directory containing .json files")
     parser.add_argument("output_file", help="Path to output JSON file")
     parser.add_argument("--spin", type=int, choices=[1, 3], help="1 for singlet, 3 for triplet")
     parser.add_argument("--nature", choices=["V", "R"], help="'V' for valence, 'R' for Rydberg")
     parser.add_argument("--safe", choices=["Y", "N"], help="'Y' = safe, 'N' = unsafe")
     parser.add_argument("--group", type=parse_int_list, help="Comma-separated list of Group numbers (12, 35, 69, 1016)")
     parser.add_argument("--type", type=parse_list, help="Comma-separated list of excitation types (e.g., npi,ppi,n3s)")
-    parser.add_argument("--exclude-gd", action="store_true", help="Exclude genuine double excitations (Type == 'GD')")
+    parser.add_argument("--exclude-gd", action="store_true", help="Exclude genuine double excitations ('GD')")
     parser.add_argument("--min-size", type=int, help="Minimum molecule size to include")
     parser.add_argument("--max-size", type=int, help="Maximum molecule size to include")
 

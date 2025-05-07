@@ -36,7 +36,7 @@ def load_data(json_dir: str, filters: dict) -> List[Dict]:
         with open(os.path.join(json_dir, file)) as f:
             data = json.load(f)
             for i, d in enumerate(data):
-                if not filters.get("allow_gd", False) and d.get("Type") == "GD":
+                if not filters.get("allow_gd", False) and d.get("Type") == "dou":
                     continue
                 if filters.get("safe_only", True) and d.get("Safe ? (~50 meV)") != "Y":
                     continue
