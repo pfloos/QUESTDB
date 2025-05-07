@@ -70,7 +70,7 @@ The main script to create a “diet” subset of excitations from the QUEST data
 
 **Usage:**
 ```bash
-usage: quest_diet.py --size SIZE json_dir [options]
+usage: quest_diet.py --size SIZE --max-molecules N json_dir [options]
 
 positional arguments:
   json_dir                 Path to directory containing .json files
@@ -122,6 +122,26 @@ options:
 
 ### 🔹 `filter_json.py`
 Filters a subset of excitations based on user-specified criteria and outputs a new combined `.json` file.
+
+**Usage:**
+```bash
+usage: filter_json.py input_file output_file [options]
+
+positional arguments:
+  input_file           Path to directory containing .json files
+  output_file          Path to output JSON file
+
+options:
+  -h, --help           show this help message and exit
+  --spin {1,3}         1 for singlet, 3 for triplet
+  --nature {V,R}       'V' for valence, 'R' for Rydberg
+  --safe {Y,N}         'Y' = safe, 'N' = unsafe
+  --group GROUP        Comma-separated list of Group numbers (12, 35, 69, 1016)
+  --type TYPE          Comma-separated list of excitation types (e.g., npi,ppi,n3s)
+  --exclude-gd         Exclude genuine double excitations ('GD')
+  --min-size MIN_SIZE  Minimum molecule size to include
+  --max-size MAX_SIZE  Maximum molecule size to include
+```
 
 ---
 
