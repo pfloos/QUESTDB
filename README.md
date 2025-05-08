@@ -48,9 +48,33 @@ QUESTDB supports researchers to:
 
 > **Note:** QUESTDB is a cornerstone of the **mountaineering strategy** — systematically climbing towards chemically-accurate excited-state data.
 
-We aim to catalyze the development of predictive models capable of generating new insights into excited-state behavior. 
-Our long-term vision is to position the QUEST database as a foundational database for the future of neural networks in this field. 
-The aim is to position the present database not just as a resource, but as a key enabler of the next generation of AI-driven scientific research, where deep learning and related technologies will play an increasingly vital role in advancing the frontiers of excited-state research.
+Our vision is to establish QUESTDB as a cornerstone resource for benchmarking and training the next generation of AI-driven models in excited-state science.
+
+---
+
+### ⚙️ Scripts for Subset Generation and Analysis
+
+This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the statistical properties of the full database (e.g., MAE, RMSE) across different computational methods and excitation categories.
+
+These tools are especially useful for benchmarking new methods quickly or for training machine learning models when computational cost is a limiting factor.
+
+**Main functionalities include:**
+
+- ✅ Generation of optimized subsets matching the full dataset’s distribution across:
+  - Singlets vs triplets  
+  - Valence vs Rydberg states  
+  - Excitation types (e.g., \(n\pi^*\), \(\pi\pi^*\), etc.)  
+  - Molecule sizes or other custom filters  
+- ✅ Support for flexible user-defined filters (e.g., only valence, only singlets, exclude genuine doubles)  
+- ✅ Preservation of full metadata in output JSON files  
+- ✅ Styled statistical reports using the [`rich`](https://github.com/Textualize/rich) library  
+- ✅ Optional optimization of subset selection using a genetic algorithm with Bayesian hyperparameter tuning (via [`optuna`](https://optuna.org/))  
+
+To explore the tools, check out the [`tools/`](tools/) directory and use:
+
+```bash
+python tools/select_subset.py --help
+```
 
 ---
 
