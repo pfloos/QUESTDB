@@ -63,7 +63,7 @@ These tools are especially useful for benchmarking new methods quickly or for tr
 - ✅ Generation of optimized subsets matching the full dataset’s distribution across:
   - Singlets vs triplets  
   - Valence vs Rydberg states  
-  - Excitation types (e.g., $n\pi^*$, $\pi\pi^*$), etc.)  
+  - Excitation types (e.g., n<sup>π*</sup>, π<sup>π*</sup>, etc.)  
   - Molecule sizes or other custom filters  
 - ✅ Support for flexible user-defined filters (e.g., only valence, only singlets, exclude genuine doubles)  
 - ✅ Preservation of full metadata in output JSON files  
