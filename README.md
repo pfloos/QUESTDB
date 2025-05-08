@@ -67,14 +67,7 @@ These tools are especially useful for benchmarking new methods quickly or for tr
   - Molecule sizes or other custom filters  
 - ✅ Support for flexible user-defined filters (e.g., only valence, only singlets, exclude genuine doubles)  
 - ✅ Preservation of full metadata in output JSON files  
-- ✅ Styled statistical reports using the [`rich`](https://github.com/Textualize/rich) library  
 - ✅ Optional optimization of subset selection using a genetic algorithm with Bayesian hyperparameter tuning (via [`optuna`](https://optuna.org/))  
-
-To explore the tools, check out the [`tools/`](tools/) directory and use:
-
-```bash
-python tools/select_subset.py --help
-```
 
 ---
 
