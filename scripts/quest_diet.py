@@ -1,3 +1,19 @@
+"""
+QUEST Diet - Molecular Excitation Subset Selector
+
+A genetic algorithm implementation to select representative subsets of molecular excitation data
+that preserve statistical properties of the full dataset while optionally limiting the number
+of distinct molecules used.
+
+Key Features:
+- Loads excitation data from JSON files with configurable filters
+- Uses genetic algorithm to find optimal subsets
+- Maintains statistical properties (MAE, MSE, RMSE)
+- Optional molecule count restriction
+- Rich progress reporting and output formatting
+- Hyperparameter optimization via Optuna
+"""
+
 import os
 import json
 import random
@@ -12,21 +28,34 @@ from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, TimeEl
 
 import optuna
 
-# === Config Defaults ===
-DEFAULT_POPULATION_SIZE = 100
-DEFAULT_GENERATIONS = 100
-DEFAULT_MUTATION_RATE = 0.2
-DEFAULT_TOURNAMENT_SIZE = 5
+# ======================
+# CONFIGURATION DEFAULTS
+# ======================
 
-CATEGORY_KEYS = ["spin", "V/R", "Type"]
-REFERENCE_KEY = "TBE/AVTZ"
+# Genetic Algorithm Parameters
+DEFAULT_POPULATION_SIZE = 100    # Number of individuals in each generation
+DEFAULT_GENERATIONS = 100        # Number of evolutionary generations
+DEFAULT_MUTATION_RATE = 0.2      # Probability of mutation
+DEFAULT_TOURNAMENT_SIZE = 5      # Selection pressure for tournament selection
+
+# Data Processing Parameters
+CATEGORY_KEYS = ["spin", "V/R", "Type"]  # Keys used for categorical comparisons
+REFERENCE_KEY = "TBE/AVTZ"                # Reference value key
+
+# Keys to exclude from statistical calculations
 SKIP_KEYS = {
     "CASSCF", "CASPT2", "CASPT3", "SC-NEVPT2", "PC-NEVPT2",
-    "Special ?", "Safe ? (~50 meV)", "TBE/AVQZ", "Molecule", "State", "Method",
-    "Corr. Method", "%T1 [CC3/AVTZ]", "f [LR-CC3/AVTZ]", "Size", "spin", "V/R", "Group", "TBE/AVTZ"
+    "Special ?", "Safe ? (~50 meV)", "TBE/AVQZ", "Molecule",
+    "State", "Method", "Corr. Method", "%T1 [CC3/AVTZ]",  "%T1 [CC3/AVDZ]",
+    "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]", "Size", "spin", "V/R", "Group", "TBE/AVTZ"
 }
 
+# Initialize rich console for pretty printing
 console = Console()
+
+# ==================
+# DATA LOADING & PROCESSING
+# ==================
 
 def load_data(json_dir: str, filters: dict) -> List[Dict]:
     entries = []
@@ -103,6 +132,10 @@ def compute_fitness(subset: List[Dict], full_stats: Dict[str, Dict[str, float]])
             diff = abs(subset_stats[method][metric] - full_stats[method][metric])
             score += diff
     return score
+
+# ==================
+# GENETIC ALGORITHM CORE
+# ==================
 
 def tournament_selection(population, fitnesses, tournament_size):
     winners = random.sample(list(zip(population, fitnesses)), tournament_size)
@@ -221,6 +254,10 @@ def genetic_algorithm(entries: List[Dict], target_size: int, filters: dict, gene
     best_idx = np.argmin(fitnesses)
     return population[best_idx], compute_stats(population[best_idx]), full_stats, fitnesses[best_idx]
 
+# ==================
+# RESULTS & OUTPUT
+# ==================
+
 def save_results(subset: List[Dict], output_json):
     result = [e["full"] for e in subset]
     with open(output_json, "w") as f:
@@ -279,6 +316,10 @@ def compare_stats(name: str, subset_stats, full_stats):
         console.print(f"• {metric}: [{color}]{val:.4f} eV[/{color}]  ([bold]{method}[/])")
     console.print("")
 
+# ==================
+# HYPERPARAMETER OPTIMIZATION
+# ==================
+
 def run_optimization(data, target_size, filters, n_trials=30):
     def objective(trial):
         pop_size = trial.suggest_int("population_size", 30, 150)
@@ -301,13 +342,24 @@ def run_optimization(data, target_size, filters, n_trials=30):
     console.print(f"\n🎯 Best hyperparameters: {study.best_params}", style="bold green")
     return study.best_params
 
+# ==================
+# COMMAND LINE INTERFACE
+# ==================
+
 # === Main ===
 if __name__ == "__main__":
+
+    """Handle command line interface and main execution flow."""
     parser = argparse.ArgumentParser(description="QUEST diet: subsets of excitations with same statistics!")
+
+    # Required arguments
     parser.add_argument("json_dir", help="Path to directory containing .json files")
     parser.add_argument("--size", type=int, required=True, help="Target subset size")
+
+    # Optimization flag
     parser.add_argument("--optimize-params", action="store_true", help="Use Optuna to optimize GA parameters")
 
+    # Data filtering options
     parser.add_argument("--only-singlet", action="store_true", help="Only include singlet transitions")
     parser.add_argument("--only-doublet", action="store_true", help="Only include doublet transitions")
     parser.add_argument("--only-triplet", action="store_true", help="Only include triplet transitions")
@@ -323,6 +375,8 @@ if __name__ == "__main__":
     parser.add_argument("--max-molecules", type=int, default=None, help="Maximum number of distinct molecules to include in subset")
 
     args = parser.parse_args()
+
+    # Prepare filters dictionary
     filters = {
         "only_singlet": args.only_singlet,
         "only_doublet": args.only_doublet,
@@ -338,13 +392,16 @@ if __name__ == "__main__":
         "safe_only": args.safe_only
     }
 
+    # Validate input directory
     if not os.path.isdir(args.json_dir):
         console.print(f"❌ Error: '{args.json_dir}' is not a valid directory.", style="bold red")
         exit(1)
 
+    # Load and filter data
     data = load_data(args.json_dir, filters)
     console.print(f"📂 Loaded {len(data)} total excitations from {args.json_dir}", style="green")
 
+    # Optimize or use default parameters
     if args.optimize_params:
         best = run_optimization(data, args.size, filters)
         pop_size = best["population_size"]
@@ -355,6 +412,7 @@ if __name__ == "__main__":
         mutation_rate = DEFAULT_MUTATION_RATE
         tournament_size = DEFAULT_TOURNAMENT_SIZE
 
+    # Run genetic algorithm
     subset, subset_stats, full_stats, _ = genetic_algorithm(
         data,
         target_size=args.size,
@@ -365,5 +423,7 @@ if __name__ == "__main__":
         tournament_size=tournament_size,
         max_molecules=args.max_molecules  
     )
+
+    # Save and display results
     save_results(subset, f"diet_subset_{args.size}.json")
     compare_stats(f"{args.size} Excitations", subset_stats, full_stats)
