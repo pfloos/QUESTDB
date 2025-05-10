@@ -11,8 +11,8 @@ from rich import box
 # === Config ===
 SKIP_FIELDS = {
     "TBE/AVTZ", "TBE/AVQZ", "Molecule", "State", "Method",
-    "Corr. Method", "%T1 [CC3/AVTZ]", "f [LR-CC3/AVTZ]",
-    "Size", "Group", "S/T", "V/R", "Type",
+    "Corr. Method", "%T1 [CC3/AVTZ]", "%T1 [CC3/AVDZ]", "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]", 
+    "Size", "Group", "spin", "V/R", "Type",
     "Safe ? (~50 meV)", "Special ?"
 }
 
@@ -35,9 +35,13 @@ def load_data(json_dir: str, filters: dict):
                 # Apply filters
                 if filters.get("safe_only", True) and entry.get("Safe ? (~50 meV)") != "Y":
                     continue
-                if filters.get("only_singlet") and entry.get("S/T") != 1:
+                if filters.get("only_singlet") and entry.get("spin") != 1:
                     continue
-                if filters.get("only_triplet") and entry.get("S/T") != 3:
+                if filters.get("only_doublet") and entry.get("spin") != 2:
+                    continue
+                if filters.get("only_triplet") and entry.get("spin") != 3:
+                    continue
+                if filters.get("only_quartet") and entry.get("spin") != 4:
                     continue
                 if filters.get("only_valence") and entry.get("V/R") != "V":
                     continue
@@ -56,7 +60,7 @@ def load_data(json_dir: str, filters: dict):
                     "file": filename,
                     "index": entry.get("Index", None),
                     "data": method_errors,
-                    "categories": {k: entry[k] for k in ["S/T", "V/R", "Type"] if k in entry},
+                    "categories": {k: entry[k] for k in ["spin", "V/R", "Type"] if k in entry},
                     "full": entry
                 })
     return entries
@@ -134,7 +138,9 @@ if __name__ == "__main__":
     parser.add_argument("--min-size", type=int, default=0, help="Minimum molecule size")
     parser.add_argument("--max-size", type=int, default=1000, help="Maximum molecule size")
     parser.add_argument("--only-singlet", action="store_true", help="Only include singlet transitions")
+    parser.add_argument("--only-doublet", action="store_true", help="Only include doublet transitions")
     parser.add_argument("--only-triplet", action="store_true", help="Only include triplet transitions")
+    parser.add_argument("--only-quartet", action="store_true", help="Only include quartet transitions")
     parser.add_argument("--only-valence", action="store_true", help="Only include valence transitions")
     parser.add_argument("--only-rydberg", action="store_true", help="Only include Rydberg transitions")
     parser.add_argument("--only-ppi", action="store_true", help="Only include π→π* transitions")
@@ -147,7 +153,9 @@ if __name__ == "__main__":
     filters = {
         "safe_only": args.safe_only,
         "only_singlet": args.only_singlet,
+        "only_doublet": args.only_doublet,
         "only_triplet": args.only_triplet,
+        "only_quartet": args.only_quartet,
         "only_valence": args.only_valence,
         "only_rydberg": args.only_rydberg,
         "only_ppi": args.only_ppi,

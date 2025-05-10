@@ -2,7 +2,7 @@
   {
     "Molecule": "TiN",
     "State": "^2Delta",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s3d",
     "TBE/AVTZ": 1.066,
     "Method": "exFCI/AVTZ",
@@ -17,7 +17,7 @@
   {
     "Molecule": "TiN",
     "State": "^2Delta",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "si3d",
     "TBE/AVTZ": 2.043,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -32,7 +32,7 @@
   {
     "Molecule": "TiN",
     "State": "^2Pi",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s3d",
     "TBE/AVTZ": 1.994,
     "Method": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",

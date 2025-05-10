@@ -4,7 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 1.999,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
@@ -15,7 +15,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "Special ?": "pd",
     "f [LR-CCSD/AVTZ]": 0.01,
@@ -28,7 +28,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.508,
@@ -40,7 +40,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "Special ?": "pd"
   },
@@ -49,7 +49,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.077,
     "TBE/AVTZ": 5.293,
@@ -61,7 +61,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "Special ?": "pd",
     "f [LR-CCSD/AVTZ]": 0.001
@@ -71,7 +71,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.181
   },
@@ -80,7 +80,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "V",
     "Special ?": "pd"
   },
@@ -89,7 +89,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
-    "D/Q": 2,
+    "spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.017
   },
@@ -98,7 +98,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^4A_2",
-    "D/Q": 4,
+    "spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 4.34,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
@@ -109,7 +109,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^4B_2",
-    "D/Q": 4,
+    "spin": 4,
     "V/R": "V"
   },
   {
@@ -117,7 +117,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^4A_1",
-    "D/Q": 4,
+    "spin": 4,
     "V/R": "V"
   }
 ]

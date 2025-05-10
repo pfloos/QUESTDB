@@ -2,7 +2,7 @@
   {
     "Molecule": "ZnO",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "2p4s",
     "TBE/AVTZ": 0.791,
     "Method": "exFCI/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
@@ -18,7 +18,7 @@
   {
     "Molecule": "ZnO",
     "State": "^1Sigma^+",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "si4s",
     "TBE/AVTZ": 3.423,
     "Method": "exFCI/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
@@ -34,7 +34,7 @@
   {
     "Molecule": "ZnO",
     "State": "^1Delta",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "2p4s",
     "TBE/AVTZ": 4.645,
     "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
@@ -50,7 +50,7 @@
   {
     "Molecule": "ZnO",
     "State": "^1Sigma^-",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "2p4s",
     "TBE/AVTZ": 4.688,
     "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
@@ -66,7 +66,7 @@
   {
     "Molecule": "ZnO",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "2p4s",
     "TBE/AVTZ": 0.542,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -81,7 +81,7 @@
   {
     "Molecule": "ZnO",
     "State": "^3Sigma^+",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "si4s",
     "TBE/AVTZ": 1.791,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",

@@ -2,7 +2,7 @@
   {
     "Molecule": "CuH",
     "State": "^1Sigma^+",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 3.08,
     "Method": "exFCI/AVTZ",
@@ -16,7 +16,7 @@
   {
     "Molecule": "CuH",
     "State": "^1Delta",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 3.754,
     "Method": "CCSDTQ/AVTZ",
@@ -31,7 +31,7 @@
   {
     "Molecule": "CuH",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 3.829,
     "Method": "exFCI/AVTZ",
@@ -46,7 +46,7 @@
   {
     "Molecule": "CuH",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 5.497,
     "Method": "CCSDTQ/AVTZ",
@@ -60,7 +60,7 @@
   {
     "Molecule": "CuH",
     "State": "^1Sigma^+",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 5.751,
     "Method": "CCSDTQ/AVTZ",
@@ -74,7 +74,7 @@
   {
     "Molecule": "CuH",
     "State": "^3Sigma^+",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 2.55,
     "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
@@ -87,7 +87,7 @@
   {
     "Molecule": "CuH",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 3.582,
     "Method": "exFCI/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
@@ -100,7 +100,7 @@
   {
     "Molecule": "CuH",
     "State": "^3Delta",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 3.618,
     "Method": "CCSDTQ/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
@@ -113,7 +113,7 @@
   {
     "Molecule": "CuH",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 4.817,
     "Method": "CCSDTQ/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",

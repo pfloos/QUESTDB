@@ -2,7 +2,7 @@
   {
     "Molecule": "ScO",
     "State": "^2Pi",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s3d",
     "TBE/AVTZ": 2.037,
     "Method": "exFCI/AVTZ",
@@ -18,7 +18,7 @@
   {
     "Molecule": "ScO",
     "State": "^2Delta",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s3d",
     "TBE/AVTZ": 2.133,
     "Method": "exFCI/AVTZ",
@@ -34,7 +34,7 @@
   {
     "Molecule": "ScO",
     "State": "^2Sigma^+",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s3d",
     "TBE/AVTZ": 2.572,
     "Method": "exFCI/AVTZ",
@@ -50,7 +50,7 @@
   {
     "Molecule": "ScO",
     "State": "^2Pi",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "2p4s",
     "TBE/AVTZ": 3.57,
     "Method": "CCSDTQ/AVTZ",

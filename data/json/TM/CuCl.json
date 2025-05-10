@@ -2,7 +2,7 @@
   {
     "Molecule": "CuCl",
     "State": "^1Sigma^+",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "si4s",
     "TBE/AVTZ": 3.065,
     "Method": "CCSDTQ/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
@@ -18,7 +18,7 @@
   {
     "Molecule": "CuCl",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 3.092,
     "Method": "CCSDTQ/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
@@ -34,7 +34,7 @@
   {
     "Molecule": "CuCl",
     "State": "^1Delta",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "3d4s",
     "TBE/AVTZ": 3.479,
     "Method": "CCSDTQ/AVDZ + [CASPT2/AVTZ - CASPT2/AVDZ]",
@@ -50,7 +50,7 @@
   {
     "Molecule": "CuCl",
     "State": "^3Sigma^+",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "si4s",
     "TBE/AVTZ": 2.692,
     "Method": "CASPT2/AVTZ",
@@ -64,7 +64,7 @@
   {
     "Molecule": "CuCl",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 2.8449999999999998,
     "Method": "CASPT2/AVTZ",
@@ -78,7 +78,7 @@
   {
     "Molecule": "CuCl",
     "State": "^3Delta",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "3d4s",
     "TBE/AVTZ": 3.229,
     "Method": "CASPT2/AVTZ",

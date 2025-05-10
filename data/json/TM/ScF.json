@@ -2,7 +2,7 @@
   {
     "Molecule": "ScF",
     "State": "^1Delta",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "4s3d",
     "TBE/AVTZ": 0.903,
     "Method": "exFCI/AVTZ",
@@ -19,7 +19,7 @@
   {
     "Molecule": "ScF",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "4s3d",
     "TBE/AVTZ": 1.671,
     "Method": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -36,7 +36,7 @@
   {
     "Molecule": "ScF",
     "State": "^1Sigma^+",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "4s3d",
     "TBE/AVTZ": 2.404,
     "Method": "CCSDTQ/AVTZ",
@@ -52,7 +52,7 @@
   {
     "Molecule": "ScF",
     "State": "^1Pi",
-    "S/D/T": 1,
+    "spin": 1,
     "Type": "dou",
     "TBE/AVTZ": 2.8369999999999997,
     "Method": "CCSDTQ/AVTZ",
@@ -68,7 +68,7 @@
   {
     "Molecule": "ScF",
     "State": "^3Delta",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "4s3d",
     "TBE/AVTZ": 0.647,
     "Method": "exFCI/AVTZ",
@@ -83,7 +83,7 @@
   {
     "Molecule": "ScF",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "4s3d",
     "TBE/AVTZ": 1.109,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -98,7 +98,7 @@
   {
     "Molecule": "ScF",
     "State": "^3Sigma^+",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "4s3d",
     "TBE/AVTZ": 1.459,
     "Method": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -113,7 +113,7 @@
   {
     "Molecule": "ScF",
     "State": "^3Pi",
-    "S/D/T": 3,
+    "spin": 3,
     "Type": "dou",
     "TBE/AVTZ": 2.593,
     "Method": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",

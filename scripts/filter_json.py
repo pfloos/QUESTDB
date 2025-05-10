@@ -47,7 +47,7 @@ def filter_excitations(
     total = len(data)
 
     def matches(entry):
-        if spin is not None and entry.get("S/T") != spin:
+        if spin is not None and entry.get("spin") != spin:
             return False
         if vr is not None and entry.get("V/R") != vr:
             return False
@@ -119,7 +119,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="✨ Fancy filter for QUEST excitations.")
     parser.add_argument("input_file", help="Path to directory containing .json files")
     parser.add_argument("output_file", help="Path to output JSON file")
-    parser.add_argument("--spin", type=int, choices=[1, 3], help="1 for singlet, 3 for triplet")
+    parser.add_argument("--spin", type=int, choices=[1, 3], help="1 for singlet, 2 for doublet, 3 for triplet, 4 for quartet")
     parser.add_argument("--nature", choices=["V", "R"], help="'V' for valence, 'R' for Rydberg")
     parser.add_argument("--safe", choices=["Y", "N"], help="'Y' = safe, 'N' = unsafe")
     parser.add_argument("--group", type=parse_int_list, help="Comma-separated list of Group numbers (12, 35, 69, 1016)")

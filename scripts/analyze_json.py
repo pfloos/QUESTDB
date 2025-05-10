@@ -33,7 +33,7 @@ def analyze_data(data: List[dict]) -> dict:
     unique_molecules = set()
 
     for entry in data:
-        multiplicity_value = entry.get("S/T")
+        multiplicity_value = entry.get("spin")
         transition_type = entry.get("Type", "").strip().lower()
         vr_value = entry.get("V/R", "").strip().upper()
         group = str(entry.get("Group", "unknown"))
@@ -44,8 +44,12 @@ def analyze_data(data: List[dict]) -> dict:
 
         if multiplicity_value == 1:
             multiplicity = "Singlet"
+        elif multiplicity_value == 2:
+            multiplicity = "Doublet"
         elif multiplicity_value == 3:
             multiplicity = "Triplet"
+        elif multiplicity_value == 4:
+            multiplicity = "Quartet"
         else:
             multiplicity = "Unknown"
 
@@ -53,6 +57,8 @@ def analyze_data(data: List[dict]) -> dict:
             vr_category = "Valence"
         elif vr_value == "R":
             vr_category = "Rydberg"
+        elif vr_value == "M":
+            vr_category = "Mixed"
         else:
             vr_category = "Unknown"
 
@@ -68,7 +74,6 @@ def analyze_data(data: List[dict]) -> dict:
 
 
 def print_stats(stats: dict):
-    console.print(Rule("[bold cyan]🔍 Excitation Set Analysis"))
 
     total = stats["meta"]["total_excitations"]
     safe = stats["safe"].get("Safe", 0)
@@ -77,7 +82,7 @@ def print_stats(stats: dict):
 
     summary = Panel.fit(
         f"[bold white]Total excitations:[/] [cyan]{total}[/]\n"
-        f"[bold green]✅ Safe:[/] {safe}    [bold red]⚠️ Unsafe:[/] {unsafe}\n"
+        f"[bold green]✅ Safe:[/] {safe}    [bold red]⚠️  Unsafe:[/] {unsafe}\n"
         f"[bold yellow]🔬 Distinct molecules:[/] {molecules}",
         title="📊 [bold magenta]Summary",
         border_style="bright_blue",
@@ -104,10 +109,10 @@ def print_stats(stats: dict):
 
         console.print(Padding(table, (1, 2)))
 
-    print_table("Multiplicity Distribution", "multiplicity", labels=["Singlet", "Triplet", "Unknown"], icon="🌀")
-    print_table("Transition Types", "type", icon="🎯")
-    print_table("Valence vs. Rydberg", "v_r", labels=["Valence", "Rydberg", "Unknown"], icon="🧭")
-    print_table("Group Index Distribution", "group", icon="🧬")
+    print_table("Multiplicity Distribution", "multiplicity", labels=["Singlet", "Doublet", "Triplet", "Quartet", "Unknown"], icon="🌀")
+    print_table("Transition Type", "type", icon="🎯")
+    print_table("Transition Nature", "v_r", labels=["Valence", "Rydberg", "Unknown"], icon="🧭")
+    print_table("Size Distribution", "group", icon="🧬")
 
 
 def main():

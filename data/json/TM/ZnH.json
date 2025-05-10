@@ -2,7 +2,7 @@
   {
     "Molecule": "ZnH",
     "State": "^2Pi",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s4p",
     "TBE/AVTZ": 2.882,
     "Method": "exFCI/AVTZ",
@@ -15,7 +15,7 @@
   {
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "si4s",
     "TBE/AVTZ": 4.482,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -28,7 +28,7 @@
   {
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s5s",
     "TBE/AVTZ": 5.115,
     "Method": "exFCI/AVTZ",
@@ -41,7 +41,7 @@
   {
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s5p",
     "TBE/AVTZ": 5.663,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -54,7 +54,7 @@
   {
     "Molecule": "ZnH",
     "State": "^2Pi",
-    "S/D/T": 2,
+    "spin": 2,
     "Type": "4s5p",
     "TBE/AVTZ": 6.126,
     "Method": "exFCI/AVTZ",
