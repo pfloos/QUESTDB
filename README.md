@@ -260,8 +260,8 @@ This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PT
 
 ---
 
-## 🖥️ Computation
+## 🧮 HPC resources
 
-This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2025-18005**, as well as resources provided by [**GLICID**](https://research.ec-nantes.fr/en/research-facilities/supercomputer) (Nantes, France).
+This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2025-18005**, as well as resources provided by [**GLiCID**](https://research.ec-nantes.fr/en/research-facilities/supercomputer) (Nantes, France).
 
 ---
