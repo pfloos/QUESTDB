@@ -92,6 +92,17 @@ In addition, `.json` files, gathering the same information, are available for ea
 
 ---
 
+## 🥗 Diet Sets
+
+This directory also includes *diet* subsets (located in the `diet` folder), which are carefully designed to reproduce the key statistical features of larger datasets while restricting data size. These size constraints make the subsets well-suited for use with computationally demanding or inefficient methods, particularly during the early stages of method development.
+
+The following subsets are available:
+
+- **50 excitations** across **20 molecules**: `diet_subset_50.json`  
+- **100 excitations** across **40 molecules**: `diet_subset_100.json`  
+
+Each set is derived from the QUEST *Main* dataset, excluding unsafe and genuine double excitations (resulting in 824 transitions across 119 molecules). Corresponding output files (`diet_subset_*.out`) generated using the `quest-diet.py` script are also provided.
+
 ## 🧠 Notes
 
 - All data use **atomic units** unless otherwise specified. Notably, excitation energies are in eV.
