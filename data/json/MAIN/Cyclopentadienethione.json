@@ -4,7 +4,6 @@
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.2,
@@ -28,14 +27,14 @@
     "SOS-ADC(2) [QC]": 1.678,
     "ADC(2)": 1.629,
     "ADC(3)": 1.555,
-    "ADC(2.5)": 1.592
+    "ADC(2.5)": 1.592,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.3,
@@ -60,14 +59,14 @@
     "SOS-ADC(2) [QC]": 2.932,
     "ADC(2)": 2.804,
     "ADC(3)": 2.216,
-    "ADC(2.5)": 2.51
+    "ADC(2.5)": 2.51,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -85,14 +84,14 @@
     "CASPT3": 3.178,
     "CASPT3 (No IPEA)": 3.127,
     "SC-NEVPT2": 3.169,
-    "PC-NEVPT2": 3.154
+    "PC-NEVPT2": 3.154,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 89.2,
@@ -117,14 +116,14 @@
     "SOS-ADC(2) [QC]": 4.843,
     "ADC(2)": 4.855,
     "ADC(3)": 4.54,
-    "ADC(2.5)": 4.6975
+    "ADC(2.5)": 4.6975,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.7,
@@ -149,14 +148,14 @@
     "SOS-ADC(2) [QC]": 5.898,
     "ADC(2)": 5.802,
     "ADC(3)": 5.575,
-    "ADC(2.5)": 5.6884999999999994
+    "ADC(2.5)": 5.6884999999999994,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "n.d.",
     "Special ?": "pd",
@@ -185,14 +184,14 @@
     "CASPT3": 5.423,
     "CASPT3 (No IPEA)": 5.34,
     "SC-NEVPT2": 5.466,
-    "PC-NEVPT2": 5.428
+    "PC-NEVPT2": 5.428,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -210,14 +209,14 @@
     "CASPT3": 6.032,
     "CASPT3 (No IPEA)": 5.942,
     "SC-NEVPT2": 5.397,
-    "PC-NEVPT2": 5.288
+    "PC-NEVPT2": 5.288,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -238,14 +237,14 @@
     "SOS-ADC(2) [QC]": 1.466,
     "ADC(2)": 1.317,
     "ADC(3)": 1.315,
-    "ADC(2.5)": 1.3159999999999998
+    "ADC(2.5)": 1.3159999999999998,
+    "Spin": 3
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -266,14 +265,14 @@
     "SOS-ADC(2) [QC]": 2.082,
     "ADC(2)": 1.986,
     "ADC(3)": 1.523,
-    "ADC(2.5)": 1.7545
+    "ADC(2.5)": 1.7545,
+    "Spin": 3
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -294,14 +293,14 @@
     "SOS-ADC(2) [QC]": 2.477,
     "ADC(2)": 2.554,
     "ADC(3)": 2.182,
-    "ADC(2.5)": 2.368
+    "ADC(2.5)": 2.368,
+    "Spin": 3
   },
   {
     "Molecule": "Cyclopentadienethione",
     "Size": 6,
     "Group": 69,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -317,6 +316,7 @@
     "CASPT3": 3.14,
     "CASPT3 (No IPEA)": 3.087,
     "SC-NEVPT2": 3.136,
-    "PC-NEVPT2": 3.121
+    "PC-NEVPT2": 3.121,
+    "Spin": 3
   }
 ]

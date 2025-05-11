@@ -4,7 +4,6 @@
     "Size": 3,
     "Group": 35,
     "State": "^1\\Pi_g",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -29,14 +28,14 @@
     "SOS-ADC(2) [QC]": 8.794,
     "ADC(2)": 8.723,
     "ADC(3)": 9.047,
-    "ADC(2.5)": 8.885000000000002
+    "ADC(2.5)": 8.885000000000002,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma_u^-",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.0,
@@ -61,14 +60,14 @@
     "SOS-ADC(2) [QC]": 8.913,
     "ADC(2)": 9.109,
     "ADC(3)": 8.902,
-    "ADC(2.5)": 9.0055
+    "ADC(2.5)": 9.0055,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Delta_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.1,
@@ -93,14 +92,14 @@
     "SOS-ADC(2) [QC]": 8.863,
     "ADC(2)": 9.196,
     "ADC(3)": 8.98,
-    "ADC(2.5)": 9.088000000000001
+    "ADC(2.5)": 9.088000000000001,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma_u^+",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.1,
@@ -126,14 +125,14 @@
     "SOS-ADC(2) [QC]": 10.864,
     "ADC(2)": 10.785,
     "ADC(3)": 11.433,
-    "ADC(2.5)": 11.109
+    "ADC(2.5)": 11.109,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Delta_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.7,
@@ -158,14 +157,14 @@
     "SOS-ADC(2) [QC]": 11.154,
     "ADC(2)": 11.021,
     "ADC(3)": 11.458,
-    "ADC(2.5)": 11.2395
+    "ADC(2.5)": 11.2395,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma_u^-",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.7,
@@ -190,14 +189,14 @@
     "SOS-ADC(2) [QC]": 11.232,
     "ADC(2)": 11.077,
     "ADC(3)": 11.527,
-    "ADC(2.5)": 11.302
+    "ADC(2.5)": 11.302,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Pi_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.0,
@@ -223,14 +222,14 @@
     "SOS-ADC(2) [QC]": 11.539,
     "ADC(2)": 11.389,
     "ADC(3)": 11.674,
-    "ADC(2.5)": 11.5315
+    "ADC(2.5)": 11.5315,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma_u^+",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.1,
@@ -256,14 +255,14 @@
     "SOS-ADC(2) [QC]": 11.906,
     "ADC(2)": 11.826,
     "ADC(3)": 12.893,
-    "ADC(2.5)": 12.3595
+    "ADC(2.5)": 12.3595,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^3\\Sigma_u^+",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -285,14 +284,14 @@
     "SOS-ADC(2) [QC]": 8.003,
     "ADC(2)": 8.163,
     "ADC(3)": 7.928,
-    "ADC(2.5)": 8.0455
+    "ADC(2.5)": 8.0455,
+    "Spin": 3
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^3\\Pi_g",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -314,14 +313,14 @@
     "SOS-ADC(2) [QC]": 8.677,
     "ADC(2)": 8.534,
     "ADC(3)": 8.776,
-    "ADC(2.5)": 8.655000000000001
+    "ADC(2.5)": 8.655000000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^3\\Delta_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -343,14 +342,14 @@
     "SOS-ADC(2) [QC]": 8.595,
     "ADC(2)": 8.705,
     "ADC(3)": 8.483,
-    "ADC(2.5)": 8.594000000000001
+    "ADC(2.5)": 8.594000000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Carbon dioxyde",
     "Size": 3,
     "Group": 35,
     "State": "^3\\Sigma_u^-",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -372,6 +371,7 @@
     "SOS-ADC(2) [QC]": 8.927,
     "ADC(2)": 9.117,
     "ADC(3)": 8.893,
-    "ADC(2.5)": 9.005
+    "ADC(2.5)": 9.005,
+    "Spin": 3
   }
 ]

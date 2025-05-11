@@ -4,7 +4,6 @@
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi_u",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.004,
     "TBE/AVTZ": 1.323,
@@ -28,14 +27,14 @@
     "SC-NEVPT2": 1.356,
     "PC-NEVPT2": 1.35,
     "CASPT3 (No IPEA)": 1.343,
-    "CASPT3": 1.346
+    "CASPT3": 1.346,
+    "Spin": 2
   },
   {
     "Molecule": "N2+",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma_u^+",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.044,
     "TBE/AVTZ": 3.301,
@@ -59,14 +58,14 @@
     "SC-NEVPT2": 3.378,
     "PC-NEVPT2": 3.333,
     "CASPT3 (No IPEA)": 3.307,
-    "CASPT3": 3.312
+    "CASPT3": 3.312,
+    "Spin": 2
   },
   {
     "Molecule": "N2+",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi_g",
-    "spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 8.799000000000001,
     "Method (all in RO)": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -87,14 +86,14 @@
     "SC-NEVPT2": 8.9,
     "PC-NEVPT2": 8.87,
     "CASPT3 (No IPEA)": 8.83,
-    "CASPT3": 8.828
+    "CASPT3": 8.828,
+    "Spin": 2
   },
   {
     "Molecule": "N2+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma_u^+",
-    "spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 6.655,
     "Method (all in RO)": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -117,14 +116,14 @@
     "SC-NEVPT2": 6.735,
     "PC-NEVPT2": 6.678,
     "CASPT3 (No IPEA)": 6.644,
-    "CASPT3": 6.672
+    "CASPT3": 6.672,
+    "Spin": 2
   },
   {
     "Molecule": "N2+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Delta_u",
-    "spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 8.017000000000001,
     "Method (all in RO)": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -146,14 +145,14 @@
     "SC-NEVPT2": 8.122,
     "PC-NEVPT2": 8.069,
     "CASPT3 (No IPEA)": 7.999,
-    "CASPT3": 8.036
+    "CASPT3": 8.036,
+    "Spin": 2
   },
   {
     "Molecule": "N2+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma_u^+",
-    "spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 8.926,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -170,14 +169,14 @@
     "SC-NEVPT2": 9.082,
     "PC-NEVPT2": 9.018,
     "CASPT3 (No IPEA)": 8.918,
-    "CASPT3": 8.952
+    "CASPT3": 8.952,
+    "Spin": 2
   },
   {
     "Molecule": "N2+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Pi_g",
-    "spin": 2,
     "V/R": "V",
     "Special ?": "gd",
     "TBE/AVTZ": 8.975999999999999,
@@ -195,6 +194,7 @@
     "SC-NEVPT2": 9.046,
     "PC-NEVPT2": 9.01,
     "CASPT3 (No IPEA)": 8.952,
-    "CASPT3": 8.985
+    "CASPT3": 8.985,
+    "Spin": 2
   }
 ]

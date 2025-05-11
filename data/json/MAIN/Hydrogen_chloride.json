@@ -4,7 +4,6 @@
     "Size": 1,
     "Group": 12,
     "State": "^1\\Pi",
-    "spin": 1,
     "V/R": "V",
     "Type": "nsi",
     "Special ?": "wCT",
@@ -31,6 +30,7 @@
     "SOS-ADC(2) [QC]": 7.87,
     "ADC(2)": 7.972,
     "ADC(3)": 7.792,
-    "ADC(2.5)": 7.882
+    "ADC(2.5)": 7.882,
+    "Spin": 1
   }
 ]

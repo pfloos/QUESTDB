@@ -4,7 +4,6 @@
     "Size": 14,
     "Group": 1016,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 90.6,
@@ -66,14 +65,14 @@
     "BSE/G0W0@HF": 3.714981,
     "BSE/evGW@PBE0": 2.637919,
     "BSE/evGW@CAM-B3LYP": 2.716877,
-    "BSE/evGW@HF": 3.552659
+    "BSE/evGW@HF": 3.552659,
+    "Spin": 1
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.7,
@@ -136,14 +135,14 @@
     "BSE/G0W0@HF": 4.390116,
     "BSE/evGW@PBE0": 3.863101,
     "BSE/evGW@CAM-B3LYP": 3.914429,
-    "BSE/evGW@HF": 4.320229
+    "BSE/evGW@HF": 4.320229,
+    "Spin": 1
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 84.4,
@@ -205,14 +204,14 @@
     "BSE/G0W0@HF": 5.136101,
     "BSE/evGW@PBE0": 4.402193,
     "BSE/evGW@CAM-B3LYP": 4.475179,
-    "BSE/evGW@HF": 5.051924
+    "BSE/evGW@HF": 5.051924,
+    "Spin": 1
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.1,
@@ -275,14 +274,14 @@
     "BSE/G0W0@HF": 5.131576,
     "BSE/evGW@PBE0": 4.386946,
     "BSE/evGW@CAM-B3LYP": 4.462641,
-    "BSE/evGW@HF": 5.047582
+    "BSE/evGW@HF": 5.047582,
+    "Spin": 1
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 82.8,
@@ -344,14 +343,14 @@
     "BSE/G0W0@HF": 5.779488,
     "BSE/evGW@PBE0": 5.090662,
     "BSE/evGW@CAM-B3LYP": 5.179329,
-    "BSE/evGW@HF": 5.695108
+    "BSE/evGW@HF": 5.695108,
+    "Spin": 1
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 97.7,
@@ -400,14 +399,14 @@
     "BSE/G0W0@HF": 2.935574,
     "BSE/evGW@PBE0": 1.760095,
     "BSE/evGW@CAM-B3LYP": 1.836626,
-    "BSE/evGW@HF": 2.896276
+    "BSE/evGW@HF": 2.896276,
+    "Spin": 3
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.3,
@@ -456,14 +455,14 @@
     "BSE/G0W0@HF": 2.941039,
     "BSE/evGW@PBE0": 2.118869,
     "BSE/evGW@CAM-B3LYP": 2.221068,
-    "BSE/evGW@HF": 2.977859
+    "BSE/evGW@HF": 2.977859,
+    "Spin": 3
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.7,
@@ -512,14 +511,14 @@
     "BSE/G0W0@HF": 4.171782,
     "BSE/evGW@PBE0": 3.268257,
     "BSE/evGW@CAM-B3LYP": 3.34137,
-    "BSE/evGW@HF": 4.255793
+    "BSE/evGW@HF": 4.255793,
+    "Spin": 3
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.3,
@@ -568,14 +567,14 @@
     "BSE/G0W0@HF": 4.368269,
     "BSE/evGW@PBE0": 3.689742,
     "BSE/evGW@CAM-B3LYP": 3.760168,
-    "BSE/evGW@HF": 4.381889
+    "BSE/evGW@HF": 4.381889,
+    "Spin": 3
   },
   {
     "Molecule": "Azobenzene",
     "Size": 14,
     "Group": 1016,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.2,
@@ -624,6 +623,7 @@
     "BSE/G0W0@HF": 4.43214,
     "BSE/evGW@PBE0": 3.758341,
     "BSE/evGW@CAM-B3LYP": 3.823322,
-    "BSE/evGW@HF": 4.444107
+    "BSE/evGW@HF": 4.444107,
+    "Spin": 3
   }
 ]

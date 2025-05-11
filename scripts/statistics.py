@@ -12,7 +12,7 @@ from rich import box
 SKIP_FIELDS = {
     "TBE/AVTZ", "TBE/AVQZ", "Molecule", "State", "Method",
     "Corr. Method", "%T1 [CC3/AVTZ]", "%T1 [CC3/AVDZ]", "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]", 
-    "Size", "Group", "spin", "V/R", "Type",
+    "Size", "Group", "Spin", "V/R", "Type",
     "Safe ? (~50 meV)", "Special ?"
 }
 
@@ -35,13 +35,13 @@ def load_data(json_dir: str, filters: dict):
                 # Apply filters
                 if filters.get("safe_only", True) and entry.get("Safe ? (~50 meV)") != "Y":
                     continue
-                if filters.get("only_singlet") and entry.get("spin") != 1:
+                if filters.get("only_singlet") and entry.get("Spin") != 1:
                     continue
-                if filters.get("only_doublet") and entry.get("spin") != 2:
+                if filters.get("only_doublet") and entry.get("Spin") != 2:
                     continue
-                if filters.get("only_triplet") and entry.get("spin") != 3:
+                if filters.get("only_triplet") and entry.get("Spin") != 3:
                     continue
-                if filters.get("only_quartet") and entry.get("spin") != 4:
+                if filters.get("only_quartet") and entry.get("Spin") != 4:
                     continue
                 if filters.get("only_valence") and entry.get("V/R") != "V":
                     continue
@@ -60,7 +60,7 @@ def load_data(json_dir: str, filters: dict):
                     "file": filename,
                     "index": entry.get("Index", None),
                     "data": method_errors,
-                    "categories": {k: entry[k] for k in ["spin", "V/R", "Type"] if k in entry},
+                    "categories": {k: entry[k] for k in ["Spin", "V/R", "Type"] if k in entry},
                     "full": entry
                 })
     return entries

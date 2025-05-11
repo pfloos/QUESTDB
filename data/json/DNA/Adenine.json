@@ -4,7 +4,6 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.6,
@@ -25,14 +24,14 @@
     "SOS-ADC(2) [QC]": 4.957,
     "ADC(2)": 5.235,
     "ADC(3)": 5.177,
-    "ADC(2.5)": 5.2059999999999995
+    "ADC(2.5)": 5.2059999999999995,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 89.0,
@@ -52,14 +51,14 @@
     "SOS-ADC(2) [QC]": 5.181,
     "ADC(2)": 5.201,
     "ADC(3)": 5.246,
-    "ADC(2.5)": 5.2235
+    "ADC(2.5)": 5.2235,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 87.8,
@@ -80,14 +79,14 @@
     "SOS-ADC(2) [QC]": 5.285,
     "ADC(2)": 5.139,
     "ADC(3)": 5.561,
-    "ADC(2.5)": 5.35
+    "ADC(2.5)": 5.35,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 92.1,
     "f [LR-CCSD/AVTZ]": 0.009,
@@ -107,14 +106,14 @@
     "SOS-ADC(2) [QC]": 5.701,
     "ADC(2)": 5.568,
     "ADC(3)": 5.518,
-    "ADC(2.5)": 5.542999999999999
+    "ADC(2.5)": 5.542999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 88.4,
@@ -135,14 +134,14 @@
     "SOS-ADC(2) [QC]": 5.872,
     "ADC(2)": 5.732,
     "ADC(3)": 6.101,
-    "ADC(2.5)": 5.9165
+    "ADC(2.5)": 5.9165,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 91.9,
     "f [LR-CCSD/AVTZ]": 0.001,
@@ -162,14 +161,14 @@
     "SOS-ADC(2) [QC]": 6.048,
     "ADC(2)": 5.894,
     "ADC(3)": 5.87,
-    "ADC(2.5)": 5.882
+    "ADC(2.5)": 5.882,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.6,
@@ -188,14 +187,14 @@
     "SOS-ADC(2) [QC]": 6.324,
     "ADC(2)": 6.312,
     "ADC(3)": 6.472,
-    "ADC(2.5)": 6.392
+    "ADC(2.5)": 6.392,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.5,
@@ -214,14 +213,14 @@
     "SOS-ADC(2) [QC]": 6.582,
     "ADC(2)": 6.531,
     "ADC(3)": 6.402,
-    "ADC(2.5)": 6.4665
+    "ADC(2.5)": 6.4665,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.055,
     "TBE/AVTZ": 6.581,
@@ -238,14 +237,14 @@
     "SOS-ADC(2) [QC]": 6.709,
     "ADC(2)": 6.154,
     "ADC(3)": 7.092,
-    "ADC(2.5)": 6.622999999999999
+    "ADC(2.5)": 6.622999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.4,
@@ -261,14 +260,14 @@
     "SOS-ADC(2) [QC]": 4.067,
     "ADC(2)": 4.096,
     "ADC(3)": 3.734,
-    "ADC(2.5)": 3.915
+    "ADC(2.5)": 3.915,
+    "Spin": 3
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.0,
@@ -284,14 +283,14 @@
     "SOS-ADC(2) [QC]": 4.895,
     "ADC(2)": 4.989,
     "ADC(3)": 4.657,
-    "ADC(2.5)": 4.823
+    "ADC(2.5)": 4.823,
+    "Spin": 3
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.2,
@@ -307,14 +306,14 @@
     "SOS-ADC(2) [QC]": 5.216,
     "ADC(2)": 5.003,
     "ADC(3)": 5.317,
-    "ADC(2.5)": 5.16
+    "ADC(2.5)": 5.16,
+    "Spin": 3
   },
   {
     "Molecule": "Adenine",
     "Size": 10,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 97.2,
     "TBE/AVTZ": 5.5360000000000005,
@@ -329,6 +328,7 @@
     "SOS-ADC(2) [QC]": 5.662,
     "ADC(2)": 5.521,
     "ADC(3)": 5.446,
-    "ADC(2.5)": 5.483499999999999
+    "ADC(2.5)": 5.483499999999999,
+    "Spin": 3
   }
 ]

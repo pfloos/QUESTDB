@@ -4,7 +4,6 @@
     "Size": 8,
     "Group": 69,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.6,
@@ -26,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.596,
     "ADC(2)": 4.62,
     "ADC(3)": 4.852,
-    "ADC(2.5)": 4.736000000000001
+    "ADC(2.5)": 4.736000000000001,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 86.4,
@@ -55,14 +54,14 @@
     "SOS-ADC(2) [QC]": 5.181,
     "ADC(2)": 4.842,
     "ADC(3)": 5.467,
-    "ADC(2.5)": 5.1545
+    "ADC(2.5)": 5.1545,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.0,
@@ -84,14 +83,14 @@
     "SOS-ADC(2) [QC]": 5.596,
     "ADC(2)": 5.544,
     "ADC(3)": 5.744,
-    "ADC(2.5)": 5.644
+    "ADC(2.5)": 5.644,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 91.2,
     "f [LR-CCSD/AVTZ]": 0.004,
@@ -112,14 +111,14 @@
     "SOS-ADC(2) [QC]": 5.704,
     "ADC(2)": 5.546,
     "ADC(3)": 5.595,
-    "ADC(2.5)": 5.5705
+    "ADC(2.5)": 5.5705,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 83.3,
@@ -140,14 +139,14 @@
     "SOS-ADC(2) [QC]": 5.842,
     "ADC(2)": 5.249,
     "ADC(3)": 6.839,
-    "ADC(2.5)": 6.0440000000000005
+    "ADC(2.5)": 6.0440000000000005,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 88.1,
@@ -169,14 +168,14 @@
     "SOS-ADC(2) [QC]": 5.619,
     "ADC(2)": 5.683,
     "ADC(3)": 6.278,
-    "ADC(2.5)": 5.980499999999999
+    "ADC(2.5)": 5.980499999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.5,
@@ -197,14 +196,14 @@
     "SOS-ADC(2) [QC]": 6.239,
     "ADC(2)": 6.246,
     "ADC(3)": 6.434,
-    "ADC(2.5)": 6.34
+    "ADC(2.5)": 6.34,
+    "Spin": 1
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.6,
@@ -221,14 +220,14 @@
     "SOS-ADC(2) [QC]": 3.839,
     "ADC(2)": 3.847,
     "ADC(3)": 3.708,
-    "ADC(2.5)": 3.7775
+    "ADC(2.5)": 3.7775,
+    "Spin": 3
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.0,
@@ -245,14 +244,14 @@
     "SOS-ADC(2) [QC]": 4.703,
     "ADC(2)": 4.67,
     "ADC(3)": 4.612,
-    "ADC(2.5)": 4.641
+    "ADC(2.5)": 4.641,
+    "Spin": 3
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.9,
@@ -269,14 +268,14 @@
     "SOS-ADC(2) [QC]": 5.068,
     "ADC(2)": 4.75,
     "ADC(3)": 5.198,
-    "ADC(2.5)": 4.974
+    "ADC(2.5)": 4.974,
+    "Spin": 3
   },
   {
     "Molecule": "Cytosine",
     "Size": 8,
     "Group": 69,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 96.9,
     "TBE/AVTZ": 5.558,
@@ -292,6 +291,7 @@
     "SOS-ADC(2) [QC]": 5.687,
     "ADC(2)": 5.514,
     "ADC(3)": 5.542,
-    "ADC(2.5)": 5.5280000000000005
+    "ADC(2.5)": 5.5280000000000005,
+    "Spin": 3
   }
 ]

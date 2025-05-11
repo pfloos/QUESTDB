@@ -4,7 +4,6 @@
     "Size": 11,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 91.2,
     "f [LR-CCSD/AVTZ]": 0.002,
@@ -24,14 +23,14 @@
     "SOS-ADC(2) [QC]": 5.181,
     "ADC(2)": 4.976,
     "ADC(3)": 4.908,
-    "ADC(2.5)": 4.942
+    "ADC(2.5)": 4.942,
+    "Spin": 1
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.2,
@@ -52,14 +51,14 @@
     "SOS-ADC(2) [QC]": 4.855,
     "ADC(2)": 4.96,
     "ADC(3)": 4.989,
-    "ADC(2.5)": 4.9745
+    "ADC(2.5)": 4.9745,
+    "Spin": 1
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 91.9,
     "f [LR-CCSD/AVTZ]": 0.005,
@@ -79,14 +78,14 @@
     "SOS-ADC(2) [QC]": 5.57,
     "ADC(2)": 5.374,
     "ADC(3)": 5.313,
-    "ADC(2.5)": 5.3435
+    "ADC(2.5)": 5.3435,
+    "Spin": 1
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 88.6,
@@ -107,14 +106,14 @@
     "SOS-ADC(2) [QC]": 5.317,
     "ADC(2)": 5.286,
     "ADC(3)": 5.806,
-    "ADC(2.5)": 5.545999999999999
+    "ADC(2.5)": 5.545999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.6,
@@ -135,14 +134,14 @@
     "SOS-ADC(2) [QC]": 5.479,
     "ADC(2)": 5.427,
     "ADC(3)": 5.462,
-    "ADC(2.5)": 5.4445
+    "ADC(2.5)": 5.4445,
+    "Spin": 1
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.5,
@@ -158,14 +157,14 @@
     "SOS-ADC(2) [QC]": 4.23,
     "ADC(2)": 4.283,
     "ADC(3)": 4.018,
-    "ADC(2.5)": 4.1505
+    "ADC(2.5)": 4.1505,
+    "Spin": 3
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.3,
@@ -181,14 +180,14 @@
     "SOS-ADC(2) [QC]": 4.494,
     "ADC(2)": 4.469,
     "ADC(3)": 4.192,
-    "ADC(2.5)": 4.330500000000001
+    "ADC(2.5)": 4.330500000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 96.8,
     "TBE/AVTZ": 4.926,
@@ -203,14 +202,14 @@
     "SOS-ADC(2) [QC]": 5.156,
     "ADC(2)": 4.938,
     "ADC(3)": 4.855,
-    "ADC(2.5)": 4.8965
+    "ADC(2.5)": 4.8965,
+    "Spin": 3
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.7,
@@ -226,14 +225,14 @@
     "SOS-ADC(2) [QC]": 5.188,
     "ADC(2)": 5.085,
     "ADC(3)": 5.54,
-    "ADC(2.5)": 5.3125
+    "ADC(2.5)": 5.3125,
+    "Spin": 3
   },
   {
     "Molecule": "Guanine",
     "Size": 11,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 97.0,
     "TBE/AVTZ": 5.396,
@@ -248,6 +247,7 @@
     "SOS-ADC(2) [QC]": 5.557,
     "ADC(2)": 5.356,
     "ADC(3)": 5.286,
-    "ADC(2.5)": 5.321
+    "ADC(2.5)": 5.321,
+    "Spin": 3
   }
 ]

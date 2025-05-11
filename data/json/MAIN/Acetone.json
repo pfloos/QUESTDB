@@ -4,7 +4,6 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 91.1,
@@ -36,14 +35,14 @@
     "CASPT3": 4.57,
     "CASPT3 (No IPEA)": 4.55,
     "SC-NEVPT2": 4.5,
-    "PC-NEVPT2": 4.48
+    "PC-NEVPT2": 4.48,
+    "Spin": 1
   },
   {
     "Molecule": "Acetone",
     "Size": 4,
     "Group": 35,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 90.5,
@@ -76,14 +75,14 @@
     "CASPT3": 6.64,
     "CASPT3 (No IPEA)": 6.67,
     "SC-NEVPT2": 6.7,
-    "PC-NEVPT2": 6.81
+    "PC-NEVPT2": 6.81,
+    "Spin": 1
   },
   {
     "Molecule": "Acetone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 90.9,
@@ -115,14 +114,14 @@
     "CASPT3": 7.76,
     "CASPT3 (No IPEA)": 7.68,
     "SC-NEVPT2": 7.71,
-    "PC-NEVPT2": 7.65
+    "PC-NEVPT2": 7.65,
+    "Spin": 1
   },
   {
     "Molecule": "Acetone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 90.6,
@@ -155,14 +154,14 @@
     "CASPT3": 7.76,
     "CASPT3 (No IPEA)": 7.75,
     "SC-NEVPT2": 7.75,
-    "PC-NEVPT2": 7.75
+    "PC-NEVPT2": 7.75,
+    "Spin": 1
   },
   {
     "Molecule": "Acetone",
     "Size": 4,
     "Group": 35,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -195,14 +194,14 @@
     "CASPT3": 7.73,
     "CASPT3 (No IPEA)": 7.76,
     "SC-NEVPT2": 7.8,
-    "PC-NEVPT2": 7.91
+    "PC-NEVPT2": 7.91,
+    "Spin": 1
   },
   {
     "Molecule": "Acetone",
     "Size": 4,
     "Group": 35,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -230,14 +229,14 @@
     "CASPT3": 4.27,
     "CASPT3 (No IPEA)": 4.24,
     "SC-NEVPT2": 4.22,
-    "PC-NEVPT2": 4.2
+    "PC-NEVPT2": 4.2,
+    "Spin": 3
   },
   {
     "Molecule": "Acetone",
     "Size": 4,
     "Group": 35,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.7,
@@ -265,6 +264,7 @@
     "CASPT3": 6.26,
     "CASPT3 (No IPEA)": 6.22,
     "SC-NEVPT2": 6.28,
-    "PC-NEVPT2": 6.28
+    "PC-NEVPT2": 6.28,
+    "Spin": 3
   }
 ]

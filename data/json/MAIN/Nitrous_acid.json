@@ -4,7 +4,6 @@
     "Size": 3,
     "Group": 35,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 92.2,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 3.29,
     "ADC(2)": 3.429,
     "ADC(3)": 3.262,
-    "ADC(2.5)": 3.3455
+    "ADC(2.5)": 3.3455,
+    "Spin": 1
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.8,
@@ -63,14 +62,14 @@
     "SOS-ADC(2) [QC]": 6.006,
     "ADC(2)": 5.775,
     "ADC(3)": 6.821,
-    "ADC(2.5)": 6.298
+    "ADC(2.5)": 6.298,
+    "Spin": 1
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.1,
@@ -96,14 +95,14 @@
     "SOS-ADC(2) [QC]": 7.423,
     "ADC(2)": 7.318,
     "ADC(3)": 7.079,
-    "ADC(2.5)": 7.198499999999999
+    "ADC(2.5)": 7.198499999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -129,14 +128,14 @@
     "SOS-ADC(2) [QC]": 7.586,
     "ADC(2)": 7.175,
     "ADC(3)": 7.611,
-    "ADC(2.5)": 7.393
+    "ADC(2.5)": 7.393,
+    "Spin": 1
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.3,
@@ -162,14 +161,14 @@
     "SOS-ADC(2) [QC]": 8.427,
     "ADC(2)": 8.338,
     "ADC(3)": 8.817,
-    "ADC(2.5)": 8.5775
+    "ADC(2.5)": 8.5775,
+    "Spin": 1
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -188,14 +187,14 @@
     "CASPT3": 7.939,
     "CASPT3 (No IPEA)": 7.945,
     "SC-NEVPT2": 7.992,
-    "PC-NEVPT2": 8.001
+    "PC-NEVPT2": 8.001,
+    "Spin": 1
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^3A''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -217,14 +216,14 @@
     "SOS-ADC(2) [QC]": 2.572,
     "ADC(2)": 2.568,
     "ADC(3)": 2.16,
-    "ADC(2.5)": 2.364
+    "ADC(2.5)": 2.364,
+    "Spin": 3
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -246,14 +245,14 @@
     "SOS-ADC(2) [QC]": 5.107,
     "ADC(2)": 4.993,
     "ADC(3)": 4.979,
-    "ADC(2.5)": 4.986000000000001
+    "ADC(2.5)": 4.986000000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Nitrous acid",
     "Size": 3,
     "Group": 35,
     "State": "^3A''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.9,
@@ -275,6 +274,7 @@
     "SOS-ADC(2) [QC]": 6.978,
     "ADC(2)": 6.811,
     "ADC(3)": 6.694,
-    "ADC(2.5)": 6.7524999999999995
+    "ADC(2.5)": 6.7524999999999995,
+    "Spin": 3
   }
 ]

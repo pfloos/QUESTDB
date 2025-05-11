@@ -4,7 +4,6 @@
     "Size": 1,
     "Group": 12,
     "State": "^1D",
-    "spin": 1,
     "V/R": "R",
     "Type": "dou",
     "Special ?": "gd",
@@ -19,6 +18,7 @@
     "CCSDT": 7.152,
     "ADC(3)": 6.118,
     "CASPT2": 7.12,
-    "PC-NEVPT2": 7.11
+    "PC-NEVPT2": 7.11,
+    "Spin": 1
   }
 ]

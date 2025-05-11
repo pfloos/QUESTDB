@@ -4,7 +4,6 @@
     "Size": 9,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.8,
@@ -27,14 +26,14 @@
     "SOS-ADC(2) [QC]": 4.273,
     "ADC(2)": 4.544,
     "ADC(3)": 4.41,
-    "ADC(2.5)": 4.477
+    "ADC(2.5)": 4.477,
+    "Spin": 1
   },
   {
     "Molecule": "Aminobenzonitrile",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -57,14 +56,14 @@
     "SOS-ADC(2) [QC]": 5.195,
     "ADC(2)": 5.088,
     "ADC(3)": 4.911,
-    "ADC(2.5)": 4.999499999999999
+    "ADC(2.5)": 4.999499999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Aminobenzonitrile",
     "Size": 9,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "wCT",
@@ -88,14 +87,14 @@
     "SOS-ADC(2) [QC]": 4.866,
     "ADC(2)": 5.005,
     "ADC(3)": 4.922,
-    "ADC(2.5)": 4.9635
+    "ADC(2.5)": 4.9635,
+    "Spin": 1
   },
   {
     "Molecule": "Aminobenzonitrile",
     "Size": 9,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -117,14 +116,14 @@
     "SOS-ADC(2) [QC]": 5.898,
     "ADC(2)": 5.784,
     "ADC(3)": 5.654,
-    "ADC(2.5)": 5.718999999999999
+    "ADC(2.5)": 5.718999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Aminobenzonitrile",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.1,
@@ -147,14 +146,14 @@
     "SOS-ADC(2) [QC]": 5.926,
     "ADC(2)": 5.833,
     "ADC(3)": 5.706,
-    "ADC(2.5)": 5.769500000000001
+    "ADC(2.5)": 5.769500000000001,
+    "Spin": 1
   },
   {
     "Molecule": "Aminobenzonitrile",
     "Size": 9,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -172,14 +171,14 @@
     "SOS-ADC(2) [QC]": 3.685,
     "ADC(2)": 3.781,
     "ADC(3)": 3.382,
-    "ADC(2.5)": 3.5815
+    "ADC(2.5)": 3.5815,
+    "Spin": 3
   },
   {
     "Molecule": "Aminobenzonitrile",
     "Size": 9,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -197,6 +196,7 @@
     "SOS-ADC(2) [QC]": 4.155,
     "ADC(2)": 4.227,
     "ADC(3)": 3.927,
-    "ADC(2.5)": 4.077
+    "ADC(2.5)": 4.077,
+    "Spin": 3
   }
 ]

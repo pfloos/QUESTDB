@@ -4,7 +4,6 @@
     "Size": 9,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.6,
@@ -26,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.578,
     "ADC(2)": 4.643,
     "ADC(3)": 4.268,
-    "ADC(2.5)": 4.4555
+    "ADC(2.5)": 4.4555,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoxadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 83.5,
@@ -55,14 +54,14 @@
     "SOS-ADC(2) [QC]": 4.799,
     "ADC(2)": 4.919,
     "ADC(3)": 4.328,
-    "ADC(2.5)": 4.6235
+    "ADC(2.5)": 4.6235,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoxadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.9,
@@ -84,14 +83,14 @@
     "SOS-ADC(2) [QC]": 5.463,
     "ADC(2)": 5.22,
     "ADC(3)": 5.158,
-    "ADC(2.5)": 5.189
+    "ADC(2.5)": 5.189,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoxadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.6,
@@ -113,14 +112,14 @@
     "SOS-ADC(2) [QC]": 6.057,
     "ADC(2)": 5.883,
     "ADC(3)": 5.603,
-    "ADC(2.5)": 5.743
+    "ADC(2.5)": 5.743,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoxadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -139,14 +138,14 @@
     "SOS-ADC(2) [QC]": 2.784,
     "ADC(2)": 2.949,
     "ADC(3)": 2.291,
-    "ADC(2.5)": 2.62
+    "ADC(2.5)": 2.62,
+    "Spin": 3
   },
   {
     "Molecule": "Benzoxadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -165,6 +164,7 @@
     "SOS-ADC(2) [QC]": 3.957,
     "ADC(2)": 4.129,
     "ADC(3)": 3.696,
-    "ADC(2.5)": 3.9124999999999996
+    "ADC(2.5)": 3.9124999999999996,
+    "Spin": 3
   }
 ]

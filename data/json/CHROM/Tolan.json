@@ -4,7 +4,6 @@
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.6,
@@ -66,14 +65,14 @@
     "BSE/G0W0@HF": 5.690603,
     "BSE/evGW@PBE0": 4.709877,
     "BSE/evGW@CAM-B3LYP": 4.781394,
-    "BSE/evGW@HF": 5.642552
+    "BSE/evGW@HF": 5.642552,
+    "Spin": 1
   },
   {
     "Molecule": "Tolan",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.4,
@@ -134,14 +133,14 @@
     "BSE/G0W0@HF": 5.71762,
     "BSE/evGW@PBE0": 4.735488,
     "BSE/evGW@CAM-B3LYP": 4.808167,
-    "BSE/evGW@HF": 5.668803
+    "BSE/evGW@HF": 5.668803,
+    "Spin": 1
   },
   {
     "Molecule": "Tolan",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 91.4,
@@ -203,14 +202,14 @@
     "BSE/G0W0@HF": 4.883862,
     "BSE/evGW@PBE0": 4.316186,
     "BSE/evGW@CAM-B3LYP": 4.383482,
-    "BSE/evGW@HF": 4.837475
+    "BSE/evGW@HF": 4.837475,
+    "Spin": 1
   },
   {
     "Molecule": "Tolan",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 90.8,
@@ -271,14 +270,14 @@
     "BSE/G0W0@HF": 5.928026,
     "BSE/evGW@PBE0": 5.09892,
     "BSE/evGW@CAM-B3LYP": 5.219432,
-    "BSE/evGW@HF": 5.851143
+    "BSE/evGW@HF": 5.851143,
+    "Spin": 1
   },
   {
     "Molecule": "Tolan",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3u}",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 92.8,
     "f [LR-CCSD/AVTZ]": 0.002,
@@ -339,14 +338,14 @@
     "BSE/G0W0@HF": 6.150814,
     "BSE/evGW@PBE0": 5.304379,
     "BSE/evGW@CAM-B3LYP": 5.477138,
-    "BSE/evGW@HF": 6.120153
+    "BSE/evGW@HF": 6.120153,
+    "Spin": 1
   },
   {
     "Molecule": "Tolan",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.6,
@@ -395,14 +394,14 @@
     "BSE/G0W0@HF": 3.4871,
     "BSE/evGW@PBE0": 2.562909,
     "BSE/evGW@CAM-B3LYP": 2.693764,
-    "BSE/evGW@HF": 3.473473
+    "BSE/evGW@HF": 3.473473,
+    "Spin": 3
   },
   {
     "Molecule": "Tolan",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 98.2,
@@ -451,6 +450,7 @@
     "BSE/G0W0@HF": 4.557864,
     "BSE/evGW@PBE0": 3.369882,
     "BSE/evGW@CAM-B3LYP": 3.462947,
-    "BSE/evGW@HF": 4.553189
+    "BSE/evGW@HF": 4.553189,
+    "Spin": 3
   }
 ]

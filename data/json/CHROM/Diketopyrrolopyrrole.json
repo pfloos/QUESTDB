@@ -4,7 +4,6 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.4,
@@ -25,14 +24,14 @@
     "SOS-ADC(2) [QC]": 3.376,
     "ADC(2)": 3.313,
     "ADC(3)": 3.418,
-    "ADC(2.5)": 3.3655
+    "ADC(2.5)": 3.3655,
+    "Spin": 1
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 83.7,
@@ -54,14 +53,14 @@
     "SOS-ADC(2) [QC]": 3.933,
     "ADC(2)": 3.653,
     "ADC(3)": 4.243,
-    "ADC(2.5)": 3.9480000000000004
+    "ADC(2.5)": 3.9480000000000004,
+    "Spin": 1
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.1,
@@ -82,14 +81,14 @@
     "SOS-ADC(2) [QC]": 3.974,
     "ADC(2)": 3.937,
     "ADC(3)": 3.912,
-    "ADC(2.5)": 3.9245
+    "ADC(2.5)": 3.9245,
+    "Spin": 1
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 81.3,
@@ -110,14 +109,14 @@
     "SOS-ADC(2) [QC]": 4.347,
     "ADC(2)": 4.124,
     "ADC(3)": 4.693,
-    "ADC(2.5)": 4.4085
+    "ADC(2.5)": 4.4085,
+    "Spin": 1
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.5,
@@ -135,14 +134,14 @@
     "SOS-ADC(2) [QC]": 1.961,
     "ADC(2)": 1.952,
     "ADC(3)": 1.641,
-    "ADC(2.5)": 1.7965
+    "ADC(2.5)": 1.7965,
+    "Spin": 3
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.3,
@@ -160,14 +159,14 @@
     "SOS-ADC(2) [QC]": 3.811,
     "ADC(2)": 3.787,
     "ADC(3)": 3.486,
-    "ADC(2.5)": 3.6365
+    "ADC(2.5)": 3.6365,
+    "Spin": 3
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 94.9,
@@ -185,14 +184,14 @@
     "SOS-ADC(2) [QC]": 3.86,
     "ADC(2)": 3.537,
     "ADC(3)": 4.104,
-    "ADC(2.5)": 3.8205
+    "ADC(2.5)": 3.8205,
+    "Spin": 3
   },
   {
     "Molecule": "Diketopyrrolopyrrole",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 94.5,
@@ -210,6 +209,7 @@
     "SOS-ADC(2) [QC]": 4.261,
     "ADC(2)": 3.992,
     "ADC(3)": 4.544,
-    "ADC(2.5)": 4.268
+    "ADC(2.5)": 4.268,
+    "Spin": 3
   }
 ]

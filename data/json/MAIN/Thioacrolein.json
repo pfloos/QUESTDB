@@ -4,7 +4,6 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 86.4,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 2.101,
     "ADC(2)": 2.144,
     "ADC(3)": 1.976,
-    "ADC(2.5)": 2.06
+    "ADC(2.5)": 2.06,
+    "Spin": 1
   },
   {
     "Molecule": "Thioacrolein",
     "Size": 4,
     "Group": 35,
     "State": "^3A''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.9,
@@ -58,6 +57,7 @@
     "SOS-ADC(2) [QC]": 1.917,
     "ADC(2)": 1.852,
     "ADC(3)": 1.772,
-    "ADC(2.5)": 1.812
+    "ADC(2.5)": 1.812,
+    "Spin": 3
   }
 ]

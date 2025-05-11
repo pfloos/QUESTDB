@@ -4,7 +4,6 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.5,
@@ -25,14 +24,14 @@
     "SOS-ADC(2) [QC]": 3.722,
     "ADC(2)": 3.721,
     "ADC(3)": 4.14,
-    "ADC(2.5)": 3.9305
+    "ADC(2.5)": 3.9305,
+    "Spin": 1
   },
   {
     "Molecule": "Nitroaniline",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -55,14 +54,14 @@
     "SOS-ADC(2) [QC]": 4.226,
     "ADC(2)": 4.287,
     "ADC(3)": 4.249,
-    "ADC(2.5)": 4.268
+    "ADC(2.5)": 4.268,
+    "Spin": 1
   },
   {
     "Molecule": "Nitroaniline",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.7,
@@ -84,14 +83,14 @@
     "SOS-ADC(2) [QC]": 4.323,
     "ADC(2)": 4.605,
     "ADC(3)": 4.461,
-    "ADC(2.5)": 4.533
+    "ADC(2.5)": 4.533,
+    "Spin": 1
   },
   {
     "Molecule": "Nitroaniline",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.0,
@@ -113,14 +112,14 @@
     "SOS-ADC(2) [QC]": 4.282,
     "ADC(2)": 4.348,
     "ADC(3)": 4.543,
-    "ADC(2.5)": 4.4455
+    "ADC(2.5)": 4.4455,
+    "Spin": 1
   },
   {
     "Molecule": "Nitroaniline",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -137,14 +136,14 @@
     "SOS-ADC(2) [QC]": 3.543,
     "ADC(2)": 3.569,
     "ADC(3)": 3.175,
-    "ADC(2.5)": 3.372
+    "ADC(2.5)": 3.372,
+    "Spin": 3
   },
   {
     "Molecule": "Nitroaniline",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.5,
@@ -161,14 +160,14 @@
     "SOS-ADC(2) [QC]": 3.603,
     "ADC(2)": 3.502,
     "ADC(3)": 3.844,
-    "ADC(2.5)": 3.673
+    "ADC(2.5)": 3.673,
+    "Spin": 3
   },
   {
     "Molecule": "Nitroaniline",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -185,6 +184,7 @@
     "SOS-ADC(2) [QC]": 3.661,
     "ADC(2)": 3.843,
     "ADC(3)": 3.387,
-    "ADC(2.5)": 3.615
+    "ADC(2.5)": 3.615,
+    "Spin": 3
   }
 ]

@@ -4,7 +4,6 @@
     "Size": 6,
     "Group": 69,
     "State": "^1A_1''",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 88.3,
@@ -36,14 +35,14 @@
     "CASPT3": 5.0,
     "CASPT3 (No IPEA)": 4.99,
     "SC-NEVPT2": 4.71,
-    "PC-NEVPT2": 4.61
+    "PC-NEVPT2": 4.61,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2''",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 88.3,
@@ -76,14 +75,14 @@
     "CASPT3": 4.9,
     "CASPT3 (No IPEA)": 4.87,
     "SC-NEVPT2": 4.94,
-    "PC-NEVPT2": 4.89
+    "PC-NEVPT2": 4.89,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1E''",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 88.3,
@@ -115,14 +114,14 @@
     "CASPT3": 5.01,
     "CASPT3 (No IPEA)": 4.98,
     "SC-NEVPT2": 4.94,
-    "PC-NEVPT2": 4.88
+    "PC-NEVPT2": 4.88,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.7,
@@ -154,14 +153,14 @@
     "CASPT3": 5.75,
     "CASPT3 (No IPEA)": 5.72,
     "SC-NEVPT2": 5.98,
-    "PC-NEVPT2": 5.95
+    "PC-NEVPT2": 5.95,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.4,
@@ -193,14 +192,14 @@
     "CASPT3": 7.5,
     "CASPT3 (No IPEA)": 7.41,
     "SC-NEVPT2": 7.42,
-    "PC-NEVPT2": 7.3
+    "PC-NEVPT2": 7.3,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1E'",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 90.9,
@@ -233,14 +232,14 @@
     "CASPT3": 7.53,
     "CASPT3 (No IPEA)": 7.49,
     "SC-NEVPT2": 7.51,
-    "PC-NEVPT2": 7.45
+    "PC-NEVPT2": 7.45,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1E''",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 82.6,
@@ -271,14 +270,14 @@
     "CASPT3": 7.92,
     "CASPT3 (No IPEA)": 7.9,
     "SC-NEVPT2": 8.07,
-    "PC-NEVPT2": 7.98
+    "PC-NEVPT2": 7.98,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^1E'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.0,
@@ -310,14 +309,14 @@
     "CASPT3": 8.83,
     "CASPT3 (No IPEA)": 8.72,
     "SC-NEVPT2": 8.59,
-    "PC-NEVPT2": 8.34
+    "PC-NEVPT2": 8.34,
+    "Spin": 1
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.7,
@@ -345,14 +344,14 @@
     "CASPT3": 4.51,
     "CASPT3 (No IPEA)": 4.49,
     "SC-NEVPT2": 4.55,
-    "PC-NEVPT2": 4.51
+    "PC-NEVPT2": 4.51,
+    "Spin": 3
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^3E''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -380,14 +379,14 @@
     "CASPT3": 4.71,
     "CASPT3 (No IPEA)": 4.68,
     "SC-NEVPT2": 4.66,
-    "PC-NEVPT2": 4.61
+    "PC-NEVPT2": 4.61,
+    "Spin": 3
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.2,
@@ -415,14 +414,14 @@
     "CASPT3": 5.06,
     "CASPT3 (No IPEA)": 5.04,
     "SC-NEVPT2": 4.81,
-    "PC-NEVPT2": 4.71
+    "PC-NEVPT2": 4.71,
+    "Spin": 3
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -450,14 +449,14 @@
     "CASPT3": 4.81,
     "CASPT3 (No IPEA)": 4.75,
     "SC-NEVPT2": 5.06,
-    "PC-NEVPT2": 5.05
+    "PC-NEVPT2": 5.05,
+    "Spin": 3
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^3E'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.9,
@@ -485,14 +484,14 @@
     "CASPT3": 5.62,
     "CASPT3 (No IPEA)": 5.57,
     "SC-NEVPT2": 5.77,
-    "PC-NEVPT2": 5.73
+    "PC-NEVPT2": 5.73,
+    "Spin": 3
   },
   {
     "Molecule": "Triazine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -520,6 +519,7 @@
     "CASPT3": 6.76,
     "CASPT3 (No IPEA)": 6.68,
     "SC-NEVPT2": 6.47,
-    "PC-NEVPT2": 6.36
+    "PC-NEVPT2": 6.36,
+    "Spin": 3
   }
 ]

@@ -4,7 +4,6 @@
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.008,
     "TBE/AVTZ": 3.277,
@@ -28,14 +27,14 @@
     "SC-NEVPT2": 7.434,
     "PC-NEVPT2": 7.402,
     "CASPT3 (No IPEA)": 7.343,
-    "CASPT3": 7.359
+    "CASPT3": 7.359,
+    "Spin": 2
   },
   {
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.015,
     "TBE/AVTZ": 5.811,
@@ -59,14 +58,14 @@
     "SC-NEVPT2": 3.32,
     "PC-NEVPT2": 3.293,
     "CASPT3 (No IPEA)": 3.313,
-    "CASPT3": 3.312
+    "CASPT3": 3.312,
+    "Spin": 2
   },
   {
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.009,
     "TBE/AVTZ": 9.273,
@@ -90,14 +89,14 @@
     "SC-NEVPT2": 5.942,
     "PC-NEVPT2": 5.887,
     "CASPT3 (No IPEA)": 5.869,
-    "CASPT3": 5.873
+    "CASPT3": 5.873,
+    "Spin": 2
   },
   {
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma^+",
-    "spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 7.277,
     "Method (all in RO)": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -120,14 +119,14 @@
     "SC-NEVPT2": 9.392,
     "PC-NEVPT2": 9.344,
     "CASPT3 (No IPEA)": 9.322,
-    "CASPT3": 9.328
+    "CASPT3": 9.328,
+    "Spin": 4
   },
   {
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Delta",
-    "spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 8.391,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -150,14 +149,14 @@
     "SC-NEVPT2": 7.359,
     "PC-NEVPT2": 7.32,
     "CASPT3 (No IPEA)": 7.255,
-    "CASPT3": 7.284
+    "CASPT3": 7.284,
+    "Spin": 4
   },
   {
     "Molecule": "CO+",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma^-",
-    "spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 9.169,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -180,6 +179,7 @@
     "SC-NEVPT2": 8.446,
     "PC-NEVPT2": 8.416,
     "CASPT3 (No IPEA)": 8.341,
-    "CASPT3": 8.376
+    "CASPT3": 8.376,
+    "Spin": 4
   }
 ]

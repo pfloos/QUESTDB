@@ -4,7 +4,6 @@
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma^-",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 94.9,
@@ -29,14 +28,14 @@
     "SOS-ADC(2) [QC]": 4.913,
     "ADC(2)": 5.016,
     "ADC(3)": 4.371,
-    "ADC(2.5)": 4.6935
+    "ADC(2.5)": 4.6935,
+    "Spin": 1
   },
   {
     "Molecule": "HCP",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Delta",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 94.0,
@@ -61,14 +60,14 @@
     "SOS-ADC(2) [QC]": 5.12,
     "ADC(2)": 5.334,
     "ADC(3)": 4.658,
-    "ADC(2.5)": 4.996
+    "ADC(2.5)": 4.996,
+    "Spin": 1
   },
   {
     "Molecule": "HCP",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma^+",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
@@ -90,14 +89,14 @@
     "SOS-ADC(2) [QC]": 3.298,
     "ADC(2)": 3.693,
     "ADC(3)": 3.097,
-    "ADC(2.5)": 3.395
+    "ADC(2.5)": 3.395,
+    "Spin": 3
   },
   {
     "Molecule": "HCP",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Delta",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.8,
@@ -119,6 +118,7 @@
     "SOS-ADC(2) [QC]": 4.386,
     "ADC(2)": 4.386,
     "ADC(3)": 3.787,
-    "ADC(2.5)": 4.0865
+    "ADC(2.5)": 4.0865,
+    "Spin": 3
   }
 ]

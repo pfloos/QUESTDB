@@ -4,7 +4,6 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.5,
@@ -37,14 +36,14 @@
     "CASPT3": 2.05,
     "CASPT3 (No IPEA)": 2.0,
     "SC-NEVPT2": 2.07,
-    "PC-NEVPT2": 2.05
+    "PC-NEVPT2": 2.05,
+    "Spin": 1
   },
   {
     "Molecule": "Thiopropynal",
     "Size": 4,
     "Group": 35,
     "State": "^3A''",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -72,6 +71,7 @@
     "CASPT3": 1.84,
     "CASPT3 (No IPEA)": 1.79,
     "SC-NEVPT2": 1.82,
-    "PC-NEVPT2": 1.81
+    "PC-NEVPT2": 1.81,
+    "Spin": 3
   }
 ]

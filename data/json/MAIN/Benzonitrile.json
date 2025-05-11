@@ -4,7 +4,6 @@
     "Size": 8,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.8,
@@ -27,14 +26,14 @@
     "SOS-ADC(2) [QC]": 4.646,
     "ADC(2)": 5.073,
     "ADC(3)": 4.795,
-    "ADC(2.5)": 4.934
+    "ADC(2.5)": 4.934,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -57,14 +56,14 @@
     "SOS-ADC(2) [QC]": 5.794,
     "ADC(2)": 6.016,
     "ADC(3)": 5.761,
-    "ADC(2.5)": 5.8885000000000005
+    "ADC(2.5)": 5.8885000000000005,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -87,14 +86,14 @@
     "SOS-ADC(2) [QC]": 6.92,
     "ADC(2)": 6.892,
     "ADC(3)": 6.649,
-    "ADC(2.5)": 6.7705
+    "ADC(2.5)": 6.7705,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -116,14 +115,14 @@
     "SOS-ADC(2) [QC]": 6.881,
     "ADC(2)": 6.884,
     "ADC(3)": 6.769,
-    "ADC(2.5)": 6.8265
+    "ADC(2.5)": 6.8265,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -145,14 +144,14 @@
     "SOS-ADC(2) [QC]": 7.024,
     "ADC(2)": 7.03,
     "ADC(3)": 6.831,
-    "ADC(2.5)": 6.9305
+    "ADC(2.5)": 6.9305,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -174,14 +173,14 @@
     "SOS-ADC(2) [QC]": 6.894,
     "ADC(2)": 6.981,
     "ADC(3)": 6.793,
-    "ADC(2.5)": 6.8870000000000005
+    "ADC(2.5)": 6.8870000000000005,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "wCT",
@@ -204,14 +203,14 @@
     "SOS-ADC(2) [QC]": 7.322,
     "ADC(2)": 7.227,
     "ADC(3)": 6.734,
-    "ADC(2.5)": 6.9805
+    "ADC(2.5)": 6.9805,
+    "Spin": 1
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -230,14 +229,14 @@
     "SOS-ADC(2) [QC]": 3.956,
     "ADC(2)": 4.11,
     "ADC(3)": 3.631,
-    "ADC(2.5)": 3.8705
+    "ADC(2.5)": 3.8705,
+    "Spin": 3
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.9,
@@ -256,14 +255,14 @@
     "SOS-ADC(2) [QC]": 4.638,
     "ADC(2)": 4.852,
     "ADC(3)": 4.383,
-    "ADC(2.5)": 4.6175
+    "ADC(2.5)": 4.6175,
+    "Spin": 3
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -282,14 +281,14 @@
     "SOS-ADC(2) [QC]": 4.702,
     "ADC(2)": 4.922,
     "ADC(3)": 4.436,
-    "ADC(2.5)": 4.679
+    "ADC(2.5)": 4.679,
+    "Spin": 3
   },
   {
     "Molecule": "Benzonitrile",
     "Size": 8,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -308,6 +307,7 @@
     "SOS-ADC(2) [QC]": 5.674,
     "ADC(2)": 5.72,
     "ADC(3)": 5.35,
-    "ADC(2.5)": 5.535
+    "ADC(2.5)": 5.535,
+    "Spin": 3
   }
 ]

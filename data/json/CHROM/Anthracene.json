@@ -4,7 +4,6 @@
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 89.8,
@@ -66,14 +65,14 @@
     "BSE/G0W0@HF": 3.7169,
     "BSE/evGW@PBE0": 3.21112,
     "BSE/evGW@CAM-B3LYP": 3.304666,
-    "BSE/evGW@HF": 3.656141
+    "BSE/evGW@HF": 3.656141,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.4,
@@ -135,14 +134,14 @@
     "BSE/G0W0@HF": 4.429038,
     "BSE/evGW@PBE0": 3.719271,
     "BSE/evGW@CAM-B3LYP": 3.798479,
-    "BSE/evGW@HF": 4.369355
+    "BSE/evGW@HF": 4.369355,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -204,14 +203,14 @@
     "BSE/G0W0@HF": 5.428878,
     "BSE/evGW@PBE0": 4.79672,
     "BSE/evGW@CAM-B3LYP": 4.871818,
-    "BSE/evGW@HF": 5.344116
+    "BSE/evGW@HF": 5.344116,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 92.4,
     "TBE/AVTZ": 5.06,
@@ -271,14 +270,14 @@
     "BSE/G0W0@HF": 5.772265,
     "BSE/evGW@PBE0": 4.801916,
     "BSE/evGW@CAM-B3LYP": 4.930285,
-    "BSE/evGW@HF": 5.748177
+    "BSE/evGW@HF": 5.748177,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.8,
@@ -340,14 +339,14 @@
     "BSE/G0W0@HF": 5.97586,
     "BSE/evGW@PBE0": 5.022876,
     "BSE/evGW@CAM-B3LYP": 5.134776,
-    "BSE/evGW@HF": 5.940054
+    "BSE/evGW@HF": 5.940054,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 89.6,
@@ -407,14 +406,14 @@
     "BSE/G0W0@HF": 6.112635,
     "BSE/evGW@PBE0": 4.924164,
     "BSE/evGW@CAM-B3LYP": 5.040634,
-    "BSE/evGW@HF": 6.043099
+    "BSE/evGW@HF": 6.043099,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -474,14 +473,14 @@
     "BSE/G0W0@HF": 6.494776,
     "BSE/evGW@PBE0": 5.370406,
     "BSE/evGW@CAM-B3LYP": 5.515821,
-    "BSE/evGW@HF": 6.415001
+    "BSE/evGW@HF": 6.415001,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3u}",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 92.3,
     "f [LR-CCSD/AVTZ]": 0.002,
@@ -541,14 +540,14 @@
     "BSE/G0W0@HF": 5.846155,
     "BSE/evGW@PBE0": 5.025889,
     "BSE/evGW@CAM-B3LYP": 5.198036,
-    "BSE/evGW@HF": 5.819554
+    "BSE/evGW@HF": 5.819554,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 92.1,
     "TBE/AVTZ": 5.431,
@@ -608,14 +607,14 @@
     "BSE/G0W0@HF": 5.491009,
     "BSE/evGW@PBE0": 5.122605,
     "BSE/evGW@CAM-B3LYP": 5.278675,
-    "BSE/evGW@HF": 5.465948
+    "BSE/evGW@HF": 5.465948,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 89.8,
@@ -676,14 +675,14 @@
     "BSE/G0W0@HF": 5.6551,
     "BSE/evGW@PBE0": 5.055846,
     "BSE/evGW@CAM-B3LYP": 5.080449,
-    "BSE/evGW@HF": 5.597189
+    "BSE/evGW@HF": 5.597189,
+    "Spin": 1
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{1u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.3,
@@ -731,14 +730,14 @@
     "BSE/G0W0@HF": 2.300288,
     "BSE/evGW@PBE0": 1.604805,
     "BSE/evGW@CAM-B3LYP": 1.711354,
-    "BSE/evGW@HF": 2.287697
+    "BSE/evGW@HF": 2.287697,
+    "Spin": 3
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{3g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.6,
@@ -786,14 +785,14 @@
     "BSE/G0W0@HF": 3.946839,
     "BSE/evGW@PBE0": 2.99714,
     "BSE/evGW@CAM-B3LYP": 3.100309,
-    "BSE/evGW@HF": 3.920953
+    "BSE/evGW@HF": 3.920953,
+    "Spin": 3
   },
   {
     "Molecule": "Anthracene",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{2u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.1,
@@ -841,6 +840,7 @@
     "BSE/G0W0@HF": 3.830946,
     "BSE/evGW@PBE0": 3.262019,
     "BSE/evGW@CAM-B3LYP": 3.344602,
-    "BSE/evGW@HF": 3.771264
+    "BSE/evGW@HF": 3.771264,
+    "Spin": 3
   }
 ]

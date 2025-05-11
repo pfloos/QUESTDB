@@ -4,120 +4,120 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
-    "spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 1.999,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
-    "Safe ? (~50 meV)": "Y"
+    "Safe ? (~50 meV)": "Y",
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
-    "spin": 2,
     "V/R": "V",
     "Special ?": "pd",
     "f [LR-CCSD/AVTZ]": 0.01,
     "TBE/AVTZ": 2.345,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
-    "Safe ? (~50 meV)": "N"
+    "Safe ? (~50 meV)": "N",
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.508,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
-    "Safe ? (~50 meV)": "Y"
+    "Safe ? (~50 meV)": "Y",
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
-    "spin": 2,
     "V/R": "V",
-    "Special ?": "pd"
+    "Special ?": "pd",
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
-    "spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.077,
     "TBE/AVTZ": 5.293,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
-    "Safe ? (~50 meV)": "N"
+    "Safe ? (~50 meV)": "N",
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
-    "spin": 2,
     "V/R": "V",
     "Special ?": "pd",
-    "f [LR-CCSD/AVTZ]": 0.001
+    "f [LR-CCSD/AVTZ]": 0.001,
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
-    "spin": 2,
     "V/R": "V",
-    "f [LR-CCSD/AVTZ]": 0.181
+    "f [LR-CCSD/AVTZ]": 0.181,
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
-    "spin": 2,
     "V/R": "V",
-    "Special ?": "pd"
+    "Special ?": "pd",
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
-    "spin": 2,
     "V/R": "R",
-    "f [LR-CCSD/AVTZ]": 0.017
+    "f [LR-CCSD/AVTZ]": 0.017,
+    "Spin": 2
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^4A_2",
-    "spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 4.34,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
-    "Safe ? (~50 meV)": "N"
+    "Safe ? (~50 meV)": "N",
+    "Spin": 4
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^4B_2",
-    "spin": 4,
-    "V/R": "V"
+    "V/R": "V",
+    "Spin": 4
   },
   {
     "Molecule": "Nitromethyl",
     "Size": 3,
     "Group": 35,
     "State": "^4A_1",
-    "spin": 4,
-    "V/R": "V"
+    "V/R": "V",
+    "Spin": 4
   }
 ]

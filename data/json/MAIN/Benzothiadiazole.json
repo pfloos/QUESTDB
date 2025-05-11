@@ -4,7 +4,6 @@
     "Size": 9,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "wCT",
@@ -28,14 +27,14 @@
     "SOS-ADC(2) [QC]": 4.285,
     "ADC(2)": 4.39,
     "ADC(3)": 3.974,
-    "ADC(2.5)": 4.182
+    "ADC(2.5)": 4.182,
+    "Spin": 1
   },
   {
     "Molecule": "Benzothiadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.5,
@@ -57,14 +56,14 @@
     "SOS-ADC(2) [QC]": 4.223,
     "ADC(2)": 4.513,
     "ADC(3)": 4.141,
-    "ADC(2.5)": 4.327
+    "ADC(2.5)": 4.327,
+    "Spin": 1
   },
   {
     "Molecule": "Benzothiadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.7,
@@ -86,14 +85,14 @@
     "SOS-ADC(2) [QC]": 4.851,
     "ADC(2)": 4.733,
     "ADC(3)": 4.77,
-    "ADC(2.5)": 4.7515
+    "ADC(2.5)": 4.7515,
+    "Spin": 1
   },
   {
     "Molecule": "Benzothiadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 86.1,
@@ -115,14 +114,14 @@
     "SOS-ADC(2) [QC]": 5.552,
     "ADC(2)": 5.435,
     "ADC(3)": 5.343,
-    "ADC(2.5)": 5.388999999999999
+    "ADC(2.5)": 5.388999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Benzothiadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -141,14 +140,14 @@
     "SOS-ADC(2) [QC]": 2.842,
     "ADC(2)": 3.031,
     "ADC(3)": 2.422,
-    "ADC(2.5)": 2.7265
+    "ADC(2.5)": 2.7265,
+    "Spin": 3
   },
   {
     "Molecule": "Benzothiadiazole",
     "Size": 9,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -167,6 +166,7 @@
     "SOS-ADC(2) [QC]": 3.44,
     "ADC(2)": 3.645,
     "ADC(3)": 3.106,
-    "ADC(2.5)": 3.3754999999999997
+    "ADC(2.5)": 3.3754999999999997,
+    "Spin": 3
   }
 ]

@@ -4,7 +4,6 @@
     "Size": 8,
     "Group": 69,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.3,
@@ -28,14 +27,14 @@
     "SOS-ADC(2) [QC]": 2.947,
     "ADC(2)": 2.719,
     "ADC(3)": 2.912,
-    "ADC(2.5)": 2.8155
+    "ADC(2.5)": 2.8155,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 84.1,
@@ -59,14 +58,14 @@
     "SOS-ADC(2) [QC]": 3.059,
     "ADC(2)": 2.842,
     "ADC(3)": 3.118,
-    "ADC(2.5)": 2.98
+    "ADC(2.5)": 2.98,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -83,14 +82,14 @@
     "CASPT3": 4.672,
     "CASPT3 (No IPEA)": 4.696,
     "SC-NEVPT2": 4.565,
-    "PC-NEVPT2": 4.566
+    "PC-NEVPT2": 4.566,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.6,
@@ -112,14 +111,14 @@
     "SOS-ADC(2) [QC]": 4.875,
     "ADC(2)": 4.727,
     "ADC(3)": 4.293,
-    "ADC(2.5)": 4.51
+    "ADC(2.5)": 4.51,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -136,14 +135,14 @@
     "CASPT3": 6.343,
     "CASPT3 (No IPEA)": 6.303,
     "SC-NEVPT2": 6.431,
-    "PC-NEVPT2": 6.39
+    "PC-NEVPT2": 6.39,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.4,
@@ -166,14 +165,14 @@
     "SOS-ADC(2) [QC]": 5.588,
     "ADC(2)": 5.42,
     "ADC(3)": 5.452,
-    "ADC(2.5)": 5.436
+    "ADC(2.5)": 5.436,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{3u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "pd",
@@ -204,14 +203,14 @@
     "CASPT3": 6.063,
     "CASPT3 (No IPEA)": 5.954,
     "SC-NEVPT2": 6.02,
-    "PC-NEVPT2": 5.944
+    "PC-NEVPT2": 5.944,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "pd",
@@ -240,14 +239,14 @@
     "CASPT3": 6.028,
     "CASPT3 (No IPEA)": 5.95,
     "SC-NEVPT2": 6.004,
-    "PC-NEVPT2": 5.932
+    "PC-NEVPT2": 5.932,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "pd",
@@ -276,14 +275,14 @@
     "CASPT3": 6.422,
     "CASPT3 (No IPEA)": 6.352,
     "SC-NEVPT2": 6.548,
-    "PC-NEVPT2": 6.502
+    "PC-NEVPT2": 6.502,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 83.5,
@@ -305,14 +304,14 @@
     "SOS-ADC(2) [QC]": 6.666,
     "ADC(2)": 6.29,
     "ADC(3)": 6.221,
-    "ADC(2.5)": 6.2555
+    "ADC(2.5)": 6.2555,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "pd",
@@ -340,14 +339,14 @@
     "CASPT3": 6.451,
     "CASPT3 (No IPEA)": 6.492,
     "SC-NEVPT2": 6.574,
-    "PC-NEVPT2": 6.53
+    "PC-NEVPT2": 6.53,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 87.8,
@@ -369,14 +368,14 @@
     "SOS-ADC(2) [QC]": 7.118,
     "ADC(2)": 6.567,
     "ADC(3)": 7.632,
-    "ADC(2.5)": 7.0995
+    "ADC(2.5)": 7.0995,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 86.6,
@@ -398,14 +397,14 @@
     "SOS-ADC(2) [QC]": 7.492,
     "ADC(2)": 7.191,
     "ADC(3)": 7.123,
-    "ADC(2.5)": 7.157
+    "ADC(2.5)": 7.157,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.4,
@@ -427,14 +426,14 @@
     "SOS-ADC(2) [QC]": 7.392,
     "ADC(2)": 7.219,
     "ADC(3)": 7.062,
-    "ADC(2.5)": 7.1405
+    "ADC(2.5)": 7.1405,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 87.0,
@@ -457,14 +456,14 @@
     "SOS-ADC(2) [QC]": 7.236,
     "ADC(2)": 6.703,
     "ADC(3)": 7.921,
-    "ADC(2.5)": 7.312
+    "ADC(2.5)": 7.312,
+    "Spin": 1
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^3B_{1g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.0,
@@ -483,14 +482,14 @@
     "SOS-ADC(2) [QC]": 2.707,
     "ADC(2)": 2.416,
     "ADC(3)": 2.633,
-    "ADC(2.5)": 2.5244999999999997
+    "ADC(2.5)": 2.5244999999999997,
+    "Spin": 3
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 95.6,
@@ -511,14 +510,14 @@
     "SOS-ADC(2) [QC]": 2.833,
     "ADC(2)": 2.552,
     "ADC(3)": 2.846,
-    "ADC(2.5)": 2.699
+    "ADC(2.5)": 2.699,
+    "Spin": 3
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^3B_{1u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -539,14 +538,14 @@
     "SOS-ADC(2) [QC]": 3.219,
     "ADC(2)": 3.264,
     "ADC(3)": 2.845,
-    "ADC(2.5)": 3.0545
+    "ADC(2.5)": 3.0545,
+    "Spin": 3
   },
   {
     "Molecule": "Benzoquinone",
     "Size": 8,
     "Group": 69,
     "State": "^3B_{3g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -567,6 +566,7 @@
     "SOS-ADC(2) [QC]": 3.605,
     "ADC(2)": 3.566,
     "ADC(3)": 3.116,
-    "ADC(2.5)": 3.341
+    "ADC(2.5)": 3.341,
+    "Spin": 3
   }
 ]

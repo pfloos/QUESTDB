@@ -4,7 +4,6 @@
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "pis",
     "%T1 [CC3/AVTZ]": 95.8,
@@ -26,14 +25,14 @@
     "SOS-CC2": 1.613,
     "SCS-CC2": 1.61,
     "SOS-ADC(2) [QC]": 1.04,
-    "ADC(2)": 1.161
+    "ADC(2)": 1.161,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dimer",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Delta_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -54,14 +53,14 @@
     "CASPT3": 2.126,
     "CASPT3 (No IPEA)": 2.096,
     "SC-NEVPT2": 2.144,
-    "PC-NEVPT2": 2.119
+    "PC-NEVPT2": 2.119,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dimer",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma_g^+",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -82,14 +81,14 @@
     "CASPT3": 2.439,
     "CASPT3 (No IPEA)": 2.397,
     "SC-NEVPT2": 2.478,
-    "PC-NEVPT2": 2.423
+    "PC-NEVPT2": 2.423,
+    "Spin": 1
   },
   {
     "Molecule": "Carbon dimer",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Pi_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "pis",
     "%T1 [CC3/AVTZ]": 99.1,
@@ -107,14 +106,14 @@
     "SOS-CC2": 0.758,
     "SCS-CC2": 0.7,
     "SOS-ADC(2) [QC]": 0.273,
-    "ADC(2)": 0.204
+    "ADC(2)": 0.204,
+    "Spin": 3
   },
   {
     "Molecule": "Carbon dimer",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma_u^+",
-    "spin": 3,
     "V/R": "V",
     "Type": "ns",
     "%T1 [CC3/AVTZ]": 99.2,
@@ -132,14 +131,14 @@
     "SOS-CC2": 0.885,
     "SCS-CC2": 1.092,
     "SOS-ADC(2) [QC]": 0.668,
-    "ADC(2)": 1.214
+    "ADC(2)": 1.214,
+    "Spin": 3
   },
   {
     "Molecule": "Carbon dimer",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma_g^+",
-    "spin": 3,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -157,6 +156,7 @@
     "CASPT3": 1.318,
     "CASPT3 (No IPEA)": 1.279,
     "SC-NEVPT2": 1.328,
-    "PC-NEVPT2": 1.266
+    "PC-NEVPT2": 1.266,
+    "Spin": 3
   }
 ]

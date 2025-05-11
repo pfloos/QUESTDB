@@ -4,7 +4,6 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.0,
@@ -25,14 +24,14 @@
     "SOS-ADC(2) [QC]": 3.821,
     "ADC(2)": 3.749,
     "ADC(3)": 3.948,
-    "ADC(2.5)": 3.8485
+    "ADC(2.5)": 3.8485,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "%T1 [CC3/AVDZ]": 86.2,
     "f [LR-CCSD/AVTZ]": 0.0,
@@ -52,14 +51,14 @@
     "SOS-ADC(2) [QC]": 4.158,
     "ADC(2)": 3.892,
     "ADC(3)": 4.503,
-    "ADC(2.5)": 4.1975
+    "ADC(2.5)": 4.1975,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "%T1 [CC3/AVDZ]": 85.0,
     "f [LR-CCSD/AVTZ]": 0.0,
@@ -79,14 +78,14 @@
     "SOS-ADC(2) [QC]": 4.738,
     "ADC(2)": 4.558,
     "ADC(3)": 5.105,
-    "ADC(2.5)": 4.8315
+    "ADC(2.5)": 4.8315,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 88.7,
     "f [LR-CCSD/AVTZ]": 0.012,
@@ -106,14 +105,14 @@
     "SOS-ADC(2) [QC]": 5.488,
     "ADC(2)": 5.347,
     "ADC(3)": 5.526,
-    "ADC(2.5)": 5.4365000000000006
+    "ADC(2.5)": 5.4365000000000006,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.3,
@@ -129,14 +128,14 @@
     "SOS-ADC(2) [QC]": 3.12,
     "ADC(2)": 3.007,
     "ADC(3)": 2.86,
-    "ADC(2.5)": 2.9335
+    "ADC(2.5)": 2.9335,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "%T1 [CC3/AVDZ]": 95.7,
     "TBE/AVTZ": 4.008,
@@ -151,14 +150,14 @@
     "SOS-ADC(2) [QC]": 4.021,
     "ADC(2)": 3.721,
     "ADC(3)": 4.001,
-    "ADC(2.5)": 3.861
+    "ADC(2.5)": 3.861,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "%T1 [CC3/AVDZ]": 98.0,
     "TBE/AVTZ": 4.291000000000001,
@@ -173,14 +172,14 @@
     "SOS-ADC(2) [QC]": 4.166,
     "ADC(2)": 4.287,
     "ADC(3)": 4.291,
-    "ADC(2.5)": 4.289
+    "ADC(2.5)": 4.289,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.5,
@@ -196,14 +195,14 @@
     "SOS-ADC(2) [QC]": 4.539,
     "ADC(2)": 4.331,
     "ADC(3)": 4.497,
-    "ADC(2.5)": 4.414
+    "ADC(2.5)": 4.414,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Syn)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.4,
@@ -219,6 +218,7 @@
     "SOS-ADC(2) [QC]": 4.85,
     "ADC(2)": 4.72,
     "ADC(3)": 4.968,
-    "ADC(2.5)": 4.843999999999999
+    "ADC(2.5)": 4.843999999999999,
+    "Spin": 3
   }
 ]

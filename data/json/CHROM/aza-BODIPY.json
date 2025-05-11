@@ -4,7 +4,6 @@
     "Size": 14,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 84.3,
@@ -67,14 +66,14 @@
     "BSE/G0W0@HF": 2.684787,
     "BSE/evGW@PBE0": 2.355472,
     "BSE/evGW@CAM-B3LYP": 2.391737,
-    "BSE/evGW@HF": 2.621006
+    "BSE/evGW@HF": 2.621006,
+    "Spin": 1
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -138,14 +137,14 @@
     "BSE/G0W0@HF": 3.679379,
     "BSE/evGW@PBE0": 3.230376,
     "BSE/evGW@CAM-B3LYP": 3.283707,
-    "BSE/evGW@HF": 3.545024
+    "BSE/evGW@HF": 3.545024,
+    "Spin": 1
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -209,14 +208,14 @@
     "BSE/G0W0@HF": 3.950743,
     "BSE/evGW@PBE0": 3.437192,
     "BSE/evGW@CAM-B3LYP": 3.517592,
-    "BSE/evGW@HF": 3.811719
+    "BSE/evGW@HF": 3.811719,
+    "Spin": 1
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 88.8,
@@ -279,14 +278,14 @@
     "BSE/G0W0@HF": 4.501719,
     "BSE/evGW@PBE0": 3.666268,
     "BSE/evGW@CAM-B3LYP": 3.739557,
-    "BSE/evGW@HF": 4.286549
+    "BSE/evGW@HF": 4.286549,
+    "Spin": 1
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.5,
@@ -326,14 +325,14 @@
     "BSE/G0W0@CAM-B3LYP": 0.315482,
     "BSE/G0W0@HF": 0.662775,
     "BSE/evGW@CAM-B3LYP": 0.17263,
-    "BSE/evGW@HF": 0.671987
+    "BSE/evGW@HF": 0.671987,
+    "Spin": 3
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 95.5,
@@ -374,14 +373,14 @@
     "BSE/G0W0@HF": 2.731054,
     "BSE/evGW@PBE0": 2.283247,
     "BSE/evGW@CAM-B3LYP": 2.336508,
-    "BSE/evGW@HF": 2.627327
+    "BSE/evGW@HF": 2.627327,
+    "Spin": 3
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 95.3,
@@ -422,14 +421,14 @@
     "BSE/G0W0@HF": 2.983083,
     "BSE/evGW@PBE0": 2.540988,
     "BSE/evGW@CAM-B3LYP": 2.592817,
-    "BSE/evGW@HF": 2.877786
+    "BSE/evGW@HF": 2.877786,
+    "Spin": 3
   },
   {
     "Molecule": "aza-BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.8,
@@ -470,6 +469,7 @@
     "BSE/G0W0@HF": 3.921498,
     "BSE/evGW@PBE0": 2.999901,
     "BSE/evGW@CAM-B3LYP": 3.074746,
-    "BSE/evGW@HF": 3.727597
+    "BSE/evGW@HF": 3.727597,
+    "Spin": 3
   }
 ]

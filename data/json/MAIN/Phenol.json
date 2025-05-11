@@ -4,7 +4,6 @@
     "Size": 7,
     "Group": 69,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.8,
@@ -27,14 +26,14 @@
     "SOS-ADC(2) [QC]": 4.595,
     "ADC(2)": 4.952,
     "ADC(3)": 4.813,
-    "ADC(2.5)": 4.8825
+    "ADC(2.5)": 4.8825,
+    "Spin": 1
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -57,14 +56,14 @@
     "SOS-ADC(2) [QC]": 5.674,
     "ADC(2)": 5.57,
     "ADC(3)": 5.576,
-    "ADC(2.5)": 5.573
+    "ADC(2.5)": 5.573,
+    "Spin": 1
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -87,14 +86,14 @@
     "SOS-ADC(2) [QC]": 6.14,
     "ADC(2)": 6.058,
     "ADC(3)": 6.065,
-    "ADC(2.5)": 6.0615000000000006
+    "ADC(2.5)": 6.0615000000000006,
+    "Spin": 1
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.6,
@@ -116,14 +115,14 @@
     "SOS-ADC(2) [QC]": 5.863,
     "ADC(2)": 6.062,
     "ADC(3)": 5.985,
-    "ADC(2.5)": 6.0235
+    "ADC(2.5)": 6.0235,
+    "Spin": 1
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -142,14 +141,14 @@
     "SOS-ADC(2) [QC]": 4.158,
     "ADC(2)": 4.288,
     "ADC(3)": 3.909,
-    "ADC(2.5)": 4.0985
+    "ADC(2.5)": 4.0985,
+    "Spin": 3
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -168,14 +167,14 @@
     "SOS-ADC(2) [QC]": 4.453,
     "ADC(2)": 4.589,
     "ADC(3)": 4.278,
-    "ADC(2.5)": 4.4335
+    "ADC(2.5)": 4.4335,
+    "Spin": 3
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -194,14 +193,14 @@
     "SOS-ADC(2) [QC]": 4.735,
     "ADC(2)": 4.952,
     "ADC(3)": 4.528,
-    "ADC(2.5)": 4.74
+    "ADC(2.5)": 4.74,
+    "Spin": 3
   },
   {
     "Molecule": "Phenol",
     "Size": 7,
     "Group": 69,
     "State": "^3A''",
-    "spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -220,6 +219,7 @@
     "SOS-ADC(2) [QC]": 5.637,
     "ADC(2)": 5.515,
     "ADC(3)": 5.512,
-    "ADC(2.5)": 5.5135
+    "ADC(2.5)": 5.5135,
+    "Spin": 3
   }
 ]

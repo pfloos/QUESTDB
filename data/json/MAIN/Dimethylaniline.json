@@ -4,7 +4,6 @@
     "Size": 9,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.2,
@@ -26,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.212,
     "ADC(2)": 4.379,
     "ADC(3)": 4.437,
-    "ADC(2.5)": 4.4079999999999995
+    "ADC(2.5)": 4.4079999999999995,
+    "Spin": 1
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.1,
@@ -55,14 +54,14 @@
     "SOS-ADC(2) [QC]": 4.564,
     "ADC(2)": 4.344,
     "ADC(3)": 4.552,
-    "ADC(2.5)": 4.448
+    "ADC(2.5)": 4.448,
+    "Spin": 1
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.0,
@@ -83,14 +82,14 @@
     "SOS-ADC(2) [QC]": 5.11,
     "ADC(2)": 4.884,
     "ADC(3)": 5.136,
-    "ADC(2.5)": 5.01
+    "ADC(2.5)": 5.01,
+    "Spin": 1
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "f [LR-CC3/AVTZ]": "n.d.",
@@ -111,14 +110,14 @@
     "SOS-ADC(2) [QC]": 5.142,
     "ADC(2)": 4.929,
     "ADC(3)": 5.172,
-    "ADC(2.5)": 5.0504999999999995
+    "ADC(2.5)": 5.0504999999999995,
+    "Spin": 1
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -140,14 +139,14 @@
     "SOS-ADC(2) [QC]": 5.305,
     "ADC(2)": 5.118,
     "ADC(3)": 5.339,
-    "ADC(2.5)": 5.2285
+    "ADC(2.5)": 5.2285,
+    "Spin": 1
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 89.5,
@@ -169,14 +168,14 @@
     "SOS-ADC(2) [QC]": 5.14,
     "ADC(2)": 5.218,
     "ADC(3)": 5.39,
-    "ADC(2.5)": 5.304
+    "ADC(2.5)": 5.304,
+    "Spin": 1
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -193,14 +192,14 @@
     "SOS-ADC(2) [QC]": 3.983,
     "ADC(2)": 4.073,
     "ADC(3)": 3.766,
-    "ADC(2.5)": 3.9195
+    "ADC(2.5)": 3.9195,
+    "Spin": 3
   },
   {
     "Molecule": "Dimethylaniline",
     "Size": 9,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -217,6 +216,7 @@
     "SOS-ADC(2) [QC]": 3.978,
     "ADC(2)": 4.008,
     "ADC(3)": 3.865,
-    "ADC(2.5)": 3.9365
+    "ADC(2.5)": 3.9365,
+    "Spin": 3
   }
 ]

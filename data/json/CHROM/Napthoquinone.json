@@ -4,7 +4,6 @@
     "Size": 12,
     "Group": 1016,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 86.1,
@@ -68,14 +67,14 @@
     "BSE/G0W0@HF": 3.839203,
     "BSE/evGW@PBE0": 2.900559,
     "BSE/evGW@CAM-B3LYP": 2.981686,
-    "BSE/evGW@HF": 3.637754
+    "BSE/evGW@HF": 3.637754,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 85.1,
@@ -138,14 +137,14 @@
     "BSE/G0W0@HF": 3.973137,
     "BSE/evGW@PBE0": 3.117362,
     "BSE/evGW@CAM-B3LYP": 3.187251,
-    "BSE/evGW@HF": 3.751296
+    "BSE/evGW@HF": 3.751296,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.7,
@@ -209,14 +208,14 @@
     "BSE/G0W0@HF": 4.499436,
     "BSE/evGW@PBE0": 4.010509,
     "BSE/evGW@CAM-B3LYP": 4.067803,
-    "BSE/evGW@HF": 4.414612
+    "BSE/evGW@HF": 4.414612,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.0,
@@ -280,14 +279,14 @@
     "BSE/G0W0@HF": 4.499042,
     "BSE/evGW@PBE0": 3.907968,
     "BSE/evGW@CAM-B3LYP": 4.0318,
-    "BSE/evGW@HF": 4.418361
+    "BSE/evGW@HF": 4.418361,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 80.3,
@@ -350,14 +349,14 @@
     "BSE/G0W0@HF": 7.187494,
     "BSE/evGW@PBE0": 5.522485,
     "BSE/evGW@CAM-B3LYP": 5.638529,
-    "BSE/evGW@HF": 6.958753
+    "BSE/evGW@HF": 6.958753,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.2,
@@ -421,14 +420,14 @@
     "BSE/G0W0@HF": 6.636584,
     "BSE/evGW@PBE0": 5.342359,
     "BSE/evGW@CAM-B3LYP": 5.422081,
-    "BSE/evGW@HF": 6.578125
+    "BSE/evGW@HF": 6.578125,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.3,
@@ -492,14 +491,14 @@
     "BSE/G0W0@HF": 5.651906,
     "BSE/evGW@PBE0": 5.17304,
     "BSE/evGW@CAM-B3LYP": 5.228558,
-    "BSE/evGW@HF": 5.553909
+    "BSE/evGW@HF": 5.553909,
+    "Spin": 1
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.2,
@@ -548,14 +547,14 @@
     "BSE/G0W0@HF": 3.364419,
     "BSE/evGW@PBE0": 2.338573,
     "BSE/evGW@CAM-B3LYP": 2.430906,
-    "BSE/evGW@HF": 3.173813
+    "BSE/evGW@HF": 3.173813,
+    "Spin": 3
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.1,
@@ -604,14 +603,14 @@
     "BSE/G0W0@HF": 3.498343,
     "BSE/evGW@PBE0": 2.541499,
     "BSE/evGW@CAM-B3LYP": 2.623946,
-    "BSE/evGW@HF": 3.288755
+    "BSE/evGW@HF": 3.288755,
+    "Spin": 3
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.7,
@@ -660,14 +659,14 @@
     "BSE/G0W0@HF": 3.320039,
     "BSE/evGW@PBE0": 2.48362,
     "BSE/evGW@CAM-B3LYP": 2.614171,
-    "BSE/evGW@HF": 3.289228
+    "BSE/evGW@HF": 3.289228,
+    "Spin": 3
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.6,
@@ -716,14 +715,14 @@
     "BSE/G0W0@HF": 3.432211,
     "BSE/evGW@PBE0": 2.819699,
     "BSE/evGW@CAM-B3LYP": 2.902661,
-    "BSE/evGW@HF": 3.394468
+    "BSE/evGW@HF": 3.394468,
+    "Spin": 3
   },
   {
     "Molecule": "Napthoquinone",
     "Size": 12,
     "Group": 1016,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.4,
@@ -772,6 +771,7 @@
     "BSE/G0W0@HF": 3.680746,
     "BSE/evGW@PBE0": 3.189073,
     "BSE/evGW@CAM-B3LYP": 3.248871,
-    "BSE/evGW@HF": 3.61594
+    "BSE/evGW@HF": 3.61594,
+    "Spin": 3
   }
 ]

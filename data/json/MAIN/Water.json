@@ -4,7 +4,6 @@
     "Size": 1,
     "Group": 12,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 93.4,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 7.23,
     "ADC(2)": 7.181,
     "ADC(3)": 7.842,
-    "ADC(2.5)": 7.5115
+    "ADC(2.5)": 7.5115,
+    "Spin": 1
   },
   {
     "Molecule": "Water ",
     "Size": 1,
     "Group": 12,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 93.6,
@@ -62,14 +61,14 @@
     "SOS-ADC(2) [QC]": 8.953,
     "ADC(2)": 8.838,
     "ADC(3)": 9.632,
-    "ADC(2.5)": 9.235
+    "ADC(2.5)": 9.235,
+    "Spin": 1
   },
   {
     "Molecule": "Water ",
     "Size": 1,
     "Group": 12,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 93.6,
@@ -95,14 +94,14 @@
     "SOS-ADC(2) [QC]": 9.591,
     "ADC(2)": 9.523,
     "ADC(3)": 10.222,
-    "ADC(2.5)": 9.872499999999999
+    "ADC(2.5)": 9.872499999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Water ",
     "Size": 1,
     "Group": 12,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -124,14 +123,14 @@
     "SOS-ADC(2) [QC]": 6.948,
     "ADC(2)": 6.855,
     "ADC(3)": 7.414,
-    "ADC(2.5)": 7.1345
+    "ADC(2.5)": 7.1345,
+    "Spin": 3
   },
   {
     "Molecule": "Water ",
     "Size": 1,
     "Group": 12,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -153,14 +152,14 @@
     "SOS-ADC(2) [QC]": 8.852,
     "ADC(2)": 8.723,
     "ADC(3)": 9.433,
-    "ADC(2.5)": 9.078
+    "ADC(2.5)": 9.078,
+    "Spin": 3
   },
   {
     "Molecule": "Water ",
     "Size": 1,
     "Group": 12,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -182,6 +181,7 @@
     "SOS-ADC(2) [QC]": 9.279,
     "ADC(2)": 9.152,
     "ADC(3)": 9.701,
-    "ADC(2.5)": 9.4265
+    "ADC(2.5)": 9.4265,
+    "Spin": 3
   }
 ]

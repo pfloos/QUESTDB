@@ -39,7 +39,7 @@ DEFAULT_MUTATION_RATE = 0.2      # Probability of mutation
 DEFAULT_TOURNAMENT_SIZE = 5      # Selection pressure for tournament selection
 
 # Data Processing Parameters
-CATEGORY_KEYS = ["spin", "V/R", "Type"]  # Keys used for categorical comparisons
+CATEGORY_KEYS = ["Spin", "V/R", "Type"]  # Keys used for categorical comparisons
 REFERENCE_KEY = "TBE/AVTZ"                # Reference value key
 
 # Keys to exclude from statistical calculations
@@ -47,7 +47,7 @@ SKIP_KEYS = {
     "CASSCF", "CASPT2", "CASPT3", "SC-NEVPT2", "PC-NEVPT2",
     "Special ?", "Safe ? (~50 meV)", "TBE/AVQZ", "Molecule",
     "State", "Method", "Corr. Method", "%T1 [CC3/AVTZ]",  "%T1 [CC3/AVDZ]",
-    "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]", "Size", "spin", "V/R", "Group", "TBE/AVTZ"
+    "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]", "Size", "Spin", "V/R", "Group", "TBE/AVTZ"
 }
 
 # Initialize rich console for pretty printing
@@ -69,13 +69,13 @@ def load_data(json_dir: str, filters: dict) -> List[Dict]:
                     continue
                 if filters.get("safe_only", True) and d.get("Safe ? (~50 meV)") != "Y":
                     continue
-                if filters.get("only_singlet") and d.get("spin") != 1:
+                if filters.get("only_singlet") and d.get("Spin") != 1:
                     continue
-                if filters.get("only_doublet") and d.get("spin") != 2:
+                if filters.get("only_doublet") and d.get("Spin") != 2:
                     continue
-                if filters.get("only_triplet") and d.get("spin") != 3:
+                if filters.get("only_triplet") and d.get("Spin") != 3:
                     continue
-                if filters.get("only_quartet") and d.get("spin") != 4:
+                if filters.get("only_quartet") and d.get("Spin") != 4:
                     continue
                 if filters.get("only_valence") and d.get("V/R") != "V":
                     continue

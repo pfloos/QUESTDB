@@ -4,7 +4,6 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.8,
@@ -26,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.127,
     "ADC(2)": 4.457,
     "ADC(3)": 4.187,
-    "ADC(2.5)": 4.322
+    "ADC(2.5)": 4.322,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{3u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.3,
@@ -55,14 +54,14 @@
     "SOS-ADC(2) [QC]": 4.737,
     "ADC(2)": 4.806,
     "ADC(3)": 4.759,
-    "ADC(2.5)": 4.782500000000001
+    "ADC(2.5)": 4.782500000000001,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.7,
@@ -83,14 +82,14 @@
     "SOS-ADC(2) [QC]": 5.689,
     "ADC(2)": 5.615,
     "ADC(3)": 5.488,
-    "ADC(2.5)": 5.551500000000001
+    "ADC(2.5)": 5.551500000000001,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 84.7,
@@ -111,14 +110,14 @@
     "SOS-ADC(2) [QC]": 5.926,
     "ADC(2)": 5.896,
     "ADC(3)": 5.805,
-    "ADC(2.5)": 5.8505
+    "ADC(2.5)": 5.8505,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 83.8,
@@ -139,14 +138,14 @@
     "SOS-ADC(2) [QC]": 5.808,
     "ADC(2)": 6.129,
     "ADC(3)": 5.629,
-    "ADC(2.5)": 5.879
+    "ADC(2.5)": 5.879,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -167,14 +166,14 @@
     "SOS-ADC(2) [QC]": 6.097,
     "ADC(2)": 6.005,
     "ADC(3)": 5.888,
-    "ADC(2.5)": 5.9465
+    "ADC(2.5)": 5.9465,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -195,14 +194,14 @@
     "SOS-ADC(2) [QC]": 6.108,
     "ADC(2)": 6.013,
     "ADC(3)": 5.919,
-    "ADC(2.5)": 5.965999999999999
+    "ADC(2.5)": 5.965999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.6,
@@ -224,14 +223,14 @@
     "SOS-ADC(2) [QC]": 6.066,
     "ADC(2)": 6.068,
     "ADC(3)": 6.093,
-    "ADC(2.5)": 6.0805
+    "ADC(2.5)": 6.0805,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -253,14 +252,14 @@
     "SOS-ADC(2) [QC]": 6.311,
     "ADC(2)": 6.332,
     "ADC(3)": 6.187,
-    "ADC(2.5)": 6.2595
+    "ADC(2.5)": 6.2595,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{3u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.2,
@@ -282,14 +281,14 @@
     "SOS-ADC(2) [QC]": 6.28,
     "ADC(2)": 6.392,
     "ADC(3)": 6.306,
-    "ADC(2.5)": 6.349
+    "ADC(2.5)": 6.349,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.5,
@@ -310,14 +309,14 @@
     "SOS-ADC(2) [QC]": 6.415,
     "ADC(2)": 6.518,
     "ADC(3)": 6.388,
-    "ADC(2.5)": 6.452999999999999
+    "ADC(2.5)": 6.452999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -338,14 +337,14 @@
     "SOS-ADC(2) [QC]": 7.135,
     "ADC(2)": 7.2,
     "ADC(3)": 6.359,
-    "ADC(2.5)": 6.7795000000000005
+    "ADC(2.5)": 6.7795000000000005,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -366,14 +365,14 @@
     "SOS-ADC(2) [QC]": 6.626,
     "ADC(2)": 6.544,
     "ADC(3)": 6.444,
-    "ADC(2.5)": 6.494
+    "ADC(2.5)": 6.494,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -395,14 +394,14 @@
     "SOS-ADC(2) [QC]": 6.662,
     "ADC(2)": 6.58,
     "ADC(3)": 6.481,
-    "ADC(2.5)": 6.5305
+    "ADC(2.5)": 6.5305,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{3u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -420,14 +419,14 @@
     "SOS-ADC(2) [QC]": 3.221,
     "ADC(2)": 3.321,
     "ADC(3)": 2.925,
-    "ADC(2.5)": 3.123
+    "ADC(2.5)": 3.123,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{2u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -445,14 +444,14 @@
     "SOS-ADC(2) [QC]": 4.128,
     "ADC(2)": 4.325,
     "ADC(3)": 3.901,
-    "ADC(2.5)": 4.1129999999999995
+    "ADC(2.5)": 4.1129999999999995,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{1g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -470,14 +469,14 @@
     "SOS-ADC(2) [QC]": 4.467,
     "ADC(2)": 4.629,
     "ADC(3)": 4.233,
-    "ADC(2.5)": 4.430999999999999
+    "ADC(2.5)": 4.430999999999999,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{3u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.8,
@@ -495,14 +494,14 @@
     "SOS-ADC(2) [QC]": 4.617,
     "ADC(2)": 4.843,
     "ADC(3)": 4.386,
-    "ADC(2.5)": 4.6145
+    "ADC(2.5)": 4.6145,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{2u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -520,14 +519,14 @@
     "SOS-ADC(2) [QC]": 4.951,
     "ADC(2)": 4.958,
     "ADC(3)": 4.676,
-    "ADC(2.5)": 4.817
+    "ADC(2.5)": 4.817,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -545,14 +544,14 @@
     "SOS-ADC(2) [QC]": 5.417,
     "ADC(2)": 5.688,
     "ADC(3)": 5.237,
-    "ADC(2.5)": 5.4625
+    "ADC(2.5)": 5.4625,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -570,14 +569,14 @@
     "SOS-ADC(2) [QC]": 5.68,
     "ADC(2)": 5.592,
     "ADC(3)": 5.454,
-    "ADC(2.5)": 5.523
+    "ADC(2.5)": 5.523,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{3g}",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -595,14 +594,14 @@
     "SOS-ADC(2) [QC]": 6.087,
     "ADC(2)": 5.987,
     "ADC(3)": 5.863,
-    "ADC(2.5)": 5.925000000000001
+    "ADC(2.5)": 5.925000000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{2g}",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -620,14 +619,14 @@
     "SOS-ADC(2) [QC]": 6.101,
     "ADC(2)": 6.013,
     "ADC(3)": 5.896,
-    "ADC(2.5)": 5.9544999999999995
+    "ADC(2.5)": 5.9544999999999995,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{1g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 95.6,
@@ -645,14 +644,14 @@
     "SOS-ADC(2) [QC]": 6.266,
     "ADC(2)": 6.149,
     "ADC(3)": 6.147,
-    "ADC(2.5)": 6.148
+    "ADC(2.5)": 6.148,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{1u}",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -670,14 +669,14 @@
     "SOS-ADC(2) [QC]": 6.298,
     "ADC(2)": 6.305,
     "ADC(3)": 6.148,
-    "ADC(2.5)": 6.2265
+    "ADC(2.5)": 6.2265,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 95.2,
@@ -695,6 +694,7 @@
     "SOS-ADC(2) [QC]": 6.527,
     "ADC(2)": 6.57,
     "ADC(3)": 6.158,
-    "ADC(2.5)": 6.364000000000001
+    "ADC(2.5)": 6.364000000000001,
+    "Spin": 3
   }
 ]

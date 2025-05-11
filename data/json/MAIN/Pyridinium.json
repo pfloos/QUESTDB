@@ -4,7 +4,6 @@
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.2,
@@ -28,14 +27,14 @@
     "SOS-ADC(2) [QC]": 4.945,
     "ADC(2)": 5.536,
     "ADC(3)": 5.064,
-    "ADC(2.5)": 5.3
+    "ADC(2.5)": 5.3,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridinium",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.8,
@@ -59,14 +58,14 @@
     "SOS-ADC(2) [QC]": 6.077,
     "ADC(2)": 6.396,
     "ADC(3)": 6.14,
-    "ADC(2.5)": 6.268
+    "ADC(2.5)": 6.268,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridinium",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "spi",
     "%T1 [CC3/AVTZ]": 90.7,
@@ -90,14 +89,14 @@
     "SOS-ADC(2) [QC]": 7.753,
     "ADC(2)": 7.664,
     "ADC(3)": 7.412,
-    "ADC(2.5)": 7.538
+    "ADC(2.5)": 7.538,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridinium",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.2,
@@ -120,14 +119,14 @@
     "SOS-ADC(2) [QC]": 7.572,
     "ADC(2)": 7.651,
     "ADC(3)": 7.329,
-    "ADC(2.5)": 7.49
+    "ADC(2.5)": 7.49,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridinium",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.1,
@@ -150,14 +149,14 @@
     "SOS-ADC(2) [QC]": 7.589,
     "ADC(2)": 7.653,
     "ADC(3)": 7.575,
-    "ADC(2.5)": 7.614
+    "ADC(2.5)": 7.614,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridinium",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "spi",
     "%T1 [CC3/AVTZ]": 90.2,
@@ -180,6 +179,7 @@
     "SOS-ADC(2) [QC]": 7.912,
     "ADC(2)": 7.77,
     "ADC(3)": 7.745,
-    "ADC(2.5)": 7.7575
+    "ADC(2.5)": 7.7575,
+    "Spin": 1
   }
 ]

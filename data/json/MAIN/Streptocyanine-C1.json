@@ -4,7 +4,6 @@
     "Size": 3,
     "Group": 35,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.7,
@@ -37,14 +36,14 @@
     "CASPT3": 7.28,
     "CASPT3 (No IPEA)": 7.21,
     "SC-NEVPT2": 7.34,
-    "PC-NEVPT2": 7.13
+    "PC-NEVPT2": 7.13,
+    "Spin": 1
   },
   {
     "Molecule": "Streptocyanine-C1",
     "Size": 3,
     "Group": 35,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -73,6 +72,7 @@
     "CASPT3": 5.54,
     "CASPT3 (No IPEA)": 5.49,
     "SC-NEVPT2": 5.62,
-    "PC-NEVPT2": 5.52
+    "PC-NEVPT2": 5.52,
+    "Spin": 3
   }
 ]

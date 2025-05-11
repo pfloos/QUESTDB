@@ -4,7 +4,6 @@
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 87.6,
@@ -66,14 +65,14 @@
     "BSE/G0W0@HF": 4.105536,
     "BSE/evGW@PBE0": 3.227761,
     "BSE/evGW@CAM-B3LYP": 3.300948,
-    "BSE/evGW@HF": 3.894403
+    "BSE/evGW@HF": 3.894403,
+    "Spin": 1
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{1u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.1,
@@ -135,14 +134,14 @@
     "BSE/G0W0@HF": 3.707251,
     "BSE/evGW@PBE0": 3.200681,
     "BSE/evGW@CAM-B3LYP": 3.306262,
-    "BSE/evGW@HF": 3.628874
+    "BSE/evGW@HF": 3.628874,
+    "Spin": 1
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.5,
@@ -204,14 +203,14 @@
     "BSE/G0W0@HF": 4.208087,
     "BSE/evGW@PBE0": 3.650952,
     "BSE/evGW@CAM-B3LYP": 3.726065,
-    "BSE/evGW@HF": 4.139449
+    "BSE/evGW@HF": 4.139449,
+    "Spin": 1
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 82.4,
@@ -272,14 +271,14 @@
     "BSE/G0W0@HF": 4.766808,
     "BSE/evGW@PBE0": 4.198937,
     "BSE/evGW@CAM-B3LYP": 4.310405,
-    "BSE/evGW@HF": 4.67453
+    "BSE/evGW@HF": 4.67453,
+    "Spin": 1
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "pd",
@@ -341,14 +340,14 @@
     "BSE/G0W0@HF": 5.820046,
     "BSE/evGW@PBE0": 4.889684,
     "BSE/evGW@CAM-B3LYP": 4.961597,
-    "BSE/evGW@HF": 5.546254
+    "BSE/evGW@HF": 5.546254,
+    "Spin": 1
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.8,
@@ -409,14 +408,14 @@
     "BSE/G0W0@HF": 6.418373,
     "BSE/evGW@PBE0": 5.074217,
     "BSE/evGW@CAM-B3LYP": 5.124493,
-    "BSE/evGW@HF": 6.186169
+    "BSE/evGW@HF": 6.186169,
+    "Spin": 1
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{1u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.1,
@@ -464,14 +463,14 @@
     "BSE/G0W0@HF": 2.320671,
     "BSE/evGW@PBE0": 1.722659,
     "BSE/evGW@CAM-B3LYP": 1.804409,
-    "BSE/evGW@HF": 2.301798
+    "BSE/evGW@HF": 2.301798,
+    "Spin": 3
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{3u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.4,
@@ -519,14 +518,14 @@
     "BSE/G0W0@HF": 3.65027,
     "BSE/evGW@PBE0": 2.678068,
     "BSE/evGW@CAM-B3LYP": 2.7598,
-    "BSE/evGW@HF": 3.455274
+    "BSE/evGW@HF": 3.455274,
+    "Spin": 3
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{2u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.7,
@@ -574,14 +573,14 @@
     "BSE/G0W0@HF": 3.151255,
     "BSE/evGW@PBE0": 2.696827,
     "BSE/evGW@CAM-B3LYP": 2.786954,
-    "BSE/evGW@HF": 3.099699
+    "BSE/evGW@HF": 3.099699,
+    "Spin": 3
   },
   {
     "Molecule": "Phenazine",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_{3g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.4,
@@ -629,6 +628,7 @@
     "BSE/G0W0@HF": 3.612733,
     "BSE/evGW@PBE0": 2.917505,
     "BSE/evGW@CAM-B3LYP": 2.992495,
-    "BSE/evGW@HF": 3.571788
+    "BSE/evGW@HF": 3.571788,
+    "Spin": 3
   }
 ]

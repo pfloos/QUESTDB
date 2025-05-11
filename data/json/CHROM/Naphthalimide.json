@@ -4,7 +4,6 @@
     "Size": 15,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.5,
@@ -67,14 +66,14 @@
     "BSE/G0W0@HF": 4.550153,
     "BSE/evGW@PBE0": 4.009229,
     "BSE/evGW@CAM-B3LYP": 4.063503,
-    "BSE/evGW@HF": 4.471965
+    "BSE/evGW@HF": 4.471965,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 84.5,
@@ -137,14 +136,14 @@
     "BSE/G0W0@HF": 5.044129,
     "BSE/evGW@PBE0": 4.08415,
     "BSE/evGW@CAM-B3LYP": 4.155336,
-    "BSE/evGW@HF": 4.772417
+    "BSE/evGW@HF": 4.772417,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.8,
@@ -207,14 +206,14 @@
     "BSE/G0W0@HF": 4.217085,
     "BSE/evGW@PBE0": 3.772074,
     "BSE/evGW@CAM-B3LYP": 3.840907,
-    "BSE/evGW@HF": 4.13191
+    "BSE/evGW@HF": 4.13191,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 85.2,
@@ -276,14 +275,14 @@
     "BSE/G0W0@HF": 5.58154,
     "BSE/evGW@PBE0": 4.493925,
     "BSE/evGW@CAM-B3LYP": 4.574522,
-    "BSE/evGW@HF": 5.326331
+    "BSE/evGW@HF": 5.326331,
+    "Spin": 1
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.3,
@@ -332,14 +331,14 @@
     "BSE/G0W0@HF": 2.75053,
     "BSE/evGW@PBE0": 2.16089,
     "BSE/evGW@CAM-B3LYP": 2.245911,
-    "BSE/evGW@HF": 2.72041
+    "BSE/evGW@HF": 2.72041,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.7,
@@ -388,14 +387,14 @@
     "BSE/G0W0@HF": 3.708275,
     "BSE/evGW@PBE0": 3.215352,
     "BSE/evGW@CAM-B3LYP": 3.290748,
-    "BSE/evGW@HF": 3.64842
+    "BSE/evGW@HF": 3.64842,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.1,
@@ -444,14 +443,14 @@
     "BSE/G0W0@HF": 4.761842,
     "BSE/evGW@PBE0": 3.657873,
     "BSE/evGW@CAM-B3LYP": 3.742554,
-    "BSE/evGW@HF": 4.502819
+    "BSE/evGW@HF": 4.502819,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.2,
@@ -500,14 +499,14 @@
     "BSE/G0W0@HF": 4.423835,
     "BSE/evGW@PBE0": 3.544501,
     "BSE/evGW@CAM-B3LYP": 3.611462,
-    "BSE/evGW@HF": 4.378977
+    "BSE/evGW@HF": 4.378977,
+    "Spin": 3
   },
   {
     "Molecule": "Naphthalimide",
     "Size": 15,
     "Group": 1016,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.6,
@@ -556,6 +555,7 @@
     "BSE/G0W0@HF": 5.265452,
     "BSE/evGW@PBE0": 4.029476,
     "BSE/evGW@CAM-B3LYP": 4.124614,
-    "BSE/evGW@HF": 5.023329
+    "BSE/evGW@HF": 5.023329,
+    "Spin": 3
   }
 ]

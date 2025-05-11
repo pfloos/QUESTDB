@@ -4,7 +4,6 @@
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 88.4,
@@ -37,14 +36,14 @@
     "CASPT3": 5.18,
     "CASPT3 (No IPEA)": 5.13,
     "SC-NEVPT2": 5.19,
-    "PC-NEVPT2": 5.15
+    "PC-NEVPT2": 5.15,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.5,
@@ -77,14 +76,14 @@
     "CASPT3": 5.15,
     "CASPT3 (No IPEA)": 5.09,
     "SC-NEVPT2": 5.34,
-    "PC-NEVPT2": 5.31
+    "PC-NEVPT2": 5.31,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.9,
@@ -116,14 +115,14 @@
     "CASPT3": 5.63,
     "CASPT3 (No IPEA)": 5.59,
     "SC-NEVPT2": 5.35,
-    "PC-NEVPT2": 5.29
+    "PC-NEVPT2": 5.29,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.1,
@@ -156,14 +155,14 @@
     "CASPT3": 7.04,
     "CASPT3 (No IPEA)": 6.93,
     "SC-NEVPT2": 6.8,
-    "PC-NEVPT2": 6.69
+    "PC-NEVPT2": 6.69,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 89.7,
@@ -196,14 +195,14 @@
     "CASPT3": 6.97,
     "CASPT3 (No IPEA)": 6.96,
     "SC-NEVPT2": 7.0,
-    "PC-NEVPT2": 6.99
+    "PC-NEVPT2": 6.99,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 93.2,
@@ -235,14 +234,14 @@
     "CASPT3": 6.88,
     "CASPT3 (No IPEA)": 6.8,
     "SC-NEVPT2": 6.89,
-    "PC-NEVPT2": 6.86
+    "PC-NEVPT2": 6.86,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 89.9,
@@ -274,14 +273,14 @@
     "CASPT3": 7.8,
     "CASPT3 (No IPEA)": 7.73,
     "SC-NEVPT2": 7.88,
-    "PC-NEVPT2": 7.83
+    "PC-NEVPT2": 7.83,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 90.0,
@@ -307,14 +306,14 @@
     "SOS-ADC(2) [QC]": 7.426,
     "ADC(2)": 6.871,
     "ADC(3)": 7.788,
-    "ADC(2.5)": 7.3295
+    "ADC(2.5)": 7.3295,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.6,
@@ -347,14 +346,14 @@
     "CASPT3": 7.48,
     "CASPT3 (No IPEA)": 7.4,
     "SC-NEVPT2": 7.47,
-    "PC-NEVPT2": 7.45
+    "PC-NEVPT2": 7.45,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 90.5,
@@ -380,14 +379,14 @@
     "SOS-ADC(2) [QC]": 7.569,
     "ADC(2)": 6.968,
     "ADC(3)": 7.916,
-    "ADC(2.5)": 7.442
+    "ADC(2.5)": 7.442,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -413,14 +412,14 @@
     "SOS-ADC(2) [QC]": 7.509,
     "ADC(2)": 7.509,
     "ADC(3)": 7.387,
-    "ADC(2.5)": 7.448
+    "ADC(2.5)": 7.448,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.3,
@@ -452,14 +451,14 @@
     "CASPT3": 7.87,
     "CASPT3 (No IPEA)": 7.7,
     "SC-NEVPT2": 7.31,
-    "PC-NEVPT2": 6.97
+    "PC-NEVPT2": 6.97,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 93.1,
@@ -484,14 +483,14 @@
     "SOS-ADC(2) [QC]": 7.606,
     "ADC(2)": 7.618,
     "ADC(3)": 7.459,
-    "ADC(2.5)": 7.5385
+    "ADC(2.5)": 7.5385,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.9,
@@ -516,14 +515,14 @@
     "SOS-ADC(2) [QC]": 7.936,
     "ADC(2)": 7.442,
     "ADC(3)": 8.259,
-    "ADC(2.5)": 7.8505
+    "ADC(2.5)": 7.8505,
+    "Spin": 1
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.5,
@@ -551,14 +550,14 @@
     "CASPT3": 4.29,
     "CASPT3 (No IPEA)": 4.22,
     "SC-NEVPT2": 4.62,
-    "PC-NEVPT2": 4.6
+    "PC-NEVPT2": 4.6,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -586,14 +585,14 @@
     "CASPT3": 4.57,
     "CASPT3 (No IPEA)": 4.55,
     "SC-NEVPT2": 4.6,
-    "PC-NEVPT2": 4.58
+    "PC-NEVPT2": 4.58,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -621,14 +620,14 @@
     "CASPT3": 4.81,
     "CASPT3 (No IPEA)": 4.74,
     "SC-NEVPT2": 4.91,
-    "PC-NEVPT2": 4.88
+    "PC-NEVPT2": 4.88,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -656,14 +655,14 @@
     "CASPT3": 5.09,
     "CASPT3 (No IPEA)": 5.02,
     "SC-NEVPT2": 5.22,
-    "PC-NEVPT2": 5.19
+    "PC-NEVPT2": 5.19,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 95.8,
@@ -691,14 +690,14 @@
     "CASPT3": 5.53,
     "CASPT3 (No IPEA)": 5.51,
     "SC-NEVPT2": 5.37,
-    "PC-NEVPT2": 5.33
+    "PC-NEVPT2": 5.33,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -726,14 +725,14 @@
     "CASPT3": 6.43,
     "CASPT3 (No IPEA)": 6.35,
     "SC-NEVPT2": 6.37,
-    "PC-NEVPT2": 6.29
+    "PC-NEVPT2": 6.29,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 95.9,
@@ -754,14 +753,14 @@
     "SOS-ADC(2) [QC]": 6.822,
     "ADC(2)": 6.285,
     "ADC(3)": 7.091,
-    "ADC(2.5)": 6.688000000000001
+    "ADC(2.5)": 6.688000000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Pyridine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -782,6 +781,7 @@
     "SOS-ADC(2) [QC]": 6.778,
     "ADC(2)": 6.789,
     "ADC(3)": 6.59,
-    "ADC(2.5)": 6.6895
+    "ADC(2.5)": 6.6895,
+    "Spin": 3
   }
 ]

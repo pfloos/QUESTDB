@@ -4,7 +4,6 @@
     "Size": 5,
     "Group": 35,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 93.1,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 3.766,
     "ADC(2)": 3.736,
     "ADC(3)": 3.517,
-    "ADC(2.5)": 3.6265
+    "ADC(2.5)": 3.6265,
+    "Spin": 1
   },
   {
     "Molecule": "Difluorodiazirine",
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.4,
@@ -62,14 +61,14 @@
     "SOS-ADC(2) [QC]": 7.097,
     "ADC(2)": 7.189,
     "ADC(3)": 6.699,
-    "ADC(2.5)": 6.944
+    "ADC(2.5)": 6.944,
+    "Spin": 1
   },
   {
     "Molecule": "Difluorodiazirine",
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 93.3,
@@ -95,14 +94,14 @@
     "SOS-ADC(2) [QC]": 8.774,
     "ADC(2)": 8.419,
     "ADC(3)": 8.503,
-    "ADC(2.5)": 8.461
+    "ADC(2.5)": 8.461,
+    "Spin": 1
   },
   {
     "Molecule": "Difluorodiazirine",
     "Size": 5,
     "Group": 35,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -123,14 +122,14 @@
     "SOS-ADC(2) [QC]": 3.142,
     "ADC(2)": 3.012,
     "ADC(3)": 2.772,
-    "ADC(2.5)": 2.892
+    "ADC(2.5)": 2.892,
+    "Spin": 3
   },
   {
     "Molecule": "Difluorodiazirine",
     "Size": 5,
     "Group": 35,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
@@ -151,14 +150,14 @@
     "SOS-ADC(2) [QC]": 5.413,
     "ADC(2)": 5.719,
     "ADC(3)": 5.038,
-    "ADC(2.5)": 5.378500000000001
+    "ADC(2.5)": 5.378500000000001,
+    "Spin": 3
   },
   {
     "Molecule": "Difluorodiazirine",
     "Size": 5,
     "Group": 35,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -179,6 +178,7 @@
     "SOS-ADC(2) [QC]": 6.048,
     "ADC(2)": 5.968,
     "ADC(3)": 5.47,
-    "ADC(2.5)": 5.718999999999999
+    "ADC(2.5)": 5.718999999999999,
+    "Spin": 3
   }
 ]

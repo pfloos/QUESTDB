@@ -4,7 +4,6 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1B",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.1,
@@ -25,14 +24,14 @@
     "SOS-ADC(2) [QC]": 3.746,
     "ADC(2)": 3.637,
     "ADC(3)": 4.001,
-    "ADC(2.5)": 3.819
+    "ADC(2.5)": 3.819,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^1A",
-    "spin": 1,
     "V/R": "V",
     "%T1 [CC3/AVDZ]": 86.7,
     "f [LR-CCSD/AVTZ]": 0.0,
@@ -52,14 +51,14 @@
     "SOS-ADC(2) [QC]": 4.412,
     "ADC(2)": 4.162,
     "ADC(3)": 4.375,
-    "ADC(2.5)": 4.2684999999999995
+    "ADC(2.5)": 4.2684999999999995,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^1A",
-    "spin": 1,
     "V/R": "V",
     "%T1 [CC3/AVDZ]": 87.0,
     "f [LR-CCSD/AVTZ]": 0.0,
@@ -79,14 +78,14 @@
     "SOS-ADC(2) [QC]": 4.643,
     "ADC(2)": 4.562,
     "ADC(3)": 4.865,
-    "ADC(2.5)": 4.7135
+    "ADC(2.5)": 4.7135,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^1B",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 84.4,
@@ -107,14 +106,14 @@
     "SOS-ADC(2) [QC]": 4.699,
     "ADC(2)": 4.472,
     "ADC(3)": 5.087,
-    "ADC(2.5)": 4.7795000000000005
+    "ADC(2.5)": 4.7795000000000005,
+    "Spin": 1
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^3B",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.0,
@@ -130,14 +129,14 @@
     "SOS-ADC(2) [QC]": 3.086,
     "ADC(2)": 2.95,
     "ADC(3)": 2.888,
-    "ADC(2.5)": 2.919
+    "ADC(2.5)": 2.919,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.7,
@@ -153,14 +152,14 @@
     "SOS-ADC(2) [QC]": 3.689,
     "ADC(2)": 3.648,
     "ADC(3)": 3.356,
-    "ADC(2.5)": 3.502
+    "ADC(2.5)": 3.502,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^3A",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.4,
@@ -176,14 +175,14 @@
     "SOS-ADC(2) [QC]": 4.366,
     "ADC(2)": 4.07,
     "ADC(3)": 4.662,
-    "ADC(2.5)": 4.366
+    "ADC(2.5)": 4.366,
+    "Spin": 3
   },
   {
     "Molecule": "Bimane (Anti)",
     "Size": 10,
     "Group": 1016,
     "State": "^3B",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.4,
@@ -199,6 +198,7 @@
     "SOS-ADC(2) [QC]": 4.572,
     "ADC(2)": 4.299,
     "ADC(3)": 4.84,
-    "ADC(2.5)": 4.5695
+    "ADC(2.5)": 4.5695,
+    "Spin": 3
   }
 ]

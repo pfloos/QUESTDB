@@ -4,7 +4,6 @@
     "Size": 2,
     "Group": 12,
     "State": "^1A",
-    "spin": 1,
     "V/R": "V",
     "Type": "nsi",
     "%T1 [CC3/AVTZ]": 93.2,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 6.116,
     "ADC(2)": 6.061,
     "ADC(3)": 5.919,
-    "ADC(2.5)": 5.99
+    "ADC(2.5)": 5.99,
+    "Spin": 1
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^1B",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 92.2,
@@ -63,14 +62,14 @@
     "SOS-ADC(2) [QC]": 6.889,
     "ADC(2)": 6.589,
     "ADC(3)": 7.377,
-    "ADC(2.5)": 6.9830000000000005
+    "ADC(2.5)": 6.9830000000000005,
+    "Spin": 1
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^1B",
-    "spin": 1,
     "V/R": "V",
     "Type": "nsi",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -96,14 +95,14 @@
     "SOS-ADC(2) [QC]": 7.257,
     "ADC(2)": 7.199,
     "ADC(3)": 7.02,
-    "ADC(2.5)": 7.1095
+    "ADC(2.5)": 7.1095,
+    "Spin": 1
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^1A",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 92.7,
@@ -129,14 +128,14 @@
     "SOS-ADC(2) [QC]": 7.836,
     "ADC(2)": 7.572,
     "ADC(3)": 8.264,
-    "ADC(2.5)": 7.917999999999999
+    "ADC(2.5)": 7.917999999999999,
+    "Spin": 1
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^3A",
-    "spin": 3,
     "V/R": "V",
     "Type": "nsi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -158,14 +157,14 @@
     "SOS-ADC(2) [QC]": 5.193,
     "ADC(2)": 5.065,
     "ADC(3)": 4.859,
-    "ADC(2.5)": 4.962
+    "ADC(2.5)": 4.962,
+    "Spin": 3
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^3B",
-    "spin": 3,
     "V/R": "V",
     "Type": "nsi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -187,14 +186,14 @@
     "SOS-ADC(2) [QC]": 6.202,
     "ADC(2)": 6.106,
     "ADC(3)": 5.877,
-    "ADC(2.5)": 5.9915
+    "ADC(2.5)": 5.9915,
+    "Spin": 3
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^3B",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -216,14 +215,14 @@
     "SOS-ADC(2) [QC]": 6.766,
     "ADC(2)": 6.441,
     "ADC(3)": 7.124,
-    "ADC(2.5)": 6.7825
+    "ADC(2.5)": 6.7825,
+    "Spin": 3
   },
   {
     "Molecule": "Hydrogen peroxide",
     "Size": 2,
     "Group": 12,
     "State": "^3A",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -245,6 +244,7 @@
     "SOS-ADC(2) [QC]": 7.658,
     "ADC(2)": 7.376,
     "ADC(3)": 7.966,
-    "ADC(2.5)": 7.671
+    "ADC(2.5)": 7.671,
+    "Spin": 3
   }
 ]

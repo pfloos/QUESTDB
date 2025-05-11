@@ -4,7 +4,6 @@
     "Size": 1,
     "Group": 12,
     "State": "^1\\Pi",
-    "spin": 1,
     "V/R": "V",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 95.0,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 2.842,
     "ADC(2)": 2.821,
     "ADC(3)": 2.64,
-    "ADC(2.5)": 2.7305
+    "ADC(2.5)": 2.7305,
+    "Spin": 1
   },
   {
     "Molecule": "BH",
     "Size": 1,
     "Group": 12,
     "State": "^1\\Pi [F]",
-    "spin": 1,
     "V/R": "V",
     "Type": "n.d.",
     "Special ?": "FL",
@@ -64,6 +63,7 @@
     "SOS-ADC(2) [QC]": 2.837,
     "ADC(2)": 2.815,
     "ADC(3)": 2.637,
-    "ADC(2.5)": 2.726
+    "ADC(2.5)": 2.726,
+    "Spin": 1
   }
 ]

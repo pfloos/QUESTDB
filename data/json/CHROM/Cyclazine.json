@@ -4,7 +4,6 @@
     "Size": 13,
     "Group": 1016,
     "State": "^1A_2'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.2,
@@ -64,14 +63,14 @@
     "BSE/G0W0@HF": 1.360086,
     "BSE/evGW@PBE0": 0.880916,
     "BSE/evGW@CAM-B3LYP": 0.934051,
-    "BSE/evGW@HF": 1.313765
+    "BSE/evGW@HF": 1.313765,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^1E'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 84.3,
@@ -132,14 +131,14 @@
     "BSE/G0W0@HF": 4.084263,
     "BSE/evGW@PBE0": 2.909829,
     "BSE/evGW@CAM-B3LYP": 2.936035,
-    "BSE/evGW@HF": 4.041136
+    "BSE/evGW@HF": 4.041136,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^1A_1\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 91.2,
     "TBE/AVTZ": 3.163,
@@ -198,14 +197,14 @@
     "BSE/G0W0@HF": 3.776554,
     "BSE/evGW@PBE0": 3.020057,
     "BSE/evGW@CAM-B3LYP": 3.153416,
-    "BSE/evGW@HF": 3.749222
+    "BSE/evGW@HF": 3.749222,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^1E\"",
-    "spin": 1,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 91.2,
     "TBE/AVTZ": 3.691,
@@ -264,14 +263,14 @@
     "BSE/G0W0@HF": 4.229835,
     "BSE/evGW@PBE0": 3.513367,
     "BSE/evGW@CAM-B3LYP": 3.669289,
-    "BSE/evGW@HF": 4.202644
+    "BSE/evGW@HF": 4.202644,
+    "Spin": 1
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3A_2'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.1,
@@ -319,14 +318,14 @@
     "BSE/G0W0@HF": 1.10136,
     "BSE/evGW@PBE0": 0.622115,
     "BSE/evGW@CAM-B3LYP": 0.6786,
-    "BSE/evGW@HF": 1.06093
+    "BSE/evGW@HF": 1.06093,
+    "Spin": 3
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3E'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.4,
@@ -374,14 +373,14 @@
     "BSE/G0W0@HF": 2.981282,
     "BSE/evGW@PBE0": 1.591809,
     "BSE/evGW@CAM-B3LYP": 1.678572,
-    "BSE/evGW@HF": 2.957723
+    "BSE/evGW@HF": 2.957723,
+    "Spin": 3
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3A_1\"",
-    "spin": 3,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 96.8,
     "TBE/AVTZ": 3.1690000000000005,
@@ -428,14 +427,14 @@
     "BSE/G0W0@HF": 3.740525,
     "BSE/evGW@PBE0": 2.957482,
     "BSE/evGW@CAM-B3LYP": 3.098824,
-    "BSE/evGW@HF": 3.713808
+    "BSE/evGW@HF": 3.713808,
+    "Spin": 3
   },
   {
     "Molecule": "Cyclazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3E\"",
-    "spin": 3,
     "V/R": "R",
     "%T1 [CC3/AVDZ]": 96.8,
     "TBE/AVTZ": 3.693,
@@ -482,6 +481,7 @@
     "BSE/G0W0@HF": 4.209774,
     "BSE/evGW@PBE0": 3.461691,
     "BSE/evGW@CAM-B3LYP": 3.628789,
-    "BSE/evGW@HF": 4.182994
+    "BSE/evGW@HF": 4.182994,
+    "Spin": 3
   }
 ]

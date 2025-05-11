@@ -33,7 +33,7 @@ def analyze_data(data: List[dict]) -> dict:
     unique_molecules = set()
 
     for entry in data:
-        multiplicity_value = entry.get("spin")
+        multiplicity_value = entry.get("Spin")
         transition_type = entry.get("Type", "").strip().lower()
         vr_value = entry.get("V/R", "").strip().upper()
         group = str(entry.get("Group", "unknown"))

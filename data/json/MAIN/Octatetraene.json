@@ -4,7 +4,6 @@
     "Size": 8,
     "Group": 69,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -27,14 +26,14 @@
     "SOS-ADC(2) [QC]": 4.624,
     "ADC(2)": 4.519,
     "ADC(3)": 4.525,
-    "ADC(2.5)": 4.522
+    "ADC(2.5)": 4.522,
+    "Spin": 1
   },
   {
     "Molecule": "Octatetraene",
     "Size": 8,
     "Group": 69,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -56,14 +55,14 @@
     "SOS-ADC(2) [QC]": 6.077,
     "ADC(2)": 5.874,
     "ADC(3)": 3.912,
-    "ADC(2.5)": 4.893
+    "ADC(2.5)": 4.893,
+    "Spin": 1
   },
   {
     "Molecule": "Octatetraene",
     "Size": 8,
     "Group": 69,
     "State": "^3B_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -82,14 +81,14 @@
     "SOS-ADC(2) [QC]": 2.523,
     "ADC(2)": 2.492,
     "ADC(3)": 2.061,
-    "ADC(2.5)": 2.2765
+    "ADC(2.5)": 2.2765,
+    "Spin": 3
   },
   {
     "Molecule": "Octatetraene",
     "Size": 8,
     "Group": 69,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -108,6 +107,7 @@
     "SOS-ADC(2) [QC]": 3.715,
     "ADC(2)": 3.814,
     "ADC(3)": 3.416,
-    "ADC(2.5)": 3.615
+    "ADC(2.5)": 3.615,
+    "Spin": 3
   }
 ]

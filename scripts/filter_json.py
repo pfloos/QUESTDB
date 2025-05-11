@@ -47,7 +47,7 @@ def filter_excitations(
     total = len(data)
 
     def matches(entry):
-        if spin is not None and entry.get("spin") != spin:
+        if spin is not None and entry.get("Spin") != spin:
             return False
         if vr is not None and entry.get("V/R") != vr:
             return False
@@ -91,7 +91,9 @@ def filter_excitations(
     distinct_molecules = len(set(entry.get("Molecule", "unknown") for entry in filtered))
     summary.add_row("🧪 Distinct molecules", str(distinct_molecules))
 
-    if spin: summary.add_row("🌀 Spin", f"{'Singlet' if spin == 1 else 'Triplet'}")
+    if spin:
+        spin_names = {1: "Singlet", 2: "Doublet", 3: "Triplet", 4: "Quartet"}
+        summary.add_row("🌀 Spin", spin_names.get(spin, f"Spin {spin}"))
     if vr: summary.add_row("🧭 V/R", "Valence" if vr == "V" else "Rydberg")
     if safe: summary.add_row("🔐 Safe", "Yes" if safe == "Y" else "No")
     if groups: summary.add_row("🧬 Groups", ", ".join(map(str, groups)))
@@ -101,6 +103,8 @@ def filter_excitations(
     if max_size: summary.add_row("📏 Max Size", str(max_size))
 
     console.print(summary)
+
+    spin_labels = {1: "Singlet", 2: "Doublet", 3: "Triplet", 4: "Quartet"}
 
     def print_breakdown(title, counter, icon):
         if counter:
@@ -114,6 +118,26 @@ def filter_excitations(
     print_breakdown("Breakdown by Group", Counter(entry.get("Group") for entry in filtered), "🧬")
     print_breakdown("Breakdown by Type", Counter(entry.get("Type") for entry in filtered), "🎯")
 
+    spin_counter = Counter()
+    for entry in filtered:
+        try:
+            spin_value = int(entry.get("Spin"))
+            label = spin_labels.get(spin_value, f"Spin {spin_value}")
+            spin_counter[label] += 1
+        except (ValueError, TypeError):
+            spin_counter["Unknown"] += 1
+
+    print_breakdown("Breakdown by Spin", spin_counter, "🌀")
+
+    nature_labels = {"V": "Valence", "R": "Rydberg", "M": "Mixed"}
+
+    nature_counter = Counter()
+    for entry in filtered:
+        key = entry.get("V/R", "").strip().upper()
+        label = nature_labels.get(key, "Unknown")
+        nature_counter[label] += 1
+ 
+    print_breakdown("Breakdown by Nature", nature_counter, "🧭")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="✨ Fancy filter for QUEST excitations.")

@@ -4,7 +4,6 @@
     "Size": 11,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.3,
@@ -67,14 +66,14 @@
     "BSE/G0W0@HF": 4.778498,
     "BSE/evGW@PBE0": 4.195734,
     "BSE/evGW@CAM-B3LYP": 4.262009,
-    "BSE/evGW@HF": 4.698727
+    "BSE/evGW@HF": 4.698727,
+    "Spin": 1
   },
   {
     "Molecule": "Coumarin",
     "Size": 11,
     "Group": 1016,
     "State": "^1A\"",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 85.3,
@@ -137,14 +136,14 @@
     "BSE/G0W0@HF": 5.69112,
     "BSE/evGW@PBE0": 4.61928,
     "BSE/evGW@CAM-B3LYP": 4.697055,
-    "BSE/evGW@HF": 5.466625
+    "BSE/evGW@HF": 5.466625,
+    "Spin": 1
   },
   {
     "Molecule": "Coumarin",
     "Size": 11,
     "Group": 1016,
     "State": "^1A'",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.1,
@@ -207,14 +206,14 @@
     "BSE/G0W0@HF": 5.307729,
     "BSE/evGW@PBE0": 4.725696,
     "BSE/evGW@CAM-B3LYP": 4.774406,
-    "BSE/evGW@HF": 5.224648
+    "BSE/evGW@HF": 5.224648,
+    "Spin": 1
   },
   {
     "Molecule": "Coumarin",
     "Size": 11,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.7,
@@ -263,14 +262,14 @@
     "BSE/G0W0@HF": 3.199153,
     "BSE/evGW@PBE0": 2.542051,
     "BSE/evGW@CAM-B3LYP": 2.62066,
-    "BSE/evGW@HF": 3.17001
+    "BSE/evGW@HF": 3.17001,
+    "Spin": 3
   },
   {
     "Molecule": "Coumarin",
     "Size": 11,
     "Group": 1016,
     "State": "^3A'",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.2,
@@ -319,14 +318,14 @@
     "BSE/G0W0@HF": 4.234861,
     "BSE/evGW@PBE0": 3.438389,
     "BSE/evGW@CAM-B3LYP": 3.534461,
-    "BSE/evGW@HF": 4.171167
+    "BSE/evGW@HF": 4.171167,
+    "Spin": 3
   },
   {
     "Molecule": "Coumarin",
     "Size": 11,
     "Group": 1016,
     "State": "^3A\"",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.5,
@@ -375,6 +374,7 @@
     "BSE/G0W0@HF": 5.310193,
     "BSE/evGW@PBE0": 4.109911,
     "BSE/evGW@CAM-B3LYP": 4.203094,
-    "BSE/evGW@HF": 5.099092
+    "BSE/evGW@HF": 5.099092,
+    "Spin": 3
   }
 ]

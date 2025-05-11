@@ -4,7 +4,6 @@
     "Size": 4,
     "Group": 35,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 93.3,
@@ -37,14 +36,14 @@
     "CASPT3": 6.72,
     "CASPT3 (No IPEA)": 6.65,
     "SC-NEVPT2": 6.72,
-    "PC-NEVPT2": 6.68
+    "PC-NEVPT2": 6.68,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 94.1,
@@ -76,14 +75,14 @@
     "CASPT3": 6.43,
     "CASPT3 (No IPEA)": 6.38,
     "SC-NEVPT2": 6.48,
-    "PC-NEVPT2": 6.44
+    "PC-NEVPT2": 6.44,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "pd",
@@ -116,14 +115,14 @@
     "CASPT3": 6.73,
     "CASPT3 (No IPEA)": 6.66,
     "SC-NEVPT2": 6.78,
-    "PC-NEVPT2": 6.7
+    "PC-NEVPT2": 6.7,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 94.1,
@@ -156,14 +155,14 @@
     "CASPT3": 6.7,
     "CASPT3 (No IPEA)": 6.67,
     "SC-NEVPT2": 6.81,
-    "PC-NEVPT2": 6.84
+    "PC-NEVPT2": 6.84,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 94.1,
@@ -196,14 +195,14 @@
     "CASPT3": 6.9,
     "CASPT3 (No IPEA)": 6.86,
     "SC-NEVPT2": 7.0,
-    "PC-NEVPT2": 7.02
+    "PC-NEVPT2": 7.02,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3d",
     "%T1 [CC3/AVTZ]": 94.2,
@@ -228,14 +227,14 @@
     "SOS-ADC(2) [QC]": 7.643,
     "ADC(2)": 7.482,
     "ADC(3)": 7.331,
-    "ADC(2.5)": 7.4065
+    "ADC(2.5)": 7.4065,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3d",
     "%T1 [CC3/AVTZ]": 94.5,
@@ -260,14 +259,14 @@
     "SOS-ADC(2) [QC]": 7.698,
     "ADC(2)": 7.538,
     "ADC(3)": 7.395,
-    "ADC(2.5)": 7.4665
+    "ADC(2.5)": 7.4665,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.8,
@@ -300,14 +299,14 @@
     "CASPT3": 7.62,
     "CASPT3 (No IPEA)": 7.54,
     "SC-NEVPT2": 7.53,
-    "PC-NEVPT2": 7.45
+    "PC-NEVPT2": 7.45,
+    "Spin": 1
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^3B_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -335,14 +334,14 @@
     "CASPT3": 3.4,
     "CASPT3 (No IPEA)": 3.35,
     "SC-NEVPT2": 3.43,
-    "PC-NEVPT2": 3.4
+    "PC-NEVPT2": 3.4,
+    "Spin": 3
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.7,
@@ -370,14 +369,14 @@
     "CASPT3": 5.29,
     "CASPT3 (No IPEA)": 5.19,
     "SC-NEVPT2": 5.36,
-    "PC-NEVPT2": 5.3
+    "PC-NEVPT2": 5.3,
+    "Spin": 3
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^3B_g",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -405,14 +404,14 @@
     "CASPT3": 6.38,
     "CASPT3 (No IPEA)": 6.33,
     "SC-NEVPT2": 6.43,
-    "PC-NEVPT2": 6.38
+    "PC-NEVPT2": 6.38,
+    "Spin": 3
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -433,14 +432,14 @@
     "SOS-ADC(2) [QC]": 6.765,
     "ADC(2)": 6.603,
     "ADC(3)": 6.413,
-    "ADC(2.5)": 6.508
+    "ADC(2.5)": 6.508,
+    "Spin": 3
   },
   {
     "Molecule": "Butadiene",
     "Size": 4,
     "Group": 35,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -461,6 +460,7 @@
     "SOS-ADC(2) [QC]": 6.874,
     "ADC(2)": 6.696,
     "ADC(3)": 6.52,
-    "ADC(2.5)": 6.608
+    "ADC(2.5)": 6.608,
+    "Spin": 3
   }
 ]

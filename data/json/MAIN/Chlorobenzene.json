@@ -4,7 +4,6 @@
     "Size": 7,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.3,
@@ -27,14 +26,14 @@
     "SOS-ADC(2) [QC]": 4.773,
     "ADC(2)": 5.117,
     "ADC(3)": 4.886,
-    "ADC(2.5)": 5.0015
+    "ADC(2.5)": 5.0015,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -57,14 +56,14 @@
     "SOS-ADC(2) [QC]": 6.149,
     "ADC(2)": 6.175,
     "ADC(3)": 6.043,
-    "ADC(2.5)": 6.109
+    "ADC(2.5)": 6.109,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -87,14 +86,14 @@
     "SOS-ADC(2) [QC]": 6.475,
     "ADC(2)": 6.329,
     "ADC(3)": 6.211,
-    "ADC(2.5)": 6.27
+    "ADC(2.5)": 6.27,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "M",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -116,14 +115,14 @@
     "SOS-ADC(2) [QC]": 7.078,
     "ADC(2)": 6.782,
     "ADC(3)": 6.636,
-    "ADC(2.5)": 6.709
+    "ADC(2.5)": 6.709,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -145,14 +144,14 @@
     "SOS-ADC(2) [QC]": 6.868,
     "ADC(2)": 6.793,
     "ADC(3)": 6.637,
-    "ADC(2.5)": 6.715
+    "ADC(2.5)": 6.715,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -174,14 +173,14 @@
     "SOS-ADC(2) [QC]": 7.134,
     "ADC(2)": 6.885,
     "ADC(3)": 6.837,
-    "ADC(2.5)": 6.861
+    "ADC(2.5)": 6.861,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.6,
@@ -203,14 +202,14 @@
     "SOS-ADC(2) [QC]": 7.145,
     "ADC(2)": 6.976,
     "ADC(3)": 6.931,
-    "ADC(2.5)": 6.9535
+    "ADC(2.5)": 6.9535,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -232,14 +231,14 @@
     "SOS-ADC(2) [QC]": 7.078,
     "ADC(2)": 6.975,
     "ADC(3)": 6.904,
-    "ADC(2.5)": 6.9395
+    "ADC(2.5)": 6.9395,
+    "Spin": 1
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -258,14 +257,14 @@
     "SOS-ADC(2) [QC]": 4.121,
     "ADC(2)": 4.267,
     "ADC(3)": 3.852,
-    "ADC(2.5)": 4.0595
+    "ADC(2.5)": 4.0595,
+    "Spin": 3
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -284,14 +283,14 @@
     "SOS-ADC(2) [QC]": 4.716,
     "ADC(2)": 4.917,
     "ADC(3)": 4.473,
-    "ADC(2.5)": 4.695
+    "ADC(2.5)": 4.695,
+    "Spin": 3
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -310,14 +309,14 @@
     "SOS-ADC(2) [QC]": 4.751,
     "ADC(2)": 4.977,
     "ADC(3)": 4.514,
-    "ADC(2.5)": 4.7455
+    "ADC(2.5)": 4.7455,
+    "Spin": 3
   },
   {
     "Molecule": "Chlorobenzene",
     "Size": 7,
     "Group": 69,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -336,6 +335,7 @@
     "SOS-ADC(2) [QC]": 5.73,
     "ADC(2)": 5.783,
     "ADC(3)": 5.445,
-    "ADC(2.5)": 5.614000000000001
+    "ADC(2.5)": 5.614000000000001,
+    "Spin": 3
   }
 ]

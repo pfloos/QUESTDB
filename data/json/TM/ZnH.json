@@ -2,7 +2,6 @@
   {
     "Molecule": "ZnH",
     "State": "^2Pi",
-    "spin": 2,
     "Type": "4s4p",
     "TBE/AVTZ": 2.882,
     "Method": "exFCI/AVTZ",
@@ -10,12 +9,12 @@
     "CC3": 2.874,
     "CCSDT": 2.846,
     "CASPT2": 2.862,
-    "CASPT2 (No IPEA)": 2.838
+    "CASPT2 (No IPEA)": 2.838,
+    "Spin": 2
   },
   {
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
-    "spin": 2,
     "Type": "si4s",
     "TBE/AVTZ": 4.482,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -23,12 +22,12 @@
     "CC3": 4.499,
     "CCSDT": 4.478,
     "CASPT2": 4.51,
-    "CASPT2 (No IPEA)": 4.397
+    "CASPT2 (No IPEA)": 4.397,
+    "Spin": 2
   },
   {
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
-    "spin": 2,
     "Type": "4s5s",
     "TBE/AVTZ": 5.115,
     "Method": "exFCI/AVTZ",
@@ -36,12 +35,12 @@
     "CC3": 5.097,
     "CCSDT": 5.056,
     "CASPT2": 5.097,
-    "CASPT2 (No IPEA)": 5.089
+    "CASPT2 (No IPEA)": 5.089,
+    "Spin": 2
   },
   {
     "Molecule": "ZnH",
     "State": "^2Sigma^+",
-    "spin": 2,
     "Type": "4s5p",
     "TBE/AVTZ": 5.663,
     "Method": "exFCI/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -49,12 +48,12 @@
     "CC3": 5.691,
     "CCSDT": 5.647,
     "CASPT2": 5.598,
-    "CASPT2 (No IPEA)": 5.548
+    "CASPT2 (No IPEA)": 5.548,
+    "Spin": 2
   },
   {
     "Molecule": "ZnH",
     "State": "^2Pi",
-    "spin": 2,
     "Type": "4s5p",
     "TBE/AVTZ": 6.126,
     "Method": "exFCI/AVTZ",
@@ -62,6 +61,7 @@
     "CC3": 6.147,
     "CCSDT": 6.1,
     "CASPT2": 6.106,
-    "CASPT2 (No IPEA)": 6.135
+    "CASPT2 (No IPEA)": 6.135,
+    "Spin": 2
   }
 ]

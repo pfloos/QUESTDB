@@ -4,7 +4,6 @@
     "Size": 8,
     "Group": 69,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 93.4,
@@ -27,14 +26,14 @@
     "SOS-ADC(2) [QC]": 5.456,
     "ADC(2)": 5.483,
     "ADC(3)": 5.285,
-    "ADC(2.5)": 5.384
+    "ADC(2.5)": 5.384,
+    "Spin": 1
   },
   {
     "Molecule": "Furofuran",
     "Size": 8,
     "Group": 69,
     "State": "^1B_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -56,14 +55,14 @@
     "SOS-ADC(2) [QC]": 5.425,
     "ADC(2)": 5.525,
     "ADC(3)": 5.27,
-    "ADC(2.5)": 5.3975
+    "ADC(2.5)": 5.3975,
+    "Spin": 1
   },
   {
     "Molecule": "Furofuran",
     "Size": 8,
     "Group": 69,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 93.4,
@@ -85,14 +84,14 @@
     "SOS-ADC(2) [QC]": 5.968,
     "ADC(2)": 5.871,
     "ADC(3)": 5.71,
-    "ADC(2.5)": 5.7905
+    "ADC(2.5)": 5.7905,
+    "Spin": 1
   },
   {
     "Molecule": "Furofuran",
     "Size": 8,
     "Group": 69,
     "State": "^1B_g",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 93.1,
@@ -114,14 +113,14 @@
     "SOS-ADC(2) [QC]": 6.135,
     "ADC(2)": 6.024,
     "ADC(3)": 5.863,
-    "ADC(2.5)": 5.9435
+    "ADC(2.5)": 5.9435,
+    "Spin": 1
   },
   {
     "Molecule": "Furofuran",
     "Size": 8,
     "Group": 69,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 82.6,
@@ -142,14 +141,14 @@
     "SOS-ADC(2) [QC]": 6.216,
     "ADC(2)": 6.319,
     "ADC(3)": 5.652,
-    "ADC(2.5)": 5.9855
+    "ADC(2.5)": 5.9855,
+    "Spin": 1
   },
   {
     "Molecule": "Furofuran",
     "Size": 8,
     "Group": 69,
     "State": "^3B_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -168,14 +167,14 @@
     "SOS-ADC(2) [QC]": 3.644,
     "ADC(2)": 3.773,
     "ADC(3)": 3.234,
-    "ADC(2.5)": 3.5035
+    "ADC(2.5)": 3.5035,
+    "Spin": 3
   },
   {
     "Molecule": "Furofuran",
     "Size": 8,
     "Group": 69,
     "State": "^3A_g",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -194,6 +193,7 @@
     "SOS-ADC(2) [QC]": 4.826,
     "ADC(2)": 5.009,
     "ADC(3)": 4.569,
-    "ADC(2.5)": 4.789
+    "ADC(2.5)": 4.789,
+    "Spin": 3
   }
 ]

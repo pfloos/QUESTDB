@@ -4,7 +4,6 @@
     "Size": 3,
     "Group": 35,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -30,14 +29,14 @@
     "SOS-ADC(2) [QC]": 4.143,
     "ADC(2)": 4.209,
     "ADC(3)": 3.821,
-    "ADC(2.5)": 4.015
+    "ADC(2.5)": 4.015,
+    "Spin": 1
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "spi",
     "%T1 [CC3/AVTZ]": 90.9,
@@ -62,14 +61,14 @@
     "SOS-ADC(2) [QC]": 7.387,
     "ADC(2)": 7.466,
     "ADC(3)": 6.999,
-    "ADC(2.5)": 7.2325
+    "ADC(2.5)": 7.2325,
+    "Spin": 1
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 93.5,
@@ -95,14 +94,14 @@
     "SOS-ADC(2) [QC]": 7.579,
     "ADC(2)": 7.33,
     "ADC(3)": 7.339,
-    "ADC(2.5)": 7.3345
+    "ADC(2.5)": 7.3345,
+    "Spin": 1
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 93.8,
@@ -128,14 +127,14 @@
     "SOS-ADC(2) [QC]": 8.074,
     "ADC(2)": 7.873,
     "ADC(3)": 7.967,
-    "ADC(2.5)": 7.92
+    "ADC(2.5)": 7.92,
+    "Spin": 1
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^3B_1",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -157,14 +156,14 @@
     "SOS-ADC(2) [QC]": 3.596,
     "ADC(2)": 3.545,
     "ADC(3)": 3.197,
-    "ADC(2.5)": 3.371
+    "ADC(2.5)": 3.371,
+    "Spin": 3
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^3B_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.8,
@@ -186,14 +185,14 @@
     "SOS-ADC(2) [QC]": 5.137,
     "ADC(2)": 5.325,
     "ADC(3)": 4.645,
-    "ADC(2.5)": 4.984999999999999
+    "ADC(2.5)": 4.984999999999999,
+    "Spin": 3
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^3A_2",
-    "spin": 3,
     "V/R": "V",
     "Type": "spi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -215,14 +214,14 @@
     "SOS-ADC(2) [QC]": 6.374,
     "ADC(2)": 6.276,
     "ADC(3)": 5.801,
-    "ADC(2.5)": 6.0385
+    "ADC(2.5)": 6.0385,
+    "Spin": 3
   },
   {
     "Molecule": "Diazirine",
     "Size": 3,
     "Group": 35,
     "State": "^3A_1",
-    "spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -244,6 +243,7 @@
     "SOS-ADC(2) [QC]": 6.847,
     "ADC(2)": 6.774,
     "ADC(3)": 6.679,
-    "ADC(2.5)": 6.7265
+    "ADC(2.5)": 6.7265,
+    "Spin": 3
   }
 ]

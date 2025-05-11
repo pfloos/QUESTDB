@@ -4,7 +4,6 @@
     "Size": 11,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "f [LR-CC3/AVTZ]": "n.d",
@@ -25,14 +24,14 @@
     "SOS-ADC(2) [QC]": 4.799,
     "ADC(2)": 5.224,
     "ADC(3)": 5.0,
-    "ADC(2.5)": 5.112
+    "ADC(2.5)": 5.112,
+    "Spin": 1
   },
   {
     "Molecule": "Phenyl-pyrrole (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "TBE/AVTZ": 5.524,
@@ -52,14 +51,14 @@
     "SOS-ADC(2) [QC]": 5.625,
     "ADC(2)": 5.553,
     "ADC(3)": 5.461,
-    "ADC(2.5)": 5.507
+    "ADC(2.5)": 5.507,
+    "Spin": 1
   },
   {
     "Molecule": "Phenyl-pyrrole (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -81,14 +80,14 @@
     "SOS-ADC(2) [QC]": 5.835,
     "ADC(2)": 5.576,
     "ADC(3)": 5.736,
-    "ADC(2.5)": 5.656
+    "ADC(2.5)": 5.656,
+    "Spin": 1
   },
   {
     "Molecule": "Phenyl-pyrrole (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -110,14 +109,14 @@
     "SOS-ADC(2) [QC]": 5.793,
     "ADC(2)": 5.675,
     "ADC(3)": 5.761,
-    "ADC(2.5)": 5.718
+    "ADC(2.5)": 5.718,
+    "Spin": 1
   },
   {
     "Molecule": "Phenyl-pyrrole (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "f [LR-CC3/AVTZ]": "n.d",
@@ -138,14 +137,14 @@
     "SOS-ADC(2) [QC]": 6.027,
     "ADC(2)": 6.036,
     "ADC(3)": 5.852,
-    "ADC(2.5)": 5.944
+    "ADC(2.5)": 5.944,
+    "Spin": 1
   },
   {
     "Molecule": "Phenyl-pyrrole (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_2",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -166,14 +165,14 @@
     "SOS-ADC(2) [QC]": 6.031,
     "ADC(2)": 5.817,
     "ADC(3)": 6.155,
-    "ADC(2.5)": 5.986000000000001
+    "ADC(2.5)": 5.986000000000001,
+    "Spin": 1
   },
   {
     "Molecule": "Phenyl-pyrrole (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_1",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -194,6 +193,7 @@
     "SOS-ADC(2) [QC]": 6.253,
     "ADC(2)": 5.992,
     "ADC(3)": 6.367,
-    "ADC(2.5)": 6.1795
+    "ADC(2.5)": 6.1795,
+    "Spin": 1
   }
 ]

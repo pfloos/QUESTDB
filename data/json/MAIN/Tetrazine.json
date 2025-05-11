@@ -4,7 +4,6 @@
     "Size": 6,
     "Group": 69,
     "State": "^1B_{3u}   ",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.8,
@@ -37,14 +36,14 @@
     "CASPT3": 2.54,
     "CASPT3 (No IPEA)": 2.53,
     "SC-NEVPT2": 2.4,
-    "PC-NEVPT2": 2.35
+    "PC-NEVPT2": 2.35,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.9,
@@ -76,14 +75,14 @@
     "CASPT3": 3.77,
     "CASPT3 (No IPEA)": 3.78,
     "SC-NEVPT2": 3.63,
-    "PC-NEVPT2": 3.58
+    "PC-NEVPT2": 3.58,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_g",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -101,14 +100,14 @@
     "CASPT3": 4.917,
     "CASPT3 (No IPEA)": 4.951,
     "SC-NEVPT2": 4.688,
-    "PC-NEVPT2": 4.608
+    "PC-NEVPT2": 4.608,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 83.1,
@@ -140,14 +139,14 @@
     "CASPT3": 5.02,
     "CASPT3 (No IPEA)": 5.0,
     "SC-NEVPT2": 5.02,
-    "PC-NEVPT2": 4.95
+    "PC-NEVPT2": 4.95,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{2u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.4,
@@ -180,14 +179,14 @@
     "CASPT3": 5.26,
     "CASPT3 (No IPEA)": 5.23,
     "SC-NEVPT2": 5.6,
-    "PC-NEVPT2": 5.56
+    "PC-NEVPT2": 5.56,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 81.7,
@@ -219,14 +218,14 @@
     "CASPT3": 5.42,
     "CASPT3 (No IPEA)": 5.38,
     "SC-NEVPT2": 5.68,
-    "PC-NEVPT2": 5.63
+    "PC-NEVPT2": 5.63,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_u",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.7,
@@ -258,14 +257,14 @@
     "CASPT3": 5.8,
     "CASPT3 (No IPEA)": 5.8,
     "SC-NEVPT2": 5.7,
-    "PC-NEVPT2": 5.62
+    "PC-NEVPT2": 5.62,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -283,14 +282,14 @@
     "CASPT3": 6.201,
     "CASPT3 (No IPEA)": 6.215,
     "SC-NEVPT2": 6.2,
-    "PC-NEVPT2": 6.149
+    "PC-NEVPT2": 6.149,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{2g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 80.2,
@@ -322,14 +321,14 @@
     "CASPT3": 6.27,
     "CASPT3 (No IPEA)": 6.28,
     "SC-NEVPT2": 6.21,
-    "PC-NEVPT2": 6.13
+    "PC-NEVPT2": 6.13,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{3g}",
-    "spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -354,14 +353,14 @@
     "SOS-ADC(2) [QC]": 6.64,
     "ADC(2)": 6.103,
     "ADC(3)": 6.745,
-    "ADC(2.5)": 6.4239999999999995
+    "ADC(2.5)": 6.4239999999999995,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{3u}",
-    "spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.2,
@@ -387,14 +386,14 @@
     "SOS-ADC(2) [QC]": 6.89,
     "ADC(2)": 6.716,
     "ADC(3)": 6.868,
-    "ADC(2.5)": 6.792
+    "ADC(2.5)": 6.792,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{1g}",
-    "spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.1,
@@ -426,14 +425,14 @@
     "CASPT3": 6.79,
     "CASPT3 (No IPEA)": 6.72,
     "SC-NEVPT2": 6.83,
-    "PC-NEVPT2": 6.76
+    "PC-NEVPT2": 6.76,
+    "Spin": 1
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{3u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -461,14 +460,14 @@
     "CASPT3": 1.94,
     "CASPT3 (No IPEA)": 1.93,
     "SC-NEVPT2": 1.78,
-    "PC-NEVPT2": 1.73
+    "PC-NEVPT2": 1.73,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.3,
@@ -496,14 +495,14 @@
     "CASPT3": 3.52,
     "CASPT3 (No IPEA)": 3.52,
     "SC-NEVPT2": 3.41,
-    "PC-NEVPT2": 3.36
+    "PC-NEVPT2": 3.36,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{1g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -531,14 +530,14 @@
     "CASPT3": 4.32,
     "CASPT3 (No IPEA)": 4.3,
     "SC-NEVPT2": 4.29,
-    "PC-NEVPT2": 4.24
+    "PC-NEVPT2": 4.24,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{1u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.5,
@@ -566,14 +565,14 @@
     "CASPT3": 4.39,
     "CASPT3 (No IPEA)": 4.34,
     "SC-NEVPT2": 4.7,
-    "PC-NEVPT2": 4.7
+    "PC-NEVPT2": 4.7,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{2u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -601,14 +600,14 @@
     "CASPT3": 4.6,
     "CASPT3 (No IPEA)": 4.55,
     "SC-NEVPT2": 4.61,
-    "PC-NEVPT2": 4.58
+    "PC-NEVPT2": 4.58,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{2g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.4,
@@ -636,14 +635,14 @@
     "CASPT3": 5.1,
     "CASPT3 (No IPEA)": 5.07,
     "SC-NEVPT2": 5.3,
-    "PC-NEVPT2": 5.27
+    "PC-NEVPT2": 5.27,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_u",
-    "spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -671,14 +670,14 @@
     "CASPT3": 5.41,
     "CASPT3 (No IPEA)": 5.41,
     "SC-NEVPT2": 5.22,
-    "PC-NEVPT2": 5.13
+    "PC-NEVPT2": 5.13,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{3g}",
-    "spin": 3,
     "V/R": "V",
     "Type": "dou",
     "Special ?": "gd",
@@ -694,14 +693,14 @@
     "CASPT3": 5.829,
     "CASPT3 (No IPEA)": 5.848,
     "SC-NEVPT2": 5.57,
-    "PC-NEVPT2": 5.506
+    "PC-NEVPT2": 5.506,
+    "Spin": 3
   },
   {
     "Molecule": "Tetrazine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{1u}",
-    "spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -729,6 +728,7 @@
     "CASPT3": 5.44,
     "CASPT3 (No IPEA)": 5.39,
     "SC-NEVPT2": 5.59,
-    "PC-NEVPT2": 5.56
+    "PC-NEVPT2": 5.56,
+    "Spin": 3
   }
 ]
