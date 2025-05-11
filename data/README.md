@@ -103,6 +103,8 @@ The following subsets are available:
 
 Each set is derived from the QUEST *Main* dataset, excluding unsafe and genuine double excitations (resulting in 824 transitions across 119 molecules). Corresponding output files (`diet_subset_*.out`) generated using the `quest-diet.py` script are also provided.
 
+> **Note:** These *diet* subsets are **not unique**. They are generated using a genetic algorithm, which is inherently stochastic — meaning that operations like selection, crossover, and mutation involve random choices. As a result, running the `quest-diet.py` script multiple times (even with the same parameters) can produce different subsets of excitations. This variability allows for exploration of multiple near-optimal solutions, but it also means that results are not guaranteed to be reproducible unless a fixed random seed is explicitly set in the script or passed as a parameter.
+> 
 ## 🧠 Notes
 
 - All data use **atomic units** unless otherwise specified. Notably, excitation energies are in eV.
