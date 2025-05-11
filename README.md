@@ -46,9 +46,7 @@ QUESTDB supports researchers to:
 - **Guide** the development of new computational models.
 - **Facilitate** interpretation of experimental spectra and photochemistry.
 
-> **Note:** QUESTDB is a cornerstone of the **mountaineering strategy** — systematically climbing towards chemically-accurate excited-state data.
-
-Our vision is to establish QUESTDB as a cornerstone resource for benchmarking and training the next generation of AI-driven models in excited-state science.
+> **Note:** Our vision is to establish QUESTDB as a cornerstone resource for benchmarking and training the next generation of AI-driven models in excited-state science.
 
 ---
 
