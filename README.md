@@ -259,3 +259,9 @@ A. Marie, P. Romaniello, X. Blase, and P. F. Loos,
 This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **European Research Council (ERC)** under the **EU Horizon 2020** research and innovation program (Grant Agreement No. **863481**).
 
 ---
+
+## 🖥️ Computation
+
+This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse) under allocations **2018-18005 through 2025-18005** 🧮, as well as resources provided by the **GLICID Computing Facility** 🌐 (Ligerien Group for Intensive Distributed Computing, DOI: [10.60487//glicid](https://doi.org/10.60487//glicid)), located in the **Pays de la Loire** region, France 🇫🇷.
+
+---
