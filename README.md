@@ -17,6 +17,7 @@
 - [🔋 Extension to Charged Excitations](#-extension-to-charged-excitations)
 - [🗂️ Data Structure](#️-data-structure)
 - [💰 Funding](#-funding)
+- [🧮 HPC resources](#-hpc-resources)
 
 ---
 
@@ -52,14 +53,14 @@ QUESTDB supports researchers to:
 
 ## ⚙️ Scripts for Subset Generation and Analysis
 
-This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the statistical properties of the full database (e.g., MAE, RMSE) across different computational methods and excitation categories.
+This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the statistical properties of the full database (e.g., MAE, MSE, and RMSE) across different computational methods and excitation categories.
 
 These tools are especially useful for benchmarking new methods quickly or for training machine learning models when computational cost is a limiting factor.
 
 **Main functionalities include:**
 
 - ✅ Generation of optimized subsets matching the full dataset’s distribution across:
-  - Singlets vs triplets  
+  - Spin states
   - Valence vs Rydberg states  
   - Excitation types (e.g., nπ*, ππ*, etc.)  
   - Molecule sizes or other custom filters  
