@@ -6,6 +6,10 @@
 
 ---
 
+<img src="TOC.jpg"  width="250">
+
+---
+
 ## 📚 Table of Contents
 
 - [✨ Key Features](#-key-features)
