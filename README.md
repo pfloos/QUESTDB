@@ -6,10 +6,6 @@
 
 ---
 
-<img src="TOC.jpg"  width="250">
-
----
-
 ## 📚 Table of Contents
 
 - [✨ Key Features](#-key-features)
@@ -88,6 +84,10 @@ Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` 
 [**The QUEST database of highly-accurate excitation energies**]()  
 P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
 *J. Chem. Theory Comput.* (submitted).  
+
+---
+
+<img src="TOC.jpg"  width="250">
 
 ---
 
