@@ -241,8 +241,8 @@ A. Marie, P. Romaniello, X. Blase, and P. F. Loos,
 - **Excitation Energies, Oscillator Strengths and Other Properties:**  
   `.xls` spreadsheets and `.json` files
 
-- **Scripts to Convert Data**  
-  `.py` scripts to convert data from one format to another
+- **Scripts to Convert and Analyze Data**  
+  `.py` scripts to convert data from one format to another and analyze them.
 
 - **Additional Metadata:**  
   *(Planned for future releases)*
