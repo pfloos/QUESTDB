@@ -3,6 +3,17 @@
 [![Funding](https://img.shields.io/badge/Funding-ERC%20PTEROSOR-orange)](https://lcpq.github.io/PTEROSOR/)
 [![License](https://img.shields.io/badge/License-CC%20BY%20SA%204.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 [![Last Update](https://img.shields.io/github/last-commit/pfloos/QUESTDB?label=last%20update)](https://github.com/pfloos/QUESTDB/commits/main)
+[![GitHub Repo stars](https://img.shields.io/github/stars/pfloos/QUESTDB?style=social)](https://github.com/pfloos/QUESTDB/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/pfloos/QUESTDB?style=social)](https://github.com/pfloos/QUESTDB/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/pfloos/QUESTDB?style=social)](https://github.com/pfloos/QUESTDB/watchers)
+
+[![Issues](https://img.shields.io/github/issues/pfloos/QUESTDB)](https://github.com/pfloos/QUESTDB/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/pfloos/QUESTDB)](https://github.com/pfloos/QUESTDB/pulls)
+[![Commits](https://img.shields.io/github/commit-activity/m/pfloos/QUESTDB)](https://github.com/pfloos/QUESTDB/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/pfloos/QUESTDB)](https://github.com/pfloos/QUESTDB)
+[![Code Size](https://img.shields.io/github/languages/code-size/pfloos/QUESTDB)](https://github.com/pfloos/QUESTDB)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.9999999.svg)](https://doi.org/10.5281/zenodo.9999999)
 
 ---
 
