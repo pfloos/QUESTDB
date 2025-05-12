@@ -104,7 +104,7 @@ This set is derived from the QUEST *Main* dataset, excluding unsafe and genuine 
 
 > **Note 1:** This *diet* subset is **not unique**. It is generated using a genetic algorithm, which is inherently stochastic — meaning that operations like selection, crossover, and mutation involve random choices. As a result, running the `quest-diet.py` script multiple times (even with the same parameters) can produce different subsets of excitations. This variability allows for exploration of multiple near-optimal solutions, but it also means that results are not guaranteed to be reproducible unless a fixed random seed is explicitly set in the script or passed as a parameter.
 
-> **Note 2:** This set is obtained, via a genetic algorithm, by minimizing a score function that includes the MAE, MSE and RSME of single-reference wave function methods. Multireference wave function methods (e.g., CASSCF, CASPT2, and NEVPT2) are excluded. The script can be easily modify to change the targeted methods.
+> **Note 2:** This set was obtained using a genetic algorithm that minimizes a scoring function incorporating the MAE, MSE, and RMSE of single-reference wave function methods. Multireference methods (e.g., CASSCF, CASPT2, and NEVPT2) are excluded. The script can be easily modified to target a different set of methods.
 
 ## 🧠 Notes
 
