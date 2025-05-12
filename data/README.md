@@ -94,18 +94,17 @@ In addition, `.json` files, gathering the same information, are available for ea
 
 ## 🥗 Diet Sets
 
-This directory also includes *diet* subsets (located in the `diet` folder), which are carefully designed to reproduce the key statistical features of larger datasets while restricting data size. These size constraints make the subsets well-suited for use with computationally demanding or inefficient methods, particularly during the early stages of method development.
+This directory also includes an example of *diet* subset (located in the `diet` folder), which is carefully designed to reproduce the key statistical features of larger datasets while restricting data size. These size constraints make the subset well-suited for use with computationally demanding or inefficient methods, particularly during the early stages of method development.
 
-The following subsets are available:
+The following subset is available:
 
 - **50 excitations** across **20 molecules**: `diet_subset_50.json`  
-- **100 excitations** across **40 molecules**: `diet_subset_100.json`  
 
-Each set is derived from the QUEST *Main* dataset, excluding unsafe and genuine double excitations (resulting in 824 transitions across 119 molecules). This filtered set of excitations can be found in `filtered_main_set.json`. Corresponding output files (`diet_subset_*.out`) generated using the `quest-diet.py` script are also provided.
+This set is derived from the QUEST *Main* dataset, excluding unsafe and genuine double excitations (resulting in 824 transitions across 119 molecules). This filtered set of excitations can be found in `filtered_main_set.json`. The corresponding output file (`diet_subset_50.out`) generated using the `quest-diet.py` script is also provided.
 
-> **Note 1:** These *diet* subsets are **not unique**. They are generated using a genetic algorithm, which is inherently stochastic — meaning that operations like selection, crossover, and mutation involve random choices. As a result, running the `quest-diet.py` script multiple times (even with the same parameters) can produce different subsets of excitations. This variability allows for exploration of multiple near-optimal solutions, but it also means that results are not guaranteed to be reproducible unless a fixed random seed is explicitly set in the script or passed as a parameter.
+> **Note 1:** This *diet* subset is **not unique**. It is generated using a genetic algorithm, which is inherently stochastic — meaning that operations like selection, crossover, and mutation involve random choices. As a result, running the `quest-diet.py` script multiple times (even with the same parameters) can produce different subsets of excitations. This variability allows for exploration of multiple near-optimal solutions, but it also means that results are not guaranteed to be reproducible unless a fixed random seed is explicitly set in the script or passed as a parameter.
 
-> **Note 2:** These sets are obtained, via a genetic algorithm, by minimizing a score function that includes the MAE, MSE and RSME of single-reference wave function methods. Multireference wave function methods (e.g., CASSCF, CASPT2, and NEVPT2) are excluded. The script can be easily modify to change the targeted methods.
+> **Note 2:** This set is obtained, via a genetic algorithm, by minimizing a score function that includes the MAE, MSE and RSME of single-reference wave function methods. Multireference wave function methods (e.g., CASSCF, CASPT2, and NEVPT2) are excluded. The script can be easily modify to change the targeted methods.
 
 ## 🧠 Notes
 
