@@ -92,6 +92,18 @@ In addition, `.json` files, gathering the same information, are available for ea
 
 ---
 
+### 🧮 Active Spaces
+
+The folder `cas` contains detailed information on the **active spaces** used in all CASSCF-based calculations. Each entry specifies:
+
+- The number of **active orbitals** per irreducible representation
+- The **state-averaging scheme**, including the number of states per symmetry
+- Systematic inclusion of the **ground state**, even across symmetries
+
+Proper active space design is key for balancing **electron correlation accuracy** with **computational efficiency**. This metadata ensures full reproducibility and transparency in multiconfigurational treatments.
+
+---
+
 ## 🥗 Diet Sets
 
 This directory also includes an example of *diet* subset (located in the `diet` folder), which is carefully designed to reproduce the key statistical features of larger datasets while restricting data size. These size constraints make the subset well-suited for use with computationally demanding or inefficient methods, particularly during the early stages of method development.
