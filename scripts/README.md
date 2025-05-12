@@ -80,7 +80,9 @@ options:
   --size SIZE              Target number of excitations in the subset
   --optimize-params        Use Optuna to optimize genetic algorithm parameters
   --only-singlet           Only include singlet transitions
+  --only-doublet           Only include doublet transitions
   --only-triplet           Only include triplet transitions
+  --only-quartet           Only include quartet transitions
   --only-valence           Only include valence transitions
   --only-rydberg           Only include Rydberg transitions
   --only-ppi               Only include π→π* transitions
@@ -109,7 +111,9 @@ options:
   --min-size MIN_SIZE     Minimum molecule size
   --max-size MAX_SIZE     Maximum molecule size
   --only-singlet          Only include singlet transitions
+  --only-doublet          Only include doublet transitions
   --only-triplet          Only include triplet transitions
+  --only-quartet          Only include quartet transitions
   --only-valence          Only include valence transitions
   --only-rydberg          Only include Rydberg transitions
   --only-ppi              Only include π→π* transitions
@@ -133,8 +137,8 @@ positional arguments:
 
 options:
   -h, --help           show this help message and exit
-  --spin {1,3}         1 for singlet, 3 for triplet
-  --nature {V,R}       'V' for valence, 'R' for Rydberg
+  --spin {1,2,3,4}     1 for singlet, 2 for doublet, 3 for triplet, 4 for quartet
+  --nature {V,R,M}     'V' for valence, 'R' for Rydberg, 'M' for mixed
   --safe {Y,N}         'Y' = safe, 'N' = unsafe
   --group GROUP        Comma-separated list of Group numbers (12, 35, 69, 1016)
   --type TYPE          Comma-separated list of excitation types (e.g., npi,ppi,n3s)
