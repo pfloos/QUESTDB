@@ -21,6 +21,77 @@ GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and f
 
 To assist users in identifying excited states using their preferred methodology, the QUEST database provides the percentage of single excitation involved in the transition (%T₁), oscillator strength $f$, the patial extent of the electron cloud $\langle r^2 \rangle$, and dominant MO contributions for all excited states, computed with reasonably high levels of theory. Additionally, $\langle S^2 \rangle$ values are provided for doublet and quartet states, along with the dominant MO combinations.
 
+| **Field**                       | **Description**                                                                                                                                     | **Values / Notes**                                                                                                  |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Molecular Size**             | Number of non-hydrogen atoms                                                                                                                        | Integer                                                                                                              |
+| **Group**                      | Size group                                                                                                                                            | e.g., `35` (for 3–5 heavy atoms)                                                                                    |
+| **Symmetry Label**             | Symmetry of the excited state                                                                                                                       | String (e.g., `1^1A1`)                                                                                              |
+| **Spin Multiplicity**          | Multiplicity of the excited state                                                                                                                   | `S` = Singlet, `D` = Doublet, `T` = Triplet, `Q` = Quartet                                                          |
+| **Nature of Excited State**    | Nature of the electronic excitation                                                                                                                 | `V` = Valence, `R` = Rydberg, `M` = Mixed                                                                           |
+| **Type of Transition**         | Orbital character of the transition                                                                                                                 | `ppi`, `npi`, `n3s`, `p3s`, `n3p`, `p3p`, `n4s`, `n4p`, `dou`, `n.d.`                                              |
+| **Special Features**           | Flags for particular physical or computational characteristics                                                                                      | `FL`, `PD`, `GD`, `wCT`, `sCT`                                                                                      |
+| **%T₁**                        | Percentage of single excitation character                                                                                                           | Computed at CC3/aug-cc-pVTZ                                                                                         |
+| **Oscillator Strength (_f_)**  | Transition intensity                                                                                                                                | Computed at LR-CC3/aug-cc-pVTZ                                                                                      |
+| **TBE (aug-cc-pVTZ)**          | Theoretical best estimate excitation energy                                                                                                         | Computed using composite methods                                                                                    |
+| **TBE (aug-cc-pVQZ)**          | TBE with larger basis set                                                                                                                           | Includes extrapolation corrections                                                                                  |
+| **Chemical Reliability**       | Indicates whether the excitation is chemically reliable                                                                                             | `safe` or `unsafe`                                                                                                  |
+| **Vertical Excitation Energies**| Energies from various methods                                                                                                                       | `CIS(D)`, `CC2`, `ADC(2)`, `ADC(3)`, `CC3`, `CCSDT`, `TDDFT-*`, `CASPT2`, `NEVPT2`, etc. (see list below)           |
+
+### 🔍 Special Feature Codes
+
+| Code  | Meaning                                                                 |
+|-------|-------------------------------------------------------------------------|
+| FL    | Fluorescence transition (S₁ optimized geometry)                         |
+| PD    | Partial double excitation (%T₁ in 60–80%)                               |
+| GD    | Genuine double excitation (%T₁ < 50%)                                   |
+| wCT   | Weak charge-transfer excitation                                         |
+| sCT   | Strong charge-transfer excitation                                       |
+
+### ⚛️ Supported Methods for Vertical Excitations
+
+- Wavefunction: `CIS(D)`, `CC2`, `EOM-MP2`, `STEOM-CCSD`, `CCSD`, `CCSD(T)(a)*`, `CCSDR(3)`, `CCSDT-3`, `CC3`, `CCSDT`
+- ADC: `SOS-ADC(2)[TM]`, `SOS-CC2`, `SCS-CC2`, `SOS-ADC(2)[QC]`, `ADC(2)`, `ADC(3)`, `ADC(2.5)`
+- Multi-reference: `CASSCF`, `CASPT2`, `CASPT2 (No IPEA)`, `CASPT3`, `CASPT3 (No IPEA)`, `SC-NEVPT2`, `PC-NEVPT2`
+- TD-DFT (if available): e.g., `TDDFT-B3LYP`, `TDDFT-PBE0`, etc.
+
+### Example Entry
+
+```json
+  [{
+    "Molecule": "Water ",
+    "Size": 1,
+    "Group": 12,
+    "State": "^1B_1",
+    "V/R": "R",
+    "Type": "n3s",
+    "%T1 [CC3/AVTZ]": 93.4,
+    "f [LR-CC3/AVTZ]": 0.054,
+    "TBE/AVTZ": 7.626,
+    "Method": "exFCI/AVTZ",
+    "Safe ? (~50 meV)": "Y",
+    "TBE/AVQZ": 7.672,
+    "Corr. Method": "CCSDT",
+    "CIS(D)": 7.168,
+    "CC2": 7.234,
+    "EOM-MP2": 7.577,
+    "STEOM-CCSD": 7.564,
+    "CCSD": 7.597,
+    "CCSD(T)(a)*": 7.596,
+    "CCSDR(3)": 7.597,
+    "CCSDT-3": 7.605,
+    "CC3": 7.605,
+    "CCSDT": 7.591,
+    "SOS-ADC(2) [TM]": 7.401,
+    "SOS-CC2": 7.452,
+    "SCS-CC2": 7.379,
+    "SOS-ADC(2) [QC]": 7.23,
+    "ADC(2)": 7.181,
+    "ADC(3)": 7.842,
+    "ADC(2.5)": 7.5115,
+    "Spin": 1
+  }]
+```
+
 - **Molecular Size**: Number of non-hydrogen atoms.
 - **Group**: Size group (e.g., `35` for systems with 3–5 non-hydrogen atoms).
 - **Symmetry Label**: Symmetry of the excited state.
