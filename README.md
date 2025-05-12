@@ -53,7 +53,7 @@ QUESTDB supports researchers to:
 
 ## ⚙️ Scripts for Subset Generation and Analysis
 
-This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the statistical properties of the full database (e.g., MAE, MSE, and RMSE) across different computational methods and excitation categories.
+This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the statistical properties of the full database (e.g., MAE, MSE, and RMSE) across different computational methods and excitation categories (see the `data/diet` directory).
 
 These tools are especially useful for benchmarking new methods quickly or for training machine learning models when computational cost is a limiting factor.
 
