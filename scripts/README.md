@@ -185,3 +185,24 @@ options:
   --safe-only       Include only safe excitations.
 ```
 
+---
+
+### 🔹 `extract_lowest_states.py`
+Extract the lowest-energy states from a set of `.json` files (one per file).
+
+```bash
+usage: extract_lowest_states.py [-h] --spin SPIN [--vr {V,R,M}] [-o OUTPUT] directory
+
+Extract lowest-energy state per JSON file for a given spin and excitation type.
+
+positional arguments:
+  directory            Directory containing JSON files
+
+options:
+  -h, --help           show this help message and exit
+  --spin SPIN          Target spin (e.g., 1 for singlet, 2 for doublet, 3 for triplet, 4 for quartet)
+  --vr {V,R,M}         Filter by excitation type: valence (V), rydberg (R), or mixed (M)
+  -o, --output OUTPUT  Output JSON filename
+```
+
+---
