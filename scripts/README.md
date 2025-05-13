@@ -101,25 +101,29 @@ Performs statistical analysis and generates error distribution plots for excitat
 
 **Usage:**
 ```bash
-usage: statistics.py json_dir [options]
+usage: statistics.py [-h] [--min-size MIN_SIZE] [--max-size MAX_SIZE] [--only-singlet] [--only-doublet] [--only-triplet] [--only-quartet]
+                     [--only-valence] [--only-rydberg] [--only-ppi] [--only-npi] [--allow-unsafe] [--print-graphs]
+                     json_input
+
+Analyze excitation energy errors and create plots.
 
 positional arguments:
-  json_dir                Directory containing .json files
+  json_input           JSON file or directory containing .json files
 
 options:
-  -h, --help              Show this help message and exit
-  --min-size MIN_SIZE     Minimum molecule size
-  --max-size MAX_SIZE     Maximum molecule size
-  --only-singlet          Only include singlet transitions
-  --only-doublet          Only include doublet transitions
-  --only-triplet          Only include triplet transitions
-  --only-quartet          Only include quartet transitions
-  --only-valence          Only include valence transitions
-  --only-rydberg          Only include Rydberg transitions
-  --only-ppi              Only include π→π* transitions
-  --only-npi              Only include n→π* transitions
-  --allow-unsafe          Allow unsafe transitions
-  --print-graphs          Print error distribution graphs
+  -h, --help           show this help message and exit
+  --min-size MIN_SIZE  Minimum molecule size
+  --max-size MAX_SIZE  Maximum molecule size
+  --only-singlet       Only include singlet transitions
+  --only-doublet       Only include doublet transitions
+  --only-triplet       Only include triplet transitions
+  --only-quartet       Only include quartet transitions
+  --only-valence       Only include valence transitions
+  --only-rydberg       Only include Rydberg transitions
+  --only-ppi           Only include π→π* transitions
+  --only-npi           Only include n→π* transitions
+  --allow-unsafe       Allow unsafe transitions
+  --print-graphs       Print error distribution graphs
 ```
 
 ---
@@ -148,4 +152,24 @@ options:
 ```
 
 ---
+
+### 🔹 `printing_excitations.py`
+Print the various excited states and their corresponding characteristics gathered from a set of `.json` files or a single `.json` file.
+
+```bash
+usage: print_excitations.py [-h] [--spin {1,2,3,4}] [--state STATE] [--type TYPE] [--nature {V,R,M}] [--safe-only] input_path
+
+Print a table of excited state characteristics from JSON file(s).
+
+positional arguments:
+  input_path        Path to a JSON file or directory.
+
+options:
+  -h, --help        show this help message and exit
+  --spin {1,2,3,4}  Filter by spin (1, 2, 3, 4).
+  --state STATE     Filter by exact state label (e.g., '^1A_1').
+  --type TYPE       Filter by excitation type (e.g., 'n3p').
+  --nature {V,R,M}  Filter by nature: Valence (V), Rydberg (R), Mixed (M).
+  --safe-only       Include only safe excitations.
+```
 
