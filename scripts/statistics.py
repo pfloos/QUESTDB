@@ -11,58 +11,74 @@ from rich import box
 # === Config ===
 SKIP_FIELDS = {
     "TBE/AVTZ", "TBE/AVQZ", "Molecule", "State", "Method",
-    "Corr. Method", "%T1 [CC3/AVTZ]", "%T1 [CC3/AVDZ]", "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]", 
+    "Corr. Method", "%T1 [CC3/AVTZ]", "%T1 [CC3/AVDZ]", "f [LR-CC3/AVTZ]", "f [LR-CCSD/AVTZ]",
     "Size", "Group", "Spin", "V/R", "Type",
     "Safe ? (~50 meV)", "Special ?"
 }
 
-# === CLI Arguments ===
 console = Console()
 
-def load_data(json_dir: str, filters: dict):
+def load_data(json_input: str, filters: dict):
     entries = []
-    for filename in os.listdir(json_dir):
-        if filename.endswith(".json"):
-            filepath = os.path.join(json_dir, filename)
-            with open(filepath, "r") as f:
+
+    # Determine if input is a file or a directory
+    if os.path.isfile(json_input):
+        filepaths = [json_input]
+    elif os.path.isdir(json_input):
+        filepaths = [os.path.join(json_input, f) for f in os.listdir(json_input) if f.endswith(".json")]
+    else:
+        console.print(f"❌ Error: '{json_input}' is not a valid file or directory.", style="bold red")
+        sys.exit(1)
+
+    for filepath in filepaths:
+        with open(filepath, "r") as f:
+            try:
                 data = json.load(f)
+            except Exception as e:
+                console.print(f"[red]Failed to load {filepath}:[/red] {e}")
+                continue
 
-            for entry in data:
-                ref_energy = entry.get("TBE/AVTZ")
-                if ref_energy is None:
-                    continue
+        for entry in data:
+            ref_energy = entry.get("TBE/AVTZ")
+            if ref_energy is None:
+                continue
 
-                # Apply filters
-                if filters.get("safe_only", True) and entry.get("Safe ? (~50 meV)") != "Y":
-                    continue
-                if filters.get("only_singlet") and entry.get("Spin") != 1:
-                    continue
-                if filters.get("only_doublet") and entry.get("Spin") != 2:
-                    continue
-                if filters.get("only_triplet") and entry.get("Spin") != 3:
-                    continue
-                if filters.get("only_quartet") and entry.get("Spin") != 4:
-                    continue
-                if filters.get("only_valence") and entry.get("V/R") != "V":
-                    continue
-                if filters.get("only_rydberg") and entry.get("V/R") != "R":
-                    continue
-                if filters.get("only_ppi") and entry.get("Type") != "ppi":
-                    continue
-                if filters.get("only_npi") and entry.get("Type") != "npi":
-                    continue
-                if "Size" in entry and (entry["Size"] < filters.get("min_size", 0) or entry["Size"] > filters.get("max_size", 1000)):
-                    continue
+            # Apply filters
+            if filters.get("safe_only", True) and entry.get("Safe ? (~50 meV)") != "Y":
+                continue
+            if filters.get("only_singlet") and entry.get("Spin") != 1:
+                continue
+            if filters.get("only_doublet") and entry.get("Spin") != 2:
+                continue
+            if filters.get("only_triplet") and entry.get("Spin") != 3:
+                continue
+            if filters.get("only_quartet") and entry.get("Spin") != 4:
+                continue
+            if filters.get("only_valence") and entry.get("V/R") != "V":
+                continue
+            if filters.get("only_rydberg") and entry.get("V/R") != "R":
+                continue
+            if filters.get("only_ppi") and entry.get("Type") != "ppi":
+                continue
+            if filters.get("only_npi") and entry.get("Type") != "npi":
+                continue
+            if "Size" in entry and (entry["Size"] < filters.get("min_size", 0) or entry["Size"] > filters.get("max_size", 1000)):
+                continue
 
-                # Collect the valid entries
-                method_errors = {method: energy - ref_energy for method, energy in entry.items() if method not in SKIP_FIELDS and isinstance(energy, (int, float))}
-                entries.append({
-                    "file": filename,
-                    "index": entry.get("Index", None),
-                    "data": method_errors,
-                    "categories": {k: entry[k] for k in ["Spin", "V/R", "Type"] if k in entry},
-                    "full": entry
-                })
+            method_errors = {
+                method: energy - ref_energy
+                for method, energy in entry.items()
+                if method not in SKIP_FIELDS and isinstance(energy, (int, float))
+            }
+
+            entries.append({
+                "file": os.path.basename(filepath),
+                "index": entry.get("Index", None),
+                "data": method_errors,
+                "categories": {k: entry[k] for k in ["Spin", "V/R", "Type"] if k in entry},
+                "full": entry
+            })
+
     return entries
 
 def compute_statistics(errors):
@@ -76,15 +92,14 @@ def compute_statistics(errors):
         "Max": np.max(errors)
     }
 
-def analyze_directory_with_plots(json_dir: str, filters: dict, print_graphs: bool):
-    entries = load_data(json_dir, filters)
+def analyze_with_plots(json_input: str, filters: dict, print_graphs: bool):
+    entries = load_data(json_input, filters)
     method_errors = {}
 
     for entry in entries:
         for method, error in entry["data"].items():
             method_errors.setdefault(method, []).append(error)
 
-    # Create the results table
     console.print(f"\n📊 Excitation Energy Error Statistics (in eV) by Method:\n")
     table = Table(show_header=True, header_style="bold magenta", box=box.HEAVY)
     table.add_column("Method", style="cyan")
@@ -107,7 +122,6 @@ def analyze_directory_with_plots(json_dir: str, filters: dict, print_graphs: boo
             f"{stats['Max']:.4f}"
         )
 
-        # Plot error distribution if the option is enabled
         if print_graphs:
             output_dir = "plots"
             os.makedirs(output_dir, exist_ok=True)
@@ -123,18 +137,12 @@ def analyze_directory_with_plots(json_dir: str, filters: dict, print_graphs: boo
             plt.close()
             console.print(f"📈 Saved plot: [green]{filename}[/]")
 
-    # Print table
     console.print(table)
-
-def save_results(subset, output_json):
-    with open(output_json, "w") as f:
-        json.dump([entry["full"] for entry in subset], f, indent=2)
-    console.print(f"\n✅ Saved results to [bold green]{output_json}[/]")
 
 # === Main ===
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze excitation energy errors and create plots.")
-    parser.add_argument("json_dir", help="Directory containing .json files")
+    parser.add_argument("json_input", help="JSON file or directory containing .json files")
     parser.add_argument("--min-size", type=int, default=0, help="Minimum molecule size")
     parser.add_argument("--max-size", type=int, default=1000, help="Maximum molecule size")
     parser.add_argument("--only-singlet", action="store_true", help="Only include singlet transitions")
@@ -164,9 +172,4 @@ if __name__ == "__main__":
         "max_size": args.max_size,
     }
 
-    if not os.path.isdir(args.json_dir):
-        console.print(f"❌ Error: '{args.json_dir}' is not a valid directory.", style="bold red")
-        sys.exit(1)
-
-    analyze_directory_with_plots(args.json_dir, filters, args.print_graphs)
-
+    analyze_with_plots(args.json_input, filters, args.print_graphs)
