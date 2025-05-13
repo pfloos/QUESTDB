@@ -143,12 +143,12 @@ Filters a subset of excitations based on user-specified criteria and outputs a n
 ```bash
 usage: filter_json.py [-h] [--spin {1,2,3,4}] [--nature {V,R,M}] [--safe {Y,N}] [--group GROUP] [--type TYPE] [--exclude-gd] [--min-size MIN_SIZE]
                       [--max-size MAX_SIZE]
-                      input_file output_file
+                      input_files output_file
 
 ✨ Fancy filter for QUEST excitations.
 
 positional arguments:
-  input_file           Path to directory containing .json files
+  input_files          Path to directory or single .json file
   output_file          Path to output JSON file
 
 options:
