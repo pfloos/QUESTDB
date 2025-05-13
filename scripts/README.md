@@ -54,13 +54,15 @@ Analyzes a set of `.json` files and extracts metadata about the types of excitat
 
 **Usage:**
 ```bash
-usage: analyze_json.py files [files ...]
+usage: analyze_json.py [-h] files [files ...]
+
+Analyze QUEST excitation set JSON files.
 
 positional arguments:
-  files       One or more JSON files or directories containing QUEST-style data
+  files       One or more JSON files or directories containing QUEST-style excitation data.
 
 options:
-  -h, --help  Show this help message and exit
+  -h, --help  show this help message and exit
 ```
 
 ---
@@ -70,28 +72,34 @@ The main script to create a “diet” subset of excitations from the QUEST data
 
 **Usage:**
 ```bash
-usage: quest_diet.py --size SIZE --max-molecules N json_dir [options]
+usage: quest_diet.py [-h] --size SIZE [--optimize-params] [--only-singlet] [--only-doublet] [--only-triplet] [--only-quartet] [--only-valence]
+                     [--only-rydberg] [--only-ppi] [--only-npi] [--min-size MIN_SIZE] [--max-size MAX_SIZE] [--allow-gd] [--allow-unsafe]
+                     [--max-molecules MAX_MOLECULES]
+                     json_dir
+
+QUEST diet: subsets of excitations with same statistics!
 
 positional arguments:
-  json_dir                 Path to directory containing .json files
+  json_dir              Path to directory containing .json files
 
 options:
-  -h, --help               Show this help message and exit
-  --size SIZE              Target number of excitations in the subset
-  --optimize-params        Use Optuna to optimize genetic algorithm parameters
-  --only-singlet           Only include singlet transitions
-  --only-doublet           Only include doublet transitions
-  --only-triplet           Only include triplet transitions
-  --only-quartet           Only include quartet transitions
-  --only-valence           Only include valence transitions
-  --only-rydberg           Only include Rydberg transitions
-  --only-ppi               Only include π→π* transitions
-  --only-npi               Only include n→π* transitions
-  --min-size MIN_SIZE      Minimum molecule size
-  --max-size MAX_SIZE      Maximum molecule size
-  --allow-gd               Allow genuine double excitations
-  --allow-unsafe           Allow unsafe transitions
-  --max-molecules N        Limit the number of distinct molecules
+  -h, --help            show this help message and exit
+  --size SIZE           Target subset size
+  --optimize-params     Use Optuna to optimize GA parameters
+  --only-singlet        Only include singlet transitions
+  --only-doublet        Only include doublet transitions
+  --only-triplet        Only include triplet transitions
+  --only-quartet        Only include quartet transitions
+  --only-valence        Only include valence transitions
+  --only-rydberg        Only include Rydberg transitions
+  --only-ppi            Only include π→π* transitions
+  --only-npi            Only include n→π* transitions
+  --min-size MIN_SIZE   Minimum molecule size
+  --max-size MAX_SIZE   Maximum molecule size
+  --allow-gd            Allow genuine double excitations
+  --allow-unsafe        Allow unsafe transitions
+  --max-molecules MAX_MOLECULES
+                        Maximum number of distinct molecules to include in subset
 ```
 
 ---
@@ -133,7 +141,11 @@ Filters a subset of excitations based on user-specified criteria and outputs a n
 
 **Usage:**
 ```bash
-usage: filter_json.py input_file output_file [options]
+usage: filter_json.py [-h] [--spin {1,2,3,4}] [--nature {V,R,M}] [--safe {Y,N}] [--group GROUP] [--type TYPE] [--exclude-gd] [--min-size MIN_SIZE]
+                      [--max-size MAX_SIZE]
+                      input_file output_file
+
+✨ Fancy filter for QUEST excitations.
 
 positional arguments:
   input_file           Path to directory containing .json files
