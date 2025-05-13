@@ -176,7 +176,7 @@ Key QUESTDB publications:
 
 - [**Excited-state absorption: Reference oscillator strengths, wavefunction and TD-DFT benchmarks**](https://doi.org/10.1021/acs.jctc.5c00159)  
   J. Širůček, B. Le Guennic, Y. Damour, P. F. Loos, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* (in press).
+  *J. Chem. Theory Comput.* **21**, 4688 (2025).
 
 - [**Reference CC3 excitation energies for organic chromophores: benchmarking TD-DFT, BSE/GW and wave function methods**](https://doi.org/10.1021/acs.jctc.4c00906)  
   I. Knysh, F. Lipparini, I. Duchemin, X. Blase, P. F. Loos, and D. Jacquemin,  
