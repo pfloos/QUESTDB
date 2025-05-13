@@ -1,0 +1,55 @@
+                            Excited State Summary                             
+                                                                              
+  Molecule                State         Spin   V/R   Type   Safe?   TBE/AVTZ  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+  Aminobenzonitrile       ^1B_2         1      V     ppi    Y          4.448  
+                          ^1B_1         1      R     n.d.   Y          5.032  
+                          ^1A_1         1      V     ppi    Y          5.092  
+                          ^1B_1         1      R     n.d.   Y          5.827  
+  Aniline                 ^3A_1         3      V     ppi    Y          3.951  
+                          ^3B_1         3      R     n.d.   Y          5.387  
+                          ^1B_1         1      R     n.d.   Y          5.412  
+                          ^1A_1         1      M     n.d.   Y          5.494  
+  CCl2                    ^1A_2         1      V     npi    Y          4.353  
+  Carbon trimer           ^3Pi_u        3      V     npi    Y          2.112  
+                          ^1\Delta_u    1      V     npi    Y          3.962  
+                          ^1\Pi_g       1      V     npi    Y          4.008  
+  Carbonic acid           ^1A_2         1      V     npi    Y          7.200  
+                          ^3B_2         3      R     n3s    Y          7.481  
+                          ^3B_1         3      R     p3s    Y          8.076  
+                          ^1A_1         1      R     n3p    Y          8.559  
+                          ^1A_1         1      V     ppi    Y          9.251  
+  Chlorobenzene           ^3B_2         3      V     ppi    Y          4.723  
+                          ^3B_2         3      V     ppi    Y          5.725  
+                          ^1B_1         1      R     n.d.   Y          6.307  
+  Cyclopentadienone       ^3A_2         3      V     npi    Y          2.641  
+  Fluorobenzene           ^1A_1         1      V     ppi    Y          6.428  
+                          ^1A_1         1      V     ppi    Y          7.202  
+  Furofuran               ^3B_u         3      V     ppi    Y          3.565  
+                          ^1A_u         1      R     n.d.   Y          5.434  
+                          ^1B_g         1      R     n.d.   Y          6.001  
+                          ^1A_g         1      V     ppi    Y          6.027  
+  HNC                     ^3\Pi         3      V     npi    Y          6.046  
+                          ^3\Sigma^-    3      V     ppi    Y          8.513  
+                          ^1\Delta      1      V     ppi    Y          8.795  
+                          ^1\Sigma^+    1      R     n.d.   Y          9.658  
+  HSiF                    ^1A''         1      V     spi    Y          3.059  
+  Hexatriene              ^3B_u         3      V     ppi    Y          2.734  
+                          ^1A_u         1      R     p3s    Y          5.793  
+  Hydrogen peroxide       ^3B           3      V     nsi    Y          6.035  
+  Imidazole               ^3A'          3      V     ppi    Y          4.736  
+                          ^3A''         3      V     npi    Y          6.309  
+                          ^1A'          1      R     p3p    Y          6.391  
+                          ^1A'          1      R     n3s    Y          7.039  
+  Nitropyridine N-oxide   ^1A_2         1      V     npi    Y          3.978  
+  Nitrous acid            ^3A''         3      V     npi    Y          2.697  
+                          ^1A'          1      V     ppi    Y          6.241  
+                          ^3A''         3      V     npi    Y          6.845  
+                          ^1A'          1      R     n3s    Y          7.465  
+  Oxalyl fluoride         ^3B_u         3      V     ppi    Y          5.925  
+                          ^1A_g         1      R     n3s    Y          8.941  
+  Pentalene (D2h)         ^3B_{3g}      3      V     ppi    Y          0.384  
+  Triazapentalene         ^1A'          1      V     ppi    Y          4.700  
+                          ^1A''         1      R     n.d.   Y          4.941  
+  Water                   ^1A_2         1      R     n3p    Y          9.497  
+                                                                              
