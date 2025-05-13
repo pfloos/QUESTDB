@@ -5,9 +5,9 @@ from pathlib import Path
 def find_lowest_energy_state(data, target_spin, vr_filter):
     """Find the lowest TBE/AVTZ energy state matching the given spin and V/R filter."""
     vr_map = {
-        "valence": "V",
-        "rydberg": "R",
-        "mixed": "M"
+        "V": "V",
+        "R": "R",
+        "M": "M"
     }
 
     filtered = [
@@ -25,8 +25,8 @@ def find_lowest_energy_state(data, target_spin, vr_filter):
 def main():
     parser = argparse.ArgumentParser(description="Extract lowest-energy state per JSON file for a given spin and excitation type.")
     parser.add_argument("directory", help="Directory containing JSON files")
-    parser.add_argument("--spin", type=int, required=True, help="Target spin (e.g., 1 for singlet, 3 for triplet)")
-    parser.add_argument("--vr", choices=["valence", "rydberg", "mixed"], help="Filter by excitation type: valence (V), rydberg (R), or mixed (M)")
+    parser.add_argument("--spin", type=int, required=True, help="Target spin (e.g., 1 for singlet, 2 for doublet, 3 for triplet, 4 for quartet)")
+    parser.add_argument("--vr", choices=["V", "R", "M"], help="Filter by excitation type: valence (V), rydberg (R), or mixed (M)")
     parser.add_argument("-o", "--output", default="lowest_states.json", help="Output JSON filename")
     args = parser.parse_args()
 
