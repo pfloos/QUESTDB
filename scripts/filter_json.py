@@ -15,35 +15,36 @@ def parse_list(arg):
 def parse_int_list(arg):
     return [int(x) for x in arg.split(",")] if arg else None
 
+def load_json_files(paths):
+    all_data = []
+    for path in paths:
+        if os.path.isdir(path):
+            for filename in os.listdir(path):
+                if filename.endswith(".json"):
+                    with open(os.path.join(path, filename), "r") as f:
+                        chunk = json.load(f)
+                        if isinstance(chunk, list):
+                            all_data.extend(chunk)
+                        else:
+                            raise ValueError(f"File {filename} does not contain a list.")
+        elif os.path.isfile(path) and path.endswith(".json"):
+            with open(path, "r") as f:
+                chunk = json.load(f)
+                if isinstance(chunk, list):
+                    all_data.extend(chunk)
+                else:
+                    raise ValueError(f"File {path} does not contain a list.")
+        else:
+            raise ValueError(f"{path} is not a valid file or directory.")
+    return all_data
+
 def filter_excitations(
-    input_file, output_file,
+    input_files, output_file,
     spin=None, vr=None, safe=None,
     groups=None, types=None, exclude_gd=False,
     min_size=None, max_size=None
 ):
-    data = []
-    if os.path.isdir(input_file):
-        for filename in os.listdir(input_file):
-            if filename.endswith(".json"):
-                with open(os.path.join(input_file, filename), "r") as f:
-                    chunk = json.load(f)
-                    if isinstance(chunk, list):
-                        data.extend(chunk)
-                    else:
-                        raise ValueError(f"File {filename} does not contain a list.")
-    elif os.path.isfile(input_file) and input_file.endswith(".json"):
-        with open(input_file, "r") as f:
-            chunk = json.load(f)
-            if isinstance(chunk, list):
-                data = chunk
-            else:
-                raise ValueError("Expected a list of excitations in the JSON file.")
-    else:
-        raise ValueError(f"{input_file} is not a valid file or directory.")
-
-    if not isinstance(data, list):
-        raise ValueError("Expected a list of excitations in the JSON file.")
-
+    data = load_json_files(input_files)
     total = len(data)
 
     def matches(entry):
@@ -71,7 +72,6 @@ def filter_excitations(
         json.dump(filtered, f, indent=2)
 
     # ✅ Summary panel
-    # console.rule("[bold cyan]🎯 Filter Results Summary")
     console.print(
         Panel.fit(
             f"[bold green]✔ Filtered excitations saved to[/] [yellow]{output_file}[/]",
@@ -141,7 +141,7 @@ def filter_excitations(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="✨ Fancy filter for QUEST excitations.")
-    parser.add_argument("input_file", help="Path to directory containing .json files")
+    parser.add_argument("input_files", help="Path to directory or single .json file")
     parser.add_argument("output_file", help="Path to output JSON file")
     parser.add_argument("--spin", type=int, choices=[1, 2, 3, 4], help="1 for singlet, 2 for doublet, 3 for triplet, 4 for quartet")
     parser.add_argument("--nature", choices=["V", "R", "M"], help="'V' for valence, 'R' for Rydberg, 'M' for mixed")
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     filter_excitations(
-        input_file=args.input_file,
+        input_files=args.input_files.split(','),
         output_file=args.output_file,
         spin=args.spin,
         vr=args.nature,

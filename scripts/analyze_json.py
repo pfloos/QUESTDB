@@ -13,7 +13,6 @@ from rich.text import Text
 
 console = Console()
 
-
 def load_json_files(paths: List[str]) -> List[dict]:
     all_data = []
     for path in paths:
@@ -26,7 +25,6 @@ def load_json_files(paths: List[str]) -> List[dict]:
             with open(path) as f:
                 all_data.extend(json.load(f))
     return all_data
-
 
 def analyze_data(data: List[dict]) -> dict:
     stats = defaultdict(Counter)
@@ -72,9 +70,7 @@ def analyze_data(data: List[dict]) -> dict:
     stats["meta"]["total_excitations"] = len(data)
     return stats
 
-
 def print_stats(stats: dict):
-
     total = stats["meta"]["total_excitations"]
     safe = stats["safe"].get("Safe", 0)
     unsafe = stats["safe"].get("Unsafe", 0)
@@ -127,7 +123,6 @@ def main():
     data = load_json_files(args.files)
     stats = analyze_data(data)
     print_stats(stats)
-
 
 if __name__ == "__main__":
     main()
