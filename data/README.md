@@ -8,7 +8,7 @@ It provides highly detailed information for each excited state, including both p
 | **Main**     | 117              | Organic & Inorganic      | 927                | 837    | 129       | 318 | 338 | 142    | 582 | 345 |     |     | 659       | 259     | 28  | 21  | 28  | 10 |
 | **Rad**      | 33               | Open-shell         | 281                | xxx    | 201       | 80  |     |        |     |     | 217 | 64  | 162       | 82      | 13  | 21  |     |    |
 | **Chrom**    | 18               | Organic Chromophore       | 158                | ~135  |           |     |     | 158    | 86  | 72  |     |     | 149    | 9       |     | 7   |     |    |
-| **DNA**      | 5                | Nucleobases        | 56                 | ~51   |           |     | 33  | 23     | 35  | 21  |     |     | 40         | 16      |     |     |     |    |
+| **Bio**      | 5                | Nucleobases        | 56                 | ~51   |           |     | 33  | 23     | 35  | 21  |     |     | 40         | 16      |     |     |     |    |
 | **TM**       | 11               | Transition metal diatomics | 67                 | 46     | 67        |     |     |        | 28  | 23  | 16  |     |   |         | 4   |     |     |    |
 | **QUEST**    | 184              |                    | 1489               | ~xxx   | 397       | 398 | 371 | 323    | 731 | 461 | 233 | 64  | 1010      | 366     | 45  | 49  | 28  | 10 |
 
@@ -115,7 +115,7 @@ Dedicated files for subsets (see below) also include:
 | **`QUEST-Main.xlsx`**  | Includes all results for relatively compact closed-shell molecules, typically containing 1 to 10 non-hydrogen atoms. |
 | **`QUEST-Rad.xlsx`**   | A significant extension of our dataset for small organic and inorganic radicals, now including additional compounds, excited states, and a series of quartet excited states. |
 | **`QUEST-Chrom.xlsx`** | Covers excited states of large closed-shell organic chromophores with 10 to 16 non-hydrogen atoms, such as azobenzene, BODIPY, and naphthalimide. |
-| **`QUEST-DNA.xlsx`**   | Presents previously unpublished data for five nucleobases: adenine, cytosine, guanine, thymine, and uracil. |
+| **`QUEST-Bio.xlsx`**   | Presents previously unpublished data for five nucleobases: adenine, cytosine, guanine, thymine, and uracil. |
 | **`QUEST-TM.xlsx`**    | Contains results for 11 diatomic molecules featuring one transition metal (Cu, Sc, Ti, or Zn), covering both closed-shell and open-shell cases. |
 
 In addition, `.json` files, gathering the same information, are available for each molecule.
