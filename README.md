@@ -92,6 +92,7 @@ P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,
 *J. Chem. Theory Comput.* (submitted).  
 
 <img src="TOC.jpg"  width="250">
+© Béatrice Lejeune (@bea_quarelle)
 
 ---
 
