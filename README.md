@@ -223,7 +223,7 @@ Key QUESTDB publications:
 ## 🔋 Extension to Charged Excitations
 
 The QUEST database also contains charged excitations, mainly ionization potentials (IPs) at the moment.
-Here is the short description of the **charged** excited states:
+Here is the short description of the **charged** excited states included in QUEST (see the `charged` directory):
 
 - Inner- and Outer-Valence IPs and Satellite Transitions:  
 [**Reference energies for valence ionizations and satellite transitions**](https://doi.org/10.1021/acs.jctc.4c00216)  
