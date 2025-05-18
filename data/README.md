@@ -3,7 +3,7 @@
 This directory contains the core data from the **QUEST** database.  
 It provides highly detailed information for each excited state, including both physical characteristics and computational results.
 
-| Subset       | Compounds Total | Nature            | Transitions Total | Safe | 1–2 atoms | 3–5 atoms | 6–9 atoms | 10–16 atoms | S   | T   | D   | Q   | Valence | Rydberg | GD  | PD  | CT  | FL |
+| Subset       | Number of Compounds | Nature            | Transitions Total | Safe | 1–2 atoms | 3–5 atoms | 6–9 atoms | 10–16 atoms | S   | T   | D   | Q   | Valence | Rydberg | GD  | PD  | CT  | FL |
 |--------------|------------------|--------------------|--------------------|--------|-----------|-----|-----|--------|-----|-----|-----|-----|-------------------------------|---------|-----|-----|-----|----|
 | **Main**     | 117              | Organic & Inorganic      | 927                | 837    | 129       | 318 | 338 | 142    | 582 | 345 |     |     | 659       | 259     | 28  | 21  | 28  | 10 |
 | **Rad**      | 33               | Open-shell         | 281                | xxx    | 201       | 80  |     |        |     |     | 217 | 64  | 162       | 82      | 13  | 21  |     |    |
