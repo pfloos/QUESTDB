@@ -19,7 +19,7 @@ GD, PD, CT, and FL denote genuine double, partial double, charge transfer, and f
 
 ## 📋 Available Information
 
-To assist users in identifying excited states using their preferred methodology, the QUEST database provides the percentage of single excitation involved in the transition (%T₁), oscillator strength $f$, the patial extent of the electron cloud $\langle r^2 \rangle$, and dominant MO contributions for all excited states, computed with reasonably high levels of theory. Additionally, $\langle S^2 \rangle$ values are provided for doublet and quartet states, along with the dominant MO combinations.
+To assist users in identifying excited states using their preferred methodology, the QUEST database provides the percentage of single excitation involved in the transition (%T₁), oscillator strength $f$, the patial extent of the electron cloud $\langle r^2 \rangle$, and dominant orbital contributions for all excited states, computed with reasonably high levels of theory. Additionally, $\langle S^2 \rangle$ values are provided for doublet and quartet states, along with the dominant orbital combinations.
 
 | **Field**                       | **Description**                                                                                                                                     | **Values / Notes**                                                                                                  |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
