@@ -1,6 +1,6 @@
 # ⚡ Charged Excitations of the QUEST Database
 
-This repository gathers high-quality data on **charged excitations** from the **QUEST database**, offering a benchmark for state-of-the-art electronic structure methods.
+This directory gathers high-quality data on **charged excitations** from the **QUEST database**, offering a benchmark for state-of-the-art electronic structure methods.
 
 📌 At this stage, the dataset includes **electron-removal processes** (i.e., ionization potentials). Future updates aim to incorporate **electron-addition transitions** (e.g., electron affinities).
 
