@@ -20,7 +20,7 @@ Each molecule’s `.json` file contains:
 - **TBEs** and **FCI-based uncertainties**
 - **Geometries** provided for reproducibility
 
-> 🧪 Ideal for benchmarking **inner- and outer-valence IPs** and validating many-body methods like GW, ADC, (D)IP-EOM-CCSD, etc.
+> 🧪 Ideal for benchmarking **inner- and outer-valence IPs** and validating many-body methods like GW, ADC, IP-EOM-CCSD, etc.
 
 ---
 
