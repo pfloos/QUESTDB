@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.7,
@@ -36,14 +37,14 @@
     "CASPT3": 4.4,
     "CASPT3 (No IPEA)": 4.38,
     "SC-NEVPT2": 4.08,
-    "PC-NEVPT2": 4.04,
-    "Spin": 1
+    "PC-NEVPT2": 4.04
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -75,14 +76,14 @@
     "CASPT3": 5.67,
     "CASPT3 (No IPEA)": 5.64,
     "SC-NEVPT2": 5.86,
-    "PC-NEVPT2": 5.85,
-    "Spin": 1
+    "PC-NEVPT2": 5.85
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -115,14 +116,14 @@
     "CASPT3": 6.41,
     "CASPT3 (No IPEA)": 6.44,
     "SC-NEVPT2": 6.47,
-    "PC-NEVPT2": 6.51,
-    "Spin": 1
+    "PC-NEVPT2": 6.51
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.5,
@@ -155,14 +156,14 @@
     "CASPT3": 6.63,
     "CASPT3 (No IPEA)": 6.62,
     "SC-NEVPT2": 6.82,
-    "PC-NEVPT2": 6.82,
-    "Spin": 1
+    "PC-NEVPT2": 6.82
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.1,
@@ -195,14 +196,14 @@
     "CASPT3": 6.99,
     "CASPT3 (No IPEA)": 7.01,
     "SC-NEVPT2": 7.05,
-    "PC-NEVPT2": 7.07,
-    "Spin": 1
+    "PC-NEVPT2": 7.07
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -235,14 +236,14 @@
     "CASPT3": 7.26,
     "CASPT3 (No IPEA)": 7.24,
     "SC-NEVPT2": 7.29,
-    "PC-NEVPT2": 7.28,
-    "Spin": 1
+    "PC-NEVPT2": 7.28
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.4,
@@ -267,14 +268,14 @@
     "SOS-ADC(2) [QC]": 7.368,
     "ADC(2)": 7.02,
     "ADC(3)": 7.874,
-    "ADC(2.5)": 7.446999999999999,
-    "Spin": 1
+    "ADC(2.5)": 7.446999999999999
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -298,14 +299,14 @@
     "SOS-ADC(2) [QC]": 7.948,
     "ADC(2)": 7.822,
     "ADC(3)": 7.755,
-    "ADC(2.5)": 7.7885,
-    "Spin": 1
+    "ADC(2.5)": 7.7885
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.1,
@@ -331,14 +332,14 @@
     "SOS-ADC(2) [QC]": 7.832,
     "ADC(2)": 7.693,
     "ADC(3)": 7.943,
-    "ADC(2.5)": 7.818,
-    "Spin": 1
+    "ADC(2.5)": 7.818
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -364,14 +365,14 @@
     "SOS-ADC(2) [QC]": 7.893,
     "ADC(2)": 7.545,
     "ADC(3)": 8.521,
-    "ADC(2.5)": 8.033000000000001,
-    "Spin": 1
+    "ADC(2.5)": 8.033000000000001
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -404,14 +405,14 @@
     "CASPT3": 9.21,
     "CASPT3 (No IPEA)": 9.07,
     "SC-NEVPT2": 8.81,
-    "PC-NEVPT2": 8.19,
-    "Spin": 1
+    "PC-NEVPT2": 8.19
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.0,
@@ -439,14 +440,14 @@
     "CASPT3": 4.0,
     "CASPT3 (No IPEA)": 3.98,
     "SC-NEVPT2": 3.55,
-    "PC-NEVPT2": 3.51,
-    "Spin": 3
+    "PC-NEVPT2": 3.51
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -474,14 +475,14 @@
     "CASPT3": 4.76,
     "CASPT3 (No IPEA)": 4.74,
     "SC-NEVPT2": 5.07,
-    "PC-NEVPT2": 5.1,
-    "Spin": 3
+    "PC-NEVPT2": 5.1
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -509,14 +510,14 @@
     "CASPT3": 5.44,
     "CASPT3 (No IPEA)": 5.42,
     "SC-NEVPT2": 5.6,
-    "PC-NEVPT2": 5.6,
-    "Spin": 3
+    "PC-NEVPT2": 5.6
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 96.7,
@@ -537,14 +538,14 @@
     "SOS-ADC(2) [QC]": 6.146,
     "ADC(2)": 5.745,
     "ADC(3)": 6.614,
-    "ADC(2.5)": 6.1795,
-    "Spin": 3
+    "ADC(2.5)": 6.1795
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -572,14 +573,14 @@
     "CASPT3": 6.86,
     "CASPT3 (No IPEA)": 6.82,
     "SC-NEVPT2": 7.17,
-    "PC-NEVPT2": 7.16,
-    "Spin": 3
+    "PC-NEVPT2": 7.16
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 96.7,
@@ -600,14 +601,14 @@
     "SOS-ADC(2) [QC]": 6.724,
     "ADC(2)": 6.327,
     "ADC(3)": 7.16,
-    "ADC(2.5)": 6.7435,
-    "Spin": 3
+    "ADC(2.5)": 6.7435
   },
   {
     "Molecule": "Cyclopropenone",
     "Size": 4,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -628,7 +629,6 @@
     "SOS-ADC(2) [QC]": 6.82,
     "ADC(2)": 6.369,
     "ADC(3)": 7.273,
-    "ADC(2.5)": 6.821,
-    "Spin": 3
+    "ADC(2.5)": 6.821
   }
 ]

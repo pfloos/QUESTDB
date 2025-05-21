@@ -4,6 +4,7 @@
     "Size": 9,
     "Group": 69,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.4,
@@ -25,14 +26,14 @@
     "SOS-ADC(2) [QC]": 3.646,
     "ADC(2)": 3.645,
     "ADC(3)": 4.04,
-    "ADC(2.5)": 3.8425000000000002,
-    "Spin": 1
+    "ADC(2.5)": 3.8425000000000002
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.0,
@@ -55,14 +56,14 @@
     "SOS-ADC(2) [QC]": 4.172,
     "ADC(2)": 4.238,
     "ADC(3)": 4.397,
-    "ADC(2.5)": 4.317500000000001,
-    "Spin": 1
+    "ADC(2.5)": 4.317500000000001
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.1,
@@ -85,14 +86,14 @@
     "SOS-ADC(2) [QC]": 4.544,
     "ADC(2)": 4.872,
     "ADC(3)": 4.621,
-    "ADC(2.5)": 4.7465,
-    "Spin": 1
+    "ADC(2.5)": 4.7465
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -116,14 +117,14 @@
     "SOS-ADC(2) [QC]": 5.307,
     "ADC(2)": 5.414,
     "ADC(3)": 5.156,
-    "ADC(2.5)": 5.285,
-    "Spin": 1
+    "ADC(2.5)": 5.285
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -142,14 +143,14 @@
     "SOS-ADC(2) [QC]": 3.531,
     "ADC(2)": 3.725,
     "ADC(3)": 3.238,
-    "ADC(2.5)": 3.4815,
-    "Spin": 3
+    "ADC(2.5)": 3.4815
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -168,14 +169,14 @@
     "SOS-ADC(2) [QC]": 3.518,
     "ADC(2)": 3.415,
     "ADC(3)": 3.739,
-    "ADC(2.5)": 3.577,
-    "Spin": 3
+    "ADC(2.5)": 3.577
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -194,14 +195,14 @@
     "SOS-ADC(2) [QC]": 3.998,
     "ADC(2)": 4.111,
     "ADC(3)": 3.619,
-    "ADC(2.5)": 3.865,
-    "Spin": 3
+    "ADC(2.5)": 3.865
   },
   {
     "Molecule": "Nitrobenzene",
     "Size": 9,
     "Group": 69,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -220,7 +221,6 @@
     "SOS-ADC(2) [QC]": 4.052,
     "ADC(2)": 4.011,
     "ADC(3)": 4.137,
-    "ADC(2.5)": 4.074,
-    "Spin": 3
+    "ADC(2.5)": 4.074
   }
 ]

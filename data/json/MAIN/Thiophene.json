@@ -4,6 +4,7 @@
     "Size": 5,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.6,
@@ -36,14 +37,14 @@
     "CASPT3": 5.89,
     "CASPT3 (No IPEA)": 5.79,
     "SC-NEVPT2": 5.92,
-    "PC-NEVPT2": 5.84,
-    "Spin": 1
+    "PC-NEVPT2": 5.84
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -76,14 +77,14 @@
     "CASPT3": 6.44,
     "CASPT3 (No IPEA)": 6.35,
     "SC-NEVPT2": 6.2,
-    "PC-NEVPT2": 6.1,
-    "Spin": 1
+    "PC-NEVPT2": 6.1
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -115,14 +116,14 @@
     "CASPT3": 6.16,
     "CASPT3 (No IPEA)": 6.1,
     "SC-NEVPT2": 6.2,
-    "PC-NEVPT2": 6.2,
-    "Spin": 1
+    "PC-NEVPT2": 6.2
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 90.1,
@@ -155,14 +156,14 @@
     "CASPT3": 6.16,
     "CASPT3 (No IPEA)": 6.1,
     "SC-NEVPT2": 6.2,
-    "PC-NEVPT2": 6.19,
-    "Spin": 1
+    "PC-NEVPT2": 6.19
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 91.8,
@@ -194,14 +195,14 @@
     "CASPT3": 6.28,
     "CASPT3 (No IPEA)": 6.21,
     "SC-NEVPT2": 6.41,
-    "PC-NEVPT2": 6.4,
-    "Spin": 1
+    "PC-NEVPT2": 6.4
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -234,14 +235,14 @@
     "CASPT3": 6.51,
     "CASPT3 (No IPEA)": 6.44,
     "SC-NEVPT2": 6.72,
-    "PC-NEVPT2": 6.71,
-    "Spin": 1
+    "PC-NEVPT2": 6.71
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -274,14 +275,14 @@
     "CASPT3": 7.2,
     "CASPT3 (No IPEA)": 7.13,
     "SC-NEVPT2": 7.29,
-    "PC-NEVPT2": 7.25,
-    "Spin": 1
+    "PC-NEVPT2": 7.25
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.5,
@@ -313,14 +314,14 @@
     "CASPT3": 7.71,
     "CASPT3 (No IPEA)": 7.56,
     "SC-NEVPT2": 7.59,
-    "PC-NEVPT2": 7.39,
-    "Spin": 1
+    "PC-NEVPT2": 7.39
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -348,14 +349,14 @@
     "CASPT3": 3.9,
     "CASPT3 (No IPEA)": 3.84,
     "SC-NEVPT2": 4.15,
-    "PC-NEVPT2": 4.13,
-    "Spin": 3
+    "PC-NEVPT2": 4.13
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -383,14 +384,14 @@
     "CASPT3": 4.87,
     "CASPT3 (No IPEA)": 4.79,
     "SC-NEVPT2": 4.88,
-    "PC-NEVPT2": 4.84,
-    "Spin": 3
+    "PC-NEVPT2": 4.84
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -418,14 +419,14 @@
     "CASPT3": 5.94,
     "CASPT3 (No IPEA)": 5.88,
     "SC-NEVPT2": 5.99,
-    "PC-NEVPT2": 5.98,
-    "Spin": 3
+    "PC-NEVPT2": 5.98
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -453,14 +454,14 @@
     "CASPT3": 6.11,
     "CASPT3 (No IPEA)": 6.04,
     "SC-NEVPT2": 6.15,
-    "PC-NEVPT2": 6.14,
-    "Spin": 3
+    "PC-NEVPT2": 6.14
   },
   {
     "Molecule": "Thiophene",
     "Size": 5,
     "Group": 35,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -481,7 +482,6 @@
     "SOS-ADC(2) [QC]": 6.064,
     "ADC(2)": 6.088,
     "ADC(3)": 5.894,
-    "ADC(2.5)": 5.991,
-    "Spin": 3
+    "ADC(2.5)": 5.991
   }
 ]

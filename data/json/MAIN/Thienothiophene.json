@@ -4,6 +4,7 @@
     "Size": 8,
     "Group": 69,
     "State": "^1B_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.5,
@@ -25,14 +26,14 @@
     "SOS-ADC(2) [QC]": 4.899,
     "ADC(2)": 4.948,
     "ADC(3)": 4.972,
-    "ADC(2.5)": 4.960000000000001,
-    "Spin": 1
+    "ADC(2.5)": 4.960000000000001
   },
   {
     "Molecule": "Thienothiophene",
     "Size": 8,
     "Group": 69,
     "State": "^1B_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.6,
@@ -54,14 +55,14 @@
     "SOS-ADC(2) [QC]": 5.151,
     "ADC(2)": 5.276,
     "ADC(3)": 5.068,
-    "ADC(2.5)": 5.172,
-    "Spin": 1
+    "ADC(2.5)": 5.172
   },
   {
     "Molecule": "Thienothiophene",
     "Size": 8,
     "Group": 69,
     "State": "^1B_g",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 90.3,
@@ -83,14 +84,14 @@
     "SOS-ADC(2) [QC]": 5.61,
     "ADC(2)": 5.466,
     "ADC(3)": 5.375,
-    "ADC(2.5)": 5.4205000000000005,
-    "Spin": 1
+    "ADC(2.5)": 5.4205000000000005
   },
   {
     "Molecule": "Thienothiophene",
     "Size": 8,
     "Group": 69,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.6,
@@ -113,14 +114,14 @@
     "SOS-ADC(2) [QC]": 5.682,
     "ADC(2)": 5.53,
     "ADC(3)": 5.453,
-    "ADC(2.5)": 5.4915,
-    "Spin": 1
+    "ADC(2.5)": 5.4915
   },
   {
     "Molecule": "Thienothiophene",
     "Size": 8,
     "Group": 69,
     "State": "^3B_u   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -139,14 +140,14 @@
     "SOS-ADC(2) [QC]": 3.489,
     "ADC(2)": 3.636,
     "ADC(3)": 3.153,
-    "ADC(2.5)": 3.3945,
-    "Spin": 3
+    "ADC(2.5)": 3.3945
   },
   {
     "Molecule": "Thienothiophene",
     "Size": 8,
     "Group": 69,
     "State": "^3B_u   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -165,14 +166,14 @@
     "SOS-ADC(2) [QC]": 4.253,
     "ADC(2)": 4.324,
     "ADC(3)": 4.1,
-    "ADC(2.5)": 4.212,
-    "Spin": 3
+    "ADC(2.5)": 4.212
   },
   {
     "Molecule": "Thienothiophene",
     "Size": 8,
     "Group": 69,
     "State": "^3A_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -191,7 +192,6 @@
     "SOS-ADC(2) [QC]": 4.525,
     "ADC(2)": 4.693,
     "ADC(3)": 4.33,
-    "ADC(2.5)": 4.5115,
-    "Spin": 3
+    "ADC(2.5)": 4.5115
   }
 ]

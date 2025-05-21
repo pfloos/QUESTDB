@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 3.896,
     "ADC(2)": 3.922,
     "ADC(3)": 3.903,
-    "ADC(2.5)": 3.9125,
-    "Spin": 1
+    "ADC(2.5)": 3.9125
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 91.7,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 6.878,
     "ADC(2)": 6.505,
     "ADC(3)": 7.62,
-    "ADC(2.5)": 7.0625,
-    "Spin": 1
+    "ADC(2.5)": 7.0625
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -94,14 +95,14 @@
     "SOS-ADC(2) [QC]": 7.83,
     "ADC(2)": 7.53,
     "ADC(3)": 8.448,
-    "ADC(2.5)": 7.989000000000001,
-    "Spin": 1
+    "ADC(2.5)": 7.989000000000001
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -127,14 +128,14 @@
     "SOS-ADC(2) [QC]": 7.833,
     "ADC(2)": 7.47,
     "ADC(3)": 8.609,
-    "ADC(2.5)": 8.0395,
-    "Spin": 1
+    "ADC(2.5)": 8.0395
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 91.7,
@@ -159,14 +160,14 @@
     "SOS-ADC(2) [QC]": 8.301,
     "ADC(2)": 7.99,
     "ADC(3)": 9.023,
-    "ADC(2.5)": 8.506499999999999,
-    "Spin": 1
+    "ADC(2.5)": 8.506499999999999
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "nspi",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -192,14 +193,14 @@
     "SOS-ADC(2) [QC]": 9.111,
     "ADC(2)": 9.17,
     "ADC(3)": 9.166,
-    "ADC(2.5)": 9.168,
-    "Spin": 1
+    "ADC(2.5)": 9.168
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.4,
@@ -225,17 +226,17 @@
     "SOS-ADC(2) [QC]": 9.453,
     "ADC(2)": 9.461,
     "ADC(3)": 9.049,
-    "ADC(2.5)": 9.254999999999999,
-    "Spin": 1
+    "ADC(2.5)": 9.254999999999999
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 5.0,
     "f [LR-CC3/AVTZ]": 0.01,
     "TBE/AVTZ": 10.426,
@@ -251,14 +252,14 @@
     "CASPT3": 10.723,
     "CASPT3 (No IPEA)": 10.718,
     "SC-NEVPT2": 10.296,
-    "PC-NEVPT2": 10.265,
-    "Spin": 1
+    "PC-NEVPT2": 10.265
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -280,14 +281,14 @@
     "SOS-ADC(2) [QC]": 3.549,
     "ADC(2)": 3.457,
     "ADC(3)": 3.478,
-    "ADC(2.5)": 3.4675000000000002,
-    "Spin": 3
+    "ADC(2.5)": 3.4675000000000002
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 99.0,
@@ -309,14 +310,14 @@
     "SOS-ADC(2) [QC]": 6.002,
     "ADC(2)": 6.197,
     "ADC(3)": 5.709,
-    "ADC(2.5)": 5.952999999999999,
-    "Spin": 3
+    "ADC(2.5)": 5.952999999999999
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -338,14 +339,14 @@
     "SOS-ADC(2) [QC]": 6.796,
     "ADC(2)": 6.393,
     "ADC(3)": 7.445,
-    "ADC(2.5)": 6.9190000000000005,
-    "Spin": 3
+    "ADC(2.5)": 6.9190000000000005
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -367,14 +368,14 @@
     "SOS-ADC(2) [QC]": 7.729,
     "ADC(2)": 7.408,
     "ADC(3)": 8.239,
-    "ADC(2.5)": 7.823500000000001,
-    "Spin": 3
+    "ADC(2.5)": 7.823500000000001
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -396,14 +397,14 @@
     "SOS-ADC(2) [QC]": 7.783,
     "ADC(2)": 7.395,
     "ADC(3)": 8.465,
-    "ADC(2.5)": 7.93,
-    "Spin": 3
+    "ADC(2.5)": 7.93
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "nspi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -425,14 +426,14 @@
     "SOS-ADC(2) [QC]": 8.487,
     "ADC(2)": 8.391,
     "ADC(3)": 8.318,
-    "ADC(2.5)": 8.3545,
-    "Spin": 3
+    "ADC(2.5)": 8.3545
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -454,14 +455,14 @@
     "SOS-ADC(2) [QC]": 8.33,
     "ADC(2)": 8.005,
     "ADC(3)": 9.038,
-    "ADC(2.5)": 8.5215,
-    "Spin": 3
+    "ADC(2.5)": 8.5215
   },
   {
     "Molecule": "Formaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A^\" [F]",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "FL",
@@ -488,7 +489,6 @@
     "SOS-ADC(2) [QC]": 2.664,
     "ADC(2)": 2.711,
     "ADC(3)": 2.77,
-    "ADC(2.5)": 2.7405,
-    "Spin": 1
+    "ADC(2.5)": 2.7405
   }
 ]

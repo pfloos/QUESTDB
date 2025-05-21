@@ -4,6 +4,7 @@
     "Size": 1,
     "Group": 12,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 94.6,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 6.195,
     "ADC(2)": 6.365,
     "ADC(3)": 6.048,
-    "ADC(2.5)": 6.2065,
-    "Spin": 1
+    "ADC(2.5)": 6.2065
   },
   {
     "Molecule": "Hydrogen sulfide  ",
     "Size": 1,
     "Group": 12,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 94.3,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 6.302,
     "ADC(2)": 6.336,
     "ADC(3)": 6.179,
-    "ADC(2.5)": 6.2575,
-    "Spin": 1
+    "ADC(2.5)": 6.2575
   },
   {
     "Molecule": "Hydrogen sulfide  ",
     "Size": 1,
     "Group": 12,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 98.7,
@@ -90,14 +91,14 @@
     "SOS-ADC(2) [QC]": 5.852,
     "ADC(2)": 5.913,
     "ADC(3)": 5.676,
-    "ADC(2.5)": 5.7945,
-    "Spin": 3
+    "ADC(2.5)": 5.7945
   },
   {
     "Molecule": "Hydrogen sulfide  ",
     "Size": 1,
     "Group": 12,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -119,7 +120,6 @@
     "SOS-ADC(2) [QC]": 5.972,
     "ADC(2)": 5.963,
     "ADC(3)": 5.811,
-    "ADC(2.5)": 5.8870000000000005,
-    "Spin": 3
+    "ADC(2.5)": 5.8870000000000005
   }
 ]

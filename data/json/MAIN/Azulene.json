@@ -4,6 +4,7 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.0,
@@ -25,14 +26,14 @@
     "SOS-ADC(2) [QC]": 1.973,
     "ADC(2)": 2.228,
     "ADC(3)": 1.986,
-    "ADC(2.5)": 2.107,
-    "Spin": 1
+    "ADC(2.5)": 2.107
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "wCT",
@@ -55,14 +56,14 @@
     "SOS-ADC(2) [QC]": 3.541,
     "ADC(2)": 3.821,
     "ADC(3)": 3.61,
-    "ADC(2.5)": 3.7155,
-    "Spin": 1
+    "ADC(2.5)": 3.7155
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "wCT",
@@ -85,14 +86,14 @@
     "SOS-ADC(2) [QC]": 4.364,
     "ADC(2)": 4.633,
     "ADC(3)": 4.416,
-    "ADC(2.5)": 4.5245,
-    "Spin": 1
+    "ADC(2.5)": 4.5245
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -113,14 +114,14 @@
     "SOS-ADC(2) [QC]": 4.838,
     "ADC(2)": 4.79,
     "ADC(3)": 4.702,
-    "ADC(2.5)": 4.746,
-    "Spin": 1
+    "ADC(2.5)": 4.746
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.5,
@@ -142,14 +143,14 @@
     "SOS-ADC(2) [QC]": 4.646,
     "ADC(2)": 4.696,
     "ADC(3)": 4.653,
-    "ADC(2.5)": 4.6745,
-    "Spin": 1
+    "ADC(2.5)": 4.6745
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.3,
@@ -171,14 +172,14 @@
     "SOS-ADC(2) [QC]": 5.25,
     "ADC(2)": 5.202,
     "ADC(3)": 5.108,
-    "ADC(2.5)": 5.154999999999999,
-    "Spin": 1
+    "ADC(2.5)": 5.154999999999999
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.1,
@@ -195,14 +196,14 @@
     "SOS-ADC(2) [QC]": 2.139,
     "ADC(2)": 2.227,
     "ADC(3)": 1.842,
-    "ADC(2.5)": 2.0345,
-    "Spin": 3
+    "ADC(2.5)": 2.0345
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -219,14 +220,14 @@
     "SOS-ADC(2) [QC]": 2.465,
     "ADC(2)": 2.646,
     "ADC(3)": 2.169,
-    "ADC(2.5)": 2.4074999999999998,
-    "Spin": 3
+    "ADC(2.5)": 2.4074999999999998
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.2,
@@ -243,14 +244,14 @@
     "SOS-ADC(2) [QC]": 2.806,
     "ADC(2)": 3.024,
     "ADC(3)": 2.546,
-    "ADC(2.5)": 2.785,
-    "Spin": 3
+    "ADC(2.5)": 2.785
   },
   {
     "Molecule": "Azulene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 95.9,
@@ -267,7 +268,6 @@
     "SOS-ADC(2) [QC]": 4.069,
     "ADC(2)": 4.299,
     "ADC(3)": 3.758,
-    "ADC(2.5)": 4.0285,
-    "Spin": 3
+    "ADC(2.5)": 4.0285
   }
 ]

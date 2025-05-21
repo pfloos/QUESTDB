@@ -4,6 +4,7 @@
     "Size": 11,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "f [LR-CC3/AVTZ]": "n.d",
@@ -24,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.491,
     "ADC(2)": 4.813,
     "ADC(3)": 4.669,
-    "ADC(2.5)": 4.741,
-    "Spin": 1
+    "ADC(2.5)": 4.741
   },
   {
     "Molecule": "Phenyl-pyrrole",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "f [LR-CC3/AVTZ]": "n.d",
@@ -52,14 +53,14 @@
     "SOS-ADC(2) [QC]": 4.871,
     "ADC(2)": 4.967,
     "ADC(3)": 4.92,
-    "ADC(2.5)": 4.9435,
-    "Spin": 1
+    "ADC(2.5)": 4.9435
   },
   {
     "Molecule": "Phenyl-pyrrole",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -81,14 +82,14 @@
     "SOS-ADC(2) [QC]": 5.471,
     "ADC(2)": 5.397,
     "ADC(3)": 5.287,
-    "ADC(2.5)": 5.3420000000000005,
-    "Spin": 1
+    "ADC(2.5)": 5.3420000000000005
   },
   {
     "Molecule": "Phenyl-pyrrole",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "f [LR-CC3/AVTZ]": "n.d",
@@ -109,14 +110,14 @@
     "SOS-ADC(2) [QC]": 5.597,
     "ADC(2)": 5.487,
     "ADC(3)": 5.522,
-    "ADC(2.5)": 5.5045,
-    "Spin": 1
+    "ADC(2.5)": 5.5045
   },
   {
     "Molecule": "Phenyl-pyrrole",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.8,
@@ -137,14 +138,14 @@
     "SOS-ADC(2) [QC]": 5.751,
     "ADC(2)": 5.664,
     "ADC(3)": 5.578,
-    "ADC(2.5)": 5.621,
-    "Spin": 1
+    "ADC(2.5)": 5.621
   },
   {
     "Molecule": "Phenyl-pyrrole",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -166,7 +167,6 @@
     "SOS-ADC(2) [QC]": 6.158,
     "ADC(2)": 5.91,
     "ADC(3)": 5.995,
-    "ADC(2.5)": 5.952500000000001,
-    "Spin": 1
+    "ADC(2.5)": 5.952500000000001
   }
 ]

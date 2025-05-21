@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 93.2,
@@ -29,17 +30,17 @@
     "SOS-ADC(2) [QC]": 1.676,
     "ADC(2)": 1.676,
     "ADC(3)": 1.495,
-    "ADC(2.5)": 1.5855000000000001,
-    "Spin": 1
+    "ADC(2.5)": 1.5855000000000001
   },
   {
     "Molecule": "Nitroxyl",
     "Size": 2,
     "Group": 12,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 0.3,
     "f [LR-CC3/AVTZ]": 0.0,
     "TBE/AVTZ": 4.333,
@@ -57,14 +58,14 @@
     "CASPT3": 4.364,
     "CASPT3 (No IPEA)": 4.361,
     "SC-NEVPT2": 4.398,
-    "PC-NEVPT2": 4.371,
-    "Spin": 1
+    "PC-NEVPT2": 4.371
   },
   {
     "Molecule": "Nitroxyl",
     "Size": 2,
     "Group": 12,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -90,14 +91,14 @@
     "SOS-ADC(2) [QC]": 6.088,
     "ADC(2)": 5.73,
     "ADC(3)": 6.419,
-    "ADC(2.5)": 6.0745000000000005,
-    "Spin": 1
+    "ADC(2.5)": 6.0745000000000005
   },
   {
     "Molecule": "Nitroxyl",
     "Size": 2,
     "Group": 12,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 99.2,
@@ -119,14 +120,14 @@
     "SOS-ADC(2) [QC]": 0.91,
     "ADC(2)": 0.778,
     "ADC(3)": 0.592,
-    "ADC(2.5)": 0.685,
-    "Spin": 3
+    "ADC(2.5)": 0.685
   },
   {
     "Molecule": "Nitroxyl",
     "Size": 2,
     "Group": 12,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.5,
@@ -148,7 +149,6 @@
     "SOS-ADC(2) [QC]": 5.489,
     "ADC(2)": 5.835,
     "ADC(3)": 5.076,
-    "ADC(2.5)": 5.4555,
-    "Spin": 3
+    "ADC(2.5)": 5.4555
   }
 ]

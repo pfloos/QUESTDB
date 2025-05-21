@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.8,
@@ -36,14 +37,14 @@
     "CASPT3": 3.94,
     "CASPT3 (No IPEA)": 3.89,
     "SC-NEVPT2": 4.01,
-    "PC-NEVPT2": 3.98,
-    "Spin": 1
+    "PC-NEVPT2": 3.98
   },
   {
     "Molecule": "Cyanoformaldehyde",
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.9,
@@ -76,14 +77,14 @@
     "CASPT3": 6.77,
     "CASPT3 (No IPEA)": 6.67,
     "SC-NEVPT2": 6.52,
-    "PC-NEVPT2": 6.44,
-    "Spin": 1
+    "PC-NEVPT2": 6.44
   },
   {
     "Molecule": "Cyanoformaldehyde",
     "Size": 4,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -111,14 +112,14 @@
     "CASPT3": 3.51,
     "CASPT3 (No IPEA)": 3.5,
     "SC-NEVPT2": 3.59,
-    "PC-NEVPT2": 3.58,
-    "Spin": 3
+    "PC-NEVPT2": 3.58
   },
   {
     "Molecule": "Cyanoformaldehyde",
     "Size": 4,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -146,7 +147,6 @@
     "CASPT3": 5.16,
     "CASPT3 (No IPEA)": 5.12,
     "SC-NEVPT2": 5.37,
-    "PC-NEVPT2": 5.35,
-    "Spin": 3
+    "PC-NEVPT2": 5.35
   }
 ]

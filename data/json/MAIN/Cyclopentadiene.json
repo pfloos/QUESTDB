@@ -4,6 +4,7 @@
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 93.8,
@@ -35,14 +36,14 @@
     "CASPT3": 6.06,
     "CASPT3 (No IPEA)": 5.99,
     "SC-NEVPT2": 5.71,
-    "PC-NEVPT2": 5.65,
-    "Spin": 1
+    "PC-NEVPT2": 5.65
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 94.0,
@@ -74,14 +75,14 @@
     "CASPT3": 5.81,
     "CASPT3 (No IPEA)": 5.77,
     "SC-NEVPT2": 5.92,
-    "PC-NEVPT2": 5.92,
-    "Spin": 1
+    "PC-NEVPT2": 5.92
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 94.2,
@@ -114,14 +115,14 @@
     "CASPT3": 6.47,
     "CASPT3 (No IPEA)": 6.41,
     "SC-NEVPT2": 6.43,
-    "PC-NEVPT2": 6.42,
-    "Spin": 1
+    "PC-NEVPT2": 6.42
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.8,
@@ -153,14 +154,14 @@
     "CASPT3": 6.45,
     "CASPT3 (No IPEA)": 6.41,
     "SC-NEVPT2": 6.59,
-    "PC-NEVPT2": 6.59,
-    "Spin": 1
+    "PC-NEVPT2": 6.59
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 94.2,
@@ -193,17 +194,17 @@
     "CASPT3": 6.61,
     "CASPT3 (No IPEA)": 6.54,
     "SC-NEVPT2": 6.62,
-    "PC-NEVPT2": 6.6,
-    "Spin": 1
+    "PC-NEVPT2": 6.6
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 78.9,
     "f [LR-CC3/AVTZ]": 0.01,
     "TBE/AVTZ": 6.451,
@@ -233,14 +234,14 @@
     "CASPT3": 6.59,
     "CASPT3 (No IPEA)": 6.5,
     "SC-NEVPT2": 6.78,
-    "PC-NEVPT2": 6.75,
-    "Spin": 1
+    "PC-NEVPT2": 6.75
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -268,14 +269,14 @@
     "CASPT3": 3.31,
     "CASPT3 (No IPEA)": 3.26,
     "SC-NEVPT2": 3.42,
-    "PC-NEVPT2": 3.41,
-    "Spin": 3
+    "PC-NEVPT2": 3.41
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.6,
@@ -303,14 +304,14 @@
     "CASPT3": 5.1,
     "CASPT3 (No IPEA)": 5.03,
     "SC-NEVPT2": 5.31,
-    "PC-NEVPT2": 5.3,
-    "Spin": 3
+    "PC-NEVPT2": 5.3
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -338,14 +339,14 @@
     "CASPT3": 5.81,
     "CASPT3 (No IPEA)": 5.75,
     "SC-NEVPT2": 5.74,
-    "PC-NEVPT2": 5.73,
-    "Spin": 3
+    "PC-NEVPT2": 5.73
   },
   {
     "Molecule": "Cyclopentadiene",
     "Size": 5,
     "Group": 35,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -373,7 +374,6 @@
     "CASPT3": 6.43,
     "CASPT3 (No IPEA)": 6.37,
     "SC-NEVPT2": 6.41,
-    "PC-NEVPT2": 6.4,
-    "Spin": 3
+    "PC-NEVPT2": 6.4
   }
 ]

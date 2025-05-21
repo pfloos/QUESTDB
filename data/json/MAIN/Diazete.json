@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.2,
@@ -29,14 +30,14 @@
     "SOS-ADC(2) [QC]": 2.797,
     "ADC(2)": 2.636,
     "ADC(3)": 2.769,
-    "ADC(2.5)": 2.7025,
-    "Spin": 1
+    "ADC(2.5)": 2.7025
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.7,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 3.445,
     "ADC(2)": 3.365,
     "ADC(3)": 2.841,
-    "ADC(2.5)": 3.103,
-    "Spin": 1
+    "ADC(2.5)": 3.103
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "nspi",
     "%T1 [CC3/AVTZ]": 90.2,
@@ -94,14 +95,14 @@
     "SOS-ADC(2) [QC]": 6.597,
     "ADC(2)": 6.372,
     "ADC(3)": 6.282,
-    "ADC(2.5)": 6.327,
-    "Spin": 1
+    "ADC(2.5)": 6.327
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^1B_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.5,
@@ -126,14 +127,14 @@
     "SOS-ADC(2) [QC]": 6.718,
     "ADC(2)": 6.744,
     "ADC(3)": 6.552,
-    "ADC(2.5)": 6.648,
-    "Spin": 1
+    "ADC(2.5)": 6.648
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 90.5,
@@ -158,14 +159,14 @@
     "SOS-ADC(2) [QC]": 7.093,
     "ADC(2)": 6.709,
     "ADC(3)": 7.3,
-    "ADC(2.5)": 7.0045,
-    "Spin": 1
+    "ADC(2.5)": 7.0045
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -191,17 +192,17 @@
     "SOS-ADC(2) [QC]": 7.097,
     "ADC(2)": 6.691,
     "ADC(3)": 7.326,
-    "ADC(2.5)": 7.0085,
-    "Spin": 1
+    "ADC(2.5)": 7.0085
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 10.9,
     "TBE/AVTZ": 6.605,
     "Method": "CCSDTQ/6-31+G(d) + [CC4/AVDZ-CC4/6-31+G(d)] +  [CASPT3/AVTZ - CASPT3/AVDZ]",
@@ -216,14 +217,14 @@
     "CASPT3": 6.684,
     "CASPT3 (No IPEA)": 6.672,
     "SC-NEVPT2": 6.732,
-    "PC-NEVPT2": 6.649,
-    "Spin": 1
+    "PC-NEVPT2": 6.649
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^3A_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -245,14 +246,14 @@
     "SOS-ADC(2) [QC]": 2.353,
     "ADC(2)": 2.25,
     "ADC(3)": 1.94,
-    "ADC(2.5)": 2.0949999999999998,
-    "Spin": 3
+    "ADC(2.5)": 2.0949999999999998
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^3A_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.8,
@@ -274,14 +275,14 @@
     "SOS-ADC(2) [QC]": 2.696,
     "ADC(2)": 2.451,
     "ADC(3)": 2.6,
-    "ADC(2.5)": 2.5255,
-    "Spin": 3
+    "ADC(2.5)": 2.5255
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^3B_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
@@ -303,14 +304,14 @@
     "SOS-ADC(2) [QC]": 5.26,
     "ADC(2)": 5.542,
     "ADC(3)": 4.921,
-    "ADC(2.5)": 5.2315000000000005,
-    "Spin": 3
+    "ADC(2.5)": 5.2315000000000005
   },
   {
     "Molecule": "Diazete",
     "Size": 4,
     "Group": 35,
     "State": "^3B_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -332,7 +333,6 @@
     "SOS-ADC(2) [QC]": 6.18,
     "ADC(2)": 6.077,
     "ADC(3)": 5.863,
-    "ADC(2.5)": 5.970000000000001,
-    "Spin": 3
+    "ADC(2.5)": 5.970000000000001
   }
 ]

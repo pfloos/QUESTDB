@@ -4,6 +4,7 @@
     "Size": 8,
     "Group": 69,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -26,14 +27,14 @@
     "SOS-ADC(2) [QC]": 4.463,
     "ADC(2)": 4.411,
     "ADC(3)": 4.296,
-    "ADC(2.5)": 4.3535,
-    "Spin": 1
+    "ADC(2.5)": 4.3535
   },
   {
     "Molecule": "Triazapentalene",
     "Size": 8,
     "Group": 69,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 89.4,
@@ -56,14 +57,14 @@
     "SOS-ADC(2) [QC]": 4.539,
     "ADC(2)": 4.765,
     "ADC(3)": 4.486,
-    "ADC(2.5)": 4.6255,
-    "Spin": 1
+    "ADC(2.5)": 4.6255
   },
   {
     "Molecule": "Triazapentalene",
     "Size": 8,
     "Group": 69,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.4,
@@ -84,14 +85,14 @@
     "SOS-ADC(2) [QC]": 4.799,
     "ADC(2)": 5.064,
     "ADC(3)": 4.88,
-    "ADC(2.5)": 4.9719999999999995,
-    "Spin": 1
+    "ADC(2.5)": 4.9719999999999995
   },
   {
     "Molecule": "Triazapentalene",
     "Size": 8,
     "Group": 69,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.2,
@@ -114,14 +115,14 @@
     "SOS-ADC(2) [QC]": 4.982,
     "ADC(2)": 4.917,
     "ADC(3)": 4.827,
-    "ADC(2.5)": 4.872,
-    "Spin": 1
+    "ADC(2.5)": 4.872
   },
   {
     "Molecule": "Triazapentalene",
     "Size": 8,
     "Group": 69,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -139,14 +140,14 @@
     "SOS-ADC(2) [QC]": 3.519,
     "ADC(2)": 3.74,
     "ADC(3)": 3.197,
-    "ADC(2.5)": 3.4685,
-    "Spin": 3
+    "ADC(2.5)": 3.4685
   },
   {
     "Molecule": "Triazapentalene",
     "Size": 8,
     "Group": 69,
     "State": "^3A\"",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -164,7 +165,6 @@
     "SOS-ADC(2) [QC]": 4.452,
     "ADC(2)": 4.385,
     "ADC(3)": 4.255,
-    "ADC(2.5)": 4.32,
-    "Spin": 3
+    "ADC(2.5)": 4.32
   }
 ]

@@ -4,6 +4,7 @@
     "Size": 1,
     "Group": 12,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.002,
     "TBE/AVTZ": 2.119,
@@ -20,14 +21,14 @@
     "U-CCSD": 2.134,
     "RO-CCSD": 2.122,
     "U-CC3": 2.126,
-    "RO-CC3": 2.122,
-    "Spin": 2
+    "RO-CC3": 2.122
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 6.479,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -43,14 +44,14 @@
     "U-CCSD": 6.512,
     "RO-CCSD": 6.493,
     "U-CC3": 6.493,
-    "RO-CC3": 6.488,
-    "Spin": 2
+    "RO-CC3": 6.488
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.022,
     "TBE/AVTZ": 7.758,
@@ -67,14 +68,14 @@
     "U-CCSD": 8.211,
     "RO-CCSD": 8.19,
     "U-CC3": 7.916,
-    "RO-CC3": 7.896,
-    "Spin": 2
+    "RO-CC3": 7.896
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.033,
     "TBE/AVTZ": 7.689,
@@ -91,28 +92,28 @@
     "U-CCSD": 7.749,
     "RO-CCSD": 7.729,
     "U-CC3": 7.695,
-    "RO-CC3": 7.691,
-    "Spin": 2
+    "RO-CC3": 7.691
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.004,
     "TBE/AVTZ": 9.171,
     "Method (all in RO)": "exFCI/AVTZ",
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 9.21,
-    "Corr. Method": "CCSDTQ",
-    "Spin": 2
+    "Corr. Method": "CCSDTQ"
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "R",
     "TBE/AVTZ": 9.355,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -128,14 +129,14 @@
     "U-CCSD": 9.412,
     "RO-CCSD": 9.393,
     "U-CC3": 9.358,
-    "RO-CC3": 9.354,
-    "Spin": 2
+    "RO-CC3": 9.354
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^4B_1",
+    "Spin": 4,
     "V/R": "R",
     "TBE/AVTZ": 7.294,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -151,20 +152,19 @@
     "U-CCSD": 7.535,
     "RO-CCSD": 7.537,
     "U-CC3": 7.445,
-    "RO-CC3": 7.435,
-    "Spin": 4
+    "RO-CC3": 7.435
   },
   {
     "Molecule": "NH2",
     "Size": 1,
     "Group": 12,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "R",
     "TBE/AVTZ": 8.894,
     "Method (all in RO)": "exFCI/AVTZ",
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 8.933999999999997,
-    "Corr. Method": "CCSDTQ",
-    "Spin": 4
+    "Corr. Method": "CCSDTQ"
   }
 ]

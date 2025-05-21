@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 0.475,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -17,14 +18,14 @@
     "U-CCSD": 0.512,
     "RO-CCSD": 0.494,
     "U-CC3": 0.481,
-    "RO-CC3": 0.477,
-    "Spin": 2
+    "RO-CC3": 0.477
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.001,
     "TBE/AVTZ": 2.927,
@@ -39,14 +40,14 @@
     "U-CCSD": 3.033,
     "RO-CCSD": 3.008,
     "U-CC3": 2.94,
-    "RO-CC3": 2.933,
-    "Spin": 2
+    "RO-CC3": 2.933
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.071,
     "TBE/AVTZ": 7.061,
@@ -61,14 +62,14 @@
     "U-CCSD": 8.128,
     "RO-CCSD": 8.094,
     "U-CC3": 7.179,
-    "RO-CC3": 7.164,
-    "Spin": 2
+    "RO-CC3": 7.164
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.108,
     "TBE/AVTZ": 7.29,
@@ -83,14 +84,14 @@
     "U-CCSD": 7.834,
     "RO-CCSD": 7.819,
     "U-CC3": 7.569,
-    "RO-CC3": 7.533,
-    "Spin": 2
+    "RO-CC3": 7.533
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.091,
     "TBE/AVTZ": 7.417,
@@ -105,14 +106,14 @@
     "U-CCSD": 7.817,
     "RO-CCSD": 7.806,
     "U-CC3": 7.564,
-    "RO-CC3": 7.548,
-    "Spin": 2
+    "RO-CC3": 7.548
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.002,
     "TBE/AVTZ": 7.691,
@@ -125,16 +126,16 @@
     "U-CCSD": 8.482,
     "RO-CCSD": 8.44,
     "U-CC3": 7.671,
-    "RO-CC3": 7.657,
-    "Spin": 2
+    "RO-CC3": 7.657
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "V",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "TBE/AVTZ": 7.777,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
     "Safe ? (~50 meV)": "N",
@@ -147,14 +148,14 @@
     "U-CCSD": 8.204,
     "RO-CCSD": 8.173,
     "U-CC3": 7.938,
-    "RO-CC3": 7.925,
-    "Spin": 2
+    "RO-CC3": 7.925
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^4B_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.4,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -168,14 +169,14 @@
     "U-CCSD": 6.694,
     "RO-CCSD": 6.692,
     "U-CC3": 6.562,
-    "RO-CC3": 6.553,
-    "Spin": 4
+    "RO-CC3": 6.553
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "R",
     "TBE/AVTZ": 7.09,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -189,14 +190,14 @@
     "U-CCSD": 7.362,
     "RO-CCSD": 7.361,
     "U-CC3": 7.199,
-    "RO-CC3": 7.193,
-    "Spin": 4
+    "RO-CC3": 7.193
   },
   {
     "Molecule": "F2BS",
     "Size": 4,
     "Group": 35,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "R",
     "TBE/AVTZ": 7.988,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -210,7 +211,6 @@
     "U-CCSD": 8.277,
     "RO-CCSD": 8.27,
     "U-CC3": 8.148,
-    "RO-CC3": 8.134,
-    "Spin": 4
+    "RO-CC3": 8.134
   }
 ]

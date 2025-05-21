@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 6.914,
     "ADC(2)": 7.016,
     "ADC(3)": 7.347,
-    "ADC(2.5)": 7.1815,
-    "Spin": 1
+    "ADC(2.5)": 7.1815
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 90.9,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 7.542,
     "ADC(2)": 7.207,
     "ADC(3)": 8.126,
-    "ADC(2.5)": 7.666499999999999,
-    "Spin": 1
+    "ADC(2.5)": 7.666499999999999
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -93,14 +94,14 @@
     "SOS-ADC(2) [QC]": 8.251,
     "ADC(2)": 8.106,
     "ADC(3)": 8.438,
-    "ADC(2.5)": 8.272,
-    "Spin": 1
+    "ADC(2.5)": 8.272
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -126,14 +127,14 @@
     "SOS-ADC(2) [QC]": 8.404,
     "ADC(2)": 8.14,
     "ADC(3)": 8.908,
-    "ADC(2.5)": 8.524000000000001,
-    "Spin": 1
+    "ADC(2.5)": 8.524000000000001
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -158,14 +159,14 @@
     "SOS-ADC(2) [QC]": 8.824,
     "ADC(2)": 8.691,
     "ADC(3)": 9.033,
-    "ADC(2.5)": 8.862,
-    "Spin": 1
+    "ADC(2.5)": 8.862
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.6,
@@ -191,14 +192,14 @@
     "SOS-ADC(2) [QC]": 8.887,
     "ADC(2)": 8.921,
     "ADC(3)": 9.562,
-    "ADC(2.5)": 9.241499999999998,
-    "Spin": 1
+    "ADC(2.5)": 9.241499999999998
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -219,14 +220,14 @@
     "SOS-ADC(2) [QC]": 6.814,
     "ADC(2)": 6.818,
     "ADC(3)": 7.099,
-    "ADC(2.5)": 6.9585,
-    "Spin": 3
+    "ADC(2.5)": 6.9585
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -247,14 +248,14 @@
     "SOS-ADC(2) [QC]": 7.318,
     "ADC(2)": 7.401,
     "ADC(3)": 7.266,
-    "ADC(2.5)": 7.3335,
-    "Spin": 3
+    "ADC(2.5)": 7.3335
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 96.6,
@@ -275,14 +276,14 @@
     "SOS-ADC(2) [QC]": 7.471,
     "ADC(2)": 7.113,
     "ADC(3)": 7.954,
-    "ADC(2.5)": 7.5335,
-    "Spin": 3
+    "ADC(2.5)": 7.5335
   },
   {
     "Molecule": "Carbonic acid",
     "Size": 4,
     "Group": 35,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -303,7 +304,6 @@
     "SOS-ADC(2) [QC]": 8.169,
     "ADC(2)": 7.989,
     "ADC(3)": 8.264,
-    "ADC(2.5)": 8.1265,
-    "Spin": 3
+    "ADC(2.5)": 8.1265
   }
 ]

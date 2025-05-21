@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 87.6,
@@ -36,14 +37,14 @@
     "CASPT3": 3.66,
     "CASPT3 (No IPEA)": 3.66,
     "SC-NEVPT2": 3.83,
-    "PC-NEVPT2": 3.84,
-    "Spin": 1
+    "PC-NEVPT2": 3.84
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -76,14 +77,14 @@
     "CASPT3": 7.18,
     "CASPT3 (No IPEA)": 7.05,
     "SC-NEVPT2": 6.43,
-    "PC-NEVPT2": 6.12,
-    "Spin": 1
+    "PC-NEVPT2": 6.12
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 79.4,
@@ -116,14 +117,14 @@
     "CASPT3": 6.88,
     "CASPT3 (No IPEA)": 6.8,
     "SC-NEVPT2": 7.1,
-    "PC-NEVPT2": 7.07,
-    "Spin": 1
+    "PC-NEVPT2": 7.07
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 89.4,
@@ -155,17 +156,17 @@
     "CASPT3": 7.2,
     "CASPT3 (No IPEA)": 7.16,
     "SC-NEVPT2": 7.05,
-    "PC-NEVPT2": 7.01,
-    "Spin": 1
+    "PC-NEVPT2": 7.01
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 75.0,
     "f [LR-CC3/AVTZ]": "n.d.",
     "TBE/AVTZ": 7.928,
@@ -181,14 +182,14 @@
     "CASPT3": 8.02,
     "CASPT3 (No IPEA)": 7.95,
     "SC-NEVPT2": 8.33,
-    "PC-NEVPT2": 8.3,
-    "Spin": 1
+    "PC-NEVPT2": 8.3
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.0,
@@ -216,14 +217,14 @@
     "CASPT3": 3.39,
     "CASPT3 (No IPEA)": 3.4,
     "SC-NEVPT2": 3.51,
-    "PC-NEVPT2": 3.52,
-    "Spin": 3
+    "PC-NEVPT2": 3.52
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.6,
@@ -251,14 +252,14 @@
     "CASPT3": 3.96,
     "CASPT3 (No IPEA)": 3.91,
     "SC-NEVPT2": 4.1,
-    "PC-NEVPT2": 4.09,
-    "Spin": 3
+    "PC-NEVPT2": 4.09
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -286,14 +287,14 @@
     "CASPT3": 6.1,
     "CASPT3 (No IPEA)": 6.02,
     "SC-NEVPT2": 6.44,
-    "PC-NEVPT2": 6.43,
-    "Spin": 3
+    "PC-NEVPT2": 6.43
   },
   {
     "Molecule": "Acrolein",
     "Size": 4,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 92.7,
@@ -320,7 +321,6 @@
     "CASPT3": 6.74,
     "CASPT3 (No IPEA)": 6.66,
     "SC-NEVPT2": 6.94,
-    "PC-NEVPT2": 6.91,
-    "Spin": 3
+    "PC-NEVPT2": 6.91
   }
 ]

@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^1\\Pi_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.8,
@@ -27,14 +28,14 @@
     "SOS-ADC(2) [QC]": 3.524,
     "ADC(2)": 3.347,
     "ADC(3)": 3.173,
-    "ADC(2.5)": 3.26,
-    "Spin": 1
+    "ADC(2.5)": 3.26
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma_u^-",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.2,
@@ -57,14 +58,14 @@
     "SOS-ADC(2) [QC]": 3.872,
     "ADC(2)": 4.115,
     "ADC(3)": 3.395,
-    "ADC(2.5)": 3.755,
-    "Spin": 1
+    "ADC(2.5)": 3.755
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Delta_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.6,
@@ -87,17 +88,17 @@
     "SOS-ADC(2) [QC]": 3.893,
     "ADC(2)": 4.275,
     "ADC(3)": 3.415,
-    "ADC(2.5)": 3.845,
-    "Spin": 1
+    "ADC(2.5)": 3.845
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Pi_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 76.5,
     "TBE/AVTZ": 4.008,
     "Method": "exFCI/AVTZ",
@@ -125,17 +126,17 @@
     "CASPT3": 4.009,
     "CASPT3 (No IPEA)": 3.939,
     "SC-NEVPT2": 4.063,
-    "PC-NEVPT2": 4.027,
-    "Spin": 1
+    "PC-NEVPT2": 4.027
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Delta_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 1.0,
     "TBE/AVTZ": 5.23,
     "Method": "exFCI/AVTZ",
@@ -150,17 +151,17 @@
     "CASPT3": 5.172,
     "CASPT3 (No IPEA)": 5.123,
     "SC-NEVPT2": 5.209,
-    "PC-NEVPT2": 5.255,
-    "Spin": 1
+    "PC-NEVPT2": 5.255
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma_g^+",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 1.0,
     "TBE/AVTZ": 5.908,
     "Method": "exFCI/AVTZ",
@@ -175,14 +176,14 @@
     "CASPT3": 5.896,
     "CASPT3 (No IPEA)": 5.826,
     "SC-NEVPT2": 5.993,
-    "PC-NEVPT2": 5.986,
-    "Spin": 1
+    "PC-NEVPT2": 5.986
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^3Pi_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.7,
@@ -202,14 +203,14 @@
     "SOS-ADC(2) [QC]": 2.507,
     "ADC(2)": 2.264,
     "ADC(3)": 1.945,
-    "ADC(2.5)": 2.1045,
-    "Spin": 3
+    "ADC(2.5)": 2.1045
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^3\\Pi_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 95.7,
@@ -229,14 +230,14 @@
     "SOS-ADC(2) [QC]": 3.4,
     "ADC(2)": 3.181,
     "ADC(3)": 2.69,
-    "ADC(2.5)": 2.9355,
-    "Spin": 3
+    "ADC(2.5)": 2.9355
   },
   {
     "Molecule": "Carbon trimer",
     "Size": 3,
     "Group": 35,
     "State": "^3\\Sigma_u^+",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -256,7 +257,6 @@
     "SOS-ADC(2) [QC]": 3.157,
     "ADC(2)": 3.288,
     "ADC(3)": 2.69,
-    "ADC(2.5)": 2.989,
-    "Spin": 3
+    "ADC(2.5)": 2.989
   }
 ]

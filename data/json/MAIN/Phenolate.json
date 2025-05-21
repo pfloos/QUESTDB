@@ -4,6 +4,7 @@
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -26,14 +27,14 @@
     "SOS-ADC(2) [QC]": 2.466,
     "ADC(2)": 2.398,
     "ADC(3)": 2.575,
-    "ADC(2.5)": 2.4865000000000004,
-    "Spin": 1
+    "ADC(2.5)": 2.4865000000000004
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 90.9,
@@ -55,14 +56,14 @@
     "SOS-ADC(2) [QC]": 2.739,
     "ADC(2)": 2.66,
     "ADC(3)": 2.865,
-    "ADC(2.5)": 2.7625,
-    "Spin": 1
+    "ADC(2.5)": 2.7625
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -85,14 +86,14 @@
     "SOS-ADC(2) [QC]": 2.917,
     "ADC(2)": 2.84,
     "ADC(3)": 3.028,
-    "ADC(2.5)": 2.934,
-    "Spin": 1
+    "ADC(2.5)": 2.934
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 91.3,
@@ -114,14 +115,14 @@
     "SOS-ADC(2) [QC]": 3.283,
     "ADC(2)": 3.203,
     "ADC(3)": 3.406,
-    "ADC(2.5)": 3.3045,
-    "Spin": 1
+    "ADC(2.5)": 3.3045
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 91.2,
@@ -144,14 +145,14 @@
     "SOS-ADC(2) [QC]": 3.329,
     "ADC(2)": 3.249,
     "ADC(3)": 3.459,
-    "ADC(2.5)": 3.354,
-    "Spin": 1
+    "ADC(2.5)": 3.354
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 85.0,
@@ -173,14 +174,14 @@
     "SOS-ADC(2) [QC]": 3.492,
     "ADC(2)": 2.871,
     "ADC(3)": 4.728,
-    "ADC(2.5)": 3.7995,
-    "Spin": 1
+    "ADC(2.5)": 3.7995
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.3,
@@ -203,14 +204,14 @@
     "SOS-ADC(2) [QC]": 3.615,
     "ADC(2)": 3.739,
     "ADC(3)": 3.897,
-    "ADC(2.5)": 3.8179999999999996,
-    "Spin": 1
+    "ADC(2.5)": 3.8179999999999996
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 85.5,
@@ -232,14 +233,14 @@
     "SOS-ADC(2) [QC]": 3.634,
     "ADC(2)": 3.04,
     "ADC(3)": 4.908,
-    "ADC(2.5)": 3.974,
-    "Spin": 1
+    "ADC(2.5)": 3.974
   },
   {
     "Molecule": "Phenolate",
     "Size": 7,
     "Group": 69,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -262,7 +263,6 @@
     "SOS-ADC(2) [QC]": 4.406,
     "ADC(2)": 4.092,
     "ADC(3)": 4.187,
-    "ADC(2.5)": 4.1395,
-    "Spin": 1
+    "ADC(2.5)": 4.1395
   }
 ]

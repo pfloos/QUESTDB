@@ -4,6 +4,7 @@
     "Size": 14,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.5,
@@ -67,14 +68,14 @@
     "BSE/G0W0@HF": 3.017252,
     "BSE/evGW@PBE0": 2.729776,
     "BSE/evGW@CAM-B3LYP": 2.747662,
-    "BSE/evGW@HF": 2.930906,
-    "Spin": 1
+    "BSE/evGW@HF": 2.930906
   },
   {
     "Molecule": "BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 81.8,
@@ -138,17 +139,17 @@
     "BSE/G0W0@HF": 4.08147,
     "BSE/evGW@PBE0": 3.631971,
     "BSE/evGW@CAM-B3LYP": 3.683646,
-    "BSE/evGW@HF": 3.919085,
-    "Spin": 1
+    "BSE/evGW@HF": 3.919085
   },
   {
     "Molecule": "BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVDZ]": 79.1,
     "f [LR-CCSD/AVTZ]": 0.044,
     "TBE/AVTZ": 3.901,
@@ -210,14 +211,14 @@
     "BSE/G0W0@HF": 4.351305,
     "BSE/evGW@PBE0": 3.843715,
     "BSE/evGW@CAM-B3LYP": 3.916145,
-    "BSE/evGW@HF": 4.185146,
-    "Spin": 1
+    "BSE/evGW@HF": 4.185146
   },
   {
     "Molecule": "BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.4,
@@ -266,14 +267,14 @@
     "BSE/G0W0@HF": 1.418675,
     "BSE/evGW@PBE0": 0.993283,
     "BSE/evGW@CAM-B3LYP": 1.087064,
-    "BSE/evGW@HF": 1.380804,
-    "Spin": 3
+    "BSE/evGW@HF": 1.380804
   },
   {
     "Molecule": "BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.0,
@@ -322,14 +323,14 @@
     "BSE/G0W0@HF": 3.086558,
     "BSE/evGW@PBE0": 2.62635,
     "BSE/evGW@CAM-B3LYP": 2.679216,
-    "BSE/evGW@HF": 2.965575,
-    "Spin": 3
+    "BSE/evGW@HF": 2.965575
   },
   {
     "Molecule": "BODIPY",
     "Size": 14,
     "Group": 1016,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.0,
@@ -378,7 +379,6 @@
     "BSE/G0W0@HF": 3.334223,
     "BSE/evGW@PBE0": 2.849916,
     "BSE/evGW@CAM-B3LYP": 2.908028,
-    "BSE/evGW@HF": 3.212712,
-    "Spin": 3
+    "BSE/evGW@HF": 3.212712
   }
 ]

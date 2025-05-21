@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.0,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 2.241,
     "ADC(2)": 2.371,
     "ADC(3)": 1.875,
-    "ADC(2.5)": 2.123,
-    "Spin": 1
+    "ADC(2.5)": 2.123
   },
   {
     "Molecule": "Silylidene",
     "Size": 2,
     "Group": 12,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -61,7 +62,6 @@
     "SOS-ADC(2) [QC]": 3.867,
     "ADC(2)": 3.886,
     "ADC(3)": 3.646,
-    "ADC(2.5)": 3.766,
-    "Spin": 1
+    "ADC(2.5)": 3.766
   }
 ]

@@ -4,6 +4,7 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 83.4,
@@ -25,14 +26,14 @@
     "SOS-ADC(2) [QC]": 3.326,
     "ADC(2)": 3.188,
     "ADC(3)": 4.436,
-    "ADC(2.5)": 3.8120000000000003,
-    "Spin": 1
+    "ADC(2.5)": 3.8120000000000003
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.7,
@@ -54,14 +55,14 @@
     "SOS-ADC(2) [QC]": 3.692,
     "ADC(2)": 3.693,
     "ADC(3)": 4.036,
-    "ADC(2.5)": 3.8644999999999996,
-    "Spin": 1
+    "ADC(2.5)": 3.8644999999999996
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 81.7,
@@ -84,14 +85,14 @@
     "SOS-ADC(2) [QC]": 3.552,
     "ADC(2)": 3.774,
     "ADC(3)": 4.164,
-    "ADC(2.5)": 3.969,
-    "Spin": 1
+    "ADC(2.5)": 3.969
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -114,14 +115,14 @@
     "SOS-ADC(2) [QC]": 3.358,
     "ADC(2)": 3.504,
     "ADC(3)": 4.066,
-    "ADC(2.5)": 3.785,
-    "Spin": 1
+    "ADC(2.5)": 3.785
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 85.7,
@@ -144,17 +145,17 @@
     "SOS-ADC(2) [QC]": 4.207,
     "ADC(2)": 4.273,
     "ADC(3)": 4.393,
-    "ADC(2.5)": 4.333,
-    "Spin": 1
+    "ADC(2.5)": 4.333
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 78.5,
     "f [LR-CC3/AVTZ]": "n.d.",
     "TBE/AVTZ": 5.138,
@@ -174,14 +175,14 @@
     "SOS-ADC(2) [QC]": 4.745,
     "ADC(2)": 4.068,
     "ADC(3)": 6.847,
-    "ADC(2.5)": 5.4575,
-    "Spin": 1
+    "ADC(2.5)": 5.4575
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "wCT",
@@ -200,14 +201,14 @@
     "SOS-ADC(2) [QC]": 2.297,
     "ADC(2)": 2.411,
     "ADC(3)": 2.158,
-    "ADC(2.5)": 2.2845,
-    "Spin": 3
+    "ADC(2.5)": 2.2845
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 95.3,
@@ -225,14 +226,14 @@
     "SOS-ADC(2) [QC]": 3.325,
     "ADC(2)": 3.12,
     "ADC(3)": 3.752,
-    "ADC(2.5)": 3.436,
-    "Spin": 3
+    "ADC(2.5)": 3.436
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -250,14 +251,14 @@
     "SOS-ADC(2) [QC]": 3.528,
     "ADC(2)": 3.735,
     "ADC(3)": 3.252,
-    "ADC(2.5)": 3.4935,
-    "Spin": 3
+    "ADC(2.5)": 3.4935
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 95.5,
@@ -275,14 +276,14 @@
     "SOS-ADC(2) [QC]": 3.569,
     "ADC(2)": 3.47,
     "ADC(3)": 4.247,
-    "ADC(2.5)": 3.8585000000000003,
-    "Spin": 3
+    "ADC(2.5)": 3.8585000000000003
   },
   {
     "Molecule": "Nitropyridine N-oxide",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 95.2,
@@ -300,7 +301,6 @@
     "SOS-ADC(2) [QC]": 3.612,
     "ADC(2)": 3.654,
     "ADC(3)": 3.879,
-    "ADC(2.5)": 3.7664999999999997,
-    "Spin": 3
+    "ADC(2.5)": 3.7664999999999997
   }
 ]

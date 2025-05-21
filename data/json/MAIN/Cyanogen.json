@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": " ^1\\Sigma_u^-",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 94.1,
@@ -35,14 +36,14 @@
     "CASPT3": 6.46,
     "CASPT3 (No IPEA)": 6.39,
     "SC-NEVPT2": 6.37,
-    "PC-NEVPT2": 6.32,
-    "Spin": 1
+    "PC-NEVPT2": 6.32
   },
   {
     "Molecule": "Cyanogen",
     "Size": 4,
     "Group": 35,
     "State": " ^1\\Delta_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 93.4,
@@ -74,14 +75,14 @@
     "CASPT3": 6.75,
     "CASPT3 (No IPEA)": 6.68,
     "SC-NEVPT2": 6.71,
-    "PC-NEVPT2": 6.66,
-    "Spin": 1
+    "PC-NEVPT2": 6.66
   },
   {
     "Molecule": "Cyanogen",
     "Size": 4,
     "Group": 35,
     "State": " ^3\\Sigma_u^+",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.5,
@@ -110,14 +111,14 @@
     "CASPT3": 4.95,
     "CASPT3 (No IPEA)": 4.89,
     "SC-NEVPT2": 4.92,
-    "PC-NEVPT2": 4.88,
-    "Spin": 3
+    "PC-NEVPT2": 4.88
   },
   {
     "Molecule": "Cyanogen",
     "Size": 4,
     "Group": 35,
     "State": " ^1\\Sigma_u^-  [F]",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "FL",
@@ -150,7 +151,6 @@
     "CASPT3": 5.11,
     "CASPT3 (No IPEA)": 5.04,
     "SC-NEVPT2": 5.01,
-    "PC-NEVPT2": 4.97,
-    "Spin": 1
+    "PC-NEVPT2": 4.97
   }
 ]

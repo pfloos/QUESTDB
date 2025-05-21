@@ -4,6 +4,7 @@
     "Size": 7,
     "Group": 69,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.3,
@@ -26,14 +27,14 @@
     "SOS-ADC(2) [QC]": 4.312,
     "ADC(2)": 4.593,
     "ADC(3)": 4.479,
-    "ADC(2.5)": 4.536,
-    "Spin": 1
+    "ADC(2.5)": 4.536
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -56,14 +57,14 @@
     "SOS-ADC(2) [QC]": 4.802,
     "ADC(2)": 4.712,
     "ADC(3)": 4.652,
-    "ADC(2.5)": 4.682,
-    "Spin": 1
+    "ADC(2.5)": 4.682
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -86,14 +87,14 @@
     "SOS-ADC(2) [QC]": 5.421,
     "ADC(2)": 5.344,
     "ADC(3)": 5.343,
-    "ADC(2.5)": 5.343500000000001,
-    "Spin": 1
+    "ADC(2.5)": 5.343500000000001
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.7,
@@ -115,14 +116,14 @@
     "SOS-ADC(2) [QC]": 5.468,
     "ADC(2)": 5.372,
     "ADC(3)": 5.365,
-    "ADC(2.5)": 5.3685,
-    "Spin": 1
+    "ADC(2.5)": 5.3685
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "M",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.0,
@@ -145,14 +146,14 @@
     "SOS-ADC(2) [QC]": 5.311,
     "ADC(2)": 5.442,
     "ADC(3)": 5.393,
-    "ADC(2.5)": 5.4175,
-    "Spin": 1
+    "ADC(2.5)": 5.4175
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -171,14 +172,14 @@
     "SOS-ADC(2) [QC]": 4.005,
     "ADC(2)": 4.116,
     "ADC(3)": 3.756,
-    "ADC(2.5)": 3.936,
-    "Spin": 3
+    "ADC(2.5)": 3.936
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -197,14 +198,14 @@
     "SOS-ADC(2) [QC]": 4.092,
     "ADC(2)": 4.193,
     "ADC(3)": 3.909,
-    "ADC(2.5)": 4.051,
-    "Spin": 3
+    "ADC(2.5)": 4.051
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -223,14 +224,14 @@
     "SOS-ADC(2) [QC]": 4.737,
     "ADC(2)": 4.627,
     "ADC(3)": 4.555,
-    "ADC(2.5)": 4.590999999999999,
-    "Spin": 3
+    "ADC(2.5)": 4.590999999999999
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -249,14 +250,14 @@
     "SOS-ADC(2) [QC]": 4.635,
     "ADC(2)": 4.836,
     "ADC(3)": 4.423,
-    "ADC(2.5)": 4.6295,
-    "Spin": 3
+    "ADC(2.5)": 4.6295
   },
   {
     "Molecule": "Aniline",
     "Size": 7,
     "Group": 69,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -275,7 +276,6 @@
     "SOS-ADC(2) [QC]": 5.395,
     "ADC(2)": 5.308,
     "ADC(3)": 5.297,
-    "ADC(2.5)": 5.3025,
-    "Spin": 3
+    "ADC(2.5)": 5.3025
   }
 ]

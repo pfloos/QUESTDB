@@ -4,6 +4,7 @@
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.9,
@@ -35,14 +36,14 @@
     "CASPT3": 5.28,
     "CASPT3 (No IPEA)": 5.23,
     "SC-NEVPT2": 5.51,
-    "PC-NEVPT2": 5.51,
-    "Spin": 1
+    "PC-NEVPT2": 5.51
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -75,14 +76,14 @@
     "CASPT3": 6.08,
     "CASPT3 (No IPEA)": 6.02,
     "SC-NEVPT2": 6.31,
-    "PC-NEVPT2": 6.32,
-    "Spin": 1
+    "PC-NEVPT2": 6.32
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.0,
@@ -114,14 +115,14 @@
     "CASPT3": 6.01,
     "CASPT3 (No IPEA)": 5.97,
     "SC-NEVPT2": 6.42,
-    "PC-NEVPT2": 6.44,
-    "Spin": 1
+    "PC-NEVPT2": 6.44
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -146,14 +147,14 @@
     "SOS-ADC(2) [QC]": 6.131,
     "ADC(2)": 6.064,
     "ADC(3)": 6.053,
-    "ADC(2.5)": 6.0585,
-    "Spin": 1
+    "ADC(2.5)": 6.0585
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -186,14 +187,14 @@
     "CASPT3": 6.45,
     "CASPT3 (No IPEA)": 6.38,
     "SC-NEVPT2": 6.71,
-    "PC-NEVPT2": 6.48,
-    "Spin": 1
+    "PC-NEVPT2": 6.48
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.3,
@@ -226,14 +227,14 @@
     "CASPT3": 6.43,
     "CASPT3 (No IPEA)": 6.34,
     "SC-NEVPT2": 6.58,
-    "PC-NEVPT2": 6.53,
-    "Spin": 1
+    "PC-NEVPT2": 6.53
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -266,14 +267,14 @@
     "CASPT3": 6.92,
     "CASPT3 (No IPEA)": 6.82,
     "SC-NEVPT2": 6.65,
-    "PC-NEVPT2": 6.62,
-    "Spin": 1
+    "PC-NEVPT2": 6.62
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -301,14 +302,14 @@
     "CASPT3": 4.49,
     "CASPT3 (No IPEA)": 4.44,
     "SC-NEVPT2": 4.76,
-    "PC-NEVPT2": 4.74,
-    "Spin": 3
+    "PC-NEVPT2": 4.74
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -336,14 +337,14 @@
     "CASPT3": 5.26,
     "CASPT3 (No IPEA)": 5.2,
     "SC-NEVPT2": 5.48,
-    "PC-NEVPT2": 5.49,
-    "Spin": 3
+    "PC-NEVPT2": 5.49
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -371,14 +372,14 @@
     "CASPT3": 5.49,
     "CASPT3 (No IPEA)": 5.4,
     "SC-NEVPT2": 5.6,
-    "PC-NEVPT2": 5.56,
-    "Spin": 3
+    "PC-NEVPT2": 5.56
   },
   {
     "Molecule": "Pyrrole",
     "Size": 5,
     "Group": 35,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -406,7 +407,6 @@
     "CASPT3": 6.04,
     "CASPT3 (No IPEA)": 5.98,
     "SC-NEVPT2": 6.27,
-    "PC-NEVPT2": 6.28,
-    "Spin": 3
+    "PC-NEVPT2": 6.28
   }
 ]

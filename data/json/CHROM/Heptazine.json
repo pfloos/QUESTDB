@@ -4,6 +4,7 @@
     "Size": 13,
     "Group": 1016,
     "State": "^1A_2'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 86.3,
@@ -66,14 +67,14 @@
     "BSE/G0W0@HF": 3.354427,
     "BSE/evGW@PBE0": 2.780855,
     "BSE/evGW@CAM-B3LYP": 2.782639,
-    "BSE/evGW@HF": 3.22798,
-    "Spin": 1
+    "BSE/evGW@HF": 3.22798
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^1A_1\"",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 85.9,
@@ -136,14 +137,14 @@
     "BSE/G0W0@HF": 4.738951,
     "BSE/evGW@PBE0": 4.024599,
     "BSE/evGW@CAM-B3LYP": 4.014308,
-    "BSE/evGW@HF": 4.50989,
-    "Spin": 1
+    "BSE/evGW@HF": 4.50989
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^1E\"",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 86.7,
@@ -206,14 +207,14 @@
     "BSE/G0W0@HF": 4.796113,
     "BSE/evGW@PBE0": 4.101053,
     "BSE/evGW@CAM-B3LYP": 4.097643,
-    "BSE/evGW@HF": 4.578028,
-    "Spin": 1
+    "BSE/evGW@HF": 4.578028
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^1E'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 84.4,
@@ -277,14 +278,14 @@
     "BSE/G0W0@HF": 5.365721,
     "BSE/evGW@PBE0": 4.499565,
     "BSE/evGW@CAM-B3LYP": 4.506128,
-    "BSE/evGW@HF": 5.235918,
-    "Spin": 1
+    "BSE/evGW@HF": 5.235918
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3A_2'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 95.7,
@@ -334,14 +335,14 @@
     "BSE/G0W0@HF": 3.05973,
     "BSE/evGW@PBE0": 2.501792,
     "BSE/evGW@CAM-B3LYP": 2.507883,
-    "BSE/evGW@HF": 2.941536,
-    "Spin": 3
+    "BSE/evGW@HF": 2.941536
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3E'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.1,
@@ -391,14 +392,14 @@
     "BSE/G0W0@HF": 4.17164,
     "BSE/evGW@PBE0": 3.140683,
     "BSE/evGW@CAM-B3LYP": 3.171584,
-    "BSE/evGW@HF": 4.073045,
-    "Spin": 3
+    "BSE/evGW@HF": 4.073045
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3A_1\"",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 94.8,
@@ -448,14 +449,14 @@
     "BSE/G0W0@HF": 4.593608,
     "BSE/evGW@PBE0": 3.844762,
     "BSE/evGW@CAM-B3LYP": 3.84506,
-    "BSE/evGW@HF": 4.369909,
-    "Spin": 3
+    "BSE/evGW@HF": 4.369909
   },
   {
     "Molecule": "Heptazine",
     "Size": 13,
     "Group": 1016,
     "State": "^3E\"",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 95.0,
@@ -505,7 +506,6 @@
     "BSE/G0W0@HF": 4.634602,
     "BSE/evGW@PBE0": 3.909653,
     "BSE/evGW@CAM-B3LYP": 3.914487,
-    "BSE/evGW@HF": 4.420608,
-    "Spin": 3
+    "BSE/evGW@HF": 4.420608
   }
 ]

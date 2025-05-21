@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": " ^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.0,
@@ -36,14 +37,14 @@
     "CASPT3": 3.9,
     "CASPT3 (No IPEA)": 3.86,
     "SC-NEVPT2": 3.98,
-    "PC-NEVPT2": 3.95,
-    "Spin": 1
+    "PC-NEVPT2": 3.95
   },
   {
     "Molecule": "Propynal",
     "Size": 4,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.9,
@@ -76,14 +77,14 @@
     "CASPT3": 5.81,
     "CASPT3 (No IPEA)": 5.72,
     "SC-NEVPT2": 5.58,
-    "PC-NEVPT2": 5.5,
-    "Spin": 1
+    "PC-NEVPT2": 5.5
   },
   {
     "Molecule": "Propynal",
     "Size": 4,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -111,14 +112,14 @@
     "CASPT3": 3.52,
     "CASPT3 (No IPEA)": 3.5,
     "SC-NEVPT2": 3.61,
-    "PC-NEVPT2": 3.59,
-    "Spin": 3
+    "PC-NEVPT2": 3.59
   },
   {
     "Molecule": "Propynal",
     "Size": 4,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -146,7 +147,6 @@
     "CASPT3": 4.59,
     "CASPT3 (No IPEA)": 4.54,
     "SC-NEVPT2": 4.66,
-    "PC-NEVPT2": 4.63,
-    "Spin": 3
+    "PC-NEVPT2": 4.63
   }
 ]

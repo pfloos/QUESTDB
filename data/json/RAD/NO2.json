@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0,
     "TBE/AVTZ": 2.8690000000000007,
@@ -18,14 +19,14 @@
     "U-CCSD": 2.94,
     "RO-CCSD": 2.926,
     "U-CC3": 2.905,
-    "RO-CC3": 2.903,
-    "Spin": 2
+    "RO-CC3": 2.903
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.009,
     "TBE/AVTZ": 3.3549999999999995,
@@ -40,14 +41,14 @@
     "U-CCSD": 3.3,
     "RO-CCSD": 3.289,
     "U-CC3": 3.402,
-    "RO-CC3": 3.406,
-    "Spin": 2
+    "RO-CC3": 3.406
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 3.694000000000001,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -61,14 +62,14 @@
     "U-CCSD": 3.701,
     "RO-CCSD": 3.658,
     "U-CC3": 3.763,
-    "RO-CC3": 3.765,
-    "Spin": 2
+    "RO-CC3": 3.765
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 5.530000000000001,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -80,42 +81,42 @@
     "U-CCSD": 5.691,
     "RO-CCSD": 5.686,
     "U-CC3": 5.589,
-    "RO-CC3": 5.586,
-    "Spin": 2
+    "RO-CC3": 5.586
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "f [LR-CCSD/AVTZ]": "n.d.",
     "TBE/AVTZ": 6.050000000000002,
     "Method (all in RO)": "exFCI/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "N",
     "U-CC3": 6.928,
-    "RO-CC3": 6.844,
-    "Spin": 2
+    "RO-CC3": 6.844
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "V",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "TBE/AVTZ": 6.912,
     "Method (all in RO)": "exFCI/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "N",
-    "RO-CC3": 7.743,
-    "Spin": 2
+    "RO-CC3": 7.743
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.001,
     "TBE/AVTZ": 7.523000000000001,
@@ -128,14 +129,14 @@
     "U-CCSD": 7.808,
     "RO-CCSD": 7.793,
     "U-CC3": 7.505,
-    "RO-CC3": 7.493,
-    "Spin": 2
+    "RO-CC3": 7.493
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.183,
     "TBE/AVTZ": 7.766,
@@ -148,16 +149,16 @@
     "U-CCSD": 7.795,
     "RO-CCSD": 7.779,
     "U-CC3": 7.853,
-    "RO-CC3": 7.845,
-    "Spin": 2
+    "RO-CC3": 7.845
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "M",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "f [LR-CCSD/AVTZ]": 0.007,
     "TBE/AVTZ": 8.040000000000001,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -169,14 +170,14 @@
     "U-CCSD": 8.737,
     "RO-CCSD": 8.716,
     "U-CC3": 8.216,
-    "RO-CC3": 8.205,
-    "Spin": 2
+    "RO-CC3": 8.205
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "M",
     "f [LR-CCSD/AVTZ]": 0.039,
     "TBE/AVTZ": 8.079,
@@ -189,14 +190,14 @@
     "U-CCSD": 8.474,
     "RO-CCSD": 8.459,
     "U-CC3": 8.163,
-    "RO-CC3": 8.156,
-    "Spin": 2
+    "RO-CC3": 8.156
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 4.616999999999999,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -208,14 +209,14 @@
     "U-CCSD": 5.047,
     "RO-CCSD": 5.043,
     "U-CC3": 4.894,
-    "RO-CC3": 4.883,
-    "Spin": 4
+    "RO-CC3": 4.883
   },
   {
     "Molecule": "NO2",
     "Size": 3,
     "Group": 35,
     "State": "^4B_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 4.804999999999999,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -229,7 +230,6 @@
     "U-CCSD": 4.948,
     "RO-CCSD": 4.93,
     "U-CC3": 5.035,
-    "RO-CC3": 5.029,
-    "Spin": 4
+    "RO-CC3": 5.029
   }
 ]

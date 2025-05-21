@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1B_{3u}",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s ",
     "%T1 [CC3/AVTZ]": 95.1,
@@ -29,14 +30,14 @@
     "SOS-ADC(2) [QC]": 7.391,
     "ADC(2)": 7.337,
     "ADC(3)": 7.171,
-    "ADC(2.5)": 7.254,
-    "Spin": 1
+    "ADC(2.5)": 7.254
   },
   {
     "Molecule": "Ethylene ",
     "Size": 2,
     "Group": 12,
     "State": "^1B_{1u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 95.8,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 7.876,
     "ADC(2)": 7.913,
     "ADC(3)": 7.689,
-    "ADC(2.5)": 7.801,
-    "Spin": 1
+    "ADC(2.5)": 7.801
   },
   {
     "Molecule": "Ethylene ",
     "Size": 2,
     "Group": 12,
     "State": "^1B_{1g}",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 95.3,
@@ -93,17 +94,17 @@
     "SOS-ADC(2) [QC]": 8.055,
     "ADC(2)": 7.989,
     "ADC(3)": 7.842,
-    "ADC(2.5)": 7.9155,
-    "Spin": 1
+    "ADC(2.5)": 7.9155
   },
   {
     "Molecule": "Ethylene ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 20.0,
     "TBE/AVTZ": 12.899,
     "Method": "exFCI/AVDZ + [CCSDTQ/AVTZ -  CCSDTQ/AVDZ]",
@@ -118,14 +119,14 @@
     "CASPT3": 13.205,
     "CASPT3 (No IPEA)": 13.177,
     "SC-NEVPT2": 13.262,
-    "PC-NEVPT2": 13.109,
-    "Spin": 1
+    "PC-NEVPT2": 13.109
   },
   {
     "Molecule": "Ethylene ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_{1u}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 99.1,
@@ -147,14 +148,14 @@
     "SOS-ADC(2) [QC]": 4.508,
     "ADC(2)": 4.591,
     "ADC(3)": 4.285,
-    "ADC(2.5)": 4.438000000000001,
-    "Spin": 3
+    "ADC(2.5)": 4.438000000000001
   },
   {
     "Molecule": "Ethylene ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_{3u}",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s ",
     "%T1 [CC3/AVTZ]": 98.5,
@@ -176,14 +177,14 @@
     "SOS-ADC(2) [QC]": 7.324,
     "ADC(2)": 7.233,
     "ADC(3)": 7.056,
-    "ADC(2.5)": 7.1445,
-    "Spin": 3
+    "ADC(2.5)": 7.1445
   },
   {
     "Molecule": "Ethylene ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_{1g}",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -205,7 +206,6 @@
     "SOS-ADC(2) [QC]": 8.031,
     "ADC(2)": 7.948,
     "ADC(3)": 7.795,
-    "ADC(2.5)": 7.8715,
-    "Spin": 3
+    "ADC(2.5)": 7.8715
   }
 ]

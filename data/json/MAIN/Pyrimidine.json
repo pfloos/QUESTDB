@@ -4,6 +4,7 @@
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 88.6,
@@ -36,14 +37,14 @@
     "CASPT3": 4.58,
     "CASPT3 (No IPEA)": 4.55,
     "SC-NEVPT2": 4.6,
-    "PC-NEVPT2": 4.55,
-    "Spin": 1
+    "PC-NEVPT2": 4.55
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 88.5,
@@ -75,14 +76,14 @@
     "CASPT3": 5.02,
     "CASPT3 (No IPEA)": 5.0,
     "SC-NEVPT2": 4.9,
-    "PC-NEVPT2": 4.84,
-    "Spin": 1
+    "PC-NEVPT2": 4.84
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.3,
@@ -115,14 +116,14 @@
     "CASPT3": 5.41,
     "CASPT3 (No IPEA)": 5.36,
     "SC-NEVPT2": 5.55,
-    "PC-NEVPT2": 5.53,
-    "Spin": 1
+    "PC-NEVPT2": 5.53
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 86.7,
@@ -154,14 +155,14 @@
     "CASPT3": 6.16,
     "CASPT3 (No IPEA)": 6.1,
     "SC-NEVPT2": 6.1,
-    "PC-NEVPT2": 6.02,
-    "Spin": 1
+    "PC-NEVPT2": 6.02
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 86.7,
@@ -194,14 +195,14 @@
     "CASPT3": 6.58,
     "CASPT3 (No IPEA)": 6.53,
     "SC-NEVPT2": 6.49,
-    "PC-NEVPT2": 6.4,
-    "Spin": 1
+    "PC-NEVPT2": 6.4
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 90.3,
@@ -234,14 +235,14 @@
     "CASPT3": 6.89,
     "CASPT3 (No IPEA)": 6.86,
     "SC-NEVPT2": 6.83,
-    "PC-NEVPT2": 6.77,
-    "Spin": 1
+    "PC-NEVPT2": 6.77
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -274,14 +275,14 @@
     "CASPT3": 7.29,
     "CASPT3 (No IPEA)": 7.22,
     "SC-NEVPT2": 7.21,
-    "PC-NEVPT2": 7.11,
-    "Spin": 1
+    "PC-NEVPT2": 7.11
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 90.5,
@@ -307,14 +308,14 @@
     "SOS-ADC(2) [QC]": 7.395,
     "ADC(2)": 6.956,
     "ADC(3)": 7.802,
-    "ADC(2.5)": 7.379,
-    "Spin": 1
+    "ADC(2.5)": 7.379
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 93.6,
@@ -340,14 +341,14 @@
     "SOS-ADC(2) [QC]": 7.446,
     "ADC(2)": 7.484,
     "ADC(3)": 7.284,
-    "ADC(2.5)": 7.384,
-    "Spin": 1
+    "ADC(2.5)": 7.384
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.8,
@@ -375,14 +376,14 @@
     "CASPT3": 4.2,
     "CASPT3 (No IPEA)": 4.18,
     "SC-NEVPT2": 4.21,
-    "PC-NEVPT2": 4.17,
-    "Spin": 3
+    "PC-NEVPT2": 4.17
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -410,14 +411,14 @@
     "CASPT3": 4.51,
     "CASPT3 (No IPEA)": 4.44,
     "SC-NEVPT2": 4.68,
-    "PC-NEVPT2": 4.67,
-    "Spin": 3
+    "PC-NEVPT2": 4.67
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.5,
@@ -445,14 +446,14 @@
     "CASPT3": 4.81,
     "CASPT3 (No IPEA)": 4.78,
     "SC-NEVPT2": 4.76,
-    "PC-NEVPT2": 4.72,
-    "Spin": 3
+    "PC-NEVPT2": 4.72
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -480,14 +481,14 @@
     "CASPT3": 5.03,
     "CASPT3 (No IPEA)": 4.97,
     "SC-NEVPT2": 5.05,
-    "PC-NEVPT2": 5.01,
-    "Spin": 3
+    "PC-NEVPT2": 5.01
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.9,
@@ -508,14 +509,14 @@
     "SOS-ADC(2) [QC]": 5.369,
     "ADC(2)": 5.59,
     "ADC(3)": 5.089,
-    "ADC(2.5)": 5.3395,
-    "Spin": 3
+    "ADC(2.5)": 5.3395
   },
   {
     "Molecule": "Pyrimidine",
     "Size": 6,
     "Group": 69,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.3,
@@ -536,7 +537,6 @@
     "SOS-ADC(2) [QC]": 5.694,
     "ADC(2)": 5.542,
     "ADC(3)": 5.706,
-    "ADC(2.5)": 5.6240000000000006,
-    "Spin": 3
+    "ADC(2.5)": 5.6240000000000006
   }
 ]

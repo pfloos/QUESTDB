@@ -4,6 +4,7 @@
     "Size": 11,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "f [LR-CC3/AVTZ]": "n.d.",
@@ -24,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.166,
     "ADC(2)": 4.327,
     "ADC(3)": 4.361,
-    "ADC(2.5)": 4.343999999999999,
-    "Spin": 1
+    "ADC(2.5)": 4.343999999999999
   },
   {
     "Molecule": "Dimethylaminobenzonitrile",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "f [LR-CC3/AVTZ]": "n.d.",
@@ -52,14 +53,14 @@
     "SOS-ADC(2) [QC]": 4.944,
     "ADC(2)": 4.722,
     "ADC(3)": 4.81,
-    "ADC(2.5)": 4.766,
-    "Spin": 1
+    "ADC(2.5)": 4.766
   },
   {
     "Molecule": "Dimethylaminobenzonitrile",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "Special ?": "sCT",
@@ -81,14 +82,14 @@
     "SOS-ADC(2) [QC]": 4.588,
     "ADC(2)": 4.659,
     "ADC(3)": 4.792,
-    "ADC(2.5)": 4.7255,
-    "Spin": 1
+    "ADC(2.5)": 4.7255
   },
   {
     "Molecule": "Dimethylaminobenzonitrile",
     "Size": 11,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "TBE/AVTZ": 5.457,
@@ -108,7 +109,6 @@
     "SOS-ADC(2) [QC]": 5.548,
     "ADC(2)": 5.314,
     "ADC(3)": 5.438,
-    "ADC(2.5)": 5.3759999999999994,
-    "Spin": 1
+    "ADC(2.5)": 5.3759999999999994
   }
 ]

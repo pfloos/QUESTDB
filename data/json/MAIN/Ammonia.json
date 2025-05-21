@@ -4,6 +4,7 @@
     "Size": 1,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 93.5,
@@ -29,14 +30,14 @@
     "SOS-ADC(2) [QC]": 6.422,
     "ADC(2)": 6.405,
     "ADC(3)": 6.627,
-    "ADC(2.5)": 6.516,
-    "Spin": 1
+    "ADC(2.5)": 6.516
   },
   {
     "Molecule": "Ammonia ",
     "Size": 1,
     "Group": 12,
     "State": "^1E",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 93.7,
@@ -62,14 +63,14 @@
     "SOS-ADC(2) [QC]": 7.933,
     "ADC(2)": 7.867,
     "ADC(3)": 8.211,
-    "ADC(2.5)": 8.039,
-    "Spin": 1
+    "ADC(2.5)": 8.039
   },
   {
     "Molecule": "Ammonia ",
     "Size": 1,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 94.0,
@@ -95,14 +96,14 @@
     "SOS-ADC(2) [QC]": 9.053,
     "ADC(2)": 9.052,
     "ADC(3)": 9.382,
-    "ADC(2.5)": 9.216999999999999,
-    "Spin": 1
+    "ADC(2.5)": 9.216999999999999
   },
   {
     "Molecule": "Ammonia ",
     "Size": 1,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n4s",
     "%T1 [CC3/AVTZ]": 93.6,
@@ -128,14 +129,14 @@
     "SOS-ADC(2) [QC]": 9.714,
     "ADC(2)": 9.674,
     "ADC(3)": 10.01,
-    "ADC(2.5)": 9.841999999999999,
-    "Spin": 1
+    "ADC(2.5)": 9.841999999999999
   },
   {
     "Molecule": "Ammonia ",
     "Size": 1,
     "Group": 12,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -157,7 +158,6 @@
     "SOS-ADC(2) [QC]": 6.23,
     "ADC(2)": 6.159,
     "ADC(3)": 6.312,
-    "ADC(2.5)": 6.2355,
-    "Spin": 3
+    "ADC(2.5)": 6.2355
   }
 ]

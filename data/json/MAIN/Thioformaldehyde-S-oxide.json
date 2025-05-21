@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 86.3,
@@ -29,14 +30,14 @@
     "SOS-ADC(2) [QC]": 3.615,
     "ADC(2)": 3.511,
     "ADC(3)": 4.165,
-    "ADC(2.5)": 3.838,
-    "Spin": 1
+    "ADC(2.5)": 3.838
   },
   {
     "Molecule": "Thioformaldehyde-S-oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.5,
@@ -62,14 +63,14 @@
     "SOS-ADC(2) [QC]": 4.497,
     "ADC(2)": 4.544,
     "ADC(3)": 5.09,
-    "ADC(2.5)": 4.817,
-    "Spin": 1
+    "ADC(2.5)": 4.817
   },
   {
     "Molecule": "Thioformaldehyde-S-oxide",
     "Size": 3,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -91,14 +92,14 @@
     "SOS-ADC(2) [QC]": 2.54,
     "ADC(2)": 2.607,
     "ADC(3)": 2.405,
-    "ADC(2.5)": 2.5060000000000002,
-    "Spin": 3
+    "ADC(2.5)": 2.5060000000000002
   },
   {
     "Molecule": "Thioformaldehyde-S-oxide",
     "Size": 3,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 96.5,
@@ -120,7 +121,6 @@
     "SOS-ADC(2) [QC]": 3.325,
     "ADC(2)": 3.149,
     "ADC(3)": 3.626,
-    "ADC(2.5)": 3.3875,
-    "Spin": 3
+    "ADC(2.5)": 3.3875
   }
 ]

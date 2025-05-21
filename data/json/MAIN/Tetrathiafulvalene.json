@@ -4,6 +4,7 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{3u}   ",
+    "Spin": 1,
     "V/R": "V",
     "Type": "psi",
     "%T1 [CC3/AVTZ]": 90.1,
@@ -26,14 +27,14 @@
     "SOS-ADC(2) [QC]": 3.087,
     "ADC(2)": 2.765,
     "ADC(3)": 2.784,
-    "ADC(2.5)": 2.7744999999999997,
-    "Spin": 1
+    "ADC(2.5)": 2.7744999999999997
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{2u}   ",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.9,
@@ -56,14 +57,14 @@
     "SOS-ADC(2) [QC]": 4.017,
     "ADC(2)": 3.623,
     "ADC(3)": 3.894,
-    "ADC(2.5)": 3.7585,
-    "Spin": 1
+    "ADC(2.5)": 3.7585
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{1g}   ",
+    "Spin": 1,
     "V/R": "V",
     "Type": "psi",
     "%T1 [CC3/AVTZ]": 90.5,
@@ -85,14 +86,14 @@
     "SOS-ADC(2) [QC]": 4.281,
     "ADC(2)": 3.97,
     "ADC(3)": 3.994,
-    "ADC(2.5)": 3.982,
-    "Spin": 1
+    "ADC(2.5)": 3.982
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{2g}   ",
+    "Spin": 1,
     "V/R": "M",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 89.3,
@@ -114,14 +115,14 @@
     "SOS-ADC(2) [QC]": 4.296,
     "ADC(2)": 4.054,
     "ADC(3)": 3.996,
-    "ADC(2.5)": 4.025,
-    "Spin": 1
+    "ADC(2.5)": 4.025
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{3u}   ",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -144,14 +145,14 @@
     "SOS-ADC(2) [QC]": 4.347,
     "ADC(2)": 4.008,
     "ADC(3)": 4.099,
-    "ADC(2.5)": 4.0535,
-    "Spin": 1
+    "ADC(2.5)": 4.0535
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{3g}   ",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.2,
@@ -172,14 +173,14 @@
     "SOS-ADC(2) [QC]": 4.456,
     "ADC(2)": 4.106,
     "ADC(3)": 4.36,
-    "ADC(2.5)": 4.2330000000000005,
-    "Spin": 1
+    "ADC(2.5)": 4.2330000000000005
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{1u}   ",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.6,
@@ -202,14 +203,14 @@
     "SOS-ADC(2) [QC]": 4.459,
     "ADC(2)": 4.27,
     "ADC(3)": 4.535,
-    "ADC(2.5)": 4.4025,
-    "Spin": 1
+    "ADC(2.5)": 4.4025
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_{2g}   ",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.0,
@@ -231,14 +232,14 @@
     "SOS-ADC(2) [QC]": 4.764,
     "ADC(2)": 4.434,
     "ADC(3)": 4.542,
-    "ADC(2.5)": 4.4879999999999995,
-    "Spin": 1
+    "ADC(2.5)": 4.4879999999999995
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{3u}   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "psi",
     "%T1 [CC3/AVTZ]": 96.7,
@@ -256,14 +257,14 @@
     "SOS-ADC(2) [QC]": 2.958,
     "ADC(2)": 2.603,
     "ADC(3)": 2.629,
-    "ADC(2.5)": 2.616,
-    "Spin": 3
+    "ADC(2.5)": 2.616
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{1u}   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -280,14 +281,14 @@
     "SOS-ADC(2) [QC]": 3.003,
     "ADC(2)": 2.948,
     "ADC(3)": 2.82,
-    "ADC(2.5)": 2.884,
-    "Spin": 3
+    "ADC(2.5)": 2.884
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{2u}   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -305,14 +306,14 @@
     "SOS-ADC(2) [QC]": 3.269,
     "ADC(2)": 3.073,
     "ADC(3)": 3.05,
-    "ADC(2.5)": 3.0614999999999997,
-    "Spin": 3
+    "ADC(2.5)": 3.0614999999999997
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{3g}   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -330,14 +331,14 @@
     "SOS-ADC(2) [QC]": 3.487,
     "ADC(2)": 3.372,
     "ADC(3)": 3.275,
-    "ADC(2.5)": 3.3235,
-    "Spin": 3
+    "ADC(2.5)": 3.3235
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{1g}   ",
+    "Spin": 3,
     "V/R": "V",
     "Type": "psi",
     "%T1 [CC3/AVTZ]": 96.8,
@@ -355,14 +356,14 @@
     "SOS-ADC(2) [QC]": 4.091,
     "ADC(2)": 3.777,
     "ADC(3)": 3.788,
-    "ADC(2.5)": 3.7824999999999998,
-    "Spin": 3
+    "ADC(2.5)": 3.7824999999999998
   },
   {
     "Molecule": "Tetrathiafulvalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_{2g}   ",
+    "Spin": 3,
     "V/R": "M",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 96.8,
@@ -380,7 +381,6 @@
     "SOS-ADC(2) [QC]": 4.155,
     "ADC(2)": 3.9,
     "ADC(3)": 3.851,
-    "ADC(2.5)": 3.8754999999999997,
-    "Spin": 3
+    "ADC(2.5)": 3.8754999999999997
   }
 ]

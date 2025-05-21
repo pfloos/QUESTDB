@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.001,
     "TBE/AVTZ": 3.418,
@@ -25,14 +26,14 @@
     "SC-NEVPT2": 3.55,
     "PC-NEVPT2": 3.54,
     "CASPT3 (No IPEA)": 3.38,
-    "CASPT3": 3.422,
-    "Spin": 2
+    "CASPT3": 3.422
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "R",
     "TBE/AVTZ": 4.950000000000001,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -53,14 +54,14 @@
     "SC-NEVPT2": 4.991,
     "PC-NEVPT2": 4.996,
     "CASPT3 (No IPEA)": 5.001,
-    "CASPT3": 5.001,
-    "Spin": 2
+    "CASPT3": 5.001
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "R",
     "TBE/AVTZ": 5.503,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -81,14 +82,14 @@
     "SC-NEVPT2": 5.623,
     "PC-NEVPT2": 5.634,
     "CASPT3 (No IPEA)": 5.521,
-    "CASPT3": 5.499,
-    "Spin": 2
+    "CASPT3": 5.499
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.025,
     "TBE/AVTZ": 5.604000000000001,
@@ -110,14 +111,14 @@
     "SC-NEVPT2": 5.656,
     "PC-NEVPT2": 5.661,
     "CASPT3 (No IPEA)": 5.665,
-    "CASPT3": 5.665,
-    "Spin": 2
+    "CASPT3": 5.665
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "M",
     "f [LR-CCSD/AVTZ]": 0.256,
     "TBE/AVTZ": 5.734999999999999,
@@ -139,14 +140,14 @@
     "SC-NEVPT2": 6.011,
     "PC-NEVPT2": 5.989,
     "CASPT3 (No IPEA)": 5.991,
-    "CASPT3": 6.004,
-    "Spin": 2
+    "CASPT3": 6.004
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "M",
     "TBE/AVTZ": 6.245,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -167,14 +168,14 @@
     "SC-NEVPT2": 5.828,
     "PC-NEVPT2": 5.781,
     "CASPT3 (No IPEA)": 6.486,
-    "CASPT3": 6.525,
-    "Spin": 2
+    "CASPT3": 6.525
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "R",
     "TBE/AVTZ": 6.4209999999999985,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -195,14 +196,14 @@
     "SC-NEVPT2": 6.492,
     "PC-NEVPT2": 6.482,
     "CASPT3 (No IPEA)": 6.45,
-    "CASPT3": 6.435,
-    "Spin": 2
+    "CASPT3": 6.435
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 6.493000000000001,
@@ -224,14 +225,14 @@
     "SC-NEVPT2": 6.577,
     "PC-NEVPT2": 6.568,
     "CASPT3 (No IPEA)": 6.562,
-    "CASPT3": 6.55,
-    "Spin": 2
+    "CASPT3": 6.55
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "M",
     "f [LR-CCSD/AVTZ]": 0.054,
     "TBE/AVTZ": 6.537999999999999,
@@ -253,14 +254,14 @@
     "SC-NEVPT2": 6.883,
     "PC-NEVPT2": 6.845,
     "CASPT3 (No IPEA)": 6.922,
-    "CASPT3": 6.944,
-    "Spin": 2
+    "CASPT3": 6.944
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.001,
     "TBE/AVTZ": 6.561,
@@ -282,14 +283,14 @@
     "SC-NEVPT2": 6.303,
     "PC-NEVPT2": 6.275,
     "CASPT3 (No IPEA)": 6.795,
-    "CASPT3": 6.807,
-    "Spin": 2
+    "CASPT3": 6.807
   },
   {
     "Molecule": "Allyl",
     "Size": 3,
     "Group": 35,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.0120000000000005,
     "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT/6-31+G(d)]",
@@ -310,7 +311,6 @@
     "SC-NEVPT2": 6.187,
     "PC-NEVPT2": 6.185,
     "CASPT3 (No IPEA)": 5.837,
-    "CASPT3": 5.881,
-    "Spin": 4
+    "CASPT3": 5.881
   }
 ]

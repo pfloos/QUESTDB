@@ -4,6 +4,7 @@
     "Size": 12,
     "Group": 1016,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 84.0,
@@ -22,14 +23,14 @@
     "SOS-ADC(2) [QC]": 1.831,
     "ADC(2)": 1.739,
     "ADC(3)": 1.215,
-    "ADC(2.5)": 1.477,
-    "Spin": 1
+    "ADC(2.5)": 1.477
   },
   {
     "Molecule": "Indacene (C2h)",
     "Size": 12,
     "Group": 1016,
     "State": "^1B_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.2,
@@ -49,17 +50,17 @@
     "SOS-ADC(2) [QC]": 2.948,
     "ADC(2)": 2.872,
     "ADC(3)": 2.664,
-    "ADC(2.5)": 2.768,
-    "Spin": 1
+    "ADC(2.5)": 2.768
   },
   {
     "Molecule": "Indacene (C2h)",
     "Size": 12,
     "Group": 1016,
     "State": "^1B_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVDZ]": 54.5,
     "f [LR-CCSD/AVTZ]": 0.056,
     "TBE/AVTZ": 3.292,
@@ -77,14 +78,14 @@
     "SOS-ADC(2) [QC]": 4.484,
     "ADC(2)": 4.31,
     "ADC(3)": 2.762,
-    "ADC(2.5)": 3.5359999999999996,
-    "Spin": 1
+    "ADC(2.5)": 3.5359999999999996
   },
   {
     "Molecule": "Indacene (C2h)",
     "Size": 12,
     "Group": 1016,
     "State": "^3B_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.6,
@@ -100,14 +101,14 @@
     "SOS-ADC(2) [QC]": 1.429,
     "ADC(2)": 1.46,
     "ADC(3)": 0.924,
-    "ADC(2.5)": 1.192,
-    "Spin": 3
+    "ADC(2.5)": 1.192
   },
   {
     "Molecule": "Indacene (C2h)",
     "Size": 12,
     "Group": 1016,
     "State": "^3A_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.5,
@@ -123,14 +124,14 @@
     "SOS-ADC(2) [QC]": 1.569,
     "ADC(2)": 1.442,
     "ADC(3)": 1.068,
-    "ADC(2.5)": 1.255,
-    "Spin": 3
+    "ADC(2.5)": 1.255
   },
   {
     "Molecule": "Indacene (C2h)",
     "Size": 12,
     "Group": 1016,
     "State": "^3B_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 95.7,
@@ -146,14 +147,14 @@
     "SOS-ADC(2) [QC]": 3.055,
     "ADC(2)": 3.188,
     "ADC(3)": 2.267,
-    "ADC(2.5)": 2.7275,
-    "Spin": 3
+    "ADC(2.5)": 2.7275
   },
   {
     "Molecule": "Indacene (C2h)",
     "Size": 12,
     "Group": 1016,
     "State": "^3A_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.6,
@@ -169,7 +170,6 @@
     "SOS-ADC(2) [QC]": 3.552,
     "ADC(2)": 3.627,
     "ADC(3)": 3.208,
-    "ADC(2.5)": 3.4175,
-    "Spin": 3
+    "ADC(2.5)": 3.4175
   }
 ]

@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
+    "Spin": 2,
     "V/R": "M",
     "f [LR-CCSD/AVTZ]": 0.002,
     "TBE/AVTZ": 0.709,
@@ -20,14 +21,14 @@
     "U-CCSD": 0.991,
     "RO-CCSD": 0.769,
     "U-CC3": 0.773,
-    "RO-CC3": 0.717,
-    "Spin": 2
+    "RO-CC3": 0.717
   },
   {
     "Molecule": "Ethynyl",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
+    "Spin": 2,
     "V/R": "M",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 7.0,
@@ -42,14 +43,14 @@
     "U-CCSD": 8.474,
     "RO-CCSD": 8.195,
     "U-CC3": 7.563,
-    "RO-CC3": 7.343,
-    "Spin": 2
+    "RO-CC3": 7.343
   },
   {
     "Molecule": "Ethynyl",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^-",
+    "Spin": 2,
     "V/R": "M",
     "TBE/AVTZ": 7.452,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -63,14 +64,14 @@
     "U-CCSD": 7.568,
     "RO-CCSD": 7.541,
     "U-CC3": 7.461,
-    "RO-CC3": 7.463,
-    "Spin": 2
+    "RO-CC3": 7.463
   },
   {
     "Molecule": "Ethynyl",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Delta",
+    "Spin": 2,
     "V/R": "M",
     "TBE/AVTZ": 7.756,
     "Method (all in RO)": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -83,14 +84,14 @@
     "U-CCSD": 7.916,
     "RO-CCSD": 7.893,
     "U-CC3": 7.818,
-    "RO-CC3": 7.813,
-    "Spin": 2
+    "RO-CC3": 7.813
   },
   {
     "Molecule": "Ethynyl",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma^+",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 5.15,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -105,14 +106,14 @@
     "RO-CC2": 5.973,
     "U-CCSD": 5.535,
     "RO-CCSD": 5.441,
-    "RO-CC3": 5.303,
-    "Spin": 4
+    "RO-CC3": 5.303
   },
   {
     "Molecule": "Ethynyl",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Delta",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.119,
     "Method (all in RO)": "exFCI/AVTZ",
@@ -128,14 +129,14 @@
     "U-CCSD": 6.545,
     "RO-CCSD": 6.471,
     "U-CC3": 6.352,
-    "RO-CC3": 6.293,
-    "Spin": 4
+    "RO-CC3": 6.293
   },
   {
     "Molecule": "Ethynyl",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma^-",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.853,
     "Method (all in RO)": "exFCI/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -150,7 +151,6 @@
     "RO-CC2": 7.518,
     "U-CCSD": 7.324,
     "RO-CCSD": 7.245,
-    "RO-CC3": 7.039,
-    "Spin": 4
+    "RO-CC3": 7.039
   }
 ]

@@ -4,6 +4,7 @@
     "Size": 6,
     "Group": 69,
     "State": "^1B_{2u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 86.3,
@@ -35,14 +36,14 @@
     "CASPT3": 5.09,
     "CASPT3 (No IPEA)": 5.01,
     "SC-NEVPT2": 5.35,
-    "PC-NEVPT2": 5.32,
-    "Spin": 1
+    "PC-NEVPT2": 5.32
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1B_{1u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.9,
@@ -74,14 +75,14 @@
     "CASPT3": 6.67,
     "CASPT3 (No IPEA)": 6.58,
     "SC-NEVPT2": 6.48,
-    "PC-NEVPT2": 6.43,
-    "Spin": 1
+    "PC-NEVPT2": 6.43
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1E_{1g}",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -113,14 +114,14 @@
     "CASPT3": 6.56,
     "CASPT3 (No IPEA)": 6.51,
     "SC-NEVPT2": 6.76,
-    "PC-NEVPT2": 6.75,
-    "Spin": 1
+    "PC-NEVPT2": 6.75
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1A_{2u}",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.4,
@@ -153,14 +154,14 @@
     "CASPT3": 7.07,
     "CASPT3 (No IPEA)": 7.02,
     "SC-NEVPT2": 7.4,
-    "PC-NEVPT2": 7.4,
-    "Spin": 1
+    "PC-NEVPT2": 7.4
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1E_{2u}",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -192,14 +193,14 @@
     "CASPT3": 7.13,
     "CASPT3 (No IPEA)": 7.08,
     "SC-NEVPT2": 7.45,
-    "PC-NEVPT2": 7.45,
-    "Spin": 1
+    "PC-NEVPT2": 7.45
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1A_{1u}",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 92.2,
@@ -224,14 +225,14 @@
     "SOS-ADC(2) [QC]": 7.209,
     "ADC(2)": 7.204,
     "ADC(3)": 7.11,
-    "ADC(2.5)": 7.157,
-    "Spin": 1
+    "ADC(2.5)": 7.157
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1E_{1u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.0,
@@ -256,17 +257,17 @@
     "SOS-ADC(2) [QC]": 7.125,
     "ADC(2)": 7.169,
     "ADC(3)": 7.078,
-    "ADC(2.5)": 7.1235,
-    "Spin": 1
+    "ADC(2.5)": 7.1235
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1E_{2g}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 73.0,
     "TBE/AVTZ": 8.19,
     "Method": "CC4/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -284,17 +285,17 @@
     "CASPT3": 8.263,
     "CASPT3 (No IPEA)": 8.162,
     "SC-NEVPT2": 8.555,
-    "PC-NEVPT2": 8.512,
-    "Spin": 1
+    "PC-NEVPT2": 8.512
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^1A_{1g}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "TBE/AVTZ": 10.315,
     "Method": "CASPT3(NOIPEA)/AVTZ",
     "Safe ? (~50 meV)": "N",
@@ -304,14 +305,14 @@
     "CASPT3": 10.315,
     "CASPT3 (No IPEA)": 10.468,
     "SC-NEVPT2": 10.381,
-    "PC-NEVPT2": 9.995,
-    "Spin": 1
+    "PC-NEVPT2": 9.995
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{1u}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.6,
@@ -339,14 +340,14 @@
     "CASPT3": 4.14,
     "CASPT3 (No IPEA)": 4.08,
     "SC-NEVPT2": 4.33,
-    "PC-NEVPT2": 4.32,
-    "Spin": 3
+    "PC-NEVPT2": 4.32
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^3E_{1u}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.1,
@@ -374,14 +375,14 @@
     "CASPT3": 4.87,
     "CASPT3 (No IPEA)": 4.8,
     "SC-NEVPT2": 4.94,
-    "PC-NEVPT2": 4.92,
-    "Spin": 3
+    "PC-NEVPT2": 4.92
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^3B_{2u}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -409,14 +410,14 @@
     "CASPT3": 5.9,
     "CASPT3 (No IPEA)": 5.81,
     "SC-NEVPT2": 5.59,
-    "PC-NEVPT2": 5.51,
-    "Spin": 3
+    "PC-NEVPT2": 5.51
   },
   {
     "Molecule": "Benzene",
     "Size": 6,
     "Group": 69,
     "State": "^3E_{1g}",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -437,7 +438,6 @@
     "SOS-ADC(2) [QC]": 6.488,
     "ADC(2)": 6.484,
     "ADC(3)": 6.328,
-    "ADC(2.5)": 6.406000000000001,
-    "Spin": 3
+    "ADC(2.5)": 6.406000000000001
   }
 ]

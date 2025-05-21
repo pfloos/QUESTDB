@@ -4,6 +4,7 @@
     "Size": 8,
     "Group": 69,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -26,14 +27,14 @@
     "SOS-ADC(2) [QC]": 4.628,
     "ADC(2)": 4.547,
     "ADC(3)": 4.454,
-    "ADC(2.5)": 4.5005,
-    "Spin": 1
+    "ADC(2.5)": 4.5005
   },
   {
     "Molecule": "PyrroloPyrrole",
     "Size": 8,
     "Group": 69,
     "State": "^1B_g",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -55,14 +56,14 @@
     "SOS-ADC(2) [QC]": 4.855,
     "ADC(2)": 4.742,
     "ADC(3)": 4.664,
-    "ADC(2.5)": 4.702999999999999,
-    "Spin": 1
+    "ADC(2.5)": 4.702999999999999
   },
   {
     "Molecule": "PyrroloPyrrole",
     "Size": 8,
     "Group": 69,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.0,
@@ -85,14 +86,14 @@
     "SOS-ADC(2) [QC]": 5.107,
     "ADC(2)": 4.976,
     "ADC(3)": 5.164,
-    "ADC(2.5)": 5.07,
-    "Spin": 1
+    "ADC(2.5)": 5.07
   },
   {
     "Molecule": "PyrroloPyrrole",
     "Size": 8,
     "Group": 69,
     "State": "^1B_g",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 93.1,
@@ -114,14 +115,14 @@
     "SOS-ADC(2) [QC]": 5.167,
     "ADC(2)": 5.092,
     "ADC(3)": 5.045,
-    "ADC(2.5)": 5.0685,
-    "Spin": 1
+    "ADC(2.5)": 5.0685
   },
   {
     "Molecule": "PyrroloPyrrole",
     "Size": 8,
     "Group": 69,
     "State": "^3B_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -139,14 +140,14 @@
     "SOS-ADC(2) [QC]": 3.865,
     "ADC(2)": 4.007,
     "ADC(3)": 3.562,
-    "ADC(2.5)": 3.7844999999999995,
-    "Spin": 3
+    "ADC(2.5)": 3.7844999999999995
   },
   {
     "Molecule": "PyrroloPyrrole",
     "Size": 8,
     "Group": 69,
     "State": "^3A_u",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -165,14 +166,14 @@
     "SOS-ADC(2) [QC]": 4.622,
     "ADC(2)": 4.53,
     "ADC(3)": 4.428,
-    "ADC(2.5)": 4.479,
-    "Spin": 3
+    "ADC(2.5)": 4.479
   },
   {
     "Molecule": "PyrroloPyrrole",
     "Size": 8,
     "Group": 69,
     "State": "^3B_g",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -191,7 +192,6 @@
     "SOS-ADC(2) [QC]": 4.851,
     "ADC(2)": 4.73,
     "ADC(3)": 4.648,
-    "ADC(2.5)": 4.689,
-    "Spin": 3
+    "ADC(2.5)": 4.689
   }
 ]

@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 2.959,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -17,14 +18,14 @@
     "U-CCSD": 3.032,
     "RO-CCSD": 2.996,
     "U-CC3": 2.995,
-    "RO-CC3": 2.997,
-    "Spin": 2
+    "RO-CC3": 2.997
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 2.989,
@@ -39,14 +40,14 @@
     "U-CCSD": 3.063,
     "RO-CCSD": 3.028,
     "U-CC3": 3.021,
-    "RO-CC3": 3.02,
-    "Spin": 2
+    "RO-CC3": 3.02
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.04,
     "TBE/AVTZ": 3.3009999999999997,
@@ -61,14 +62,14 @@
     "U-CCSD": 3.292,
     "RO-CCSD": 3.286,
     "U-CC3": 3.306,
-    "RO-CC3": 3.31,
-    "Spin": 2
+    "RO-CC3": 3.31
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "M",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 4.4799999999999995,
@@ -83,14 +84,14 @@
     "U-CCSD": 4.721,
     "RO-CCSD": 4.682,
     "U-CC3": 4.501,
-    "RO-CC3": 4.492,
-    "Spin": 2
+    "RO-CC3": 4.492
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "M",
     "TBE/AVTZ": 5.413999999999999,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -104,14 +105,14 @@
     "U-CCSD": 5.666,
     "RO-CCSD": 5.625,
     "U-CC3": 5.427,
-    "RO-CC3": 5.416,
-    "Spin": 2
+    "RO-CC3": 5.416
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.002,
     "TBE/AVTZ": 7.209999999999999,
@@ -125,14 +126,14 @@
     "U-CCSD": 7.44,
     "RO-CCSD": 7.407,
     "U-CC3": 7.191,
-    "RO-CC3": 7.177,
-    "Spin": 2
+    "RO-CC3": 7.177
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^4B_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.239000000000002,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -146,14 +147,14 @@
     "U-CCSD": 6.618,
     "RO-CCSD": 6.643,
     "U-CC3": 6.44,
-    "RO-CC3": 6.427,
-    "Spin": 4
+    "RO-CC3": 6.427
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.323,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -165,14 +166,14 @@
     "U-CCSD": 6.688,
     "RO-CCSD": 6.679,
     "U-CC3": 6.523,
-    "RO-CC3": 6.509,
-    "Spin": 4
+    "RO-CC3": 6.509
   },
   {
     "Molecule": "ClO2",
     "Size": 3,
     "Group": 35,
     "State": "^4B_1",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.494,
     "Method (all in RO)": "CCSDTQ/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -184,7 +185,6 @@
     "U-CCSD": 6.901,
     "RO-CCSD": 6.893,
     "U-CC3": 6.694,
-    "RO-CC3": 6.68,
-    "Spin": 4
+    "RO-CC3": 6.68
   }
 ]

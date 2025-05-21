@@ -4,6 +4,7 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 87.6,
@@ -32,17 +33,17 @@
     "CASPT3": 2.093,
     "CASPT3 (No IPEA)": 2.052,
     "SC-NEVPT2": 1.857,
-    "PC-NEVPT2": 1.827,
-    "Spin": 1
+    "PC-NEVPT2": 1.827
   },
   {
     "Molecule": "Pentalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 12.2,
     "TBE/AVTZ": 3.288,
     "Method": "CASPT3/AVTZ",
@@ -56,14 +57,14 @@
     "CASPT3": 3.333,
     "CASPT3 (No IPEA)": 3.288,
     "SC-NEVPT2": 2.899,
-    "PC-NEVPT2": 2.841,
-    "Spin": 1
+    "PC-NEVPT2": 2.841
   },
   {
     "Molecule": "Pentalene",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 84.0,
@@ -86,14 +87,14 @@
     "SOS-ADC(2) [QC]": 4.132,
     "ADC(2)": 4.024,
     "ADC(3)": 3.46,
-    "ADC(2.5)": 3.742,
-    "Spin": 1
+    "ADC(2.5)": 3.742
   },
   {
     "Molecule": "Pentalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -112,14 +113,14 @@
     "SOS-ADC(2) [QC]": 1.409,
     "ADC(2)": 1.244,
     "ADC(3)": 0.953,
-    "ADC(2.5)": 1.0985,
-    "Spin": 3
+    "ADC(2.5)": 1.0985
   },
   {
     "Molecule": "Pentalene",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.4,
@@ -138,7 +139,6 @@
     "SOS-ADC(2) [QC]": 2.482,
     "ADC(2)": 2.499,
     "ADC(3)": 2.038,
-    "ADC(2.5)": 2.2685,
-    "Spin": 3
+    "ADC(2.5)": 2.2685
   }
 ]

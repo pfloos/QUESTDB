@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 92.6,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 9.357,
     "ADC(2)": 9.476,
     "ADC(3)": 9.158,
-    "ADC(2.5)": 9.317,
-    "Spin": 1
+    "ADC(2.5)": 9.317
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma_u^-",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -60,14 +61,14 @@
     "SOS-ADC(2) [QC]": 10.12,
     "ADC(2)": 10.257,
     "ADC(3)": 9.33,
-    "ADC(2.5)": 9.7935,
-    "Spin": 1
+    "ADC(2.5)": 9.7935
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Delta_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 95.9,
@@ -93,14 +94,14 @@
     "SOS-ADC(2) [QC]": 10.498,
     "ADC(2)": 10.788,
     "ADC(3)": 9.744,
-    "ADC(2.5)": 10.266,
-    "Spin": 1
+    "ADC(2.5)": 10.266
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma_g^+",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 92.2,
@@ -125,14 +126,14 @@
     "SOS-ADC(2) [QC]": 13.158,
     "ADC(2)": 12.993,
     "ADC(3)": 13.011,
-    "ADC(2.5)": 13.001999999999999,
-    "Spin": 1
+    "ADC(2.5)": 13.001999999999999
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi_u",
+    "Spin": 1,
     "V/R": "M",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 82.9,
@@ -158,14 +159,14 @@
     "SOS-ADC(2) [QC]": 13.451,
     "ADC(2)": 13.328,
     "ADC(3)": 12.987,
-    "ADC(2.5)": 13.157499999999999,
-    "Spin": 1
+    "ADC(2.5)": 13.157499999999999
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma_u^+",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3p",
     "%T1 [CC3/AVTZ]": 92.8,
@@ -191,14 +192,14 @@
     "SOS-ADC(2) [QC]": 13.253,
     "ADC(2)": 13.07,
     "ADC(3)": 13.094,
-    "ADC(2.5)": 13.082,
-    "Spin": 1
+    "ADC(2.5)": 13.082
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi_u",
+    "Spin": 1,
     "V/R": "M",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 87.4,
@@ -224,14 +225,14 @@
     "SOS-ADC(2) [QC]": 13.821,
     "ADC(2)": 13.994,
     "ADC(3)": 13.397,
-    "ADC(2.5)": 13.6955,
-    "Spin": 1
+    "ADC(2.5)": 13.6955
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi_u",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 96.1,
@@ -257,14 +258,14 @@
     "SOS-ADC(2) [QC]": 14.426,
     "ADC(2)": 14.553,
     "ADC(3)": 13.684,
-    "ADC(2.5)": 14.118500000000001,
-    "Spin": 1
+    "ADC(2.5)": 14.118500000000001
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma_u^+",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 99.3,
@@ -286,14 +287,14 @@
     "SOS-ADC(2) [QC]": 7.409,
     "ADC(2)": 8.15,
     "ADC(3)": 7.251,
-    "ADC(2.5)": 7.7005,
-    "Spin": 3
+    "ADC(2.5)": 7.7005
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Pi_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -315,14 +316,14 @@
     "SOS-ADC(2) [QC]": 8.279,
     "ADC(2)": 8.204,
     "ADC(3)": 7.766,
-    "ADC(2.5)": 7.985,
-    "Spin": 3
+    "ADC(2.5)": 7.985
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Delta_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 99.3,
@@ -344,14 +345,14 @@
     "SOS-ADC(2) [QC]": 9.233,
     "ADC(2)": 9.254,
     "ADC(3)": 8.362,
-    "ADC(2.5)": 8.808,
-    "Spin": 3
+    "ADC(2.5)": 8.808
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma_u^-",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.8,
@@ -373,14 +374,14 @@
     "SOS-ADC(2) [QC]": 10.086,
     "ADC(2)": 10.231,
     "ADC(3)": 9.15,
-    "ADC(2.5)": 9.6905,
-    "Spin": 3
+    "ADC(2.5)": 9.6905
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Pi_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.2,
@@ -402,14 +403,14 @@
     "SOS-ADC(2) [QC]": 11.475,
     "ADC(2)": 11.489,
     "ADC(3)": 11.045,
-    "ADC(2.5)": 11.267,
-    "Spin": 3
+    "ADC(2.5)": 11.267
   },
   {
     "Molecule": "Dinitrogen ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma_g^+",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -431,7 +432,6 @@
     "SOS-ADC(2) [QC]": 12.615,
     "ADC(2)": 12.397,
     "ADC(3)": 12.273,
-    "ADC(2.5)": 12.335,
-    "Spin": 3
+    "ADC(2.5)": 12.335
   }
 ]

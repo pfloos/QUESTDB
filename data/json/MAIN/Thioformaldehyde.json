@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.3,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 2.164,
     "ADC(2)": 2.236,
     "ADC(3)": 2.052,
-    "ADC(2.5)": 2.144,
-    "Spin": 1
+    "ADC(2.5)": 2.144
   },
   {
     "Molecule": "Thioformaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 92.3,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 5.954,
     "ADC(2)": 5.798,
     "ADC(3)": 5.949,
-    "ADC(2.5)": 5.8735,
-    "Spin": 1
+    "ADC(2.5)": 5.8735
   },
   {
     "Molecule": "Thioformaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -94,14 +95,14 @@
     "SOS-ADC(2) [QC]": 6.403,
     "ADC(2)": 6.567,
     "ADC(3)": 5.98,
-    "ADC(2.5)": 6.2735,
-    "Spin": 1
+    "ADC(2.5)": 6.2735
   },
   {
     "Molecule": "Thioformaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -123,14 +124,14 @@
     "SOS-ADC(2) [QC]": 1.91,
     "ADC(2)": 1.857,
     "ADC(3)": 1.775,
-    "ADC(2.5)": 1.8159999999999998,
-    "Spin": 3
+    "ADC(2.5)": 1.8159999999999998
   },
   {
     "Molecule": "Thioformaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
@@ -152,14 +153,14 @@
     "SOS-ADC(2) [QC]": 3.316,
     "ADC(2)": 3.447,
     "ADC(3)": 3.069,
-    "ADC(2.5)": 3.258,
-    "Spin": 3
+    "ADC(2.5)": 3.258
   },
   {
     "Molecule": "Thioformaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n4s",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -181,14 +182,14 @@
     "SOS-ADC(2) [QC]": 5.795,
     "ADC(2)": 5.62,
     "ADC(3)": 5.739,
-    "ADC(2.5)": 5.6795,
-    "Spin": 3
+    "ADC(2.5)": 5.6795
   },
   {
     "Molecule": "Thioformaldehyde ",
     "Size": 2,
     "Group": 12,
     "State": "^1A_2[F]   ",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "FL",
@@ -214,7 +215,6 @@
     "SOS-ADC(2) [QC]": 1.849,
     "ADC(2)": 1.923,
     "ADC(3)": 1.798,
-    "ADC(2.5)": 1.8605,
-    "Spin": 1
+    "ADC(2.5)": 1.8605
   }
 ]

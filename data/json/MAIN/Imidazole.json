@@ -4,6 +4,7 @@
     "Size": 5,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 93.0,
@@ -36,14 +37,14 @@
     "CASPT3": 5.74,
     "CASPT3 (No IPEA)": 5.68,
     "SC-NEVPT2": 5.92,
-    "PC-NEVPT2": 5.93,
-    "Spin": 1
+    "PC-NEVPT2": 5.93
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 90.0,
@@ -76,14 +77,14 @@
     "CASPT3": 6.61,
     "CASPT3 (No IPEA)": 6.56,
     "SC-NEVPT2": 6.77,
-    "PC-NEVPT2": 6.73,
-    "Spin": 1
+    "PC-NEVPT2": 6.73
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.6,
@@ -116,14 +117,14 @@
     "CASPT3": 6.47,
     "CASPT3 (No IPEA)": 6.44,
     "SC-NEVPT2": 6.8,
-    "PC-NEVPT2": 6.83,
-    "Spin": 1
+    "PC-NEVPT2": 6.83
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 89.0,
@@ -153,14 +154,14 @@
     "CASPT3": 6.92,
     "CASPT3 (No IPEA)": 6.85,
     "SC-NEVPT2": 7.01,
-    "PC-NEVPT2": 6.96,
-    "Spin": 1
+    "PC-NEVPT2": 6.96
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 88.9,
@@ -187,14 +188,14 @@
     "CASPT3": 6.89,
     "CASPT3 (No IPEA)": 6.83,
     "SC-NEVPT2": 7.06,
-    "PC-NEVPT2": 7.0,
-    "Spin": 1
+    "PC-NEVPT2": 7.0
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -224,14 +225,14 @@
     "CASPT3": 7.09,
     "CASPT3 (No IPEA)": 7.07,
     "SC-NEVPT2": 7.2,
-    "PC-NEVPT2": 7.2,
-    "Spin": 1
+    "PC-NEVPT2": 7.2
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.3,
@@ -259,14 +260,14 @@
     "CASPT3": 4.73,
     "CASPT3 (No IPEA)": 4.68,
     "SC-NEVPT2": 4.88,
-    "PC-NEVPT2": 4.86,
-    "Spin": 3
+    "PC-NEVPT2": 4.86
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -294,14 +295,14 @@
     "CASPT3": 5.72,
     "CASPT3 (No IPEA)": 5.66,
     "SC-NEVPT2": 5.9,
-    "PC-NEVPT2": 5.91,
-    "Spin": 3
+    "PC-NEVPT2": 5.91
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.9,
@@ -329,14 +330,14 @@
     "CASPT3": 5.8,
     "CASPT3 (No IPEA)": 5.72,
     "SC-NEVPT2": 5.96,
-    "PC-NEVPT2": 5.91,
-    "Spin": 3
+    "PC-NEVPT2": 5.91
   },
   {
     "Molecule": "Imidazole",
     "Size": 5,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 97.3,
@@ -364,7 +365,6 @@
     "CASPT3": 6.43,
     "CASPT3 (No IPEA)": 6.37,
     "SC-NEVPT2": 6.51,
-    "PC-NEVPT2": 6.48,
-    "Spin": 3
+    "PC-NEVPT2": 6.48
   }
 ]

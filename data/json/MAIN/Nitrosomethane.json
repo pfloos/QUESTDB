@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^1A''",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 93.0,
@@ -36,17 +37,17 @@
     "CASPT3": 1.94,
     "CASPT3 (No IPEA)": 1.91,
     "SC-NEVPT2": 1.95,
-    "PC-NEVPT2": 1.91,
-    "Spin": 1
+    "PC-NEVPT2": 1.91
   },
   {
     "Molecule": "Nitrosomethane ",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 2.5,
     "f [LR-CC3/AVTZ]": 0.0,
     "TBE/AVTZ": 4.732,
@@ -62,14 +63,14 @@
     "CASPT3": 4.748,
     "CASPT3 (No IPEA)": 4.742,
     "SC-NEVPT2": 4.815,
-    "PC-NEVPT2": 4.794,
-    "Spin": 1
+    "PC-NEVPT2": 4.794
   },
   {
     "Molecule": "Nitrosomethane ",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 90.8,
@@ -102,14 +103,14 @@
     "CASPT3": 6.34,
     "CASPT3 (No IPEA)": 6.31,
     "SC-NEVPT2": 6.38,
-    "PC-NEVPT2": 6.38,
-    "Spin": 1
+    "PC-NEVPT2": 6.38
   },
   {
     "Molecule": "Nitrosomethane ",
     "Size": 3,
     "Group": 35,
     "State": "^3A''",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -138,14 +139,14 @@
     "CASPT3": 1.12,
     "CASPT3 (No IPEA)": 1.09,
     "SC-NEVPT2": 1.13,
-    "PC-NEVPT2": 1.08,
-    "Spin": 3
+    "PC-NEVPT2": 1.08
   },
   {
     "Molecule": "Nitrosomethane ",
     "Size": 3,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
@@ -174,14 +175,14 @@
     "CASPT3": 5.54,
     "CASPT3 (No IPEA)": 5.5,
     "SC-NEVPT2": 5.54,
-    "PC-NEVPT2": 5.54,
-    "Spin": 3
+    "PC-NEVPT2": 5.54
   },
   {
     "Molecule": "Nitrosomethane ",
     "Size": 3,
     "Group": 35,
     "State": "^1A'' [F]",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "FL",
@@ -215,7 +216,6 @@
     "CASPT3": 1.66,
     "CASPT3 (No IPEA)": 1.62,
     "SC-NEVPT2": 1.66,
-    "PC-NEVPT2": 1.62,
-    "Spin": 1
+    "PC-NEVPT2": 1.62
   }
 ]

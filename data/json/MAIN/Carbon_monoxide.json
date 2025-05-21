@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 93.1,
@@ -29,14 +30,14 @@
     "SOS-ADC(2) [QC]": 8.59,
     "ADC(2)": 8.689,
     "ADC(3)": 8.245,
-    "ADC(2.5)": 8.466999999999999,
-    "Spin": 1
+    "ADC(2.5)": 8.466999999999999
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma^-",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 93.3,
@@ -61,14 +62,14 @@
     "SOS-ADC(2) [QC]": 9.844,
     "ADC(2)": 10.029,
     "ADC(3)": 9.725,
-    "ADC(2.5)": 9.876999999999999,
-    "Spin": 1
+    "ADC(2.5)": 9.876999999999999
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Delta",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.8,
@@ -93,14 +94,14 @@
     "SOS-ADC(2) [QC]": 9.967,
     "ADC(2)": 10.3,
     "ADC(3)": 9.825,
-    "ADC(2.5)": 10.0625,
-    "Spin": 1
+    "ADC(2.5)": 10.0625
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma^+",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -126,14 +127,14 @@
     "SOS-ADC(2) [QC]": 11.391,
     "ADC(2)": 11.322,
     "ADC(3)": 10.794,
-    "ADC(2.5)": 11.058,
-    "Spin": 1
+    "ADC(2.5)": 11.058
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Sigma^+",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.9,
@@ -159,14 +160,14 @@
     "SOS-ADC(2) [QC]": 11.926,
     "ADC(2)": 11.833,
     "ADC(3)": 11.332,
-    "ADC(2.5)": 11.5825,
-    "Spin": 1
+    "ADC(2.5)": 11.5825
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^1\\Pi",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 92.4,
@@ -192,14 +193,14 @@
     "SOS-ADC(2) [QC]": 12.129,
     "ADC(2)": 12.032,
     "ADC(3)": 11.556,
-    "ADC(2.5)": 11.794,
-    "Spin": 1
+    "ADC(2.5)": 11.794
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Pi",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 98.7,
@@ -221,14 +222,14 @@
     "SOS-ADC(2) [QC]": 6.536,
     "ADC(2)": 6.454,
     "ADC(3)": 5.967,
-    "ADC(2.5)": 6.2105,
-    "Spin": 3
+    "ADC(2.5)": 6.2105
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma^+",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.7,
@@ -250,14 +251,14 @@
     "SOS-ADC(2) [QC]": 8.301,
     "ADC(2)": 8.537,
     "ADC(3)": 8.214,
-    "ADC(2.5)": 8.3755,
-    "Spin": 3
+    "ADC(2.5)": 8.3755
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Delta",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -279,14 +280,14 @@
     "SOS-ADC(2) [QC]": 9.258,
     "ADC(2)": 9.335,
     "ADC(3)": 9.027,
-    "ADC(2.5)": 9.181000000000001,
-    "Spin": 3
+    "ADC(2.5)": 9.181000000000001
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma^-",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.5,
@@ -308,14 +309,14 @@
     "SOS-ADC(2) [QC]": 9.814,
     "ADC(2)": 10.007,
     "ADC(3)": 9.526,
-    "ADC(2.5)": 9.7665,
-    "Spin": 3
+    "ADC(2.5)": 9.7665
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma^+",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 98.0,
@@ -337,14 +338,14 @@
     "SOS-ADC(2) [QC]": 10.99,
     "ADC(2)": 10.832,
     "ADC(3)": 10.29,
-    "ADC(2.5)": 10.561,
-    "Spin": 3
+    "ADC(2.5)": 10.561
   },
   {
     "Molecule": "Carbon monoxide ",
     "Size": 2,
     "Group": 12,
     "State": "^3\\Sigma^+",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 87.8,
@@ -366,7 +367,6 @@
     "SOS-ADC(2) [QC]": 11.793,
     "ADC(2)": 11.642,
     "ADC(3)": 11.115,
-    "ADC(2.5)": 11.378499999999999,
-    "Spin": 3
+    "ADC(2.5)": 11.378499999999999
   }
 ]

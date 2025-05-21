@@ -4,6 +4,7 @@
     "Size": 16,
     "Group": 1016,
     "State": "^1B_{1g}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 87.1,
@@ -63,14 +64,14 @@
     "BSE/G0W0@HF": 4.074711,
     "BSE/evGW@PBE0": 3.104431,
     "BSE/evGW@CAM-B3LYP": 3.184414,
-    "BSE/evGW@HF": 3.825273,
-    "Spin": 1
+    "BSE/evGW@HF": 3.825273
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^1A_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 86.4,
@@ -130,14 +131,14 @@
     "BSE/G0W0@HF": 4.25975,
     "BSE/evGW@PBE0": 3.3508,
     "BSE/evGW@CAM-B3LYP": 3.421019,
-    "BSE/evGW@HF": 3.992152,
-    "Spin": 1
+    "BSE/evGW@HF": 3.992152
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^1A_g",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.5,
@@ -196,14 +197,14 @@
     "BSE/G0W0@HF": 4.630078,
     "BSE/evGW@PBE0": 4.121206,
     "BSE/evGW@CAM-B3LYP": 4.175628,
-    "BSE/evGW@HF": 4.510703,
-    "Spin": 1
+    "BSE/evGW@HF": 4.510703
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^1B_{2u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 85.3,
@@ -264,14 +265,14 @@
     "BSE/G0W0@HF": 4.668261,
     "BSE/evGW@PBE0": 4.11896,
     "BSE/evGW@CAM-B3LYP": 4.183756,
-    "BSE/evGW@HF": 4.558183,
-    "Spin": 1
+    "BSE/evGW@HF": 4.558183
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^1B_{3g}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 88.1,
@@ -331,14 +332,14 @@
     "BSE/G0W0@HF": 4.586169,
     "BSE/evGW@PBE0": 3.973156,
     "BSE/evGW@CAM-B3LYP": 4.075565,
-    "BSE/evGW@HF": 4.4804,
-    "Spin": 1
+    "BSE/evGW@HF": 4.4804
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^1B_{1u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.7,
@@ -399,14 +400,14 @@
     "BSE/G0W0@HF": 5.259972,
     "BSE/evGW@PBE0": 4.816268,
     "BSE/evGW@CAM-B3LYP": 4.863865,
-    "BSE/evGW@HF": 5.136867,
-    "Spin": 1
+    "BSE/evGW@HF": 5.136867
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^1B_{2u}",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 87.0,
@@ -467,14 +468,14 @@
     "BSE/G0W0@HF": 5.935533,
     "BSE/evGW@PBE0": 5.232929,
     "BSE/evGW@CAM-B3LYP": 5.287416,
-    "BSE/evGW@HF": 5.825375,
-    "Spin": 1
+    "BSE/evGW@HF": 5.825375
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^3B_{1g}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.3,
@@ -523,14 +524,14 @@
     "BSE/G0W0@HF": 3.629741,
     "BSE/evGW@PBE0": 2.575918,
     "BSE/evGW@CAM-B3LYP": 2.665853,
-    "BSE/evGW@HF": 3.395321,
-    "Spin": 3
+    "BSE/evGW@HF": 3.395321
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^3A_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVDZ]": 96.3,
@@ -579,14 +580,14 @@
     "BSE/G0W0@HF": 3.807572,
     "BSE/evGW@PBE0": 2.80586,
     "BSE/evGW@CAM-B3LYP": 2.886594,
-    "BSE/evGW@HF": 3.556237,
-    "Spin": 3
+    "BSE/evGW@HF": 3.556237
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^3B_{1u}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.7,
@@ -635,14 +636,14 @@
     "BSE/G0W0@HF": 3.49981,
     "BSE/evGW@PBE0": 2.715783,
     "BSE/evGW@CAM-B3LYP": 2.806219,
-    "BSE/evGW@HF": 3.463042,
-    "Spin": 3
+    "BSE/evGW@HF": 3.463042
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^3B_{3g}",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 97.4,
@@ -691,14 +692,14 @@
     "BSE/G0W0@HF": 3.514654,
     "BSE/evGW@PBE0": 2.905721,
     "BSE/evGW@CAM-B3LYP": 2.97408,
-    "BSE/evGW@HF": 3.470237,
-    "Spin": 3
+    "BSE/evGW@HF": 3.470237
   },
   {
     "Molecule": "Anthraquinone",
     "Size": 16,
     "Group": 1016,
     "State": "^3A_g",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVDZ]": 96.6,
@@ -747,7 +748,6 @@
     "BSE/G0W0@HF": 3.706075,
     "BSE/evGW@PBE0": 3.108087,
     "BSE/evGW@CAM-B3LYP": 3.182614,
-    "BSE/evGW@HF": 3.622276,
-    "Spin": 3
+    "BSE/evGW@HF": 3.622276
   }
 ]

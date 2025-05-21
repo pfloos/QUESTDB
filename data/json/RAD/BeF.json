@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.362,
     "TBE/AVTZ": 4.145999999999999,
@@ -21,13 +22,20 @@
     "RO-CCSD": 4.175,
     "U-CC3": 4.144,
     "RO-CC3": 4.144,
-    "Spin": 2
+    "CASSCF": 4.228,
+    "CASPT2 (No IPEA)": 4.161,
+    "CASPT2": 4.171,
+    "SC-NEVPT2": 4.181,
+    "PC-NEVPT2": 4.174,
+    "CASPT3 (No IPEA)": 4.163,
+    "CASPT3": 4.166
   },
   {
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.063,
     "TBE/AVTZ": 6.208000000000001,
@@ -45,13 +53,20 @@
     "RO-CCSD": 6.297,
     "U-CC3": 6.191,
     "RO-CC3": 6.191,
-    "Spin": 2
+    "CASSCF": 6.202,
+    "CASPT2 (No IPEA)": 6.172,
+    "CASPT2": 6.187,
+    "SC-NEVPT2": 6.215,
+    "PC-NEVPT2": 6.218,
+    "CASPT3 (No IPEA)": 6.211,
+    "CASPT3": 6.209
   },
   {
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.12,
     "TBE/AVTZ": 6.299,
@@ -69,13 +84,20 @@
     "RO-CCSD": 6.339,
     "U-CC3": 6.288,
     "RO-CC3": 6.288,
-    "Spin": 2
+    "CASSCF": 6.053,
+    "CASPT2 (No IPEA)": 6.211,
+    "CASPT2": 6.198,
+    "SC-NEVPT2": 6.19,
+    "PC-NEVPT2": 6.221,
+    "CASPT3 (No IPEA)": 6.232,
+    "CASPT3": 6.225
   },
   {
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.003,
     "TBE/AVTZ": 7.131000000000001,
@@ -93,13 +115,20 @@
     "RO-CCSD": 7.191,
     "U-CC3": 7.113,
     "RO-CC3": 7.113,
-    "Spin": 2
+    "CASSCF": 7.004,
+    "CASPT2 (No IPEA)": 7.081,
+    "CASPT2": 7.082,
+    "SC-NEVPT2": 7.079,
+    "PC-NEVPT2": 7.091,
+    "CASPT3 (No IPEA)": 7.098,
+    "CASPT3": 7.097
   },
   {
     "Molecule": "BeF",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.05,
     "TBE/AVTZ": 7.764,
@@ -117,6 +146,12 @@
     "RO-CCSD": 7.838,
     "U-CC3": 7.745,
     "RO-CC3": 7.745,
-    "Spin": 2
+    "CASSCF": 7.584,
+    "CASPT2 (No IPEA)": 7.691,
+    "CASPT2": 7.684,
+    "SC-NEVPT2": 7.691,
+    "PC-NEVPT2": 7.715,
+    "CASPT3 (No IPEA)": 7.717,
+    "CASPT3": 7.711
   }
 ]

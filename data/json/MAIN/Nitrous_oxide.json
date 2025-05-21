@@ -4,6 +4,7 @@
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma^-",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 92.5,
@@ -28,14 +29,14 @@
     "SOS-ADC(2) [QC]": 6.809,
     "ADC(2)": 6.977,
     "ADC(3)": 6.636,
-    "ADC(2.5)": 6.8065,
-    "Spin": 1
+    "ADC(2.5)": 6.8065
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Delta",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 91.5,
@@ -60,14 +61,14 @@
     "SOS-ADC(2) [QC]": 6.84,
     "ADC(2)": 7.147,
     "ADC(3)": 6.854,
-    "ADC(2.5)": 7.000500000000001,
-    "Spin": 1
+    "ADC(2.5)": 7.000500000000001
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Pi",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 93.2,
@@ -93,14 +94,14 @@
     "SOS-ADC(2) [QC]": 8.507,
     "ADC(2)": 8.417,
     "ADC(3)": 8.477,
-    "ADC(2.5)": 8.447,
-    "Spin": 1
+    "ADC(2.5)": 8.447
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma^+",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 89.7,
@@ -126,14 +127,14 @@
     "SOS-ADC(2) [QC]": 9.0,
     "ADC(2)": 8.906,
     "ADC(3)": 10.115,
-    "ADC(2.5)": 9.5105,
-    "Spin": 1
+    "ADC(2.5)": 9.5105
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma^+",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.4,
@@ -155,14 +156,14 @@
     "SOS-ADC(2) [QC]": 5.552,
     "ADC(2)": 5.952,
     "ADC(3)": 5.39,
-    "ADC(2.5)": 5.670999999999999,
-    "Spin": 3
+    "ADC(2.5)": 5.670999999999999
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Delta",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.1,
@@ -184,14 +185,14 @@
     "SOS-ADC(2) [QC]": 6.459,
     "ADC(2)": 6.533,
     "ADC(3)": 6.083,
-    "ADC(2.5)": 6.308,
-    "Spin": 3
+    "ADC(2.5)": 6.308
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Sigma^-",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -213,14 +214,14 @@
     "SOS-ADC(2) [QC]": 6.797,
     "ADC(2)": 6.967,
     "ADC(3)": 6.566,
-    "ADC(2.5)": 6.7665,
-    "Spin": 3
+    "ADC(2.5)": 6.7665
   },
   {
     "Molecule": "Nitrous oxide",
     "Size": 3,
     "Group": 35,
     "State": "^1\\Pi",
+    "Spin": 3,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 97.8,
@@ -242,7 +243,6 @@
     "SOS-ADC(2) [QC]": 8.27,
     "ADC(2)": 8.133,
     "ADC(3)": 8.127,
-    "ADC(2.5)": 8.129999999999999,
-    "Spin": 3
+    "ADC(2.5)": 8.129999999999999
   }
 ]

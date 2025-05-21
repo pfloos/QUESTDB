@@ -4,6 +4,7 @@
     "Size": 11,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "sCT",
@@ -24,14 +25,14 @@
     "SOS-ADC(2) [QC]": 4.12,
     "ADC(2)": 3.78,
     "ADC(3)": 4.499,
-    "ADC(2.5)": 4.1395,
-    "Spin": 1
+    "ADC(2.5)": 4.1395
   },
   {
     "Molecule": "Dimethylaminobenzonitrile (twisted)",
     "Size": 11,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "sCT",
@@ -53,7 +54,6 @@
     "SOS-ADC(2) [QC]": 4.852,
     "ADC(2)": 4.398,
     "ADC(3)": 5.296,
-    "ADC(2.5)": 4.8469999999999995,
-    "Spin": 1
+    "ADC(2.5)": 4.8469999999999995
   }
 ]

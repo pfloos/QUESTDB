@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.001,
     "TBE/AVTZ": 6.115,
@@ -20,14 +21,14 @@
     "U-CCSD": 6.23,
     "RO-CCSD": 6.211,
     "U-CC3": 6.133,
-    "RO-CC3": 6.12,
-    "Spin": 2
+    "RO-CC3": 6.12
   },
   {
     "Molecule": "NO",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
+    "Spin": 2,
     "V/R": "R",
     "TBE/AVTZ": 7.22,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -41,14 +42,14 @@
     "U-CCSD": 7.461,
     "RO-CCSD": 7.444,
     "U-CC3": 7.3,
-    "RO-CC3": 7.2835,
-    "Spin": 2
+    "RO-CC3": 7.2835
   },
   {
     "Molecule": "NO",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Sigma^+",
+    "Spin": 2,
     "V/R": "R",
     "f [LR-CCSD/AVTZ]": 0.021,
     "TBE/AVTZ": 7.284,
@@ -65,16 +66,16 @@
     "U-CCSD": 7.399,
     "RO-CCSD": 7.38,
     "U-CC3": 7.296,
-    "RO-CC3": 7.284,
-    "Spin": 2
+    "RO-CC3": 7.284
   },
   {
     "Molecule": "NO",
     "Size": 2,
     "Group": 12,
     "State": "^2\\Pi",
+    "Spin": 2,
     "V/R": "V",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "TBE/AVTZ": 7.793,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -87,14 +88,14 @@
     "U-CCSD": 8.4315,
     "RO-CCSD": 8.413499999999999,
     "U-CC3": 8.058,
-    "RO-CC3": 8.04,
-    "Spin": 2
+    "RO-CC3": 8.04
   },
   {
     "Molecule": "NO",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Sigma^-",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.363,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -110,14 +111,14 @@
     "U-CCSD": 6.894,
     "RO-CCSD": 6.875,
     "U-CC3": 6.629,
-    "RO-CC3": 6.61,
-    "Spin": 4
+    "RO-CC3": 6.61
   },
   {
     "Molecule": "NO",
     "Size": 2,
     "Group": 12,
     "State": "^4\\Pi",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.785,
     "Method (all in RO)": "CCSDTQP/AVDZ + [CCSDTQ/AVTZ - CCSDTQ/AVDZ]",
@@ -131,7 +132,6 @@
     "U-CCSD": 7.133,
     "RO-CCSD": 7.1175,
     "U-CC3": 6.9985,
-    "RO-CC3": 6.994999999999999,
-    "Spin": 4
+    "RO-CC3": 6.994999999999999
   }
 ]

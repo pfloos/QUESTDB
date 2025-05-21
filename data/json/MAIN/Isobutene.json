@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3s",
     "%T1 [CC3/AVTZ]": 94.1,
@@ -36,14 +37,14 @@
     "CASPT3": 6.64,
     "CASPT3 (No IPEA)": 6.57,
     "SC-NEVPT2": 6.66,
-    "PC-NEVPT2": 6.63,
-    "Spin": 1
+    "PC-NEVPT2": 6.63
   },
   {
     "Molecule": "Isobutene",
     "Size": 4,
     "Group": 35,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 94.2,
@@ -76,14 +77,14 @@
     "CASPT3": 7.24,
     "CASPT3 (No IPEA)": 7.18,
     "SC-NEVPT2": 7.25,
-    "PC-NEVPT2": 7.2,
-    "Spin": 1
+    "PC-NEVPT2": 7.2
   },
   {
     "Molecule": "Isobutene",
     "Size": 4,
     "Group": 35,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
@@ -111,7 +112,6 @@
     "CASPT3": 4.58,
     "CASPT3 (No IPEA)": 4.53,
     "SC-NEVPT2": 4.61,
-    "PC-NEVPT2": 4.61,
-    "Spin": 3
+    "PC-NEVPT2": 4.61
   }
 ]

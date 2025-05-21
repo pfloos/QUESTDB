@@ -4,9 +4,10 @@
     "Size": 1,
     "Group": 12,
     "State": "^1D",
+    "Spin": 1,
     "V/R": "R",
     "Type": "dou",
-    "Special ?": "gd",
+    "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 31.4,
     "TBE/AVTZ": 7.151,
     "Method": "FCI/AVTZ",
@@ -18,7 +19,6 @@
     "CCSDT": 7.152,
     "ADC(3)": 6.118,
     "CASPT2": 7.12,
-    "PC-NEVPT2": 7.11,
-    "Spin": 1
+    "PC-NEVPT2": 7.11
   }
 ]

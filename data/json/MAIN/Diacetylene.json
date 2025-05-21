@@ -4,6 +4,7 @@
     "Size": 4,
     "Group": 35,
     "State": "^1\\Sigma_u^-",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 94.4,
@@ -35,14 +36,14 @@
     "CASPT3": 5.45,
     "CASPT3 (No IPEA)": 5.36,
     "SC-NEVPT2": 5.39,
-    "PC-NEVPT2": 5.33,
-    "Spin": 1
+    "PC-NEVPT2": 5.33
   },
   {
     "Molecule": "Diacetylene",
     "Size": 4,
     "Group": 35,
     "State": "^1\\Delta_u",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 94.1,
@@ -74,14 +75,14 @@
     "CASPT3": 5.72,
     "CASPT3 (No IPEA)": 5.63,
     "SC-NEVPT2": 5.67,
-    "PC-NEVPT2": 5.61,
-    "Spin": 1
+    "PC-NEVPT2": 5.61
   },
   {
     "Molecule": "Diacetylene",
     "Size": 4,
     "Group": 35,
     "State": "^3\\Sigma_u^+",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.5,
@@ -109,14 +110,14 @@
     "CASPT3": 4.17,
     "CASPT3 (No IPEA)": 4.09,
     "SC-NEVPT2": 4.13,
-    "PC-NEVPT2": 4.08,
-    "Spin": 3
+    "PC-NEVPT2": 4.08
   },
   {
     "Molecule": "Diacetylene",
     "Size": 4,
     "Group": 35,
     "State": "^3\\Delta_u",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.2,
@@ -145,7 +146,6 @@
     "CASPT3": 4.86,
     "CASPT3 (No IPEA)": 4.78,
     "SC-NEVPT2": 4.82,
-    "PC-NEVPT2": 4.78,
-    "Spin": 3
+    "PC-NEVPT2": 4.78
   }
 ]

@@ -4,9 +4,10 @@
     "Size": 3,
     "Group": 35,
     "State": "^1A\"",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 79.9,
     "f [LR-CC3/AVTZ]": 0.0,
     "TBE/AVTZ": 2.403,
@@ -30,17 +31,17 @@
     "SOS-ADC(2) [QC]": 1.944,
     "ADC(2)": 1.68,
     "ADC(3)": 2.759,
-    "ADC(2.5)": 2.2195,
-    "Spin": 1
+    "ADC(2.5)": 2.2195
   },
   {
     "Molecule": "Criegee Interm.",
     "Size": 3,
     "Group": 35,
     "State": "^1A'",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
-    "Special ?": "pd",
+    "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 79.5,
     "f [LR-CC3/AVTZ]": 0.132,
     "TBE/AVTZ": 3.715,
@@ -64,14 +65,14 @@
     "SOS-ADC(2) [QC]": 2.389,
     "ADC(2)": 2.354,
     "ADC(3)": 3.674,
-    "ADC(2.5)": 3.0140000000000002,
-    "Spin": 1
+    "ADC(2.5)": 3.0140000000000002
   },
   {
     "Molecule": "Criegee Interm.",
     "Size": 3,
     "Group": 35,
     "State": "^3A'",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.6,
@@ -93,14 +94,14 @@
     "SOS-ADC(2) [QC]": 1.848,
     "ADC(2)": 1.609,
     "ADC(3)": 1.512,
-    "ADC(2.5)": 1.5605,
-    "Spin": 3
+    "ADC(2.5)": 1.5605
   },
   {
     "Molecule": "Criegee Interm.",
     "Size": 3,
     "Group": 35,
     "State": "^3A\"",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 93.9,
@@ -122,7 +123,6 @@
     "SOS-ADC(2) [QC]": 1.937,
     "ADC(2)": 1.605,
     "ADC(3)": 2.539,
-    "ADC(2.5)": 2.072,
-    "Spin": 3
+    "ADC(2.5)": 2.072
   }
 ]

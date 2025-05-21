@@ -4,6 +4,7 @@
     "Size": 2,
     "Group": 12,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 3.84,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -26,14 +27,14 @@
     "SC-NEVPT2": 3.85,
     "PC-NEVPT2": 3.85,
     "CASPT3 (No IPEA)": 3.852,
-    "CASPT3": 3.853,
-    "Spin": 2
+    "CASPT3": 3.853
   },
   {
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
     "State": "^2A_1",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.0,
     "TBE/AVTZ": 5.227,
@@ -57,14 +58,14 @@
     "SC-NEVPT2": 5.259,
     "PC-NEVPT2": 5.256,
     "CASPT3 (No IPEA)": 5.233,
-    "CASPT3": 5.233,
-    "Spin": 2
+    "CASPT3": 5.233
   },
   {
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
     "State": "^2B_1",
+    "Spin": 2,
     "V/R": "V",
     "TBE/AVTZ": 5.685999999999999,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -87,14 +88,14 @@
     "SC-NEVPT2": 5.826,
     "PC-NEVPT2": 5.745,
     "CASPT3 (No IPEA)": 5.754,
-    "CASPT3": 5.77,
-    "Spin": 2
+    "CASPT3": 5.77
   },
   {
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
     "State": "^2B_2",
+    "Spin": 2,
     "V/R": "V",
     "f [LR-CCSD/AVTZ]": 0.024,
     "TBE/AVTZ": 6.401999999999999,
@@ -118,14 +119,14 @@
     "SC-NEVPT2": 6.542,
     "PC-NEVPT2": 6.489,
     "CASPT3 (No IPEA)": 6.476,
-    "CASPT3": 6.495,
-    "Spin": 2
+    "CASPT3": 6.495
   },
   {
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
     "State": "^4B_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 6.902,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -147,14 +148,14 @@
     "SC-NEVPT2": 6.943,
     "PC-NEVPT2": 6.92,
     "CASPT3 (No IPEA)": 6.869,
-    "CASPT3": 6.89,
-    "Spin": 4
+    "CASPT3": 6.89
   },
   {
     "Molecule": "CH2O+",
     "Size": 2,
     "Group": 12,
     "State": "^4A_2",
+    "Spin": 4,
     "V/R": "V",
     "TBE/AVTZ": 8.927,
     "Method (all in RO)": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVDZ - CCSDTQ/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
@@ -176,7 +177,6 @@
     "SC-NEVPT2": 9.028,
     "PC-NEVPT2": 8.979,
     "CASPT3 (No IPEA)": 8.938,
-    "CASPT3": 8.959,
-    "Spin": 4
+    "CASPT3": 8.959
   }
 ]

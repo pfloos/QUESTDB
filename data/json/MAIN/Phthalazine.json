@@ -4,6 +4,7 @@
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "wCT",
@@ -26,14 +27,14 @@
     "SOS-ADC(2) [QC]": 4.017,
     "ADC(2)": 3.759,
     "ADC(3)": 4.193,
-    "ADC(2.5)": 3.976,
-    "Spin": 1
+    "ADC(2.5)": 3.976
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "wCT",
@@ -57,14 +58,14 @@
     "SOS-ADC(2) [QC]": 4.42,
     "ADC(2)": 4.184,
     "ADC(3)": 4.477,
-    "ADC(2.5)": 4.330500000000001,
-    "Spin": 1
+    "ADC(2.5)": 4.330500000000001
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 85.5,
@@ -87,14 +88,14 @@
     "SOS-ADC(2) [QC]": 4.291,
     "ADC(2)": 4.613,
     "ADC(3)": 4.362,
-    "ADC(2.5)": 4.487500000000001,
-    "Spin": 1
+    "ADC(2.5)": 4.487500000000001
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 89.7,
@@ -117,14 +118,14 @@
     "SOS-ADC(2) [QC]": 5.041,
     "ADC(2)": 5.103,
     "ADC(3)": 5.042,
-    "ADC(2.5)": 5.0725,
-    "Spin": 1
+    "ADC(2.5)": 5.0725
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "wCT",
@@ -148,14 +149,14 @@
     "SOS-ADC(2) [QC]": 5.701,
     "ADC(2)": 5.444,
     "ADC(3)": 5.865,
-    "ADC(2.5)": 5.6545000000000005,
-    "Spin": 1
+    "ADC(2.5)": 5.6545000000000005
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "%T1 [CC3/AVTZ]": 81.2,
@@ -175,14 +176,14 @@
     "SOS-ADC(2) [QC]": 6.211,
     "ADC(2)": 5.533,
     "ADC(3)": 6.641,
-    "ADC(2.5)": 6.087,
-    "Spin": 1
+    "ADC(2.5)": 6.087
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "wCT",
@@ -204,14 +205,14 @@
     "SOS-ADC(2) [QC]": 6.073,
     "ADC(2)": 5.817,
     "ADC(3)": 6.055,
-    "ADC(2.5)": 5.936,
-    "Spin": 1
+    "ADC(2.5)": 5.936
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 83.1,
@@ -234,14 +235,14 @@
     "SOS-ADC(2) [QC]": 6.01,
     "ADC(2)": 6.302,
     "ADC(3)": 5.855,
-    "ADC(2.5)": 6.0785,
-    "Spin": 1
+    "ADC(2.5)": 6.0785
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1B_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 87.0,
@@ -262,14 +263,14 @@
     "SOS-ADC(2) [QC]": 6.412,
     "ADC(2)": 5.781,
     "ADC(3)": 6.831,
-    "ADC(2.5)": 6.306,
-    "Spin": 1
+    "ADC(2.5)": 6.306
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_1",
+    "Spin": 1,
     "V/R": "V",
     "Type": "ppi",
     "f [LR-CC3/AVTZ]": "n.d",
@@ -290,14 +291,14 @@
     "SOS-ADC(2) [QC]": 6.329,
     "ADC(2)": 6.357,
     "ADC(3)": 6.298,
-    "ADC(2.5)": 6.327500000000001,
-    "Spin": 1
+    "ADC(2.5)": 6.327500000000001
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^1A_2",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n.d.",
     "TBE/AVTZ": 6.444,
@@ -318,14 +319,14 @@
     "SOS-ADC(2) [QC]": 6.503,
     "ADC(2)": 6.432,
     "ADC(3)": 6.285,
-    "ADC(2.5)": 6.3585,
-    "Spin": 1
+    "ADC(2.5)": 6.3585
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 97.7,
@@ -343,14 +344,14 @@
     "SOS-ADC(2) [QC]": 3.498,
     "ADC(2)": 3.589,
     "ADC(3)": 3.171,
-    "ADC(2.5)": 3.38,
-    "Spin": 3
+    "ADC(2.5)": 3.38
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_2",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "wCT",
@@ -369,14 +370,14 @@
     "SOS-ADC(2) [QC]": 3.779,
     "ADC(2)": 3.506,
     "ADC(3)": 3.832,
-    "ADC(2.5)": 3.6689999999999996,
-    "Spin": 3
+    "ADC(2.5)": 3.6689999999999996
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^3B_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "npi",
     "Special ?": "wCT",
@@ -395,14 +396,14 @@
     "SOS-ADC(2) [QC]": 3.899,
     "ADC(2)": 3.676,
     "ADC(3)": 3.74,
-    "ADC(2.5)": 3.708,
-    "Spin": 3
+    "ADC(2.5)": 3.708
   },
   {
     "Molecule": "Phthalazine",
     "Size": 10,
     "Group": 1016,
     "State": "^3A_1",
+    "Spin": 3,
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 96.7,
@@ -420,7 +421,6 @@
     "SOS-ADC(2) [QC]": 4.198,
     "ADC(2)": 4.413,
     "ADC(3)": 3.941,
-    "ADC(2.5)": 4.177,
-    "Spin": 3
+    "ADC(2.5)": 4.177
   }
 ]
