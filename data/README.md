@@ -75,6 +75,7 @@ Dedicated files for subsets (see below) also include:
     "Size": 1,
     "Group": 12,
     "State": "^1B_1",
+    "Spin": 1,
     "V/R": "R",
     "Type": "n3s",
     "%T1 [CC3/AVTZ]": 93.4,
@@ -100,8 +101,7 @@ Dedicated files for subsets (see below) also include:
     "SOS-ADC(2) [QC]": 7.23,
     "ADC(2)": 7.181,
     "ADC(3)": 7.842,
-    "ADC(2.5)": 7.5115,
-    "Spin": 1
+    "ADC(2.5)": 7.5115
   }]
 ```
 
