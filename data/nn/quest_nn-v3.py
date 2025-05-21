@@ -471,7 +471,6 @@ def cli():
         for mol, states in grouped_output.items():
             table = Table(title=f"Molecule: {mol}", title_style="bold magenta")
             table.add_column("State", justify="left", style="cyan")
-            table.add_column("Spin", justify="center")
             table.add_column("TBE/AVTZ (eV)", justify="right", style="green")
             table.add_column("± Uncertainty", justify="right", style="yellow")
             
