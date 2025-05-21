@@ -23,14 +23,3 @@ All Cartesian coordinates are expressed in **Angstrom**.
 
 - All geometries have been **carefully curated** to ensure **consistency** and **reproducibility**.
 - For benchmarking, validation, or method development, we **strongly recommend** using these geometries **without modification**.
-
----
-
-## 🚀 Quick Start
-
-```bash
-# Navigate to xyz directory
-cd xyz/
-
-# View a specific molecule
-cat molecule_name.xyz
