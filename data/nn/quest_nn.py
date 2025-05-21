@@ -9,6 +9,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
+
+import random
+torch.manual_seed(42)
+np.random.seed(42)
+random.seed(42)
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -17,14 +23,16 @@ from sklearn.metrics import mean_absolute_error
 
 # === Constants ===
 TARGET_COL = "TBE/AVTZ"
-CATEGORICAL_COLS = ["Molecule", "State", "Type"]
+CATEGORICAL_COLS = ["Molecule", "State", "Type", "Spin"]
 NUMERICAL_COLS = [
 #   "Spin", "%T1 [CC3/AVTZ]", "f [LR-CC3/AVTZ]",
 #   "CIS(D)", "CC2", "EOM-MP2", "STEOM-CCSD", "CCSD",
 #   "CCSD(T)(a)*", "CCSDR(3)", "CCSDT-3", "CC3", "CCSDT",
 #   "SOS-ADC(2) [TM]", "SOS-CC2", "SCS-CC2",
 #   "SOS-ADC(2) [QC]", "ADC(2)", "ADC(3)", "ADC(2.5)"
-    "Spin", "CIS(D)", "CC2", "CCSD", "ADC(2)"
+    "CIS(D)", "CC2", "EOM-MP2", "CCSD", 
+    "SOS-ADC(2) [TM]", "SOS-CC2", "SCS-CC2",
+    "SOS-ADC(2) [QC]", "ADC(2)"
 ]
 
 # === Model ===
@@ -73,13 +81,21 @@ def predict_tbe(model, pipeline, input_dict):
     with torch.no_grad():
         return model(X_tensor).item()
 
-def predict_with_uncertainty(model, pipeline, input_dict, n_iter=100):
+def predict_with_uncertainty(model, pipeline, input_dict, n_iter=1000):
     df_input = pd.DataFrame([input_dict])
     X_input = pipeline.transform(df_input)
     X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32)
     model.train()  # Enable dropout
     preds = [model(X_tensor).item() for _ in range(n_iter)]
     return np.mean(preds), np.std(preds)
+
+def predict_deterministic(model, pipeline, input_dict):
+    df_input = pd.DataFrame([input_dict])
+    X_input = pipeline.transform(df_input)
+    X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32)
+    model.eval()  # turns off dropout
+    with torch.no_grad():
+        return model(X_tensor).item()
 
 # === CLI main ===
 def cli():
@@ -89,7 +105,7 @@ def cli():
     parser.add_argument("--predict", type=str, help="Path to a JSON file with one molecule's data.")
     parser.add_argument("--model", type=str, default="tbe_model.pt", help="Path to save/load model weights.")
     parser.add_argument("--pipeline", type=str, default="tbe_pipeline.pkl", help="Path to save/load preprocessing pipeline.")
-    parser.add_argument("--n-samples", type=int, default=100, help="MC Dropout iterations (for uncertainty).")
+    parser.add_argument("--n-samples", type=int, default=1000, help="MC Dropout iterations (for uncertainty).")
     args = parser.parse_args()
 
     if args.train:
@@ -131,7 +147,7 @@ def cli():
         optimizer = optim.Adam(model.parameters(), lr=0.001)
 
         print("🚀 Starting training...")
-        for epoch in range(10000):
+        for epoch in range(20000):
             model.train()
             optimizer.zero_grad()
             pred = model(X_train_tensor)
@@ -166,8 +182,13 @@ def cli():
         plt.show()
 
     elif args.predict:
+        from rich.console import Console
+        from rich.table import Table
+
+        console = Console()
+
         if not os.path.exists(args.model) or not os.path.exists(args.pipeline):
-            print("❌ Missing model or pipeline file.")
+            console.print("[bold red]❌ Missing model or pipeline file.[/bold red]")
             sys.exit(1)
 
         # Load input JSON
@@ -182,27 +203,41 @@ def cli():
         ).shape[1]
         model = load_model(args.model, input_dim)
 
-        # Predict all states in the file
-        print(f"\n🔮 Predictions for {args.predict}:")
+        console.print(f"\n🔮 [bold]Predictions for:[/bold] [cyan]{args.predict}[/cyan]\n")
+
         results = []
+        grouped_output = {}
+
+        # Loop through each state
         for entry in sample_data:
+            mol = entry.get("Molecule", "?").strip()
+            state = entry.get("State", "?")
             try:
                 mean, std = predict_with_uncertainty(model, pipeline, entry, n_iter=args.n_samples)
-                identifier = f"{entry.get('Molecule', '?')} | {entry.get('State', '?')}"
-                print(f"{identifier:40} → TBE/AVTZ = {mean:.3f} ± {std:.3f} eV")
                 results.append({
-                    "Molecule": entry.get("Molecule", "?").strip(),
-                    "State": entry.get("State", "?"),
+                    "Molecule": mol,
+                    "State": state,
                     "Predicted_TBE": mean,
                     "Uncertainty": std
                 })
+                grouped_output.setdefault(mol, []).append((state, mean, std))
             except Exception as e:
-                print(f"⚠️  Skipped one entry due to error: {e}")
+                console.print(f"[yellow]⚠️ Skipped {mol} | {state} due to error: {e}[/yellow]")
 
-        # Optional: save predictions
+        # Display grouped results
+        for mol, states in grouped_output.items():
+            table = Table(title=f"Molecule: {mol}", title_style="bold magenta")
+            table.add_column("State", justify="left", style="cyan")
+            table.add_column("TBE/AVTZ (eV)", justify="right", style="green")
+            table.add_column("± Uncertainty", justify="right", style="yellow")
+            for state, mean, std in states:
+                table.add_row(state, f"{mean:.3f}", f"± {std:.3f}")
+            console.print(table)
+
+        # Save to CSV
         out_path = args.predict.replace(".json", "_predictions.csv")
         pd.DataFrame(results).to_csv(out_path, index=False)
-        print(f"\n✅ Saved all predictions to: {out_path}")
+        console.print(f"\n✅ [green]Saved all predictions to:[/green] [bold]{out_path}[/bold]\n")
 
     else:
         parser.print_help()
