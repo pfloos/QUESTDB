@@ -32,6 +32,7 @@ python quest_nn.py --predict data/samples/ --model model.pt
 ```
 
 ## 📊 Model Architecture
+
 ```mermaid
 graph TD
     A[Input Features] --> B[Linear(256)]
