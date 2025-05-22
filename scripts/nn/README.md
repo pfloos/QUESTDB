@@ -14,18 +14,11 @@
 
 ## 🚀 Quick Start
 
-### Installation
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Basic Usage
 
 ### Training:
 
-```
-bash
+```bash
 python quest_nn.py --train --data-dir data/training/ --model model.pt
 ```
 
