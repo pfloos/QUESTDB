@@ -378,9 +378,10 @@ def cli():
     parser.add_argument("--n-samples", type=int, default=100, help="MC Dropout iterations for uncertainty")
     parser.add_argument("--deterministic", action="store_true", help="Disable MC Dropout for deterministic prediction")
     parser.add_argument("--batch-size", type=int, default=32, help="Batch size for training")
-    parser.add_argument("--epochs", type=int, default=1000, help="Maximum number of training epochs")
-    parser.add_argument("--patience", type=int, default=100, help="Early stopping patience")
+    parser.add_argument("--epochs", type=int, default=100, help="Maximum number of training epochs")
+    parser.add_argument("--patience", type=int, default=20, help="Early stopping patience")
     parser.add_argument("--lr", type=float, default=1e-3, help="Initial learning rate")
+    parser.add_argument("--weight-decay", type=float, default=1e-4, help="Weight decay")
     parser.add_argument("--output-dir", type=str, default="predictions", help="Directory to save prediction results")
     args = parser.parse_args()
 
@@ -438,7 +439,7 @@ def cli():
         # Initialize model, loss, and optimizer
         model = TBEPredictor(input_dim).to(device)
         loss_fn = nn.HuberLoss()  # More robust than MSE
-        optimizer = optim.AdamW(model.parameters(), lr=args.lr)
+        optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(
             optimizer, 'min', patience=args.patience//2, factor=0.5
         )
