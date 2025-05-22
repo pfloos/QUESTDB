@@ -9,7 +9,7 @@
 ## 📌 Script Summary: TBE Neural Network Predictor
 
 ### 🔬 **Purpose**
-A PyTorch-based neural network that predicts Theoretical Best Estimate (TBE)/AVTZ values for molecular excited states using quantum chemistry method results and molecular metadata.
+A PyTorch-based neural network that predicts TBE/AVTZ values for molecular excited states using quantum chemistry method results and molecular metadata.
 
 ### 🧠 **Core Features**
 - **Advanced Architecture**: 3-layer MLP (256-128-64) with feature extraction + 2-layer regressor (32-1)
@@ -45,18 +45,6 @@ A PyTorch-based neural network that predicts Theoretical Best Estimate (TBE)/AVT
 - MAE, RMSE, R² scores
 - Explained variance
 - Visual error analysis
-
-### 🚀 **Usage Scenarios**
-- Quantum chemistry research
-- Molecular excitation studies
-- Method benchmarking
-- Prediction with confidence intervals
-
-### 🌟 **Key Advantages**
-- Handles incomplete/messy chemical data
-- Provides uncertainty estimates
-- Production-ready CLI interface
-- Comprehensive visualization outputs
   
 ## 🚀 Quick Start: Basic Usage
 
