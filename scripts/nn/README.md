@@ -32,6 +32,7 @@ python quest_nn.py --predict data/samples/ --model model.pt
 ```
 
 ## 📊 Model Architecture
+```mermaid
 graph TD
     A[Input Features] --> B[Linear(256)]
     B --> C[BatchNorm + SiLU + Dropout]
@@ -43,9 +44,11 @@ graph TD
     H --> I[SiLU]
     I --> J[Linear(1)]
     J --> K[Output]
+```
 
 ## 📂 File Structure
 
+```mermaid
 graph TD
     A[Input Features] --> B[Linear(256)]
     B --> C[BatchNorm + SiLU + Dropout]
@@ -57,6 +60,7 @@ graph TD
     H --> I[SiLU]
     I --> J[Linear(1)]
     J --> K[Output]
+```
 
 ## 🛠️ Advanced Options
 
