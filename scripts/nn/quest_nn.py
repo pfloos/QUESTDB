@@ -37,9 +37,9 @@ from typing import Dict, List, Tuple, Optional
 
 # === Constants ===
 TARGET_COL = "TBE/AVTZ"
-CATEGORICAL_COLS = ["Molecule", "State", "Type"]
+CATEGORICAL_COLS = ["Molecule", "State", "Type", "Spin", "Size", "Group"]
 NUMERICAL_COLS = [
-    "Spin", "CIS(D)", "CC2", "EOM-MP2", "CCSD",
+    "CIS(D)", "CC2", "EOM-MP2", "CCSD",
     "SOS-ADC(2) [TM]", "SOS-CC2", "SCS-CC2",
     "SOS-ADC(2) [QC]", "ADC(2)"
 ]
