@@ -325,6 +325,7 @@ def process_prediction_file(model: nn.Module,
         preds = [p for _, _, a, p, _ in states if a is not None]
         errors = [abs(p - a) for a, p in zip(actuals, preds)]
         mae = np.mean(errors) if errors else float("nan")
+        mse = np.mean([(p - a) ** 2 for a, p in zip(actuals, preds)]) if errors else float("nan")
         rmse = np.sqrt(np.mean([(p - a) ** 2 for a, p in zip(actuals, preds)])) if errors else float("nan")
  
         for state, spin, actual_tbe, mean, std in sorted(states, key=lambda x: x[0]):
@@ -355,36 +356,13 @@ def process_prediction_file(model: nn.Module,
             "",
             f"MAE: {mae:.3f}" if not np.isnan(mae) else "N/A",
             f"RMSE: {rmse:.3f}" if not np.isnan(rmse) else "N/A",
-            "",
+            f"MSE: {mse:.3f}" if not np.isnan(mse) else "N/A",
             ""
         )
- 
+
         console.print(table)
 
     return pd.DataFrame(results)
-
-
-#   # Display results in rich tables
-#   for mol, states in grouped_output.items():
-#       table = Table(title=f"Molecule: {mol}", title_style="bold magenta")
-#       table.add_column("State", justify="left", style="cyan")
-#       table.add_column("Spin", justify="center")
-#       table.add_column("Actual TBE", justify="right", style="blue")
-#       table.add_column("Predicted TBE", justify="right", style="green")
-#       table.add_column("± Uncertainty", justify="right", style="yellow")
-#       
-#       for state, spin, actual_tbe, mean, std in sorted(states, key=lambda x: x[0]):
-#           actual_display = f"{actual_tbe:.3f}" if actual_tbe is not None else "N/A"
-#           uncertainty_display = "N/A" if args.deterministic else f"± {std:.3f}"
-#           table.add_row(
-#               state,
-#               str(spin),
-#               actual_display,
-#               f"{mean:.3f}",
-#               uncertainty_display
-#           )
-#       
-#       console.print(table)
 
 # === CLI Main Function ===
 def cli():
