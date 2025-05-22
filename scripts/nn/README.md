@@ -2,11 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.8%2B-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=TBE+Prediction+Visualization" alt="TBE Prediction Visualization" width="600"/>
-</p>
 
 ## 🌟 Features
 
