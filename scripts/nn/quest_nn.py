@@ -2,9 +2,13 @@
 """
 Advanced Neural Network for Theoretical Best Estimate (TBE) Prediction
 
-This script trains a neural network to predict TBE values for excited states
-using various quantum chemistry methods as inputs. It supports both training
-and prediction modes with uncertainty estimation via MC Dropout.
+This script trains a feedforward neural network [multi-layer perceptron (MLP)] 
+in PyTorch to predict the TBE/AVTZ of molecular excited states from various 
+approximate quantum chemistry methods and metadata (e.g., molecule, state, spin, type).
+It supports training mode with loss evaluation, prediction mode with optional uncertainty 
+estimation using MC Dropout, and styled terminal outputs using rich.
+The architecture treats each excitation independently, not as nodes/edges in a graph.
+
 """
 
 import os
@@ -33,9 +37,9 @@ from typing import Dict, List, Tuple, Optional
 
 # === Constants ===
 TARGET_COL = "TBE/AVTZ"
-CATEGORICAL_COLS = ["Molecule", "State", "Type", "Spin"]
+CATEGORICAL_COLS = ["Molecule", "State", "Type"]
 NUMERICAL_COLS = [
-    "CIS(D)", "CC2", "EOM-MP2", "CCSD",
+    "Spin", "CIS(D)", "CC2", "EOM-MP2", "CCSD",
     "SOS-ADC(2) [TM]", "SOS-CC2", "SCS-CC2",
     "SOS-ADC(2) [QC]", "ADC(2)"
 ]
@@ -266,6 +270,104 @@ def plot_results(y_true: np.ndarray,
     plt.savefig(save_path, dpi=300)
     plt.close()
 
+def process_prediction_file(model: nn.Module, 
+                          pipeline: Pipeline,
+                          file_path: str,
+                          device: torch.device,
+                          args: argparse.Namespace,
+                          console: Console) -> pd.DataFrame:
+    """Process a single JSON file for predictions."""
+    with open(file_path, "r") as f:
+        sample_data = json.load(f)
+        if isinstance(sample_data, dict):
+            sample_data = [sample_data]
+
+    results = []
+    grouped_output = {}
+
+    for entry in sample_data:
+        mol = entry.get("Molecule", "?").strip()
+        state = entry.get("State", "?")
+        spin = entry.get("Spin", "?")
+        actual_tbe = entry.get(TARGET_COL, None)
+        
+        try:
+            if args.deterministic:
+                mean = predict_tbe(model, pipeline, entry, device)
+                std = 0.0
+            else:
+                mean, std = predict_with_uncertainty(
+                    model, pipeline, entry, device, n_iter=args.n_samples
+                )
+
+            results.append({
+                "Molecule": mol,
+                "State": state,
+                "Spin": spin,
+                "Actual_TBE": actual_tbe,
+                "Predicted_TBE": mean,
+                "Uncertainty": std,
+                "Prediction_Method": "Deterministic" if args.deterministic else "MC_Dropout",
+                "Source_File": os.path.basename(file_path)
+            })
+            grouped_output.setdefault(mol, []).append((state, spin, actual_tbe, mean, std))
+        except Exception as e:
+            console.print(f"[yellow]⚠️ Skipped {mol} | {state} due to error: {e}[/yellow]")
+
+# Display results in rich tables
+    for mol, states in grouped_output.items():
+        table = Table(title=f"Molecule: {mol}", title_style="bold magenta")
+        table.add_column("State", justify="left", style="cyan")
+        table.add_column("Spin", justify="center")
+        table.add_column("Actual TBE", justify="right", style="blue")
+        table.add_column("Predicted TBE", justify="right", style="green")
+        table.add_column("± Uncertainty", justify="right", style="yellow")
+        table.add_column("Δ Error", justify="right", style="red")
+ 
+        # Compute per-molecule summary stats
+        actuals = [a for _, _, a, _, _ in states if a is not None]
+        preds = [p for _, _, a, p, _ in states if a is not None]
+        errors = [abs(p - a) for a, p in zip(actuals, preds)]
+        mae = np.mean(errors) if errors else float("nan")
+        mse = np.mean([(p - a) ** 2 for a, p in zip(actuals, preds)]) if errors else float("nan")
+        rmse = np.sqrt(np.mean([(p - a) ** 2 for a, p in zip(actuals, preds)])) if errors else float("nan")
+ 
+        for state, spin, actual_tbe, mean, std in sorted(states, key=lambda x: x[0]):
+            actual_display = f"{actual_tbe:.3f}" if actual_tbe is not None else "N/A"
+            uncertainty_display = "N/A" if args.deterministic else f"± {std:.3f}"
+            if actual_tbe is not None:
+                error = mean - actual_tbe
+                error_display = f"{error:+.3f}"
+                style = "bold red" if abs(error) > 0.2 else ("yellow" if abs(error) > 0.1 else "")
+            else:
+                error_display = "N/A"
+                style = ""
+ 
+            table.add_row(
+                str(state),
+                str(spin),
+                actual_display,
+                f"{mean:.3f}",
+                uncertainty_display,
+                error_display,
+                style=style
+            )
+ 
+        # Summary row
+        table.add_row("--", "--", "--", "--", "--", "--")
+        table.add_row(
+            "[bold magenta]Summary[/bold magenta]",
+            "",
+            f"MAE: {mae:.3f}" if not np.isnan(mae) else "N/A",
+            f"RMSE: {rmse:.3f}" if not np.isnan(rmse) else "N/A",
+            f"MSE: {mse:.3f}" if not np.isnan(mse) else "N/A",
+            ""
+        )
+
+        console.print(table)
+
+    return pd.DataFrame(results)
+
 # === CLI Main Function ===
 def cli():
     parser = argparse.ArgumentParser(
@@ -273,16 +375,18 @@ def cli():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
     parser.add_argument("--train", action="store_true", help="Train the model")
-    parser.add_argument("--data-dir", type=str, help="Path to directory with JSON files")
-    parser.add_argument("--predict", type=str, help="Path to JSON file for prediction")
+    parser.add_argument("--data-dir", type=str, help="Path to directory with JSON files for training")
+    parser.add_argument("--predict", type=str, help="Path to JSON file or directory for prediction")
     parser.add_argument("--model", type=str, default="tbe_model.pt", help="Path to model weights")
     parser.add_argument("--pipeline", type=str, default="tbe_pipeline.pkl", help="Path to preprocessing pipeline")
     parser.add_argument("--n-samples", type=int, default=100, help="MC Dropout iterations for uncertainty")
     parser.add_argument("--deterministic", action="store_true", help="Disable MC Dropout for deterministic prediction")
     parser.add_argument("--batch-size", type=int, default=32, help="Batch size for training")
-    parser.add_argument("--epochs", type=int, default=1000, help="Maximum number of training epochs")
-    parser.add_argument("--patience", type=int, default=100, help="Early stopping patience")
+    parser.add_argument("--epochs", type=int, default=100, help="Maximum number of training epochs")
+    parser.add_argument("--patience", type=int, default=20, help="Early stopping patience")
     parser.add_argument("--lr", type=float, default=1e-3, help="Initial learning rate")
+    parser.add_argument("--weight-decay", type=float, default=1e-4, help="Weight decay")
+    parser.add_argument("--output-dir", type=str, default="predictions", help="Directory to save prediction results")
     args = parser.parse_args()
 
     console = Console()
@@ -339,7 +443,7 @@ def cli():
         # Initialize model, loss, and optimizer
         model = TBEPredictor(input_dim).to(device)
         loss_fn = nn.HuberLoss()  # More robust than MSE
-        optimizer = optim.AdamW(model.parameters(), lr=args.lr)
+        optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(
             optimizer, 'min', patience=args.patience//2, factor=0.5
         )
@@ -424,66 +528,59 @@ def cli():
             console.print("[bold red]❌ Missing model or pipeline file.[/bold red]")
             sys.exit(1)
 
-        with open(args.predict, "r") as f:
-            sample_data = json.load(f)
-            if isinstance(sample_data, dict):
-                sample_data = [sample_data]
-
+        # Load model and pipeline
         pipeline = joblib.load(args.pipeline)
-        input_dim = pipeline.transform(
-            pd.DataFrame([sample_data[0]])[NUMERICAL_COLS + CATEGORICAL_COLS]
-        ).shape[1]
-        
+
+        dummy_input = {
+            **{col: 0.0 for col in NUMERICAL_COLS},
+            **{col: "Unknown" for col in CATEGORICAL_COLS}
+        }
+        input_dim = pipeline.transform(pd.DataFrame([dummy_input])).shape[1]
+
         model = TBEPredictor(input_dim).to(device)
         model.load_state_dict(torch.load(args.model, map_location=device))
         
-        console.print(f"\n🔮 [bold]Predictions for:[/bold] [cyan]{args.predict}[/cyan]\n")
-        results = []
-        grouped_output = {}
-
-        for entry in sample_data:
-            mol = entry.get("Molecule", "?").strip()
-            state = entry.get("State", "?")
-            spin = entry.get("Spin", "?")
-            
+        # Create output directory if it doesn't exist
+        os.makedirs(args.output_dir, exist_ok=True)
+        
+        # Determine if we're processing a single file or directory
+        if os.path.isfile(args.predict):
+            files_to_process = [args.predict]
+        elif os.path.isdir(args.predict):
+            files_to_process = [
+                os.path.join(args.predict, f) 
+                for f in os.listdir(args.predict) 
+                if f.endswith('.json')
+            ]
+        else:
+            console.print(f"[bold red]❌ Path {args.predict} is neither a file nor directory[/bold red]")
+            sys.exit(1)
+        
+        all_results = []
+        
+        for file_path in files_to_process:
+            console.print(f"\n🔮 [bold]Processing file:[/bold] [cyan]{file_path}[/cyan]")
             try:
-                if args.deterministic:
-                    mean = predict_tbe(model, pipeline, entry, device)
-                    std = 0.0
-                else:
-                    mean, std = predict_with_uncertainty(
-                        model, pipeline, entry, device, n_iter=args.n_samples
-                    )
-
-                results.append({
-                    "Molecule": mol,
-                    "State": state,
-                    "Spin": spin,
-                    "Predicted_TBE": mean,
-                    "Uncertainty": std,
-                    "Prediction_Method": "Deterministic" if args.deterministic else "MC_Dropout"
-                })
-                grouped_output.setdefault(mol, []).append((state, spin, mean, std))
+                results_df = process_prediction_file(
+                    model, pipeline, file_path, device, args, console
+                )
+                all_results.append(results_df)
+                
+                # Save individual file results
+                out_name = os.path.splitext(os.path.basename(file_path))[0] + "_predictions.csv"
+                out_path = os.path.join(args.output_dir, out_name)
+                results_df.to_csv(out_path, index=False)
+                console.print(f"✅ Saved predictions to: [green]{out_path}[/green]")
             except Exception as e:
-                console.print(f"[yellow]⚠️ Skipped {mol} | {state} due to error: {e}[/yellow]")
-
-        # Display results in rich tables
-        for mol, states in grouped_output.items():
-            table = Table(title=f"Molecule: {mol}", title_style="bold magenta")
-            table.add_column("State", justify="left", style="cyan")
-            table.add_column("TBE/AVTZ (eV)", justify="right", style="green")
-            table.add_column("± Uncertainty", justify="right", style="yellow")
-            
-            for state, spin, mean, std in sorted(states, key=lambda x: x[0]):
-                uncertainty_display = "N/A" if args.deterministic else f"± {std:.3f}"
-                table.add_row(*map(str, [state, f"{mean:.3f}", uncertainty_display]))
-            
-            console.print(table)
-
-        # Save results
-        out_path = args.predict.replace(".json", "_predictions.csv")
-        pd.DataFrame(results).to_csv(out_path, index=False)
-        console.print(f"\n✅ [green]Saved all predictions to:[/green] [bold]{out_path}[/bold]\n")
+                console.print(f"[red]❌ Error processing {file_path}: {str(e)}[/red]")
+        
+        # Save combined results if processing multiple files
+        if len(files_to_process) > 1:
+            combined_path = os.path.join(args.output_dir, "combined_predictions.csv")
+            pd.concat(all_results).to_csv(combined_path, index=False)
+            console.print(f"\n✅ Saved combined predictions to: [bold green]{combined_path}[/bold green]")
+        
+        console.print("\n[bold green]🎉 All predictions completed![/bold green]")
 
     else:
         parser.print_help()
