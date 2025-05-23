@@ -5,6 +5,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-0.24%2B-success)
 ![NumPy](https://img.shields.io/badge/NumPy-1.18%2B-important)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.0%2B-blue)
+![Seaborn](https://seaborn.pydata.org/)
 
 ---
 
@@ -137,11 +138,12 @@ python quest_nn.py --predict data/samples/ --model model.pt
 - NumPy ≥ 1.18  
 - Matplotlib ≥ 3.0  
 - rich
+- seaborn
 
 Install dependencies:
 
 ```bash
-pip install torch scikit-learn numpy matplotlib rich
+pip install torch scikit-learn numpy matplotlib rich seaborn
 ```
 ---
 
