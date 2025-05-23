@@ -2,10 +2,10 @@
 """
 Advanced Neural Network for Theoretical Best Estimate (TBE) Prediction
 
-This script trains a feedforward neural network [multi-layer perceptron (MLP)] 
-in PyTorch to predict the TBE/AVTZ of molecular excited states from various 
+This script trains a feedforward neural network [multi-layer perceptron (MLP)]
+in PyTorch to predict the TBE/AVTZ of molecular excited states from various
 approximate quantum chemistry methods and metadata (e.g., molecule, state, spin, type).
-It supports training mode with loss evaluation, prediction mode with optional uncertainty 
+It supports training mode with loss evaluation, prediction mode with optional uncertainty
 estimation using MC Dropout, and styled terminal outputs using rich.
 The architecture treats each excitation independently, not as nodes/edges in a graph.
 
@@ -52,24 +52,24 @@ class TBEPredictor(nn.Module):
             nn.BatchNorm1d(256),
             nn.SiLU(),
             nn.Dropout(p=0.3),
-            
+
             nn.Linear(256, 128),
             nn.BatchNorm1d(128),
             nn.SiLU(),
             nn.Dropout(p=0.3),
-            
+
             nn.Linear(128, 64),
             nn.BatchNorm1d(64),
             nn.SiLU(),
             nn.Dropout(p=0.2),
         )
-        
+
         self.regressor = nn.Sequential(
             nn.Linear(64, 32),
             nn.SiLU(),
             nn.Linear(32, 1)
         )
-        
+
         # Initialize weights
         self._init_weights()
 
@@ -105,10 +105,10 @@ def load_json_directory(directory: str) -> pd.DataFrame:
 def prepare_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
     # Clean molecule names
     df['Molecule'] = df['Molecule'].str.strip()
-    
+
     # Clean state names (remove special characters that might cause issues)
     df['State'] = df['State'].str.replace('^', '').str.replace('_', '')
-    
+
     # Round numerical values to 6 decimal places
     for col in NUMERICAL_COLS:
         if col in df.columns:
@@ -118,17 +118,17 @@ def prepare_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
     df.columns = df.columns.str.strip()
     df = df[df[TARGET_COL].notna()]
     df = df.dropna(subset=NUMERICAL_COLS + CATEGORICAL_COLS)
-    
+
     # Convert numerical columns to float
     for col in NUMERICAL_COLS:
         df[col] = pd.to_numeric(df[col], errors='coerce')
-    
+
     # Remove any remaining NA values
     df = df.dropna(subset=NUMERICAL_COLS + CATEGORICAL_COLS)
-    
+
     X = df[NUMERICAL_COLS + CATEGORICAL_COLS]
     y = df[TARGET_COL]
-    
+
     return X, y
 
 # === Training Utilities ===
@@ -152,24 +152,26 @@ class EarlyStopping:
             self.best_score = val_loss
             self.counter = 0
 
-def evaluate_model(model: nn.Module, 
-                  dataloader: DataLoader, 
-                  loss_fn: nn.Module) -> Dict[str, float]:
+def evaluate_model(model: nn.Module,
+                  dataloader: DataLoader,
+                  loss_fn: nn.Module,
+                  device: torch.device) -> Dict[str, float]:
     """Evaluate model performance on a dataset."""
     model.eval()
     total_loss = 0.0
     all_preds = []
     all_targets = []
-    
+
     with torch.no_grad():
         for X_batch, y_batch in dataloader:
+            X_batch, y_batch = X_batch.to(device), y_batch.to(device)  # Move batches to device
             preds = model(X_batch)
             loss = loss_fn(preds, y_batch)
             total_loss += loss.item()
-            
+
             all_preds.extend(preds.squeeze().tolist())
             all_targets.extend(y_batch.squeeze().tolist())
-    
+
     metrics = {
         'loss': total_loss / len(dataloader),
         'mae': mean_absolute_error(all_targets, all_preds),
@@ -177,12 +179,12 @@ def evaluate_model(model: nn.Module,
         'r2': r2_score(all_targets, all_preds),
         'explained_variance': explained_variance_score(all_targets, all_preds)
     }
-    
+
     return metrics
 
 # === Prediction Utilities ===
-def predict_tbe(model: nn.Module, 
-               pipeline: Pipeline, 
+def predict_tbe(model: nn.Module,
+               pipeline: Pipeline,
                input_dict: Dict,
                device: torch.device) -> float:
     """Make a single prediction."""
@@ -203,36 +205,36 @@ def predict_with_uncertainty(model: nn.Module,
     input_dict = input_dict.copy()
     input_dict['Molecule'] = input_dict['Molecule'].strip()
     input_dict['State'] = input_dict['State'].replace('^', '').replace('_', '')
-    
+
     df_input = pd.DataFrame([input_dict])
     X_input = pipeline.transform(df_input)
     X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32).to(device)
-    
+
     # Set model to eval mode but enable dropout
     model.eval()
     def enable_dropout(m):
         if isinstance(m, nn.Dropout):
             m.train()
     model.apply(enable_dropout)
-    
+
     # Disable batch norm
     def disable_batchnorm(m):
         if isinstance(m, nn.BatchNorm1d):
             m.eval()
     model.apply(disable_batchnorm)
-    
+
     with torch.no_grad():
         preds = [model(X_tensor).item() for _ in range(n_iter)]
-    
+
     return np.mean(preds), np.std(preds)
 
 # === Visualization ===
-def plot_results(y_true: np.ndarray, 
-                y_pred: np.ndarray, 
+def plot_results(y_true: np.ndarray,
+                y_pred: np.ndarray,
                 save_path: str = "results.png") -> None:
     """Create comprehensive visualization of results."""
     plt.figure(figsize=(15, 10))
-    
+
     # Scatter plot with regression line
     plt.subplot(2, 2, 1)
     sns.regplot(x=y_true, y=y_pred, scatter_kws={'alpha':0.6})
@@ -241,7 +243,7 @@ def plot_results(y_true: np.ndarray,
     plt.ylabel("Predicted TBE/AVTZ (eV)")
     plt.title("Prediction vs Reference")
     plt.grid(True)
-    
+
     # Residual plot
     plt.subplot(2, 2, 2)
     residuals = y_true - y_pred
@@ -249,7 +251,7 @@ def plot_results(y_true: np.ndarray,
     plt.xlabel("Residuals (eV)")
     plt.title("Residual Distribution")
     plt.grid(True)
-    
+
     # Error distribution
     plt.subplot(2, 2, 3)
     errors = np.abs(residuals)
@@ -257,19 +259,19 @@ def plot_results(y_true: np.ndarray,
     plt.xlabel("Absolute Error (eV)")
     plt.title("Error Distribution")
     plt.grid(True)
-    
+
     # Q-Q plot
     plt.subplot(2, 2, 4)
     from scipy import stats
     stats.probplot(residuals, plot=plt)
     plt.title("Q-Q Plot of Residuals")
     plt.grid(True)
-    
+
     plt.tight_layout()
     plt.savefig(save_path, dpi=300)
     plt.close()
 
-def process_prediction_file(model: nn.Module, 
+def process_prediction_file(model: nn.Module,
                           pipeline: Pipeline,
                           file_path: str,
                           device: torch.device,
@@ -289,7 +291,7 @@ def process_prediction_file(model: nn.Module,
         state = entry.get("State", "?")
         spin = entry.get("Spin", "?")
         actual_tbe = entry.get(TARGET_COL, None)
-        
+
         try:
             if args.deterministic:
                 mean = predict_tbe(model, pipeline, entry, device)
@@ -322,7 +324,7 @@ def process_prediction_file(model: nn.Module,
         table.add_column("Predicted TBE", justify="right", style="green")
         table.add_column("± Uncertainty", justify="right", style="yellow")
         table.add_column("Δ Error", justify="right", style="red")
- 
+
         # Compute per-molecule summary stats
         actuals = [a for _, _, a, _, _ in states if a is not None]
         preds = [p for _, _, a, p, _ in states if a is not None]
@@ -330,7 +332,7 @@ def process_prediction_file(model: nn.Module,
         mae = np.mean(errors) if errors else float("nan")
         mse = np.mean([(p - a) ** 2 for a, p in zip(actuals, preds)]) if errors else float("nan")
         rmse = np.sqrt(np.mean([(p - a) ** 2 for a, p in zip(actuals, preds)])) if errors else float("nan")
- 
+
         for state, spin, actual_tbe, mean, std in sorted(states, key=lambda x: x[0]):
             actual_display = f"{actual_tbe:.3f}" if actual_tbe is not None else "N/A"
             uncertainty_display = "N/A" if args.deterministic else f"± {std:.3f}"
@@ -341,7 +343,7 @@ def process_prediction_file(model: nn.Module,
             else:
                 error_display = "N/A"
                 style = ""
- 
+
             table.add_row(
                 str(state),
                 str(spin),
@@ -351,7 +353,7 @@ def process_prediction_file(model: nn.Module,
                 error_display,
                 style=style
             )
- 
+
         # Summary row
         table.add_row("--", "--", "--", "--", "--", "--")
         table.add_row(
@@ -401,18 +403,18 @@ def cli():
         console.print("\n📊 [bold]Loading and preparing data...[/bold]")
         df = load_json_directory(args.data_dir)
         X, y = prepare_data(df)
-        
+
         # Create preprocessing pipeline
         preprocessor = ColumnTransformer([
             ("num", StandardScaler(), NUMERICAL_COLS),
             ("cat", OneHotEncoder(handle_unknown="ignore"), CATEGORICAL_COLS)
         ])
         pipeline = Pipeline([("preprocessor", preprocessor)])
-        
+
         # Process data
         X_processed = pipeline.fit_transform(X)
         input_dim = X_processed.shape[1]
-        
+
         # Split data
         X_train, X_test, y_train, y_test = train_test_split(
             X_processed, y, test_size=0.2, random_state=42
@@ -420,7 +422,7 @@ def cli():
         X_val, X_test, y_val, y_test = train_test_split(
             X_test, y_test, test_size=0.5, random_state=42
         )
-        
+
         # Create DataLoaders
         train_dataset = TensorDataset(
             torch.tensor(X_train.toarray(), dtype=torch.float32),
@@ -434,11 +436,11 @@ def cli():
             torch.tensor(X_test.toarray(), dtype=torch.float32),
             torch.tensor(y_test.values, dtype=torch.float32).unsqueeze(1)
         )
-        
+
         train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True)
         val_loader = DataLoader(val_dataset, batch_size=args.batch_size)
         test_loader = DataLoader(test_dataset, batch_size=args.batch_size)
-        
+
         # Initialize model, loss, and optimizer
         model = TBEPredictor(input_dim).to(device)
         loss_fn = nn.HuberLoss()  # More robust than MSE
@@ -447,36 +449,36 @@ def cli():
             optimizer, 'min', patience=args.patience//2, factor=0.5
         )
         early_stopping = EarlyStopping(patience=args.patience)
- 
+
         def print_lr(optimizer, epoch):
             for param_group in optimizer.param_groups:
                  console.print(f"Epoch {epoch}: Learning rate = {param_group['lr']:.2e}")
-       
+
         # Save pipeline
         joblib.dump(pipeline, args.pipeline)
         console.print(f"✅ Saved pipeline to: [green]{args.pipeline}[/green]")
-        
+
         # Training loop
         console.print("\n🚀 [bold]Starting training[/bold]...")
         best_val_loss = float('inf')
-        
+
         for epoch in track(range(args.epochs), description="Training..."):
             model.train()
             train_loss = 0.0
-            
+
             for X_batch, y_batch in train_loader:
                 X_batch, y_batch = X_batch.to(device), y_batch.to(device)
-                
+
                 optimizer.zero_grad()
                 pred = model(X_batch)
                 loss = loss_fn(pred, y_batch)
                 loss.backward()
                 optimizer.step()
-                
+
                 train_loss += loss.item()
-            
+
             # Validation
-            val_metrics = evaluate_model(model, val_loader, loss_fn)
+            val_metrics = evaluate_model(model, val_loader, loss_fn, device)
             scheduler.step(val_metrics['loss'])
             early_stopping(val_metrics['loss'])
             if epoch % 10 == 0:
@@ -488,26 +490,26 @@ def cli():
                     f"Val MAE: {val_metrics['mae']:.4f} | "
                     f"Val R²: {val_metrics['r2']:.4f}"
                 )
-            
+
             if val_metrics['loss'] < best_val_loss:
                 best_val_loss = val_metrics['loss']
                 torch.save(model.state_dict(), args.model)
-            
+
             if early_stopping.early_stop:
                 console.print(f"⏹ Early stopping at epoch {epoch}")
                 break
-        
+
         # Final evaluation
         console.print("\n📈 [bold]Final Evaluation[/bold]")
         model.load_state_dict(torch.load(args.model))  # Load best model
-        test_metrics = evaluate_model(model, test_loader, loss_fn)
-        
+        test_metrics = evaluate_model(model, test_loader, loss_fn, device)
+
         console.print(f"Test Loss: {test_metrics['loss']:.4f}")
         console.print(f"Test MAE: {test_metrics['mae']:.4f} eV")
         console.print(f"Test RMSE: {test_metrics['rmse']:.4f} eV")
         console.print(f"Test R²: {test_metrics['r2']:.4f}")
         console.print(f"Explained Variance: {test_metrics['explained_variance']:.4f}")
-        
+
         # Generate predictions for plotting
         model.eval()
         all_preds = []
@@ -517,7 +519,7 @@ def cli():
                 preds = model(X_batch.to(device)).cpu()
                 all_preds.extend(preds.squeeze().tolist())
                 all_targets.extend(y_batch.squeeze().tolist())
-        
+
         plot_results(np.array(all_targets), np.array(all_preds))
         console.print(f"\n✅ Saved model to: [bold green]{args.model}[/bold green]")
         console.print(f"📊 Saved results visualization to: [bold]results.png[/bold]")
@@ -538,25 +540,25 @@ def cli():
 
         model = TBEPredictor(input_dim).to(device)
         model.load_state_dict(torch.load(args.model, map_location=device))
-        
+
         # Create output directory if it doesn't exist
         os.makedirs(args.output_dir, exist_ok=True)
-        
+
         # Determine if we're processing a single file or directory
         if os.path.isfile(args.predict):
             files_to_process = [args.predict]
         elif os.path.isdir(args.predict):
             files_to_process = [
-                os.path.join(args.predict, f) 
-                for f in os.listdir(args.predict) 
+                os.path.join(args.predict, f)
+                for f in os.listdir(args.predict)
                 if f.endswith('.json')
             ]
         else:
             console.print(f"[bold red]❌ Path {args.predict} is neither a file nor directory[/bold red]")
             sys.exit(1)
-        
+
         all_results = []
-        
+
         for file_path in files_to_process:
             console.print(f"\n🔮 [bold]Processing file:[/bold] [cyan]{file_path}[/cyan]")
             try:
@@ -564,7 +566,7 @@ def cli():
                     model, pipeline, file_path, device, args, console
                 )
                 all_results.append(results_df)
-                
+
                 # Save individual file results
                 out_name = os.path.splitext(os.path.basename(file_path))[0] + "_predictions.csv"
                 out_path = os.path.join(args.output_dir, out_name)
@@ -572,13 +574,13 @@ def cli():
                 console.print(f"✅ Saved predictions to: [green]{out_path}[/green]")
             except Exception as e:
                 console.print(f"[red]❌ Error processing {file_path}: {str(e)}[/red]")
-        
+
         # Save combined results if processing multiple files
         if len(files_to_process) > 1:
             combined_path = os.path.join(args.output_dir, "combined_predictions.csv")
             pd.concat(all_results).to_csv(combined_path, index=False)
             console.print(f"\n✅ Saved combined predictions to: [bold green]{combined_path}[/bold green]")
-        
+
         console.print("\n[bold green]🎉 All predictions completed![/bold green]")
 
     else:
