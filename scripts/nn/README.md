@@ -6,63 +6,87 @@
 ![NumPy](https://img.shields.io/badge/NumPy-1.18%2B-important)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.0%2B-blue)
 
+---
+
 ## 📌 Script Summary: TBE Neural Network Predictor
 
 ### 🔬 **Purpose**
-A PyTorch-based neural network that predicts TBE/AVTZ values for molecular excited states using quantum chemistry method results and molecular metadata.
+This script implements a feedforward neural network using PyTorch to predict **TBE/AVTZ** (Theoretical Best Estimates with aug-cc-pVTZ basis) for molecular excited states. The model uses results from lower-level quantum chemistry methods and molecular metadata to make accurate predictions.
 
-### 🧠 **Core Features**
-- **Advanced Architecture**: 3-layer MLP (256-128-64) with feature extraction + 2-layer regressor (32-1)
-- **Key Technologies**:
-  - PyTorch for deep learning
-  - Scikit-learn for preprocessing
-  - Rich for beautiful console output
-  - MC Dropout for uncertainty estimation
-- **Smart Training**:
+---
+
+### 🧠 Core Features
+
+- **Advanced Architecture**
+  - 3-layer MLP (256 → 128 → 64) for feature extraction
+  - 2-layer regression head (32 → 1)
+
+- **Key Technologies**
+  - PyTorch (neural networks)
+  - Scikit-learn (preprocessing)
+  - Rich (console formatting)
+  - MC Dropout (uncertainty quantification)
+
+- **Smart Training**
   - Early stopping
   - Learning rate scheduling
-  - Robust Huber loss
-- **Visual Diagnostics**:
+  - Huber loss for robustness
+
+- **Visual Diagnostics**
   - Scatter plots
-  - Residual analysis
+  - Residuals
   - Q-Q plots
 
-### ⚙️ **Workflow**
-1. **Data Processing**:
-   - Handles JSON input files
-   - Automated cleaning of molecular data
-   - One-hot encoding + standardization
-2. **Training**:
-   - Batch processing
-   - Validation monitoring
-   - Automatic model saving
-3. **Prediction**:
-   - Single/batch prediction modes
-   - Optional uncertainty quantification
-   - Rich-formatted output tables
+---
 
-### 📊 **Performance Metrics**
-- MAE, RMSE, R² scores
+## ⚙️ Workflow
+
+1. **Data Handling**
+   - Load `.json` files containing molecular excitations
+   - Clean and standardize numerical data
+   - One-hot encode categorical features
+
+2. **Training**
+   - Train on batches with validation monitoring
+   - Apply early stopping and learning rate adjustments
+   - Automatically save best model checkpoint
+
+3. **Prediction**
+   - Use trained model to predict TBE values
+   - Optionally run multiple MC Dropout passes for uncertainty
+   - Export styled prediction tables and CSV output
+
+---
+
+## 📊 Performance Metrics
+
+- MAE (Mean Absolute Error)
+- RMSE (Root Mean Square Error)
+- R² score
 - Explained variance
-- Visual error analysis
+- Error histograms and scatter diagnostics
+
+---
   
 ## 🚀 Quick Start: Basic Usage
 
-### Training:
+### 🔧 Training:
 
 ```bash
 python quest_nn.py --train --data-dir data/training/ --model model.pt
 ```
 
-### Prediction:
+### 🔍 Prediction:
 
 ```bash
 python quest_nn.py --predict data/samples/ --model model.pt
 ```
 
+---
+
 ## 🛠️ Advanced Options
 
-### Training Configuration
+### ⚙️ Training Configuration
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
@@ -71,7 +95,7 @@ python quest_nn.py --predict data/samples/ --model model.pt
 | `--lr` | Learning rate | 1e-3 |
 | `--weight-decay` | L2 regularization | 1e-4 |
 
-### Prediction Options
+### 📈 Prediction Options
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
@@ -79,7 +103,9 @@ python quest_nn.py --predict data/samples/ --model model.pt
 | `--deterministic` | Disable MC Dropout | False |
 | `--output-dir` | Prediction output directory | "predictions" |
 
-## 📈 Sample Output
+---
+
+## 📤 Sample Output
 
 ```bash
 🔮 Processing file: ../../data/json/CHROM/Heptazine.json
@@ -100,4 +126,23 @@ python quest_nn.py --predict data/samples/ --model model.pt
 └─────────┴──────┴────────────┴───────────────┴───────────────┴─────────┘
 ✅ Saved predictions to: predictions/Heptazine_predictions.csv
 ```
+
+---
+
+## 📚 Requirements
+
+- Python ≥ 3.7  
+- PyTorch ≥ 1.8  
+- scikit-learn ≥ 0.24  
+- NumPy ≥ 1.18  
+- Matplotlib ≥ 3.0  
+- rich
+
+Install dependencies:
+
+```bash
+pip install torch scikit-learn numpy matplotlib rich
+```
+---
+
 
