@@ -37,7 +37,8 @@ from typing import Dict, List, Tuple, Optional
 
 # === Constants ===
 TARGET_COL = "TBE/AVTZ"
-CATEGORICAL_COLS = ["Molecule", "State", "Type", "Spin", "Size", "Group"]
+CATEGORICAL_COLS = [ "Spin", "Size"] 
+#CATEGORICAL_COLS = ["Molecule", "State", "Type", "Spin", "Size", "Group"]
 NUMERICAL_COLS = [
     "CIS(D)", "CC2", "EOM-MP2", "ADC(2)",
     "SOS-ADC(2) [TM]", "SOS-CC2", "SCS-CC2", "SOS-ADC(2) [QC]"
@@ -190,7 +191,8 @@ def predict_tbe(model: nn.Module,
     """Make a single prediction."""
     df_input = pd.DataFrame([input_dict])
     X_input = pipeline.transform(df_input)
-    X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32).to(device)
+    X_tensor = torch.tensor(X_input, dtype=torch.float32).to(device)
+#   X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32).to(device)
     model.eval()
     with torch.no_grad():
         return model(X_tensor).item()
@@ -208,7 +210,8 @@ def predict_with_uncertainty(model: nn.Module,
 
     df_input = pd.DataFrame([input_dict])
     X_input = pipeline.transform(df_input)
-    X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32).to(device)
+    X_tensor = torch.tensor(X_input, dtype=torch.float32).to(device)
+#   X_tensor = torch.tensor(X_input.toarray(), dtype=torch.float32).to(device)
 
     # Set model to eval mode but enable dropout
     model.eval()
@@ -425,15 +428,18 @@ def cli():
 
         # Create DataLoaders
         train_dataset = TensorDataset(
-            torch.tensor(X_train.toarray(), dtype=torch.float32),
+             torch.tensor(X_train, dtype=torch.float32),
+#            torch.tensor(X_train.toarray(), dtype=torch.float32),
             torch.tensor(y_train.values, dtype=torch.float32).unsqueeze(1)
         )
         val_dataset = TensorDataset(
-            torch.tensor(X_val.toarray(), dtype=torch.float32),
+            torch.tensor(X_val, dtype=torch.float32),
+#            torch.tensor(X_val.toarray(), dtype=torch.float32),
             torch.tensor(y_val.values, dtype=torch.float32).unsqueeze(1)
         )
         test_dataset = TensorDataset(
-            torch.tensor(X_test.toarray(), dtype=torch.float32),
+            torch.tensor(X_test, dtype=torch.float32),
+#            torch.tensor(X_test.toarray(), dtype=torch.float32),
             torch.tensor(y_test.values, dtype=torch.float32).unsqueeze(1)
         )
 
