@@ -1,13 +1,22 @@
 import os
 import json
+import re
 from docx import Document
 import argparse
 
 def clean_text(text):
     """
-    Removes newlines and strips whitespace from text.
+    Cleans text by:
+    - Replacing newlines with space
+    - Stripping whitespace
+    - Removing trailing footnote letters from numeric values (e.g., 6.202a → 6.202)
     """
-    return text.replace('\n', ' ').strip()
+    text = text.replace('\n', ' ').strip()
+
+    # Remove footnote letter if it follows a number (e.g. 6.202a → 6.202)
+    text = re.sub(r'(?<=\d)[a-zA-Z]$', '', text)
+
+    return text
 
 def extract_single_table_from_docx(docx_path):
     """
@@ -58,7 +67,7 @@ def process_directory(input_dir, output_dir):
                 print(f"❌ Failed to process {filename}: {e}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Convert single-table DOCX files in a directory to JSON.")
+    parser = argparse.ArgumentParser(description="Convert single-table DOCX files in a directory to cleaned JSON.")
     parser.add_argument("--input-dir", "-i", required=True, help="Directory containing .docx files")
     parser.add_argument("--output-dir", "-o", default=".", help="Directory to save .json files")
     args = parser.parse_args()
