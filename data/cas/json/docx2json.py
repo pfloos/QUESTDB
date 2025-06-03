@@ -3,40 +3,43 @@ import json
 from docx import Document
 import argparse
 
-def extract_tables_from_docx(docx_path):
+def clean_text(text):
     """
-    Extracts all tables from a DOCX file, assuming the first row of each table is the header.
-    Returns a list of tables, each as a dictionary with headers and rows.
+    Removes newlines and strips whitespace from text.
+    """
+    return text.replace('\n', ' ').strip()
+
+def extract_single_table_from_docx(docx_path):
+    """
+    Extracts the only table from a DOCX file (assumes there is exactly one table).
+    Returns a dictionary with headers and data rows.
     """
     document = Document(docx_path)
-    tables_json = []
 
-    for table_index, table in enumerate(document.tables):
-        rows = table.rows
-        if not rows:
-            continue
+    if not document.tables:
+        raise ValueError("No tables found in the document.")
 
-        # Extract header row
-        headers = [cell.text.strip() for cell in rows[0].cells]
-        data_rows = []
+    table = document.tables[0]
+    rows = table.rows
+    if not rows:
+        raise ValueError("Table is empty.")
 
-        # Extract data rows
-        for row in rows[1:]:
-            cells = [cell.text.strip() for cell in row.cells]
-            row_dict = {headers[i]: cells[i] if i < len(cells) else "" for i in range(len(headers))}
-            data_rows.append(row_dict)
+    headers = [clean_text(cell.text) for cell in rows[0].cells]
+    data_rows = []
 
-        tables_json.append({
-            "table_index": table_index,
-            "headers": headers,
-            "data": data_rows
-        })
+    for row in rows[1:]:
+        cells = [clean_text(cell.text) for cell in row.cells]
+        row_dict = {headers[i]: cells[i] if i < len(cells) else "" for i in range(len(headers))}
+        data_rows.append(row_dict)
 
-    return tables_json
+    return {
+        "headers": headers,
+        "data": data_rows
+    }
 
 def process_directory(input_dir, output_dir):
     """
-    Processes all .docx files in a directory and saves corresponding .json files.
+    Processes all .docx files in a directory and writes corresponding .json files (one per input).
     """
     os.makedirs(output_dir, exist_ok=True)
 
@@ -47,15 +50,15 @@ def process_directory(input_dir, output_dir):
             output_path = os.path.join(output_dir, base_name + ".json")
 
             try:
-                tables = extract_tables_from_docx(input_path)
+                table = extract_single_table_from_docx(input_path)
                 with open(output_path, "w", encoding="utf-8") as f:
-                    json.dump(tables, f, ensure_ascii=False, indent=2)
+                    json.dump(table, f, ensure_ascii=False, indent=2)
                 print(f"✅ Converted: {filename} → {output_path}")
             except Exception as e:
                 print(f"❌ Failed to process {filename}: {e}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Convert all DOCX tables in a directory to JSON.")
+    parser = argparse.ArgumentParser(description="Convert single-table DOCX files in a directory to JSON.")
     parser.add_argument("--input-dir", "-i", required=True, help="Directory containing .docx files")
     parser.add_argument("--output-dir", "-o", default=".", help="Directory to save .json files")
     args = parser.parse_args()
