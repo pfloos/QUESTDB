@@ -1,0 +1,88 @@
+{
+  "headers": [
+    "State",
+    "Active space (a1,b1,b2,a2)",
+    "State-average (A1,B1,B2,A2)",
+    "CASSCF",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PC-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "2+(p*,3s)",
+      "Active space (a1,b1,b2,a2)": "(5,2,2,0)",
+      "State-average (A1,B1,B2,A2)": "(1,1,1,0)",
+      "CASSCF": "5.287",
+      "CASPT2 NOIPEA": "6.058",
+      "CASPT2 IPEA": "6.057",
+      "SC-NEVPT2": "6.057",
+      "PC-NEVPT2": "6.083",
+      "CASPT3 NOIPEA": "6.065",
+      "CASPT3 IPEA": "6.052"
+    },
+    {
+      "State": "2(p*,3px,y)",
+      "Active space (a1,b1,b2,a2)": "(4,3,3,0)",
+      "State-average (A1,B1,B2,A2)": "(0,2,2,0)",
+      "CASSCF": "5.920",
+      "CASPT2 NOIPEA": "7.180",
+      "CASPT2 IPEA": "7.085",
+      "SC-NEVPT2": "7.139",
+      "PC-NEVPT2": "7.288",
+      "CASPT3 NOIPEA": "7.169",
+      "CASPT3 IPEA": "7.130"
+    },
+    {
+      "State": "2+(p*,3pz)",
+      "Active space (a1,b1,b2,a2)": "(6,2,2,0)",
+      "State-average (A1,B1,B2,A2)": "(2,1,1,0)",
+      "CASSCF": "5.921",
+      "CASPT2 NOIPEA": "7.245",
+      "CASPT2 IPEA": "7.130",
+      "SC-NEVPT2": "7.153",
+      "PC-NEVPT2": "7.293",
+      "CASPT3 NOIPEA": "7.176",
+      "CASPT3 IPEA": "7.146"
+    },
+    {
+      "State": "2(p,p*)",
+      "Active space (a1,b1,b2,a2)": "(4,3,3,0)",
+      "State-average (A1,B1,B2,A2)": "(0,3,3,0)",
+      "CASSCF": "7.944b,d",
+      "CASPT2 NOIPEA": "7.604",
+      "CASPT2 IPEA": "7.752",
+      "SC-NEVPT2": "7.838",
+      "PC-NEVPT2": "7.811",
+      "CASPT3 NOIPEA": "7.705",
+      "CASPT3 IPEA": "7.744"
+    },
+    {
+      "State": "4–(s,p*)",
+      "Active space (a1,b1,b2,a2)": "(4,2,2,0)",
+      "State-average (A1,B1,B2,A2)": "(0,1,1,1)",
+      "CASSCF": "6.725",
+      "CASPT2 NOIPEA": "6.093",
+      "CASPT2 IPEA": "6.280",
+      "SC-NEVPT2": "6.417",
+      "PC-NEVPT2": "6.368",
+      "CASPT3 NOIPEA": "6.376",
+      "CASPT3 IPEA": "6.396"
+    },
+    {
+      "State": "4(p,p*)",
+      "Active space (a1,b1,b2,a2)": "(4,2,2,0)",
+      "State-average (A1,B1,B2,A2)": "(0,2,2,0)",
+      "CASSCF": "6.802",
+      "CASPT2 NOIPEA": "6.667",
+      "CASPT2 IPEA": "6.773",
+      "SC-NEVPT2": "6.813",
+      "PC-NEVPT2": "6.812",
+      "CASPT3 NOIPEA": "6.745",
+      "CASPT3 IPEA": "6.769"
+    }
+  ]
+}
