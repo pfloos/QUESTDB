@@ -10,7 +10,6 @@ It provides highly detailed information for each excited state, including both p
 | **Chrom**    | 18               | Organic Chromophore       | 158                | ~135  |           |     |     | 158    | 86  | 72  |     |     | 149    | 9       |     | 7   |     |    |
 | **Bio**      | 5                | Nucleobases        | 56                 | ~51   |           |     | 33  | 23     | 35  | 21  |     |     | 40         | 16      |     |     |     |    |
 | **TM**       | 11               | Transition metal diatomics | 67                 | 46     | 67        |     |     |        | 28  | 23  | 16  |     |   |         | 4   |     |     |    |
-|--------------|------------------|--------------------|--------------------|--------|-----------|-----|-----|--------|-----|-----|-----|-----|-------------------------------|---------|-----|-----|-----|----|
 | **QUEST**    | 184              |                    | 1489               | ~1294   | 397       | 398 | 371 | 323    | 731 | 461 | 233 | 64  | 1014      | 366     | 43  | 50  | 28  | 10 |
 
 *S, T, D, and Q refer to singlet, triplet, doublet, and quartet states, respectively.  
