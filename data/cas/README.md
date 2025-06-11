@@ -27,7 +27,7 @@ This documentation aims to provide full transparency and reproducibility for the
 
 ### 📁 Repository Structure
 
-\`\`\`bash
+```bash
 cas/
 ├── docx/       # Human-readable active space info (.docx format)
 ├── json/       # JSON-formatted versions of the DOCX files
@@ -35,7 +35,7 @@ cas/
 ├── out/        # Compressed CASSCF/MRPT output files (.tar.gz)
 ├── README.md   # This file
 └── .DS_Store   # macOS metadata (can be ignored)
-\`\`\`
+```
 
 ---
 
