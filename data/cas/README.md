@@ -34,7 +34,6 @@ cas/
 │   └── docx2json.py  # Script to convert DOCX files into JSON
 ├── out/        # Compressed CASSCF/MRPT output files (.tar.gz)
 ├── README.md   # This file
-└── .DS_Store   # macOS metadata (can be ignored)
 ```
 
 ---
