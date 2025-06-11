@@ -33,7 +33,7 @@ cas/
 ├── json/       # JSON-formatted versions of the DOCX files
 │   └── docx2json.py  # Script to convert DOCX files into JSON
 ├── out/        # Compressed CASSCF/MRPT output files (.tar.gz)
-├── README.md   # This file
+└── README.md   # This file
 ```
 
 ---
