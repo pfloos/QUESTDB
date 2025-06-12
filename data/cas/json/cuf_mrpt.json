@@ -1,0 +1,76 @@
+{
+  "headers": [
+    "State",
+    "Active space (a1,b1,b2,a2)",
+    "State-average (A1,B1,B2,A2)",
+    "CASSCFa",
+    "CASPT2C NOIPEA (10 core)b",
+    "CASPT2C IPEA (10 core)b"
+  ],
+  "data": [
+    {
+      "State": "1+(dz2,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,0)",
+      "CASSCFa": "2.076",
+      "CASPT2C NOIPEA (10 core)b": "2.477",
+      "CASPT2C IPEA (10 core)b": "2.539"
+    },
+    {
+      "State": "1(dxz/dyz,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(1,1,1,0)",
+      "CASSCFa": "2.031",
+      "CASPT2C NOIPEA (10 core)b": "2.658",
+      "CASPT2C IPEA (10 core)b": "2.674"
+    },
+    {
+      "State": "1(dxy/dx2-y2,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,1)",
+      "CASSCFa": "2.349",
+      "CASPT2C NOIPEA (10 core)b": "3.045",
+      "CASPT2C IPEA (10 core)b": "3.045"
+    },
+    {
+      "State": "1(dz2/dyz,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(1,2,2,0)",
+      "CASSCFa": "5.092",
+      "CASPT2C NOIPEA (10 core)b": "6.021",
+      "CASPT2C IPEA (10 core)b": "6.047"
+    },
+    {
+      "State": "3+(dz2,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,0)",
+      "CASSCFa": "1.497",
+      "CASPT2C NOIPEA (10 core)b": "1.933",
+      "CASPT2C IPEA (10 core)b": "1.987"
+    },
+    {
+      "State": "3(dxz/dyz,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(1,1,1,0)",
+      "CASSCFa": "1.679",
+      "CASPT2C NOIPEA (10 core)b": "2.355",
+      "CASPT2C IPEA (10 core)b": "2.367"
+    },
+    {
+      "State": "3(dxy/dx2-y2,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,1)",
+      "CASSCFa": "2.103",
+      "CASPT2C NOIPEA (10 core)b": "2.791",
+      "CASPT2C IPEA (10 core)b": "2.793"
+    },
+    {
+      "State": "3(dz2/dyz,4s)",
+      "Active space (a1,b1,b2,a2)": "(7,3,3,2)",
+      "State-average (A1,B1,B2,A2)": "(1,2,2,0)",
+      "CASSCFa": "4.875",
+      "CASPT2C NOIPEA (10 core)b": "5.790",
+      "CASPT2C IPEA (10 core)b": "5.825"
+    }
+  ]
+}

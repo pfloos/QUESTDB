@@ -1,0 +1,76 @@
+{
+  "headers": [
+    "State",
+    "Active space (a1,b1,b2,a2)",
+    "State-average (A1,B1,B2,A2)",
+    "CASSCF",
+    "CASPT2 NOIPEA (9 core)m",
+    "CASPT2 IPEA (9 core)m",
+    "CASPT2 NOIPEA (5 core)o",
+    "CASPT2 IPEA (5 core)o",
+    "SC-NEVPT2 (9 core)m",
+    "PC- NEVPT2 (9 core)m"
+  ],
+  "data": [
+    {
+      "State": "12",
+      "Active space (a1,b1,b2,a2)": "(3,1,1,0)a (5,2,2,1)b (7,3,3,2)c",
+      "State-average (A1,B1,B2,A2)": "(1,1,1,0) (1,1,1,0) (1,1,1,0)",
+      "CASSCF": "2.657 2.682 2.713",
+      "CASPT2 NOIPEA (9 core)m": "2.799 2.830 2.838",
+      "CASPT2 IPEA (9 core)m": "2.818 2.851 2.862",
+      "CASPT2 NOIPEA (5 core)o": "2.800 2.833 –",
+      "CASPT2 IPEA (5 core)o": "2.819 2.853 –",
+      "SC-NEVPT2 (9 core)m": "– – –",
+      "PC- NEVPT2 (9 core)m": "– – –"
+    },
+    {
+      "State": "22+",
+      "Active space (a1,b1,b2,a2)": "(3,1,1,0)a (5,2,2,1)b (7,3,3,2)c",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,0) (2,0,0,0) (2,0,0,0)",
+      "CASSCF": "4.334 4.411 4.459",
+      "CASPT2 NOIPEA (9 core)m": "4.409 4.466 4.397",
+      "CASPT2 IPEA (9 core)m": "4.485 4.539 4.510",
+      "CASPT2 NOIPEA (5 core)o": "4.403 4.465 –",
+      "CASPT2 IPEA (5 core)o": "4.481 4.541 –",
+      "SC-NEVPT2 (9 core)m": "4.484 4.558 –",
+      "PC- NEVPT2 (9 core)m": "4.468 4.519 –"
+    },
+    {
+      "State": "32+",
+      "Active space (a1,b1,b2,a2)": "(4,1,1,0)d (6,2,2,1)e (8,3,3,2)f",
+      "State-average (A1,B1,B2,A2)": "(3,0,0,0) (3,0,0,0) (3,0,0,0)",
+      "CASSCF": "4.733 4.765 4.839",
+      "CASPT2 NOIPEA (9 core)m": "5.056 5.091 5.089",
+      "CASPT2 IPEA (9 core)m": "5.040 5.093 5.097",
+      "CASPT2 NOIPEA (5 core)o": "5.038 5.082 –",
+      "CASPT2 IPEA (5 core)o": "5.022 5.083 –",
+      "SC-NEVPT2 (9 core)m": "5.028 5.067 –",
+      "PC- NEVPT2 (9 core)m": "5.021 5.041 –"
+    },
+    {
+      "State": "42+",
+      "Active space (a1,b1,b2,a2)": "(5,1,1,0)g (7,2,2,1)h (9,3,3,2)i",
+      "State-average (A1,B1,B2,A2)": "(4,0,0,0) (4,0,0,0) (4,0,0,0)",
+      "CASSCF": "5.284 5.441 5.372",
+      "CASPT2 NOIPEA (9 core)m": "5.527 5.315 5.548",
+      "CASPT2 IPEA (9 core)m": "5.558 5.524 5.598",
+      "CASPT2 NOIPEA (5 core)o": "5.513 – –",
+      "CASPT2 IPEA (5 core)o": "5.545 – –",
+      "SC-NEVPT2 (9 core)m": "5.550 – –",
+      "PC- NEVPT2 (9 core)m": "5.527 – –"
+    },
+    {
+      "State": "22",
+      "Active space (a1,b1,b2,a2)": "(3,2,2,0)j (5,3,3,1)k (7,4,4,2)l",
+      "State-average (A1,B1,B2,A2)": "(1,2,2,0) (1,2,2,0) (1,2,2,0)",
+      "CASSCF": "5.564 5.596 5.648",
+      "CASPT2 NOIPEA (9 core)m": "6.064 6.118 6.135",
+      "CASPT2 IPEA (9 core)m": "6.045 6.100 6.106",
+      "CASPT2 NOIPEA (5 core)o": "6.052 6.114 –",
+      "CASPT2 IPEA (5 core)o": "6.033 6.095 –",
+      "SC-NEVPT2 (9 core)m": "– – –",
+      "PC- NEVPT2 (9 core)m": "– – –"
+    }
+  ]
+}
