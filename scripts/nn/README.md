@@ -40,7 +40,7 @@ This script implements a feedforward neural network using PyTorch to predict **T
 
 ---
 
-## ⚙️ Workflow
+## ⚙️  Workflow
 
 1. **Data Handling**
    - Load `.json` files containing molecular excitations
