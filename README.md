@@ -87,7 +87,7 @@ This repository provides:
 Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` directory).
 
 📌 **See the accompanying paper:**  
-[**The QUEST database of highly-accurate excitation energies**]()  
+[**The QUEST database of highly-accurate excitation energies**](https://arxiv.org/abs/2506.11590)  
 P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
 *J. Chem. Theory Comput.* (submitted).  
 
