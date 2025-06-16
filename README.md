@@ -8,7 +8,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/pfloos/QUESTDB?style=social)](https://github.com/pfloos/QUESTDB/network/members)
 [![GitHub watchers](https://img.shields.io/github/watchers/pfloos/QUESTDB?style=social)](https://github.com/pfloos/QUESTDB/watchers)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.9999999.svg)](https://doi.org/10.5281/zenodo.9999999)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15671384.svg)](https://doi.org/10.5281/zenodo.15671384)
 
 ---
 
