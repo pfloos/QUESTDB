@@ -39,7 +39,7 @@ To assist users in identifying excited states using their preferred methodology,
 
 Dedicated files for subsets (see below) also include:
 - Additional computational methods and basis sets.
-- Molecular orbitals involved in each transition.
+- Molecular orbitals involved in each transition (orbital index starts at 1).
 - Spatial extent of the electron cloud $\langle r^2 \rangle$.
 - Expectation value of the spin operator $\langle S^2 \rangle$ for radicals.
 - Extra annotations for complex cases.
