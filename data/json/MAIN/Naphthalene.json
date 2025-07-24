@@ -323,7 +323,7 @@
     "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 71.5,
     "TBE/AVTZ": 6.748,
-    "Method": "CASPT3/AVTZ",
+    "Method": "CASPT3(No IPEA)/AVTZ",
     "Safe ? (~50 meV)": "N",
     "CIS(D)": 7.632,
     "CC2": 7.161,
@@ -338,7 +338,14 @@
     "SOS-ADC(2) [QC]": 7.135,
     "ADC(2)": 7.2,
     "ADC(3)": 6.359,
-    "ADC(2.5)": 6.7795000000000005
+    "ADC(2.5)": 6.7795,
+    "CASSCF": 6.895,
+    "CASPT2": 6.793,
+    "CASPT2(No IPEA)": 5.942,
+    "CASPT3": 6.809,
+    "CASPT3(No IPEA)": 6.748,
+    "SC-NEVPT2": 6.958,
+    "PC-NEVPT2": 6.900
   },
   {
     "Molecule": "Naphthalene",

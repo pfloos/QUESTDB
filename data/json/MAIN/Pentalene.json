@@ -46,7 +46,7 @@
     "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 12.2,
     "TBE/AVTZ": 3.288,
-    "Method": "CASPT3/AVTZ",
+    "Method": "CASPT3(No IPEA)/AVTZ",
     "Safe ? (~50 meV)": "N",
     "CCSDT-3": 4.681,
     "CC3": 4.291,

@@ -40,7 +40,7 @@
     "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 63.7,
     "TBE/AVTZ": 4.68,
-    "Method": "CASPT3/AVTZ",
+    "Method": "CASPT3(No IPEA)/AVTZ",
     "Safe ? (~50 meV)": "N",
     "CIS(D)": 6.358,
     "CC2": 5.802,
@@ -56,7 +56,14 @@
     "SOS-ADC(2) [QC]": 6.077,
     "ADC(2)": 5.874,
     "ADC(3)": 3.912,
-    "ADC(2.5)": 4.893
+    "ADC(2.5)": 4.893,
+    "CASSCF": 4.879,
+    "CASPT2": 4.741,
+    "CASPT2(No IPEA)": 4.326,
+    "CASPT3": 4.751,
+    "CASPT3(No IPEA)": 4.680,
+    "SC-NEVPT2": 4.814,
+    "PC-NEVPT2": 4.783
   },
   {
     "Molecule": "Octatetraene",

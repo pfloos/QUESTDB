@@ -109,7 +109,7 @@
     "%T1 [CC3/AVTZ]": 19.9,
     "f [LR-CC3/AVTZ]": 0.011,
     "TBE/AVTZ": 4.708,
-    "Method": "CCSDTQ/6-31+G(d) + [CC4/AVDZ - CC4/6-31+G(d)] + [CASPT3/AVTZ -CASPT3/AVDZ]",
+    "Method": "CCSDTQ/6-31+G(d) + [CC4/AVDZ - CC4/6-31+G(d)] + [CASPT3(No IPEA)/AVTZ -CASPT3(No IPEA)/AVDZ]",
     "Safe ? (~50 meV)": "N",
     "CCSDT-3": 5.773,
     "CC3": 5.517,

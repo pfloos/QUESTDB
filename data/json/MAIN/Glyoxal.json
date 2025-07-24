@@ -89,7 +89,7 @@
     "Special ?": "GD",
     "%T1 [CC3/AVTZ]": 0.5,
     "TBE/AVTZ": 5.492,
-    "Method": "exFCI/6-31+G(d) + [CC4/AVDZ - CC4/Pop] + [CASPT3/AVTZ - CASPT3/AVDZ]",
+    "Method": "exFCI/6-31+G(d) + [CC4/AVDZ - CC4/Pop] + [CASPT3(No IPEA)/AVTZ - CASPT3(No IPEA)/AVDZ]",
     "Safe ? (~50 meV)": "N",
     "CCSDT-3": 7.263,
     "CC3": 6.763,
