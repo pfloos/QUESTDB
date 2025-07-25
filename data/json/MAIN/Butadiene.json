@@ -110,13 +110,13 @@
     "ADC(2)": 7.14,
     "ADC(3)": 5.856,
     "ADC(2.5)": 6.497999999999999,
-    "CASSCF": 6.99,
-    "CASPT2": 6.74,
-    "CASPT2 (No IPEA)": 6.3,
-    "CASPT3": 6.73,
-    "CASPT3 (No IPEA)": 6.66,
-    "SC-NEVPT2": 6.78,
-    "PC-NEVPT2": 6.7
+    "CASSCF": 6.990,
+    "CASPT2": 6.736,
+    "CASPT2 (No IPEA)": 6.384,
+    "CASPT3": 6.718,
+    "CASPT3 (No IPEA)": 6.627,
+    "SC-NEVPT2": 6.780,
+    "PC-NEVPT2": 6.700
   },
   {
     "Molecule": "Butadiene",
