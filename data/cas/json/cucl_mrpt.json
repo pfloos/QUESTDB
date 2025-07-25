@@ -1,0 +1,74 @@
+{
+  "headers": [
+    "State",
+    "Active space (a1,b1,b2,a2)",
+    "State-average (A1,B1,B2,A2)",
+    "CASSCFa",
+    "CASPT2 NOIPEA (14 core)b",
+    "CASPT2 IPEA (14 core)b",
+    "SC-NEVPT2 (14 core)b",
+    "PC- NEVPT2 (14 core)b"
+  ],
+  "data": [
+    {
+      "State": "1+",
+      "Active space (a1,b1,b2,a2)": "(7,2,2,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,0)",
+      "CASSCFa": "2.668",
+      "CASPT2 NOIPEA (14 core)b": "3.009",
+      "CASPT2 IPEA (14 core)b": "3.149",
+      "SC-NEVPT2 (14 core)b": "3.047",
+      "PC- NEVPT2 (14 core)b": "3.030"
+    },
+    {
+      "State": "1",
+      "Active space (a1,b1,b2,a2)": "(7,2,2,2)",
+      "State-average (A1,B1,B2,A2)": "(1,1,1,0)",
+      "CASSCFa": "2.468",
+      "CASPT2 NOIPEA (14 core)b": "2.972",
+      "CASPT2 IPEA (14 core)b": "3.049",
+      "SC-NEVPT2 (14 core)b": "2.968",
+      "PC- NEVPT2 (14 core)b": "3.015"
+    },
+    {
+      "State": "1",
+      "Active space (a1,b1,b2,a2)": "(7,2,2,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,1)",
+      "CASSCFa": "2.554",
+      "CASPT2 NOIPEA (14 core)b": "3.454",
+      "CASPT2 IPEA (14 core)b": "3.472",
+      "SC-NEVPT2 (14 core)b": "3.371",
+      "PC- NEVPT2 (14 core)b": "3.454"
+    },
+    {
+      "State": "3+",
+      "Active space (a1,b1,b2,a2)": "(7,2,2,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,0)",
+      "CASSCFa": "2.159",
+      "CASPT2 NOIPEA (14 core)b": "2.562",
+      "CASPT2 IPEA (14 core)b": "2.692",
+      "SC-NEVPT2 (14 core)b": "2.590",
+      "PC- NEVPT2 (14 core)b": "2.578"
+    },
+    {
+      "State": "3",
+      "Active space (a1,b1,b2,a2)": "(7,2,2,2)",
+      "State-average (A1,B1,B2,A2)": "(1,1,1,0)",
+      "CASSCFa": "2.162",
+      "CASPT2 NOIPEA (14 core)b": "2.779",
+      "CASPT2 IPEA (14 core)b": "2.845",
+      "SC-NEVPT2 (14 core)b": "2.739",
+      "PC- NEVPT2 (14 core)b": "2.818"
+    },
+    {
+      "State": "3",
+      "Active space (a1,b1,b2,a2)": "(7,2,2,2)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,1)",
+      "CASSCFa": "2.309",
+      "CASPT2 NOIPEA (14 core)b": "3.214",
+      "CASPT2 IPEA (14 core)b": "3.229",
+      "SC-NEVPT2 (14 core)b": "3.124",
+      "PC- NEVPT2 (14 core)b": "3.203"
+    }
+  ]
+}

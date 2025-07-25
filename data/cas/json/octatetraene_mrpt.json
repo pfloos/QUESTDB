@@ -1,0 +1,28 @@
+{
+  "headers": [
+    "State",
+    "Active space (ag,au,bu,bg)",
+    "State-average (Ag,Au,Bu,Bg)",
+    "CASSCFa",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PC-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "1Ag(p-p*)",
+      "Active space (ag,au,bu,bg)": "(0,4,0,4)",
+      "State-average (Ag,Au,Bu,Bg)": "(2,0,0,0)",
+      "CASSCFa": "4.879",
+      "CASPT2 NOIPEA": "4.326",
+      "CASPT2 IPEA": "4.741",
+      "SC-NEVPT2": "4.814",
+      "PC-NEVPT2": "4.783",
+      "CASPT3 NOIPEA": "4.680",
+      "CASPT3 IPEA": "4.751"
+    }
+  ]
+}

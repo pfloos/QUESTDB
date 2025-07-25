@@ -1,0 +1,148 @@
+{
+  "headers": [
+    "State",
+    "Active space (a1,b1,b2,a2)",
+    "State-average (A1,B1,B2,A2)",
+    "CASSCF",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PC-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "1B1(n,*)",
+      "Active space (a1,b1,b2,a2)": "(2,3,1,1)",
+      "State-average (A1,B1,B2,A2)": "(1,3,0,0)",
+      "CASSCF": "4.920",
+      "CASPT2 NOIPEA": "3.751",
+      "CASPT2 IPEA": "4.118",
+      "SC-NEVPT2": "4.081",
+      "PC-NEVPT2": "4.044",
+      "CASPT3 NOIPEA": "4.384",
+      "CASPT3 IPEA": "4.400"
+    },
+    {
+      "State": "1A2(n,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,2,1)",
+      "State-average (A1,B1,B2,A2)": "(1,0,0,3)",
+      "CASSCF": "5.638",
+      "CASPT2 NOIPEA": "5.311",
+      "CASPT2 IPEA": "5.618",
+      "SC-NEVPT2": "5.859",
+      "PC-NEVPT2": "5.852",
+      "CASPT3 NOIPEA": "5.637",
+      "CASPT3 IPEA": "5.667"
+    },
+    {
+      "State": "1B2(n,3s)",
+      "Active space (a1,b1,b2,a2)": "(2,3,1,1)",
+      "State-average (A1,B1,B2,A2)": "(1,0,3,0)",
+      "CASSCF": "5.681",
+      "CASPT2 NOIPEA": "6.214",
+      "CASPT2 IPEA": "6.282",
+      "SC-NEVPT2": "6.472",
+      "PC-NEVPT2": "6.505",
+      "CASPT3 NOIPEA": "6.443",
+      "CASPT3 IPEA": "6.410"
+    },
+    {
+      "State": "1B2(,*)",
+      "Active space (a1,b1,b2,a2)": "(2,3,1,1)",
+      "State-average (A1,B1,B2,A2)": "(1,0,3,0)",
+      "CASSCF": "6.397",
+      "CASPT2 NOIPEA": "6.204",
+      "CASPT2 IPEA": "6.541",
+      "SC-NEVPT2": "6.821",
+      "PC-NEVPT2": "6.823",
+      "CASPT3 NOIPEA": "6.620",
+      "CASPT3 IPEA": "6.630"
+    },
+    {
+      "State": "1B2(n,3pz)",
+      "Active space (a1,b1,b2,a2)": "(2,3,1,1)",
+      "State-average (A1,B1,B2,A2)": "(1,0,3,0)",
+      "CASSCF": "6.345",
+      "CASPT2 NOIPEA": "6.699",
+      "CASPT2 IPEA": "6.836",
+      "SC-NEVPT2": "7.054",
+      "PC-NEVPT2": "7.074",
+      "CASPT3 NOIPEA": "7.013",
+      "CASPT3 IPEA": "6.985"
+    },
+    {
+      "State": "1A1(n,3py)",
+      "Active space (a1,b1,b2,a2)": "(0,4,2,1)",
+      "State-average (A1,B1,B2,A2)": "(4,0,0,0)",
+      "CASSCF": "6.840",
+      "CASPT2 NOIPEA": "7.032",
+      "CASPT2 IPEA": "7.269",
+      "SC-NEVPT2": "7.294",
+      "PC-NEVPT2": "7.281",
+      "CASPT3 NOIPEA": "7.242",
+      "CASPT3 IPEA": "7.255"
+    },
+    {
+      "State": "1A1(,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,2,1)",
+      "State-average (A1,B1,B2,A2)": "(4,0,0,0)",
+      "CASSCF": "10.420",
+      "CASPT2 NOIPEA": "8.115",
+      "CASPT2 IPEA": "8.959",
+      "SC-NEVPT2": "8.807",
+      "PC-NEVPT2": "8.185",
+      "CASPT3 NOIPEA": "9.065",
+      "CASPT3 IPEA": "9.213"
+    },
+    {
+      "State": "3B1(n,*)",
+      "Active space (a1,b1,b2,a2)": "(2,3,1,1)",
+      "State-average (A1,B1,B2,A2)": "(1,3,0,0)",
+      "CASSCF": "4.724",
+      "CASPT2 NOIPEA": "3.279",
+      "CASPT2 IPEA": "3.649",
+      "SC-NEVPT2": "3.554",
+      "PC-NEVPT2": "3.512",
+      "CASPT3 NOIPEA": "3.980",
+      "CASPT3 IPEA": "3.998"
+    },
+    {
+      "State": "3B2(,*)",
+      "Active space (a1,b1,b2,a2)": "(2,3,1,1)",
+      "State-average (A1,B1,B2,A2)": "(1,0,3,0)",
+      "CASSCF": "4.394",
+      "CASPT2 NOIPEA": "4.595",
+      "CASPT2 IPEA": "4.757",
+      "SC-NEVPT2": "5.070",
+      "PC-NEVPT2": "5.097",
+      "CASPT3 NOIPEA": "4.737",
+      "CASPT3 IPEA": "4.756"
+    },
+    {
+      "State": "3A2(n,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,2,1)",
+      "State-average (A1,B1,B2,A2)": "(1,0,0,3)",
+      "CASSCF": "5.404",
+      "CASPT2 NOIPEA": "5.056",
+      "CASPT2 IPEA": "5.358",
+      "SC-NEVPT2": "5.599",
+      "PC-NEVPT2": "5.596",
+      "CASPT3 NOIPEA": "5.419",
+      "CASPT3 IPEA": "5.438"
+    },
+    {
+      "State": "3A1(,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,2,1)",
+      "State-average (A1,B1,B2,A2)": "(4,0,0,0)",
+      "CASSCF": "6.587",
+      "CASPT2 NOIPEA": "6.614",
+      "CASPT2 IPEA": "6.928",
+      "SC-NEVPT2": "7.168",
+      "PC-NEVPT2": "7.162",
+      "CASPT3 NOIPEA": "6.818",
+      "CASPT3 IPEA": "6.864"
+    }
+  ]
+}

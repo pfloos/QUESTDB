@@ -1,0 +1,40 @@
+{
+  "headers": [
+    "State",
+    "Active space (a’,a”)",
+    "State-average (A’,A”)",
+    "CASSCFa",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PC-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "1A’’(n-p*)",
+      "Active space (a’,a”)": "(5,3)",
+      "State-average (A’,A”)": "(1,1)",
+      "CASSCFa": "2.387",
+      "CASPT2 NOIPEA": "2.234",
+      "CASPT2 IPEA": "2.318",
+      "SC-NEVPT2": "2.388",
+      "PC-NEVPT2": "2.440",
+      "CASPT3 NOIPEA": "2.339",
+      "CASPT3 IPEA": "2.348"
+    },
+    {
+      "State": "1A’(p-p*)",
+      "Active space (a’,a”)": "(5,3)",
+      "State-average (A’,A”)": "(2,0)",
+      "CASSCFa": "4.201",
+      "CASPT2 NOIPEA": "3.645",
+      "CASPT2 IPEA": "3.881",
+      "SC-NEVPT2": "3.866",
+      "PC-NEVPT2": "3.746",
+      "CASPT3 NOIPEA": "3.825",
+      "CASPT3 IPEA": "3.870"
+    }
+  ]
+}

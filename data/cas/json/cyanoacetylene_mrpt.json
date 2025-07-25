@@ -1,0 +1,76 @@
+{
+  "headers": [
+    "State",
+    "Active space (a1,b1,b2,a2)",
+    "State-average (A1,B1,B2,A2)",
+    "CASSCFa",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PC-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "1–(,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,4,0)",
+      "State-average (A1,B1,B2,A2)": "(1,0,0,1)",
+      "CASSCFa": "6.538",
+      "CASPT2 NOIPEA": "5.470",
+      "CASPT2 IPEA": "5.855",
+      "SC-NEVPT2": "5.830",
+      "PC-NEVPT2": "5.777",
+      "CASPT3 NOIPEA": "5.807",
+      "CASPT3 IPEA": "5.892"
+    },
+    {
+      "State": "1(,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,4,0)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,1)",
+      "CASSCFa": "6.796",
+      "CASPT2 NOIPEA": "5.779",
+      "CASPT2 IPEA": "6.130",
+      "SC-NEVPT2": "6.144",
+      "PC-NEVPT2": "6.095",
+      "CASPT3 NOIPEA": "6.087",
+      "CASPT3 IPEA": "6.169"
+    },
+    {
+      "State": "3+(,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,4,0)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,0)",
+      "CASSCFa": "4.857",
+      "CASPT2 NOIPEA": "4.040",
+      "CASPT2 IPEA": "4.449",
+      "SC-NEVPT2": "4.492",
+      "PC-NEVPT2": "4.445",
+      "CASPT3 NOIPEA": "4.448",
+      "CASPT3 IPEA": "4.517"
+    },
+    {
+      "State": "3(,*)",
+      "Active space (a1,b1,b2,a2)": "(0,4,4,0)",
+      "State-average (A1,B1,B2,A2)": "(2,0,0,1)",
+      "CASSCFa": "5.637",
+      "CASPT2 NOIPEA": "4.864",
+      "CASPT2 IPEA": "5.211",
+      "SC-NEVPT2": "5.228",
+      "PC-NEVPT2": "5.194",
+      "CASPT3 NOIPEA": "5.190",
+      "CASPT3 IPEA": "5.260"
+    },
+    {
+      "State": "1A\"[F](,*)",
+      "Active space (a1,b1,b2,a2)": "(a’:4,a\":4)",
+      "State-average (A1,B1,B2,A2)": "(A’:1,A\":1)",
+      "CASSCFa": "4.295",
+      "CASPT2 NOIPEA": "3.470",
+      "CASPT2 IPEA": "3.673",
+      "SC-NEVPT2": "3.547",
+      "PC-NEVPT2": "3.498",
+      "CASPT3 NOIPEA": "3.584",
+      "CASPT3 IPEA": "3.644"
+    }
+  ]
+}

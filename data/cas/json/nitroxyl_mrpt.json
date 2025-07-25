@@ -1,0 +1,28 @@
+{
+  "headers": [
+    "State",
+    "Active space (a’,a”)",
+    "State-average (A’,A”)",
+    "CASSCFa",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PC-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "1A’(n,n-p*,p*)",
+      "Active space (a’,a”)": "(7,2)",
+      "State-average (A’,A”)": "(2,0)",
+      "CASSCFa": "4.670",
+      "CASPT2 NOIPEA": "4.358",
+      "CASPT2 IPEA": "4.366",
+      "SC-NEVPT2": "4.398",
+      "PC-NEVPT2": "4.371",
+      "CASPT3 NOIPEA": "4.361",
+      "CASPT3 IPEA": "4.364"
+    }
+  ]
+}

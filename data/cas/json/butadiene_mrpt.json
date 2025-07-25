@@ -1,0 +1,124 @@
+{
+  "headers": [
+    "State",
+    "Active space (ag,au,bu,bg)",
+    "State-average (Ag,Au,Bu,Bg)",
+    "CASSCF",
+    "CASPT2 NOIPEA",
+    "CASPT2 IPEA",
+    "SC-NEVPT2",
+    "PV-NEVPT2",
+    "CASPT3 NOIPEA",
+    "CASPT3 IPEA"
+  ],
+  "data": [
+    {
+      "State": "1Bu(,*)",
+      "Active space (ag,au,bu,bg)": "(0,4,0,4)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,0,2,0)",
+      "CASSCF": "6.647",
+      "CASPT2 NOIPEA": "6.523",
+      "CASPT2 IPEA": "6.762",
+      "SC-NEVPT2": "6.723",
+      "PV-NEVPT2": "6.683",
+      "CASPT3 NOIPEA": "6.653",
+      "CASPT3 IPEA": "6.720"
+    },
+    {
+      "State": "1Bg(,3s)",
+      "Active space (ag,au,bu,bg)": "(4,2,3,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,0,0,1)",
+      "CASSCF": "5.942",
+      "CASPT2 NOIPEA": "6.315",
+      "CASPT2 IPEA": "6.490",
+      "SC-NEVPT2": "6.484",
+      "PV-NEVPT2": "6.440",
+      "CASPT3 NOIPEA": "6.380",
+      "CASPT3 IPEA": "6.429"
+    },
+    {
+      "State": "1Ag(,*2)",
+      "Active space (ag,au,bu,bg)": "(3,2,3,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(2,0,0,0)",
+      "CASSCF": "6.990",
+      "CASPT2 NOIPEA": "6.384",
+      "CASPT2 IPEA": "6.736",
+      "SC-NEVPT2": "6.780",
+      "PV-NEVPT2": "6.700",
+      "CASPT3 NOIPEA": "6.627",
+      "CASPT3 IPEA": "6.718"
+    },
+    {
+      "State": "1Au(,3px)",
+      "Active space (ag,au,bu,bg)": "(3,2,5,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,2,0,0)",
+      "CASSCF": "5.947",
+      "CASPT2 NOIPEA": "6.642",
+      "CASPT2 IPEA": "6.745",
+      "SC-NEVPT2": "6.806",
+      "PV-NEVPT2": "6.836",
+      "CASPT3 NOIPEA": "6.673",
+      "CASPT3 IPEA": "6.704"
+    },
+    {
+      "State": "1Au(,3py)",
+      "Active space (ag,au,bu,bg)": "(3,2,5,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,2,0,0)",
+      "CASSCF": "6.123",
+      "CASPT2 NOIPEA": "6.838",
+      "CASPT2 IPEA": "6.952",
+      "SC-NEVPT2": "7.004",
+      "PV-NEVPT2": "7.015",
+      "CASPT3 NOIPEA": "6.864",
+      "CASPT3 IPEA": "6.902"
+    },
+    {
+      "State": "1Bu(,3pz)",
+      "Active space (ag,au,bu,bg)": "(0,4,0,4)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,0,2,0)",
+      "CASSCF": "7.928",
+      "CASPT2 NOIPEA": "7.298",
+      "CASPT2 IPEA": "7.603",
+      "SC-NEVPT2": "7.526",
+      "PV-NEVPT2": "7.449",
+      "CASPT3 NOIPEA": "7.541",
+      "CASPT3 IPEA": "7.622"
+    },
+    {
+      "State": "3Bu(,*)",
+      "Active space (ag,au,bu,bg)": "(3,2,3,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,0,1,0)",
+      "CASSCF": "3.553",
+      "CASPT2 NOIPEA": "3.190",
+      "CASPT2 IPEA": "3.404",
+      "SC-NEVPT2": "3.431",
+      "PV-NEVPT2": "3.397",
+      "CASPT3 NOIPEA": "3.348",
+      "CASPT3 IPEA": "3.398"
+    },
+    {
+      "State": "3Ag(,*)",
+      "Active space (ag,au,bu,bg)": "(3,2,3,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(2,0,0,0)",
+      "CASSCF": "5.519",
+      "CASPT2 NOIPEA": "4.927",
+      "CASPT2 IPEA": "5.317",
+      "SC-NEVPT2": "5.358",
+      "PV-NEVPT2": "5.299",
+      "CASPT3 NOIPEA": "5.187",
+      "CASPT3 IPEA": "5.286"
+    },
+    {
+      "State": "3Bg(,3s)",
+      "Active space (ag,au,bu,bg)": "(4,2,3,2)",
+      "State-average (Ag,Au,Bu,Bg)": "(1,0,0,1)",
+      "CASSCF": "5.892",
+      "CASPT2 NOIPEA": "6.266",
+      "CASPT2 IPEA": "6.439",
+      "SC-NEVPT2": "6.431",
+      "PV-NEVPT2": "6.385",
+      "CASPT3 NOIPEA": "6.326",
+      "CASPT3 IPEA": "6.376"
+    }
+  ]
+}
