@@ -89,7 +89,7 @@ Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` 
 📌 **See the accompanying paper:**  
 [**The QUEST database of highly-accurate excitation energies**](https://arxiv.org/abs/2506.11590)  
 P.F Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
-*J. Chem. Theory Comput.* (submitted).  
+*J. Chem. Theory Comput.* (in press) DOI:10.1021/acs.jctc.5c00975
 
 <img src="TOC.jpg"  width="250">
 © Béatrice Lejeune (@bea_quarelle)
