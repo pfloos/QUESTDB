@@ -275,6 +275,6 @@ This database is also funded, in part, by the Agence Nationale de la Recherche (
 
 ## 🧮 HPC resources
 
-This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2025-18006**, as well as resources provided by [**GLiCID**](https://research.ec-nantes.fr/en/research-facilities/supercomputer) (Nantes, France).
+This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2026-18005**, as well as resources provided by [**GLiCID**](https://research.ec-nantes.fr/en/research-facilities/supercomputer) (Nantes, France).
 
 ---
