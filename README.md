@@ -259,12 +259,17 @@ A. Marie, P. Romaniello, X. Blase, and P.-F. Loos,
 ## 💰 Funding
 
 <p align="center">
-  <a href="https://lcpq.github.io/PTEROSOR/">
-    <img src="https://lcpq.github.io/PTEROSOR/img/ERC.png" width="200" alt="ERC Logo" />
-  </a>
+  <img src="logo/ERC.png" width="200" alt="ERC Logo" />
 </p>
 
 This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **European Research Council (ERC)** under the **EU Horizon 2020** research and innovation program (Grant Agreement No. **863481**).
+
+
+<p align="center">
+  <img src="logo/ANR.png" width="200" alt="ERC Logo" />
+</p>
+
+This database is also funded, in part, by the Agence Nationale de la Recherche (ANR), grant [ANR-25-CE29-4996](https://anr.fr/Projet-ANR-25-CE29-4996).
 
 ---
 
