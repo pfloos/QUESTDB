@@ -91,7 +91,7 @@ Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` 
 P.-F. Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,  
 *J. Chem. Theory Comput.* **21**, 8010 (2025). [DOI:10.1021/acs.jctc.5c00975](https://doi.org/10.1021/acs.jctc.5c00975)
 
-<img src="TOC.jpg"  width="250">
+<img src="logo/TOC.jpg"  width="250">
 © Béatrice Lejeune (@bea_quarelle)
 
 ---
@@ -266,7 +266,7 @@ This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PT
 
 
 <p align="center">
-  <img src="logo/ANR.png" width="200" alt="ERC Logo" />
+  <img src="logo/ANR.jpg" width="200" alt="ERC Logo" />
 </p>
 
 This database is also funded, in part, by the Agence Nationale de la Recherche (ANR), grant [ANR-25-CE29-4996](https://anr.fr/Projet-ANR-25-CE29-4996).
