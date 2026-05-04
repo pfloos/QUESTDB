@@ -236,7 +236,7 @@ A. Marie and P.-F. Loos,
 A. Marie, P. Romaniello, X. Blase, and P.-F. Loos,  
 *J. Chem. Phys.* **162**, 134105 (2025).
 
-- Core IPs:
+- Core IPs:  
 [**Reference energies for non-relativistic core ionization potentials**](https://arxiv.org/pdf/2604.05920)  
 A. Marie, L. Burth, and P.-F. Loos,  
 *J. Chem. Theory Comput.* (submitted) arXiv:2604.05920.
