@@ -1,0 +1,12 @@
+{
+	"Energy":{
+		"aug-cc-pVDZ":2.47428234e3,
+		"aug-cc-pVTZ":2.47209466e3,
+		"aug-cc-pVQZ":0
+	},
+	"Incertitudes":{
+		"aug-cc-pVDZ":5.560000000000001e-3,
+		"aug-cc-pVTZ":2.247e-2,
+		"aug-cc-pVQZ":0
+	}
+}
