@@ -24,6 +24,20 @@ Each molecule’s `.json` file contains:
 
 ---
 
+### 🔹 `Core_IPs/`  
+**Core (inner-shell) Ionization Potentials**  
+We have added a complementary dataset of high-quality **core-level (inner-shell) ionization potentials**. This new collection is intended to support benchmarking of methods that target deep core electrons and core spectroscopies (XPS-like transitions).
+
+What to expect in `charged/Core_IPs/`:
+- Per-molecule `.json` files containing core-ionization energies (vertical) for selected atoms/sites in each molecule
+- Theoretical Best Estimates (TBEs) or carefully assessed reference values, where available
+- Method-specific results from high-level approaches (ΔSCF/Δ coupled-cluster, EOM-CC variants, Green's function and related many-body approaches) and notes on convergence/uncertainty
+- Geometries and computational details necessary for reproducibility
+
+> 🧭 This dataset complements the valence IPs and DIPs sets and is especially useful to evaluate methods for core-level spectroscopy and to test basis-set and relativistic effects.
+
+---
+
 ### 🔹 `DIPs/`  
 **Valence Double Ionization Potentials (DIPs)**  
 From [Marie *et al.* (2024)](https://doi.org/10.1063/5.0250155), this set includes:
