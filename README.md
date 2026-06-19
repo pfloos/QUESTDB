@@ -59,7 +59,7 @@ QUESTDB supports researchers to:
 
 ## ⚙️ Scripts for Subset Generation and Analysis
 
-This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the statistical properties of the full database (e.g., MAE, MSE, and RMSE) across different computational methods and excitation categories (see the `data/diet` directory).
+This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the stati[...]
 
 These tools are especially useful for benchmarking new methods quickly or for training machine learning models when computational cost is a limiting factor.
 
@@ -83,8 +83,7 @@ This repository provides:
 - **Vertical Excitation Energies**
 - **Oscillator Strengths**
 - **Many Other Properties**
-
-Data is structured in `.xlsx` and `.json` files for ease of use (see the `data` directory).
+- **Charged Excitations:** High-quality datasets for ionization potentials (IPs), valence double ionization potentials (DIPs), and core ionization potentials — see the `charged/` directory for details and per-molecule JSON files (`charged/README.md`).
 
 📌 **See the accompanying paper:**  
 [**The QUEST database of highly-accurate excitation energies**](https://arxiv.org/abs/2506.11590)  
@@ -129,8 +128,6 @@ Review articles on the QUEST database:
   P.-F. Loos, A. Scemama, and D. Jacquemin,  
   *J. Phys. Chem. Lett.* **11**, 2374 (2020).
 
-Key QUESTDB publications:
-
 - [**Reference energies for double excitations: improvement & extension**](https://doi.org/10.1021/acs.jctc.4c00410)  
   F. Kossoski, M. Boggio-Pasqua, P.-F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **20**, 5655 (2024).
@@ -154,18 +151,6 @@ Key QUESTDB publications:
 - [**A mountaineering strategy to excited states: highly-accurate oscillator strengths and dipole moments of small molecules**](https://dx.doi.org/10.1021/acs.jctc.0c01111)  
   A. Chrayteh, A. Blondel, P.-F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **17**, 416 (2021).
-
-- [**A mountaineering strategy to excited states: highly-accurate energies and benchmarks for exotic molecules and radicals**](https://dx.doi.org/10.1021/acs.jctc.0c00227)  
-  P.-F. Loos, A. Scemama, M. Boggio-Pasqua, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **16**, 3720 (2020).
-
-- [**A mountaineering strategy to excited states: highly-accurate energies and benchmarks for medium size molecules**](https://dx.doi.org/10.1021/acs.jctc.9b01216)  
-  P.-F. Loos, F. Lipparini, M. Boggio-Pasqua, A. Scemama, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **16**, 1711 (2020).
-
-- [**Reference energies for double excitations**](https://dx.doi.org/10.1021/acs.jctc.8b01205)  
-  P.-F. Loos, M. Boggio-Pasqua, A. Scemama, M. Caffarel, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **15**, 1939 (2019).
 
 - [**A mountaineering strategy to excited states: highly-accurate reference energies and benchmarks**](https://dx.doi.org/10.1021/acs.jctc.8b00406)  
   P.-F. Loos, A. Scemama, A. Blondel, Y. Garniron, M. Caffarel, and D. Jacquemin,  
@@ -207,7 +192,7 @@ Key QUESTDB publications:
   R. Sarkar, M. Boggio-Pasqua, P.-F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **17**, 1106 (2021).
 
-- [**How accurate are EOM-CC4 vertical excitation energies?**](https://doi.org/10.1063/5.0055994)  
+- [**How accurate are EOM-CC4 vertical excitation energies?**](https://doi.org/10.1021/acs.jctc.5c0055994)  
   P.-F. Loos, D. A. Matthews, F. Lipparini, and D. Jacquemin,  
   *J. Chem. Phys.* **154**, 221103 (2021).
 
@@ -265,7 +250,7 @@ A. Marie, L. Burth, and P.-F. Loos,
   <img src="logo/ERC.png" width="200" alt="ERC Logo" />
 </p>
 
-This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **European Research Council (ERC)** under the **EU Horizon 2020** research and innovation program (Grant Agreement No. **863481**).
+This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **European Research Council (ERC)** under the **EU Horizon 2020** research and innovation prog[...]
 
 
 <p align="center">
@@ -278,6 +263,5 @@ This database is also funded, in part, by the Agence Nationale de la Recherche (
 
 ## 🧮 HPC resources
 
-This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2026-18005**, as well as resources provided by [**GLiCID**](https://research.ec-nantes.fr/en/research-facilities/supercomputer) (Nantes, France).
+This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2026-18005**, as well as resources provided[...]
 
----
