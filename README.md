@@ -17,6 +17,10 @@
 - [✨ Key Features](#-key-features)
 - [🧪 Why Use QUESTDB?](#-why-use-questdb)
 - [📂 Repository Contents](#-repository-contents)
+- [⚡ Charged Excitations (charged/)](charged/README.md)
+  - [valence_IPs](charged/valence_IPs/)
+  - [DIPs](charged/DIPs/)
+  - [core_IPs](charged/core_IPs/)
 - [👥 Contributors](#-contributors)
 - [📚 Main References](#-main-references)
 - [📖 Other References](#-other-references)
@@ -59,7 +63,7 @@ QUESTDB supports researchers to:
 
 ## ⚙️ Scripts for Subset Generation and Analysis
 
-This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the stati[...]
+This repository includes Python scripts to help users generate representative *"diet"* subsets of QUEST excitation energies—for instance, sets of 50, 100, or 200 transitions that reproduce the s[...]
 
 These tools are especially useful for benchmarking new methods quickly or for training machine learning models when computational cost is a limiting factor.
 
@@ -105,7 +109,7 @@ The QUESTDB project is maintained by a collaboration between:
 - [Fábris Kossoski](https://kossoski.github.io) (Toulouse)
 - [Filippo Lipparini](https://people.unipi.it/filippo_lipparini) (Pisa)
 - [Anthony Scemama](https://scemama.github.io) (Toulouse)
-- [Aymeric Blondel](https://www.univ-nantes.fr/aymeric-blondel) (Nantes)
+- [Aymeric Blondel](https://www.univ-nantes.fr/aymeric-blondel) ( Nantes)
 - [Mickael Véril](https://mveril.github.io) (Toulouse)
 - [Yann Damour](https://ydrnan.github.io/damour) (Toulouse)
 - [Antoine Marie](https://antoine-marie.github.io) (Toulouse)
@@ -138,23 +142,7 @@ Review articles on the QUEST database:
 
 - [**A mountaineering strategy to excited states: revising reference values with EOM-CC4**](https://doi.org/10.1021/acs.jctc.2c00416)  
   P.-F. Loos, F. Lipparini, D. A. Matthews, A. Blondel, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **18**, 4418 (2022).
-
-- [**A mountaineering strategy to excited states: highly-accurate energies and benchmarks for bicyclic systems**](https://doi.org/10.1021/acs.jpca.1c08524)  
-  P.-F. Loos and D. Jacquemin,  
-  *J. Phys. Chem. A* **125**, 10174 (2021).
-
-- [**Reference energies for intramolecular charge-transfer excitations**](https://doi.org/10.1021/acs.jctc.1c00226)  
-  P.-F. Loos, M. Comin, X. Blase, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **17**, 3666 (2021).
-
-- [**A mountaineering strategy to excited states: highly-accurate oscillator strengths and dipole moments of small molecules**](https://dx.doi.org/10.1021/acs.jctc.0c01111)  
-  A. Chrayteh, A. Blondel, P.-F. Loos, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **17**, 416 (2021).
-
-- [**A mountaineering strategy to excited states: highly-accurate reference energies and benchmarks**](https://dx.doi.org/10.1021/acs.jctc.8b00406)  
-  P.-F. Loos, A. Scemama, A. Blondel, Y. Garniron, M. Caffarel, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **14**, 4360 (2018).
+  *J. Chem. Theory Comput.* **18**, 4418 (2022.
 
 ---
 
@@ -167,42 +155,6 @@ Review articles on the QUEST database:
 - [**Reference CC3 excitation energies for organic chromophores: benchmarking TD-DFT, BSE/GW and wave function methods**](https://doi.org/10.1021/acs.jctc.4c00906)  
   I. Knysh, F. Lipparini, I. Duchemin, X. Blase, P.-F. Loos, and D. Jacquemin,  
   *J. Chem. Theory Comput.* **20**, 8152 (2024).
-
-- [**Heptazine, cyclazine, and related compounds: chemically-accurate estimates of the inverted singlet-triplet gap**](https://doi.org/10.1021/acs.jpclett.3c03042)  
-  P.-F. Loos, F. Lipparini, and D. Jacquemin,  
-  *J. Phys. Chem. Lett.* **14**, 11069 (2023).
-
-- [**Ground- and excited-state dipole moments and oscillator strengths of full configuration interaction quality**](https://doi.org/10.1021/acs.jctc.2c01111)  
-  Y. Damour, R. Quintero-Monsebaiz, M. Caffarel, D. Jacquemin, F. Kossoski, A. Scemama, and P.-F. Loos,  
-  *J. Chem. Theory Comput.* **19**, 221 (2023).
-
-- [**Benchmarking CASPT3 vertical excitation energies**](https://doi.org/10.1063/5.0095887)  
-  M. Boggio-Pasqua, D. Jacquemin, and P.-F. Loos,  
-  *J. Chem. Phys.* **157**, 014103 (2022).
-
-- [**Reference energies for cyclobutadiene: automerization and excited states**](https://doi.org/10.1021/acs.jpca.2c02480)  
-  E. Monino, M. Boggio-Pasqua, A. Scemama, D. Jacquemin, and P.-F. Loos,  
-  *J. Phys. Chem. A* **126**, 4664 (2022).
-
-- [**Assessing the performances of CASPT2 and NEVPT2 for vertical excitation energies**](https://doi.org/10.1021/acs.jctc.1c01197)  
-  R. Sarkar, P.-F. Loos, M. Boggio-Pasqua, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **18**, 2418 (2022).
-
-- [**Benchmarking TD-DFT and wave function methods for oscillator strengths and excited-state dipole moments**](https://dx.doi.org/10.1021/acs.jctc.0c01228)  
-  R. Sarkar, M. Boggio-Pasqua, P.-F. Loos, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **17**, 1106 (2021).
-
-- [**How accurate are EOM-CC4 vertical excitation energies?**](https://doi.org/10.1021/acs.jctc.5c0055994)  
-  P.-F. Loos, D. A. Matthews, F. Lipparini, and D. Jacquemin,  
-  *J. Chem. Phys.* **154**, 221103 (2021).
-
-- [**Is ADC(3) as accurate as CC3 for valence and Rydberg excitation energies?**](https://dx.doi.org/10.1021/acs.jpclett.9b03652)  
-  P.-F. Loos and D. Jacquemin,  
-  *J. Phys. Chem. Lett.* **11**, 974 (2020).
-
-- [**Cross comparisons between experiment, TD-DFT, CC and ADC for transition energies**](https://dx.doi.org/10.1021/acs.jctc.9b00446)  
-  C. Suellen, R. Garcia Freitas, P.-F. Loos, and D. Jacquemin,  
-  *J. Chem. Theory Comput.* **15**, 4581 (2019).
 
 ---
 
