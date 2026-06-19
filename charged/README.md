@@ -1,47 +1,65 @@
-# ⚡ Charged Excitations in the QUEST Database
+Could you polish this readme file?
 
-This directory gathers high-quality benchmark data on **charged excitations** from the **QUEST database**, designed to assess and validate state-of-the-art electronic structure methods.
+# ⚡ Charged Excitations of the QUEST Database
 
-📌 At present, the dataset focuses exclusively on **electron-removal processes** (i.e., ionization potentials). Future releases will extend this collection to **electron-addition processes** (e.g., electron affinities).
+This directory gathers high-quality data on **charged excitations** from the **QUEST database**, offering a benchmark for state-of-the-art electronic structure methods.
+
+📌 At this stage, the dataset includes **electron-removal processes** (i.e., ionization potentials). Future updates aim to incorporate **electron-addition transitions** (e.g., electron affinities).
 
 ---
 
 ## 📂 Contents
 
-### 🔹 `valence_IPs/`
-**Inner- and Outer-Valence Ionization Potentials & Satellite Transitions**
-
-Based on the work of Marie and Loos (2024), this dataset provides reference data for:
-
+### 🔹 `valence_IPs/`  
+**Inner- and Outer-Valence Ionization Potentials & Satellite Transitions**  
+Based on the study by [Marie and Loos (2024)](https://pubs.acs.org/10.1021/acs.jctc.4c00216), this dataset focuses on:
 - **58 valence ionization potentials**
 - **42 satellite transition energies**
+  
+Each molecule’s `.json` file contains:
+- Energies computed with a variety of high-level **Green's function** and **wavefunction methods**
+- **Spectral weights** for quasiparticle and satellite states
+- **TBEs** and **FCI-based uncertainties**
+- **Geometries** provided for reproducibility
 
-Each molecular `.json` file contains:
-
-- Energies computed using a range of high-level **Green’s function** and **wavefunction-based methods**
-- **Spectral weights** associated with quasiparticle and satellite states
-- **Theoretical Best Estimates (TBEs)** and **FCI-based uncertainty estimates**
-- Molecular **geometries** for full reproducibility
-
-> 🧪 Particularly suited for benchmarking **inner- and outer-valence ionization energies** and assessing many-body approaches such as pp-RPA, pp-BSE, GW, DIP-EOM-CCSD, and related methods.
+> 🧪 Ideal for benchmarking **inner- and outer-valence IPs** and validating many-body methods like pp-RPA, pp-BSE, GW, DIP-EOM-CCSD, etc.
 
 ---
 
-### 🔹 `core_IPs/`
-**Core Ionization Potentials**
+### 🔹 `core_IPs/`  
+**Core Ionization Potentials**  
+Based on the study by [Marie, Burth and Loos (2026)](https://arxiv.org/pdf/2604.05920), this dataset focuses on:
 
-Based on the work of Marie, Burth, and Loos (2026), this dataset provides high-quality reference data for **core-level ionization potentials**.
+We have added a complementary dataset of high-quality **core-level ionization potentials**. This new collection is intended to support benchmarking of methods that target deep core electrons and core spectroscopies (XPS-like transitions).
 
-This complementary collection is designed to benchmark methods targeting deep core electrons and core spectroscopies (e.g., X-ray photoelectron spectroscopy, XPS).
+What to expect in `charged/core_IPs/`:
+- Per-molecule `.json` files containing core-ionization energies (vertical) for selected atoms/sites in each molecule
+- Theoretical Best Estimates (TBEs) or carefully assessed reference values. The FCI reference values are obtained in the core-valence separation (CVS) approximation.
+- Method-specific results from high-level approaches (ΔSCF, EOM-CC variants, Green's function and related many-body approaches) and notes on convergence/uncertainty
+- Geometries and computational details necessary for reproducibility
 
-Each molecular `.json` file contains:
+> 🧭 This dataset complements the valence IPs and DIPs sets and is especially useful to evaluate methods for core-level spectroscopy and to test basis-set and relativistic effects.
 
-- Vertical **core-ionization energies** for selected atomic sites
-- **Theoretical Best Estimates (TBEs)** or carefully assessed reference values
-- **FCI reference energies** obtained within the **core-valence separation (CVS)** approximation
-- Results from a variety of high-level methods, including ΔSCF, EOM-CC variants, Green’s function approaches, and related many-body methods
-- Notes on convergence behavior and uncertainty estimates
-- Molecular geometries and computational details for reproducibility
+---
+
+### 🔹 `DIPs/`  
+**Valence Double Ionization Potentials (DIPs)**  
+From [Marie *et al.* (2024)](https://doi.org/10.1063/5.0250155), this set includes:
+- **Singlet and triplet DIPs** for 23 molecules
+- All computed using the **aug-cc-pVTZ** basis
+
+Each `.json` file contains excitation energies obtained with methods like **GW**, **CCSD**, or **CC4**, along with their theoretical rationale.
+
+> 🧬 Complements the valence IP dataset with challenging **two-electron removal** benchmarks.
+
+---
+
+## 📈 Purpose
+
+These datasets aim to support:
+- Method development and comparison (Green’s function, EOM, CI, etc.)
+- Assessment of **electron correlation**, **satellite states**, and **multielectron processes**
+- Construction of **machine learning datasets** for charged excitations- Molecular geometries and computational details for reproducibility
 
 > 🧭 This dataset complements the valence IP and DIP collections and is particularly valuable for benchmarking core-level spectroscopies, basis-set effects, and relativistic corrections.
 
