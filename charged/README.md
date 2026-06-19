@@ -1,58 +1,71 @@
-# ⚡ Charged Excitations of the QUEST Database
+# ⚡ Charged Excitations in the QUEST Database
 
-This directory gathers high-quality data on **charged excitations** from the **QUEST database**, offering a benchmark for state-of-the-art electronic structure methods.
+This directory gathers high-quality benchmark data on **charged excitations** from the **QUEST database**, designed to assess and validate state-of-the-art electronic structure methods.
 
-📌 At this stage, the dataset includes **electron-removal processes** (i.e., ionization potentials). Future updates aim to incorporate **electron-addition transitions** (e.g., electron affinities).
+📌 At present, the dataset focuses exclusively on **electron-removal processes** (i.e., ionization potentials). Future releases will extend this collection to **electron-addition processes** (e.g., electron affinities).
 
 ---
 
 ## 📂 Contents
 
-### 🔹 `IPs/`  
-**Inner- and Outer-Valence Ionization Potentials & Satellite Transitions**  
-Based on the study by [Marie and Loos (2024)](https://pubs.acs.org/10.1021/acs.jctc.4c00216), this dataset focuses on:
+### 🔹 `valence_IPs/`
+**Inner- and Outer-Valence Ionization Potentials & Satellite Transitions**
+
+Based on the work of Marie and Loos (2024), this dataset provides reference data for:
+
 - **58 valence ionization potentials**
 - **42 satellite transition energies**
-  
-Each molecule’s `.json` file contains:
-- Energies computed with a variety of high-level **Green's function** and **wavefunction methods**
-- **Spectral weights** for quasiparticle and satellite states
-- **TBEs** and **FCI-based uncertainties**
-- **Geometries** provided for reproducibility
 
-> 🧪 Ideal for benchmarking **inner- and outer-valence IPs** and validating many-body methods like pp-RPA, pp-BSE, GW, DIP-EOM-CCSD, etc.
+Each molecular `.json` file contains:
 
----
+- Energies computed using a range of high-level **Green’s function** and **wavefunction-based methods**
+- **Spectral weights** associated with quasiparticle and satellite states
+- **Theoretical Best Estimates (TBEs)** and **FCI-based uncertainty estimates**
+- Molecular **geometries** for full reproducibility
 
-### 🔹 `Core_IPs/`  
-**Core (inner-shell) Ionization Potentials**  
-We have added a complementary dataset of high-quality **core-level (inner-shell) ionization potentials**. This new collection is intended to support benchmarking of methods that target deep core electrons and core spectroscopies (XPS-like transitions).
-
-What to expect in `charged/Core_IPs/`:
-- Per-molecule `.json` files containing core-ionization energies (vertical) for selected atoms/sites in each molecule
-- Theoretical Best Estimates (TBEs) or carefully assessed reference values, where available
-- Method-specific results from high-level approaches (ΔSCF/Δ coupled-cluster, EOM-CC variants, Green's function and related many-body approaches) and notes on convergence/uncertainty
-- Geometries and computational details necessary for reproducibility
-
-> 🧭 This dataset complements the valence IPs and DIPs sets and is especially useful to evaluate methods for core-level spectroscopy and to test basis-set and relativistic effects.
+> 🧪 Particularly suited for benchmarking **inner- and outer-valence ionization energies** and assessing many-body approaches such as pp-RPA, pp-BSE, GW, DIP-EOM-CCSD, and related methods.
 
 ---
 
-### 🔹 `DIPs/`  
-**Valence Double Ionization Potentials (DIPs)**  
-From [Marie *et al.* (2024)](https://doi.org/10.1063/5.0250155), this set includes:
-- **Singlet and triplet DIPs** for 23 molecules
-- All computed using the **aug-cc-pVTZ** basis
+### 🔹 `core_IPs/`
+**Core Ionization Potentials**
 
-Each `.json` file contains excitation energies obtained with methods like **GW**, **CCSD**, or **CC4**, along with their theoretical rationale.
+Based on the work of Marie, Burth, and Loos (2026), this dataset provides high-quality reference data for **core-level ionization potentials**.
 
-> 🧬 Complements the valence IP dataset with challenging **two-electron removal** benchmarks.
+This complementary collection is designed to benchmark methods targeting deep core electrons and core spectroscopies (e.g., X-ray photoelectron spectroscopy, XPS).
+
+Each molecular `.json` file contains:
+
+- Vertical **core-ionization energies** for selected atomic sites
+- **Theoretical Best Estimates (TBEs)** or carefully assessed reference values
+- **FCI reference energies** obtained within the **core-valence separation (CVS)** approximation
+- Results from a variety of high-level methods, including ΔSCF, EOM-CC variants, Green’s function approaches, and related many-body methods
+- Notes on convergence behavior and uncertainty estimates
+- Molecular geometries and computational details for reproducibility
+
+> 🧭 This dataset complements the valence IP and DIP collections and is particularly valuable for benchmarking core-level spectroscopies, basis-set effects, and relativistic corrections.
+
+---
+
+### 🔹 `DIPs/`
+**Valence Double Ionization Potentials**
+
+Based on the work of Marie *et al.* (2024), this dataset contains:
+
+- **Singlet and triplet double ionization potentials (DIPs)** for **23 molecules**
+- Reference calculations performed using the **aug-cc-pVTZ** basis set
+
+Each `.json` file includes transition energies computed with methods such as **GW**, **CCSD**, and **CC4**, together with methodological details and theoretical justification.
+
+> 🧬 This collection complements the valence IP dataset by providing challenging benchmarks for **two-electron removal processes**.
 
 ---
 
 ## 📈 Purpose
 
-These datasets aim to support:
-- Method development and comparison (Green’s function, EOM, CI, etc.)
-- Assessment of **electron correlation**, **satellite states**, and **multielectron processes**
-- Construction of **machine learning datasets** for charged excitations
+These datasets are intended to support:
+
+- Development and benchmarking of electronic structure methods (Green’s function, EOM, CI, etc.)
+- Assessment of **electron correlation effects**, **satellite structures**, and **multielectron processes**
+- Construction of **machine-learning datasets** for charged excitations
+- Systematic evaluation of accuracy across different ionization regimes (valence, core, and double ionization)
