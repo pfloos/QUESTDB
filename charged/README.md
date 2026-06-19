@@ -28,13 +28,11 @@ Each molecule’s `.json` file contains:
 
 ### 🔹 `core_IPs/`  
 **Core Ionization Potentials**  
-Based on the study by [Marie, Burth and Loos (2026)](https://arxiv.org/pdf/2604.05920), this dataset focuses on:
-
-We have added a complementary dataset of high-quality **core-level ionization potentials**. This new collection is intended to support benchmarking of methods that target deep core electrons and core spectroscopies (XPS-like transitions).
+Based on the study by [Marie, Burth and Loos (2026)](https://arxiv.org/pdf/2604.05920), this dataset provides high-quality reference data for core-level ionization potentials. This new collection is intended to support benchmarking of methods that target deep core electrons and core spectroscopies (XPS-like transitions).
 
 What to expect in `charged/core_IPs/`:
 - Per-molecule `.json` files containing core-ionization energies (vertical) for selected atoms/sites in each molecule
-- Theoretical Best Estimates (TBEs) or carefully assessed reference values. The FCI reference values are obtained in the core-valence separation (CVS) approximation.
+- FCI reference values are obtained in the core-valence separation (CVS) approximation.
 - Method-specific results from high-level approaches (ΔSCF, EOM-CC variants, Green's function and related many-body approaches) and notes on convergence/uncertainty
 - Geometries and computational details necessary for reproducibility
 
