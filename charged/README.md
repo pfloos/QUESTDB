@@ -1,5 +1,3 @@
-Could you polish this readme file?
-
 # ⚡ Charged Excitations of the QUEST Database
 
 This directory gathers high-quality data on **charged excitations** from the **QUEST database**, offering a benchmark for state-of-the-art electronic structure methods.
