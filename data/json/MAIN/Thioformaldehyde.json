@@ -135,7 +135,7 @@
     "V/R": "V",
     "Type": "ppi",
     "%T1 [CC3/AVTZ]": 98.9,
-    "TBE/AVTZ": 2.294,
+    "TBE/AVTZ": 3.394,
     "Method": "exFCI/AVTZ",
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 3.404,
