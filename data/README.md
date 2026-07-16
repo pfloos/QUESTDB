@@ -35,7 +35,7 @@ To assist users in identifying excited states using their preferred methodology,
 | **TBE (aug-cc-pVTZ)**          | Theoretical best estimate excitation energy                       | Computed using composite methods                                                                                    |
 | **Method**                     | Composite method used to obtain the TBE/AVTZ value                | Composite scheme                                                                                                    |
 | **TBE (aug-cc-pVQZ)**          | TBE with larger basis set                                         | Includes extrapolation corrections                                                                                  |
-| **Corr**                       | Correction applied to TBE/AVTZ value to get TBE/AVQZ value        | Composite scheme                                                                                                    |
+| **Corr**                       | Correction applied to TBE/AVTZ value to get TBE/AVQZ value        | Obtained at least at the CC3 level                                                                                  |
 | **Chemical Accuracy**       | Indicates whether the excitation is chemically accurate              | `safe` or `unsafe`                                                                                                  |
 | **Vertical Excitation Energies**| Energies from various methods                                    | `CIS(D)`, `CC2`, `ADC(2)`, `ADC(3)`, `CC3`, `CCSDT`, `TDDFT-*`, `CASPT2`, `NEVPT2`, etc. (see list below)           |
 
