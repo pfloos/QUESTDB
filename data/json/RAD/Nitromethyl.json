@@ -149,7 +149,7 @@
     "V/R": "V",
     "Special ?": "PD",
     "TBE/AVTZ": 6.509,
-    "Method (all in RO)": "CCSDT/AVTZ",
+    "Method (all in RO)": "CCSDTQ/6-31+G(d) + [CCSDT/AVTZ - CCSDT//6-31+G(d)]",
     "Safe ? (~50 meV)": "N",
     "U-ADC(2)": 7.196,
     "U-ADC(3)": 6.69,

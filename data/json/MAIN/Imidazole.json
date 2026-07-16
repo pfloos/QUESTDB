@@ -154,7 +154,8 @@
     "CASPT3": 6.92,
     "CASPT3 (No IPEA)": 6.85,
     "SC-NEVPT2": 7.01,
-    "PC-NEVPT2": 6.96
+    "PC-NEVPT2": 6.96,
+    "CCSDT": 6.719
   },
   {
     "Molecule": "Imidazole",
@@ -188,7 +189,8 @@
     "CASPT3": 6.89,
     "CASPT3 (No IPEA)": 6.83,
     "SC-NEVPT2": 7.06,
-    "PC-NEVPT2": 7.0
+    "PC-NEVPT2": 7.0,
+    "CCSDT": 6.863
   },
   {
     "Molecule": "Imidazole",
@@ -225,7 +227,8 @@
     "CASPT3": 7.09,
     "CASPT3 (No IPEA)": 7.07,
     "SC-NEVPT2": 7.2,
-    "PC-NEVPT2": 7.2
+    "PC-NEVPT2": 7.2,
+    "CCSDT": 7.017
   },
   {
     "Molecule": "Imidazole",

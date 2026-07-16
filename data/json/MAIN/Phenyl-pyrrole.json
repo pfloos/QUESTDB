@@ -25,7 +25,8 @@
     "SOS-ADC(2) [QC]": 4.491,
     "ADC(2)": 4.813,
     "ADC(3)": 4.669,
-    "ADC(2.5)": 4.741
+    "ADC(2.5)": 4.741,
+    "%T1 [CC3/AVTZ]": 86.5
   },
   {
     "Molecule": "Phenyl-pyrrole",
@@ -110,7 +111,8 @@
     "SOS-ADC(2) [QC]": 5.597,
     "ADC(2)": 5.487,
     "ADC(3)": 5.522,
-    "ADC(2.5)": 5.5045
+    "ADC(2.5)": 5.5045,
+    "%T1 [CC3/AVTZ]": 91.8
   },
   {
     "Molecule": "Phenyl-pyrrole",
