@@ -74,7 +74,7 @@
     "Type": "spi",
     "%T1 [CC3/AVTZ]": 91.4,
     "f [LR-CC3/AVTZ]": 0.001,
-    "TBE/AVTZ": 4.0,
+    "TBE/AVTZ": 4.863,
     "Method": "CCSDTQ/6-31+G(d) + [CC4/AVDZ - CC4/6-31+G(d)] + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
     "TBE/AVQZ": 4.867,
