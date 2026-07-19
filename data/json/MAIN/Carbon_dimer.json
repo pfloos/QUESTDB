@@ -8,7 +8,7 @@
     "V/R": "V",
     "Type": "pis",
     "%T1 [CC3/AVTZ]": 95.8,
-    "f [LR-CC3/AVTZ]": 0.016,
+    "f [LR-CC3/AVTZ]": 0.0071,
     "TBE/AVTZ": 1.225,
     "Method": "exFCI/AVTZ",
     "Safe ? (~50 meV)": "Y",
