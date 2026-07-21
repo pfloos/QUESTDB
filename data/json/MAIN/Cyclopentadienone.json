@@ -99,7 +99,7 @@
     "Type": "ppi",
     "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 73.6,
-    "f [LR-CC3/AVTZ]": 0.0,
+    "f [LR-CC3/AVTZ]": 0.090,
     "TBE/AVTZ": 5.795,
     "Method": "CC4/6-31+G(d) + [CASPT3(No IPEA)/AVTZ - CASPT3(No IPEA)/6-31+G(d)]",
     "Safe ? (~50 meV)": "N",

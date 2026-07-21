@@ -170,7 +170,7 @@
     "V/R": "R",
     "Type": "n.d.",
     "%T1 [CC3/AVTZ]": 91.2,
-    "f [LR-CC3/AVTZ]": 0.143,
+    "f [LR-CC3/AVTZ]": 0.043,
     "TBE/AVTZ": 7.184000000000002,
     "Method": "CCSDTQ/6-31+G(d) + [CC4/AVDZ-CC4/6-31+G(d)] +  [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
