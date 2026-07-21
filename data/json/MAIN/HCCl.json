@@ -8,7 +8,7 @@
     "V/R": "V",
     "Type": "nspi",
     "%T1 [CC3/AVTZ]": 94.5,
-    "f [LR-CC3/AVTZ]": 0.003,
+    "f [LR-CC3/AVTZ]": 0.0026,
     "TBE/AVTZ": 1.975,
     "Method": "CCSDTQP/6-31+G(d) + [CCSDTQ/AVTZ - CCSDTQ/6-31+G(d)]",
     "Safe ? (~50 meV)": "Y",
