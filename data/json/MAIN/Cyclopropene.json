@@ -8,7 +8,7 @@
     "V/R": "V",
     "Type": "spi",
     "%T1 [CC3/AVTZ]": 92.8,
-    "f [LR-CC3/AVTZ]": 0.001,
+    "f [LR-CC3/AVTZ]": 0.0015,
     "TBE/AVTZ": 6.670999999999999,
     "Method": "CCSDTQ/AVDZ + [CC4/AVTZ - CC4/AVDZ]",
     "Safe ? (~50 meV)": "Y",
