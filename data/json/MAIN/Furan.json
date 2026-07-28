@@ -205,7 +205,7 @@
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.5,
-    "f [LR-CC3/AVTZ]": 0.007,
+    "f [LR-CC3/AVTZ]": 0.0083,
     "TBE/AVTZ": 7.247,
     "Method": "CC4/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
