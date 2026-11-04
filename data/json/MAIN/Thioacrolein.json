@@ -30,7 +30,18 @@
     "SOS-ADC(2) [QC]": 2.101,
     "ADC(2)": 2.144,
     "ADC(3)": 1.976,
-    "ADC(2.5)": 2.06
+    "ADC(2.5)": 2.06,
+    "CASSCF [Col]": 2.0718,
+    "MRCI+DV1": 2.1719,
+    "MRCI+DV2": 2.1796,
+    "MRCI+DV3": 2.1921,
+    "MRCI+P": 2.1868,
+    "MRCI": 2.1449,
+    "XS-CASCI": 2.2437,
+    "XS-CASSCF-05": 2.1115,
+    "XS-CASSCF": 2.1681,
+    "Om": 0.771,
+    "QTa": 0.0
   },
   {
     "Molecule": "Thioacrolein",
@@ -58,6 +69,15 @@
     "SOS-ADC(2) [QC]": 1.917,
     "ADC(2)": 1.852,
     "ADC(3)": 1.772,
-    "ADC(2.5)": 1.812
+    "ADC(2.5)": 1.812,
+    "CASSCF [Col]": 1.9004,
+    "MRCI+DV1": 1.977,
+    "MRCI+DV2": 1.9827,
+    "MRCI+DV3": 1.9919,
+    "MRCI+P": 1.988,
+    "MRCI": 1.9581,
+    "XS-CASCI": 2.2416,
+    "XS-CASSCF-05": 2.026,
+    "XS-CASSCF": 2.1757
   }
 ]

@@ -37,7 +37,18 @@
     "CASPT3": 2.05,
     "CASPT3 (No IPEA)": 2.0,
     "SC-NEVPT2": 2.07,
-    "PC-NEVPT2": 2.05
+    "PC-NEVPT2": 2.05,
+    "CASSCF [Col]": 2.0553,
+    "MRCI+DV1": 2.0764,
+    "MRCI+DV2": 2.0763,
+    "MRCI+DV3": 2.076,
+    "MRCI+P": 2.076,
+    "MRCI": 2.0756,
+    "XS-CASCI": 2.1469,
+    "XS-CASSCF-05": 2.0745,
+    "XS-CASSCF": 2.0903,
+    "Om": 0.789,
+    "QTa": 0.0
   },
   {
     "Molecule": "Thiopropynal",
@@ -72,6 +83,15 @@
     "CASPT3": 1.84,
     "CASPT3 (No IPEA)": 1.79,
     "SC-NEVPT2": 1.82,
-    "PC-NEVPT2": 1.81
+    "PC-NEVPT2": 1.81,
+    "CASSCF [Col]": 1.8465,
+    "MRCI+DV1": 1.8424,
+    "MRCI+DV2": 1.84,
+    "MRCI+DV3": 1.8361,
+    "MRCI+P": 1.8385,
+    "MRCI": 1.8507,
+    "XS-CASCI": 2.1303,
+    "XS-CASSCF-05": 1.9625,
+    "XS-CASSCF": 2.0872
   }
 ]

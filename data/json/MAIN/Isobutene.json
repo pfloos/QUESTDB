@@ -112,6 +112,15 @@
     "CASPT3": 4.58,
     "CASPT3 (No IPEA)": 4.53,
     "SC-NEVPT2": 4.61,
-    "PC-NEVPT2": 4.61
+    "PC-NEVPT2": 4.61,
+    "CASSCF [Col]": 4.3493,
+    "MRCI+DV1": 4.5958,
+    "MRCI+DV2": 4.6049,
+    "MRCI+DV3": 4.6188,
+    "MRCI+P": 4.6105,
+    "MRCI": 4.5531,
+    "XS-CASCI": 4.3493,
+    "XS-CASSCF-05": 4.3493,
+    "XS-CASSCF": 4.3493
   }
 ]

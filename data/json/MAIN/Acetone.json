@@ -36,7 +36,18 @@
     "CASPT3": 4.57,
     "CASPT3 (No IPEA)": 4.55,
     "SC-NEVPT2": 4.5,
-    "PC-NEVPT2": 4.48
+    "PC-NEVPT2": 4.48,
+    "CASSCF [Col]": 4.1592,
+    "MRCI+DV1": 4.4936,
+    "MRCI+DV2": 4.5097,
+    "MRCI+DV3": 4.5346,
+    "MRCI+P": 4.5205,
+    "MRCI": 4.4262,
+    "XS-CASCI": 4.2534,
+    "XS-CASSCF-05": 4.217,
+    "XS-CASSCF": 4.1659,
+    "Om": 0.866,
+    "QTa": 0.037
   },
   {
     "Molecule": "Acetone",
@@ -230,7 +241,16 @@
     "CASPT3": 4.27,
     "CASPT3 (No IPEA)": 4.24,
     "SC-NEVPT2": 4.22,
-    "PC-NEVPT2": 4.2
+    "PC-NEVPT2": 4.2,
+    "CASSCF [Col]": 3.826,
+    "MRCI+DV1": 4.1526,
+    "MRCI+DV2": 4.1707,
+    "MRCI+DV3": 4.1988,
+    "MRCI+P": 4.1832,
+    "MRCI": 4.0811,
+    "XS-CASCI": 4.1107,
+    "XS-CASSCF-05": 3.925,
+    "XS-CASSCF": 4.0338
   },
   {
     "Molecule": "Acetone",
@@ -265,6 +285,15 @@
     "CASPT3": 6.26,
     "CASPT3 (No IPEA)": 6.22,
     "SC-NEVPT2": 6.28,
-    "PC-NEVPT2": 6.28
+    "PC-NEVPT2": 6.28,
+    "CASSCF [Col]": 5.5166,
+    "MRCI+DV1": 6.3054,
+    "MRCI+DV2": 6.3511,
+    "MRCI+DV3": 6.4219,
+    "MRCI+P": 6.3824,
+    "MRCI": 6.1226,
+    "XS-CASCI": 5.8013,
+    "XS-CASSCF-05": 5.6209,
+    "XS-CASSCF": 5.734
   }
 ]

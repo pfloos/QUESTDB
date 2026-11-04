@@ -36,7 +36,18 @@
     "CASPT3": 6.46,
     "CASPT3 (No IPEA)": 6.39,
     "SC-NEVPT2": 6.37,
-    "PC-NEVPT2": 6.32
+    "PC-NEVPT2": 6.32,
+    "CASSCF [Col]": 6.9963,
+    "MRCI+DV1": 6.5281,
+    "MRCI+DV2": 6.5007,
+    "MRCI+DV3": 6.4609,
+    "MRCI+P": 6.4916,
+    "MRCI": 6.6479,
+    "XS-CASCI": 7.5597,
+    "XS-CASSCF-05": 7.6016,
+    "XS-CASSCF": 7.5288,
+    "Om": 0.845,
+    "QTa": 0.0
   },
   {
     "Molecule": "Cyanogen",
@@ -75,7 +86,18 @@
     "CASPT3": 6.75,
     "CASPT3 (No IPEA)": 6.68,
     "SC-NEVPT2": 6.71,
-    "PC-NEVPT2": 6.66
+    "PC-NEVPT2": 6.66,
+    "CASSCF [Col]": 7.499,
+    "MRCI+DV1": 6.7835,
+    "MRCI+DV2": 6.7388,
+    "MRCI+DV3": 6.6731,
+    "MRCI+P": 6.7228,
+    "MRCI": 6.9718,
+    "XS-CASCI": 7.1569,
+    "XS-CASSCF-05": 8.335,
+    "XS-CASSCF": 7.1195,
+    "Om": 0.838,
+    "QTa": 0.0
   },
   {
     "Molecule": "Cyanogen",
@@ -111,7 +133,16 @@
     "CASPT3": 4.95,
     "CASPT3 (No IPEA)": 4.89,
     "SC-NEVPT2": 4.92,
-    "PC-NEVPT2": 4.88
+    "PC-NEVPT2": 4.88,
+    "CASSCF [Col]": 5.1137,
+    "MRCI+DV1": 4.9439,
+    "MRCI+DV2": 4.9313,
+    "MRCI+DV3": 4.913,
+    "MRCI+P": 4.9268,
+    "MRCI": 4.996,
+    "XS-CASCI": 5.1237,
+    "XS-CASSCF-05": 5.1103,
+    "XS-CASSCF": 5.1209
   },
   {
     "Molecule": "Cyanogen",

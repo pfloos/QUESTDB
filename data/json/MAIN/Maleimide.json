@@ -28,7 +28,18 @@
     "SOS-ADC(2) [QC]": 3.785,
     "ADC(2)": 3.539,
     "ADC(3)": 4.069,
-    "ADC(2.5)": 3.8040000000000003
+    "ADC(2.5)": 3.8040000000000003,
+    "CASSCF [Col]": 4.4091,
+    "MRCI+DV1": 4.0947,
+    "MRCI+DV2": 4.0574,
+    "MRCI+DV3": 3.9872,
+    "MRCI+P": 4.0104,
+    "MRCI": 4.1925,
+    "XS-CASCI": 4.9219,
+    "XS-CASSCF-05": 5.0441,
+    "XS-CASSCF": 4.9993,
+    "Om": 0.846,
+    "QTa": 0.0
   },
   {
     "Molecule": "Maleimide",
@@ -58,7 +69,18 @@
     "SOS-ADC(2) [QC]": 4.495,
     "ADC(2)": 4.326,
     "ADC(3)": 4.763,
-    "ADC(2.5)": 4.544499999999999
+    "ADC(2.5)": 4.544499999999999,
+    "CASSCF [Col]": 5.2265,
+    "MRCI+DV1": 4.8913,
+    "MRCI+DV2": 4.8479,
+    "MRCI+DV3": 4.7654,
+    "MRCI+P": 4.7924,
+    "MRCI": 5.0019,
+    "XS-CASCI": 5.892,
+    "XS-CASSCF-05": 5.9956,
+    "XS-CASSCF": 5.941,
+    "Om": 0.81,
+    "QTa": 0.0
   },
   {
     "Molecule": "Maleimide",
@@ -89,7 +111,18 @@
     "SOS-ADC(2) [QC]": 4.951,
     "ADC(2)": 4.819,
     "ADC(3)": 4.881,
-    "ADC(2.5)": 4.85
+    "ADC(2.5)": 4.85,
+    "CASSCF [Col]": 6.5795,
+    "MRCI+DV1": 5.2659,
+    "MRCI+DV2": 5.0726,
+    "MRCI+DV3": 4.6955,
+    "MRCI+P": 4.8176,
+    "MRCI": 5.7293,
+    "XS-CASCI": 5.9274,
+    "XS-CASSCF-05": 6.1543,
+    "XS-CASSCF": 5.8611,
+    "Om": 0.913,
+    "QTa": 0.172
   },
   {
     "Molecule": "Maleimide",
@@ -120,7 +153,18 @@
     "SOS-ADC(2) [QC]": 6.185,
     "ADC(2)": 6.105,
     "ADC(3)": 6.203,
-    "ADC(2.5)": 6.154
+    "ADC(2.5)": 6.154,
+    "CASSCF [Col]": 7.606,
+    "MRCI+DV1": 6.8224,
+    "MRCI+DV2": 6.6496,
+    "MRCI+DV3": 6.3118,
+    "MRCI+P": 6.4207,
+    "MRCI": 7.2294,
+    "XS-CASCI": 6.7811,
+    "XS-CASSCF-05": 7.4918,
+    "XS-CASSCF": 6.6049,
+    "Om": 0.902,
+    "QTa": 0.261
   },
   {
     "Molecule": "Maleimide",
@@ -176,7 +220,16 @@
     "SOS-ADC(2) [QC]": 3.609,
     "ADC(2)": 3.305,
     "ADC(3)": 3.456,
-    "ADC(2.5)": 3.3805
+    "ADC(2.5)": 3.3805,
+    "CASSCF [Col]": 4.2191,
+    "MRCI+DV1": 3.8856,
+    "MRCI+DV2": 3.8434,
+    "MRCI+DV3": 3.7636,
+    "MRCI+P": 3.7898,
+    "MRCI": 3.9946,
+    "XS-CASCI": 4.2206,
+    "XS-CASSCF-05": 4.4001,
+    "XS-CASSCF": 4.4134
   },
   {
     "Molecule": "Maleimide",
@@ -202,7 +255,16 @@
     "SOS-ADC(2) [QC]": 3.8,
     "ADC(2)": 3.846,
     "ADC(3)": 3.792,
-    "ADC(2.5)": 3.819
+    "ADC(2.5)": 3.819,
+    "CASSCF [Col]": 4.7644,
+    "MRCI+DV1": 4.1821,
+    "MRCI+DV2": 4.0713,
+    "MRCI+DV3": 3.8548,
+    "MRCI+P": 3.9242,
+    "MRCI": 4.4366,
+    "XS-CASCI": 4.7659,
+    "XS-CASSCF-05": 4.5906,
+    "XS-CASSCF": 4.5574
   },
   {
     "Molecule": "Maleimide",
@@ -228,7 +290,16 @@
     "SOS-ADC(2) [QC]": 4.381,
     "ADC(2)": 4.23,
     "ADC(3)": 4.193,
-    "ADC(2.5)": 4.2115
+    "ADC(2.5)": 4.2115,
+    "CASSCF [Col]": 5.2846,
+    "MRCI+DV1": 4.5034,
+    "MRCI+DV2": 4.3931,
+    "MRCI+DV3": 4.1801,
+    "MRCI+P": 4.2492,
+    "MRCI": 4.7716,
+    "XS-CASCI": 5.286,
+    "XS-CASSCF-05": 5.4036,
+    "XS-CASSCF": 5.3913
   },
   {
     "Molecule": "Maleimide",
@@ -254,6 +325,15 @@
     "SOS-ADC(2) [QC]": 4.316,
     "ADC(2)": 4.084,
     "ADC(3)": 4.499,
-    "ADC(2.5)": 4.291499999999999
+    "ADC(2.5)": 4.291499999999999,
+    "CASSCF [Col]": 5.1409,
+    "MRCI+DV1": 4.7568,
+    "MRCI+DV2": 4.7028,
+    "MRCI+DV3": 4.5999,
+    "MRCI+P": 4.6334,
+    "MRCI": 4.8915,
+    "XS-CASCI": 5.1423,
+    "XS-CASSCF-05": 5.3076,
+    "XS-CASSCF": 5.3065
   }
 ]

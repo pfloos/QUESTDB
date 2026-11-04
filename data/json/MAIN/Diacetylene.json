@@ -36,7 +36,18 @@
     "CASPT3": 5.45,
     "CASPT3 (No IPEA)": 5.36,
     "SC-NEVPT2": 5.39,
-    "PC-NEVPT2": 5.33
+    "PC-NEVPT2": 5.33,
+    "CASSCF [Col]": 5.9598,
+    "MRCI+DV1": 5.4268,
+    "MRCI+DV2": 5.4192,
+    "MRCI+DV3": 5.4104,
+    "MRCI+P": 5.4374,
+    "MRCI": 5.5041,
+    "XS-CASCI": 6.3763,
+    "XS-CASSCF-05": 6.4284,
+    "XS-CASSCF": 6.3651,
+    "Om": 0.865,
+    "QTa": 0.0
   },
   {
     "Molecule": "Diacetylene",
@@ -75,7 +86,18 @@
     "CASPT3": 5.72,
     "CASPT3 (No IPEA)": 5.63,
     "SC-NEVPT2": 5.67,
-    "PC-NEVPT2": 5.61
+    "PC-NEVPT2": 5.61,
+    "CASSCF [Col]": 6.3859,
+    "MRCI+DV1": 5.6386,
+    "MRCI+DV2": 5.6278,
+    "MRCI+DV3": 5.6148,
+    "MRCI+P": 5.6525,
+    "MRCI": 5.7448,
+    "XS-CASCI": 6.0687,
+    "XS-CASSCF-05": 7.0802,
+    "XS-CASSCF": 6.0555,
+    "Om": 0.86,
+    "QTa": 0.0
   },
   {
     "Molecule": "Diacetylene",
@@ -110,7 +132,16 @@
     "CASPT3": 4.17,
     "CASPT3 (No IPEA)": 4.09,
     "SC-NEVPT2": 4.13,
-    "PC-NEVPT2": 4.08
+    "PC-NEVPT2": 4.08,
+    "CASSCF [Col]": 4.3485,
+    "MRCI+DV1": 4.3136,
+    "MRCI+DV2": 4.3121,
+    "MRCI+DV3": 4.3104,
+    "MRCI+P": 4.3157,
+    "MRCI": 4.329,
+    "XS-CASCI": 4.36,
+    "XS-CASSCF-05": 4.346,
+    "XS-CASSCF": 4.3576
   },
   {
     "Molecule": "Diacetylene",
@@ -146,6 +177,15 @@
     "CASPT3": 4.86,
     "CASPT3 (No IPEA)": 4.78,
     "SC-NEVPT2": 4.82,
-    "PC-NEVPT2": 4.78
+    "PC-NEVPT2": 4.78,
+    "CASSCF [Col]": 5.1816,
+    "MRCI+DV1": 4.902,
+    "MRCI+DV2": 4.898,
+    "MRCI+DV3": 4.8933,
+    "MRCI+P": 4.9083,
+    "MRCI": 4.9458,
+    "XS-CASCI": 5.1931,
+    "XS-CASSCF-05": 5.1729,
+    "XS-CASSCF": 5.1878
   }
 ]

@@ -263,7 +263,16 @@
     "CASPT3": 4.73,
     "CASPT3 (No IPEA)": 4.68,
     "SC-NEVPT2": 4.88,
-    "PC-NEVPT2": 4.86
+    "PC-NEVPT2": 4.86,
+    "CASSCF [Col]": 4.5297,
+    "MRCI+DV1": 4.669,
+    "MRCI+DV2": 4.6688,
+    "MRCI+DV3": 4.6687,
+    "MRCI+P": 4.6687,
+    "MRCI": 4.6684,
+    "XS-CASCI": 4.547,
+    "XS-CASSCF-05": 4.5365,
+    "XS-CASSCF": 4.5454
   },
   {
     "Molecule": "Imidazole",
@@ -333,7 +342,16 @@
     "CASPT3": 5.8,
     "CASPT3 (No IPEA)": 5.72,
     "SC-NEVPT2": 5.96,
-    "PC-NEVPT2": 5.91
+    "PC-NEVPT2": 5.91,
+    "CASSCF [Col]": 5.8078,
+    "MRCI+DV1": 5.7159,
+    "MRCI+DV2": 5.7121,
+    "MRCI+DV3": 5.7076,
+    "MRCI+P": 5.7264,
+    "MRCI": 5.7578,
+    "XS-CASCI": 5.8252,
+    "XS-CASSCF-05": 5.8151,
+    "XS-CASSCF": 5.825
   },
   {
     "Molecule": "Imidazole",
