@@ -1,44 +1,44 @@
 {
 	"sCI":{
 		"Energy":{
-			"aug-cc-pCVDZ":294.799,
-			"aug-cc-pCVTZ":293.402,
-			"aug-cc-pCVQZ":293.299
+			"aug-cc-pCVDZ":294.80,
+			"aug-cc-pCVTZ":293.40,
+			"aug-cc-pCVQZ":293.30
 		},
 		"Incertitudes":{
-			"aug-cc-pCVDZ":0.0002,
-			"aug-cc-pCVTZ":0.001,
-			"aug-cc-pCVQZ":0.002
+			"aug-cc-pCVDZ":0,
+			"aug-cc-pCVTZ":0,
+			"aug-cc-pCVQZ":0
 		}
 	},
 	"Delta ROHF":{
-		"aug-cc-pCVTZ":2.9375179363111164e2
+		"aug-cc-pCVTZ":293.75
 	},
 	"Delta UHF":{
-		"aug-cc-pCVTZ":2.9288e2
+		"aug-cc-pCVTZ":292.88
 	},
 	"Delta UMP2":{
-		"aug-cc-pCVTZ":2.9499e2
+		"aug-cc-pCVTZ":294.99
 	},
 	"CC2":{
-		"aug-cc-pCVTZ":2.942209719796203e2
+		"aug-cc-pCVTZ":294.22
 	},
 	"CCSD":{
-		"aug-cc-pCVTZ":2.946293888428227e2
+		"aug-cc-pCVTZ":294.63
 	},
 	"CC3":{
-		"aug-cc-pCVTZ":2.936793055500393e2
+		"aug-cc-pCVTZ":293.68
 	},
 	"CCSDT":{
-		"aug-cc-pCVTZ":2.935486350955517e2
+		"aug-cc-pCVTZ":293.55
 	},
 	"CC4":{
-		"aug-cc-pCVTZ":2.9341507154528574e2
+		"aug-cc-pCVTZ":293.42
 	},
 	"CCSDTQ":{
-		"aug-cc-pCVTZ":2.9343497110150344e2
+		"aug-cc-pCVTZ":293.43
 	},
 	"GW":{
-		"aug-cc-pCVTZ":2.9354e2
+		"aug-cc-pCVTZ":293.54
 	}
 }
