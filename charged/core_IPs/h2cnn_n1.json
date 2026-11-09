@@ -38,7 +38,16 @@
 	"CCSDTQ":{
 		"aug-cc-pCVTZ":null
 	},
-	"GW":{
+	"G0W0@PBEh":{
 		"aug-cc-pCVTZ":409.87
+	},
+	"G0W0@HF":{
+		"aug-cc-pCVTZ":416.927306
+	},
+	"evGW@HF":{
+		"aug-cc-pCVTZ":414.430997
+	},
+	"qsGW":{
+		"aug-cc-pCVTZ":413.003978
 	}
 }

@@ -34,6 +34,17 @@ What to expect in `charged/core_IPs/`:
 - Method-specific results from high-level approaches (ΔSCF, EOM-CC variants, Green's function and related many-body approaches) and notes on convergence/uncertainty
 - Geometries and computational details necessary for reproducibility
 
+The core-IP JSON files use `G0W0@PBEh` for the published one-shot GW values
+(previously labeled `GW`). The QuAcK core-IP benchmark adds `G0W0@HF`,
+`evGW@HF`, and `qsGW` for the same 84 targets. All values are in eV.
+The new calculations use an RHF starting point, aug-cc-pCVTZ for non-hydrogen
+atoms, aug-cc-pVTZ for hydrogen, full RPA screening, and no frozen core.
+The two self-consistent methods use SRG with flow parameter `s = 500`.
+
+For equivalent atoms, the tabulated value follows the benchmark's selected core
+orbital. The orbital mapping flagged N₂, F₂, C₂H₂, C₂H₄, CO₂, N₂CH₂, P₂, and Cl₂
+because equivalent sites could not be distinguished by their orbital populations.
+
 > 🧭 This dataset complements the valence IPs and DIPs sets and is especially useful to evaluate methods for core-level spectroscopy and to test basis-set and relativistic effects.
 
 ---
