@@ -1,53 +1,73 @@
 {
-	"sCI":{
-		"Energy":{
-			"aug-cc-pCVDZ":410.04,
-			"aug-cc-pCVTZ":408.44,
-			"aug-cc-pCVQZ":408.34
+	"sCI": {
+		"Energy": {
+			"aug-cc-pCVDZ": 410.04,
+			"aug-cc-pCVTZ": 408.44,
+			"aug-cc-pCVQZ": 408.34
 		},
-		"Incertitudes":{
-			"aug-cc-pCVDZ":0,
-			"aug-cc-pCVTZ":0,
-			"aug-cc-pCVQZ":0
+		"Incertitudes": {
+			"aug-cc-pCVDZ": 0,
+			"aug-cc-pCVTZ": 0,
+			"aug-cc-pCVQZ": 0
 		}
 	},
-	"Delta ROHF":{
-		"aug-cc-pCVTZ":408.56
+	"Delta ROHF": {
+		"aug-cc-pCVTZ": 408.56
 	},
-	"Delta UHF":{
-		"aug-cc-pCVTZ":408.03
+	"Delta UHF": {
+		"aug-cc-pCVTZ": 408.03
 	},
-	"Delta UMP2":{
-		"aug-cc-pCVTZ":409.29
+	"Delta UMP2": {
+		"aug-cc-pCVTZ": 409.29
 	},
-	"CC2":{
-		"aug-cc-pCVTZ":408.74
+	"CC2": {
+		"aug-cc-pCVTZ": 408.74
 	},
-	"CCSD":{
-		"aug-cc-pCVTZ":410.13
+	"CCSD": {
+		"aug-cc-pCVTZ": 410.13
 	},
-	"CC3":{
-		"aug-cc-pCVTZ":408.34
+	"CC3": {
+		"aug-cc-pCVTZ": 408.34
 	},
-	"CCSDT":{
-		"aug-cc-pCVTZ":408.43
+	"CCSDT": {
+		"aug-cc-pCVTZ": 408.43
 	},
-	"CC4":{
-		"aug-cc-pCVTZ":408.48
+	"CC4": {
+		"aug-cc-pCVTZ": 408.48
 	},
-	"CCSDTQ":{
-		"aug-cc-pCVTZ":408.49
+	"CCSDTQ": {
+		"aug-cc-pCVTZ": 408.49
 	},
-	"G0W0@PBEh":{
-		"aug-cc-pCVTZ":408.62
+	"G0W0@PBEh": {
+		"Energy": {
+			"aug-cc-pCVTZ": 408.62
+		},
+		"Z": {
+			"aug-cc-pCVTZ": 0.68
+		}
 	},
-	"G0W0@HF":{
-		"aug-cc-pCVTZ":415.29
+	"G0W0@HF": {
+		"Energy": {
+			"aug-cc-pCVTZ": 415.29
+		},
+		"Z": {
+			"aug-cc-pCVTZ": 0.876185
+		}
 	},
-	"evGW@HF":{
-		"aug-cc-pCVTZ":413.06
+	"evGW@HF": {
+		"Energy": {
+			"aug-cc-pCVTZ": 413.06
+		},
+		"Z": {
+			"aug-cc-pCVTZ": 0.813947
+		}
 	},
-	"qsGW":{
-		"aug-cc-pCVTZ":411.92
+	"qsGW": {
+		"Energy": {
+			"aug-cc-pCVTZ": 411.92
+		},
+		"Z": {
+			"aug-cc-pCVTZ": 0.805442
+		}
 	}
 }
