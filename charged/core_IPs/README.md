@@ -4,9 +4,9 @@
 
 ## GW quasiparticle energies and renormalization factors
 
-For each of the 84 CVS core-ionization targets, the `G0W0@PBEh`,
-`G0W0@HF`, `evGW@HF`, and `qsGW` entries use the same `Energy`/`Z`
-representation used in `charged/valence_IPs`:
+For each of the 84 CVS core-ionization targets, `G0W0@PBEh`,
+`G0W0@HF`, and `evGW@HF` use the same `Energy`/`Z` representation used
+in `charged/valence_IPs`, for example:
 
 ```json
 "G0W0@HF": {
@@ -23,17 +23,19 @@ SI: https://antoine-marie.github.io/manuscript/15_Quest_coreIP_SI.pdf .
 PBEh `Z` values have the two-decimal precision reported in the SI. Its
 published IP energies and the corrected CH3NC site labels are preserved.
 
-The `G0W0@HF` and `evGW@HF` residues and `qsGW` self-energy derivative
-**diagnostics** come from the core-IP QuAcK calculations used in the
-2026 benchmark (84 matching states, aug-cc-pCVTZ). For qsGW, `Z` is the
-self-energy derivative evaluated for the quasiparticle solution, not an
-independent spectral weight of the static qsGW effective Hamiltonian.
-These methods' calculated IP energies are preserved as previously stored.
+The `G0W0@HF` and `evGW@HF` residues come from the core-IP QuAcK
+calculations used in the 2026 benchmark (84 matching states, aug-cc-pCVTZ).
+The qsGW calculations also produced self-energy derivative diagnostics,
+but these are not residues of the auxiliary static qsGW Green's function.
+Therefore, qsGW `Z` values are **not reported in the per-target JSON files**;
+the separately labeled `qsGW_Z_diagnostic` column is retained in
+`gw_z_provenance.csv` for reproducibility. The qsGW IPs are unchanged.
 The full computational settings and orbital-assignment caveats are given
 in `charged/README.md`. In particular, the published PBEh starting point
 uses 45% exchange for second-row and 70% for third-row core IPs.
 
 The `gw_z_provenance.csv` file in this directory provides the 84 source
 records, the higher-precision calculated GW energies, site-mapping
-metadata, and the four residues. The update script and its source table
+metadata, three GW residues, and the separate qsGW self-energy derivative
+diagnostic. The update script and its source table
 are also available in the corresponding update package.

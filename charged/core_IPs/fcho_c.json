@@ -65,9 +65,6 @@
 	"qsGW": {
 		"Energy": {
 			"aug-cc-pCVTZ": 300.35
-		},
-		"Z": {
-			"aug-cc-pCVTZ": 0.843197
 		}
 	}
 }
