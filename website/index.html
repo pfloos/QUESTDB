@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore theoretical best estimates, method results, and ionization benchmarks in the QUEST database.">
+  <title>QUESTDB | Electronic-structure benchmarks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="views.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#explore">Skip to data explorer</a>
+  <header class="masthead">
+    <div class="container nav">
+      <a href="./" class="brand"><span aria-hidden="true">Q</span> QUESTDB</a>
+      <nav aria-label="Main navigation">
+        <a href="#explore" data-view>Explore</a>
+        <a href="#benchmark" data-view>Benchmark</a>
+        <a href="#geometries" data-view>Geometries</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#cite">Cite</a>
+        <a href="https://github.com/pfloos/QUESTDB">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="title">The QUEST database</h1>
+          <p class="lede">Reference energies for molecular excitations and ionizations. Browse theoretical best estimates, compare electronic-structure methods, and export the data behind your benchmark.</p>
+          <div class="actions">
+            <a class="button primary" href="#explore">Explore the data <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="#benchmark">Compare methods</a>
+          </div>
+          <div class="snapshot" id="snapshot">Loading dataset revision…</div>
+        </div>
+        <figure class="art">
+          <img src="quest-art.jpg" alt="Illustration from the QUESTDB reference paper" fetchpriority="high">
+          <figcaption>Artwork by Béatrice Lejeune</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="container explorer" id="explore" data-panel aria-labelledby="explore-title">
+      <div class="section-head">
+        <div>
+          <h2 id="explore-title">Explore the benchmarks</h2>
+          <p>Choose a collection, then select a row to see the original values and provenance.</p>
+        </div>
+        <button id="export" type="button" disabled>Export filtered CSV</button>
+      </div>
+      <div class="filters">
+        <label>Collection<select id="collection" disabled></select></label>
+        <label>Molecule or state<input id="query" type="search" placeholder="e.g. water or π" disabled></label>
+        <label id="method-label"><span id="method-title">Compare method</span><select id="method" disabled></select></label>
+        <label id="facet-label"><span id="facet-title">Character</span><select id="facet" disabled></select></label>
+        <label class="check" id="safe-label"><input id="safe" type="checkbox" disabled> Safe references only</label>
+      </div>
+      <p class="status" id="status" role="status">Loading data…</p>
+      <p class="error" id="error" role="alert" hidden></p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Benchmark results">
+        <table>
+          <thead id="head"></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <button id="prev" type="button" disabled>Previous</button>
+        <span id="page" aria-live="polite"></span>
+        <button id="next" type="button" disabled>Next</button>
+      </div>
+      <noscript>Enable JavaScript to use the explorer, or download the source data below.</noscript>
+    </section>
+    <section class="container explorer" id="benchmark" data-panel aria-labelledby="bench-title" hidden>
+      <div class="section-head">
+        <div><h2 id="bench-title">Benchmark methods</h2>
+        <p>Compare selected methods on their shared states. Errors are calculated minus reference, in eV.</p></div>
+        <button id="bench-export" type="button" disabled>Export matched CSV</button>
+      </div>
+      <div class="filters">
+        <label>Collection<select id="bench-collection"></select></label>
+        <label id="bench-reference-label">Reference<select id="bench-reference"></select></label>
+        <label id="bench-spin-label">Spin multiplicity<select id="bench-spin"></select></label>
+        <label id="bench-character-label">Character<select id="bench-character"></select></label>
+        <label class="check" id="bench-safe-label"><input id="bench-safe" type="checkbox"> Safe references only</label>
+      </div>
+      <fieldset id="bench-methods"><legend>Methods</legend><div id="bench-method-list"></div></fieldset>
+      <p class="status" id="bench-status" role="status">Loading benchmark…</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Benchmark statistics">
+        <table>
+          <thead><tr><th scope="col">Method</th><th scope="col">Coverage</th><th scope="col">Matched</th><th scope="col">Bias (eV)</th><th scope="col">MAE (eV)</th><th scope="col">RMSE (eV)</th><th scope="col">Median |error| (eV)</th></tr></thead>
+          <tbody id="bench-stats"></tbody>
+        </table>
+      </div>
+      <div class="chart-controls">
+        <label>Plot<select id="bench-plot"><option value="errors">Signed errors</option><option value="parity">Calculated vs reference</option></select></label>
+        <label>Inspect a state<select id="bench-inspect"><option value="">Select a state</option></select></label>
+      </div>
+      <figure id="bench-figure" hidden>
+        <canvas id="bench-chart" aria-label="Benchmark plot. Use the state selector to inspect individual points."></canvas>
+        <figcaption id="bench-caption"></figcaption>
+      </figure>
+    </section>
+    <section class="container explorer" id="geometries" data-panel aria-labelledby="geometry-title" hidden>
+      <div class="section-head"><div><h2 id="geometry-title">Molecular geometries</h2>
+        <p>Browse the structures bundled with QUESTDB. Download the original XYZ or rotate a preview.</p></div></div>
+      <div class="filters">
+        <label>Search geometries<input id="geometry-query" type="search" placeholder="e.g. water"></label>
+        <label>Collection<select id="geometry-group"><option value="">All collections</option><option>Neutral</option><option>Valence IP</option><option>Core IP</option></select></label>
+      </div>
+      <p class="status" id="geometry-count" role="status"></p>
+      <ul id="geometry-list" class="geometry-list"></ul>
+    </section>
+    <section class="resources" id="downloads">
+      <div class="container resource-grid">
+        <div>
+          <h2>Download the source data</h2>
+          <p>Use the original JSON, spreadsheets, and geometries for reproducible benchmarks. The snapshot link above identifies the exact revision used by the explorer.</p>
+          <ul class="links" id="downloads-list">
+            <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/xlsx" data-source="data/xlsx">Spreadsheets</a></li>
+            <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/json" data-source="data/json">Neutral JSON</a></li>
+            <li><a href="https://github.com/pfloos/QUESTDB/tree/main/charged" data-source="charged">Charged JSON</a></li>
+            <li><a href="https://github.com/pfloos/QUESTDB/tree/main/geometries" data-source="geometries">Geometries</a></li>
+            <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/cas" data-source="data/cas">Active-space data</a></li>
+            <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/diet" data-source="data/diet">Diet subsets</a></li>
+          </ul>
+        </div>
+        <div id="cite">
+          <h2>Cite QUESTDB</h2>
+          <p>P.-F. Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin, <cite>The QUEST Database of Highly Accurate Excitation Energies</cite>, J. Chem. Theory Comput. 21, 8010 (2025).</p>
+          <ul class="links">
+            <li><a href="https://doi.org/10.1021/acs.jctc.5c00975">Reference paper</a></li>
+            <li><a href="https://doi.org/10.5281/zenodo.15671384">Zenodo record</a></li>
+            <li><a href="https://github.com/pfloos/QUESTDB#-main-references">Collection references</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer">
+    <span>QUESTDB · Electronic-structure benchmarks</span>
+    <a href="LICENSE">CC BY-SA 4.0</a>
+  </footer>
+  <dialog id="detail">
+    <div class="dialog-head">
+      <h2 id="detail-title"></h2>
+      <form method="dialog"><button type="submit">Close</button></form>
+    </div>
+    <p><a id="detail-source">View source JSON</a></p>
+    <div id="detail-geometries" tabindex="-1"></div>
+    <dl id="detail-fields"></dl>
+  </dialog>
+  <dialog id="structure" aria-labelledby="structure-title">
+    <div class="dialog-head"><h2 id="structure-title"></h2>
+      <form method="dialog"><button type="submit">Close</button></form>
+    </div>
+    <p><a id="structure-download" download>Download XYZ</a> · <a id="structure-source">View source</a></p>
+    <p id="structure-status" role="status">Loading structure…</p>
+    <canvas id="structure-canvas" tabindex="0" aria-label="Rotatable molecular structure. Drag or use the arrow keys to rotate."></canvas>
+  </dialog>
+</body>
+</html>
