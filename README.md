@@ -115,7 +115,7 @@ The QUESTDB project is maintained by a collaboration between:
 - [Mickael Véril](https://mveril.github.io) (Toulouse)
 - [Yann Damour](https://ydrnan.github.io/damour) (Toulouse)
 - [Antoine Marie](https://antoine-marie.github.io) (Toulouse)
-- [Loris Burth](https://github.com/lburth)
+- [Loris Burth](https://github.com/lburth) (Toulouse)
 
 ---
 
