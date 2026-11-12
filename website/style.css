@@ -72,6 +72,28 @@ tbody tr:hover td { background: #f6f7fb; }
 .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .links { display: flex; flex-wrap: wrap; gap: .3rem 1rem; padding: 0; margin: .8rem 0 0; list-style: none; }
 .footer { justify-content: space-between; flex-wrap: wrap; gap: .5rem; min-height: 70px; font-size: .85rem; }
+.footer-links { margin: 0; }
+.project-section { padding-block: clamp(2rem, 5vw, 4rem); }
+#contributors { border-top: 1px solid var(--border); }
+.project-section h3 { margin: 0 0 .65rem; font-size: 1rem; }
+.reference-groups, .contributors-list, .support-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 1.4rem;
+    margin-top: 1.4rem;
+}
+.paper-list, .contributors-list, .support-list { list-style: none; padding: 0; }
+.paper-list { margin: 0; }
+.paper-list li { padding-block: .8rem; border-top: 1px solid var(--border); }
+.paper-list a, .contributors-list a { font-weight: 650; }
+.paper-list p, .contributors-list span, .support-list p { color: var(--muted); font-size: .88rem; }
+.paper-list p { margin-top: .25rem; }
+.contributors-list { gap: .85rem 1.4rem; margin-bottom: 0; }
+.contributors-list span { display: block; }
+.project-support { background: var(--tint); border-block: 1px solid var(--border); }
+.support-list { margin-bottom: 0; }
+.support-list li { padding: 1rem; background: var(--white); border: 1px solid var(--border); border-radius: .5rem; }
+.support-list img { display: block; max-width: 120px; height: 48px; object-fit: contain; margin-bottom: .75rem; }
 dialog { width: min(660px, calc(100% - 2rem)); max-height: 85vh; border: 1px solid var(--border); border-radius: .6rem; padding: 1.2rem; color: var(--ink); }
 dialog::backdrop { background: #192646b0; }
 .dialog-head { display: flex; justify-content: space-between; align-items: start; gap: 1rem; }

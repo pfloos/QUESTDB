@@ -205,6 +205,8 @@ def main():
     for name in ("index.html", "style.css", "app.js", "views.js"):
         shutil.copyfile(ROOT / "website" / name, out / name)
     shutil.copyfile(ROOT / "logo/TOC.jpg", out / "quest-art.jpg")
+    shutil.copyfile(ROOT / "logo/ERC.png", out / "erc.png")
+    shutil.copyfile(ROOT / "logo/ANR.jpg", out / "anr.jpg")
     shutil.copyfile(ROOT / "LICENSE", out / "LICENSE")
     revision, date = subprocess.check_output(
         ["git", "show", "-s", "--format=%H%n%cI", "HEAD"], cwd=ROOT, text=True
