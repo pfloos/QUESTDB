@@ -15,9 +15,9 @@ result, the source JSON URL, and the source commit.
 
 The five neutral collections retain the original metadata and computed
 energies. Neutral method errors use the reported AVTZ reference for the
-same row. In Benchmark, AVQZ is an optional reference for rows that report it. This changes the reference, while the method energies remain as recorded in the source. Core benchmarks match method values to sCI within the same core-site file, basis, and root. All summary metrics use the intersection of states for the selected methods.
+same row. In Benchmark, AVQZ is an optional reference for rows that report it. This changes the reference, while the method energies remain as recorded in the source. Core and valence benchmarks compare method values to sCI within the same source file, transition type, basis, and position in the source arrays. Valence IPs and satellites can be benchmarked separately. All summary metrics and plots use the intersection of states for the selected methods. The violin plot shows a smoothed density of signed errors and overlays the individual states.
 
-The Geometries view contains the bundled neutral, valence-IP, and core-IP XYZ files. Downloaded bytes are identical to the source. Record-level links show matching labels and possible geometry variants.
+The Geometries view contains the bundled neutral, valence-IP, and core-IP XYZ files. Download individual files, the selected collection, or the full geometry archive. The five neutral subset archives are assembled from molecule labels in the current data, so a geometry can occur in more than one subset. The full archive includes each source XYZ file once and retains the source paths and original bytes.
 
 Charged collections display the source's method, basis, sector,
 and one-based root index. Root indices belong to the individual source
@@ -37,10 +37,6 @@ first deployment if the initial push happened before Pages was enabled.
 Check the published explorer at https://pfloos.github.io/QUESTDB/. The
 snapshot shown on the page should match the intended source commit.
 
-After verifying the new site, the companion retirement patch can be
-applied to `LCPQ/QUESTDB_website`. Commit it to the legacy repository's
-default branch and run **Retire legacy QUEST website** from its Actions
-tab. The retirement workflow checks the replacement before publishing a
-move notice at the legacy URL. The old repository retains its source
-and data history. The legacy Pages source should remain the root of
-`gh-pages` for the retirement workflow.
+The [legacy website](https://lcpq.github.io/QUESTDB_website/) displays a
+move notice. Its source and history are in
+[`LCPQ/QUESTDB_website`](https://github.com/LCPQ/QUESTDB_website).

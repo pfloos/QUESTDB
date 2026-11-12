@@ -4,8 +4,11 @@ import argparse
 import json
 import math
 from pathlib import Path
+import re
 import shutil
 import subprocess
+import unicodedata
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = "https://github.com/pfloos/QUESTDB"
@@ -20,6 +23,76 @@ CHARGED = {
 }
 # This file has no method, molecule, or core-site identification.
 CORE_SUPPLEMENT = "charged/core_IPs/output.json"
+GEOMETRY_GROUPS = {
+    "geometries/xyz": "Neutral",
+    "charged/valence_IPs/geometries": "Valence IP",
+    "charged/core_IPs/geometries": "Core IP",
+}
+# Source labels that differ from the XYZ filenames, including known variants.
+GEOMETRY_ALIASES = {
+    "Carbon dioxyde": "carbon_dioxide",
+    "Criegee Interm.": "Criegee_intermediate",
+    "Napthoquinone": "naphthoquinone",
+    "Nitrodimethylaniline": "nitrodimethylaniniline",
+    "Dimethylaminobenzonitrile": "dimethylaminobenzonitrile_1",
+    "Dimethylaminobenzonitrile (twisted)": "dimethylaminobenzonitrile_2",
+    "Indacene (C2h)": "indacene_1",
+    "Indacene (D2h)": "indacene_2",
+    "Pentalene": "pentalene_1",
+    "Pentalene (D2h)": "pentalene_2",
+    "Phenyl-pyrrole": "phenyl-pyrrole_1",
+    "Phenyl-pyrrole (twisted)": "phenyl-pyrrole_2",
+}
+
+
+def geometry_key(label):
+    return "".join(c for c in unicodedata.normalize("NFKC", label).lower() if c.isalnum())
+
+
+def geometry_assets(out, neutral_molecules):
+    records = []
+    for directory, group in GEOMETRY_GROUPS.items():
+        for path in sorted((ROOT / directory).glob("*.xyz")):
+            source = path.relative_to(ROOT).as_posix()
+            destination = f"xyz/{source}"
+            (out / destination).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(path, out / destination)
+            subsets = []
+            labels = []
+            if group == "Neutral":
+                stem = geometry_key(path.stem)
+                base = geometry_key(re.sub(r"_\d+$", "", path.stem))
+                for subset, molecules in neutral_molecules.items():
+                    matches = [
+                        molecule for molecule in molecules
+                        if (stem == geometry_key(GEOMETRY_ALIASES[molecule])
+                            if molecule in GEOMETRY_ALIASES else geometry_key(molecule) in (stem, base))
+                    ]
+                    if matches:
+                        subsets.append(subset)
+                        labels.extend(matches)
+            records.append({
+                "name": path.stem, "group": group, "source": source, "file": destination,
+                "subsets": subsets, "labels": sorted(set(labels)),
+            })
+
+    groups = {"all": "All geometries", "Neutral": "All neutral sets",
+              **{key: f"{key} · {label}" for key, label in NEUTRAL.items()},
+              "Valence IP": "Valence IP", "Core IP": "Core IP"}
+    downloads = []
+    (out / "downloads").mkdir(exist_ok=True)
+    for group, label in groups.items():
+        members = [record for record in records if group in ("all", record["group"]) or group in record["subsets"]]
+        if not members:
+            continue
+        filename = f"downloads/QUESTDB-geometries-{group.lower().replace(' ', '-')}.zip"
+        with ZipFile(out / filename, "w") as archive:
+            for record in members:
+                entry = ZipInfo(record["source"])
+                archive.writestr(entry, (out / record["file"]).read_bytes(), compress_type=ZIP_DEFLATED)
+        downloads.append({"id": group, "name": label, "count": len(members), "file": filename})
+    write_json(out / "data/geometries.json", records)
+    return records, downloads
 
 
 def read_json(path):
@@ -101,6 +174,7 @@ def main():
         ["git", "show", "-s", "--format=%H%n%cI", "HEAD"], cwd=ROOT, text=True
     ).splitlines()
     collections = []
+    neutral_molecules = {}
     for group, label in (NEUTRAL | CHARGED).items():
         neutral = group in NEUTRAL
         directory = ROOT / ("data/json" if neutral else "charged") / group
@@ -113,29 +187,17 @@ def main():
             raise ValueError(f"{group}: no data found")
         rows.sort(key=lambda row: row["molecule"].casefold())
         write_json(assets / f"{group}.json", rows)
+        if neutral:
+            neutral_molecules[group] = {row["molecule"] for row in rows}
         collections.append({
             "id": group, "name": label, "kind": "neutral" if neutral else "charged",
             "rows": len(rows), "files": len({row["source"] for row in rows}),
         })
-    geometries = []
-    geometry_groups = {
-        "geometries/xyz": "Neutral",
-        "charged/valence_IPs/geometries": "Valence IP",
-        "charged/core_IPs/geometries": "Core IP",
-    }
-    for directory, label in geometry_groups.items():
-        for path in sorted((ROOT / directory).glob("*.xyz")):
-            source = path.relative_to(ROOT).as_posix()
-            destination = f"xyz/{source}"
-            (out / destination).parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(path, out / destination)
-            geometries.append({
-                "name": path.stem, "group": label, "source": source, "file": destination,
-            })
-    write_json(assets / "geometries.json", geometries)
+    geometries, downloads = geometry_assets(out, neutral_molecules)
     write_json(assets / "manifest.json", {
         "repository": REPO, "revision": revision, "date": date, "collections": collections,
         "geometries": len(geometries),
+        "geometryDownloads": downloads,
         "neutralStates": sum(c["rows"] for c in collections if c["kind"] == "neutral"),
     })
     print(f"Built {len(collections)} collections from {revision[:12]} in {out}")

@@ -28,8 +28,10 @@ function navigate() {
 window.addEventListener("hashchange", navigate);
 document.addEventListener("quest-ready", () => {
     get("collection").replaceChildren(...manifest.collections
-        .filter(collection => collection.kind === "neutral" || collection.id === "core_IPs")
+        .filter(collection => collection.kind === "neutral" || ["core_IPs", "valence_IPs"].includes(collection.id))
         .map(collection => option(collection.name, collection.id)));
+    byId("geometry-group").replaceChildren(...manifest.geometryDownloads
+        .map(group => option(group.name, group.id)));
     navigate();
 });
 
@@ -76,8 +78,8 @@ function showGeometryLinks(row, target) {
         const candidates = records.filter(record => {
             if (record.group !== group) return false;
             const stem = record.name.toLowerCase();
-            return normal(stem) === name || (group === "Core IP" && site.startsWith(stem + "_"))
-                || (group === "Neutral" && normal(stem.replace(/_\d+$/, "")) === name);
+            if (group === "Neutral") return record.labels.some(label => normal(label) === name);
+            return normal(stem) === name || (group === "Core IP" && site.startsWith(stem + "_"));
         });
         if (candidates.length) {
             target.replaceChildren(element("p", "Geometries with matching source labels"),
@@ -94,9 +96,23 @@ function showGeometryLinks(row, target) {
 function renderGeometries() {
     const query = normal(byId("geometry-query").value);
     const group = byId("geometry-group").value;
-    const matches = geometryIndex.filter(record => normal(record.name).includes(query)
-        && (!group || record.group === group));
-    byId("geometry-count").textContent = `${matches.length} of ${geometryIndex.length} XYZ files`;
+    const archives = manifest?.geometryDownloads;
+    if (!archives) return;
+    const matches = geometryIndex.filter(record => [record.name, ...record.labels].some(label => normal(label).includes(query))
+        && (group === "all" || record.group === group || record.subsets.includes(group)));
+    const all = archives.find(archive => archive.id === "all");
+    const selected = archives.find(archive => archive.id === group);
+    const allLink = byId("geometry-download-all");
+    const setLink = byId("geometry-download-set");
+    allLink.href = all.file;
+    allLink.textContent = `Download all geometries (ZIP, ${all.count} XYZ)`;
+    setLink.hidden = !selected || selected === all;
+    if (!setLink.hidden) {
+        setLink.href = selected.file;
+        setLink.textContent = `Download ${selected.name} (ZIP, ${selected.count} XYZ)`;
+    }
+    byId("geometry-downloads").hidden = false;
+    byId("geometry-count").textContent = `${matches.length} of ${selected?.count ?? 0} XYZ files`;
     byId("geometry-list").replaceChildren(...matches.map(record => geometryItem(record, "li")));
 }
 
@@ -202,16 +218,50 @@ structureCanvas.addEventListener("keydown", event => {
 byId("geometry-query").addEventListener("input", renderGeometries);
 byId("geometry-group").addEventListener("change", renderGeometries);
 
-function coreStates(data) {
+function chargedStates(data) {
     const states = new Map();
     for (const row of data) {
-        const key = JSON.stringify([row.source, row.basis, row.root]);
+        const key = JSON.stringify([row.source, row.state, row.basis, row.root]);
         if (!states.has(key)) states.set(key, {...row, fields: Object.create(null)});
         const state = states.get(key);
-        if (Object.hasOwn(state.fields, row.method)) throw new Error(`Duplicate core result: ${row.source} / ${row.basis} / ${row.method}`);
+        if (Object.hasOwn(state.fields, row.method)) throw new Error(`Duplicate result: ${row.source} / ${row.state} / ${row.basis} / ${row.method}`);
         state.fields[row.method] = row.energy;
     }
     return [...states.values()];
+}
+
+function benchmarkOptions() {
+    const id = get("collection").value;
+    const charged = id === "core_IPs" || id === "valence_IPs";
+    const valence = id === "valence_IPs";
+    const rows = valence ? benchRows.filter(row => row.state === get("sector").value) : benchRows;
+    const refs = charged ? sorted(rows.filter(row => Number.isFinite(row.fields.sCI)).map(row => row.basis))
+        : ["TBE/AVTZ", ...(rows.some(row => Number.isFinite(row.referenceQZ)) ? ["TBE/AVQZ"] : [])];
+    get("reference").replaceChildren(...refs.map(ref => option(charged ? `sCI / ${ref}` : ref, ref)));
+    const preferredBasis = valence ? "aug-cc-pVTZ" : "aug-cc-pCVTZ";
+    if (charged && refs.includes(preferredBasis)) get("reference").value = preferredBasis;
+    choices(get("spin"), "All multiplicities", sorted(rows.map(row => row.spin)));
+    choices(get("character"), "All characters", sorted(rows.map(row => row.character)));
+    for (const field of ["spin", "character"]) get(`${field}-label`).hidden = get(field).options.length === 1;
+    get("safe-label").hidden = charged || !rows.some(row => row.safe != null);
+    get("safe").checked = false;
+    const methods = sorted(rows.flatMap(row => Object.entries(row.fields)
+        .filter(([key, value]) => Number.isFinite(value) && (charged ? key !== "sCI" : !metadata.test(key)))
+        .map(([key]) => key)));
+    const defaults = valence ? ["CC3", "CCSDT", "GW"]
+        : charged ? ["G0W0@HF", "evGW@HF", "qsGW"] : ["ADC(2)", "CC3", "CCSD"];
+    const hasDefaults = methods.some(name => defaults.includes(name));
+    get("method-list").replaceChildren(...methods.map((method, index) => {
+        const label = element("label");
+        const input = element("input");
+        input.type = "checkbox";
+        input.value = method;
+        input.checked = hasDefaults ? defaults.includes(method) : index < 2;
+        input.addEventListener("change", renderBenchmark);
+        label.append(input, method);
+        return label;
+    }));
+    renderBenchmark();
 }
 
 async function loadBenchmark() {
@@ -229,33 +279,15 @@ async function loadBenchmark() {
     try {
         if (!benchCache.has(id)) benchCache.set(id, await json(`data/${id}.json`));
         if (generation !== benchGeneration) return;
-        const core = id === "core_IPs";
+        const charged = id === "core_IPs" || id === "valence_IPs";
         const data = benchCache.get(id);
-        benchRows = core ? coreStates(data) : data;
-        const refs = core ? sorted(benchRows.filter(row => Number.isFinite(row.fields.sCI)).map(row => row.basis))
-            : ["TBE/AVTZ", ...(benchRows.some(row => Number.isFinite(row.referenceQZ)) ? ["TBE/AVQZ"] : [])];
-        get("reference").replaceChildren(...refs.map(ref => option(core ? `sCI / ${ref}` : ref, ref)));
-        if (core && refs.includes("aug-cc-pCVTZ")) get("reference").value = "aug-cc-pCVTZ";
-        choices(get("spin"), "All multiplicities", sorted(benchRows.map(row => row.spin)));
-        choices(get("character"), "All characters", sorted(benchRows.map(row => row.character)));
-        for (const field of ["spin", "character"]) get(`${field}-label`).hidden = get(field).options.length === 1;
-        get("safe-label").hidden = core || !benchRows.some(row => row.safe != null);
-        get("safe").checked = false;
-        const methods = sorted(benchRows.flatMap(row => Object.entries(row.fields)
-            .filter(([key, value]) => Number.isFinite(value) && (core ? key !== "sCI" : !metadata.test(key)))
-            .map(([key]) => key)));
-        const defaults = core ? ["G0W0@HF", "evGW@HF", "qsGW"] : ["ADC(2)", "CC3", "CCSD"];
-        get("method-list").replaceChildren(...methods.map((method, index) => {
-            const label = element("label");
-            const input = element("input");
-            input.type = "checkbox";
-            input.value = method;
-            input.checked = methods.some(name => defaults.includes(name)) ? defaults.includes(method) : index < 2;
-            input.addEventListener("change", renderBenchmark);
-            label.append(input, method);
-            return label;
-        }));
-        renderBenchmark();
+        benchRows = charged ? chargedStates(data) : data;
+        get("sector-label").hidden = id !== "valence_IPs";
+        if (id === "valence_IPs") {
+            get("sector").replaceChildren(...sorted(benchRows.map(row => row.state))
+                .map(sector => option(sector === "IP" ? "Valence IPs" : sector, sector)));
+        }
+        benchmarkOptions();
     } catch (error) {
         if (generation === benchGeneration) status.textContent = error.message;
     }
@@ -263,20 +295,23 @@ async function loadBenchmark() {
 
 function renderBenchmark() {
     if (!benchRows.length) return;
-    const core = get("collection").value === "core_IPs";
+    const id = get("collection").value;
+    const valence = id === "valence_IPs";
+    const charged = valence || id === "core_IPs";
     const ref = get("reference").value;
     const spin = get("spin").value, character = get("character").value;
     benchMethods = [...get("method-list").querySelectorAll(":checked")].map(input => input.value);
     const eligible = benchRows
-        .filter(row => (core ? row.basis === ref
+        .filter(row => (charged ? row.basis === ref && (!valence || row.state === get("sector").value)
             : (!spin || String(row.spin) === spin) && (!character || row.character === character)
                 && (!get("safe").checked || row.safe === "Y")))
-        .map(row => ({row, reference: core ? row.fields.sCI : ref === "TBE/AVQZ" ? row.referenceQZ : row.energy}))
+        .map(row => ({row, reference: charged ? row.fields.sCI : ref === "TBE/AVQZ" ? row.referenceQZ : row.energy}))
         .filter(item => Number.isFinite(item.reference));
     benchData = benchMethods.length
         ? eligible.filter(({row}) => benchMethods.every(method => Number.isFinite(row.fields[method]))) : [];
     get("status").textContent = benchMethods.length
         ? `${benchData.length} shared states from ${eligible.length} eligible references. Coverage is shown before matching.`
+            + (valence ? " States are paired by their position in the source arrays." : "")
         : "Select at least one method.";
     get("stats").replaceChildren(...benchMethods.map(method => {
         const errors = benchData.map(item => item.row.fields[method] - item.reference);
@@ -292,7 +327,7 @@ function renderBenchmark() {
         return tr;
     }));
     get("inspect").replaceChildren(option("Select a state", ""), ...benchData.map(({row, reference}, index) =>
-        option(`${row.molecule} · ${row.state} · ${fixed(reference)} eV`, index)));
+        option(`${row.molecule} · ${row.state}${row.root ? ` #${row.root}` : ""} · ${fixed(reference)} eV`, index)));
     get("export").disabled = !benchData.length;
     get("figure").hidden = !benchData.length;
     plotBenchmark();
@@ -303,6 +338,7 @@ function inspectBenchmark(index) {
     if (!item) return;
     const {row, reference} = item;
     const fields = {"Reference (eV)": reference};
+    if (row.root) fields["Source root"] = row.root;
     for (const method of benchMethods) {
         fields[`${method} (eV)`] = row.fields[method];
         fields[`${method} error (eV)`] = fixed(row.fields[method] - reference);
@@ -310,12 +346,50 @@ function inspectBenchmark(index) {
     showDetails({...row, fields});
 }
 
+function violinProfile(errors, min, max) {
+    const mean = errors.reduce((sum, error) => sum + error, 0) / errors.length;
+    const deviation = Math.sqrt(errors.reduce((sum, error) => sum + (error - mean) ** 2, 0) / errors.length);
+    if (!deviation || errors.length < 2) return [];
+    const bandwidth = Math.max((max - min) / 80, 1.06 * deviation * errors.length ** -.2);
+    const start = Math.max(min, Math.min(...errors) - 3 * bandwidth);
+    const end = Math.min(max, Math.max(...errors) + 3 * bandwidth);
+    return Array.from({length: 81}, (_, index) => {
+        const value = start + index * (end - start) / 80;
+        const density = errors.reduce((sum, error) =>
+            sum + Math.exp(-.5 * ((value - error) / bandwidth) ** 2), 0) / (errors.length * bandwidth);
+        return {value, density};
+    });
+}
+
+function drawViolins(ctx, x, min, max, top, band) {
+    const profiles = benchMethods.map(method =>
+        violinProfile(benchData.map(({row, reference}) => row.fields[method] - reference), min, max));
+    const peak = Math.max(0, ...profiles.flatMap(profile => profile.map(point => point.density)));
+    profiles.forEach((profile, index) => {
+        if (!profile.length) return;
+        const center = top + (index + .5) * band;
+        const halfWidth = density => .42 * band * density / peak;
+        ctx.beginPath();
+        ctx.moveTo(x(profile[0].value), center);
+        for (const point of profile) ctx.lineTo(x(point.value), center - halfWidth(point.density));
+        for (const point of [...profile].reverse()) ctx.lineTo(x(point.value), center + halfWidth(point.density));
+        ctx.closePath();
+        ctx.fillStyle = ctx.strokeStyle = palette[index % palette.length];
+        ctx.globalAlpha = .22;
+        ctx.fill();
+        ctx.globalAlpha = .8;
+        ctx.stroke();
+    });
+    ctx.globalAlpha = 1;
+}
+
 function plotBenchmark() {
     const canvas = get("chart");
     const width = canvas.clientWidth;
     if (!benchData.length || !width) return;
     const parity = get("plot").value === "parity";
-    const height = parity ? 360 : Math.max(220, 65 + 28 * benchMethods.length);
+    const violin = get("plot").value === "violin";
+    const height = parity ? 360 : Math.max(220, 65 + (violin ? 47 : 28) * benchMethods.length);
     const ctx = setupCanvas(canvas, width, height);
     const left = parity ? 60 : Math.min(145, width * .34);
     const right = width - 20, top = 18, bottom = height - 38;
@@ -327,6 +401,10 @@ function plotBenchmark() {
     for (const point of data) {
         min = Math.min(min, ...(parity ? [point.ref, point.value] : [-Math.abs(point.error)]));
         max = Math.max(max, ...(parity ? [point.ref, point.value] : [Math.abs(point.error)]));
+    }
+    if (violin) {
+        min *= 1.2;
+        max *= 1.2;
     }
     max = Math.max(min + .01, max);
     const size = Math.min(right - left, bottom - top);
@@ -363,6 +441,7 @@ function plotBenchmark() {
         ctx.restore();
     }
     const band = (bottom - top) / benchMethods.length;
+    if (violin) drawViolins(ctx, x, min, max, top, band);
     if (!parity) {
         ctx.textAlign = "right";
         benchMethods.forEach((method, j) => {
@@ -381,7 +460,8 @@ function plotBenchmark() {
     }
     ctx.globalAlpha = 1;
     const caption = get("caption");
-    caption.replaceChildren(element("span", "Select a point to inspect its source state. "));
+    caption.replaceChildren(element("span", (violin ? "Violin width shows estimated density. " : "")
+        + "Select a point to inspect its source state. "));
     if (parity) {
         benchMethods.forEach((method, j) => {
             const legend = element("span", `● ${method}  `);
@@ -392,6 +472,7 @@ function plotBenchmark() {
 }
 
 get("collection").addEventListener("change", loadBenchmark);
+get("sector").addEventListener("change", benchmarkOptions);
 for (const field of ["reference", "spin", "character", "safe"]) get(field).addEventListener("change", renderBenchmark);
 get("plot").addEventListener("change", plotBenchmark);
 get("inspect").addEventListener("change", () => {
@@ -408,9 +489,9 @@ get("chart").addEventListener("click", event => {
     if (closest) inspectBenchmark(closest.i);
 });
 get("export").addEventListener("click", () => {
-    const records = [["Molecule/site", "State", "Reference", "Reference (eV)", "Method", "Energy (eV)", "Error (eV)", "Source JSON", "QUESTDB commit"],
+    const records = [["Molecule/site", "State", "Root", "Reference", "Reference (eV)", "Method", "Energy (eV)", "Error (eV)", "Source JSON", "QUESTDB commit"],
         ...benchData.flatMap(({row, reference}) => benchMethods.map(method => [row.molecule, row.state,
-            get("reference").selectedOptions[0].textContent, reference, method, row.fields[method],
+            row.root ?? "", get("reference").selectedOptions[0].textContent, reference, method, row.fields[method],
             row.fields[method] - reference, sourceLink(row.source), manifest.revision]))];
     const csv = records.map(row => row.map(csvField).join(",")).join("\r\n");
     const url = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
