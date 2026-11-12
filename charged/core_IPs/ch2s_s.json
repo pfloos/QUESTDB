@@ -66,5 +66,26 @@
 		"Energy": {
 			"aug-cc-pCVTZ": 2472.07
 		}
+	},
+	"GF2@HF": {
+		"Energy": {
+			"aug-cc-pCVTZ": 2471.728989
+		},
+		"Z": {
+			"aug-cc-pCVTZ": 0.844347
+		}
+	},
+	"evGF2@HF": {
+		"Energy": {
+			"aug-cc-pCVTZ": 2463.424252
+		},
+		"Z": {
+			"aug-cc-pCVTZ": 0.851282
+		}
+	},
+	"qsGF2": {
+		"Energy": {
+			"aug-cc-pCVTZ": 2462.188017
+		}
 	}
 }

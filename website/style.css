@@ -116,6 +116,7 @@ dd { margin: 0; }
 nav a[aria-current="page"] { color: var(--accent); font-weight: 700; }
 #bench-methods { margin-block: 1rem; border: 1px solid var(--border); border-radius: .5rem; }
 #bench-methods legend { padding-inline: .4rem; font-weight: 650; }
+#bench-gf2 { margin-bottom: .65rem; }
 #bench-method-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: .3rem .8rem; max-height: 9rem; overflow: auto; }
 #bench-method-list label { display: flex; align-items: center; gap: .3rem; }
 .chart-controls { display: grid; grid-template-columns: 1fr 2fr; gap: .8rem; margin-block: 1rem; }

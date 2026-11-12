@@ -1,5 +1,16 @@
 # Core Ionization Potentials
 
+## GF2 core-IP benchmark
+
+The per-target JSON files include `GF2@HF`, `evGF2@HF`, and `qsGF2` core ionization energies at aug-cc-pCVTZ for all 84 CVS core targets. `GF2@HF` is the single-shot HF-based calculation. The eigenvalue-self-consistent and quasiparticle-self-consistent results use the SRG variants identified in the source data.
+
+The JSON entries preserve the supplied energy precision and include the reported `Z` for `GF2@HF` and `evGF2@HF`. The qsGF2 self-energy derivative diagnostic is recorded only in the provenance table.
+
+- [Per-target results and provenance](gf2_provenance.csv), including the CVS-FCI reference, orbital assignment, convergence status, and qsGF2 diagnostic.
+- [Benchmark statistics](gf2_statistics.csv), reported against the same CVS-FCI references as the core-IP dataset.
+
+On the [QUESTDB website](https://pfloos.github.io/QUESTDB/#benchmark), choose **Core ionizations** and **Select GF2 methods**.
+
 <!-- GW residues added 2026-11-09 -->
 
 ## GW quasiparticle energies and renormalization factors

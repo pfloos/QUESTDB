@@ -87,7 +87,11 @@
         <label id="bench-character-label">Character<select id="bench-character"></select></label>
         <label class="check" id="bench-safe-label"><input id="bench-safe" type="checkbox"> Safe references only</label>
       </div>
-      <fieldset id="bench-methods"><legend>Methods</legend><div id="bench-method-list"></div></fieldset>
+      <fieldset id="bench-methods">
+        <legend>Methods</legend>
+        <button id="bench-gf2" type="button" hidden>Select GF2 methods</button>
+        <div id="bench-method-list"></div>
+      </fieldset>
       <p class="status" id="bench-status" role="status">Loading benchmark…</p>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Benchmark statistics">
         <table>

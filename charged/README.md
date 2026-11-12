@@ -41,6 +41,8 @@ The new calculations use an RHF starting point, aug-cc-pCVTZ for non-hydrogen
 atoms, aug-cc-pVTZ for hydrogen, full RPA screening, and no frozen core.
 The two self-consistent methods use SRG with flow parameter `s = 500`.
 
+The [GF2 core-IP benchmark](core_IPs/README.md#gf2-core-ip-benchmark) adds `GF2@HF`, `evGF2@HF`, and `qsGF2` for the same 84 targets at aug-cc-pCVTZ.
+
 For equivalent atoms, the tabulated value follows the benchmark's selected core
 orbital. The orbital mapping flagged N₂, F₂, C₂H₂, C₂H₄, CO₂, N₂CH₂, P₂, and Cl₂
 because equivalent sites could not be distinguished by their orbital populations.

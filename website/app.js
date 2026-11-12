@@ -38,6 +38,11 @@ async function json(path, options) {
     return response.json();
 }
 
+function snapshotUrl(path) {
+    const encoded = path.split("/").map(encodeURIComponent).join("/");
+    return `${encoded}?v=${encodeURIComponent(manifest.revision)}`;
+}
+
 function sourceLink(path, type = "blob") {
     return `${manifest.repository}/${type}/${manifest.revision}/${path.split("/").map(encodeURIComponent).join("/")}`;
 }
@@ -66,7 +71,7 @@ async function changeCollection() {
     ui.rows.replaceChildren();
     ui.page.textContent = "";
     try {
-        if (!cache.has(id)) cache.set(id, await json(`data/${id}.json`));
+        if (!cache.has(id)) cache.set(id, await json(snapshotUrl(`data/${id}.json`)));
         if (generation !== request) return;
         rows = cache.get(id);
         active = collection;

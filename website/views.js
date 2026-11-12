@@ -15,6 +15,7 @@ const atomColors = {
     Cl: "#398a42", S: "#e2b43a", P: "#db8333", B: "#c07863", Cu: "#a96535",
 };
 const benchCache = new Map();
+const coreGF2Methods = new Set(["GF2@HF", "evGF2@HF", "qsGF2"]);
 
 function navigate() {
     const panels = [...document.querySelectorAll("[data-panel]")];
@@ -46,7 +47,7 @@ document.addEventListener("quest-ready", () => {
 
 function loadGeometries() {
     if (!geometryPromise) {
-        geometryPromise = json(geometryUrl("data/geometries.json")).then(data => {
+        geometryPromise = json(snapshotUrl("data/geometries.json")).then(data => {
             geometryIndex = data;
             return data;
         }).catch(error => {
@@ -57,18 +58,13 @@ function loadGeometries() {
     return geometryPromise;
 }
 
-function geometryUrl(path) {
-    const encoded = path.split("/").map(encodeURIComponent).join("/");
-    return `${encoded}?v=${encodeURIComponent(manifest.revision)}`;
-}
-
 function geometryItem(record, tag) {
     const item = element(tag);
     item.className = "geometry-item";
     const actions = element("div");
     actions.className = "geometry-actions";
     const download = element("a", "Download XYZ");
-    download.href = geometryUrl(record.file);
+    download.href = snapshotUrl(record.file);
     download.download = record.file.split("/").pop();
     const preview = element("button", "3D preview");
     preview.type = "button";
@@ -92,7 +88,7 @@ function showGeometryLinks(row, target) {
                 ...candidates.map(record => geometryItem(record, "div")));
             if (row.benchmarkXyz && row.benchmarkXyz !== candidates[0].source) {
                 const original = element("a", "Download original benchmark XYZ");
-                original.href = geometryUrl(`xyz/${row.benchmarkXyz}`);
+                original.href = snapshotUrl(`xyz/${row.benchmarkXyz}`);
                 original.download = row.benchmarkXyz.split("/").pop();
                 target.append(original);
             }
@@ -118,12 +114,12 @@ function renderGeometries() {
     const selected = archives.find(archive => archive.id === group);
     const allLink = byId("geometry-download-all");
     const setLink = byId("geometry-download-set");
-    allLink.href = geometryUrl(all.file);
-    byId("geometry-download-registry").href = geometryUrl("data/geometry-registry.json");
+    allLink.href = snapshotUrl(all.file);
+    byId("geometry-download-registry").href = snapshotUrl("data/geometry-registry.json");
     allLink.textContent = `Download all geometries (ZIP, ${all.count} XYZ)`;
     setLink.hidden = !selected || selected === all;
     if (!setLink.hidden) {
-        setLink.href = geometryUrl(selected.file);
+        setLink.href = snapshotUrl(selected.file);
         setLink.textContent = `Download ${selected.name} (ZIP, ${selected.count} XYZ)`;
     }
     byId("geometry-downloads").hidden = false;
@@ -148,7 +144,7 @@ async function openStructure(record) {
     const dialog = byId("structure");
     const id = ++structureGeneration;
     byId("structure-title").textContent = record.name;
-    byId("structure-download").href = geometryUrl(record.file);
+    byId("structure-download").href = snapshotUrl(record.file);
     byId("structure-download").download = `${record.name}.xyz`;
     byId("structure-source").href = sourceLink(record.source);
     const status = byId("structure-status");
@@ -158,7 +154,7 @@ async function openStructure(record) {
     dialog.showModal();
     drawStructure();
     try {
-        const response = await fetch(geometryUrl(record.file));
+        const response = await fetch(snapshotUrl(record.file));
         if (!response.ok) throw new Error("Could not load this XYZ file.");
         const lines = (await response.text()).trimStart().split(/\r?\n/);
         const count = Number(lines[0]);
@@ -327,6 +323,7 @@ function benchmarkOptions() {
         .map(([key]) => key)));
     const defaults = valence ? ["CC3", "CCSDT", "GW"]
         : charged ? ["G0W0@HF", "evGW@HF", "qsGW"] : ["ADC(2)", "CC3", "CCSD"];
+    get("gf2").hidden = id !== "core_IPs" || ![...coreGF2Methods].every(method => methods.includes(method));
     const hasDefaults = methods.some(name => defaults.includes(name));
     get("method-list").replaceChildren(...methods.map((method, index) => {
         const label = element("label");
@@ -348,13 +345,14 @@ async function loadBenchmark() {
     benchRows = [];
     benchData = [];
     get("figure").hidden = true;
+    get("gf2").hidden = true;
     get("export").disabled = true;
     get("stats").replaceChildren();
     get("method-list").replaceChildren();
     get("inspect").replaceChildren(option("Select a state", ""));
     status.textContent = "Loading benchmark…";
     try {
-        if (!benchCache.has(id)) benchCache.set(id, await json(`data/${id}.json`));
+        if (!benchCache.has(id)) benchCache.set(id, await json(snapshotUrl(`data/${id}.json`)));
         if (generation !== benchGeneration) return;
         const charged = id === "core_IPs" || id === "valence_IPs";
         const data = benchCache.get(id);
@@ -549,6 +547,15 @@ function plotBenchmark() {
 }
 
 get("collection").addEventListener("change", loadBenchmark);
+get("gf2").addEventListener("click", () => {
+    const basis = "aug-cc-pCVTZ";
+    const reference = get("reference");
+    if ([...reference.options].some(option => option.value === basis)) reference.value = basis;
+    for (const input of get("method-list").querySelectorAll("input")) {
+        input.checked = coreGF2Methods.has(input.value);
+    }
+    renderBenchmark();
+});
 get("sector").addEventListener("change", benchmarkOptions);
 for (const field of ["reference", "spin", "character", "safe"]) get(field).addEventListener("change", renderBenchmark);
 get("plot").addEventListener("change", plotBenchmark);
