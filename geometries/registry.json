@@ -67,7 +67,7 @@
     "CN": {"species": "CN", "xyz": "geometries/xyz/CN.xyz", "texLine": 2646},
     "CNO": {"species": "CNO", "xyz": "geometries/xyz/CNO.xyz", "texLine": 2658},
     "CO+": {"species": "CO+", "xyz": "geometries/xyz/CO+.xyz", "texLine": 2671},
-    "CON": {"species": "CON", "xyz": "geometries/xyz/CON.xyz", "texLine": 2684, "note": "Coordinate discrepancy under review. The XYZ appears to include an extra bohr-to-ångström conversion relative to the TeX and PDF."},
+    "CON": {"species": "CON", "xyz": "geometries/xyz/CON.xyz", "texLine": 2684},
     "coumarin": {"species": "coumarin", "xyz": "geometries/xyz/coumarin.xyz", "texLine": 3158},
     "Criegee_intermediate": {"species": "Criegee_intermediate", "xyz": "geometries/xyz/Criegee_intermediate.xyz", "texLine": 661},
     "CS": {"species": "CS", "xyz": "charged/valence_IPs/geometries/CS.xyz"},
