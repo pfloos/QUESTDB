@@ -83,7 +83,7 @@ function showGeometryLinks(row, target) {
         const name = normal(row.molecule);
         const site = row.molecule.toLowerCase();
         const group = row.source.startsWith("charged/core_IPs/") ? "Core IP"
-            : row.source.startsWith("charged/valence_IPs/") ? "Valence IP" : "Neutral";
+            : /^charged\/(?:valence_IPs|DIPs)\//.test(row.source) ? "Valence IP" : "Neutral";
         const candidates = records.filter(record => {
             if (record.group !== group) return false;
             const stem = record.name.toLowerCase();
@@ -399,7 +399,7 @@ function renderBenchmark() {
         return tr;
     }));
     get("inspect").replaceChildren(option("Select a state", ""), ...benchData.map(({row, reference}, index) =>
-        option(`${row.molecule} · ${stateOptionText(row.state)}${row.root ? ` #${row.root}` : ""} · ${fixed(reference)} eV`, index)));
+        option(`${systemText(row, true)} · ${stateOptionText(row.state)}${row.root ? ` #${row.root}` : ""} · ${fixed(reference)} eV`, index)));
     get("export").disabled = !benchData.length;
     get("figure").hidden = !benchData.length;
     plotBenchmark();
@@ -562,7 +562,7 @@ get("chart").addEventListener("click", event => {
 });
 get("export").addEventListener("click", () => {
     const records = [["Molecule/site", "State", "Root", "Reference", "Reference (eV)", "Method", "Energy (eV)", "Error (eV)", "Source JSON", "QUESTDB commit"],
-        ...benchData.flatMap(({row, reference}) => benchMethods.map(method => [row.molecule, row.state,
+        ...benchData.flatMap(({row, reference}) => benchMethods.map(method => [systemText(row), row.state,
             row.root ?? "", get("reference").selectedOptions[0].textContent, reference, method, row.fields[method],
             row.fields[method] - reference, sourceLink(row.source), manifest.revision]))];
     const csv = records.map(row => row.map(csvField).join(",")).join("\r\n");

@@ -109,7 +109,7 @@ function headers() {
 
 function values(row) {
     if (active.kind === "charged") {
-        return [row.molecule, row.state, row.method, row.basis, row.root, row.energy, row.weight];
+        return [systemText(row), row.state, row.method, row.basis, row.root, row.energy, row.weight];
     }
     const result = [row.molecule, row.state, row.character, row.energy, row.referenceQZ, row.safe];
     if (ui.method.value) {
@@ -152,12 +152,21 @@ function stateOptionText(value) {
         + superscript.replace(/\+/g, "⁺").replace(/−/g, "⁻") + note;
 }
 
-function moleculeLabel(row) {
+function formulaParts(row) {
+    return row.source.startsWith("charged/") && /^(?:[A-Z][a-z]?\d*)+$/.test(row.molecule)
+        ? row.molecule.split(/(\d+)/) : [row.molecule];
+}
+
+function systemText(row, formatted = false) {
+    const formula = formatted ? formulaParts(row).map((part, index) =>
+        index % 2 ? part.replace(/\d/g, digit => "₀₁₂₃₄₅₆₇₈₉"[digit]) : part).join("") : row.molecule;
+    return row.site ? `${formula} · ${row.site}` : formula;
+}
+
+function moleculeLabel(row, includeSite = true) {
     const label = element("span", row.molecule);
-    if (row.source.startsWith("charged/valence_IPs/") && /^(?:[A-Z][a-z]?\d*)+$/.test(row.molecule)) {
-        label.replaceChildren(...row.molecule.split(/(\d+)/).map((part, index) =>
-            index % 2 ? element("sub", part) : part));
-    }
+    label.replaceChildren(...formulaParts(row).map((part, index) => index % 2 ? element("sub", part) : part));
+    if (includeSite && row.site) label.append(` · ${row.site}`);
     return label;
 }
 
@@ -165,12 +174,13 @@ function showDetails(row, focusGeometry = false) {
     ui["detail-title"].replaceChildren(moleculeLabel(row), " · ", stateLabel(row.state));
     ui["detail-source"].href = sourceLink(row.source);
     const entries = row.fields ?? {
-        Molecule: row.molecule, Sector: row.state, Method: row.method, Basis: row.basis,
+        Molecule: row.molecule, ...(row.site ? {"Core site": row.site} : {}),
+        Sector: row.state, Method: row.method, Basis: row.basis,
         Root: row.root, "Energy (eV)": row.energy, Z: row.weight, "Uncertainty (eV)": row.uncertainty,
     };
     ui["detail-fields"].replaceChildren(...Object.entries(entries).flatMap(([key, value]) => {
         const field = element("dd");
-        field.append(key === "State" ? stateLabel(value) : key === "Molecule" ? moleculeLabel(row)
+        field.append(key === "State" ? stateLabel(value) : key === "Molecule" ? moleculeLabel(row, false)
             : value == null ? "—" : String(value));
         return [element("dt", key), field];
     }));
@@ -185,7 +195,7 @@ function render() {
     const method = ui.method.value;
     const facet = ui.facet.value;
     filtered = rows.filter(row => {
-        const terms = normal([row.molecule, row.state, row.type, row.source, row.method].join(" "));
+        const terms = normal([systemText(row), row.state, row.type, row.source, row.method].join(" "));
         return tokens.every(token => terms.includes(token))
             && (!ui.safe.checked || !neutral || row.safe === "Y")
             && (!facet || (neutral ? row.character : row.basis) === facet)
@@ -215,7 +225,7 @@ function render() {
                 const geometry = element("button", "Geometry");
                 geometry.type = "button";
                 geometry.className = "geometry-shortcut";
-                geometry.setAttribute("aria-label", `Geometry for ${row.molecule}`);
+                geometry.setAttribute("aria-label", `Geometry for ${systemText(row)}`);
                 geometry.addEventListener("click", () => showDetails(row, true));
                 td.append(button, geometry);
             } else if (i === 1 && neutral) {

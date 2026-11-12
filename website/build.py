@@ -152,9 +152,11 @@ def neutral_records(path):
         }
 
 
-def charged_records(path, group, molecule):
+def charged_records(path, group, formulas):
     source = path.relative_to(ROOT).as_posix()
     data = read_json(path)
+    key, _, site = path.stem.partition("_") if group == "core_IPs" else (path.stem, "", "")
+    molecule = formulas.get(key.casefold(), key)
     if group == "DIPs":
         methods = ((spin, method, {basis: values})
                    for method, block in data["methods"].items()
@@ -187,6 +189,7 @@ def charged_records(path, group, molecule):
                 )
                 yield {
                     "molecule": molecule, "state": sector, "source": source,
+                    **({"site": site.capitalize()} if site else {}),
                     "method": method, "basis": basis, "root": offset + 1,
                     "energy": energy, "weight": weight, "uncertainty": uncertainty,
                 }
@@ -213,10 +216,12 @@ def main():
     ).splitlines()
     collections = []
     neutral_molecules = {}
-    valence_formulas = {
-        path.stem.casefold(): path.stem
-        for path in (ROOT / "charged/valence_IPs/geometries").glob("*.xyz")
-    }
+    valence_formulas, core_formulas = (
+        {path.stem.casefold(): path.stem for path in (ROOT / "charged" / group / "geometries").glob("*.xyz")}
+        for group in ("valence_IPs", "core_IPs")
+    )
+    # Core vinyl fluoride uses the stoichiometric formula in its result filenames.
+    core_formulas["c2h3f"] = core_formulas.get("ch2chf", "C2H3F")
     for group, label in (NEUTRAL | CHARGED).items():
         neutral = group in NEUTRAL
         directory = ROOT / ("data/json" if neutral else "charged") / group
@@ -224,7 +229,7 @@ def main():
         rows = [
             row for path in paths if path.relative_to(ROOT).as_posix() != CORE_SUPPLEMENT
             for row in (neutral_records(path) if neutral else charged_records(
-                path, group, valence_formulas.get(path.stem.casefold(), path.stem) if group == "valence_IPs" else path.stem
+                path, group, core_formulas if group == "core_IPs" else valence_formulas
             ))
         ]
         if not rows:
