@@ -23,11 +23,14 @@ CHARGED = {
 }
 # This file has no method, molecule, or core-site identification.
 CORE_SUPPLEMENT = "charged/core_IPs/output.json"
-GEOMETRY_GROUPS = {
-    "geometries/xyz": "Neutral",
-    "charged/valence_IPs/geometries": "Valence IP",
-    "charged/core_IPs/geometries": "Core IP",
+REGISTRY_PATH = "geometries/registry.json"
+NEUTRAL_XYZ = "geometries/xyz"
+BENCHMARK_XYZ = {
+    "valence_IPs": "charged/valence_IPs/geometries",
+    "core_IPs": "charged/core_IPs/geometries",
+    "DIPs": "charged/valence_IPs/geometries",
 }
+BENCHMARK_GROUPS = {"valence_IPs": "Valence IP", "core_IPs": "Core IP", "DIPs": "DIP"}
 # Source labels that differ from the XYZ filenames, including known variants.
 GEOMETRY_ALIASES = {
     "Carbon dioxyde": "carbon_dioxide",
@@ -43,82 +46,103 @@ GEOMETRY_ALIASES = {
     "Phenyl-pyrrole": "phenyl-pyrrole_1",
     "Phenyl-pyrrole (twisted)": "phenyl-pyrrole_2",
 }
-GEOMETRY_VARIANTS = {
-    "dimethylaminobenzonitrile": ("planar", "twisted"),
-    "phenyl-pyrrole": ("planar", "twisted"),
-    "indacene": ("C2h", "D2h"),
-    "pentalene": ("unconstrained", "D2h"),
-}
 
 
 def geometry_key(label):
     return "".join(c for c in unicodedata.normalize("NFKC", label).lower() if c.isalnum())
 
 
-def geometry_names(paths):
-    names = {path: path.stem for path in paths}
-    excited = {}
-    for path in paths:
-        match = re.fullmatch(r"(.+)_(\d+)", path.stem)
-        if not match:
-            continue
-        base, number = match[1], int(match[2])
-        with path.open(encoding="utf-8") as xyz:
-            next(xyz, "")
-            comment = next(xyz, "").lower()
-        if "ground state" in comment:
-            names[path] = f"{base}_GS"
-        elif "excited state" in comment:
-            excited.setdefault(base, []).append((number, path))
-        elif base in GEOMETRY_VARIANTS and 1 <= number <= len(GEOMETRY_VARIANTS[base]):
-            names[path] = f"{base}_{GEOMETRY_VARIANTS[base][number - 1]}"
-    for base, variants in excited.items():
-        for index, (_, path) in enumerate(sorted(variants), 1):
-            names[path] = f"{base}_ES{index if len(variants) > 1 else ''}"
-    if len(set(names.values())) != len(names):
-        raise ValueError("Geometry download filenames must be unique within each collection")
-    return names
+def load_geometry_registry():
+    registry = read_json(ROOT / REGISTRY_PATH)
+    if registry["schemaVersion"] != 1 or registry["units"] != "angstrom":
+        raise ValueError("Unsupported geometry registry schema or units")
+    entries = registry["geometries"]
+    paths = {p.relative_to(ROOT).as_posix() for directory in {NEUTRAL_XYZ, *BENCHMARK_XYZ.values()}
+             for p in (ROOT / directory).glob("*.xyz")}
+    canonical = {entry["xyz"]: key for key, entry in entries.items()}
+    if (len(canonical) != len(entries) or len({key.casefold() for key in entries}) != len(entries)
+            or any(not re.fullmatch(r"[A-Za-z0-9_+.-]+", key) for key in entries)):
+        raise ValueError("Canonical geometry paths and IDs must be unique and valid")
+    by_species = {}
+    for entry in entries.values():
+        by_species.setdefault(entry["species"], []).append(entry)
+    for species, variants in by_species.items():
+        if len(variants) > 1 and sum(entry.get("default") is True for entry in variants) != 1:
+            raise ValueError(f"{species}: select exactly one default geometry")
+    expected = {p.relative_to(ROOT).as_posix() for group in CHARGED
+                for p in (ROOT / "charged" / group).glob("*.json")
+                if p.relative_to(ROOT).as_posix() != CORE_SUPPLEMENT}
+    benchmarks = registry["chargedBenchmarks"]
+    if expected != set(benchmarks):
+        raise ValueError(f"Geometry mappings missing: {sorted(expected - set(benchmarks))}; "
+                         f"unexpected: {sorted(set(benchmarks) - expected)}")
+    mapped = dict(canonical)
+    for source, mapping in benchmarks.items():
+        group = source.split("/")[1]
+        original = mapping["benchmarkXyz"]
+        key = mapping["geometryId"]
+        if key not in entries or Path(original).parent.as_posix() != BENCHMARK_XYZ[group]:
+            raise ValueError(f"{source}: invalid geometry mapping")
+        if mapped.setdefault(original, key) != key:
+            raise ValueError(f"{original}: conflicting canonical geometry IDs")
+    if set(mapped) != paths or any(source.startswith(NEUTRAL_XYZ + "/") and source not in canonical for source in paths):
+        raise ValueError(f"Unregistered XYZ files: {sorted(paths - set(mapped))}; "
+                         f"missing source XYZ files: {sorted(set(mapped) - paths)}")
+    return registry, paths
 
 
-def geometry_assets(out, neutral_molecules):
-    records = []
-    for directory, group in GEOMETRY_GROUPS.items():
-        paths = sorted((ROOT / directory).glob("*.xyz"))
-        names = geometry_names(paths) if group == "Neutral" else {path: path.stem for path in paths}
-        for path in paths:
-            source = path.relative_to(ROOT).as_posix()
-            archive_path = Path(source).with_name(f"{names[path]}.xyz").as_posix()
-            destination = f"xyz/{archive_path}"
-            (out / destination).parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(path, out / destination)
-            if archive_path != source:
-                shutil.copyfile(path, out / "xyz" / source)
-            subsets = []
-            labels = []
-            if group == "Neutral":
-                stem = geometry_key(path.stem)
-                base = geometry_key(re.sub(r"_\d+$", "", path.stem))
-                for subset, molecules in neutral_molecules.items():
-                    matches = [
-                        molecule for molecule in molecules
-                        if (stem == geometry_key(GEOMETRY_ALIASES[molecule])
-                            if molecule in GEOMETRY_ALIASES else geometry_key(molecule) in (stem, base))
-                    ]
-                    if matches:
-                        subsets.append(subset)
-                        labels.extend(matches)
-            records.append({
-                "name": names[path], "group": group, "source": source, "file": destination,
-                "subsets": subsets, "labels": sorted(set(labels)),
-            })
+def geometry_assets(out, registry, paths, neutral_molecules):
+    for source in sorted(paths):
+        destination = out / "xyz" / source
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(ROOT / source, destination)
+
+    records = {}
+    for key, entry in registry["geometries"].items():
+        source = entry["xyz"]
+        path = Path(source)
+        filename = "xyz/" + path.with_name(f"{key}.xyz").as_posix()
+        if filename != "xyz/" + source:
+            if filename.removeprefix("xyz/") in paths:
+                raise ValueError(f"{key}: canonical filename would overwrite a source XYZ")
+            shutil.copyfile(ROOT / source, out / filename)
+        groups, subsets, labels = [], [], set()
+        if source.startswith(NEUTRAL_XYZ + "/"):
+            groups.append("Neutral")
+            stem, base = geometry_key(path.stem), geometry_key(entry["species"])
+            for subset, molecules in neutral_molecules.items():
+                matches = {
+                    molecule for molecule in molecules
+                    if (stem == geometry_key(GEOMETRY_ALIASES[molecule])
+                        if molecule in GEOMETRY_ALIASES else geometry_key(molecule) in (stem, base))
+                }
+                if matches:
+                    subsets.append(subset)
+                    labels.update(matches)
+        records[key] = {
+            "id": key, "name": key, "species": entry["species"], "source": source, "file": filename,
+            "groups": groups, "subsets": subsets, "labels": sorted(labels), "aliases": set(),
+            **({"note": entry["note"]} if "note" in entry else {}),
+        }
+    for source, mapping in registry["chargedBenchmarks"].items():
+        record = records[mapping["geometryId"]]
+        group = BENCHMARK_GROUPS[source.split("/")[1]]
+        if group not in record["groups"]:
+            record["groups"].append(group)
+        record["aliases"].add(Path(mapping["benchmarkXyz"]).stem)
+        record["aliases"].add(Path(source).stem)
+    for record in records.values():
+        record["aliases"] = sorted(record["aliases"])
+    geometries = list(records.values())
 
     groups = {"all": "All geometries", "Neutral": "All neutral sets",
               **{key: f"{key} · {label}" for key, label in NEUTRAL.items()},
-              "Valence IP": "Valence IP", "Core IP": "Core IP"}
+              "Valence IP": "Valence IP", "Core IP": "Core IP", "DIP": "Double IP"}
     downloads = []
     (out / "downloads").mkdir(exist_ok=True)
     for group, label in groups.items():
-        members = [record for record in records if group in ("all", record["group"]) or group in record["subsets"]]
+        members = [record for record in geometries
+                   if group == "all" or group in record["groups"] or group in record["subsets"]]
         if not members:
             continue
         filename = f"downloads/QUESTDB-geometries-{group.lower().replace(' ', '-')}.zip"
@@ -127,8 +151,8 @@ def geometry_assets(out, neutral_molecules):
                 entry = ZipInfo(record["file"].removeprefix("xyz/"))
                 archive.writestr(entry, (out / record["file"]).read_bytes(), compress_type=ZIP_DEFLATED)
         downloads.append({"id": group, "name": label, "count": len(members), "file": filename})
-    write_json(out / "data/geometries.json", records)
-    return records, downloads
+    write_json(out / "data/geometries.json", geometries)
+    return geometries, downloads
 
 
 def read_json(path):
@@ -152,11 +176,11 @@ def neutral_records(path):
         }
 
 
-def charged_records(path, group, formulas):
+def charged_records(path, group, mapping):
     source = path.relative_to(ROOT).as_posix()
     data = read_json(path)
-    key, _, site = path.stem.partition("_") if group == "core_IPs" else (path.stem, "", "")
-    molecule = formulas.get(key.casefold(), key)
+    site = path.stem.partition("_")[2] if group == "core_IPs" else ""
+    molecule = Path(mapping["benchmarkXyz"]).stem
     if group == "DIPs":
         methods = ((spin, method, {basis: values})
                    for method, block in data["methods"].items()
@@ -190,6 +214,7 @@ def charged_records(path, group, formulas):
                 yield {
                     "molecule": molecule, "state": sector, "source": source,
                     **({"site": site.capitalize()} if site else {}),
+                    **mapping,
                     "method": method, "basis": basis, "root": offset + 1,
                     "energy": energy, "weight": weight, "uncertainty": uncertainty,
                 }
@@ -216,12 +241,8 @@ def main():
     ).splitlines()
     collections = []
     neutral_molecules = {}
-    valence_formulas, core_formulas = (
-        {path.stem.casefold(): path.stem for path in (ROOT / "charged" / group / "geometries").glob("*.xyz")}
-        for group in ("valence_IPs", "core_IPs")
-    )
-    # Core vinyl fluoride uses the stoichiometric formula in its result filenames.
-    core_formulas["c2h3f"] = core_formulas.get("ch2chf", "C2H3F")
+    registry, xyz_paths = load_geometry_registry()
+    shutil.copyfile(ROOT / REGISTRY_PATH, assets / "geometry-registry.json")
     for group, label in (NEUTRAL | CHARGED).items():
         neutral = group in NEUTRAL
         directory = ROOT / ("data/json" if neutral else "charged") / group
@@ -229,7 +250,7 @@ def main():
         rows = [
             row for path in paths if path.relative_to(ROOT).as_posix() != CORE_SUPPLEMENT
             for row in (neutral_records(path) if neutral else charged_records(
-                path, group, core_formulas if group == "core_IPs" else valence_formulas
+                path, group, registry["chargedBenchmarks"][path.relative_to(ROOT).as_posix()]
             ))
         ]
         if not rows:
@@ -242,7 +263,7 @@ def main():
             "id": group, "name": label, "kind": "neutral" if neutral else "charged",
             "rows": len(rows), "files": len({row["source"] for row in rows}),
         })
-    geometries, downloads = geometry_assets(out, neutral_molecules)
+    geometries, downloads = geometry_assets(out, registry, xyz_paths, neutral_molecules)
     write_json(assets / "manifest.json", {
         "repository": REPO, "revision": revision, "date": date, "collections": collections,
         "geometries": len(geometries),

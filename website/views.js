@@ -57,8 +57,8 @@ function loadGeometries() {
     return geometryPromise;
 }
 
-function geometryUrl(record) {
-    return record.file.split("/").map(encodeURIComponent).join("/");
+function geometryUrl(path) {
+    return path.split("/").map(encodeURIComponent).join("/");
 }
 
 function geometryItem(record, tag) {
@@ -67,32 +67,34 @@ function geometryItem(record, tag) {
     const actions = element("div");
     actions.className = "geometry-actions";
     const download = element("a", "Download XYZ");
-    download.href = geometryUrl(record);
+    download.href = geometryUrl(record.file);
     download.download = record.file.split("/").pop();
     const preview = element("button", "3D preview");
     preview.type = "button";
     preview.addEventListener("click", () => openStructure(record));
     actions.append(download, preview);
-    item.append(element("strong", record.name), element("small", record.group), actions);
+    item.append(element("strong", record.name), element("small", record.groups.join(" · ")), actions);
+    if (record.note) item.append(element("p", record.note));
     return item;
 }
 
 function showGeometryLinks(row, target) {
     target.textContent = "Looking for geometries…";
     loadGeometries().then(records => {
-        const name = normal(row.molecule);
-        const site = row.molecule.toLowerCase();
-        const group = row.source.startsWith("charged/core_IPs/") ? "Core IP"
-            : /^charged\/(?:valence_IPs|DIPs)\//.test(row.source) ? "Valence IP" : "Neutral";
-        const candidates = records.filter(record => {
-            if (record.group !== group) return false;
-            const stem = record.name.toLowerCase();
-            if (group === "Neutral") return record.labels.some(label => normal(label) === name);
-            return normal(stem) === name || (group === "Core IP" && site.startsWith(stem + "_"));
-        });
+        const subset = row.source.split("/")[2];
+        const candidates = row.geometryId
+            ? records.filter(record => record.id === row.geometryId)
+            : records.filter(record => record.subsets.includes(subset)
+                && record.labels.some(label => normal(label) === normal(row.molecule)));
         if (candidates.length) {
-            target.replaceChildren(element("p", "Geometries with matching source labels"),
+            target.replaceChildren(element("p", row.geometryId ? "Canonical geometry" : "Geometries associated with this system"),
                 ...candidates.map(record => geometryItem(record, "div")));
+            if (row.benchmarkXyz && row.benchmarkXyz !== candidates[0].source) {
+                const original = element("a", "Download original benchmark XYZ");
+                original.href = geometryUrl(`xyz/${row.benchmarkXyz}`);
+                original.download = row.benchmarkXyz.split("/").pop();
+                target.append(original);
+            }
         } else {
             const browse = element("a", "Browse all geometries");
             browse.href = "#geometries";
@@ -107,9 +109,10 @@ function renderGeometries() {
     const group = byId("geometry-group").value;
     const archives = manifest?.geometryDownloads;
     if (!archives) return;
-    const matches = geometryIndex.filter(record => [record.name, record.source.split("/").pop(), ...record.labels]
+    const matches = geometryIndex.filter(record => [record.name, record.species, record.source.split("/").pop(),
+        ...record.labels, ...record.aliases]
         .some(label => normal(label).includes(query))
-        && (group === "all" || record.group === group || record.subsets.includes(group)));
+        && (group === "all" || record.groups.includes(group) || record.subsets.includes(group)));
     const all = archives.find(archive => archive.id === "all");
     const selected = archives.find(archive => archive.id === group);
     const allLink = byId("geometry-download-all");
@@ -143,7 +146,7 @@ async function openStructure(record) {
     const dialog = byId("structure");
     const id = ++structureGeneration;
     byId("structure-title").textContent = record.name;
-    byId("structure-download").href = geometryUrl(record);
+    byId("structure-download").href = geometryUrl(record.file);
     byId("structure-download").download = `${record.name}.xyz`;
     byId("structure-source").href = sourceLink(record.source);
     const status = byId("structure-status");
@@ -153,7 +156,7 @@ async function openStructure(record) {
     dialog.showModal();
     drawStructure();
     try {
-        const response = await fetch(geometryUrl(record));
+        const response = await fetch(geometryUrl(record.file));
         if (!response.ok) throw new Error("Could not load this XYZ file.");
         const lines = (await response.text()).trimStart().split(/\r?\n/);
         const count = Number(lines[0]);

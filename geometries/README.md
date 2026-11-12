@@ -1,5 +1,16 @@
 # 🧩 Geometries
 
+## Canonical geometry registry
+
+Use [`registry.json`](registry.json) to find the canonical XYZ and the original geometry used by each charged benchmark. XYZ coordinates are in ångströms.
+
+- `geometries` is keyed by stable geometry ID. Each entry identifies a `species` and its canonical `xyz` path. A species with one geometry uses that entry as its default. Species with multiple geometries have named `variant` entries and one entry marked `default`. The default for an explicitly identified ground/excited pair is the ground-state geometry.
+- `chargedBenchmarks` maps each valence-IP, core-IP, and DIP data file to a `geometryId` and its original `benchmarkXyz` path. DIP records use the valence-IP benchmark files. Use `benchmarkXyz` to reproduce the exact input coordinates and atom order, especially when checking a core-site assignment.
+- When the same structure is present in the neutral and charged collections, the neutral XYZ is canonical. For structures unique to the charged collections, use the valence-IP XYZ where available, followed by the core-IP XYZ. Different charge states, isomers, electronic-state geometries, and documented conformers or symmetry variants have distinct records.
+- `texLine` points to the coordinate block in [the neutral geometry TeX source](TeX/QUEST-geometries.tex). The CON entry carries a coordinate discrepancy note pending a check against the calculation input.
+
+The [geometry explorer](https://pfloos.github.io/QUESTDB/#geometries) provides the canonical archive and collection downloads.
+
 Welcome to the **Geometries** section of the QUEST Database!
 
 This directory provides the **molecular structures** used in QUESTDB in two convenient formats, designed for both **publication** and **computational use**:

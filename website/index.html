@@ -106,7 +106,7 @@
     </section>
     <section class="container explorer" id="geometries" data-panel aria-labelledby="geometry-title" hidden>
       <div class="section-head"><div><h2 id="geometry-title">Molecular geometries</h2>
-        <p>Browse the structures bundled with QUESTDB. Download the original XYZ or rotate a preview.</p></div></div>
+        <p>Browse canonical XYZ structures shared across the QUESTDB collections. Ground states, excited states, and other documented variants have separate entries.</p></div></div>
       <div class="filters">
         <label>Search geometries<input id="geometry-query" type="search" placeholder="e.g. water"></label>
         <label>Collection<select id="geometry-group"><option value="all">All geometries</option></select></label>
@@ -114,6 +114,7 @@
       <div class="geometry-actions" id="geometry-downloads" hidden>
         <a id="geometry-download-all" download>Download all geometries (ZIP)</a>
         <a id="geometry-download-set" download hidden></a>
+        <a href="data/geometry-registry.json" download>Download geometry registry (JSON)</a>
       </div>
       <p class="status" id="geometry-count" role="status"></p>
       <ul id="geometry-list" class="geometry-list"></ul>
