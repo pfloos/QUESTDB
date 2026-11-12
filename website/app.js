@@ -32,8 +32,8 @@ function sorted(values) {
         .sort((a, b) => String(a).localeCompare(String(b), undefined, {numeric: true}));
 }
 
-async function json(path) {
-    const response = await fetch(path);
+async function json(path, options) {
+    const response = await fetch(path, options);
     if (!response.ok) throw new Error(`Could not read ${path} (${response.status}).`);
     return response.json();
 }
@@ -282,7 +282,7 @@ ui.next.addEventListener("click", () => { page++; render(); });
 
 async function init() {
     try {
-        manifest = await json("data/manifest.json");
+        manifest = await json("data/manifest.json", {cache: "no-cache"});
         const revision = element("a", manifest.revision.slice(0, 7));
         revision.href = `${manifest.repository}/commit/${manifest.revision}`;
         ui.snapshot.replaceChildren(

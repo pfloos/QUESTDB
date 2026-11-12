@@ -46,7 +46,7 @@ document.addEventListener("quest-ready", () => {
 
 function loadGeometries() {
     if (!geometryPromise) {
-        geometryPromise = json("data/geometries.json").then(data => {
+        geometryPromise = json(geometryUrl("data/geometries.json")).then(data => {
             geometryIndex = data;
             return data;
         }).catch(error => {
@@ -58,7 +58,8 @@ function loadGeometries() {
 }
 
 function geometryUrl(path) {
-    return path.split("/").map(encodeURIComponent).join("/");
+    const encoded = path.split("/").map(encodeURIComponent).join("/");
+    return `${encoded}?v=${encodeURIComponent(manifest.revision)}`;
 }
 
 function geometryItem(record, tag) {
@@ -117,11 +118,12 @@ function renderGeometries() {
     const selected = archives.find(archive => archive.id === group);
     const allLink = byId("geometry-download-all");
     const setLink = byId("geometry-download-set");
-    allLink.href = all.file;
+    allLink.href = geometryUrl(all.file);
+    byId("geometry-download-registry").href = geometryUrl("data/geometry-registry.json");
     allLink.textContent = `Download all geometries (ZIP, ${all.count} XYZ)`;
     setLink.hidden = !selected || selected === all;
     if (!setLink.hidden) {
-        setLink.href = selected.file;
+        setLink.href = geometryUrl(selected.file);
         setLink.textContent = `Download ${selected.name} (ZIP, ${selected.count} XYZ)`;
     }
     byId("geometry-downloads").hidden = false;
