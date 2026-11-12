@@ -36,7 +36,18 @@
     "CASPT3": 5.0,
     "CASPT3 (No IPEA)": 4.99,
     "SC-NEVPT2": 4.71,
-    "PC-NEVPT2": 4.61
+    "PC-NEVPT2": 4.61,
+    "CASSCF [Col]": 5.9331,
+    "MRCI+DV1": 4.9375,
+    "MRCI+DV2": 4.8113,
+    "MRCI+DV3": 4.5834,
+    "MRCI+P": 4.6731,
+    "MRCI": 5.2815,
+    "XS-CASCI": 5.9747,
+    "XS-CASSCF-05": 6.0141,
+    "XS-CASSCF": 5.9964,
+    "Om": 0.801,
+    "QTa": 0.0
   },
   {
     "Molecule": "Triazine",
@@ -76,7 +87,18 @@
     "CASPT3": 4.9,
     "CASPT3 (No IPEA)": 4.87,
     "SC-NEVPT2": 4.94,
-    "PC-NEVPT2": 4.89
+    "PC-NEVPT2": 4.89,
+    "CASSCF [Col]": 5.1713,
+    "MRCI+DV1": 4.9016,
+    "MRCI+DV2": 4.8513,
+    "MRCI+DV3": 4.7604,
+    "MRCI+P": 4.7956,
+    "MRCI": 5.0304,
+    "XS-CASCI": 5.2819,
+    "XS-CASSCF-05": 5.3685,
+    "XS-CASSCF": 5.2916,
+    "Om": 0.802,
+    "QTa": 0.0
   },
   {
     "Molecule": "Triazine",
@@ -115,7 +137,18 @@
     "CASPT3": 5.01,
     "CASPT3 (No IPEA)": 4.98,
     "SC-NEVPT2": 4.94,
-    "PC-NEVPT2": 4.88
+    "PC-NEVPT2": 4.88,
+    "CASSCF [Col]": 5.558400000000001,
+    "MRCI+DV1": 4.9752,
+    "MRCI+DV2": 4.892049999999999,
+    "MRCI+DV3": 4.74235,
+    "MRCI+P": 4.80105,
+    "MRCI": 5.1991,
+    "XS-CASCI": 5.6628,
+    "XS-CASSCF-05": 5.72445,
+    "XS-CASSCF": 5.672549999999999,
+    "Om": 0.807,
+    "QTa": 0.0
   },
   {
     "Molecule": "Triazine",
@@ -154,7 +187,18 @@
     "CASPT3": 5.75,
     "CASPT3 (No IPEA)": 5.72,
     "SC-NEVPT2": 5.98,
-    "PC-NEVPT2": 5.95
+    "PC-NEVPT2": 5.95,
+    "CASSCF [Col]": 5.4302,
+    "MRCI+DV1": 5.8271,
+    "MRCI+DV2": 5.8516,
+    "MRCI+DV3": 5.8927,
+    "MRCI+P": 5.8753,
+    "MRCI": 5.7429,
+    "XS-CASCI": 5.4367,
+    "XS-CASSCF-05": 6.0564,
+    "XS-CASSCF": 5.4573,
+    "Om": 0.764,
+    "QTa": 0.001
   },
   {
     "Molecule": "Triazine",
@@ -193,7 +237,18 @@
     "CASPT3": 7.5,
     "CASPT3 (No IPEA)": 7.41,
     "SC-NEVPT2": 7.42,
-    "PC-NEVPT2": 7.3
+    "PC-NEVPT2": 7.3,
+    "CASSCF [Col]": 8.8619,
+    "MRCI+DV1": 7.5337,
+    "MRCI+DV2": 7.3867,
+    "MRCI+DV3": 7.1223,
+    "MRCI+P": 7.2272,
+    "MRCI": 7.9454,
+    "XS-CASCI": 7.5275,
+    "XS-CASSCF-05": 8.2757,
+    "XS-CASSCF": 7.5569,
+    "Om": 0.819,
+    "QTa": 0.429
   },
   {
     "Molecule": "Triazine",
@@ -271,7 +326,18 @@
     "CASPT3": 7.92,
     "CASPT3 (No IPEA)": 7.9,
     "SC-NEVPT2": 8.07,
-    "PC-NEVPT2": 7.98
+    "PC-NEVPT2": 7.98,
+    "CASSCF [Col]": 8.3945,
+    "MRCI+DV1": 7.96745,
+    "MRCI+DV2": 7.8919999999999995,
+    "MRCI+DV3": 7.7553,
+    "MRCI+P": 7.808400000000001,
+    "MRCI": 8.163499999999999,
+    "XS-CASCI": 8.6942,
+    "XS-CASSCF-05": 8.768,
+    "XS-CASSCF": 8.70675,
+    "Om": 0.671,
+    "QTa": 0.0
   },
   {
     "Molecule": "Triazine",
@@ -345,7 +411,16 @@
     "CASPT3": 4.51,
     "CASPT3 (No IPEA)": 4.49,
     "SC-NEVPT2": 4.55,
-    "PC-NEVPT2": 4.51
+    "PC-NEVPT2": 4.51,
+    "CASSCF [Col]": 4.7023,
+    "MRCI+DV1": 4.4607,
+    "MRCI+DV2": 4.4165,
+    "MRCI+DV3": 4.3367,
+    "MRCI+P": 4.3676,
+    "MRCI": 4.5752,
+    "XS-CASCI": 4.7448,
+    "XS-CASSCF-05": 4.7361,
+    "XS-CASSCF": 4.77
   },
   {
     "Molecule": "Triazine",
@@ -380,7 +455,16 @@
     "CASPT3": 4.71,
     "CASPT3 (No IPEA)": 4.68,
     "SC-NEVPT2": 4.66,
-    "PC-NEVPT2": 4.61
+    "PC-NEVPT2": 4.61,
+    "CASSCF [Col]": 5.178,
+    "MRCI+DV1": 4.6776,
+    "MRCI+DV2": 4.6051,
+    "MRCI+DV3": 4.4746500000000005,
+    "MRCI+P": 4.5258,
+    "MRCI": 4.87255,
+    "XS-CASCI": 5.2204999999999995,
+    "XS-CASSCF-05": 5.20845,
+    "XS-CASSCF": 5.2416
   },
   {
     "Molecule": "Triazine",
@@ -415,7 +499,16 @@
     "CASPT3": 5.06,
     "CASPT3 (No IPEA)": 5.04,
     "SC-NEVPT2": 4.81,
-    "PC-NEVPT2": 4.71
+    "PC-NEVPT2": 4.71,
+    "CASSCF [Col]": 5.914,
+    "MRCI+DV1": 4.9866,
+    "MRCI+DV2": 4.8658,
+    "MRCI+DV3": 4.6476,
+    "MRCI+P": 4.7334,
+    "MRCI": 5.3149,
+    "XS-CASCI": 5.9565,
+    "XS-CASSCF-05": 5.9356,
+    "XS-CASSCF": 5.9675
   },
   {
     "Molecule": "Triazine",
@@ -450,7 +543,16 @@
     "CASPT3": 4.81,
     "CASPT3 (No IPEA)": 4.75,
     "SC-NEVPT2": 5.06,
-    "PC-NEVPT2": 5.05
+    "PC-NEVPT2": 5.05,
+    "CASSCF [Col]": 4.2674,
+    "MRCI+DV1": 4.8851,
+    "MRCI+DV2": 4.9314,
+    "MRCI+DV3": 5.0101,
+    "MRCI+P": 4.9773,
+    "MRCI": 4.7332,
+    "XS-CASCI": 4.3098,
+    "XS-CASSCF-05": 4.3026,
+    "XS-CASSCF": 4.3371
   },
   {
     "Molecule": "Triazine",
@@ -485,7 +587,16 @@
     "CASPT3": 5.62,
     "CASPT3 (No IPEA)": 5.57,
     "SC-NEVPT2": 5.77,
-    "PC-NEVPT2": 5.73
+    "PC-NEVPT2": 5.73,
+    "CASSCF [Col]": 5.5440000000000005,
+    "MRCI+DV1": 5.69335,
+    "MRCI+DV2": 5.69375,
+    "MRCI+DV3": 5.69325,
+    "MRCI+P": 5.6927,
+    "MRCI": 5.6821,
+    "XS-CASCI": 5.5865,
+    "XS-CASSCF-05": 5.572649999999999,
+    "XS-CASSCF": 5.6043
   },
   {
     "Molecule": "Triazine",
@@ -520,6 +631,15 @@
     "CASPT3": 6.76,
     "CASPT3 (No IPEA)": 6.68,
     "SC-NEVPT2": 6.47,
-    "PC-NEVPT2": 6.36
+    "PC-NEVPT2": 6.36,
+    "CASSCF [Col]": 7.8776,
+    "MRCI+DV1": 6.8748,
+    "MRCI+DV2": 6.7324,
+    "MRCI+DV3": 6.4768,
+    "MRCI+P": 6.5783,
+    "MRCI": 7.2758,
+    "XS-CASCI": 7.9201,
+    "XS-CASSCF-05": 7.9221,
+    "XS-CASSCF": 7.9591
   }
 ]

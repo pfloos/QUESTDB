@@ -37,7 +37,18 @@
     "CASPT3": 5.89,
     "CASPT3 (No IPEA)": 5.79,
     "SC-NEVPT2": 5.92,
-    "PC-NEVPT2": 5.84
+    "PC-NEVPT2": 5.84,
+    "CASSCF [Col]": 6.1469,
+    "MRCI+DV1": 5.854,
+    "MRCI+DV2": 5.8042,
+    "MRCI+DV3": 5.7157,
+    "MRCI+P": 5.7553,
+    "MRCI": 5.9882,
+    "XS-CASCI": 5.2376,
+    "XS-CASSCF-05": 5.8607,
+    "XS-CASSCF": 5.2532,
+    "Om": 0.778,
+    "QTa": 0.162
   },
   {
     "Molecule": "Thiophene",
@@ -77,7 +88,18 @@
     "CASPT3": 6.44,
     "CASPT3 (No IPEA)": 6.35,
     "SC-NEVPT2": 6.2,
-    "PC-NEVPT2": 6.1
+    "PC-NEVPT2": 6.1,
+    "CASSCF [Col]": 7.5763,
+    "MRCI+DV1": 6.3489,
+    "MRCI+DV2": 6.2218,
+    "MRCI+DV3": 5.996,
+    "MRCI+P": 6.0988,
+    "MRCI": 6.7119,
+    "XS-CASCI": 5.8555,
+    "XS-CASSCF-05": 6.873,
+    "XS-CASSCF": 5.9314,
+    "Om": 0.857,
+    "QTa": 0.25
   },
   {
     "Molecule": "Thiophene",
@@ -314,7 +336,18 @@
     "CASPT3": 7.71,
     "CASPT3 (No IPEA)": 7.56,
     "SC-NEVPT2": 7.59,
-    "PC-NEVPT2": 7.39
+    "PC-NEVPT2": 7.39,
+    "CASSCF [Col]": 8.3087,
+    "MRCI+DV1": 7.7927,
+    "MRCI+DV2": 7.7134,
+    "MRCI+DV3": 7.571,
+    "MRCI+P": 7.6345,
+    "MRCI": 8.0026,
+    "XS-CASCI": 7.4215,
+    "XS-CASSCF-05": 7.8906,
+    "XS-CASSCF": 7.4391,
+    "Om": 0.605,
+    "QTa": 0.16
   },
   {
     "Molecule": "Thiophene",
@@ -349,7 +382,16 @@
     "CASPT3": 3.9,
     "CASPT3 (No IPEA)": 3.84,
     "SC-NEVPT2": 4.15,
-    "PC-NEVPT2": 4.13
+    "PC-NEVPT2": 4.13,
+    "CASSCF [Col]": 3.7247,
+    "MRCI+DV1": 3.9926,
+    "MRCI+DV2": 4.008,
+    "MRCI+DV3": 4.0334,
+    "MRCI+P": 4.0209,
+    "MRCI": 3.9369,
+    "XS-CASCI": 3.7381,
+    "XS-CASSCF-05": 3.7112,
+    "XS-CASSCF": 3.7138
   },
   {
     "Molecule": "Thiophene",
@@ -384,7 +426,16 @@
     "CASPT3": 4.87,
     "CASPT3 (No IPEA)": 4.79,
     "SC-NEVPT2": 4.88,
-    "PC-NEVPT2": 4.84
+    "PC-NEVPT2": 4.84,
+    "CASSCF [Col]": 4.9984,
+    "MRCI+DV1": 4.9294,
+    "MRCI+DV2": 4.9133,
+    "MRCI+DV3": 4.8849,
+    "MRCI+P": 4.8976,
+    "MRCI": 4.9735,
+    "XS-CASCI": 5.0118,
+    "XS-CASSCF-05": 5.0168,
+    "XS-CASSCF": 5.0299
   },
   {
     "Molecule": "Thiophene",

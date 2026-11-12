@@ -27,7 +27,18 @@
     "SOS-ADC(2) [QC]": 4.624,
     "ADC(2)": 4.519,
     "ADC(3)": 4.525,
-    "ADC(2.5)": 4.522
+    "ADC(2.5)": 4.522,
+    "CASSCF [Col]": 6.0608,
+    "MRCI+DV1": 5.2666,
+    "MRCI+DV2": 5.0801,
+    "MRCI+DV3": 4.7011,
+    "MRCI+P": 4.8077,
+    "MRCI": 5.707,
+    "XS-CASCI": 5.2164,
+    "XS-CASSCF-05": 5.9989,
+    "XS-CASSCF": 5.2378,
+    "Om": 0.848,
+    "QTa": 0.633
   },
   {
     "Molecule": "Octatetraene",
@@ -61,9 +72,20 @@
     "CASPT2": 4.741,
     "CASPT2(No IPEA)": 4.326,
     "CASPT3": 4.751,
-    "CASPT3(No IPEA)": 4.680,
+    "CASPT3(No IPEA)": 4.68,
     "SC-NEVPT2": 4.814,
-    "PC-NEVPT2": 4.783
+    "PC-NEVPT2": 4.783,
+    "CASSCF [Col]": 4.8273,
+    "MRCI+DV1": 4.7849,
+    "MRCI+DV2": 4.7681,
+    "MRCI+DV3": 4.7331,
+    "MRCI+P": 4.7426,
+    "MRCI": 4.8182,
+    "XS-CASCI": 4.6002,
+    "XS-CASSCF-05": 4.85,
+    "XS-CASSCF": 4.6028,
+    "Om": 0.35,
+    "QTa": 0.114
   },
   {
     "Molecule": "Octatetraene",
@@ -89,7 +111,16 @@
     "SOS-ADC(2) [QC]": 2.523,
     "ADC(2)": 2.492,
     "ADC(3)": 2.061,
-    "ADC(2.5)": 2.2765
+    "ADC(2.5)": 2.2765,
+    "CASSCF [Col]": 2.382,
+    "MRCI+DV1": 2.411,
+    "MRCI+DV2": 2.409,
+    "MRCI+DV3": 2.4043,
+    "MRCI+P": 2.4054,
+    "MRCI": 2.4116,
+    "XS-CASCI": 2.4001,
+    "XS-CASSCF-05": 2.3779,
+    "XS-CASSCF": 2.3998
   },
   {
     "Molecule": "Octatetraene",
@@ -115,6 +146,15 @@
     "SOS-ADC(2) [QC]": 3.715,
     "ADC(2)": 3.814,
     "ADC(3)": 3.416,
-    "ADC(2.5)": 3.615
+    "ADC(2.5)": 3.615,
+    "CASSCF [Col]": 3.7289,
+    "MRCI+DV1": 3.7914,
+    "MRCI+DV2": 3.7907,
+    "MRCI+DV3": 3.788,
+    "MRCI+P": 3.7884,
+    "MRCI": 3.7863,
+    "XS-CASCI": 3.7469,
+    "XS-CASSCF-05": 3.7264,
+    "XS-CASSCF": 3.7521
   }
 ]

@@ -30,7 +30,18 @@
     "SOS-ADC(2) [QC]": 1.676,
     "ADC(2)": 1.676,
     "ADC(3)": 1.495,
-    "ADC(2.5)": 1.5855000000000001
+    "ADC(2.5)": 1.5855000000000001,
+    "CASSCF [Col]": 1.7428,
+    "MRCI+DV1": 1.765,
+    "MRCI+DV2": 1.7642,
+    "MRCI+DV3": 1.7632,
+    "MRCI+P": 1.7642,
+    "MRCI": 1.7673,
+    "XS-CASCI": 2.0618,
+    "XS-CASSCF-05": 2.2796,
+    "XS-CASSCF": 2.0263,
+    "Om": 0.867,
+    "QTa": 0.0
   },
   {
     "Molecule": "Nitroxyl",
@@ -58,7 +69,18 @@
     "CASPT3": 4.364,
     "CASPT3 (No IPEA)": 4.361,
     "SC-NEVPT2": 4.398,
-    "PC-NEVPT2": 4.371
+    "PC-NEVPT2": 4.371,
+    "CASSCF [Col]": 4.3621,
+    "MRCI+DV1": 4.3933,
+    "MRCI+DV2": 4.3895,
+    "MRCI+DV3": 4.3843,
+    "MRCI+P": 4.39,
+    "MRCI": 4.408,
+    "XS-CASCI": 4.3275,
+    "XS-CASSCF-05": 4.3528,
+    "XS-CASSCF": 4.3382,
+    "Om": 0.02,
+    "QTa": 0.003
   },
   {
     "Molecule": "Nitroxyl",
@@ -120,7 +142,16 @@
     "SOS-ADC(2) [QC]": 0.91,
     "ADC(2)": 0.778,
     "ADC(3)": 0.592,
-    "ADC(2.5)": 0.685
+    "ADC(2.5)": 0.685,
+    "CASSCF [Col]": 1.0104,
+    "MRCI+DV1": 0.8619,
+    "MRCI+DV2": 0.8569,
+    "MRCI+DV3": 0.8502,
+    "MRCI+P": 0.8596,
+    "MRCI": 0.8935,
+    "XS-CASCI": 1.1519,
+    "XS-CASSCF-05": 1.0544,
+    "XS-CASSCF": 1.0921
   },
   {
     "Molecule": "Nitroxyl",
@@ -149,6 +180,15 @@
     "SOS-ADC(2) [QC]": 5.489,
     "ADC(2)": 5.835,
     "ADC(3)": 5.076,
-    "ADC(2.5)": 5.4555
+    "ADC(2.5)": 5.4555,
+    "CASSCF [Col]": 4.9198,
+    "MRCI+DV1": 5.6811,
+    "MRCI+DV2": 5.6992,
+    "MRCI+DV3": 5.7225,
+    "MRCI+P": 5.6872,
+    "MRCI": 5.5549,
+    "XS-CASCI": 5.0613,
+    "XS-CASSCF-05": 4.9736,
+    "XS-CASSCF": 5.0159
   }
 ]

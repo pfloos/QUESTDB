@@ -28,7 +28,16 @@
     "SOS-ADC(2) [QC]": 2.947,
     "ADC(2)": 2.719,
     "ADC(3)": 2.912,
-    "ADC(2.5)": 2.8155
+    "ADC(2.5)": 2.8155,
+    "CASSCF [Col]": 3.3088,
+    "MRCI+DV1": 3.0353,
+    "MRCI+DV2": 3.0339,
+    "MRCI+DV3": 3.0279,
+    "MRCI+P": 3.0289,
+    "MRCI": 3.0226,
+    "XS-CASCI": 4.7294,
+    "XS-CASSCF-05": 4.7929,
+    "XS-CASSCF": 4.791
   },
   {
     "Molecule": "Benzoquinone",
@@ -59,7 +68,16 @@
     "SOS-ADC(2) [QC]": 3.059,
     "ADC(2)": 2.842,
     "ADC(3)": 3.118,
-    "ADC(2.5)": 2.98
+    "ADC(2.5)": 2.98,
+    "CASSCF [Col]": 3.3107,
+    "MRCI+DV1": 3.0612,
+    "MRCI+DV2": 3.0661,
+    "MRCI+DV3": 3.0729,
+    "MRCI+P": 3.0702,
+    "MRCI": 3.0351,
+    "XS-CASCI": 4.7432,
+    "XS-CASSCF-05": 4.81,
+    "XS-CASSCF": 4.8128
   },
   {
     "Molecule": "Benzoquinone",
@@ -83,7 +101,16 @@
     "CASPT3": 4.672,
     "CASPT3 (No IPEA)": 4.696,
     "SC-NEVPT2": 4.565,
-    "PC-NEVPT2": 4.566
+    "PC-NEVPT2": 4.566,
+    "CASSCF [Col]": 5.0918,
+    "MRCI+DV1": 4.7495,
+    "MRCI+DV2": 4.7946,
+    "MRCI+DV3": 4.8801,
+    "MRCI+P": 4.854,
+    "MRCI": 4.6213,
+    "XS-CASCI": 5.1195,
+    "XS-CASSCF-05": 5.1683,
+    "XS-CASSCF": 5.2079
   },
   {
     "Molecule": "Benzoquinone",
@@ -112,7 +139,16 @@
     "SOS-ADC(2) [QC]": 4.875,
     "ADC(2)": 4.727,
     "ADC(3)": 4.293,
-    "ADC(2.5)": 4.51
+    "ADC(2.5)": 4.51,
+    "CASSCF [Col]": 6.0847,
+    "MRCI+DV1": 4.8853,
+    "MRCI+DV2": 4.7743,
+    "MRCI+DV3": 4.5496,
+    "MRCI+P": 4.6154,
+    "MRCI": 5.1427,
+    "XS-CASCI": 5.6923,
+    "XS-CASSCF-05": 5.8287,
+    "XS-CASSCF": 5.6733
   },
   {
     "Molecule": "Benzoquinone",
@@ -166,7 +202,16 @@
     "SOS-ADC(2) [QC]": 5.588,
     "ADC(2)": 5.42,
     "ADC(3)": 5.452,
-    "ADC(2.5)": 5.436
+    "ADC(2.5)": 5.436,
+    "CASSCF [Col]": 7.8322,
+    "MRCI+DV1": 6.2482,
+    "MRCI+DV2": 6.0289,
+    "MRCI+DV3": 5.5783,
+    "MRCI+P": 5.7101,
+    "MRCI": 6.7462,
+    "XS-CASCI": 6.6037,
+    "XS-CASSCF-05": 7.5289,
+    "XS-CASSCF": 6.7189
   },
   {
     "Molecule": "Benzoquinone",
@@ -204,7 +249,16 @@
     "CASPT3": 6.063,
     "CASPT3 (No IPEA)": 5.954,
     "SC-NEVPT2": 6.02,
-    "PC-NEVPT2": 5.944
+    "PC-NEVPT2": 5.944,
+    "CASSCF [Col]": 6.3318,
+    "MRCI+DV1": 6.1139,
+    "MRCI+DV2": 6.0625,
+    "MRCI+DV3": 5.9549,
+    "MRCI+P": 5.9855,
+    "MRCI": 6.2146,
+    "XS-CASCI": 6.3207,
+    "XS-CASSCF-05": 6.3583,
+    "XS-CASSCF": 6.4184
   },
   {
     "Molecule": "Benzoquinone",
@@ -240,7 +294,16 @@
     "CASPT3": 6.028,
     "CASPT3 (No IPEA)": 5.95,
     "SC-NEVPT2": 6.004,
-    "PC-NEVPT2": 5.932
+    "PC-NEVPT2": 5.932,
+    "CASSCF [Col]": 6.3254,
+    "MRCI+DV1": 6.113,
+    "MRCI+DV2": 6.064,
+    "MRCI+DV3": 5.9616,
+    "MRCI+P": 5.9908,
+    "MRCI": 6.2089,
+    "XS-CASCI": 6.3219,
+    "XS-CASSCF-05": 6.3505,
+    "XS-CASSCF": 6.4121
   },
   {
     "Molecule": "Benzoquinone",
@@ -276,7 +339,16 @@
     "CASPT3": 6.422,
     "CASPT3 (No IPEA)": 6.352,
     "SC-NEVPT2": 6.548,
-    "PC-NEVPT2": 6.502
+    "PC-NEVPT2": 6.502,
+    "CASSCF [Col]": 6.7298,
+    "MRCI+DV1": 6.656,
+    "MRCI+DV2": 6.5446,
+    "MRCI+DV3": 6.3118,
+    "MRCI+P": 6.3785,
+    "MRCI": 6.8818,
+    "XS-CASCI": 7.541,
+    "XS-CASSCF-05": 7.6364,
+    "XS-CASSCF": 7.6547
   },
   {
     "Molecule": "Benzoquinone",
@@ -398,7 +470,16 @@
     "SOS-ADC(2) [QC]": 7.492,
     "ADC(2)": 7.191,
     "ADC(3)": 7.123,
-    "ADC(2.5)": 7.157
+    "ADC(2.5)": 7.157,
+    "CASSCF [Col]": 8.9585,
+    "MRCI+DV1": 7.2593,
+    "MRCI+DV2": 7.0873,
+    "MRCI+DV3": 6.7325,
+    "MRCI+P": 6.8357,
+    "MRCI": 7.6387,
+    "XS-CASCI": 8.9882,
+    "XS-CASSCF-05": 9.0674,
+    "XS-CASSCF": 9.126
   },
   {
     "Molecule": "Benzoquinone",
@@ -483,7 +564,16 @@
     "SOS-ADC(2) [QC]": 2.707,
     "ADC(2)": 2.416,
     "ADC(3)": 2.633,
-    "ADC(2.5)": 2.5244999999999997
+    "ADC(2.5)": 2.5244999999999997,
+    "CASSCF [Col]": 3.2526,
+    "MRCI+DV1": 2.8426,
+    "MRCI+DV2": 2.8182,
+    "MRCI+DV3": 2.7678,
+    "MRCI+P": 2.7822,
+    "MRCI": 2.8922,
+    "XS-CASCI": 3.2834,
+    "XS-CASSCF-05": 3.2549,
+    "XS-CASSCF": 3.2826
   },
   {
     "Molecule": "Benzoquinone",
@@ -511,7 +601,16 @@
     "SOS-ADC(2) [QC]": 2.833,
     "ADC(2)": 2.552,
     "ADC(3)": 2.846,
-    "ADC(2.5)": 2.699
+    "ADC(2.5)": 2.699,
+    "CASSCF [Col]": 3.2736,
+    "MRCI+DV1": 2.8964,
+    "MRCI+DV2": 2.8783,
+    "MRCI+DV3": 2.8406,
+    "MRCI+P": 2.8514,
+    "MRCI": 2.9326,
+    "XS-CASCI": 3.3044,
+    "XS-CASSCF-05": 3.276,
+    "XS-CASSCF": 3.3036
   },
   {
     "Molecule": "Benzoquinone",
@@ -539,7 +638,16 @@
     "SOS-ADC(2) [QC]": 3.219,
     "ADC(2)": 3.264,
     "ADC(3)": 2.845,
-    "ADC(2.5)": 3.0545
+    "ADC(2.5)": 3.0545,
+    "CASSCF [Col]": 3.1877,
+    "MRCI+DV1": 3.2542,
+    "MRCI+DV2": 3.288,
+    "MRCI+DV3": 3.3541,
+    "MRCI+P": 3.3344,
+    "MRCI": 3.1678,
+    "XS-CASCI": 3.2185,
+    "XS-CASSCF-05": 3.1892,
+    "XS-CASSCF": 3.2185
   },
   {
     "Molecule": "Benzoquinone",
@@ -567,6 +675,15 @@
     "SOS-ADC(2) [QC]": 3.605,
     "ADC(2)": 3.566,
     "ADC(3)": 3.116,
-    "ADC(2.5)": 3.341
+    "ADC(2.5)": 3.341,
+    "CASSCF [Col]": 3.8571,
+    "MRCI+DV1": 3.6667,
+    "MRCI+DV2": 3.627,
+    "MRCI+DV3": 3.5465,
+    "MRCI+P": 3.5699,
+    "MRCI": 3.7551,
+    "XS-CASCI": 3.8878,
+    "XS-CASSCF-05": 3.857,
+    "XS-CASSCF": 3.889
   }
 ]

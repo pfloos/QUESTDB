@@ -37,7 +37,18 @@
     "CASPT3": 4.39,
     "CASPT3 (No IPEA)": 4.33,
     "SC-NEVPT2": 4.4,
-    "PC-NEVPT2": 4.37
+    "PC-NEVPT2": 4.37,
+    "CASSCF [Col]": 4.5245,
+    "MRCI+DV1": 4.3936,
+    "MRCI+DV2": 4.3731,
+    "MRCI+DV3": 4.3401,
+    "MRCI+P": 4.3601,
+    "MRCI": 4.4597,
+    "XS-CASCI": 4.0379,
+    "XS-CASSCF-05": 4.2867,
+    "XS-CASSCF": 4.0552,
+    "Om": 0.744,
+    "QTa": 0.067
   },
   {
     "Molecule": "Methylenecyclopropene",
@@ -156,7 +167,18 @@
     "CASPT3": 6.17,
     "CASPT3 (No IPEA)": 6.13,
     "SC-NEVPT2": 6.37,
-    "PC-NEVPT2": 6.36
+    "PC-NEVPT2": 6.36,
+    "CASSCF [Col]": 5.9634,
+    "MRCI+DV1": 6.1556,
+    "MRCI+DV2": 6.1504,
+    "MRCI+DV3": 6.1407,
+    "MRCI+P": 6.1447,
+    "MRCI": 6.1551,
+    "XS-CASCI": 4.9915,
+    "XS-CASSCF-05": 5.4638,
+    "XS-CASSCF": 4.9432,
+    "Om": 0.88,
+    "QTa": 0.361
   },
   {
     "Molecule": "Methylenecyclopropene",
@@ -191,7 +213,16 @@
     "CASPT3": 3.55,
     "CASPT3 (No IPEA)": 3.49,
     "SC-NEVPT2": 3.67,
-    "PC-NEVPT2": 3.66
+    "PC-NEVPT2": 3.66,
+    "CASSCF [Col]": 3.2328,
+    "MRCI+DV1": 3.4989,
+    "MRCI+DV2": 3.5092,
+    "MRCI+DV3": 3.5248,
+    "MRCI+P": 3.5139,
+    "MRCI": 3.453,
+    "XS-CASCI": 3.3955,
+    "XS-CASSCF-05": 3.3043,
+    "XS-CASSCF": 3.3894
   },
   {
     "Molecule": "Methylenecyclopropene",
@@ -226,6 +257,15 @@
     "CASPT3": 4.77,
     "CASPT3 (No IPEA)": 4.72,
     "SC-NEVPT2": 4.89,
-    "PC-NEVPT2": 4.87
+    "PC-NEVPT2": 4.87,
+    "CASSCF [Col]": 4.5935,
+    "MRCI+DV1": 4.7872,
+    "MRCI+DV2": 4.7904,
+    "MRCI+DV3": 4.7948,
+    "MRCI+P": 4.7909,
+    "MRCI": 4.7657,
+    "XS-CASCI": 4.7562,
+    "XS-CASSCF-05": 4.676,
+    "XS-CASSCF": 4.7741
   }
 ]

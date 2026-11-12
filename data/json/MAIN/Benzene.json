@@ -36,7 +36,18 @@
     "CASPT3": 5.09,
     "CASPT3 (No IPEA)": 5.01,
     "SC-NEVPT2": 5.35,
-    "PC-NEVPT2": 5.32
+    "PC-NEVPT2": 5.32,
+    "CASSCF [Col]": 4.8623,
+    "MRCI+DV1": 5.1029,
+    "MRCI+DV2": 5.1155,
+    "MRCI+DV3": 5.1363,
+    "MRCI+P": 5.1273,
+    "MRCI": 5.057,
+    "XS-CASCI": 4.7934,
+    "XS-CASSCF-05": 5.4085,
+    "XS-CASSCF": 4.7956,
+    "Om": 0.772,
+    "QTa": 0.001
   },
   {
     "Molecule": "Benzene",
@@ -75,7 +86,18 @@
     "CASPT3": 6.67,
     "CASPT3 (No IPEA)": 6.58,
     "SC-NEVPT2": 6.48,
-    "PC-NEVPT2": 6.43
+    "PC-NEVPT2": 6.43,
+    "CASSCF [Col]": 7.9449,
+    "MRCI+DV1": 6.7834,
+    "MRCI+DV2": 6.6704,
+    "MRCI+DV3": 6.4683,
+    "MRCI+P": 6.5489,
+    "MRCI": 7.1065,
+    "XS-CASCI": 6.6861,
+    "XS-CASSCF-05": 7.6017,
+    "XS-CASSCF": 6.7063,
+    "Om": 0.864,
+    "QTa": 0.759
   },
   {
     "Molecule": "Benzene",
@@ -285,7 +307,18 @@
     "CASPT3": 8.263,
     "CASPT3 (No IPEA)": 8.162,
     "SC-NEVPT2": 8.555,
-    "PC-NEVPT2": 8.512
+    "PC-NEVPT2": 8.512,
+    "CASSCF [Col]": 8.1012,
+    "MRCI+DV1": 8.283850000000001,
+    "MRCI+DV2": 8.2814,
+    "MRCI+DV3": 8.2753,
+    "MRCI+P": 8.27665,
+    "MRCI": 8.2758,
+    "XS-CASCI": 8.0267,
+    "XS-CASSCF-05": 8.374749999999999,
+    "XS-CASSCF": 8.0322,
+    "Om": 0.4725,
+    "QTa": 0.1355
   },
   {
     "Molecule": "Benzene",
@@ -305,7 +338,18 @@
     "CASPT3": 10.468,
     "CASPT3 (No IPEA)": 10.315,
     "SC-NEVPT2": 10.381,
-    "PC-NEVPT2": 9.995
+    "PC-NEVPT2": 9.995,
+    "CASSCF [Col]": 11.4201,
+    "MRCI+DV1": 10.6809,
+    "MRCI+DV2": 10.5928,
+    "MRCI+DV3": 10.4334,
+    "MRCI+P": 10.4959,
+    "MRCI": 10.9179,
+    "XS-CASCI": 11.4201,
+    "XS-CASSCF-05": 11.4216,
+    "XS-CASSCF": 11.4408,
+    "Om": 0.063,
+    "QTa": 0.01
   },
   {
     "Molecule": "Benzene",
@@ -340,7 +384,16 @@
     "CASPT3": 4.14,
     "CASPT3 (No IPEA)": 4.08,
     "SC-NEVPT2": 4.33,
-    "PC-NEVPT2": 4.32
+    "PC-NEVPT2": 4.32,
+    "CASSCF [Col]": 3.7989,
+    "MRCI+DV1": 4.1787,
+    "MRCI+DV2": 4.2041,
+    "MRCI+DV3": 4.2472,
+    "MRCI+P": 4.2291,
+    "MRCI": 4.0925,
+    "XS-CASCI": 3.7993,
+    "XS-CASSCF-05": 3.7986,
+    "XS-CASSCF": 3.7994
   },
   {
     "Molecule": "Benzene",
@@ -375,7 +428,16 @@
     "CASPT3": 4.87,
     "CASPT3 (No IPEA)": 4.8,
     "SC-NEVPT2": 4.94,
-    "PC-NEVPT2": 4.92
+    "PC-NEVPT2": 4.92,
+    "CASSCF [Col]": 4.8652,
+    "MRCI+DV1": 4.92575,
+    "MRCI+DV2": 4.9223,
+    "MRCI+DV3": 4.91555,
+    "MRCI+P": 4.9178,
+    "MRCI": 4.929,
+    "XS-CASCI": 4.8655,
+    "XS-CASSCF-05": 4.8665,
+    "XS-CASSCF": 4.8723
   },
   {
     "Molecule": "Benzene",
@@ -410,7 +472,16 @@
     "CASPT3": 5.9,
     "CASPT3 (No IPEA)": 5.81,
     "SC-NEVPT2": 5.59,
-    "PC-NEVPT2": 5.51
+    "PC-NEVPT2": 5.51,
+    "CASSCF [Col]": 7.1554,
+    "MRCI+DV1": 6.1032,
+    "MRCI+DV2": 6.0034,
+    "MRCI+DV3": 5.8255,
+    "MRCI+P": 5.8966,
+    "MRCI": 6.391,
+    "XS-CASCI": 7.1558,
+    "XS-CASSCF-05": 7.1609,
+    "XS-CASSCF": 7.1819
   },
   {
     "Molecule": "Benzene",

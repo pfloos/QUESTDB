@@ -76,7 +76,18 @@
     "CASPT3": 6.8,
     "CASPT3 (No IPEA)": 6.71,
     "SC-NEVPT2": 6.43,
-    "PC-NEVPT2": 6.2
+    "PC-NEVPT2": 6.2,
+    "CASSCF [Col]": 8.263,
+    "MRCI+DV1": 6.5422,
+    "MRCI+DV2": 6.4187,
+    "MRCI+DV3": 6.2312,
+    "MRCI+P": 6.5246,
+    "MRCI": 7.0681,
+    "XS-CASCI": 6.4118,
+    "XS-CASSCF-05": 7.4573,
+    "XS-CASSCF": 6.5208,
+    "Om": 0.883,
+    "QTa": 0.402
   },
   {
     "Molecule": "Furan",
@@ -115,7 +126,18 @@
     "CASPT3": 6.69,
     "CASPT3 (No IPEA)": 6.62,
     "SC-NEVPT2": 6.83,
-    "PC-NEVPT2": 6.77
+    "PC-NEVPT2": 6.77,
+    "CASSCF [Col]": 6.8687,
+    "MRCI+DV1": 6.7678,
+    "MRCI+DV2": 6.7612,
+    "MRCI+DV3": 6.7533,
+    "MRCI+P": 6.7746,
+    "MRCI": 6.8259,
+    "XS-CASCI": 5.9056,
+    "XS-CASSCF-05": 6.5195,
+    "XS-CASSCF": 5.9093,
+    "Om": 0.694,
+    "QTa": 0.133
   },
   {
     "Molecule": "Furan",
@@ -205,7 +227,7 @@
     "V/R": "R",
     "Type": "p3p",
     "%T1 [CC3/AVTZ]": 93.5,
-    "f [LR-CC3/AVTZ]": 0.0083,
+    "f [LR-CC3/AVTZ]": 0.007,
     "TBE/AVTZ": 7.247,
     "Method": "CC4/AVDZ + [CCSDT/AVTZ - CCSDT/AVDZ]",
     "Safe ? (~50 meV)": "Y",
@@ -269,7 +291,16 @@
     "CASPT3": 4.17,
     "CASPT3 (No IPEA)": 4.12,
     "SC-NEVPT2": 4.43,
-    "PC-NEVPT2": 4.42
+    "PC-NEVPT2": 4.42,
+    "CASSCF [Col]": 4.0159,
+    "MRCI+DV1": 4.2041,
+    "MRCI+DV2": 4.2049,
+    "MRCI+DV3": 4.2059,
+    "MRCI+P": 4.2017,
+    "MRCI": 4.1908,
+    "XS-CASCI": 4.026,
+    "XS-CASSCF-05": 4.0079,
+    "XS-CASSCF": 4.0192
   },
   {
     "Molecule": "Furan",
@@ -304,7 +335,16 @@
     "CASPT3": 5.47,
     "CASPT3 (No IPEA)": 5.4,
     "SC-NEVPT2": 5.63,
-    "PC-NEVPT2": 5.6
+    "PC-NEVPT2": 5.6,
+    "CASSCF [Col]": 5.3899,
+    "MRCI+DV1": 5.473,
+    "MRCI+DV2": 5.4716,
+    "MRCI+DV3": 5.4699,
+    "MRCI+P": 5.4744,
+    "MRCI": 5.4853,
+    "XS-CASCI": 5.3999,
+    "XS-CASSCF-05": 5.4015,
+    "XS-CASSCF": 5.4158
   },
   {
     "Molecule": "Furan",

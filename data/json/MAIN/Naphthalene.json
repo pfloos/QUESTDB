@@ -26,7 +26,18 @@
     "SOS-ADC(2) [QC]": 4.127,
     "ADC(2)": 4.457,
     "ADC(3)": 4.187,
-    "ADC(2.5)": 4.322
+    "ADC(2.5)": 4.322,
+    "CASSCF [Col]": 4.1939,
+    "MRCI+DV1": 4.5944,
+    "MRCI+DV2": 4.502,
+    "MRCI+DV3": 4.2986,
+    "MRCI+P": 4.3485,
+    "MRCI": 4.7834,
+    "XS-CASCI": 4.2701,
+    "XS-CASSCF-05": 4.6979,
+    "XS-CASSCF": 4.272,
+    "Om": 0.796,
+    "QTa": 0.237
   },
   {
     "Molecule": "Naphthalene",
@@ -55,7 +66,18 @@
     "SOS-ADC(2) [QC]": 4.737,
     "ADC(2)": 4.806,
     "ADC(3)": 4.759,
-    "ADC(2.5)": 4.782500000000001
+    "ADC(2.5)": 4.782500000000001,
+    "CASSCF [Col]": 6.4427,
+    "MRCI+DV1": 5.3835,
+    "MRCI+DV2": 5.2392,
+    "MRCI+DV3": 4.9255,
+    "MRCI+P": 5.0032,
+    "MRCI": 5.695,
+    "XS-CASCI": 5.8648,
+    "XS-CASSCF-05": 6.4248,
+    "XS-CASSCF": 5.8675,
+    "Om": 0.834,
+    "QTa": 0.557
   },
   {
     "Molecule": "Naphthalene",
@@ -111,7 +133,18 @@
     "SOS-ADC(2) [QC]": 5.926,
     "ADC(2)": 5.896,
     "ADC(3)": 5.805,
-    "ADC(2.5)": 5.8505
+    "ADC(2.5)": 5.8505,
+    "CASSCF [Col]": 6.5093,
+    "MRCI+DV1": 6.5704,
+    "MRCI+DV2": 6.4079,
+    "MRCI+DV3": 6.0485,
+    "MRCI+P": 6.1369,
+    "MRCI": 6.9032,
+    "XS-CASCI": 6.6611,
+    "XS-CASSCF-05": 6.9965,
+    "XS-CASSCF": 6.6785,
+    "Om": 0.633,
+    "QTa": 0.167
   },
   {
     "Molecule": "Naphthalene",
@@ -139,7 +172,18 @@
     "SOS-ADC(2) [QC]": 5.808,
     "ADC(2)": 6.129,
     "ADC(3)": 5.629,
-    "ADC(2.5)": 5.879
+    "ADC(2.5)": 5.879,
+    "CASSCF [Col]": 5.8508,
+    "MRCI+DV1": 6.439,
+    "MRCI+DV2": 6.3056,
+    "MRCI+DV3": 6.009,
+    "MRCI+P": 6.0817,
+    "MRCI": 6.7039,
+    "XS-CASCI": 6.0137,
+    "XS-CASSCF-05": 6.2992,
+    "XS-CASSCF": 6.0268,
+    "Om": 0.667,
+    "QTa": 0.146
   },
   {
     "Molecule": "Naphthalene",
@@ -224,7 +268,18 @@
     "SOS-ADC(2) [QC]": 6.066,
     "ADC(2)": 6.068,
     "ADC(3)": 6.093,
-    "ADC(2.5)": 6.0805
+    "ADC(2.5)": 6.0805,
+    "CASSCF [Col]": 7.932,
+    "MRCI+DV1": 6.9976,
+    "MRCI+DV2": 6.7932,
+    "MRCI+DV3": 6.3422,
+    "MRCI+P": 6.4536,
+    "MRCI": 7.4237,
+    "XS-CASCI": 6.7752,
+    "XS-CASSCF-05": 7.2282,
+    "XS-CASSCF": 6.7692,
+    "Om": 0.899,
+    "QTa": 0.324
   },
   {
     "Molecule": "Naphthalene",
@@ -282,7 +337,18 @@
     "SOS-ADC(2) [QC]": 6.28,
     "ADC(2)": 6.392,
     "ADC(3)": 6.306,
-    "ADC(2.5)": 6.349
+    "ADC(2.5)": 6.349,
+    "CASSCF [Col]": 8.0593,
+    "MRCI+DV1": 7.0742,
+    "MRCI+DV2": 6.896,
+    "MRCI+DV3": 6.5049,
+    "MRCI+P": 6.6015,
+    "MRCI": 7.4498,
+    "XS-CASCI": 7.3919,
+    "XS-CASSCF-05": 7.9915,
+    "XS-CASSCF": 7.3743,
+    "Om": 0.861,
+    "QTa": 0.588
   },
   {
     "Molecule": "Naphthalene",
@@ -310,7 +376,18 @@
     "SOS-ADC(2) [QC]": 6.415,
     "ADC(2)": 6.518,
     "ADC(3)": 6.388,
-    "ADC(2.5)": 6.452999999999999
+    "ADC(2.5)": 6.452999999999999,
+    "CASSCF [Col]": 7.5654,
+    "MRCI+DV1": 7.429,
+    "MRCI+DV2": 7.2059,
+    "MRCI+DV3": 6.7128,
+    "MRCI+P": 6.8346,
+    "MRCI": 7.8933,
+    "XS-CASCI": 7.8167,
+    "XS-CASSCF-05": 8.0475,
+    "XS-CASSCF": 7.8153,
+    "Om": 0.881,
+    "QTa": 0.24
   },
   {
     "Molecule": "Naphthalene",
@@ -345,7 +422,18 @@
     "CASPT3": 6.809,
     "CASPT3(No IPEA)": 6.748,
     "SC-NEVPT2": 6.958,
-    "PC-NEVPT2": 6.900
+    "PC-NEVPT2": 6.9,
+    "CASSCF [Col]": 6.8561,
+    "MRCI+DV1": 7.0917,
+    "MRCI+DV2": 6.9657,
+    "MRCI+DV3": 6.6873,
+    "MRCI+P": 6.7557,
+    "MRCI": 7.3471,
+    "XS-CASCI": 6.5984,
+    "XS-CASSCF-05": 6.8237,
+    "XS-CASSCF": 6.6096,
+    "Om": 0.465,
+    "QTa": 0.111
   },
   {
     "Molecule": "Naphthalene",
@@ -427,7 +515,16 @@
     "SOS-ADC(2) [QC]": 3.221,
     "ADC(2)": 3.321,
     "ADC(3)": 2.925,
-    "ADC(2.5)": 3.123
+    "ADC(2.5)": 3.123,
+    "CASSCF [Col]": 3.023,
+    "MRCI+DV1": 3.3087,
+    "MRCI+DV2": 3.2988,
+    "MRCI+DV3": 3.2758,
+    "MRCI+P": 3.2812,
+    "MRCI": 3.3242,
+    "XS-CASCI": 3.0239,
+    "XS-CASSCF-05": 3.0243,
+    "XS-CASSCF": 3.0306
   },
   {
     "Molecule": "Naphthalene",
@@ -452,7 +549,16 @@
     "SOS-ADC(2) [QC]": 4.128,
     "ADC(2)": 4.325,
     "ADC(3)": 3.901,
-    "ADC(2.5)": 4.1129999999999995
+    "ADC(2.5)": 4.1129999999999995,
+    "CASSCF [Col]": 4.251,
+    "MRCI+DV1": 4.4316,
+    "MRCI+DV2": 4.3635,
+    "MRCI+DV3": 4.2144,
+    "MRCI+P": 4.2511,
+    "MRCI": 4.5724,
+    "XS-CASCI": 4.2519,
+    "XS-CASSCF-05": 4.2452,
+    "XS-CASSCF": 4.2529
   },
   {
     "Molecule": "Naphthalene",
@@ -477,7 +583,16 @@
     "SOS-ADC(2) [QC]": 4.467,
     "ADC(2)": 4.629,
     "ADC(3)": 4.233,
-    "ADC(2.5)": 4.430999999999999
+    "ADC(2.5)": 4.430999999999999,
+    "CASSCF [Col]": 4.4709,
+    "MRCI+DV1": 4.8217,
+    "MRCI+DV2": 4.7483,
+    "MRCI+DV3": 4.5853,
+    "MRCI+P": 4.6251,
+    "MRCI": 4.9663,
+    "XS-CASCI": 4.4718,
+    "XS-CASSCF-05": 4.4838,
+    "XS-CASSCF": 4.4896
   },
   {
     "Molecule": "Naphthalene",
@@ -502,7 +617,16 @@
     "SOS-ADC(2) [QC]": 4.617,
     "ADC(2)": 4.843,
     "ADC(3)": 4.386,
-    "ADC(2.5)": 4.6145
+    "ADC(2.5)": 4.6145,
+    "CASSCF [Col]": 4.6129,
+    "MRCI+DV1": 4.9226,
+    "MRCI+DV2": 4.8594,
+    "MRCI+DV3": 4.7208,
+    "MRCI+P": 4.7548,
+    "MRCI": 5.0521,
+    "XS-CASCI": 4.6138,
+    "XS-CASSCF-05": 4.6013,
+    "XS-CASSCF": 4.6083
   },
   {
     "Molecule": "Naphthalene",
@@ -527,7 +651,16 @@
     "SOS-ADC(2) [QC]": 4.951,
     "ADC(2)": 4.958,
     "ADC(3)": 4.676,
-    "ADC(2.5)": 4.817
+    "ADC(2.5)": 4.817,
+    "CASSCF [Col]": 6.347,
+    "MRCI+DV1": 5.3669,
+    "MRCI+DV2": 5.2578,
+    "MRCI+DV3": 5.022,
+    "MRCI+P": 5.0805,
+    "MRCI": 5.6055,
+    "XS-CASCI": 6.3479,
+    "XS-CASSCF-05": 6.323,
+    "XS-CASSCF": 6.3366
   },
   {
     "Molecule": "Naphthalene",
@@ -552,7 +685,16 @@
     "SOS-ADC(2) [QC]": 5.417,
     "ADC(2)": 5.688,
     "ADC(3)": 5.237,
-    "ADC(2.5)": 5.4625
+    "ADC(2.5)": 5.4625,
+    "CASSCF [Col]": 5.569,
+    "MRCI+DV1": 5.8806,
+    "MRCI+DV2": 5.8072,
+    "MRCI+DV3": 5.6449,
+    "MRCI+P": 5.6846,
+    "MRCI": 6.0268,
+    "XS-CASCI": 5.5699,
+    "XS-CASSCF-05": 5.5728,
+    "XS-CASSCF": 5.5788
   },
   {
     "Molecule": "Naphthalene",
@@ -652,7 +794,12 @@
     "SOS-ADC(2) [QC]": 6.266,
     "ADC(2)": 6.149,
     "ADC(3)": 6.147,
-    "ADC(2.5)": 6.148
+    "ADC(2.5)": 6.148,
+    "MRCI+DV1": 7.0574,
+    "MRCI+DV2": 6.8779,
+    "MRCI+DV3": 6.4827,
+    "MRCI+P": 6.5802,
+    "MRCI": 7.4327
   },
   {
     "Molecule": "Naphthalene",
@@ -702,6 +849,15 @@
     "SOS-ADC(2) [QC]": 6.527,
     "ADC(2)": 6.57,
     "ADC(3)": 6.158,
-    "ADC(2.5)": 6.364000000000001
+    "ADC(2.5)": 6.364000000000001,
+    "CASSCF [Col]": 6.4079,
+    "MRCI+DV1": 6.9842,
+    "MRCI+DV2": 6.8715,
+    "MRCI+DV3": 6.6225,
+    "MRCI+P": 6.6836,
+    "MRCI": 7.2118,
+    "XS-CASCI": 6.4088,
+    "XS-CASSCF-05": 6.4106,
+    "XS-CASSCF": 6.417
   }
 ]
