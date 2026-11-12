@@ -152,7 +152,7 @@ def neutral_records(path):
         }
 
 
-def charged_records(path, group):
+def charged_records(path, group, molecule):
     source = path.relative_to(ROOT).as_posix()
     data = read_json(path)
     if group == "DIPs":
@@ -186,7 +186,7 @@ def charged_records(path, group):
                     uncertainties if not isinstance(uncertainties, list) and offset == 0 else None
                 )
                 yield {
-                    "molecule": path.stem, "state": sector, "source": source,
+                    "molecule": molecule, "state": sector, "source": source,
                     "method": method, "basis": basis, "root": offset + 1,
                     "energy": energy, "weight": weight, "uncertainty": uncertainty,
                 }
@@ -213,13 +213,19 @@ def main():
     ).splitlines()
     collections = []
     neutral_molecules = {}
+    valence_formulas = {
+        path.stem.casefold(): path.stem
+        for path in (ROOT / "charged/valence_IPs/geometries").glob("*.xyz")
+    }
     for group, label in (NEUTRAL | CHARGED).items():
         neutral = group in NEUTRAL
         directory = ROOT / ("data/json" if neutral else "charged") / group
         paths = sorted(directory.glob("*.json"))
         rows = [
             row for path in paths if path.relative_to(ROOT).as_posix() != CORE_SUPPLEMENT
-            for row in (neutral_records(path) if neutral else charged_records(path, group))
+            for row in (neutral_records(path) if neutral else charged_records(
+                path, group, valence_formulas.get(path.stem.casefold(), path.stem) if group == "valence_IPs" else path.stem
+            ))
         ]
         if not rows:
             raise ValueError(f"{group}: no data found")

@@ -133,7 +133,7 @@ function inferBonds(atoms) {
             const other = atoms[j];
             const radius = covalentRadii[atom.symbol] + covalentRadii[other.symbol];
             const distance = Math.hypot(...atom.xyz.map((value, axis) => value - other.xyz[axis]));
-            if (distance > .35 && distance <= 1.2 * radius) bonds.push([j, i]);
+            if (distance > .35 && distance <= Math.max(1.2 * radius, radius + .30)) bonds.push([j, i]);
         }
     });
     return bonds;
