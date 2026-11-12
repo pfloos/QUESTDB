@@ -105,5 +105,8 @@ nav a[aria-current="page"] { color: var(--accent); font-weight: 700; }
 .geometry-item { margin-block: .45rem; }
 .geometry-list small, .geometry-item small { color: var(--muted); margin-left: .4rem; }
 .geometry-actions { display: flex; flex-wrap: wrap; gap: .4rem .8rem; margin-top: .35rem; align-items: center; font-size: .86rem; }
-#structure-canvas { display: block; width: 100%; height: 300px; touch-action: none; cursor: grab; background: var(--tint); border-radius: .45rem; }
+#structure-canvas { display: block; width: 100%; height: 340px; margin-top: .55rem; touch-action: none; cursor: grab; background: var(--tint); border-radius: .45rem; }
+#structure-canvas:active { cursor: grabbing; }
+.state-label { display: inline-block; white-space: nowrap; font-family: Georgia, serif; }
+.state-label sup, .state-label sub { font-size: .72em; line-height: 0; }
 .geometry-shortcut { margin-left: .55rem; padding: .1rem .35rem; color: var(--muted); font-size: .72rem; }

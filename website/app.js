@@ -119,15 +119,51 @@ function values(row) {
     return result;
 }
 
+function stateParts(value) {
+    const match = String(value ?? "").trim().match(/^\^\s*(\d+)\s*\\*(Sigma|Pi|Delta|Phi|Gamma|[A-Z])(?:_(?:\{([\da-z]+)\}|([\da-z]+)))?\^?([+'-]*)(\s*\[F\])?$/);
+    if (!match) return null;
+    const [, multiplicity, label, braced, bare, signs, note] = match;
+    const symbol = {Sigma: "Σ", Pi: "Π", Delta: "Δ", Phi: "Φ", Gamma: "Γ"}[label] ?? label;
+    return [multiplicity, symbol, braced ?? bare ?? "", signs.replace(/''/g, "″").replace(/'/g, "′").replace(/-/g, "−"), note ? " [F]" : ""];
+}
+
+function stateLabel(value) {
+    const parts = stateParts(value);
+    const label = element("span", parts ? "" : value ?? "—");
+    if (parts) {
+        const [multiplicity, symbol, subscript, superscript, note] = parts;
+        label.className = "state-label";
+        label.append(element("sup", multiplicity), symbol);
+        if (subscript) label.append(element("sub", subscript));
+        if (superscript) label.append(element("sup", superscript));
+        if (note) label.append(note);
+    }
+    return label;
+}
+
+function stateOptionText(value) {
+    const parts = stateParts(value);
+    if (!parts) return value;
+    const [multiplicity, symbol, subscript, superscript, note] = parts;
+    const sub = {"0":"₀","1":"₁","2":"₂","3":"₃",a:"ₐ",e:"ₑ",i:"ᵢ",o:"ₒ",u:"ᵤ",v:"ᵥ"};
+    const suffix = [...subscript].every(char => Object.hasOwn(sub, char))
+        ? [...subscript].map(char => sub[char]).join("") : (subscript ? `(${subscript})` : "");
+    return [...multiplicity].map(digit => "⁰¹²³⁴⁵⁶⁷⁸⁹"[digit]).join("") + symbol + suffix
+        + superscript.replace(/\+/g, "⁺").replace(/−/g, "⁻") + note;
+}
+
 function showDetails(row, focusGeometry = false) {
-    ui["detail-title"].textContent = `${row.molecule} · ${row.state}`;
+    ui["detail-title"].replaceChildren(`${row.molecule} · `, stateLabel(row.state));
     ui["detail-source"].href = sourceLink(row.source);
     const entries = row.fields ?? {
         Molecule: row.molecule, Sector: row.state, Method: row.method, Basis: row.basis,
         Root: row.root, "Energy (eV)": row.energy, Z: row.weight, "Uncertainty (eV)": row.uncertainty,
     };
-    ui["detail-fields"].replaceChildren(...Object.entries(entries).flatMap(([key, value]) =>
-        [element("dt", key), element("dd", value == null ? "—" : String(value))]));
+    ui["detail-fields"].replaceChildren(...Object.entries(entries).flatMap(([key, value]) => {
+        const field = element("dd");
+        field.append(key === "State" ? stateLabel(value) : value == null ? "—" : String(value));
+        return [element("dt", key), field];
+    }));
     showGeometryLinks(row, document.getElementById("detail-geometries"));
     ui.detail.showModal();
     if (focusGeometry) document.getElementById("detail-geometries").focus();
@@ -171,6 +207,8 @@ function render() {
                 geometry.setAttribute("aria-label", `Geometry for ${row.molecule}`);
                 geometry.addEventListener("click", () => showDetails(row, true));
                 td.append(button, geometry);
+            } else if (i === 1 && neutral) {
+                td.append(stateLabel(value));
             } else {
                 td.textContent = i === 4 && !neutral ? value : typeof value === "number" ? fixed(value) : value ?? "—";
             }

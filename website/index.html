@@ -162,7 +162,12 @@
     </div>
     <p><a id="structure-download" download>Download XYZ</a> · <a id="structure-source">View source</a></p>
     <p id="structure-status" role="status">Loading structure…</p>
-    <canvas id="structure-canvas" tabindex="0" aria-label="Rotatable molecular structure. Drag or use the arrow keys to rotate."></canvas>
+    <div class="geometry-actions" role="group" aria-label="Structure view controls">
+      <button id="structure-zoom-out" type="button">Zoom out</button>
+      <button id="structure-zoom-in" type="button">Zoom in</button>
+      <button id="structure-reset" type="button">Reset view</button>
+    </div>
+    <canvas id="structure-canvas" tabindex="0" aria-label="Ball-and-stick molecular structure. Drag or use the arrow keys to rotate."></canvas>
   </dialog>
 </body>
 </html>

@@ -43,20 +43,56 @@ GEOMETRY_ALIASES = {
     "Phenyl-pyrrole": "phenyl-pyrrole_1",
     "Phenyl-pyrrole (twisted)": "phenyl-pyrrole_2",
 }
+GEOMETRY_VARIANTS = {
+    "dimethylaminobenzonitrile": ("planar", "twisted"),
+    "phenyl-pyrrole": ("planar", "twisted"),
+    "indacene": ("C2h", "D2h"),
+    "pentalene": ("unconstrained", "D2h"),
+}
 
 
 def geometry_key(label):
     return "".join(c for c in unicodedata.normalize("NFKC", label).lower() if c.isalnum())
 
 
+def geometry_names(paths):
+    names = {path: path.stem for path in paths}
+    excited = {}
+    for path in paths:
+        match = re.fullmatch(r"(.+)_(\d+)", path.stem)
+        if not match:
+            continue
+        base, number = match[1], int(match[2])
+        with path.open(encoding="utf-8") as xyz:
+            next(xyz, "")
+            comment = next(xyz, "").lower()
+        if "ground state" in comment:
+            names[path] = f"{base}_GS"
+        elif "excited state" in comment:
+            excited.setdefault(base, []).append((number, path))
+        elif base in GEOMETRY_VARIANTS and 1 <= number <= len(GEOMETRY_VARIANTS[base]):
+            names[path] = f"{base}_{GEOMETRY_VARIANTS[base][number - 1]}"
+    for base, variants in excited.items():
+        for index, (_, path) in enumerate(sorted(variants), 1):
+            names[path] = f"{base}_ES{index if len(variants) > 1 else ''}"
+    if len(set(names.values())) != len(names):
+        raise ValueError("Geometry download filenames must be unique within each collection")
+    return names
+
+
 def geometry_assets(out, neutral_molecules):
     records = []
     for directory, group in GEOMETRY_GROUPS.items():
-        for path in sorted((ROOT / directory).glob("*.xyz")):
+        paths = sorted((ROOT / directory).glob("*.xyz"))
+        names = geometry_names(paths) if group == "Neutral" else {path: path.stem for path in paths}
+        for path in paths:
             source = path.relative_to(ROOT).as_posix()
-            destination = f"xyz/{source}"
+            archive_path = Path(source).with_name(f"{names[path]}.xyz").as_posix()
+            destination = f"xyz/{archive_path}"
             (out / destination).parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(path, out / destination)
+            if archive_path != source:
+                shutil.copyfile(path, out / "xyz" / source)
             subsets = []
             labels = []
             if group == "Neutral":
@@ -72,7 +108,7 @@ def geometry_assets(out, neutral_molecules):
                         subsets.append(subset)
                         labels.extend(matches)
             records.append({
-                "name": path.stem, "group": group, "source": source, "file": destination,
+                "name": names[path], "group": group, "source": source, "file": destination,
                 "subsets": subsets, "labels": sorted(set(labels)),
             })
 
@@ -88,7 +124,7 @@ def geometry_assets(out, neutral_molecules):
         filename = f"downloads/QUESTDB-geometries-{group.lower().replace(' ', '-')}.zip"
         with ZipFile(out / filename, "w") as archive:
             for record in members:
-                entry = ZipInfo(record["source"])
+                entry = ZipInfo(record["file"].removeprefix("xyz/"))
                 archive.writestr(entry, (out / record["file"]).read_bytes(), compress_type=ZIP_DEFLATED)
         downloads.append({"id": group, "name": label, "count": len(members), "file": filename})
     write_json(out / "data/geometries.json", records)

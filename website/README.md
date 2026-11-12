@@ -17,7 +17,9 @@ The five neutral collections retain the original metadata and computed
 energies. Neutral method errors use the reported AVTZ reference for the
 same row. In Benchmark, AVQZ is an optional reference for rows that report it. This changes the reference, while the method energies remain as recorded in the source. Core and valence benchmarks compare method values to sCI within the same source file, transition type, basis, and position in the source arrays. Valence IPs and satellites can be benchmarked separately. All summary metrics and plots use the intersection of states for the selected methods. The violin plot shows a smoothed density of signed errors and overlays the individual states.
 
-The Geometries view contains the bundled neutral, valence-IP, and core-IP XYZ files. Download individual files, the selected collection, or the full geometry archive. The five neutral subset archives are assembled from molecule labels in the current data, so a geometry can occur in more than one subset. The full archive includes each source XYZ file once and retains the source paths and original bytes.
+The Geometries view contains the bundled neutral, valence-IP, and core-IP XYZ files. Download individual files, the selected collection, or the full geometry archive. The five neutral subset archives are assembled from molecule labels in the current data, so a geometry can occur in more than one subset. The full archive includes each source XYZ file once and retains the source directory structure and original bytes.
+
+For numbered neutral geometries, the site uses `_GS` and `_ES` (or `_ES1`, `_ES2`, etc.) when the XYZ comments identify ground and excited states. Planar, twisted, and symmetry variants use descriptive names. Website downloads use these filenames, while source links and existing direct XYZ URLs still resolve to the original files. The ball-and-stick preview infers connectivity from interatomic distances and covalent radii.
 
 Charged collections display the source's method, basis, sector,
 and one-based root index. Root indices belong to the individual source
