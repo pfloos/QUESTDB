@@ -98,7 +98,7 @@ P.-F. Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,
 *J. Chem. Theory Comput.* **21**, 8010 (2025). [DOI:10.1021/acs.jctc.5c00975](https://doi.org/10.1021/acs.jctc.5c00975)
 
 <img src="logo/TOC.jpg"  width="250">
-© Béatrice Lejeune (@bea_quarelle)
+© Béatrice Lejeune ([@bea_quarelle](https://www.instagram.com/bea_quarelle)
 
 ---
 
@@ -254,7 +254,7 @@ A. Marie, L. Burth, and P.-F. Loos,
   <img src="logo/ERC.png" width="200" alt="ERC Logo" />
 </p>
 
-This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **[European Research Council (ERC)](https://erc.europa.eu/)** under the **EU Horizon 2020** research and innovation prog[...]
+This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PTEROSOR/)**, funded by the **[European Research Council (ERC)](https://erc.europa.eu/)** under the **EU Horizon 2020** research and innovation programme.
 
 
 <p align="center">
