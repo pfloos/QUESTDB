@@ -96,7 +96,8 @@ async function loadBenchmark(params = new URLSearchParams()) {
         get("safe-label").hidden = !neutral || !benchRows.some(({row}) => row.safe != null);
         get("safe").checked = !get("safe-label").hidden && params.get("safe") === "1";
         get("matched").checked = params.get("all") !== "1";
-        get("plot").value = ["errors", "violin", "parity", "paired"].includes(params.get("plot")) ? params.get("plot") : "errors";
+        const plot = params.get("plot");
+        get("plot").value = [...get("plot").options].some(option => option.value === plot) ? plot : "errors";
         const desired = group === "core_IPs" ? ["G0W0@HF", "evGW@HF", "qsGW"]
             : group === "valence_IPs" ? ["CC3", "CCSDT", "GW"]
             : group === "DIPs" ? ["DIP-EOM-CCSD", "ppRPA@HF", "ppRPA@GW"]
@@ -175,7 +176,7 @@ function renderBenchmark() {
     // Ignore method/basis pairs that do not exist anywhere in this collection.
     const selected = methodOptions.filter(spec => exact.size ? allowsSpec(spec) : allowsMethod(spec) && allowsBasis(spec));
     benchMethods = selected.map(spec => spec.key);
-    const shared = get("matched").checked || get("plot").value === "paired";
+    const shared = get("matched").checked;
     const sharedCount = benchMethods.length ? eligible.filter(item =>
         benchMethods.every(key => item.calculations.has(key))).length : 0;
     benchData = benchMethods.length ? eligible.flatMap(item => {
@@ -183,11 +184,9 @@ function renderBenchmark() {
         if (!plotted.size || (shared && plotted.size !== benchMethods.length)) return [];
         return [{...item, plotted}];
     }) : [];
-    const plotAllowed = get("plot").value !== "paired" || benchMethods.length === 2;
     get("status").textContent = benchMethods.length
         ? `${sharedCount} shared states of ${eligible.length} eligible references · ${benchData.length} states in the ${shared ? "shared sample" : "combined sample"}`
             + (exact.size ? " · Using exact method/basis selections." : "")
-            + (!plotAllowed ? " · Select exactly two method/basis combinations for the paired plot." : "")
             + (selected.some(spec => spec.basis !== ref) && !ref.startsWith("TBE/") ? ` · All errors use sCI / ${ref}.` : "")
             + (id === "valence_IPs" || id === "DIPs" ? " · Roots align by position in the source arrays." : "")
         : "Select methods with available basis sets.";
@@ -202,10 +201,10 @@ function renderBenchmark() {
     }));
     get("inspect").replaceChildren(option("Select a state", ""), ...benchData.map(({row, reference}, i) =>
         option(`${systemText(row, true)} · ${stateText(row)} · ${fixed(reference)} eV`, i)));
-    get("export").disabled = !benchData.length || !plotAllowed;
+    get("export").disabled = !benchData.length;
     get("export-stats").disabled = !benchStats.length;
     get("share").disabled = !benchMethods.length;
-    get("figure").hidden = !benchData.length || !plotAllowed;
+    get("figure").hidden = !benchData.length;
     if (get("figure").hidden) plotPoints = [];
     else plotBenchmark();
 }
@@ -271,17 +270,12 @@ function plotBenchmark() {
     const width = canvas.clientWidth;
     if (!benchData.length || !width) return;
     const parity = get("plot").value === "parity";
-    const paired = get("plot").value === "paired";
     const violin = get("plot").value === "violin";
-    const bands = paired ? 1 : benchMethods.length;
-    const height = parity ? 360 : Math.max(220, 65 + (violin ? 47 : 28) * bands);
+    const height = parity ? 360 : Math.max(220, 65 + (violin ? 47 : 28) * benchMethods.length);
     const ctx = setupCanvas(canvas, width, height);
-    const left = parity ? 60 : paired ? 35 : Math.min(200, width * .34);
+    const left = parity ? 60 : Math.min(200, width * .34);
     const right = width - 20, top = 18, bottom = height - 38;
-    const data = paired ? benchData.map((item, i) => {
-        const [a, b] = benchMethods.map(key => Math.abs(item.calculations.get(key).energy - item.reference));
-        return {i, j: 0, error: a - b, color: Math.abs(a - b) < 1e-12 ? "#506079" : palette[a < b ? 0 : 1]};
-    }) : benchMethods.flatMap((method, j) => benchData.flatMap((item, i) => {
+    const data = benchMethods.flatMap((method, j) => benchData.flatMap((item, i) => {
         if (!item.plotted.has(method)) return [];
         const value = item.calculations.get(method).energy;
         return [{i, j, ref: item.reference, value, error: value - item.reference}];
@@ -322,7 +316,7 @@ function plotBenchmark() {
             ctx.textAlign = "center";
         }
     }
-    ctx.fillText(parity ? "Reference energy (eV)" : paired ? "|Error A| − |Error B| (eV)" : "Signed error (eV)", (left + xRight) / 2, height - 6);
+    ctx.fillText(parity ? "Reference energy (eV)" : "Signed error (eV)", (left + xRight) / 2, height - 6);
     if (parity) {
         ctx.save();
         ctx.translate(12, (bottom + yTop) / 2);
@@ -330,9 +324,9 @@ function plotBenchmark() {
         ctx.fillText("Calculated energy (eV)", 0, 0);
         ctx.restore();
     }
-    const band = (bottom - top) / bands;
+    const band = (bottom - top) / benchMethods.length;
     if (violin) drawViolins(ctx, x, min, max, top, band);
-    if (!parity && !paired) {
+    if (!parity) {
         ctx.textAlign = "right";
         benchMethods.forEach((method, j) => {
             ctx.fillText(methodLabel(method), left - 7, top + (j + .5) * band + 4, left - 12);
@@ -341,7 +335,7 @@ function plotBenchmark() {
     plotPoints = data.map(p => ({
         i: p.i, x: x(parity ? p.ref : p.error),
         y: parity ? y(p.value) : top + (p.j + .5) * band + ((p.i % 9) - 4) * Math.min(1.35, band / 14),
-        color: p.color ?? palette[p.j % palette.length],
+        color: palette[p.j % palette.length],
     }));
     ctx.globalAlpha = .65;
     for (const point of plotPoints) {
@@ -352,14 +346,9 @@ function plotBenchmark() {
     const caption = get("caption");
     caption.replaceChildren(element("span", (violin ? "Violin width shows estimated density. " : "")
         + "Select a point to inspect its source state. "));
-    if (paired) {
-        const winsA = data.filter(point => point.error < -1e-12).length;
-        const winsB = data.filter(point => point.error > 1e-12).length;
-        caption.append(element("span", `A smaller: ${winsA} · B smaller: ${winsB} · Tied: ${data.length - winsA - winsB}. `));
-    }
-    if (parity || paired) {
+    if (parity) {
         benchMethods.forEach((method, j) => {
-            const legend = element("span", `● ${paired ? (j === 0 ? "A: " : "B: ") : ""}${methodLabel(method)}  `);
+            const legend = element("span", `● ${methodLabel(method)}  `);
             legend.style.color = palette[j % palette.length];
             caption.append(legend);
         });
@@ -431,24 +420,21 @@ get("share").addEventListener("click", async () => {
 
 function benchmarkExportMeta() {
     return [get("collection").value, get("reference").selectedOptions[0].textContent, get("plot").value,
-        get("matched").checked || get("plot").value === "paired" ? "Shared" : "Per method", manifest.revision,
+        get("matched").checked ? "Shared" : "Per method", manifest.revision,
         benchmarkParams().toString()];
 }
 const exportMetaColumns = ["Collection", "Reference", "Plot", "Sample", "QUESTDB commit", "Comparison parameters"];
 
 get("export").addEventListener("click", () => {
     const meta = benchmarkExportMeta();
-    const paired = get("plot").value === "paired";
     const records = [[...exportMetaColumns, "State ID", "Molecule", "Formula", "Site", "State", "Root",
         "Reference (eV)", "Method", "Basis", "Calculated (eV)", "Signed error (eV)",
-        "Paired |error A| - |error B| (eV)", "Source JSON"]];
+        "Source JSON"]];
     for (const {row, calculations, reference, plotted} of benchData) {
-        const delta = paired ? [...plotted].reduce((difference, key, index) =>
-            difference + (index ? -1 : 1) * Math.abs(calculations.get(key).energy - reference), 0) : null;
         for (const key of plotted) {
             const {method, basis, energy} = calculations.get(key);
             records.push([...meta, row.stateId, row.name, row.formula, row.site, row.state.trim(),
-                row.root ?? row.occurrence, reference, method, basis, energy, energy - reference, delta, sourceLink(row.source)]);
+                row.root ?? row.occurrence, reference, method, basis, energy, energy - reference, sourceLink(row.source)]);
         }
     }
     downloadCsv("benchmark", records);

@@ -53,9 +53,8 @@ their source arrays. Check the source and citations for state assignments.
 The default sample is the intersection across selected method/basis
 combinations. Coverage counts are measured before this intersection.
 With **Shared states only** cleared, each method uses all eligible states
-that it covers. The paired plot always uses shared states and shows the
-difference between the two absolute errors. The violin plot overlays the
-individual states on the smoothed signed-error distribution.
+that it covers. The violin plot overlays the individual states on the
+smoothed signed-error distribution.
 
 Share links restore the filters, reference and plot, and report when the
 site has moved to a different commit. The plotted-data and statistics CSVs
