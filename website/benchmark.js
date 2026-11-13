@@ -83,7 +83,7 @@ async function loadBenchmark(params = new URLSearchParams()) {
         const unique = new Map();
         for (const {calculations} of benchRows) for (const [key, spec] of calculations) unique.set(key, spec);
         methodOptions = [...unique].map(([key, {method, basis}]) => ({key, method, basis}))
-            .sort((a, b) => a.method.localeCompare(b.method, undefined, {numeric: true}) || a.basis.localeCompare(b.basis));
+            .sort((a, b) => numerical.compare(a.method, b.method) || alphabetical.compare(a.basis, b.basis));
         const methods = sorted(methodOptions.map(spec => spec.method));
         const bases = sorted(methodOptions.map(spec => spec.basis));
         const sectors = neutral ? [] : sorted(benchRows.map(({row}) => row.state));
@@ -117,7 +117,9 @@ async function loadBenchmark(params = new URLSearchParams()) {
             showShareMessage("This link was created with a different QUESTDB commit. The comparison uses the current data.");
         }
     } catch (error) {
-        if (generation === benchGeneration) get("status").textContent = error.message;
+        if (generation !== benchGeneration) return;
+        benchReady = false;
+        showLoadError(get("status"), `Could not load the benchmark. ${error.message}`, () => loadBenchmark(params));
     }
 }
 

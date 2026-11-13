@@ -244,7 +244,7 @@ def main():
     out = parser.parse_args().out.resolve()
     assets = out / "data"
     assets.mkdir(parents=True, exist_ok=True)
-    for name in ("index.html", "style.css", "app.js", "views.js", "spectrum.js", "benchmark.js", "quest-mark.svg"):
+    for name in ("style.css", "app.js", "views.js", "spectrum.js", "benchmark.js", "quest-mark.svg"):
         shutil.copyfile(ROOT / "website" / name, out / name)
     shutil.copyfile(ROOT / "logo/TOC.jpg", out / "quest-art.jpg")
     shutil.copyfile(ROOT / "logo/ERC.png", out / "erc.png")
@@ -287,12 +287,17 @@ def main():
     write_json(assets / "molecules.json", molecules)
     write_json(assets / "geometries.json", geometries)
     packs = benchmark_packs(ROOT, out, collection_rows, geometries, read_json, REPO, revision)
-    write_json(assets / "manifest.json", {
+    manifest = {
         "repository": REPO, "revision": revision, "date": date, "collections": collections,
         "geometries": len(geometries),
         "geometryDownloads": downloads, "benchmarkPacks": packs,
         "neutralStates": sum(c["rows"] for c in collections if c["kind"] == "neutral"),
-    })
+    }
+    write_json(assets / "manifest.json", manifest)
+    template = (ROOT / "website/index.html").read_text(encoding="utf-8")
+    embedded = json.dumps(manifest, ensure_ascii=False).replace("<", "\\u003c")
+    index = template.replace("<!-- QUESTDB_MANIFEST -->", embedded).replace("QUESTDB_REVISION", revision)
+    (out / "index.html").write_text(index, encoding="utf-8")
     print(f"Built {len(collections)} collections from {revision[:12]} in {out}")
 
 

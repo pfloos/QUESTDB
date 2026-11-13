@@ -5,7 +5,6 @@ let moleculeGeneration = 0, moleculeRows = [], spectrumData = null, spectrumOwne
 
 async function openMolecule(id) {
     const generation = ++moleculeGeneration;
-    const molecule = Object.hasOwn(molecules, id) ? molecules[id] : null;
     const title = byId("molecule-title");
     const collections = byId("molecule-collections");
     const geometries = byId("molecule-geometries");
@@ -15,14 +14,22 @@ async function openMolecule(id) {
     moleculeRows = [];
     spectrumData = null;
     byId("spectrum").hidden = true;
-    title.replaceChildren(molecule ? moleculeLabel(molecule, false) : "Molecule not found");
-    collections.textContent = molecule?.collections.map(collectionName).join(" · ") || "";
+    title.textContent = "Molecule";
+    collections.textContent = "";
     geometries.replaceChildren();
     states.replaceChildren();
-    if (!molecule) return;
     states.textContent = "Loading states…";
     try {
-        const [index, ...collections] = await Promise.all([
+        const molecules = await loadMolecules();
+        if (generation !== moleculeGeneration) return;
+        const molecule = Object.hasOwn(molecules, id) ? molecules[id] : null;
+        if (!molecule) {
+            states.textContent = "Molecule not found.";
+            return;
+        }
+        title.replaceChildren(moleculeLabel(molecule, false));
+        collections.textContent = molecule.collections.map(collectionName).join(" · ");
+        const [index, ...collectionRows] = await Promise.all([
             loadGeometries(), ...molecule.collections.map(loadCollection),
         ]);
         if (generation !== moleculeGeneration) return;
@@ -35,7 +42,7 @@ async function openMolecule(id) {
             }
             return item;
         }));
-        moleculeRows = collections.flat().filter(row => row.moleculeId === id);
+        moleculeRows = collectionRows.flat().filter(row => row.moleculeId === id);
         const neutral = sorted(moleculeRows.filter(row => row.fields && !row.fluorescence && Number.isFinite(row.energy))
             .map(row => row.collection));
         spectrum("collection").replaceChildren(...neutral.map(id => option(collectionName(id), id)));
@@ -65,7 +72,7 @@ async function openMolecule(id) {
             states.append(group);
         }
     } catch (error) {
-        if (generation === moleculeGeneration) states.textContent = error.message;
+        if (generation === moleculeGeneration) showLoadError(states, error.message, () => openMolecule(id));
     }
 }
 

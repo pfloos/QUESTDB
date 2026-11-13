@@ -23,12 +23,14 @@ function navigate() {
         else link.removeAttribute("aria-current");
     }
     if (hash === id) requestAnimationFrame(() => byId(id).scrollIntoView());
-    if (id === "benchmark" && manifest) {
-        if (params.size || !hasBenchmark()) loadBenchmark(params);
-        else plotBenchmark();
+    if (!manifest) return;
+    if (id === "explore") loadExplore();
+    if (id === "benchmark") {
+        if (query || !hasBenchmark()) loadBenchmark(params);
+        else if (!byId("bench-figure").hidden) plotBenchmark();
     }
-    if (id === "molecule" && manifest) openMolecule(params.get("id"));
-    if (id === "geometries" && manifest) {
+    if (id === "molecule") openMolecule(params.get("id"));
+    if (id === "geometries") {
         loadGeometries().then(renderGeometries).catch(error => { byId("geometry-count").textContent = error.message; });
     }
 }

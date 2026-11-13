@@ -5,18 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore theoretical best estimates, method results, and ionization benchmarks in the QUEST database.">
   <title>QUESTDB | Electronic-structure benchmarks</title>
-  <link rel="icon" type="image/svg+xml" href="quest-mark.svg">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <script src="views.js" defer></script>
-  <script src="spectrum.js" defer></script>
-  <script src="benchmark.js" defer></script>
+  <link rel="icon" type="image/svg+xml" href="quest-mark.svg?v=QUESTDB_REVISION">
+  <link rel="stylesheet" href="style.css?v=QUESTDB_REVISION">
+  <script id="site-manifest" type="application/json"><!-- QUESTDB_MANIFEST --></script>
+  <script>
+    window.addEventListener("error", event => {
+      if (!event.target?.matches?.("script[src]")) return;
+      document.addEventListener("DOMContentLoaded", () => {
+        for (const id of ["status", "bench-status", "geometry-count", "molecule-states"]) {
+          const status = document.getElementById(id);
+          status.replaceChildren("Part of QUESTDB could not load. ");
+          const retry = document.createElement("button");
+          retry.type = "button";
+          retry.textContent = "Reload page";
+          retry.addEventListener("click", () => location.reload());
+          status.append(retry);
+        }
+      }, {once: true});
+    }, true);
+  </script>
+  <script src="app.js?v=QUESTDB_REVISION" defer></script>
+  <script src="views.js?v=QUESTDB_REVISION" defer></script>
+  <script src="spectrum.js?v=QUESTDB_REVISION" defer></script>
+  <script src="benchmark.js?v=QUESTDB_REVISION" defer></script>
 </head>
 <body>
   <a class="skip" href="#explore">Skip to data explorer</a>
   <header class="masthead">
     <div class="container nav">
-      <a href="./" class="brand"><img src="quest-mark.svg" width="34" height="34" alt=""> QUESTDB</a>
+      <a href="./" class="brand"><img src="quest-mark.svg?v=QUESTDB_REVISION" width="34" height="34" alt=""> QUESTDB</a>
       <nav aria-label="Main navigation">
         <a href="#explore" data-view>Explore</a>
         <a href="#benchmark" data-view>Benchmark</a>
@@ -42,7 +59,7 @@
           <div class="snapshot" id="snapshot">Loading dataset revision…</div>
         </div>
         <figure class="art">
-          <img src="quest-art.jpg" alt="Illustration from the QUESTDB reference paper" fetchpriority="high">
+          <img src="quest-art.jpg" alt="Illustration from the QUESTDB reference paper" decoding="async">
           <figcaption>Artwork by <a href="https://www.instagram.com/bea_quarelle/">Béatrice Lejeune</a></figcaption>
         </figure>
       </div>

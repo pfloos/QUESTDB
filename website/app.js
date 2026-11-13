@@ -12,7 +12,10 @@ const metadata = /^(?:Size|Group|Spin|TBE(?:\/|$)|%|f\s*\[)/i;
 const unknownBasis = "Basis unlabelled";
 const characterNames = {V: "Valence", R: "Rydberg", M: "Mixed"};
 const spinNames = {1: "Singlet", 2: "Doublet", 3: "Triplet", 4: "Quartet", 5: "Quintet"};
-let manifest, molecules, filtered = [], page = 0, exploreRows = [];
+let manifest, moleculePromise, explorePromise, exploreReady = false;
+let filtered = [], page = 0, exploreRows = [];
+const alphabetical = new Intl.Collator();
+const numerical = new Intl.Collator(undefined, {numeric: true});
 const moleculeSearch = new Map();
 
 function element(tag, text) {
@@ -33,13 +36,40 @@ function choices(select, label, values) {
 
 function sorted(values) {
     return [...new Set(values.filter(value => value != null && value !== ""))]
-        .sort((a, b) => String(a).localeCompare(String(b), undefined, {numeric: true}));
+        .sort(numerical.compare);
 }
 
-async function json(path, options) {
-    const response = await fetch(path, options);
-    if (!response.ok) throw new Error(`Could not read ${path} (${response.status}).`);
-    return response.json();
+async function json(path) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 15000);
+    try {
+        const response = await fetch(path, {signal: controller.signal});
+        if (!response.ok) throw new Error(`The data request returned HTTP ${response.status}.`);
+        return await response.json();
+    } catch (error) {
+        if (controller.signal.aborted) throw new Error("The data request timed out.");
+        if (error instanceof TypeError) throw new Error("The data request could not connect.");
+        throw error;
+    } finally {
+        clearTimeout(timer);
+    }
+}
+
+function loadMolecules() {
+    if (!moleculePromise) {
+        moleculePromise = json(snapshotUrl("data/molecules.json")).catch(error => {
+            moleculePromise = null;
+            throw error;
+        });
+    }
+    return moleculePromise;
+}
+
+function showLoadError(status, message, retry) {
+    const button = element("button", "Retry");
+    button.type = "button";
+    button.addEventListener("click", retry);
+    status.replaceChildren(message + " ", button);
 }
 
 function snapshotUrl(path) {
@@ -281,6 +311,7 @@ function recordValues(row, selections) {
 }
 
 function renderExplore() {
+    if (!exploreReady) return;
     const query = ui.query.value.trim();
     const exact = moleculeSearch.get(moleculeSearchKey(query));
     const tokens = query.split(/\s+/).map(normal).filter(Boolean);
@@ -455,26 +486,14 @@ for (const [control, event] of [[ui.query, "input"], [ui.safe, "change"]]) {
 ui.prev.addEventListener("click", () => { page--; renderExplore(); });
 ui.next.addEventListener("click", () => { page++; renderExplore(); });
 
-async function init() {
-    try {
-        manifest = await json("data/manifest.json", {cache: "no-cache"});
-        const revision = element("a", manifest.revision.slice(0, 7));
-        revision.href = `${manifest.repository}/commit/${manifest.revision}`;
-        ui.snapshot.replaceChildren(
-            `${manifest.neutralStates.toLocaleString()} neutral states · ${manifest.collections.length} collections · ${manifest.date.slice(0, 10)} · `, revision
-        );
-        for (const link of document.querySelectorAll("[data-source]")) {
-            link.href = sourceLink(link.dataset.source, "tree");
-        }
-        byId("benchmark-packs").replaceChildren(...manifest.benchmarkPacks.map(pack => {
-            const link = element("a", `${pack.name} (ZIP, ${pack.count} states)`);
-            link.href = snapshotUrl(pack.file);
-            link.download = "";
-            const li = element("li");
-            li.append(link);
-            return li;
-        }));
-        molecules = await json(snapshotUrl("data/molecules.json"));
+function loadExplore() {
+    if (explorePromise) return explorePromise;
+    ui.error.hidden = true;
+    ui.status.textContent = "Loading data…";
+    explorePromise = (async () => {
+        const [molecules, ...data] = await Promise.all([
+            loadMolecules(), ...manifest.collections.map(item => loadCollection(item.id)),
+        ]);
         for (const molecule of Object.values(molecules)) {
             for (const alias of [molecule.name, molecule.formula, ...molecule.aliases]) {
                 const key = moleculeSearchKey(alias);
@@ -483,9 +502,7 @@ async function init() {
                 moleculeSearch.get(key).add(molecule.id);
             }
         }
-        document.dispatchEvent(new Event("quest-ready"));
-        const data = await Promise.all(manifest.collections.map(item => loadCollection(item.id)));
-        exploreRows = data.flat().sort((a, b) => a.name.localeCompare(b.name)).map(row => ({
+        exploreRows = data.flat().sort((a, b) => alphabetical.compare(a.name, b.name)).map(row => ({
             ...row, calculations: computations(row),
             search: normal([systemText(row), row.state, row.type, row.source, row.method,
                 ...molecules[row.moleculeId].aliases].join(" ")),
@@ -502,11 +519,45 @@ async function init() {
             header.append(th);
         }
         ui.head.append(header);
+        exploreReady = true;
         renderExplore();
-    } catch (error) {
+    })().catch(error => {
+        explorePromise = null;
         ui.error.hidden = false;
-        ui.error.textContent = error.message;
         ui.status.textContent = "";
+        showLoadError(ui.error, `Could not load the Explorer. ${error.message}`, loadExplore);
+    });
+    return explorePromise;
+}
+
+function init() {
+    try {
+        manifest = JSON.parse(byId("site-manifest").textContent);
+        const revision = element("a", manifest.revision.slice(0, 7));
+        revision.href = `${manifest.repository}/commit/${manifest.revision}`;
+        ui.snapshot.replaceChildren(
+            `${manifest.neutralStates.toLocaleString()} neutral states · ${manifest.collections.length} collections · ${manifest.date.slice(0, 10)} · `, revision
+        );
+        for (const link of document.querySelectorAll("[data-source]")) {
+            link.href = sourceLink(link.dataset.source, "tree");
+        }
+        byId("benchmark-packs").replaceChildren(...manifest.benchmarkPacks.map(pack => {
+            const link = element("a", `${pack.name} (ZIP, ${pack.count} states)`);
+            link.href = snapshotUrl(pack.file);
+            link.download = "";
+            const li = element("li");
+            li.append(link);
+            return li;
+        }));
+        document.dispatchEvent(new Event("quest-ready"));
+    } catch (error) {
+        const message = "Could not start QUESTDB. Reload the page to try again.";
+        ui.error.hidden = false;
+        ui.error.textContent = message;
+        ui.status.textContent = "";
+        byId("bench-status").textContent = message;
+        byId("geometry-count").textContent = message;
+        byId("molecule-states").textContent = message;
     }
 }
 
