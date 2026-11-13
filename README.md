@@ -98,7 +98,9 @@ P.-F. Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,
 *J. Chem. Theory Comput.* **21**, 8010 (2025). [DOI:10.1021/acs.jctc.5c00975](https://doi.org/10.1021/acs.jctc.5c00975)
 
 <img src="logo/TOC.jpg"  width="250">
-Artwork by [Béatrice Lejeune](https://www.instagram.com/bea_quarelle) @bea_quarelle
+<figcaption>
+  Artwork by <a href="https://www.instagram.com/bea_quarelle/">Béatrice Lejeune</a>
+</figcaption>
 
 ---
 
