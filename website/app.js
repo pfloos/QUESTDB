@@ -540,6 +540,7 @@ function loadExplore() {
 function init() {
     try {
         manifest = JSON.parse(byId("site-manifest").textContent);
+        ui.safe.checked = false;
         const revision = element("a", manifest.revision.slice(0, 7));
         revision.href = `${manifest.repository}/commit/${manifest.revision}`;
         ui.snapshot.replaceChildren(
