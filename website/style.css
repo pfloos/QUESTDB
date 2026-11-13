@@ -85,11 +85,14 @@ tbody tr:hover td { background: #f6f7fb; }
 .paper-list, .contributors-list, .support-list { list-style: none; padding: 0; }
 .paper-list { margin: 0; }
 .paper-list li { padding-block: .8rem; border-top: 1px solid var(--border); }
-.paper-list a, .contributors-list a { font-weight: 650; }
+.paper-list a, .contributors-list a, .contributors-list strong { font-weight: 650; }
 .paper-list p, .contributors-list span, .support-list p { color: var(--muted); font-size: .88rem; }
 .paper-list p { margin-top: .25rem; }
 .contributors-list { gap: .85rem 1.4rem; margin-bottom: 0; }
 .contributors-list span { display: block; }
+.project-section :is(.contributor-heading, .support-heading) { margin: 1.5rem 0 .5rem; }
+.contributor-heading + .contributors-list, .support-heading + .support-list { margin-top: 0; }
+.support-list h4 { margin: 0 0 .65rem; font-size: 1rem; }
 .project-support { background: var(--tint); border-block: 1px solid var(--border); }
 .support-list { margin-bottom: 0; }
 .support-list li { padding: 1rem; background: var(--white); border: 1px solid var(--border); border-radius: .5rem; }

@@ -103,10 +103,13 @@ P.-F. Loos, M. Boggio-Pasqua, A. Blondel, F. Lipparini, and D. Jacquemin,
 
 ## 👥 Contributors
 
-The QUESTDB project is maintained by a collaboration between:
+### Main contributors
 
 - [Denis Jacquemin](https://www.univ-nantes.fr/denis-jacquemin-1) (Nantes)
 - [Pierre-François Loos](https://pfloos.github.io/WEB_LOOS) (Toulouse)
+
+### Other contributors
+
 - [Martial Boggio-Pasqua](https://www.lcpq.ups-tlse.fr/spip.php?rubrique313&lang=fr) (Toulouse)
 - [Fábris Kossoski](https://kossoski.github.io) (Toulouse)
 - [Filippo Lipparini](https://people.unipi.it/filippo_lipparini) (Pisa)
@@ -116,6 +119,11 @@ The QUESTDB project is maintained by a collaboration between:
 - [Yann Damour](https://ydrnan.github.io/damour) (Toulouse)
 - [Antoine Marie](https://antoine-marie.github.io) (Toulouse)
 - [Loris Burth](https://github.com/lburth) (Toulouse)
+- [Devin Matthews](https://www.smu.edu/dedman/academics/departments/chemistry/people/faculty/devinmatthews) (SMU)
+- Iryna Knysh (Nantes)
+- Rudraditya Sarkar (Nantes)
+- [Xavier Blase](https://perso.neel.cnrs.fr/xavier.blase/) (Institut Néel, Grenoble)
+- [Ivan Duchemin](https://irig.cea.fr/drf/irig/Pages/Animation-scientifique/HDR/2025-Duchemin.aspx) (Grenoble)
 
 ---
 
@@ -209,14 +217,22 @@ This database is supported by the **[PTEROSOR project](https://lcpq.github.io/PT
 
 
 <p align="center">
-  <img src="logo/ANR.jpg" width="200" alt="ERC Logo" />
+  <img src="logo/ANR.jpg" width="200" alt="ANR Logo" />
 </p>
 
 This database is also funded, in part, by the Agence Nationale de la Recherche (ANR), grant [ANR-25-CE29-4996](https://anr.fr/Projet-ANR-25-CE29-4996).
+
+<p align="center">
+  <img src="logo/IUF.png" width="150" alt="Institut universitaire de France logo" />
+</p>
+
+QUESTDB acknowledges support from the [Institut universitaire de France (IUF)](https://www.iufrance.fr/).
+
+IUF logo by the Institut universitaire de France, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_IUF.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
 
 ## 🧮 HPC resources
 
-This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2026-18005**.
+This work was performed using HPC resources from [**CALMIP**](https://www.calmip.univ-toulouse.fr) (Toulouse, France) under allocations **2018-18005 through 2026-18005**, and CPU resources from [**GLiCID**](https://www.glicid.fr/) (Groupement Ligérien pour le Calcul Intensif Distribué).
 

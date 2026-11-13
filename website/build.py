@@ -235,6 +235,7 @@ def main():
     shutil.copyfile(ROOT / "logo/TOC.jpg", out / "quest-art.jpg")
     shutil.copyfile(ROOT / "logo/ERC.png", out / "erc.png")
     shutil.copyfile(ROOT / "logo/ANR.jpg", out / "anr.jpg")
+    shutil.copyfile(ROOT / "logo/IUF.png", out / "iuf.png")
     shutil.copyfile(ROOT / "LICENSE", out / "LICENSE")
     revision, date = subprocess.check_output(
         ["git", "show", "-s", "--format=%H%n%cI", "HEAD"], cwd=ROOT, text=True
