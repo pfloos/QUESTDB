@@ -9,7 +9,8 @@ const ui = Object.fromEntries(
 const cache = new Map();
 const pageSize = 40;
 const metadata = /^(?:Size|Group|Spin|TBE(?:\/|$)|%|f\s*\[)/i;
-const unknownBasis = "Basis unlabelled";
+const defaultNeutralBasis = "aug-cc-pVTZ";
+const neutralBasisSuffix = /\s*\/\s*(AV[DTQ56]Z|aug-cc-pV[DTQ56]Z|cc-pV[DTQ56]Z)\s*$/i;
 const characterNames = {V: "Valence", R: "Rydberg", M: "Mixed"};
 const spinNames = {1: "Singlet", 2: "Doublet", 3: "Triplet", 4: "Quartet", 5: "Quintet"};
 let manifest, moleculePromise, explorePromise, exploreReady = false;
@@ -164,11 +165,20 @@ function loadCollection(id) {
     return cache.get(id);
 }
 
+function normalizedBasis(basis) {
+    return basis.replace(/^AV([DTQ56]Z)$/i, (_, tail) => "aug-cc-pV" + tail.toUpperCase())
+        .replace(/^(aug-cc-p|cc-p)(C?V[DTQ56]Z)$/i, (_, prefix, tail) => prefix.toLowerCase() + tail.toUpperCase());
+}
+
 function computations(row) {
     if (!row.fields) return [{method: row.method, basis: row.basis, energy: row.energy}];
     return Object.entries(row.fields)
         .filter(([key, value]) => Number.isFinite(value) && !metadata.test(key))
-        .map(([method, energy]) => ({method, basis: row.methodBases?.[method] ?? unknownBasis, energy}));
+        .map(([label, energy]) => {
+            const suffix = label.match(neutralBasisSuffix);
+            const basis = row.methodBases?.[label] ?? suffix?.[1] ?? defaultNeutralBasis;
+            return {method: suffix ? label.slice(0, suffix.index) : label, basis: normalizedBasis(basis), energy};
+        });
 }
 
 function stateText(row) {
@@ -306,7 +316,7 @@ function recordValues(row, selections) {
     return [systemText(row), row.state.trim() + (row.root ? ` #${row.root}` : ""), collectionName(row.collection),
         characterNames[row.character] ?? row.character,
         showMethods ? single?.method ?? `${selected.length} selected` : "TBE",
-        showMethods ? single?.basis ?? "See state details" : "AVTZ",
+        showMethods ? single?.basis ?? "See state details" : defaultNeutralBasis,
         showMethods ? single?.energy : row.energy, row.fields ? row.energy : null, row.referenceQZ, row.weight, row.safe];
 }
 
@@ -470,9 +480,6 @@ async function showDetails(row, benchmarkFields = null) {
         matrix.replaceChildren();
         if (values.length) {
             matrix.append(element("h3", "Calculated energies (eV)"), energyMatrix(values));
-            if (values.some(entry => entry.basis === unknownBasis)) {
-                matrix.append(element("p", "Basis unlabelled means the method column has no basis tag in the source JSON."));
-            }
         }
     } catch (error) {
         if (generation === detailGeneration) matrix.textContent = error.message;

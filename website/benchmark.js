@@ -24,11 +24,6 @@ function specKey(method, basis) {
     return JSON.stringify([method, basis]);
 }
 
-function normalizedBasis(basis) {
-    return /^aug-cc-p(cv|v)([dtq56])z$/i.test(basis)
-        ? basis.replace(/aug-cc-p(\w+)$/i, (_, tail) => "aug-cc-p" + tail.toUpperCase()) : basis;
-}
-
 function benchmarkStates(data) {
     const states = new Map();
     for (const row of data) {
@@ -74,10 +69,10 @@ async function loadBenchmark(params = new URLSearchParams()) {
         benchRows = benchmarkStates(data);
         const neutral = Boolean(data[0]?.fields);
         const refs = sorted(benchRows.flatMap(item => [...item.refs.keys()]));
-        const preferred = {core_IPs: "aug-cc-pCVTZ", valence_IPs: "aug-cc-pVTZ", DIPs: "aug-cc-pVTZ"}[group]
-            ?? "TBE/AVTZ";
+        const preferredBasis = group === "core_IPs" ? "aug-cc-pCVTZ" : defaultNeutralBasis;
+        const preferredReference = neutral ? "TBE/AVTZ" : preferredBasis;
         get("reference").replaceChildren(...refs.map(ref => option(neutral ? ref : `sCI / ${ref}`, ref)));
-        pickedReference = refs.includes(params.get("ref")) ? params.get("ref") : preferred;
+        pickedReference = refs.includes(params.get("ref")) ? params.get("ref") : preferredReference;
         if (refs.includes(pickedReference)) get("reference").value = pickedReference;
         else pickedReference = get("reference").value;
         const unique = new Map();
@@ -102,15 +97,19 @@ async function loadBenchmark(params = new URLSearchParams()) {
             : group === "valence_IPs" ? ["CC3", "CCSDT", "GW"]
             : group === "DIPs" ? ["DIP-EOM-CCSD", "ppRPA@HF", "ppRPA@GW"]
             : ["ADC(2)", "CC3", "CCSD"];
-        const sameBasis = methodOptions.filter(spec => spec.basis === preferred);
+        const sameBasis = methodOptions.filter(spec => spec.basis === preferredBasis);
         const available = sorted((sameBasis.length ? sameBasis : methodOptions).map(spec => spec.method));
         const defaults = desired.filter(method => available.includes(method));
         const defaultMethods = defaults.length ? defaults : available.slice(0, 2);
         const shared = params.has("set");
         filters["method-list"].set(shared ? params.getAll("method") : defaultMethods);
-        filters.basis.set(shared ? params.getAll("basis") : bases.includes(preferred) ? [preferred] : []);
+        filters.basis.set(shared ? params.getAll("basis").map(basis =>
+            neutral && basis === "Basis unlabelled" ? defaultNeutralBasis : basis)
+            : bases.includes(preferredBasis) ? [preferredBasis] : []);
         filters.sector.set(shared ? params.getAll("sector") : group === "valence_IPs" ? ["IP"] : []);
-        for (const facet of ["spin", "character", "spec"]) filters[facet].set(params.getAll(facet));
+        for (const facet of ["spin", "character"]) filters[facet].set(params.getAll(facet));
+        filters.spec.set(params.getAll("spec").map(spec => neutral
+            ? spec.replace(/,"Basis unlabelled"\]$/, `,${JSON.stringify(defaultNeutralBasis)}]`) : spec));
         get("gf2").hidden = group !== "core_IPs" || !coreGF2Methods.every(method => methods.includes(method));
         benchReady = true;
         renderBenchmark();

@@ -30,8 +30,8 @@ All other geometry downloads use the [registry](../geometries/registry.json).
 The state view displays the source JSON, collection citation, reference
 method, basis correction and reliability annotation when recorded, plus a
 method × basis table. Corrections with documented previous values and reasons
-can be added to `REFERENCE_REVISIONS` in `catalog.py`. Where the neutral JSON
-method column has no basis tag, the site marks the basis as unlabelled.
+can be added to `REFERENCE_REVISIONS` in `catalog.py`. Neutral method energies
+without an explicit basis label use aug-cc-pVTZ (AVTZ).
 
 Molecule spectra use the TBE/AVTZ vertical energies and reported oscillator
 strengths of the chosen collection. The broadening is a normalized Gaussian
