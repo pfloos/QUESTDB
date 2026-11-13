@@ -170,8 +170,12 @@ function normalizedBasis(basis) {
         .replace(/^(aug-cc-p|cc-p)(C?V[DTQ56]Z)$/i, (_, prefix, tail) => prefix.toLowerCase() + tail.toUpperCase());
 }
 
+function referenceLabel(reference) {
+    return reference.replace(/^TBE\/(AV[DTQ56]Z)$/, (_, basis) => `TBE / ${normalizedBasis(basis)}`);
+}
+
 function computations(row) {
-    if (!row.fields) return [{method: row.method, basis: row.basis, energy: row.energy}];
+    if (!row.fields) return [{method: row.method, basis: normalizedBasis(row.basis), energy: row.energy}];
     return Object.entries(row.fields)
         .filter(([key, value]) => Number.isFinite(value) && !metadata.test(key))
         .map(([label, energy]) => {
@@ -302,7 +306,7 @@ const facetFormats = {collection: collectionName, character: value => characterN
 const exploreFilters = Object.fromEntries(Object.keys(facetValues).map(key =>
     [key, createFilter(byId(key), facetLabels[key], () => { page = 0; renderExplore(); })]));
 const columns = ["Molecule", "State", "Collection", "Character", "Method", "Basis", "Energy (eV)",
-    "TBE/AVTZ (eV)", "TBE/AVQZ (eV)", "Z", "Safe"];
+    `${referenceLabel("TBE/AVTZ")} (eV)`, `${referenceLabel("TBE/AVQZ")} (eV)`, "Z", "Safe"];
 
 function matchesCalculation(calculation, selections) {
     return (!selections.method.size || selections.method.has(calculation.method))
@@ -427,7 +431,7 @@ async function showDetails(row, benchmarkFields = null) {
     const ref = byId("detail-reference");
     const matrix = byId("detail-matrix");
     const entries = row.fields ?? {
-        "Source state": row.state, Method: row.method, Basis: row.basis, Root: row.root,
+        "Source state": row.state, Method: row.method, Basis: normalizedBasis(row.basis), Root: row.root,
         "Energy (eV)": row.energy, Z: row.weight, "Uncertainty (eV)": row.uncertainty,
     };
     function fieldsList(fields) {
@@ -443,8 +447,8 @@ async function showDetails(row, benchmarkFields = null) {
     if (benchmarkFields) section.append(...fieldsList(benchmarkFields));
     if (row.fields) {
         section.append(...fieldsList({
-            "TBE/AVTZ (eV)": fixed(row.energy), "Reference method": row.fields.Method ?? row.fields["Method (all in RO)"],
-            ...(Number.isFinite(row.referenceQZ) ? {"TBE/AVQZ (eV)": fixed(row.referenceQZ),
+            [`${referenceLabel("TBE/AVTZ")} (eV)`]: fixed(row.energy), "Reference method": row.fields.Method ?? row.fields["Method (all in RO)"],
+            ...(Number.isFinite(row.referenceQZ) ? {[`${referenceLabel("TBE/AVQZ")} (eV)`]: fixed(row.referenceQZ),
                 "Basis correction method": row.fields["Corr. Method"]} : {}),
             "Reliability": row.safe === "Y" ? "Safe (~50 meV)" : row.safe === "N" ? "Flagged by the dataset" : "Unreported",
             ...(row.fields["Special ?"] ? {"Source annotation": String(row.fields["Special ?"]).split(/\s+/)
@@ -457,7 +461,7 @@ async function showDetails(row, benchmarkFields = null) {
     for (const revision of row.revisions ?? []) {
         const link = element("a", "Source correction");
         link.href = `${manifest.repository}/commit/${revision.commit}`;
-        const name = revision.field === "energy" ? "TBE/AVTZ" : "TBE/AVQZ";
+        const name = referenceLabel(revision.field === "energy" ? "TBE/AVTZ" : "TBE/AVQZ");
         const note = element("p", `${name} changed from ${fixed(revision.previous)} to ${fixed(revision.value)} eV. ${revision.reason} `);
         note.append(link);
         ref.append(note);

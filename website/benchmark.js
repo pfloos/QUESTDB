@@ -24,6 +24,23 @@ function specKey(method, basis) {
     return JSON.stringify([method, basis]);
 }
 
+function sharedBasisLabel(basis, neutral) {
+    return neutral && basis === "Basis unlabelled" ? defaultNeutralBasis : normalizedBasis(basis);
+}
+
+function sharedSpecKey(key, neutral) {
+    try {
+        const spec = JSON.parse(key);
+        if (Array.isArray(spec) && spec.length === 2 && spec.every(value => typeof value === "string")) {
+            const [method, basis] = spec;
+            return specKey(method, sharedBasisLabel(basis, neutral));
+        }
+    } catch {
+        // Ignore an invalid combination in a shared link.
+    }
+    return key;
+}
+
 function benchmarkStates(data) {
     const states = new Map();
     for (const row of data) {
@@ -32,7 +49,7 @@ function benchmarkStates(data) {
         }
         const entry = states.get(row.stateId);
         for (const result of computations(row)) {
-            const basis = normalizedBasis(result.basis);
+            const {basis} = result;
             if (!row.fields && result.method === "sCI") entry.refs.set(basis, result.energy);
             else {
                 const key = specKey(result.method, basis);
@@ -71,8 +88,10 @@ async function loadBenchmark(params = new URLSearchParams()) {
         const refs = sorted(benchRows.flatMap(item => [...item.refs.keys()]));
         const preferredBasis = group === "core_IPs" ? "aug-cc-pCVTZ" : defaultNeutralBasis;
         const preferredReference = neutral ? "TBE/AVTZ" : preferredBasis;
-        get("reference").replaceChildren(...refs.map(ref => option(neutral ? ref : `sCI / ${ref}`, ref)));
-        pickedReference = refs.includes(params.get("ref")) ? params.get("ref") : preferredReference;
+        get("reference").replaceChildren(...refs.map(ref => option(neutral ? referenceLabel(ref) : `sCI / ${ref}`, ref)));
+        const reference = params.get("ref") ?? "";
+        const requestedReference = neutral ? reference : normalizedBasis(reference);
+        pickedReference = refs.includes(requestedReference) ? requestedReference : preferredReference;
         if (refs.includes(pickedReference)) get("reference").value = pickedReference;
         else pickedReference = get("reference").value;
         const unique = new Map();
@@ -103,13 +122,11 @@ async function loadBenchmark(params = new URLSearchParams()) {
         const defaultMethods = defaults.length ? defaults : available.slice(0, 2);
         const shared = params.has("set");
         filters["method-list"].set(shared ? params.getAll("method") : defaultMethods);
-        filters.basis.set(shared ? params.getAll("basis").map(basis =>
-            neutral && basis === "Basis unlabelled" ? defaultNeutralBasis : basis)
+        filters.basis.set(shared ? params.getAll("basis").map(basis => sharedBasisLabel(basis, neutral))
             : bases.includes(preferredBasis) ? [preferredBasis] : []);
         filters.sector.set(shared ? params.getAll("sector") : group === "valence_IPs" ? ["IP"] : []);
         for (const facet of ["spin", "character"]) filters[facet].set(params.getAll(facet));
-        filters.spec.set(params.getAll("spec").map(spec => neutral
-            ? spec.replace(/,"Basis unlabelled"\]$/, `,${JSON.stringify(defaultNeutralBasis)}]`) : spec));
+        filters.spec.set(params.getAll("spec").map(spec => sharedSpecKey(spec, neutral)));
         get("gf2").hidden = group !== "core_IPs" || !coreGF2Methods.every(method => methods.includes(method));
         benchReady = true;
         renderBenchmark();

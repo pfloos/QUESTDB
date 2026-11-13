@@ -152,7 +152,7 @@ def write_pack(out, collection, title, rows, geometries, repository, revision):
         reference_rows.append([
             row["stateId"], row["name"], row["formula"], row["state"].strip(), row.get("site", ""),
             row.get("root", row.get("occurrence")), xyz,
-            f"sCI / {row['basis']}" if "basis" in row else "TBE/AVTZ", row["energy"],
+            f"sCI / {row['basis']}" if "basis" in row else "TBE / aug-cc-pVTZ", row["energy"],
             f"{repository}/blob/{revision}/{row['source']}", f"https://doi.org/{row['paper']}",
         ])
 

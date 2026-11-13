@@ -210,6 +210,8 @@ def charged_records(path, group, mapping):
         for basis, values in energies.items():
             if values is None:
                 continue
+            basis_label = re.sub(r"^aug-cc-p(c?v[dtq56]z)$",
+                                 lambda match: "aug-cc-p" + match[1].upper(), basis, flags=re.I)
             series = values if isinstance(values, list) else [values]
             weights = block.get("Z", {}).get(basis)
             uncertainties = block.get("Incertitudes", {}).get(basis)
@@ -229,7 +231,7 @@ def charged_records(path, group, mapping):
                     "molecule": molecule, "state": sector, "source": source,
                     **({"site": site.capitalize()} if site else {}),
                     **mapping,
-                    "method": method, "basis": basis, "root": offset + 1,
+                    "method": method, "basis": basis_label, "root": offset + 1,
                     "energy": energy, "weight": weight, "uncertainty": uncertainty,
                 }
 
