@@ -1,15 +1,19 @@
 "use strict";
 
+const byId = id => document.getElementById(id);
 const ui = Object.fromEntries(
-    ["snapshot", "collection", "query", "method", "method-title", "facet",
-        "facet-title", "safe", "safe-label", "export", "status", "error", "head",
-        "rows", "prev", "page", "next", "detail", "detail-title", "detail-source",
-        "detail-fields"].map(id => [id, document.getElementById(id)])
+    ["snapshot", "query", "safe", "export", "status", "error", "head", "rows", "prev",
+        "page", "next", "detail", "detail-title", "detail-source", "detail-fields"]
+        .map(id => [id, byId(id)])
 );
 const cache = new Map();
 const pageSize = 40;
 const metadata = /^(?:Size|Group|Spin|TBE(?:\/|$)|%|f\s*\[)/i;
-let manifest, active, rows = [], filtered = [], page = 0, request = 0;
+const unknownBasis = "Basis unlabelled";
+const characterNames = {V: "Valence", R: "Rydberg", M: "Mixed"};
+const spinNames = {1: "Singlet", 2: "Doublet", 3: "Triplet", 4: "Quartet", 5: "Quintet"};
+let manifest, molecules, filtered = [], page = 0, exploreRows = [];
+const moleculeSearch = new Map();
 
 function element(tag, text) {
     const node = document.createElement(tag);
@@ -47,85 +51,8 @@ function sourceLink(path, type = "blob") {
     return `${manifest.repository}/${type}/${manifest.revision}/${path.split("/").map(encodeURIComponent).join("/")}`;
 }
 
-function controls(disabled) {
-    for (const key of ["query", "method", "facet", "safe"]) ui[key].disabled = disabled;
-    ui.export.disabled = disabled || !filtered.length;
-}
-
-function report(error) {
-    ui.error.hidden = false;
-    ui.error.textContent = error.message;
-    ui.status.textContent = "";
-}
-
-async function changeCollection() {
-    const id = ui.collection.value;
-    const generation = ++request;
-    const collection = manifest.collections.find(item => item.id === id);
-    ui.error.hidden = true;
-    controls(true);
-    ui.prev.disabled = true;
-    ui.next.disabled = true;
-    ui.status.textContent = "Loading collection…";
-    ui.head.replaceChildren();
-    ui.rows.replaceChildren();
-    ui.page.textContent = "";
-    try {
-        if (!cache.has(id)) cache.set(id, await json(snapshotUrl(`data/${id}.json`)));
-        if (generation !== request) return;
-        rows = cache.get(id);
-        active = collection;
-        const neutral = active.kind === "neutral";
-        ui["method-title"].textContent = neutral ? "Compare method" : "Method";
-        ui["facet-title"].textContent = neutral ? "Character" : "Basis set";
-        ui["safe-label"].hidden = !neutral || !rows.some(row => row.safe != null);
-        ui.safe.checked = false;
-        const methods = neutral
-            ? rows.flatMap(row => Object.entries(row.fields)
-                .filter(([key, value]) => Number.isFinite(value) && !metadata.test(key))
-                .map(([key]) => key))
-            : rows.map(row => row.method);
-        choices(ui.method, neutral ? "Reference only" : "All methods", sorted(methods));
-        choices(ui.facet, neutral ? "All characters" : "All basis sets",
-            sorted(rows.map(row => neutral ? row.character : row.basis)));
-        page = 0;
-        render();
-        controls(false);
-    } catch (error) {
-        if (generation === request) report(error);
-    }
-}
-
-function normal(value) {
-    return String(value ?? "").normalize("NFKC").toLowerCase()
-        .replace(/[^\p{L}\p{N}]+/gu, "");
-}
-
-function fixed(value, digits = 3) {
-    return Number.isFinite(value) ? value.toFixed(digits) : "—";
-}
-
-function headers() {
-    if (active.kind === "charged") return ["Molecule / site", "Sector", "Method", "Basis", "Root", "Energy (eV)", "Z"];
-    const columns = ["Molecule", "State", "Character", "TBE/AVTZ (eV)", "TBE/AVQZ (eV)", "Safe"];
-    if (ui.method.value) columns.push(`${ui.method.value} (eV)`, "Δ vs AVTZ (eV)");
-    return columns;
-}
-
-function values(row) {
-    if (active.kind === "charged") {
-        return [systemText(row), row.state, row.method, row.basis, row.root, row.energy, row.weight];
-    }
-    const result = [row.molecule, row.state, row.character, row.energy, row.referenceQZ, row.safe];
-    if (ui.method.value) {
-        const energy = row.fields[ui.method.value];
-        result.push(energy, Number.isFinite(energy) && Number.isFinite(row.energy) ? energy - row.energy : null);
-    }
-    return result;
-}
-
 function stateParts(value) {
-    const match = String(value ?? "").trim().match(/^\^\s*(\d+)\s*\\*(Sigma|Pi|Delta|Phi|Gamma|[A-Z])(?:_(?:\{([\da-z]+)\}|([\da-z]+)))?\^?([+'-]*)(\s*\[F\])?$/);
+    const match = String(value ?? "").trim().replaceAll('"', "''").match(/^\^\s*(\d+)\s*\\*(Sigma|Pi|Delta|Phi|Gamma|[A-Z])(?:_(?:\{([\da-z]+)\}|([\da-z]+)))?\^?([+'-]*)(\s*\[F\])?$/);
     if (!match) return null;
     const [, multiplicity, label, braced, bare, signs, note] = match;
     const symbol = {Sigma: "Σ", Pi: "Π", Delta: "Δ", Phi: "Φ", Gamma: "Γ"}[label] ?? label;
@@ -157,104 +84,150 @@ function stateOptionText(value) {
         + superscript.replace(/\+/g, "⁺").replace(/−/g, "⁻") + note;
 }
 
-function formulaParts(row) {
-    return row.source.startsWith("charged/") && /^(?:[A-Z][a-z]?\d*)+$/.test(row.molecule)
-        ? row.molecule.split(/(\d+)/) : [row.molecule];
+function normal(value) {
+    return String(value ?? "").normalize("NFKC").toLowerCase()
+        .replace(/[^\p{L}\p{N}]+/gu, "");
+}
+
+function moleculeSearchKey(value) {
+    const text = value.trim();
+    return normal(text) + (/[+-]$/.test(text) ? text.slice(-1) : "");
+}
+
+function fixed(value, digits = 3) {
+    return Number.isFinite(value) ? value.toFixed(digits) : "—";
 }
 
 function systemText(row, formatted = false) {
-    const formula = formatted ? formulaParts(row).map((part, index) =>
-        index % 2 ? part.replace(/\d/g, digit => "₀₁₂₃₄₅₆₇₈₉"[digit]) : part).join("") : row.molecule;
-    return row.site ? `${formula} · ${row.site}` : formula;
+    const formula = formatted ? String(row.formula).replace(/\d/g, digit => "₀₁₂₃₄₅₆₇₈₉"[digit]) : row.formula;
+    return [row.name ?? row.molecule, formula === row.name ? null : formula, row.site].filter(Boolean).join(" · ");
 }
 
 function moleculeLabel(row, includeSite = true) {
-    const label = element("span", row.molecule);
-    label.replaceChildren(...formulaParts(row).map((part, index) => index % 2 ? element("sub", part) : part));
+    const label = element("span", row.name ?? row.molecule);
+    if (row.formula && row.formula !== (row.name ?? row.molecule)) {
+        label.append(" (", ...row.formula.split(/(\d+)/).map((part, i) =>
+            i % 2 ? element("sub", part) : part), ")");
+    }
     if (includeSite && row.site) label.append(` · ${row.site}`);
     return label;
 }
 
-function showDetails(row, focusGeometry = false) {
-    ui["detail-title"].replaceChildren(moleculeLabel(row), " · ", stateLabel(row.state));
-    ui["detail-source"].href = sourceLink(row.source);
-    const entries = row.fields ?? {
-        Molecule: row.molecule, ...(row.site ? {"Core site": row.site} : {}),
-        Sector: row.state, Method: row.method, Basis: row.basis,
-        Root: row.root, "Energy (eV)": row.energy, Z: row.weight, "Uncertainty (eV)": row.uncertainty,
-    };
-    ui["detail-fields"].replaceChildren(...Object.entries(entries).flatMap(([key, value]) => {
-        const field = element("dd");
-        field.append(key === "State" ? stateLabel(value) : key === "Molecule" ? moleculeLabel(row, false)
-            : value == null ? "—" : String(value));
-        return [element("dt", key), field];
-    }));
-    showGeometryLinks(row, document.getElementById("detail-geometries"));
-    ui.detail.showModal();
-    if (focusGeometry) document.getElementById("detail-geometries").focus();
+function moleculeLink(row) {
+    const link = element("a");
+    link.href = `#molecule?id=${encodeURIComponent(row.moleculeId)}`;
+    link.append(moleculeLabel(row));
+    return link;
 }
 
-function render() {
-    const tokens = ui.query.value.trim().split(/\s+/).map(normal).filter(Boolean);
-    const neutral = active.kind === "neutral";
-    const method = ui.method.value;
-    const facet = ui.facet.value;
-    filtered = rows.filter(row => {
-        const terms = normal([systemText(row), row.state, row.type, row.source, row.method].join(" "));
-        return tokens.every(token => terms.includes(token))
-            && (!ui.safe.checked || !neutral || row.safe === "Y")
-            && (!facet || (neutral ? row.character : row.basis) === facet)
-            && (!method || (neutral ? Number.isFinite(row.fields[method]) : row.method === method));
-    });
-    const pages = Math.max(1, Math.ceil(filtered.length / pageSize));
-    page = Math.min(page, pages - 1);
-    ui.head.replaceChildren();
-    const heading = element("tr");
-    for (const name of headers()) {
-        const th = element("th", name);
-        th.scope = "col";
-        heading.append(th);
-    }
-    ui.head.append(heading);
-    const content = document.createDocumentFragment();
-    for (const row of filtered.slice(page * pageSize, (page + 1) * pageSize)) {
-        const tr = element("tr");
-        for (const [i, value] of values(row).entries()) {
-            const td = element("td");
-            if (i === 0) {
-                const button = element("button");
-                button.append(moleculeLabel(row));
-                button.type = "button";
-                button.className = "row-link";
-                button.addEventListener("click", () => showDetails(row));
-                const geometry = element("button", "Geometry");
-                geometry.type = "button";
-                geometry.className = "geometry-shortcut";
-                geometry.setAttribute("aria-label", `Geometry for ${systemText(row)}`);
-                geometry.addEventListener("click", () => showDetails(row, true));
-                td.append(button, geometry);
-            } else if (i === 1 && neutral) {
-                td.append(stateLabel(value));
-            } else {
-                td.textContent = i === 4 && !neutral ? value : typeof value === "number" ? fixed(value) : value ?? "—";
-            }
-            tr.append(td);
-        }
-        content.append(tr);
-    }
-    ui.rows.replaceChildren(content);
-    let summary = `${filtered.length.toLocaleString()} of ${rows.length.toLocaleString()} ${neutral ? "states" : "method results"}`;
-    if (neutral && method) {
-        const errors = filtered.filter(row => Number.isFinite(row.energy))
-            .map(row => Math.abs(row.fields[method] - row.energy));
-        if (errors.length) summary += ` · MAE ${fixed(errors.reduce((a, b) => a + b, 0) / errors.length)} eV vs AVTZ (${errors.length} matched)`;
-    }
-    ui.status.textContent = summary;
-    ui.page.textContent = filtered.length ? `Page ${page + 1} of ${pages}` : "No matching records";
-    ui.prev.disabled = page === 0;
-    ui.next.disabled = page + 1 >= pages;
-    ui.export.disabled = !filtered.length;
+function collectionName(id) {
+    return manifest.collections.find(collection => collection.id === id)?.name ?? id;
 }
+
+function loadCollection(id) {
+    if (!cache.has(id)) {
+        cache.set(id, json(snapshotUrl(`data/${id}.json`)).catch(error => {
+            cache.delete(id);
+            throw error;
+        }));
+    }
+    return cache.get(id);
+}
+
+function computations(row) {
+    if (!row.fields) return [{method: row.method, basis: row.basis, energy: row.energy}];
+    return Object.entries(row.fields)
+        .filter(([key, value]) => Number.isFinite(value) && !metadata.test(key))
+        .map(([method, energy]) => ({method, basis: row.methodBases?.[method] ?? unknownBasis, energy}));
+}
+
+function stateText(row) {
+    const suffix = row.root ? ` #${row.root}` : row.occurrence > 1 ? ` (${row.occurrence})` : "";
+    return stateOptionText(row.state.trim()) + suffix;
+}
+
+function stateButton(row) {
+    const button = element("button");
+    button.className = "row-link";
+    button.type = "button";
+    button.append(stateLabel(row.state.trim()));
+    if (row.root) button.append(` #${row.root}`);
+    if (row.occurrence > 1) button.append(` (${row.occurrence})`);
+    button.addEventListener("click", () => showDetails(row));
+    return button;
+}
+
+// Checkbox menus keep multiple selections usable on touchscreens and keyboards.
+function createFilter(target, label, change, empty = "All") {
+    const details = element("details");
+    details.className = "filter-menu";
+    const summary = element("summary");
+    const options = element("div");
+    options.className = "filter-options";
+    const clear = element("button", empty === "All" ? "Clear selection" : "Clear");
+    clear.type = "button";
+    const list = element("div");
+    options.append(clear, list);
+    details.append(summary, options);
+    target.append(details);
+    let items = new Map();
+    const filter = {
+        selected: () => [...items].filter(([, item]) => item.input.checked).map(([value]) => value),
+        set(values) {
+            const wanted = new Set(values);
+            for (const [value, item] of items) item.input.checked = wanted.has(value);
+            update();
+        },
+        options(values, format = value => value) {
+            const previous = filter.selected();
+            items = new Map(values.map(value => {
+                value = String(value);
+                const item = element("label");
+                const input = element("input");
+                input.type = "checkbox";
+                const text = element("span", format(value));
+                const count = element("small");
+                item.append(input, text, count);
+                return [value, {input, item, count}];
+            }));
+            list.replaceChildren(...[...items.values()].map(item => item.item));
+            target.hidden = !items.size;
+            filter.set(previous);
+        },
+        counts(counts) {
+            for (const [value, {input, count}] of items) {
+                const total = counts.get(value) ?? 0;
+                input.disabled = total === 0 && !input.checked;
+                count.textContent = total.toLocaleString();
+            }
+        },
+    };
+    function update() {
+        const count = filter.selected().length;
+        summary.textContent = `${label} · ${count || empty}`;
+        clear.disabled = !count;
+    }
+    details.addEventListener("toggle", () => {
+        if (details.open) for (const other of document.querySelectorAll(".filter-menu[open]")) {
+            if (other !== details) other.open = false;
+        }
+    });
+    details.addEventListener("keydown", event => {
+        if (event.key === "Escape" && details.open) {
+            details.open = false;
+            summary.focus();
+        }
+    });
+    list.addEventListener("change", () => { update(); change(); });
+    clear.addEventListener("click", () => { filter.set([]); change(); summary.focus(); });
+    return filter;
+}
+
+document.addEventListener("click", event => {
+    for (const menu of document.querySelectorAll(".filter-menu[open]")) {
+        if (!menu.contains(event.target)) menu.open = false;
+    }
+});
 
 function csvField(value) {
     if (value == null) return "";
@@ -264,26 +237,223 @@ function csvField(value) {
     return '"' + safeText.replaceAll('"', '""') + '"';
 }
 
-ui.export.addEventListener("click", () => {
-    const extra = active.kind === "charged" ? ["Uncertainty (eV)"] : ["Spin", "Type"];
-    const csv = [[...headers(), ...extra, "Source JSON", "QUESTDB commit"],
-        ...filtered.map(row => [...values(row),
-            ...(active.kind === "charged" ? [row.uncertainty] : [row.spin, row.type]),
-            sourceLink(row.source), manifest.revision])]
-        .map(row => row.map(csvField).join(",")).join("\r\n");
+function downloadCsv(name, records) {
+    const csv = records.map(row => row.map(csvField).join(",")).join("\r\n");
     const url = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
     const link = element("a");
     link.href = url;
-    link.download = `QUESTDB-${active.id}-${manifest.revision.slice(0, 7)}.csv`;
+    link.download = `QUESTDB-${name}-${manifest.revision.slice(0, 12)}.csv`;
     link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-});
-ui.collection.addEventListener("change", changeCollection);
-for (const [key, event] of [["query", "input"], ["method", "change"], ["facet", "change"], ["safe", "change"]]) {
-    ui[key].addEventListener(event, () => { page = 0; render(); });
 }
-ui.prev.addEventListener("click", () => { page--; render(); });
-ui.next.addEventListener("click", () => { page++; render(); });
+
+const facetValues = {
+    collection: row => [row.collection],
+    method: row => row.calculations.map(item => item.method),
+    basis: row => row.calculations.map(item => item.basis),
+    character: row => [row.character],
+    spin: row => [row.spin],
+    transition: row => [row.fields ? (row.fluorescence ? "Fluorescence" : "Vertical excitation") : row.state],
+};
+const facetLabels = {collection: "Collection", method: "Method", basis: "Basis set", character: "Character",
+    spin: "Multiplicity", transition: "Transition"};
+const facetFormats = {collection: collectionName, character: value => characterNames[value] ?? value,
+    spin: value => spinNames[value] ?? value};
+const exploreFilters = Object.fromEntries(Object.keys(facetValues).map(key =>
+    [key, createFilter(byId(key), facetLabels[key], () => { page = 0; renderExplore(); })]));
+const columns = ["Molecule", "State", "Collection", "Character", "Method", "Basis", "Energy (eV)",
+    "TBE/AVTZ (eV)", "TBE/AVQZ (eV)", "Z", "Safe"];
+
+function matchesCalculation(calculation, selections) {
+    return (!selections.method.size || selections.method.has(calculation.method))
+        && (!selections.basis.size || selections.basis.has(calculation.basis));
+}
+
+function recordValues(row, selections) {
+    const selected = row.calculations.filter(calculation => matchesCalculation(calculation, selections));
+    const showMethods = !row.fields || selections.method.size || selections.basis.size;
+    const single = selected.length === 1 ? selected[0] : null;
+    return [systemText(row), row.state.trim() + (row.root ? ` #${row.root}` : ""), collectionName(row.collection),
+        characterNames[row.character] ?? row.character,
+        showMethods ? single?.method ?? `${selected.length} selected` : "TBE",
+        showMethods ? single?.basis ?? "See state details" : "AVTZ",
+        showMethods ? single?.energy : row.energy, row.fields ? row.energy : null, row.referenceQZ, row.weight, row.safe];
+}
+
+function renderExplore() {
+    const query = ui.query.value.trim();
+    const exact = moleculeSearch.get(moleculeSearchKey(query));
+    const tokens = query.split(/\s+/).map(normal).filter(Boolean);
+    const selection = Object.fromEntries(Object.entries(exploreFilters)
+        .map(([key, filter]) => [key, new Set(filter.selected())]));
+    const counts = Object.fromEntries(Object.keys(facetValues).map(key => [key, new Map()]));
+    filtered = [];
+    for (const row of exploreRows) {
+        if (!(exact ? exact.has(row.moleculeId) : tokens.every(token => row.search.includes(token)))
+            || (ui.safe.checked && (!row.fields || row.safe !== "Y"))) continue;
+        const failures = Object.keys(facetValues).filter(key => key !== "method" && key !== "basis"
+            && selection[key].size && !facetValues[key](row).some(value => selection[key].has(String(value))));
+        const methods = row.calculations.filter(c => !selection.basis.size || selection.basis.has(c.basis));
+        const bases = row.calculations.filter(c => !selection.method.size || selection.method.has(c.method));
+        const calculated = (!selection.method.size && !selection.basis.size)
+            || row.calculations.some(c => matchesCalculation(c, selection));
+        if (!failures.length) {
+            if (calculated) filtered.push(row);
+            for (const [key, candidates] of [["method", methods.map(c => c.method)], ["basis", bases.map(c => c.basis)]]) {
+                for (const value of new Set(candidates)) counts[key].set(value, (counts[key].get(value) ?? 0) + 1);
+            }
+        }
+        if (!calculated || failures.length > 1) continue;
+        for (const [key, values] of Object.entries(facetValues)) {
+            if (key === "method" || key === "basis" || (failures.length && key !== failures[0])) continue;
+            for (const value of values(row)) {
+                if (value != null) counts[key].set(String(value), (counts[key].get(String(value)) ?? 0) + 1);
+            }
+        }
+    }
+    for (const [key, filter] of Object.entries(exploreFilters)) filter.counts(counts[key]);
+    const pages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    page = Math.min(page, pages - 1);
+    ui.rows.replaceChildren(...filtered.slice(page * pageSize, (page + 1) * pageSize).map(row => {
+        const tr = element("tr");
+        recordValues(row, selection).forEach((value, index) => {
+            const td = element("td");
+            if (index === 0) td.append(moleculeLink(row));
+            else if (index === 1) td.append(stateButton(row));
+            else td.textContent = typeof value === "number" ? fixed(value) : value || "—";
+            tr.append(td);
+        });
+        return tr;
+    }));
+    ui.status.textContent = `${filtered.length.toLocaleString()} of ${exploreRows.length.toLocaleString()} records`;
+    ui.page.textContent = filtered.length ? `Page ${page + 1} of ${pages}` : "No matching records";
+    ui.prev.disabled = page === 0;
+    ui.next.disabled = page + 1 >= pages;
+    ui.export.disabled = !filtered.length;
+}
+
+ui.export.addEventListener("click", () => {
+    const selection = Object.fromEntries(Object.entries(exploreFilters)
+        .map(([key, filter]) => [key, new Set(filter.selected())]));
+    downloadCsv("explore", [[...columns, "State ID", "Source JSON", "QUESTDB commit"],
+        ...filtered.flatMap(row => {
+            const values = recordValues(row, selection);
+            const extras = [row.stateId, sourceLink(row.source), manifest.revision];
+            if (!row.fields || (!selection.method.size && !selection.basis.size)) return [[...values, ...extras]];
+            return row.calculations.filter(c => matchesCalculation(c, selection))
+                .map(c => [...values.slice(0, 4), c.method, c.basis, c.energy, ...values.slice(7), ...extras]);
+        })]);
+});
+
+function energyMatrix(calculations) {
+    const methods = sorted(calculations.map(entry => entry.method));
+    const bases = sorted(calculations.map(entry => entry.basis));
+    const table = element("table");
+    const head = element("thead");
+    const header = element("tr");
+    for (const title of ["Method", ...bases]) {
+        const th = element("th", title);
+        th.scope = "col";
+        header.append(th);
+    }
+    head.append(header);
+    const body = element("tbody");
+    for (const method of methods) {
+        const tr = element("tr");
+        tr.append(element("td", method));
+        for (const basis of bases) {
+            const energy = calculations.find(entry => entry.method === method && entry.basis === basis)?.energy;
+            tr.append(element("td", fixed(energy)));
+        }
+        body.append(tr);
+    }
+    table.append(head, body);
+    const wrapper = element("div");
+    wrapper.className = "table-wrap compact-table";
+    wrapper.tabIndex = 0;
+    wrapper.append(table);
+    return wrapper;
+}
+
+let detailGeneration = 0;
+async function showDetails(row, benchmarkFields = null) {
+    const generation = ++detailGeneration;
+    ui["detail-title"].replaceChildren(moleculeLabel(row), " · ", stateLabel(row.state.trim()));
+    if (row.root || row.occurrence > 1) ui["detail-title"].append(` #${row.root ?? row.occurrence}`);
+    ui["detail-source"].href = sourceLink(row.source);
+    byId("detail-paper").href = `https://doi.org/${row.paper}`;
+    byId("detail-molecule").href = moleculeLink(row).href;
+    const ref = byId("detail-reference");
+    const matrix = byId("detail-matrix");
+    const entries = row.fields ?? {
+        "Source state": row.state, Method: row.method, Basis: row.basis, Root: row.root,
+        "Energy (eV)": row.energy, Z: row.weight, "Uncertainty (eV)": row.uncertainty,
+    };
+    function fieldsList(fields) {
+        return Object.entries(fields).flatMap(([key, value]) => [element("dt", key), element("dd", value ?? "—")]);
+    }
+    ui["detail-fields"].replaceChildren(...fieldsList(entries));
+    ui["detail-fields"].parentElement.open = false;
+    ref.replaceChildren();
+    matrix.textContent = "Loading calculated energies…";
+    showGeometryLinks(row, byId("detail-geometries"));
+    if (!ui.detail.open) ui.detail.showModal();
+    const section = element("dl");
+    if (benchmarkFields) section.append(...fieldsList(benchmarkFields));
+    if (row.fields) {
+        section.append(...fieldsList({
+            "TBE/AVTZ (eV)": fixed(row.energy), "Reference method": row.fields.Method ?? row.fields["Method (all in RO)"],
+            ...(Number.isFinite(row.referenceQZ) ? {"TBE/AVQZ (eV)": fixed(row.referenceQZ),
+                "Basis correction method": row.fields["Corr. Method"]} : {}),
+            "Reliability": row.safe === "Y" ? "Safe (~50 meV)" : row.safe === "N" ? "Flagged by the dataset" : "Unreported",
+            ...(row.fields["Special ?"] ? {"Source annotation": String(row.fields["Special ?"]).split(/\s+/)
+                .map(code => ({FL: "Fluorescence", PD: "Partial double excitation", GD: "Genuine double excitation",
+                    wCT: "Weak charge transfer", sCT: "Strong charge transfer"})[code] ?? code).join(" · ")} : {}),
+            ...(row.strengthSource ? {[row.strengthSource]: row.strength} : {}),
+        }));
+    }
+    if (section.children.length) ref.append(section);
+    for (const revision of row.revisions ?? []) {
+        const link = element("a", "Source correction");
+        link.href = `${manifest.repository}/commit/${revision.commit}`;
+        const name = revision.field === "energy" ? "TBE/AVTZ" : "TBE/AVQZ";
+        const note = element("p", `${name} changed from ${fixed(revision.previous)} to ${fixed(revision.value)} eV. ${revision.reason} `);
+        note.append(link);
+        ref.append(note);
+    }
+    try {
+        const values = row.fields ? computations(row) : (await loadCollection(row.collection))
+            .filter(entry => entry.stateId === row.stateId);
+        if (generation !== detailGeneration) return;
+        if (!row.fields) {
+            const references = values.filter(entry => entry.method === "sCI");
+            if (references.length) {
+                const fields = element("dl");
+                fields.append(...fieldsList(Object.fromEntries(references.map(entry => [
+                    `sCI · ${entry.basis} (eV)`, fixed(entry.energy)
+                    + (Number.isFinite(entry.uncertainty) ? ` ± ${fixed(entry.uncertainty)}` : ""),
+                ]))));
+                ref.append(fields);
+            }
+        }
+        matrix.replaceChildren();
+        if (values.length) {
+            matrix.append(element("h3", "Calculated energies (eV)"), energyMatrix(values));
+            if (values.some(entry => entry.basis === unknownBasis)) {
+                matrix.append(element("p", "Basis unlabelled means the method column has no basis tag in the source JSON."));
+            }
+        }
+    } catch (error) {
+        if (generation === detailGeneration) matrix.textContent = error.message;
+    }
+}
+
+byId("detail-molecule").addEventListener("click", () => ui.detail.close());
+for (const [control, event] of [[ui.query, "input"], [ui.safe, "change"]]) {
+    control.addEventListener(event, () => { page = 0; renderExplore(); });
+}
+ui.prev.addEventListener("click", () => { page--; renderExplore(); });
+ui.next.addEventListener("click", () => { page++; renderExplore(); });
 
 async function init() {
     try {
@@ -296,13 +466,48 @@ async function init() {
         for (const link of document.querySelectorAll("[data-source]")) {
             link.href = sourceLink(link.dataset.source, "tree");
         }
-        ui.collection.replaceChildren(...manifest.collections.map(item => option(item.name, item.id)));
-        ui.collection.disabled = false;
+        byId("benchmark-packs").replaceChildren(...manifest.benchmarkPacks.map(pack => {
+            const link = element("a", `${pack.name} (ZIP, ${pack.count} states)`);
+            link.href = snapshotUrl(pack.file);
+            link.download = "";
+            const li = element("li");
+            li.append(link);
+            return li;
+        }));
+        molecules = await json(snapshotUrl("data/molecules.json"));
+        for (const molecule of Object.values(molecules)) {
+            for (const alias of [molecule.name, molecule.formula, ...molecule.aliases]) {
+                const key = moleculeSearchKey(alias);
+                if (!key) continue;
+                if (!moleculeSearch.has(key)) moleculeSearch.set(key, new Set());
+                moleculeSearch.get(key).add(molecule.id);
+            }
+        }
         document.dispatchEvent(new Event("quest-ready"));
-        await changeCollection();
+        const data = await Promise.all(manifest.collections.map(item => loadCollection(item.id)));
+        exploreRows = data.flat().sort((a, b) => a.name.localeCompare(b.name)).map(row => ({
+            ...row, calculations: computations(row),
+            search: normal([systemText(row), row.state, row.type, row.source, row.method,
+                ...molecules[row.moleculeId].aliases].join(" ")),
+        }));
+        for (const [key, values] of Object.entries(facetValues)) {
+            const choices = key === "collection" ? manifest.collections.map(c => c.id)
+                : sorted(exploreRows.flatMap(values));
+            exploreFilters[key].options(choices, facetFormats[key]);
+        }
+        const header = element("tr");
+        for (const column of columns) {
+            const th = element("th", column);
+            th.scope = "col";
+            header.append(th);
+        }
+        ui.head.append(header);
+        renderExplore();
     } catch (error) {
-        report(error);
+        ui.error.hidden = false;
+        ui.error.textContent = error.message;
+        ui.status.textContent = "";
     }
 }
 
-init();
+document.addEventListener("DOMContentLoaded", init, {once: true});

@@ -1,10 +1,7 @@
 "use strict";
 
-const byId = id => document.getElementById(id);
-const get = suffix => byId(`bench-${suffix}`);
-const palette = ["#30508e", "#a93820", "#167166", "#76528f", "#866500", "#2f749a"];
-let geometryIndex = [], geometryPromise, benchRows = [], benchData = [], benchMethods = [], benchGeneration = 0;
-let plotPoints = [], structureAtoms = [], structureBonds = [], structureGeneration = 0;
+let geometryIndex = [], geometryPromise;
+let structureAtoms = [], structureBonds = [], structureGeneration = 0;
 let rotation = [0.3, 0.5], structureZoom = 1, dragStart;
 const covalentRadii = {
     H: .31, Li: 1.28, Be: .96, B: .84, C: .76, N: .71, O: .66, F: .57,
@@ -14,12 +11,11 @@ const atomColors = {
     H: "#ecf1f7", C: "#43546b", N: "#3867c5", O: "#d34536", F: "#48a157",
     Cl: "#398a42", S: "#e2b43a", P: "#db8333", B: "#c07863", Cu: "#a96535",
 };
-const benchCache = new Map();
-const coreGF2Methods = new Set(["GF2@HF", "evGF2@HF", "qsGF2"]);
 
 function navigate() {
     const panels = [...document.querySelectorAll("[data-panel]")];
-    const hash = location.hash.slice(1);
+    const [hash, query] = location.hash.slice(1).split("?");
+    const params = new URLSearchParams(query);
     const id = panels.some(panel => panel.id === hash) ? hash : "explore";
     for (const panel of panels) panel.hidden = panel.id !== id;
     for (const link of document.querySelectorAll("[data-view]")) {
@@ -28,21 +24,18 @@ function navigate() {
     }
     if (hash === id) requestAnimationFrame(() => byId(id).scrollIntoView());
     if (id === "benchmark" && manifest) {
-        if (!benchRows.length) loadBenchmark();
+        if (params.size || !hasBenchmark()) loadBenchmark(params);
         else plotBenchmark();
     }
+    if (id === "molecule" && manifest) openMolecule(params.get("id"));
     if (id === "geometries" && manifest) {
         loadGeometries().then(renderGeometries).catch(error => { byId("geometry-count").textContent = error.message; });
     }
 }
 window.addEventListener("hashchange", navigate);
 document.addEventListener("quest-ready", () => {
-    get("collection").replaceChildren(...manifest.collections
-        .filter(collection => collection.kind === "neutral" || ["core_IPs", "valence_IPs"].includes(collection.id))
-        .map(collection => option(collection.name, collection.id)));
     byId("geometry-group").replaceChildren(...manifest.geometryDownloads
         .map(group => option(group.name, group.id)));
-    navigate();
 });
 
 function loadGeometries() {
@@ -70,35 +63,37 @@ function geometryItem(record, tag) {
     preview.type = "button";
     preview.addEventListener("click", () => openStructure(record));
     actions.append(download, preview);
-    item.append(element("strong", record.name), element("small", record.groups.join(" · ")), actions);
+    const title = element("strong");
+    title.append(moleculeLabel({name: record.displayName, formula: record.formula}, false));
+    if (record.variant) title.append(` · ${record.variant}`);
+    item.append(title, element("small", record.groups.join(" · ")), actions);
     if (record.note) item.append(element("p", record.note));
     return item;
 }
 
 function showGeometryLinks(row, target) {
-    target.textContent = "Looking for geometries…";
+    const state = row.stateId;
+    target.dataset.state = state;
+    target.textContent = "Loading geometry…";
     loadGeometries().then(records => {
-        const subset = row.source.split("/")[2];
-        const candidates = row.geometryId
-            ? records.filter(record => record.id === row.geometryId)
-            : records.filter(record => record.subsets.includes(subset)
-                && record.labels.some(label => normal(label) === normal(row.molecule)));
-        if (candidates.length) {
-            target.replaceChildren(element("p", row.geometryId ? "Canonical geometry" : "Geometries associated with this system"),
-                ...candidates.map(record => geometryItem(record, "div")));
-            if (row.benchmarkXyz && row.benchmarkXyz !== candidates[0].source) {
-                const original = element("a", "Download original benchmark XYZ");
-                original.href = snapshotUrl(`xyz/${row.benchmarkXyz}`);
-                original.download = row.benchmarkXyz.split("/").pop();
-                target.append(original);
-            }
-        } else {
-            const browse = element("a", "Browse all geometries");
-            browse.href = "#geometries";
-            browse.addEventListener("click", () => ui.detail.close());
-            target.replaceChildren(element("p", "No geometry matched this source label."), browse);
+        if (target.dataset.state !== state) return;
+        const geometry = records.find(record => record.id === row.geometryId);
+        if (!geometry) {
+            const link = moleculeLink(row);
+            link.textContent = "Browse the molecule’s geometries";
+            target.replaceChildren(element("p", "No calculation geometry is assigned in the registry."), link);
+            return;
         }
-    }).catch(error => { target.textContent = error.message; });
+        const original = row.benchmarkXyz && row.benchmarkXyz !== geometry.source;
+        target.replaceChildren(element("h3", original ? "Canonical structure" : "Calculation geometry"),
+            geometryItem(geometry, "div"));
+        if (original) {
+            const download = element("a", "Download calculation XYZ");
+            download.href = snapshotUrl(`xyz/${row.benchmarkXyz}`);
+            download.download = row.benchmarkXyz.split("/").pop();
+            target.append(download);
+        }
+    }).catch(error => { if (target.dataset.state === state) target.textContent = error.message; });
 }
 
 function renderGeometries() {
@@ -106,7 +101,7 @@ function renderGeometries() {
     const group = byId("geometry-group").value;
     const archives = manifest?.geometryDownloads;
     if (!archives) return;
-    const matches = geometryIndex.filter(record => [record.name, record.species, record.source.split("/").pop(),
+    const matches = geometryIndex.filter(record => [record.name, record.species, record.displayName, record.formula, record.source.split("/").pop(),
         ...record.labels, ...record.aliases]
         .some(label => normal(label).includes(query))
         && (group === "all" || record.groups.includes(group) || record.subsets.includes(group)));
@@ -143,7 +138,8 @@ function inferBonds(atoms) {
 async function openStructure(record) {
     const dialog = byId("structure");
     const id = ++structureGeneration;
-    byId("structure-title").textContent = record.name;
+    byId("structure-title").replaceChildren(moleculeLabel({name: record.displayName, formula: record.formula}));
+    if (record.variant) byId("structure-title").append(` · ${record.variant}`);
     byId("structure-download").href = snapshotUrl(record.file);
     byId("structure-download").download = `${record.name}.xyz`;
     byId("structure-source").href = sourceLink(record.source);
@@ -291,302 +287,7 @@ structureCanvas.addEventListener("keydown", event => {
 byId("geometry-query").addEventListener("input", renderGeometries);
 byId("geometry-group").addEventListener("change", renderGeometries);
 
-function chargedStates(data) {
-    const states = new Map();
-    for (const row of data) {
-        const key = JSON.stringify([row.source, row.state, row.basis, row.root]);
-        if (!states.has(key)) states.set(key, {...row, fields: Object.create(null)});
-        const state = states.get(key);
-        if (Object.hasOwn(state.fields, row.method)) throw new Error(`Duplicate result: ${row.source} / ${row.state} / ${row.basis} / ${row.method}`);
-        state.fields[row.method] = row.energy;
-    }
-    return [...states.values()];
-}
 
-function benchmarkOptions() {
-    const id = get("collection").value;
-    const charged = id === "core_IPs" || id === "valence_IPs";
-    const valence = id === "valence_IPs";
-    const rows = valence ? benchRows.filter(row => row.state === get("sector").value) : benchRows;
-    const refs = charged ? sorted(rows.filter(row => Number.isFinite(row.fields.sCI)).map(row => row.basis))
-        : ["TBE/AVTZ", ...(rows.some(row => Number.isFinite(row.referenceQZ)) ? ["TBE/AVQZ"] : [])];
-    get("reference").replaceChildren(...refs.map(ref => option(charged ? `sCI / ${ref}` : ref, ref)));
-    const preferredBasis = valence ? "aug-cc-pVTZ" : "aug-cc-pCVTZ";
-    if (charged && refs.includes(preferredBasis)) get("reference").value = preferredBasis;
-    choices(get("spin"), "All multiplicities", sorted(rows.map(row => row.spin)));
-    choices(get("character"), "All characters", sorted(rows.map(row => row.character)));
-    for (const field of ["spin", "character"]) get(`${field}-label`).hidden = get(field).options.length === 1;
-    get("safe-label").hidden = charged || !rows.some(row => row.safe != null);
-    get("safe").checked = false;
-    const methods = sorted(rows.flatMap(row => Object.entries(row.fields)
-        .filter(([key, value]) => Number.isFinite(value) && (charged ? key !== "sCI" : !metadata.test(key)))
-        .map(([key]) => key)));
-    const defaults = valence ? ["CC3", "CCSDT", "GW"]
-        : charged ? ["G0W0@HF", "evGW@HF", "qsGW"] : ["ADC(2)", "CC3", "CCSD"];
-    get("gf2").hidden = id !== "core_IPs" || ![...coreGF2Methods].every(method => methods.includes(method));
-    const hasDefaults = methods.some(name => defaults.includes(name));
-    get("method-list").replaceChildren(...methods.map((method, index) => {
-        const label = element("label");
-        const input = element("input");
-        input.type = "checkbox";
-        input.value = method;
-        input.checked = hasDefaults ? defaults.includes(method) : index < 2;
-        input.addEventListener("change", renderBenchmark);
-        label.append(input, method);
-        return label;
-    }));
-    renderBenchmark();
-}
-
-async function loadBenchmark() {
-    const id = get("collection").value;
-    const generation = ++benchGeneration;
-    const status = get("status");
-    benchRows = [];
-    benchData = [];
-    get("figure").hidden = true;
-    get("gf2").hidden = true;
-    get("export").disabled = true;
-    get("stats").replaceChildren();
-    get("method-list").replaceChildren();
-    get("inspect").replaceChildren(option("Select a state", ""));
-    status.textContent = "Loading benchmark…";
-    try {
-        if (!benchCache.has(id)) benchCache.set(id, await json(snapshotUrl(`data/${id}.json`)));
-        if (generation !== benchGeneration) return;
-        const charged = id === "core_IPs" || id === "valence_IPs";
-        const data = benchCache.get(id);
-        benchRows = charged ? chargedStates(data) : data;
-        get("sector-label").hidden = id !== "valence_IPs";
-        if (id === "valence_IPs") {
-            get("sector").replaceChildren(...sorted(benchRows.map(row => row.state))
-                .map(sector => option(sector === "IP" ? "Valence IPs" : sector, sector)));
-        }
-        benchmarkOptions();
-    } catch (error) {
-        if (generation === benchGeneration) status.textContent = error.message;
-    }
-}
-
-function renderBenchmark() {
-    if (!benchRows.length) return;
-    const id = get("collection").value;
-    const valence = id === "valence_IPs";
-    const charged = valence || id === "core_IPs";
-    const ref = get("reference").value;
-    const spin = get("spin").value, character = get("character").value;
-    benchMethods = [...get("method-list").querySelectorAll(":checked")].map(input => input.value);
-    const eligible = benchRows
-        .filter(row => (charged ? row.basis === ref && (!valence || row.state === get("sector").value)
-            : (!spin || String(row.spin) === spin) && (!character || row.character === character)
-                && (!get("safe").checked || row.safe === "Y")))
-        .map(row => ({row, reference: charged ? row.fields.sCI : ref === "TBE/AVQZ" ? row.referenceQZ : row.energy}))
-        .filter(item => Number.isFinite(item.reference));
-    benchData = benchMethods.length
-        ? eligible.filter(({row}) => benchMethods.every(method => Number.isFinite(row.fields[method]))) : [];
-    get("status").textContent = benchMethods.length
-        ? `${benchData.length} shared states from ${eligible.length} eligible references. Coverage is shown before matching.`
-            + (valence ? " States are paired by their position in the source arrays." : "")
-        : "Select at least one method.";
-    get("stats").replaceChildren(...benchMethods.map(method => {
-        const errors = benchData.map(item => item.row.fields[method] - item.reference);
-        const abs = errors.map(Math.abs).sort((a, b) => a - b);
-        const n = errors.length;
-        const mean = values => values.reduce((a, b) => a + b, 0) / n;
-        const median = (abs[Math.floor(n / 2)] + abs[Math.floor((n - 1) / 2)]) / 2;
-        const tr = element("tr");
-        for (const value of [method, `${eligible.filter(({row}) => Number.isFinite(row.fields[method])).length} / ${eligible.length}`, n,
-            fixed(mean(errors)), fixed(mean(abs)), fixed(Math.sqrt(mean(errors.map(error => error ** 2)))), fixed(median)]) {
-            tr.append(element("td", value));
-        }
-        return tr;
-    }));
-    get("inspect").replaceChildren(option("Select a state", ""), ...benchData.map(({row, reference}, index) =>
-        option(`${systemText(row, true)} · ${stateOptionText(row.state)}${row.root ? ` #${row.root}` : ""} · ${fixed(reference)} eV`, index)));
-    get("export").disabled = !benchData.length;
-    get("figure").hidden = !benchData.length;
-    plotBenchmark();
-}
-
-function inspectBenchmark(index) {
-    const item = benchData[index];
-    if (!item) return;
-    const {row, reference} = item;
-    const fields = {"Reference (eV)": reference};
-    if (row.root) fields["Source root"] = row.root;
-    for (const method of benchMethods) {
-        fields[`${method} (eV)`] = row.fields[method];
-        fields[`${method} error (eV)`] = fixed(row.fields[method] - reference);
-    }
-    showDetails({...row, fields});
-}
-
-function violinProfile(errors, min, max) {
-    const mean = errors.reduce((sum, error) => sum + error, 0) / errors.length;
-    const deviation = Math.sqrt(errors.reduce((sum, error) => sum + (error - mean) ** 2, 0) / errors.length);
-    if (!deviation || errors.length < 2) return [];
-    const bandwidth = Math.max((max - min) / 80, 1.06 * deviation * errors.length ** -.2);
-    const start = Math.max(min, Math.min(...errors) - 3 * bandwidth);
-    const end = Math.min(max, Math.max(...errors) + 3 * bandwidth);
-    return Array.from({length: 81}, (_, index) => {
-        const value = start + index * (end - start) / 80;
-        const density = errors.reduce((sum, error) =>
-            sum + Math.exp(-.5 * ((value - error) / bandwidth) ** 2), 0) / (errors.length * bandwidth);
-        return {value, density};
-    });
-}
-
-function drawViolins(ctx, x, min, max, top, band) {
-    const profiles = benchMethods.map(method =>
-        violinProfile(benchData.map(({row, reference}) => row.fields[method] - reference), min, max));
-    const peak = Math.max(0, ...profiles.flatMap(profile => profile.map(point => point.density)));
-    profiles.forEach((profile, index) => {
-        if (!profile.length) return;
-        const center = top + (index + .5) * band;
-        const halfWidth = density => .42 * band * density / peak;
-        ctx.beginPath();
-        ctx.moveTo(x(profile[0].value), center);
-        for (const point of profile) ctx.lineTo(x(point.value), center - halfWidth(point.density));
-        for (const point of [...profile].reverse()) ctx.lineTo(x(point.value), center + halfWidth(point.density));
-        ctx.closePath();
-        ctx.fillStyle = ctx.strokeStyle = palette[index % palette.length];
-        ctx.globalAlpha = .22;
-        ctx.fill();
-        ctx.globalAlpha = .8;
-        ctx.stroke();
-    });
-    ctx.globalAlpha = 1;
-}
-
-function plotBenchmark() {
-    const canvas = get("chart");
-    const width = canvas.clientWidth;
-    if (!benchData.length || !width) return;
-    const parity = get("plot").value === "parity";
-    const violin = get("plot").value === "violin";
-    const height = parity ? 360 : Math.max(220, 65 + (violin ? 47 : 28) * benchMethods.length);
-    const ctx = setupCanvas(canvas, width, height);
-    const left = parity ? 60 : Math.min(145, width * .34);
-    const right = width - 20, top = 18, bottom = height - 38;
-    const data = benchMethods.flatMap((method, j) => benchData.map((item, i) => ({
-        i, j, ref: item.reference, value: item.row.fields[method], error: item.row.fields[method] - item.reference,
-    })));
-    let min = parity ? Infinity : -.01;
-    let max = parity ? -Infinity : .01;
-    for (const point of data) {
-        min = Math.min(min, ...(parity ? [point.ref, point.value] : [-Math.abs(point.error)]));
-        max = Math.max(max, ...(parity ? [point.ref, point.value] : [Math.abs(point.error)]));
-    }
-    if (violin) {
-        min *= 1.2;
-        max *= 1.2;
-    }
-    max = Math.max(min + .01, max);
-    const size = Math.min(right - left, bottom - top);
-    const xRight = parity ? left + size : right;
-    const yTop = parity ? bottom - size : top;
-    const x = value => left + (value - min) / (max - min) * (xRight - left);
-    const y = value => bottom - (value - min) / (max - min) * (bottom - yTop);
-    ctx.font = "11px system-ui";
-    ctx.fillStyle = "#354662";
-    ctx.strokeStyle = "#a2acc0";
-    ctx.beginPath();
-    ctx.moveTo(left, yTop); ctx.lineTo(left, bottom); ctx.lineTo(xRight, bottom);
-    ctx.stroke();
-    ctx.beginPath();
-    if (parity) { ctx.moveTo(left, bottom); ctx.lineTo(xRight, yTop); }
-    else { ctx.moveTo(x(0), top); ctx.lineTo(x(0), bottom); }
-    ctx.stroke();
-    ctx.textAlign = "center";
-    for (let tick = 0; tick <= 4; tick++) {
-        const value = min + tick * (max - min) / 4;
-        ctx.fillText(fixed(value, max - min >= 10 ? 0 : 2), x(value), bottom + 15);
-        if (parity) {
-            ctx.textAlign = "right";
-            ctx.fillText(fixed(value, max - min >= 10 ? 0 : 2), left - 5, y(value) + 4);
-            ctx.textAlign = "center";
-        }
-    }
-    ctx.fillText(parity ? "Reference energy (eV)" : "Signed error (eV)", (left + xRight) / 2, height - 6);
-    if (parity) {
-        ctx.save();
-        ctx.translate(12, (bottom + yTop) / 2);
-        ctx.rotate(-Math.PI / 2);
-        ctx.fillText("Calculated energy (eV)", 0, 0);
-        ctx.restore();
-    }
-    const band = (bottom - top) / benchMethods.length;
-    if (violin) drawViolins(ctx, x, min, max, top, band);
-    if (!parity) {
-        ctx.textAlign = "right";
-        benchMethods.forEach((method, j) => {
-            ctx.fillText(method, left - 7, top + (j + .5) * band + 4, left - 12);
-        });
-    }
-    plotPoints = data.map(p => ({
-        i: p.i, x: x(parity ? p.ref : p.error),
-        y: parity ? y(p.value) : top + (p.j + .5) * band + ((p.i % 9) - 4) * Math.min(1.35, band / 14),
-        color: palette[p.j % palette.length],
-    }));
-    ctx.globalAlpha = .65;
-    for (const point of plotPoints) {
-        ctx.beginPath(); ctx.arc(point.x, point.y, 3.2, 0, 2 * Math.PI);
-        ctx.fillStyle = point.color; ctx.fill();
-    }
-    ctx.globalAlpha = 1;
-    const caption = get("caption");
-    caption.replaceChildren(element("span", (violin ? "Violin width shows estimated density. " : "")
-        + "Select a point to inspect its source state. "));
-    if (parity) {
-        benchMethods.forEach((method, j) => {
-            const legend = element("span", `● ${method}  `);
-            legend.style.color = palette[j % palette.length];
-            caption.append(legend);
-        });
-    }
-}
-
-get("collection").addEventListener("change", loadBenchmark);
-get("gf2").addEventListener("click", () => {
-    const basis = "aug-cc-pCVTZ";
-    const reference = get("reference");
-    if ([...reference.options].some(option => option.value === basis)) reference.value = basis;
-    for (const input of get("method-list").querySelectorAll("input")) {
-        input.checked = coreGF2Methods.has(input.value);
-    }
-    renderBenchmark();
-});
-get("sector").addEventListener("change", benchmarkOptions);
-for (const field of ["reference", "spin", "character", "safe"]) get(field).addEventListener("change", renderBenchmark);
-get("plot").addEventListener("change", plotBenchmark);
-get("inspect").addEventListener("change", () => {
-    if (get("inspect").value !== "") inspectBenchmark(Number(get("inspect").value));
-    get("inspect").value = "";
-});
-get("chart").addEventListener("click", event => {
-    const box = get("chart").getBoundingClientRect();
-    let closest, distance = 9;
-    for (const point of plotPoints) {
-        const d = Math.hypot(point.x - event.clientX + box.left, point.y - event.clientY + box.top);
-        if (d < distance) { distance = d; closest = point; }
-    }
-    if (closest) inspectBenchmark(closest.i);
-});
-get("export").addEventListener("click", () => {
-    const records = [["Molecule/site", "State", "Root", "Reference", "Reference (eV)", "Method", "Energy (eV)", "Error (eV)", "Source JSON", "QUESTDB commit"],
-        ...benchData.flatMap(({row, reference}) => benchMethods.map(method => [systemText(row), row.state,
-            row.root ?? "", get("reference").selectedOptions[0].textContent, reference, method, row.fields[method],
-            row.fields[method] - reference, sourceLink(row.source), manifest.revision]))];
-    const csv = records.map(row => row.map(csvField).join(",")).join("\r\n");
-    const url = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
-    const link = element("a");
-    link.href = url;
-    link.download = `QUESTDB-benchmark-${get("collection").value}-${manifest.revision.slice(0, 7)}.csv`;
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-});
 window.addEventListener("resize", () => {
-    if (!byId("benchmark").hidden) plotBenchmark();
     if (byId("structure").open) drawStructure();
 });
-navigate();

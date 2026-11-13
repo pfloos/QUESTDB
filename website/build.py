@@ -1,6 +1,7 @@
 """Build a static QUESTDB explorer from the current Git checkout."""
 
 import argparse
+from collections import Counter
 import json
 import math
 from pathlib import Path
@@ -9,6 +10,8 @@ import shutil
 import subprocess
 import unicodedata
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
+
+from catalog import EXCLUDED_LABELS, annotate, benchmark_packs, state_id
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = "https://github.com/pfloos/QUESTDB"
@@ -113,7 +116,8 @@ def geometry_assets(out, registry, paths, neutral_molecules):
             for subset, molecules in neutral_molecules.items():
                 matches = {
                     molecule for molecule in molecules
-                    if (stem == geometry_key(GEOMETRY_ALIASES[molecule])
+                    if molecule.strip() not in EXCLUDED_LABELS.get(key, ())
+                    and (stem == geometry_key(GEOMETRY_ALIASES[molecule])
                         if molecule in GEOMETRY_ALIASES else geometry_key(molecule) in (stem, base))
                 }
                 if matches:
@@ -151,7 +155,6 @@ def geometry_assets(out, registry, paths, neutral_molecules):
                 entry = ZipInfo(record["file"].removeprefix("xyz/"))
                 archive.writestr(entry, (out / record["file"]).read_bytes(), compress_type=ZIP_DEFLATED)
         downloads.append({"id": group, "name": label, "count": len(members), "file": filename})
-    write_json(out / "data/geometries.json", geometries)
     return geometries, downloads
 
 
@@ -165,10 +168,20 @@ def number(value):
 
 def neutral_records(path):
     source = path.relative_to(ROOT).as_posix()
+    occurrences = Counter()
     for row in read_json(path):
         if not isinstance(row, dict) or not row.get("Molecule") or not row.get("State"):
             raise ValueError(f"{source}: expected a molecule and state for every record")
+        signature = (row["Molecule"].strip(), row["State"].strip())
+        occurrences[signature] += 1
+        occurrence = occurrences[signature]
+        strength, strength_source = next((
+            (value, key) for key, value in row.items() if key.startswith("f [") and number(value) and value >= 0
+        ), (None, None))
         yield {
+            "stateId": state_id(source, *signature, occurrence), "occurrence": occurrence,
+            "strength": strength, "strengthSource": strength_source,
+            "fluorescence": "FL" in str(row.get("Special ?", "")).split() or bool(re.search(r"\[F\]", row["State"])),
             "molecule": row["Molecule"], "state": row["State"], "source": source,
             "energy": row.get("TBE/AVTZ"), "referenceQZ": row.get("TBE/AVQZ"),
             "safe": row.get("Safe ? (~50 meV)"), "spin": row.get("Spin"),
@@ -212,6 +225,7 @@ def charged_records(path, group, mapping):
                     uncertainties if not isinstance(uncertainties, list) and offset == 0 else None
                 )
                 yield {
+                    "stateId": state_id(source, sector, offset + 1),
                     "molecule": molecule, "state": sector, "source": source,
                     **({"site": site.capitalize()} if site else {}),
                     **mapping,
@@ -230,7 +244,7 @@ def main():
     out = parser.parse_args().out.resolve()
     assets = out / "data"
     assets.mkdir(parents=True, exist_ok=True)
-    for name in ("index.html", "style.css", "app.js", "views.js"):
+    for name in ("index.html", "style.css", "app.js", "views.js", "spectrum.js", "benchmark.js", "quest-mark.svg"):
         shutil.copyfile(ROOT / "website" / name, out / name)
     shutil.copyfile(ROOT / "logo/TOC.jpg", out / "quest-art.jpg")
     shutil.copyfile(ROOT / "logo/ERC.png", out / "erc.png")
@@ -242,6 +256,7 @@ def main():
     ).splitlines()
     collections = []
     neutral_molecules = {}
+    collection_rows = {}
     registry, xyz_paths = load_geometry_registry()
     shutil.copyfile(ROOT / REGISTRY_PATH, assets / "geometry-registry.json")
     for group, label in (NEUTRAL | CHARGED).items():
@@ -257,7 +272,7 @@ def main():
         if not rows:
             raise ValueError(f"{group}: no data found")
         rows.sort(key=lambda row: row["molecule"].casefold())
-        write_json(assets / f"{group}.json", rows)
+        collection_rows[group] = rows
         if neutral:
             neutral_molecules[group] = {row["molecule"] for row in rows}
         collections.append({
@@ -265,10 +280,17 @@ def main():
             "rows": len(rows), "files": len({row["source"] for row in rows}),
         })
     geometries, downloads = geometry_assets(out, registry, xyz_paths, neutral_molecules)
+    molecules = annotate(ROOT, collection_rows, geometries, registry)
+    for group, rows in collection_rows.items():
+        rows.sort(key=lambda row: row["name"].casefold())
+        write_json(assets / f"{group}.json", rows)
+    write_json(assets / "molecules.json", molecules)
+    write_json(assets / "geometries.json", geometries)
+    packs = benchmark_packs(ROOT, out, collection_rows, geometries, read_json, REPO, revision)
     write_json(assets / "manifest.json", {
         "repository": REPO, "revision": revision, "date": date, "collections": collections,
         "geometries": len(geometries),
-        "geometryDownloads": downloads,
+        "geometryDownloads": downloads, "benchmarkPacks": packs,
         "neutralStates": sum(c["rows"] for c in collections if c["kind"] == "neutral"),
     })
     print(f"Built {len(collections)} collections from {revision[:12]} in {out}")

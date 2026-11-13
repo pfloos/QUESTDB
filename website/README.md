@@ -9,25 +9,67 @@ python3 -m http.server 8000 --directory site
 ```
 
 Open http://localhost:8000. Serve the directory over HTTP so the browser can
-load the JSON collections. Each collection is loaded when selected. The
-table displays 40 records at a time and CSV export includes the full filtered
-result, the source JSON URL, and the source commit.
+load the JSON collections. The site is built from the repository's JSON data
+and geometry registry. The Explorer displays 40 records per page and exports
+the full filtered result as CSV with state IDs, source URLs, and the commit.
 
-The five neutral collections retain the original metadata and computed
-energies. Neutral method errors use the reported AVTZ reference for the
-same row. In Benchmark, AVQZ is an optional reference for rows that report it. This changes the reference, while the method energies remain as recorded in the source. Core and valence benchmarks compare method values to sCI within the same source file, transition type, basis, and position in the source arrays. Valence IPs and satellites can be benchmarked separately. All summary metrics and plots use the intersection of states for the selected methods. The violin plot shows a smoothed density of signed errors and overlays the individual states.
+## Explore
 
-The Geometries view and ZIP downloads use the [canonical geometry registry](../geometries/registry.json). The full archive contains each canonical geometry once. Individual collection archives include their shared canonical geometries, including a Double IP archive. Charged records link to the canonical preview and, when the source path differs, offer the original benchmark XYZ as a separate download. Existing direct XYZ URLs still serve their original files.
+Search accepts a molecule name, formula, source alias, or state text. Formula
+matches preserve separate isomers. The formula index is generated from XYZ
+element counts. Common names and display formulas that differ from those
+counts are maintained in `catalog.py`.
 
-Canonical filenames use the geometry IDs. Those include `_GS`, `_ES`, or a descriptive suffix for documented variants. The ball-and-stick preview infers connectivity from interatomic distances and covalent radii.
+The molecule page gathers states from all associated collections and puts
+the canonical geometry first. It also lists separately documented structures
+and provides direct XYZ downloads and a ball-and-stick preview with inferred
+bonds. A charged state can also link to its original benchmark XYZ. Neutral
+fluorescence entries use their documented excited-state structures.
+All other geometry downloads use the [registry](../geometries/registry.json).
 
-Charged collections display the source's method, basis, sector,
-and one-based root index. Root indices belong to the individual source
-series. Use the original JSON and accompanying references to match states
-between methods. Missing energies are omitted from the charged explorer,
-and missing weights or uncertainties remain blank. The standalone core
-file `charged/core_IPs/output.json` lacks a molecule, site, and method
-identifier. It remains available in the source tree.
+The state view displays the source JSON, collection citation, reference
+method, basis correction and reliability annotation when recorded, plus a
+method × basis table. Corrections with documented previous values and reasons
+can be added to `REFERENCE_REVISIONS` in `catalog.py`. Where the neutral JSON
+method column has no basis tag, the site marks the basis as unlabelled.
+
+Molecule spectra use the TBE/AVTZ vertical energies and reported oscillator
+strengths of the chosen collection. The broadening is a normalized Gaussian
+or Lorentzian with an adjustable FWHM (default 0.20 eV). Each curve's line areas
+are weighted by oscillator strength. Reported zeros remain clickable on the
+baseline and unreported strengths appear on a separate row. Spectrum exports
+include the sampled curve, transitions, line shape, FWHM and source revision.
+
+## Benchmark
+
+Options within a filter are combined with OR. Separate filters are combined
+with AND. Select exact method/basis combinations to compare a particular
+pair such as one method at one basis against a different method at another.
+Neutral references are TBE/AVTZ and, where available, TBE/AVQZ. Charged
+references are sCI at the selected basis, even when a method uses another
+basis. Valence IPs, satellites and DIPs align by the one-based position in
+their source arrays. Check the source and citations for state assignments.
+
+The default sample is the intersection across selected method/basis
+combinations. Coverage counts are measured before this intersection.
+With **Shared states only** cleared, each method uses all eligible states
+that it covers. The paired plot always uses shared states and shows the
+difference between the two absolute errors. The violin plot overlays the
+individual states on the smoothed signed-error distribution.
+
+Share links restore the filters, reference and plot, and report when the
+site has moved to a different commit. The plotted-data and statistics CSVs
+include the source commit and exact state IDs.
+
+The downloadable Diet-50 and core-IP packs have fixed membership
+(`benchmark-cases.json`). Each build uses the current checkout's energies
+and exact corresponding XYZ files. Archives carry the source commit and
+include reference values, citations and a blank results CSV. To reproduce
+an older pack, check out its commit and rebuild the site.
+
+Missing charged energies are omitted and missing uncertainties or weights
+remain blank. The separate `charged/core_IPs/output.json` lacks a molecule,
+site, and method identifier and remains in the source tree.
 
 ## Publish
 

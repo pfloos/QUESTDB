@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore theoretical best estimates, method results, and ionization benchmarks in the QUEST database.">
   <title>QUESTDB | Electronic-structure benchmarks</title>
+  <link rel="icon" type="image/svg+xml" href="quest-mark.svg">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
   <script src="views.js" defer></script>
+  <script src="spectrum.js" defer></script>
+  <script src="benchmark.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#explore">Skip to data explorer</a>
   <header class="masthead">
     <div class="container nav">
-      <a href="./" class="brand"><span aria-hidden="true">Q</span> QUESTDB</a>
+      <a href="./" class="brand"><img src="quest-mark.svg" width="34" height="34" alt=""> QUESTDB</a>
       <nav aria-label="Main navigation">
         <a href="#explore" data-view>Explore</a>
         <a href="#benchmark" data-view>Benchmark</a>
@@ -48,16 +51,19 @@
       <div class="section-head">
         <div>
           <h2 id="explore-title">Explore the benchmarks</h2>
-          <p>Choose a collection, then select a row to see the original values and provenance.</p>
+          <p>Search across collections by molecule name, formula, or state.</p>
         </div>
         <button id="export" type="button" disabled>Export filtered CSV</button>
       </div>
       <div class="filters">
-        <label>Collection<select id="collection" disabled></select></label>
-        <label>Molecule or state<input id="query" type="search" placeholder="e.g. water or π" disabled></label>
-        <label id="method-label"><span id="method-title">Compare method</span><select id="method" disabled></select></label>
-        <label id="facet-label"><span id="facet-title">Character</span><select id="facet" disabled></select></label>
-        <label class="check" id="safe-label"><input id="safe" type="checkbox" disabled> Safe references only</label>
+        <label>Molecule or state<input id="query" type="search" placeholder="e.g. HCl or hydrogen chloride"></label>
+        <div id="collection"></div>
+        <div id="method"></div>
+        <div id="basis"></div>
+        <div id="character"></div>
+        <div id="spin"></div>
+        <div id="transition"></div>
+        <label class="check"><input id="safe" type="checkbox"> Safe neutral references only</label>
       </div>
       <p class="status" id="status" role="status">Loading data…</p>
       <p class="error" id="error" role="alert" hidden></p>
@@ -77,37 +83,67 @@
     <section class="container explorer" id="benchmark" data-panel aria-labelledby="bench-title" hidden>
       <div class="section-head">
         <div><h2 id="bench-title">Benchmark methods</h2>
-        <p>Compare selected methods on their shared states. Errors are calculated minus reference, in eV.</p></div>
-        <button id="bench-export" type="button" disabled>Export matched CSV</button>
+        <p>Compare method and basis combinations. All errors use the selected reference and are reported in eV.</p></div>
+        <div class="control-actions">
+          <button id="bench-share" type="button" disabled>Copy comparison link</button>
+          <button id="bench-export" type="button" disabled>Export plotted data CSV</button>
+          <button id="bench-export-stats" type="button" disabled>Export statistics CSV</button>
+        </div>
       </div>
       <div class="filters">
         <label>Collection<select id="bench-collection"></select></label>
-        <label id="bench-sector-label" hidden>Transition<select id="bench-sector"></select></label>
+        <div id="bench-sector"></div>
         <label id="bench-reference-label">Reference<select id="bench-reference"></select></label>
-        <label id="bench-spin-label">Spin multiplicity<select id="bench-spin"></select></label>
-        <label id="bench-character-label">Character<select id="bench-character"></select></label>
+        <div id="bench-spin"></div>
+        <div id="bench-character"></div>
         <label class="check" id="bench-safe-label"><input id="bench-safe" type="checkbox"> Safe references only</label>
       </div>
-      <fieldset id="bench-methods">
-        <legend>Methods</legend>
-        <button id="bench-gf2" type="button" hidden>Select GF2 methods</button>
+      <div class="filters benchmark-picks">
         <div id="bench-method-list"></div>
-      </fieldset>
+        <div id="bench-basis"></div>
+        <div id="bench-spec"></div>
+        <label class="check"><input id="bench-matched" type="checkbox" checked> Shared states only</label>
+        <button id="bench-gf2" type="button" hidden>Select GF2 methods</button>
+      </div>
+      <p id="bench-share-status" class="status" role="status" hidden></p>
       <p class="status" id="bench-status" role="status">Loading benchmark…</p>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Benchmark statistics">
         <table>
-          <thead><tr><th scope="col">Method</th><th scope="col">Coverage</th><th scope="col">Matched</th><th scope="col">Bias (eV)</th><th scope="col">MAE (eV)</th><th scope="col">RMSE (eV)</th><th scope="col">Median |error| (eV)</th></tr></thead>
+          <thead><tr><th scope="col">Method / basis</th><th scope="col">Coverage</th><th scope="col">States plotted</th><th scope="col">Bias (eV)</th><th scope="col">MAE (eV)</th><th scope="col">RMSE (eV)</th><th scope="col">Median |error| (eV)</th></tr></thead>
           <tbody id="bench-stats"></tbody>
         </table>
       </div>
       <div class="chart-controls">
-        <label>Plot<select id="bench-plot"><option value="errors">Signed errors</option><option value="violin">Violin plot of signed errors</option><option value="parity">Calculated vs reference</option></select></label>
+        <label>Plot<select id="bench-plot"><option value="errors">Signed errors</option><option value="violin">Violin plot of signed errors</option><option value="parity">Calculated vs reference</option><option value="paired">Paired absolute errors</option></select></label>
         <label>Inspect a state<select id="bench-inspect"><option value="">Select a state</option></select></label>
       </div>
       <figure id="bench-figure" hidden>
         <canvas id="bench-chart" aria-label="Benchmark plot. Use the state selector to inspect individual points."></canvas>
         <figcaption id="bench-caption"></figcaption>
       </figure>
+    </section>
+    <section class="container explorer" id="molecule" data-panel aria-labelledby="molecule-title" hidden>
+      <p><a href="#explore">← Back to Explore</a></p>
+      <div class="section-head"><div><h2 id="molecule-title"></h2><p id="molecule-collections"></p></div></div>
+      <div id="molecule-geometries" class="molecule-geometries"></div>
+      <section id="spectrum" aria-labelledby="spectrum-title" hidden>
+        <div class="section-head"><div>
+          <h3 id="spectrum-title">Broadened vertical transitions</h3>
+          <p>Line areas are proportional to the reported oscillator strengths.</p>
+        </div><button id="spectrum-export" type="button">Export spectrum CSV</button></div>
+        <div class="filters">
+          <label>Collection<select id="spectrum-collection"></select></label>
+          <label>Line shape<select id="spectrum-shape"><option value="Gaussian">Gaussian</option><option value="Lorentzian">Lorentzian</option></select></label>
+          <label>FWHM (eV)<input id="spectrum-width" type="number" min="0.01" max="2" step="0.01" value="0.20"></label>
+          <label class="check"><input id="spectrum-markers" type="checkbox" checked> Show known transitions</label>
+        </div>
+        <figure><div id="spectrum-plot">
+          <canvas id="spectrum-canvas" aria-label="Broadened spectrum of vertical transitions"></canvas>
+          <div id="spectrum-points"></div>
+        </div><figcaption id="spectrum-caption"></figcaption></figure>
+        <label>Inspect a transition<select id="spectrum-inspect"></select></label>
+      </section>
+      <div id="molecule-states"></div>
     </section>
     <section class="container explorer" id="geometries" data-panel aria-labelledby="geometry-title" hidden>
       <div class="section-head"><div><h2 id="geometry-title">Molecular geometries</h2>
@@ -129,6 +165,8 @@
         <div>
           <h2>Download the source data</h2>
           <p>Use the original JSON, spreadsheets, and geometries for reproducible benchmarks. The snapshot link above identifies the exact revision used by the explorer.</p>
+          <h3>Ready-to-run benchmark packs</h3>
+          <ul class="links" id="benchmark-packs"></ul>
           <ul class="links" id="downloads-list">
             <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/xlsx" data-source="data/xlsx">Spreadsheets</a></li>
             <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/json" data-source="data/json">Neutral JSON</a></li>
@@ -294,14 +332,16 @@
       <li><a href="LICENSE">CC BY-SA 4.0</a></li>
     </ul>
   </footer>
-  <dialog id="detail">
+  <dialog id="detail" aria-labelledby="detail-title">
     <div class="dialog-head">
       <h2 id="detail-title"></h2>
       <form method="dialog"><button type="submit">Close</button></form>
     </div>
-    <p><a id="detail-source">View source JSON</a></p>
+    <p><a id="detail-molecule">Molecule page</a> · <a id="detail-source">Source JSON</a> · <a id="detail-paper">Collection reference</a></p>
+    <div id="detail-reference"></div>
     <div id="detail-geometries" tabindex="-1"></div>
-    <dl id="detail-fields"></dl>
+    <div id="detail-matrix"></div>
+    <details><summary>Source fields</summary><dl id="detail-fields"></dl></details>
   </dialog>
   <dialog id="structure" aria-labelledby="structure-title">
     <div class="dialog-head"><h2 id="structure-title"></h2>

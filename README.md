@@ -10,7 +10,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15671384.svg)](https://doi.org/10.5281/zenodo.15671384)
 
-**[Open the QUESTDB website](https://pfloos.github.io/QUESTDB/)** to explore reference energies, benchmark methods, and download molecular geometries. The site is rebuilt from the database after pushes to `main`.
+**[Open the QUESTDB website](https://pfloos.github.io/QUESTDB/)** to search by name or formula, inspect reference energies and molecular spectra, benchmark methods, and download geometries and ready-to-run benchmark packs. The site is rebuilt from the database after pushes to `main`.
 
 ---
 
