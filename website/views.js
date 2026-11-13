@@ -22,11 +22,13 @@ function navigate() {
         if (link.hash === `#${id}`) link.setAttribute("aria-current", "page");
         else link.removeAttribute("aria-current");
     }
-    if (hash === id) requestAnimationFrame(() => byId(id).scrollIntoView());
+    const showPacks = id === "benchmark" && params.get("packs") === "1";
+    if (showPacks) byId("benchmark-packs").open = true;
+    if (hash === id) requestAnimationFrame(() => byId(showPacks ? "benchmark-packs" : id).scrollIntoView());
     if (!manifest) return;
     if (id === "explore") loadExplore();
     if (id === "benchmark") {
-        if (query || !hasBenchmark()) loadBenchmark(params);
+        if (params.has("set") || !hasBenchmark()) loadBenchmark(params);
         else if (!byId("bench-figure").hidden) plotBenchmark();
     }
     if (id === "molecule") openMolecule(params.get("id"));

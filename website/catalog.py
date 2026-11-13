@@ -136,12 +136,22 @@ def annotate(root, collections, geometries, registry):
     return species_index
 
 
-def write_pack(out, collection, title, rows, geometries, repository, revision):
-    filename = f"downloads/QUESTDB-{collection}-{revision[:12]}.zip"
+def write_pack(out, slug, title, rows, geometries, repository, revision):
+    filename = f"downloads/QUESTDB-{slug}-{revision[:12]}.zip"
+    if not rows:
+        raise ValueError(f"No reference states for benchmark pack {slug}")
+    charged = "basis" in rows[0]
+    reference_basis = rows[0]["basis"] if charged else "aug-cc-pVTZ"
+    reference = f"{'sCI' if charged else 'TBE'} / {reference_basis}"
     reference_rows = [["state_id", "molecule", "formula", "state", "site", "root",
-                       "geometry", "reference", "reference_eV", "source_json", "collection_reference"]]
+                       "geometry", "reference", "reference_eV", "source_json", "collection_reference",
+                       "uncertainty_eV", "safe", "spin_multiplicity", "character", "transition_type",
+                       "source_flags", "reference_method", "TBE_aug_cc_pVQZ_eV", "basis_correction_method"]]
     files = {}
     for row in rows:
+        if row["energy"] is None:
+            raise ValueError(f"Missing reference energy for {row['stateId']} in {slug}")
+        fields = row.get("fields", {})
         geometry = geometries[row["geometryId"]]
         source = row.get("benchmarkXyz", geometry["source"])
         name = geometry["id"] if source == geometry["source"] else Path(source).stem + "-benchmark"
@@ -152,8 +162,10 @@ def write_pack(out, collection, title, rows, geometries, repository, revision):
         reference_rows.append([
             row["stateId"], row["name"], row["formula"], row["state"].strip(), row.get("site", ""),
             row.get("root", row.get("occurrence")), xyz,
-            f"sCI / {row['basis']}" if "basis" in row else "TBE / aug-cc-pVTZ", row["energy"],
-            f"{repository}/blob/{revision}/{row['source']}", f"https://doi.org/{row['paper']}",
+            reference, row["energy"], f"{repository}/blob/{revision}/{row['source']}", f"https://doi.org/{row['paper']}",
+            row.get("uncertainty"), row.get("safe"), row.get("spin"), row.get("character"), row.get("type"),
+            fields.get("Special ?"), "sCI" if charged else fields.get("Method", fields.get("Method (all in RO)")),
+            row.get("referenceQZ"), fields.get("Corr. Method"),
         ])
 
     def csv_bytes(records):
@@ -161,6 +173,7 @@ def write_pack(out, collection, title, rows, geometries, repository, revision):
         csv.writer(buffer).writerows(records)
         return buffer.getvalue().encode("utf-8")
 
+    geometry_count = len(files)
     files["reference.csv"] = csv_bytes(reference_rows)
     files["results-template.csv"] = csv_bytes([
         ["state_id", "method", "basis", "calculated_eV"],
@@ -168,8 +181,16 @@ def write_pack(out, collection, title, rows, geometries, repository, revision):
     ])
     files["README.txt"] = (
         f"QUESTDB · {title}\n\nSource commit: {revision}\n"
-        f"{repository}/commit/{revision}\n\n"
+        f"{repository}/commit/{revision}\n"
+        f"{len(rows)} states · {geometry_count} geometries · {reference}\n\n"
         "reference.csv defines the benchmark cases, energies in eV, geometry paths and citations.\n"
+        "Empty metadata fields mean the source does not report a value.\n"
+        + ("Charged root indices are one-based positions in the source arrays, grouped by state/sector.\n"
+           if charged else
+           "Neutral root numbers count repeated symmetry labels for a molecule in source order.\n"
+           "The safe and source_flags fields preserve the source annotations. FL denotes fluorescence.\n"
+           "If supplied, the aug-cc-pVQZ TBE is a separate reference value.\n")
+        + "\n"
         "Keep the state IDs when filling results-template.csv. For more than one method,\n"
         "use one row per state and method/basis combination.\n"
         "The XYZ files are in angstrom. Use the exact XYZ assigned to each reference.\n"
@@ -179,7 +200,10 @@ def write_pack(out, collection, title, rows, geometries, repository, revision):
     with ZipFile(out / filename, "w") as archive:
         for name, payload in sorted(files.items()):
             archive.writestr(ZipInfo(name), payload, compress_type=ZIP_DEFLATED)
-    return {"name": title, "file": filename, "count": len(rows)}
+    return {
+        "name": title, "file": filename, "count": len(rows), "geometries": geometry_count,
+        "reference": reference, "kind": "charged" if charged else "neutral",
+    }
 
 
 def benchmark_packs(root, out, rows, geometries, read_json, repository, revision):
@@ -188,9 +212,22 @@ def benchmark_packs(root, out, rows, geometries, read_json, repository, revision
     core = {r["stateId"]: r for r in rows["core_IPs"]
             if r["method"] == "sCI" and r["basis"] == "aug-cc-pCVTZ"}
     by_id = {g["id"]: g for g in geometries}
-    return [
-        write_pack(out, "diet-50", "Neutral excitations · Diet-50",
-                   [neutral[key] for key in selection["diet-50"]], by_id, repository, revision),
-        write_pack(out, "core-ip-cvtz", "Core ionizations · sCI/aug-cc-pCVTZ",
-                   [core[key] for key in selection["core-ip-cvtz"]], by_id, repository, revision),
+    packs = [
+        ("diet-50", "Diet-50 · Main subset", [neutral[key] for key in selection["diet-50"]]),
+        *[(group.lower(), title, [row for row in rows[group] if row["energy"] is not None])
+          for group, title in [
+              ("MAIN", "Main set"), ("RAD", "Radicals"), ("CHROM", "Chromophores"),
+              ("BIO", "Biomolecules"), ("TM", "Transition metals"),
+          ]],
+        *[(slug, title, [row for row in rows["valence_IPs"]
+                          if row["state"] == sector and row["method"] == "sCI" and row["basis"] == "aug-cc-pVTZ"])
+          for slug, title, sector in [
+              ("valence-ip-vtz", "Valence ionizations", "IP"),
+              ("valence-satellites-vtz", "Valence satellites", "Satellite"),
+          ]],
+        ("core-ip-cvtz", "Core ionizations", [core[key] for key in selection["core-ip-cvtz"]]),
+        ("double-ip-vtz", "Double ionizations", [row for row in rows["DIPs"]
+          if row["method"] == "sCI" and row["basis"] == "aug-cc-pVTZ"]),
     ]
+    return [write_pack(out, slug, title, entries, by_id, repository, revision)
+            for slug, title, entries in packs]

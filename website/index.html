@@ -102,11 +102,26 @@
         <div><h2 id="bench-title">Benchmark methods</h2>
         <p>Compare method and basis combinations. All errors use the selected reference and are reported in eV.</p></div>
         <div class="control-actions">
+          <a class="button pack-link" href="#benchmark?packs=1">Ready-to-run packs</a>
           <button id="bench-share" type="button" disabled>Copy comparison link</button>
           <button id="bench-export" type="button" disabled>Export plotted data CSV</button>
           <button id="bench-export-stats" type="button" disabled>Export statistics CSV</button>
         </div>
       </div>
+      <details class="benchmark-packs" id="benchmark-packs">
+        <summary>Ready-to-run benchmark packs</summary>
+        <p>Each ZIP contains reference energies, the exact XYZ geometries, citations, and a results CSV template.</p>
+        <div class="pack-groups">
+          <section aria-labelledby="pack-neutral-title">
+            <h3 id="pack-neutral-title">Neutral excitations</h3>
+            <ul id="packs-neutral"></ul>
+          </section>
+          <section aria-labelledby="pack-charged-title">
+            <h3 id="pack-charged-title">Ionizations</h3>
+            <ul id="packs-charged"></ul>
+          </section>
+        </div>
+      </details>
       <div class="filters">
         <label>Collection<select id="bench-collection"></select></label>
         <div id="bench-sector"></div>
@@ -182,8 +197,7 @@
         <div>
           <h2>Download the source data</h2>
           <p>Use the original JSON, spreadsheets, and geometries for reproducible benchmarks. The snapshot link above identifies the exact revision used by the explorer.</p>
-          <h3>Ready-to-run benchmark packs</h3>
-          <ul class="links" id="benchmark-packs"></ul>
+          <p><a href="#benchmark?packs=1">Browse ready-to-run benchmark packs</a></p>
           <ul class="links" id="downloads-list">
             <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/xlsx" data-source="data/xlsx">Spreadsheets</a></li>
             <li><a href="https://github.com/pfloos/QUESTDB/tree/main/data/json" data-source="data/json">Neutral JSON</a></li>

@@ -187,4 +187,19 @@ button.spectrum-point:hover, button.spectrum-point:focus-visible {
 .state-group summary { cursor: pointer; }
 .state-group ul { columns: 16rem auto; margin-bottom: 0; }
 .state-group li { break-inside: avoid; margin-block: .3rem; }
-#benchmark-packs { margin-bottom: 1rem; }
+.pack-link { display: inline-flex; align-items: center; background: var(--white); }
+.benchmark-packs {
+    margin-bottom: 1rem; padding: .65rem 1rem; background: var(--white);
+    border: 1px solid var(--border); border-radius: .5rem; scroll-margin-top: 1rem;
+}
+.benchmark-packs summary { cursor: pointer; font-weight: 650; }
+.benchmark-packs p { margin-top: .45rem; color: var(--muted); font-size: .9rem; }
+.pack-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem 1.5rem; }
+.pack-groups h3 { margin-bottom: .35rem; font-size: 1rem; }
+.pack-groups ul { list-style: none; padding: 0; margin: 0; }
+.pack-groups li {
+    display: flex; justify-content: space-between; align-items: center; gap: .5rem 1rem;
+    padding: .5rem 0; border-top: 1px solid var(--border); font-size: .88rem;
+}
+.pack-groups li small { display: block; color: var(--muted); }
+.pack-groups li a { white-space: nowrap; }

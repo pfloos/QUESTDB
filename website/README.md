@@ -60,11 +60,15 @@ Share links restore the filters, reference and plot, and report when the
 site has moved to a different commit. The plotted-data and statistics CSVs
 include the source commit and exact state IDs.
 
-The downloadable Diet-50 and core-IP packs have fixed membership
-(`benchmark-cases.json`). Each build uses the current checkout's energies
-and exact corresponding XYZ files. Archives carry the source commit and
-include reference values, citations and a blank results CSV. To reproduce
-an older pack, check out its commit and rebuild the site.
+Ready-to-run packs are listed in Benchmark and linked from Downloads.
+The catalog covers all five neutral collections and the Diet-50 subset,
+plus valence ionizations, valence satellites, core ionizations, and double
+ionizations. Charged packs use sCI at aug-cc-pVTZ, or aug-cc-pCVTZ for core
+ionizations. Diet-50 and the core-IP pack have fixed membership
+(`benchmark-cases.json`). The other packs follow the available references
+in their collections. Every ZIP includes the exact XYZ files, reference
+energies and source metadata, citations, and a blank results CSV. To
+reproduce an older pack, check out its source commit and rebuild the site.
 
 Missing charged energies are omitted and missing uncertainties or weights
 remain blank. The separate `charged/core_IPs/output.json` lacks a molecule,

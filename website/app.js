@@ -553,14 +553,19 @@ function init() {
         for (const link of document.querySelectorAll("[data-source]")) {
             link.href = sourceLink(link.dataset.source, "tree");
         }
-        byId("benchmark-packs").replaceChildren(...manifest.benchmarkPacks.map(pack => {
-            const link = element("a", `${pack.name} (ZIP, ${pack.count} states)`);
+        for (const pack of manifest.benchmarkPacks) {
+            const li = element("li");
+            const title = element("strong", pack.name);
+            const details = element("small", `${pack.count} states · ${pack.geometries} XYZ · ${pack.reference}`);
+            const link = element("a", "Download ZIP");
             link.href = snapshotUrl(pack.file);
             link.download = "";
-            const li = element("li");
-            li.append(link);
-            return li;
-        }));
+            link.setAttribute("aria-label", `Download ${pack.name} benchmark ZIP`);
+            const text = element("span");
+            text.append(title, details);
+            li.append(text, link);
+            byId(`packs-${pack.kind}`).append(li);
+        }
         document.dispatchEvent(new Event("quest-ready"));
     } catch (error) {
         const message = "Could not start QUESTDB. Reload the page to try again.";
