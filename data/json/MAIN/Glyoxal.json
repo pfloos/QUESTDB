@@ -37,7 +37,18 @@
     "CASPT3": 2.97,
     "CASPT3 (No IPEA)": 2.94,
     "SC-NEVPT2": 2.99,
-    "PC-NEVPT2": 2.9
+    "PC-NEVPT2": 2.9,
+    "CASSCF [Col]": 3.2449,
+    "MRCI+DV1": 2.9937,
+    "MRCI+DV2": 2.9821,
+    "MRCI+DV3": 2.967,
+    "MRCI+P": 2.988,
+    "MRCI": 3.0638,
+    "XS-CASCI": 4.4353,
+    "XS-CASSCF-05": 4.4802,
+    "XS-CASSCF": 4.4037,
+    "Om": 0.843,
+    "QTa": 0.0
   },
   {
     "Molecule": "Glyoxal",
@@ -76,7 +87,18 @@
     "CASPT3": 4.36,
     "CASPT3 (No IPEA)": 4.31,
     "SC-NEVPT2": 4.38,
-    "PC-NEVPT2": 4.3
+    "PC-NEVPT2": 4.3,
+    "CASSCF [Col]": 4.2459,
+    "MRCI+DV1": 4.3509,
+    "MRCI+DV2": 4.3496,
+    "MRCI+DV3": 4.3478,
+    "MRCI+P": 4.3493,
+    "MRCI": 4.3531,
+    "XS-CASCI": 5.9362,
+    "XS-CASSCF-05": 5.9408,
+    "XS-CASSCF": 5.9012,
+    "Om": 0.803,
+    "QTa": 0.0
   },
   {
     "Molecule": "Glyoxal",
@@ -101,7 +123,18 @@
     "CASPT3": 5.549,
     "CASPT3 (No IPEA)": 5.372,
     "SC-NEVPT2": 5.546,
-    "PC-NEVPT2": 5.518
+    "PC-NEVPT2": 5.518,
+    "CASSCF [Col]": 5.5369,
+    "MRCI+DV1": 5.5799,
+    "MRCI+DV2": 5.5781,
+    "MRCI+DV3": 5.5756,
+    "MRCI+P": 5.5784,
+    "MRCI": 5.5877,
+    "XS-CASCI": 5.5857,
+    "XS-CASSCF-05": 5.631,
+    "XS-CASSCF": 5.6139,
+    "Om": 0.001,
+    "QTa": 0.015
   },
   {
     "Molecule": "Glyoxal",
@@ -140,7 +173,18 @@
     "CASPT3": 6.76,
     "CASPT3 (No IPEA)": 6.72,
     "SC-NEVPT2": 6.8,
-    "PC-NEVPT2": 6.64
+    "PC-NEVPT2": 6.64,
+    "CASSCF [Col]": 7.6144,
+    "MRCI+DV1": 6.7144,
+    "MRCI+DV2": 6.6261,
+    "MRCI+DV3": 6.5009,
+    "MRCI+P": 6.6462,
+    "MRCI": 7.1206,
+    "XS-CASCI": 8.4898,
+    "XS-CASSCF-05": 8.4535,
+    "XS-CASSCF": 8.4276,
+    "Om": 0.61,
+    "QTa": 0.0
   },
   {
     "Molecule": "Glyoxal",
@@ -215,7 +259,16 @@
     "CASPT3": 2.57,
     "CASPT3 (No IPEA)": 2.55,
     "SC-NEVPT2": 2.59,
-    "PC-NEVPT2": 2.49
+    "PC-NEVPT2": 2.49,
+    "CASSCF [Col]": 2.8813,
+    "MRCI+DV1": 2.592,
+    "MRCI+DV2": 2.5803,
+    "MRCI+DV3": 2.5651,
+    "MRCI+P": 2.5865,
+    "MRCI": 2.6644,
+    "XS-CASCI": 3.0046,
+    "XS-CASSCF-05": 2.9333,
+    "XS-CASSCF": 3.0007
   },
   {
     "Molecule": "Glyoxal",
@@ -250,7 +303,16 @@
     "CASPT3": 4.04,
     "CASPT3 (No IPEA)": 4.01,
     "SC-NEVPT2": 4.1,
-    "PC-NEVPT2": 3.99
+    "PC-NEVPT2": 3.99,
+    "CASSCF [Col]": 3.977,
+    "MRCI+DV1": 4.0194,
+    "MRCI+DV2": 4.0162,
+    "MRCI+DV3": 4.0119,
+    "MRCI+P": 4.0171,
+    "MRCI": 4.0345,
+    "XS-CASCI": 4.1004,
+    "XS-CASSCF-05": 4.0297,
+    "XS-CASSCF": 4.0947
   },
   {
     "Molecule": "Glyoxal",
@@ -285,7 +347,16 @@
     "CASPT3": 5.17,
     "CASPT3 (No IPEA)": 5.14,
     "SC-NEVPT2": 5.21,
-    "PC-NEVPT2": 5.17
+    "PC-NEVPT2": 5.17,
+    "CASSCF [Col]": 4.7293,
+    "MRCI+DV1": 5.0582,
+    "MRCI+DV2": 5.064,
+    "MRCI+DV3": 5.0713,
+    "MRCI+P": 5.0594,
+    "MRCI": 5.0135,
+    "XS-CASCI": 4.8526,
+    "XS-CASSCF-05": 4.7986,
+    "XS-CASSCF": 4.8632
   },
   {
     "Molecule": "Glyoxal",
@@ -320,6 +391,15 @@
     "CASPT3": 6.33,
     "CASPT3 (No IPEA)": 6.27,
     "SC-NEVPT2": 6.41,
-    "PC-NEVPT2": 6.33
+    "PC-NEVPT2": 6.33,
+    "CASSCF [Col]": 5.9281,
+    "MRCI+DV1": 6.2646,
+    "MRCI+DV2": 6.2688,
+    "MRCI+DV3": 6.274,
+    "MRCI+P": 6.2647,
+    "MRCI": 6.2284,
+    "XS-CASCI": 6.0514,
+    "XS-CASSCF-05": 5.9739,
+    "XS-CASSCF": 6.0412
   }
 ]

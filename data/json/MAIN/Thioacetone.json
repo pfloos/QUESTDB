@@ -36,7 +36,18 @@
     "CASPT3": 2.6,
     "CASPT3 (No IPEA)": 2.53,
     "SC-NEVPT2": 2.56,
-    "PC-NEVPT2": 2.55
+    "PC-NEVPT2": 2.55,
+    "CASSCF [Col]": 2.5387,
+    "MRCI+DV1": 2.6193,
+    "MRCI+DV2": 2.6233,
+    "MRCI+DV3": 2.6298,
+    "MRCI+P": 2.6263,
+    "MRCI": 2.6043,
+    "XS-CASCI": 2.811,
+    "XS-CASSCF-05": 2.67,
+    "XS-CASSCF": 2.8301,
+    "Om": 0.827,
+    "QTa": 0.034
   },
   {
     "Molecule": "Thioacetone",
@@ -116,7 +127,18 @@
     "CASPT3": 6.4,
     "CASPT3 (No IPEA)": 6.26,
     "SC-NEVPT2": 6.38,
-    "PC-NEVPT2": 6.24
+    "PC-NEVPT2": 6.24,
+    "CASSCF [Col]": 7.6999,
+    "MRCI+DV1": 6.3287,
+    "MRCI+DV2": 6.1804,
+    "MRCI+DV3": 5.9225,
+    "MRCI+P": 6.0499,
+    "MRCI": 6.7623,
+    "XS-CASCI": 7.2181,
+    "XS-CASSCF-05": 7.4808,
+    "XS-CASSCF": 7.3021,
+    "Om": 0.864,
+    "QTa": 0.482
   },
   {
     "Molecule": "Thioacetone",
@@ -231,7 +253,16 @@
     "CASPT3": 2.38,
     "CASPT3 (No IPEA)": 2.31,
     "SC-NEVPT2": 2.34,
-    "PC-NEVPT2": 2.32
+    "PC-NEVPT2": 2.32,
+    "CASSCF [Col]": 2.3565,
+    "MRCI+DV1": 2.4223,
+    "MRCI+DV2": 2.4243,
+    "MRCI+DV3": 2.4275,
+    "MRCI+P": 2.4258,
+    "MRCI": 2.4146,
+    "XS-CASCI": 2.7306,
+    "XS-CASSCF-05": 2.5371,
+    "XS-CASSCF": 2.747
   },
   {
     "Molecule": "Thioacetone",
@@ -266,6 +297,15 @@
     "CASPT3": 3.48,
     "CASPT3 (No IPEA)": 3.43,
     "SC-NEVPT2": 3.48,
-    "PC-NEVPT2": 3.48
+    "PC-NEVPT2": 3.48,
+    "CASSCF [Col]": 3.1875,
+    "MRCI+DV1": 3.5236,
+    "MRCI+DV2": 3.5479,
+    "MRCI+DV3": 3.5876,
+    "MRCI+P": 3.5668,
+    "MRCI": 3.4389,
+    "XS-CASCI": 3.5615,
+    "XS-CASSCF-05": 3.3624,
+    "XS-CASSCF": 3.5659
   }
 ]

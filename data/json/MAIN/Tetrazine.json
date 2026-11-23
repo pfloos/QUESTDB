@@ -37,7 +37,18 @@
     "CASPT3": 2.54,
     "CASPT3 (No IPEA)": 2.53,
     "SC-NEVPT2": 2.4,
-    "PC-NEVPT2": 2.35
+    "PC-NEVPT2": 2.35,
+    "CASSCF [Col]": 3.0566,
+    "MRCI+DV1": 2.5135,
+    "MRCI+DV2": 2.4468,
+    "MRCI+DV3": 2.3273,
+    "MRCI+P": 2.3746,
+    "MRCI": 2.6985,
+    "XS-CASCI": 3.4083,
+    "XS-CASSCF-05": 3.3233,
+    "XS-CASSCF": 3.6082,
+    "Om": 0.815,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -76,7 +87,18 @@
     "CASPT3": 3.77,
     "CASPT3 (No IPEA)": 3.78,
     "SC-NEVPT2": 3.63,
-    "PC-NEVPT2": 3.58
+    "PC-NEVPT2": 3.58,
+    "CASSCF [Col]": 4.5388,
+    "MRCI+DV1": 3.7564,
+    "MRCI+DV2": 3.6543,
+    "MRCI+DV3": 3.4699,
+    "MRCI+P": 3.5425,
+    "MRCI": 4.0348,
+    "XS-CASCI": 4.6154,
+    "XS-CASSCF-05": 4.5963,
+    "XS-CASSCF": 4.9053,
+    "Om": 0.789,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -101,7 +123,18 @@
     "CASPT3": 4.917,
     "CASPT3 (No IPEA)": 4.951,
     "SC-NEVPT2": 4.688,
-    "PC-NEVPT2": 4.608
+    "PC-NEVPT2": 4.608,
+    "CASSCF [Col]": 5.7554,
+    "MRCI+DV1": 4.9255,
+    "MRCI+DV2": 4.8235,
+    "MRCI+DV3": 4.6397,
+    "MRCI+P": 4.7122,
+    "MRCI": 5.2065,
+    "XS-CASCI": 5.7594,
+    "XS-CASSCF-05": 5.7574,
+    "XS-CASSCF": 5.8122,
+    "Om": 0.005,
+    "QTa": 0.013
   },
   {
     "Molecule": "Tetrazine",
@@ -140,7 +173,18 @@
     "CASPT3": 5.02,
     "CASPT3 (No IPEA)": 5.0,
     "SC-NEVPT2": 5.02,
-    "PC-NEVPT2": 4.95
+    "PC-NEVPT2": 4.95,
+    "CASSCF [Col]": 5.4501,
+    "MRCI+DV1": 4.9935,
+    "MRCI+DV2": 4.9246,
+    "MRCI+DV3": 4.8006,
+    "MRCI+P": 4.8493,
+    "MRCI": 5.1802,
+    "XS-CASCI": 5.9275,
+    "XS-CASSCF-05": 5.8136,
+    "XS-CASSCF": 6.1266,
+    "Om": 0.713,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -180,7 +224,18 @@
     "CASPT3": 5.26,
     "CASPT3 (No IPEA)": 5.23,
     "SC-NEVPT2": 5.6,
-    "PC-NEVPT2": 5.56
+    "PC-NEVPT2": 5.56,
+    "CASSCF [Col]": 5.0202,
+    "MRCI+DV1": 5.3103,
+    "MRCI+DV2": 5.3227,
+    "MRCI+DV3": 5.3432,
+    "MRCI+P": 5.3342,
+    "MRCI": 5.2625,
+    "XS-CASCI": 4.8537,
+    "XS-CASSCF-05": 5.1614,
+    "XS-CASSCF": 4.771,
+    "Om": 0.741,
+    "QTa": 0.103
   },
   {
     "Molecule": "Tetrazine",
@@ -219,7 +274,18 @@
     "CASPT3": 5.42,
     "CASPT3 (No IPEA)": 5.38,
     "SC-NEVPT2": 5.68,
-    "PC-NEVPT2": 5.63
+    "PC-NEVPT2": 5.63,
+    "CASSCF [Col]": 5.4118,
+    "MRCI+DV1": 5.4647,
+    "MRCI+DV2": 5.4477,
+    "MRCI+DV3": 5.4156,
+    "MRCI+P": 5.4273,
+    "MRCI": 5.4981,
+    "XS-CASCI": 6.2895,
+    "XS-CASSCF-05": 5.8738,
+    "XS-CASSCF": 6.2819,
+    "Om": 0.656,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -258,7 +324,18 @@
     "CASPT3": 5.8,
     "CASPT3 (No IPEA)": 5.8,
     "SC-NEVPT2": 5.7,
-    "PC-NEVPT2": 5.62
+    "PC-NEVPT2": 5.62,
+    "CASSCF [Col]": 6.7738,
+    "MRCI+DV1": 5.9429,
+    "MRCI+DV2": 5.7587,
+    "MRCI+DV3": 5.4128,
+    "MRCI+P": 5.5448,
+    "MRCI": 6.384,
+    "XS-CASCI": 7.3353,
+    "XS-CASSCF-05": 7.0609,
+    "XS-CASSCF": 7.3343,
+    "Om": 0.736,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -283,7 +360,18 @@
     "CASPT3": 6.201,
     "CASPT3 (No IPEA)": 6.215,
     "SC-NEVPT2": 6.2,
-    "PC-NEVPT2": 6.149
+    "PC-NEVPT2": 6.149,
+    "CASSCF [Col]": 6.7922,
+    "MRCI+DV1": 6.1609,
+    "MRCI+DV2": 6.0672,
+    "MRCI+DV3": 5.8975,
+    "MRCI+P": 5.9639,
+    "MRCI": 6.4114,
+    "XS-CASCI": 6.809,
+    "XS-CASSCF-05": 7.0003,
+    "XS-CASSCF": 7.1934,
+    "Om": 0.002,
+    "QTa": 0.015
   },
   {
     "Molecule": "Tetrazine",
@@ -322,7 +410,18 @@
     "CASPT3": 6.27,
     "CASPT3 (No IPEA)": 6.28,
     "SC-NEVPT2": 6.21,
-    "PC-NEVPT2": 6.13
+    "PC-NEVPT2": 6.13,
+    "CASSCF [Col]": 6.8702,
+    "MRCI+DV1": 6.1741,
+    "MRCI+DV2": 6.0735,
+    "MRCI+DV3": 5.8913,
+    "MRCI+P": 5.9627,
+    "MRCI": 6.4445,
+    "XS-CASCI": 6.7336,
+    "XS-CASSCF-05": 6.8457,
+    "XS-CASSCF": 7.0784,
+    "Om": 0.621,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -426,7 +525,18 @@
     "CASPT3": 6.79,
     "CASPT3 (No IPEA)": 6.72,
     "SC-NEVPT2": 6.83,
-    "PC-NEVPT2": 6.76
+    "PC-NEVPT2": 6.76,
+    "CASSCF [Col]": 7.2127,
+    "MRCI+DV1": 6.8041,
+    "MRCI+DV2": 6.7341,
+    "MRCI+DV3": 6.6072,
+    "MRCI+P": 6.6566,
+    "MRCI": 6.9868,
+    "XS-CASCI": 7.1032,
+    "XS-CASSCF-05": 7.2673,
+    "XS-CASSCF": 7.446,
+    "Om": 0.311,
+    "QTa": 0.0
   },
   {
     "Molecule": "Tetrazine",
@@ -461,7 +571,16 @@
     "CASPT3": 1.94,
     "CASPT3 (No IPEA)": 1.93,
     "SC-NEVPT2": 1.78,
-    "PC-NEVPT2": 1.73
+    "PC-NEVPT2": 1.73,
+    "CASSCF [Col]": 2.4964,
+    "MRCI+DV1": 1.8737,
+    "MRCI+DV2": 1.8043,
+    "MRCI+DV3": 1.6797,
+    "MRCI+P": 1.7289,
+    "MRCI": 2.0654,
+    "XS-CASCI": 2.5027,
+    "XS-CASSCF-05": 2.6198,
+    "XS-CASSCF": 2.7947
   },
   {
     "Molecule": "Tetrazine",
@@ -496,7 +615,16 @@
     "CASPT3": 3.52,
     "CASPT3 (No IPEA)": 3.52,
     "SC-NEVPT2": 3.41,
-    "PC-NEVPT2": 3.36
+    "PC-NEVPT2": 3.36,
+    "CASSCF [Col]": 4.2508,
+    "MRCI+DV1": 3.4822,
+    "MRCI+DV2": 3.3882,
+    "MRCI+DV3": 3.2184,
+    "MRCI+P": 3.2852,
+    "MRCI": 3.7381,
+    "XS-CASCI": 4.2571,
+    "XS-CASSCF-05": 4.3739,
+    "XS-CASSCF": 4.5486
   },
   {
     "Molecule": "Tetrazine",
@@ -531,7 +659,16 @@
     "CASPT3": 4.32,
     "CASPT3 (No IPEA)": 4.3,
     "SC-NEVPT2": 4.29,
-    "PC-NEVPT2": 4.24
+    "PC-NEVPT2": 4.24,
+    "CASSCF [Col]": 4.779,
+    "MRCI+DV1": 4.2676,
+    "MRCI+DV2": 4.202,
+    "MRCI+DV3": 4.0839,
+    "MRCI+P": 4.1303,
+    "MRCI": 4.4451,
+    "XS-CASCI": 4.7854,
+    "XS-CASSCF-05": 4.903,
+    "XS-CASSCF": 5.0786
   },
   {
     "Molecule": "Tetrazine",
@@ -566,7 +703,16 @@
     "CASPT3": 4.39,
     "CASPT3 (No IPEA)": 4.34,
     "SC-NEVPT2": 4.7,
-    "PC-NEVPT2": 4.7
+    "PC-NEVPT2": 4.7,
+    "CASSCF [Col]": 3.9071,
+    "MRCI+DV1": 4.4933,
+    "MRCI+DV2": 4.5415,
+    "MRCI+DV3": 4.6238,
+    "MRCI+P": 4.5895,
+    "MRCI": 4.3353,
+    "XS-CASCI": 3.9134,
+    "XS-CASSCF-05": 4.0311,
+    "XS-CASSCF": 4.2065
   },
   {
     "Molecule": "Tetrazine",
@@ -601,7 +747,16 @@
     "CASPT3": 4.6,
     "CASPT3 (No IPEA)": 4.55,
     "SC-NEVPT2": 4.61,
-    "PC-NEVPT2": 4.58
+    "PC-NEVPT2": 4.58,
+    "CASSCF [Col]": 4.8534,
+    "MRCI+DV1": 4.6656,
+    "MRCI+DV2": 4.6382,
+    "MRCI+DV3": 4.5892,
+    "MRCI+P": 4.6085,
+    "MRCI": 4.7399,
+    "XS-CASCI": 4.8597,
+    "XS-CASSCF-05": 4.9776,
+    "XS-CASSCF": 5.1536
   },
   {
     "Molecule": "Tetrazine",
@@ -636,7 +791,16 @@
     "CASPT3": 5.1,
     "CASPT3 (No IPEA)": 5.07,
     "SC-NEVPT2": 5.3,
-    "PC-NEVPT2": 5.27
+    "PC-NEVPT2": 5.27,
+    "CASSCF [Col]": 5.2108,
+    "MRCI+DV1": 5.082,
+    "MRCI+DV2": 5.0511,
+    "MRCI+DV3": 4.9945,
+    "MRCI+P": 5.0161,
+    "MRCI": 5.1564,
+    "XS-CASCI": 5.2171,
+    "XS-CASSCF-05": 5.3345,
+    "XS-CASSCF": 5.5096
   },
   {
     "Molecule": "Tetrazine",
@@ -671,7 +835,16 @@
     "CASPT3": 5.41,
     "CASPT3 (No IPEA)": 5.41,
     "SC-NEVPT2": 5.22,
-    "PC-NEVPT2": 5.13
+    "PC-NEVPT2": 5.13,
+    "CASSCF [Col]": 6.4315,
+    "MRCI+DV1": 5.3842,
+    "MRCI+DV2": 5.2059,
+    "MRCI+DV3": 4.874,
+    "MRCI+P": 5.0017,
+    "MRCI": 5.8284,
+    "XS-CASCI": 6.4378,
+    "XS-CASSCF-05": 6.5553,
+    "XS-CASSCF": 6.7307
   },
   {
     "Molecule": "Tetrazine",
@@ -694,7 +867,16 @@
     "CASPT3": 5.829,
     "CASPT3 (No IPEA)": 5.848,
     "SC-NEVPT2": 5.57,
-    "PC-NEVPT2": 5.506
+    "PC-NEVPT2": 5.506,
+    "CASSCF [Col]": 7.0521,
+    "MRCI+DV1": 5.8251,
+    "MRCI+DV2": 5.6782,
+    "MRCI+DV3": 5.4109,
+    "MRCI+P": 5.5158,
+    "MRCI": 6.2215,
+    "XS-CASCI": 7.0584,
+    "XS-CASSCF-05": 7.1749,
+    "XS-CASSCF": 7.3493
   },
   {
     "Molecule": "Tetrazine",
@@ -729,6 +911,15 @@
     "CASPT3": 5.44,
     "CASPT3 (No IPEA)": 5.39,
     "SC-NEVPT2": 5.59,
-    "PC-NEVPT2": 5.56
+    "PC-NEVPT2": 5.56,
+    "CASSCF [Col]": 5.4549,
+    "MRCI+DV1": 5.4757,
+    "MRCI+DV2": 5.4654,
+    "MRCI+DV3": 5.4457,
+    "MRCI+P": 5.4527,
+    "MRCI": 5.4935,
+    "XS-CASCI": 5.4612,
+    "XS-CASSCF-05": 5.5787,
+    "XS-CASSCF": 5.7539
   }
 ]

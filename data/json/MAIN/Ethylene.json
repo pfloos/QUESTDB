@@ -62,7 +62,18 @@
     "SOS-ADC(2) [QC]": 7.876,
     "ADC(2)": 7.913,
     "ADC(3)": 7.689,
-    "ADC(2.5)": 7.801
+    "ADC(2.5)": 7.801,
+    "CASSCF [Col]": 9.255,
+    "MRCI+DV1": 8.0841,
+    "MRCI+DV2": 8.026,
+    "MRCI+DV3": 7.9443,
+    "MRCI+P": 8.0414,
+    "MRCI": 8.3628,
+    "XS-CASCI": 6.7563,
+    "XS-CASSCF-05": 8.3087,
+    "XS-CASSCF": 7.1164,
+    "Om": 0.939,
+    "QTa": 0.407
   },
   {
     "Molecule": "Ethylene ",
@@ -148,7 +159,16 @@
     "SOS-ADC(2) [QC]": 4.508,
     "ADC(2)": 4.591,
     "ADC(3)": 4.285,
-    "ADC(2.5)": 4.438000000000001
+    "ADC(2.5)": 4.438000000000001,
+    "CASSCF [Col]": 4.2577,
+    "MRCI+DV1": 4.5768,
+    "MRCI+DV2": 4.576,
+    "MRCI+DV3": 4.5743,
+    "MRCI+P": 4.5733,
+    "MRCI": 4.5646,
+    "XS-CASCI": 4.2577,
+    "XS-CASSCF-05": 4.2023,
+    "XS-CASSCF": 4.1838
   },
   {
     "Molecule": "Ethylene ",

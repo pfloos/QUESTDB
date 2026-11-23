@@ -36,7 +36,18 @@
     "CASPT3": 6.06,
     "CASPT3 (No IPEA)": 5.99,
     "SC-NEVPT2": 5.71,
-    "PC-NEVPT2": 5.65
+    "PC-NEVPT2": 5.65,
+    "CASSCF [Col]": 7.5944,
+    "MRCI+DV1": 5.9654,
+    "MRCI+DV2": 5.8121,
+    "MRCI+DV3": 5.5462,
+    "MRCI+P": 5.6691,
+    "MRCI": 6.4251,
+    "XS-CASCI": 5.7314,
+    "XS-CASSCF-05": 6.7332,
+    "XS-CASSCF": 5.8592,
+    "Om": 0.905,
+    "QTa": 0.266
   },
   {
     "Molecule": "Cyclopentadiene",
@@ -234,7 +245,18 @@
     "CASPT3": 6.59,
     "CASPT3 (No IPEA)": 6.5,
     "SC-NEVPT2": 6.78,
-    "PC-NEVPT2": 6.75
+    "PC-NEVPT2": 6.75,
+    "CASSCF [Col]": 6.6106,
+    "MRCI+DV1": 6.6469,
+    "MRCI+DV2": 6.6309,
+    "MRCI+DV3": 6.6024,
+    "MRCI+P": 6.6147,
+    "MRCI": 6.6845,
+    "XS-CASCI": 5.8166,
+    "XS-CASSCF-05": 6.2737,
+    "XS-CASSCF": 5.8025,
+    "Om": 0.495,
+    "QTa": 0.048
   },
   {
     "Molecule": "Cyclopentadiene",
@@ -269,7 +291,16 @@
     "CASPT3": 3.31,
     "CASPT3 (No IPEA)": 3.26,
     "SC-NEVPT2": 3.42,
-    "PC-NEVPT2": 3.41
+    "PC-NEVPT2": 3.41,
+    "CASSCF [Col]": 3.1513,
+    "MRCI+DV1": 3.3498,
+    "MRCI+DV2": 3.3616,
+    "MRCI+DV3": 3.3808,
+    "MRCI+P": 3.3713,
+    "MRCI": 3.3068,
+    "XS-CASCI": 3.1597,
+    "XS-CASSCF-05": 3.1512,
+    "XS-CASSCF": 3.1574
   },
   {
     "Molecule": "Cyclopentadiene",
@@ -304,7 +335,16 @@
     "CASPT3": 5.1,
     "CASPT3 (No IPEA)": 5.03,
     "SC-NEVPT2": 5.31,
-    "PC-NEVPT2": 5.3
+    "PC-NEVPT2": 5.3,
+    "CASSCF [Col]": 4.9364,
+    "MRCI+DV1": 5.1967,
+    "MRCI+DV2": 5.208,
+    "MRCI+DV3": 5.2259,
+    "MRCI+P": 5.2165,
+    "MRCI": 5.1491,
+    "XS-CASCI": 4.9448,
+    "XS-CASSCF-05": 4.9418,
+    "XS-CASSCF": 4.948
   },
   {
     "Molecule": "Cyclopentadiene",

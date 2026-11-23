@@ -28,7 +28,16 @@
     "SOS-ADC(2) [QC]": 1.678,
     "ADC(2)": 1.629,
     "ADC(3)": 1.555,
-    "ADC(2.5)": 1.592
+    "ADC(2.5)": 1.592,
+    "CASSCF [Col]": 1.9151,
+    "MRCI+DV1": 1.7787,
+    "MRCI+DV2": 1.7592,
+    "MRCI+DV3": 1.7234,
+    "MRCI+P": 1.7374,
+    "MRCI": 1.8304,
+    "XS-CASCI": 1.8162,
+    "XS-CASSCF-05": 1.8501,
+    "XS-CASSCF": 1.7995
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -60,7 +69,16 @@
     "SOS-ADC(2) [QC]": 2.932,
     "ADC(2)": 2.804,
     "ADC(3)": 2.216,
-    "ADC(2.5)": 2.51
+    "ADC(2.5)": 2.51,
+    "CASSCF [Col]": 3.127,
+    "MRCI+DV1": 2.7313,
+    "MRCI+DV2": 2.6835,
+    "MRCI+DV3": 2.5964,
+    "MRCI+P": 2.6309,
+    "MRCI": 2.8639,
+    "XS-CASCI": 2.7196,
+    "XS-CASSCF-05": 2.9779,
+    "XS-CASSCF": 2.7231
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -85,7 +103,16 @@
     "CASPT3": 3.178,
     "CASPT3 (No IPEA)": 3.127,
     "SC-NEVPT2": 3.169,
-    "PC-NEVPT2": 3.154
+    "PC-NEVPT2": 3.154,
+    "CASSCF [Col]": 3.2798,
+    "MRCI+DV1": 3.268,
+    "MRCI+DV2": 3.2655,
+    "MRCI+DV3": 3.2608,
+    "MRCI+P": 3.2626,
+    "MRCI": 3.2744,
+    "XS-CASCI": 3.3722,
+    "XS-CASSCF-05": 3.3201,
+    "XS-CASSCF": 3.3717
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -117,7 +144,16 @@
     "SOS-ADC(2) [QC]": 4.843,
     "ADC(2)": 4.855,
     "ADC(3)": 4.54,
-    "ADC(2.5)": 4.6975
+    "ADC(2.5)": 4.6975,
+    "CASSCF [Col]": 6.6945,
+    "MRCI+DV1": 5.3687,
+    "MRCI+DV2": 5.1939,
+    "MRCI+DV3": 4.8639,
+    "MRCI+P": 4.9919,
+    "MRCI": 5.8149,
+    "XS-CASCI": 5.2909,
+    "XS-CASSCF-05": 6.0085,
+    "XS-CASSCF": 5.3075
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -210,7 +246,16 @@
     "CASPT3": 6.032,
     "CASPT3 (No IPEA)": 5.942,
     "SC-NEVPT2": 5.397,
-    "PC-NEVPT2": 5.288
+    "PC-NEVPT2": 5.288,
+    "CASSCF [Col]": 5.6184,
+    "MRCI+DV1": 5.4216,
+    "MRCI+DV2": 5.3757,
+    "MRCI+DV3": 5.2901,
+    "MRCI+P": 5.3231,
+    "MRCI": 5.5367,
+    "XS-CASCI": 4.9615,
+    "XS-CASSCF-05": 5.501,
+    "XS-CASSCF": 4.9608
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -238,7 +283,16 @@
     "SOS-ADC(2) [QC]": 1.466,
     "ADC(2)": 1.317,
     "ADC(3)": 1.315,
-    "ADC(2.5)": 1.3159999999999998
+    "ADC(2.5)": 1.3159999999999998,
+    "CASSCF [Col]": 1.7463,
+    "MRCI+DV1": 1.5524,
+    "MRCI+DV2": 1.5249,
+    "MRCI+DV3": 1.4745,
+    "MRCI+P": 1.4942,
+    "MRCI": 1.6263,
+    "XS-CASCI": 1.86,
+    "XS-CASSCF-05": 1.7881,
+    "XS-CASSCF": 1.8464
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -266,7 +320,16 @@
     "SOS-ADC(2) [QC]": 2.082,
     "ADC(2)": 1.986,
     "ADC(3)": 1.523,
-    "ADC(2.5)": 1.7545
+    "ADC(2.5)": 1.7545,
+    "CASSCF [Col]": 2.0977,
+    "MRCI+DV1": 1.9666,
+    "MRCI+DV2": 1.9477,
+    "MRCI+DV3": 1.9128,
+    "MRCI+P": 1.9264,
+    "MRCI": 2.0162,
+    "XS-CASCI": 2.2113,
+    "XS-CASSCF-05": 2.1527,
+    "XS-CASSCF": 2.2186
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -294,7 +357,16 @@
     "SOS-ADC(2) [QC]": 2.477,
     "ADC(2)": 2.554,
     "ADC(3)": 2.182,
-    "ADC(2.5)": 2.368
+    "ADC(2.5)": 2.368,
+    "CASSCF [Col]": 2.4353,
+    "MRCI+DV1": 2.5744,
+    "MRCI+DV2": 2.5876,
+    "MRCI+DV3": 2.6114,
+    "MRCI+P": 2.6019,
+    "MRCI": 2.5359,
+    "XS-CASCI": 2.549,
+    "XS-CASSCF-05": 2.4798,
+    "XS-CASSCF": 2.5386
   },
   {
     "Molecule": "Cyclopentadienethione",
@@ -317,6 +389,15 @@
     "CASPT3": 3.14,
     "CASPT3 (No IPEA)": 3.087,
     "SC-NEVPT2": 3.136,
-    "PC-NEVPT2": 3.121
+    "PC-NEVPT2": 3.121,
+    "CASSCF [Col]": 3.2417,
+    "MRCI+DV1": 3.2235,
+    "MRCI+DV2": 3.2194,
+    "MRCI+DV3": 3.2119,
+    "MRCI+P": 3.2148,
+    "MRCI": 3.2333,
+    "XS-CASCI": 3.3554,
+    "XS-CASSCF-05": 3.2921,
+    "XS-CASSCF": 3.3542
   }
 ]

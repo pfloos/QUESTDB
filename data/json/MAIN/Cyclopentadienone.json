@@ -29,7 +29,18 @@
     "SOS-ADC(2) [QC]": 2.906,
     "ADC(2)": 2.709,
     "ADC(3)": 3.007,
-    "ADC(2.5)": 2.858
+    "ADC(2.5)": 2.858,
+    "CASSCF [Col]": 3.4627,
+    "MRCI+DV1": 3.2253,
+    "MRCI+DV2": 3.1866,
+    "MRCI+DV3": 3.1171,
+    "MRCI+P": 3.1441,
+    "MRCI": 3.3265,
+    "XS-CASCI": 3.3489,
+    "XS-CASSCF-05": 3.4144,
+    "XS-CASSCF": 3.3559,
+    "Om": 0.794,
+    "QTa": 0.0
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -62,7 +73,18 @@
     "SOS-ADC(2) [QC]": 3.764,
     "ADC(2)": 3.628,
     "ADC(3)": 3.287,
-    "ADC(2.5)": 3.4575
+    "ADC(2.5)": 3.4575,
+    "CASSCF [Col]": 4.9213,
+    "MRCI+DV1": 3.8323,
+    "MRCI+DV2": 3.7058,
+    "MRCI+DV3": 3.4806,
+    "MRCI+P": 3.5703,
+    "MRCI": 4.1936,
+    "XS-CASCI": 4.3218,
+    "XS-CASSCF-05": 4.6778,
+    "XS-CASSCF": 4.3108,
+    "Om": 0.792,
+    "QTa": 0.112
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -87,7 +109,18 @@
     "CASPT3": 5.041,
     "CASPT3 (No IPEA)": 5.018,
     "SC-NEVPT2": 5.041,
-    "PC-NEVPT2": 5.025
+    "PC-NEVPT2": 5.025,
+    "CASSCF [Col]": 5.1575,
+    "MRCI+DV1": 5.1302,
+    "MRCI+DV2": 5.1173,
+    "MRCI+DV3": 5.0937,
+    "MRCI+P": 5.1025,
+    "MRCI": 5.1584,
+    "XS-CASCI": 5.2421,
+    "XS-CASSCF-05": 5.2108,
+    "XS-CASSCF": 5.2545,
+    "Om": 0.016,
+    "QTa": 0.0
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -99,7 +132,7 @@
     "Type": "ppi",
     "Special ?": "PD",
     "%T1 [CC3/AVTZ]": 73.6,
-    "f [LR-CC3/AVTZ]": 0.090,
+    "f [LR-CC3/AVTZ]": 0.0,
     "TBE/AVTZ": 5.795,
     "Method": "CC4/6-31+G(d) + [CASPT3(No IPEA)/AVTZ - CASPT3(No IPEA)/6-31+G(d)]",
     "Safe ? (~50 meV)": "N",
@@ -112,7 +145,18 @@
     "CASPT3": 5.979,
     "CASPT3 (No IPEA)": 5.91,
     "SC-NEVPT2": 6.057,
-    "PC-NEVPT2": 6.022
+    "PC-NEVPT2": 6.022,
+    "CASSCF [Col]": 6.3202,
+    "MRCI+DV1": 5.9986,
+    "MRCI+DV2": 5.9447,
+    "MRCI+DV3": 5.8487,
+    "MRCI+P": 5.8865,
+    "MRCI": 6.1459,
+    "XS-CASCI": 5.6568,
+    "XS-CASSCF-05": 6.2401,
+    "XS-CASSCF": 5.673,
+    "Om": 0.251,
+    "QTa": 0.061
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -182,7 +226,18 @@
     "CASPT3": 7.548,
     "CASPT3 (No IPEA)": 7.468,
     "SC-NEVPT2": 6.872,
-    "PC-NEVPT2": 6.662
+    "PC-NEVPT2": 6.662,
+    "CASSCF [Col]": 8.4648,
+    "MRCI+DV1": 7.162,
+    "MRCI+DV2": 6.9607,
+    "MRCI+DV3": 6.5954,
+    "MRCI+P": 6.7393,
+    "MRCI": 7.7131,
+    "XS-CASCI": 7.1192,
+    "XS-CASSCF-05": 7.9085,
+    "XS-CASSCF": 7.1646,
+    "Om": 0.661,
+    "QTa": 0.249
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -210,7 +265,16 @@
     "SOS-ADC(2) [QC]": 2.44,
     "ADC(2)": 2.364,
     "ADC(3)": 1.972,
-    "ADC(2.5)": 2.168
+    "ADC(2.5)": 2.168,
+    "CASSCF [Col]": 2.5852,
+    "MRCI+DV1": 2.4007,
+    "MRCI+DV2": 2.3743,
+    "MRCI+DV3": 2.3277,
+    "MRCI+P": 2.3462,
+    "MRCI": 2.4749,
+    "XS-CASCI": 2.7163,
+    "XS-CASSCF-05": 2.6471,
+    "XS-CASSCF": 2.7145
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -238,7 +302,16 @@
     "SOS-ADC(2) [QC]": 2.657,
     "ADC(2)": 2.387,
     "ADC(3)": 2.668,
-    "ADC(2.5)": 2.5275
+    "ADC(2.5)": 2.5275,
+    "CASSCF [Col]": 3.2281,
+    "MRCI+DV1": 2.9391,
+    "MRCI+DV2": 2.8947,
+    "MRCI+DV3": 2.8152,
+    "MRCI+P": 2.8463,
+    "MRCI": 3.058,
+    "XS-CASCI": 3.3592,
+    "XS-CASSCF-05": 3.2952,
+    "XS-CASSCF": 3.3578
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -266,7 +339,16 @@
     "SOS-ADC(2) [QC]": 4.157,
     "ADC(2)": 4.265,
     "ADC(3)": 3.894,
-    "ADC(2.5)": 4.0794999999999995
+    "ADC(2.5)": 4.0794999999999995,
+    "CASSCF [Col]": 4.0798,
+    "MRCI+DV1": 4.2539,
+    "MRCI+DV2": 4.2607,
+    "MRCI+DV3": 4.2715,
+    "MRCI+P": 4.2665,
+    "MRCI": 4.2248,
+    "XS-CASCI": 4.2109,
+    "XS-CASSCF-05": 4.1503,
+    "XS-CASSCF": 4.2169
   },
   {
     "Molecule": "Cyclopentadienone",
@@ -289,6 +371,15 @@
     "CASPT3": 4.913,
     "CASPT3 (No IPEA)": 4.897,
     "SC-NEVPT2": 4.933,
-    "PC-NEVPT2": 4.913
+    "PC-NEVPT2": 4.913,
+    "CASSCF [Col]": 5.0656,
+    "MRCI+DV1": 5.0195,
+    "MRCI+DV2": 5.0018,
+    "MRCI+DV3": 4.9695,
+    "MRCI+P": 4.9816,
+    "MRCI": 5.0592,
+    "XS-CASCI": 5.1967,
+    "XS-CASSCF-05": 5.1412,
+    "XS-CASSCF": 5.2077
   }
 ]

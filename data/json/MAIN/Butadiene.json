@@ -37,7 +37,18 @@
     "CASPT3": 6.72,
     "CASPT3 (No IPEA)": 6.65,
     "SC-NEVPT2": 6.72,
-    "PC-NEVPT2": 6.68
+    "PC-NEVPT2": 6.68,
+    "CASSCF [Col]": 8.3387,
+    "MRCI+DV1": 6.6387,
+    "MRCI+DV2": 6.4966,
+    "MRCI+DV3": 6.263,
+    "MRCI+P": 6.3937,
+    "MRCI": 7.1087,
+    "XS-CASCI": 6.0924,
+    "XS-CASSCF-05": 7.2893,
+    "XS-CASSCF": 6.2242,
+    "Om": 0.895,
+    "QTa": 0.432
   },
   {
     "Molecule": "Butadiene",
@@ -110,13 +121,24 @@
     "ADC(2)": 7.14,
     "ADC(3)": 5.856,
     "ADC(2.5)": 6.497999999999999,
-    "CASSCF": 6.990,
+    "CASSCF": 6.99,
     "CASPT2": 6.736,
     "CASPT2 (No IPEA)": 6.384,
     "CASPT3": 6.718,
     "CASPT3 (No IPEA)": 6.627,
-    "SC-NEVPT2": 6.780,
-    "PC-NEVPT2": 6.700
+    "SC-NEVPT2": 6.78,
+    "PC-NEVPT2": 6.7,
+    "CASSCF [Col]": 6.6415,
+    "MRCI+DV1": 6.686,
+    "MRCI+DV2": 6.672,
+    "MRCI+DV3": 6.6488,
+    "MRCI+P": 6.6609,
+    "MRCI": 6.7227,
+    "XS-CASCI": 5.8335,
+    "XS-CASSCF-05": 6.2475,
+    "XS-CASSCF": 5.8268,
+    "Om": 0.462,
+    "QTa": 0.118
   },
   {
     "Molecule": "Butadiene",
@@ -335,7 +357,16 @@
     "CASPT3": 3.4,
     "CASPT3 (No IPEA)": 3.35,
     "SC-NEVPT2": 3.43,
-    "PC-NEVPT2": 3.4
+    "PC-NEVPT2": 3.4,
+    "CASSCF [Col]": 3.2395,
+    "MRCI+DV1": 3.4094,
+    "MRCI+DV2": 3.4163,
+    "MRCI+DV3": 3.4267,
+    "MRCI+P": 3.42,
+    "MRCI": 3.3788,
+    "XS-CASCI": 3.2471,
+    "XS-CASSCF-05": 3.2383,
+    "XS-CASSCF": 3.241
   },
   {
     "Molecule": "Butadiene",
@@ -370,7 +401,16 @@
     "CASPT3": 5.29,
     "CASPT3 (No IPEA)": 5.19,
     "SC-NEVPT2": 5.36,
-    "PC-NEVPT2": 5.3
+    "PC-NEVPT2": 5.3,
+    "CASSCF [Col]": 5.0433,
+    "MRCI+DV1": 5.2717,
+    "MRCI+DV2": 5.2776,
+    "MRCI+DV3": 5.286,
+    "MRCI+P": 5.28,
+    "MRCI": 5.2391,
+    "XS-CASCI": 5.0509,
+    "XS-CASSCF-05": 5.0477,
+    "XS-CASSCF": 5.0549
   },
   {
     "Molecule": "Butadiene",

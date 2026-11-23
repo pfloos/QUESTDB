@@ -37,7 +37,18 @@
     "CASPT3": 3.94,
     "CASPT3 (No IPEA)": 3.92,
     "SC-NEVPT2": 3.84,
-    "PC-NEVPT2": 3.8
+    "PC-NEVPT2": 3.8,
+    "CASSCF [Col]": 4.4117,
+    "MRCI+DV1": 3.9049,
+    "MRCI+DV2": 3.8368,
+    "MRCI+DV3": 3.7135,
+    "MRCI+P": 3.7619,
+    "MRCI": 4.0884,
+    "XS-CASCI": 4.5494,
+    "XS-CASSCF-05": 4.6859,
+    "XS-CASSCF": 4.8354,
+    "Om": 0.803,
+    "QTa": 0.0
   },
   {
     "Molecule": "Pyridazine",
@@ -76,7 +87,18 @@
     "CASPT3": 4.49,
     "CASPT3 (No IPEA)": 4.48,
     "SC-NEVPT2": 4.44,
-    "PC-NEVPT2": 4.4
+    "PC-NEVPT2": 4.4,
+    "CASSCF [Col]": 4.9814,
+    "MRCI+DV1": 4.4587,
+    "MRCI+DV2": 4.3831,
+    "MRCI+DV3": 4.2457,
+    "MRCI+P": 4.2995,
+    "MRCI": 4.6618,
+    "XS-CASCI": 5.0538,
+    "XS-CASSCF-05": 5.2236,
+    "XS-CASSCF": 5.4597,
+    "Om": 0.772,
+    "QTa": 0.0
   },
   {
     "Molecule": "Pyridazine",
@@ -116,7 +138,18 @@
     "CASPT3": 5.3,
     "CASPT3 (No IPEA)": 5.25,
     "SC-NEVPT2": 5.61,
-    "PC-NEVPT2": 5.58
+    "PC-NEVPT2": 5.58,
+    "CASSCF [Col]": 5.0633,
+    "MRCI+DV1": 5.3227,
+    "MRCI+DV2": 5.3327,
+    "MRCI+DV3": 5.3488,
+    "MRCI+P": 5.3415,
+    "MRCI": 5.2817,
+    "XS-CASCI": 4.781,
+    "XS-CASSCF-05": 5.1263,
+    "XS-CASSCF": 5.0824,
+    "Om": 0.753,
+    "QTa": 0.078
   },
   {
     "Molecule": "Pyridazine",
@@ -155,7 +188,18 @@
     "CASPT3": 5.93,
     "CASPT3 (No IPEA)": 5.89,
     "SC-NEVPT2": 5.95,
-    "PC-NEVPT2": 5.88
+    "PC-NEVPT2": 5.88,
+    "CASSCF [Col]": 6.3169,
+    "MRCI+DV1": 5.9249,
+    "MRCI+DV2": 5.8531,
+    "MRCI+DV3": 5.7204,
+    "MRCI+P": 5.7713,
+    "MRCI": 6.1026,
+    "XS-CASCI": 6.8515,
+    "XS-CASSCF-05": 6.6162,
+    "XS-CASSCF": 6.8547,
+    "Om": 0.719,
+    "QTa": 0.0
   },
   {
     "Molecule": "Pyridazine",
@@ -235,7 +279,18 @@
     "CASPT3": 6.72,
     "CASPT3 (No IPEA)": 6.67,
     "SC-NEVPT2": 6.71,
-    "PC-NEVPT2": 6.64
+    "PC-NEVPT2": 6.64,
+    "CASSCF [Col]": 7.2885,
+    "MRCI+DV1": 6.654,
+    "MRCI+DV2": 6.5413,
+    "MRCI+DV3": 6.3328,
+    "MRCI+P": 6.4132,
+    "MRCI": 6.9373,
+    "XS-CASCI": 7.3197,
+    "XS-CASSCF-05": 7.4517,
+    "XS-CASSCF": 7.6615,
+    "Om": 0.737,
+    "QTa": 0.0
   },
   {
     "Molecule": "Pyridazine",
@@ -498,7 +553,16 @@
     "CASPT3": 3.29,
     "CASPT3 (No IPEA)": 3.28,
     "SC-NEVPT2": 3.17,
-    "PC-NEVPT2": 3.13
+    "PC-NEVPT2": 3.13,
+    "CASSCF [Col]": 3.6676,
+    "MRCI+DV1": 3.2206,
+    "MRCI+DV2": 3.1629,
+    "MRCI+DV3": 3.0588,
+    "MRCI+P": 3.0997,
+    "MRCI": 3.3774,
+    "XS-CASCI": 3.7438,
+    "XS-CASSCF-05": 3.8227,
+    "XS-CASSCF": 4.0913
   },
   {
     "Molecule": "Pyridazine",
@@ -533,7 +597,16 @@
     "CASPT3": 4.2,
     "CASPT3 (No IPEA)": 4.18,
     "SC-NEVPT2": 4.17,
-    "PC-NEVPT2": 4.14
+    "PC-NEVPT2": 4.14,
+    "CASSCF [Col]": 4.5786,
+    "MRCI+DV1": 4.1578,
+    "MRCI+DV2": 4.0964,
+    "MRCI+DV3": 3.985,
+    "MRCI+P": 4.0286,
+    "MRCI": 4.3222,
+    "XS-CASCI": 4.6548,
+    "XS-CASSCF-05": 4.7312,
+    "XS-CASSCF": 5.0155
   },
   {
     "Molecule": "Pyridazine",
@@ -568,7 +641,16 @@
     "CASPT3": 4.3,
     "CASPT3 (No IPEA)": 4.24,
     "SC-NEVPT2": 4.51,
-    "PC-NEVPT2": 4.49
+    "PC-NEVPT2": 4.49,
+    "CASSCF [Col]": 3.8867,
+    "MRCI+DV1": 4.3737,
+    "MRCI+DV2": 4.4088,
+    "MRCI+DV3": 4.469,
+    "MRCI+P": 4.4439,
+    "MRCI": 4.2583,
+    "XS-CASCI": 3.9629,
+    "XS-CASSCF-05": 4.0291,
+    "XS-CASSCF": 4.3017
   },
   {
     "Molecule": "Pyridazine",
@@ -603,6 +685,15 @@
     "CASPT3": 4.89,
     "CASPT3 (No IPEA)": 4.83,
     "SC-NEVPT2": 4.97,
-    "PC-NEVPT2": 4.94
+    "PC-NEVPT2": 4.94,
+    "CASSCF [Col]": 4.9972,
+    "MRCI+DV1": 4.9551,
+    "MRCI+DV2": 4.9368,
+    "MRCI+DV3": 4.9035,
+    "MRCI+P": 4.9163,
+    "MRCI": 5.0009,
+    "XS-CASCI": 5.0735,
+    "XS-CASSCF-05": 5.1383,
+    "XS-CASSCF": 5.4037
   }
 ]
